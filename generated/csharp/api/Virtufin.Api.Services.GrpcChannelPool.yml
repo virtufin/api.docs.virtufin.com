@@ -1,0 +1,766 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.GrpcChannelPool
+  commentId: T:Virtufin.Api.Services.GrpcChannelPool
+  id: GrpcChannelPool
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.GrpcChannelPool.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool})
+  - Virtufin.Api.Services.GrpcChannelPool.ChannelCount
+  - Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
+  - Virtufin.Api.Services.GrpcChannelPool.Dispose
+  - Virtufin.Api.Services.GrpcChannelPool.EvictChannel(System.String)
+  - Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
+  langs:
+  - csharp
+  - vb
+  name: GrpcChannelPool
+  nameWithType: GrpcChannelPool
+  fullName: Virtufin.Api.Services.GrpcChannelPool
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcChannelPool.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GrpcChannelPool
+    path: ../src/Virtufin.Api/Services/GrpcChannelPool.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: 'public class GrpcChannelPool : IDisposable'
+    content.vb: Public Class GrpcChannelPool Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Services.GrpcChannelPool.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool})
+  commentId: M:Virtufin.Api.Services.GrpcChannelPool.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool})
+  id: '#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool})'
+  parent: Virtufin.Api.Services.GrpcChannelPool
+  langs:
+  - csharp
+  - vb
+  name: GrpcChannelPool(ServicesConfiguration, ILogger<GrpcChannelPool>)
+  nameWithType: GrpcChannelPool.GrpcChannelPool(ServicesConfiguration, ILogger<GrpcChannelPool>)
+  fullName: Virtufin.Api.Services.GrpcChannelPool.GrpcChannelPool(Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GrpcChannelPool>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcChannelPool.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: .ctor
+    path: ../src/Virtufin.Api/Services/GrpcChannelPool.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public GrpcChannelPool(ServicesConfiguration config, ILogger<GrpcChannelPool> logger)
+    parameters:
+    - id: config
+      type: Virtufin.Api.Configuration.ServicesConfiguration
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool}
+    content.vb: Public Sub New(config As ServicesConfiguration, logger As ILogger(Of GrpcChannelPool))
+  overload: Virtufin.Api.Services.GrpcChannelPool.#ctor*
+  nameWithType.vb: GrpcChannelPool.New(ServicesConfiguration, ILogger(Of GrpcChannelPool))
+  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.New(Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GrpcChannelPool))
+  name.vb: New(ServicesConfiguration, ILogger(Of GrpcChannelPool))
+- uid: Virtufin.Api.Services.GrpcChannelPool.ChannelCount
+  commentId: P:Virtufin.Api.Services.GrpcChannelPool.ChannelCount
+  id: ChannelCount
+  parent: Virtufin.Api.Services.GrpcChannelPool
+  langs:
+  - csharp
+  - vb
+  name: ChannelCount
+  nameWithType: GrpcChannelPool.ChannelCount
+  fullName: Virtufin.Api.Services.GrpcChannelPool.ChannelCount
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcChannelPool.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: ChannelCount
+    path: ../src/Virtufin.Api/Services/GrpcChannelPool.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public int ChannelCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ChannelCount As Integer
+  overload: Virtufin.Api.Services.GrpcChannelPool.ChannelCount*
+- uid: Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
+  commentId: P:Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
+  id: ConfiguredServiceCount
+  parent: Virtufin.Api.Services.GrpcChannelPool
+  langs:
+  - csharp
+  - vb
+  name: ConfiguredServiceCount
+  nameWithType: GrpcChannelPool.ConfiguredServiceCount
+  fullName: Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcChannelPool.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: ConfiguredServiceCount
+    path: ../src/Virtufin.Api/Services/GrpcChannelPool.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public int ConfiguredServiceCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ConfiguredServiceCount As Integer
+  overload: Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount*
+- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
+  commentId: M:Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
+  id: GetChannel(System.String)
+  parent: Virtufin.Api.Services.GrpcChannelPool
+  langs:
+  - csharp
+  - vb
+  name: GetChannel(string)
+  nameWithType: GrpcChannelPool.GetChannel(string)
+  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannel(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcChannelPool.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GetChannel
+    path: ../src/Virtufin.Api/Services/GrpcChannelPool.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public GrpcChannel GetChannel(string serviceName)
+    parameters:
+    - id: serviceName
+      type: System.String
+    return:
+      type: Grpc.Net.Client.GrpcChannel
+    content.vb: Public Function GetChannel(serviceName As String) As GrpcChannel
+  overload: Virtufin.Api.Services.GrpcChannelPool.GetChannel*
+  nameWithType.vb: GrpcChannelPool.GetChannel(String)
+  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.GetChannel(String)
+  name.vb: GetChannel(String)
+- uid: Virtufin.Api.Services.GrpcChannelPool.EvictChannel(System.String)
+  commentId: M:Virtufin.Api.Services.GrpcChannelPool.EvictChannel(System.String)
+  id: EvictChannel(System.String)
+  parent: Virtufin.Api.Services.GrpcChannelPool
+  langs:
+  - csharp
+  - vb
+  name: EvictChannel(string)
+  nameWithType: GrpcChannelPool.EvictChannel(string)
+  fullName: Virtufin.Api.Services.GrpcChannelPool.EvictChannel(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcChannelPool.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: EvictChannel
+    path: ../src/Virtufin.Api/Services/GrpcChannelPool.cs
+    startLine: 71
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public void EvictChannel(string serviceName)
+    parameters:
+    - id: serviceName
+      type: System.String
+    content.vb: Public Sub EvictChannel(serviceName As String)
+  overload: Virtufin.Api.Services.GrpcChannelPool.EvictChannel*
+  nameWithType.vb: GrpcChannelPool.EvictChannel(String)
+  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.EvictChannel(String)
+  name.vb: EvictChannel(String)
+- uid: Virtufin.Api.Services.GrpcChannelPool.Dispose
+  commentId: M:Virtufin.Api.Services.GrpcChannelPool.Dispose
+  id: Dispose
+  parent: Virtufin.Api.Services.GrpcChannelPool
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GrpcChannelPool.Dispose()
+  fullName: Virtufin.Api.Services.GrpcChannelPool.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcChannelPool.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Dispose
+    path: ../src/Virtufin.Api/Services/GrpcChannelPool.cs
+    startLine: 111
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Virtufin.Api.Services.GrpcChannelPool.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Api.Services.GrpcChannelPool.#ctor*
+  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.#ctor
+  href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool__ctor_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GrpcChannelPool__
+  name: GrpcChannelPool
+  nameWithType: GrpcChannelPool.GrpcChannelPool
+  fullName: Virtufin.Api.Services.GrpcChannelPool.GrpcChannelPool
+  nameWithType.vb: GrpcChannelPool.New
+  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.New
+  name.vb: New
+- uid: Virtufin.Api.Configuration.ServicesConfiguration
+  commentId: T:Virtufin.Api.Configuration.ServicesConfiguration
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.ServicesConfiguration.html
+  name: ServicesConfiguration
+  nameWithType: ServicesConfiguration
+  fullName: Virtufin.Api.Configuration.ServicesConfiguration
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<GrpcChannelPool>
+  nameWithType: ILogger<GrpcChannelPool>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GrpcChannelPool>
+  nameWithType.vb: ILogger(Of GrpcChannelPool)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GrpcChannelPool)
+  name.vb: ILogger(Of GrpcChannelPool)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Virtufin.Api.Services.GrpcChannelPool
+    name: GrpcChannelPool
+    href: Virtufin.Api.Services.GrpcChannelPool.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.GrpcChannelPool
+    name: GrpcChannelPool
+    href: Virtufin.Api.Services.GrpcChannelPool.html
+  - name: )
+- uid: Virtufin.Api.Configuration
+  commentId: N:Virtufin.Api.Configuration
+  href: Virtufin.html
+  name: Virtufin.Api.Configuration
+  nameWithType: Virtufin.Api.Configuration
+  fullName: Virtufin.Api.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.Api.Services.GrpcChannelPool.ChannelCount*
+  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.ChannelCount
+  href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_ChannelCount
+  name: ChannelCount
+  nameWithType: GrpcChannelPool.ChannelCount
+  fullName: Virtufin.Api.Services.GrpcChannelPool.ChannelCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount*
+  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
+  href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_ConfiguredServiceCount
+  name: ConfiguredServiceCount
+  nameWithType: GrpcChannelPool.ConfiguredServiceCount
+  fullName: Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
+- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannel*
+  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.GetChannel
+  href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannel_System_String_
+  name: GetChannel
+  nameWithType: GrpcChannelPool.GetChannel
+  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Grpc.Net.Client.GrpcChannel
+  commentId: T:Grpc.Net.Client.GrpcChannel
+  parent: Grpc.Net.Client
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Net.Client/GrpcChannel.cs
+  name: GrpcChannel
+  nameWithType: GrpcChannel
+  fullName: Grpc.Net.Client.GrpcChannel
+- uid: Grpc.Net.Client
+  commentId: N:Grpc.Net.Client
+  isExternal: true
+  name: Grpc.Net.Client
+  nameWithType: Grpc.Net.Client
+  fullName: Grpc.Net.Client
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Net
+    name: Net
+    isExternal: true
+  - name: .
+  - uid: Grpc.Net.Client
+    name: Client
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Net
+    name: Net
+    isExternal: true
+  - name: .
+  - uid: Grpc.Net.Client
+    name: Client
+    isExternal: true
+- uid: Virtufin.Api.Services.GrpcChannelPool.EvictChannel*
+  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.EvictChannel
+  href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_EvictChannel_System_String_
+  name: EvictChannel
+  nameWithType: GrpcChannelPool.EvictChannel
+  fullName: Virtufin.Api.Services.GrpcChannelPool.EvictChannel
+- uid: Virtufin.Api.Services.GrpcChannelPool.Dispose*
+  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.Dispose
+  href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_Dispose
+  name: Dispose
+  nameWithType: GrpcChannelPool.Dispose
+  fullName: Virtufin.Api.Services.GrpcChannelPool.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

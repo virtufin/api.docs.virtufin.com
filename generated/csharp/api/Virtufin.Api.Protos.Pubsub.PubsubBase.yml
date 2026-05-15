@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase
+  commentId: T:Virtufin.Api.Protos.Pubsub.PubsubBase
+  id: Pubsub.PubsubBase
+  parent: Virtufin.Api.Protos
+  children:
+  - Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
+  langs:
+  - csharp
+  - vb
+  name: Pubsub.PubsubBase
+  nameWithType: Pubsub.PubsubBase
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase
+  type: Class
+  source:
+    id: PubsubBase
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/PubsubGrpc.cs
+    startLine: 91
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Base class for server-side implementations of Pubsub
+  example: []
+  syntax:
+    content: >-
+      [BindServiceMethod(typeof(Pubsub), "BindService")]
+
+      public abstract class Pubsub.PubsubBase
+    content.vb: >-
+      <BindServiceMethod(GetType(Pubsub), "BindService")>
+
+      Public MustInherit Class Pubsub.PubsubBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Virtufin.Api.Services.PubsubService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Grpc.Core.BindServiceMethodAttribute
+    ctor: Grpc.Core.BindServiceMethodAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: Virtufin.Api.Protos.Pubsub
+    - type: System.String
+      value: BindService
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
+  id: PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Pubsub.PubsubBase
+  langs:
+  - csharp
+  - vb
+  name: PublishEvent(PublishRequest, ServerCallContext)
+  nameWithType: Pubsub.PubsubBase.PublishEvent(PublishRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    id: PublishEvent
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/PubsubGrpc.cs
+    startLine: 94
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual Task<PublishResponse> PublishEvent(PublishRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.PublishRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.PublishResponse}
+    content.vb: Public Overridable Function PublishEvent(request As PublishRequest, context As ServerCallContext) As Task(Of PublishResponse)
+  overload: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent*
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+  id: Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Pubsub.PubsubBase
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
+  nameWithType: Pubsub.PubsubBase.Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    id: Subscribe
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/PubsubGrpc.cs
+    startLine: 100
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual Task Subscribe(PubsubSubscribeRequest request, IServerStreamWriter<PubsubSubscribeResponse> responseStream, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.PubsubSubscribeRequest
+    - id: responseStream
+      type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function Subscribe(request As PubsubSubscribeRequest, responseStream As IServerStreamWriter(Of PubsubSubscribeResponse), context As ServerCallContext) As Task
+  overload: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe*
+  nameWithType.vb: Pubsub.PubsubBase.Subscribe(PubsubSubscribeRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
+  fullName.vb: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse), Grpc.Core.ServerCallContext)
+  name.vb: Subscribe(PubsubSubscribeRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
+  id: Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Pubsub.PubsubBase
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(UnsubscribeRequest, ServerCallContext)
+  nameWithType: Pubsub.PubsubBase.Unsubscribe(UnsubscribeRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    id: Unsubscribe
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/PubsubGrpc.cs
+    startLine: 106
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual Task<UnsubscribeResponse> Unsubscribe(UnsubscribeRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.UnsubscribeRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.UnsubscribeResponse}
+    content.vb: Public Overridable Function Unsubscribe(request As UnsubscribeRequest, context As ServerCallContext) As Task(Of UnsubscribeResponse)
+  overload: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe*
+references:
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  href: Virtufin.html
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent*
+  commentId: Overload:Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent
+  href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_PublishEvent_Virtufin_Api_Protos_PublishRequest_Grpc_Core_ServerCallContext_
+  name: PublishEvent
+  nameWithType: Pubsub.PubsubBase.PublishEvent
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent
+- uid: Virtufin.Api.Protos.PublishRequest
+  commentId: T:Virtufin.Api.Protos.PublishRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.PublishRequest.html
+  name: PublishRequest
+  nameWithType: PublishRequest
+  fullName: Virtufin.Api.Protos.PublishRequest
+- uid: Grpc.Core.ServerCallContext
+  commentId: T:Grpc.Core.ServerCallContext
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: ServerCallContext
+  nameWithType: ServerCallContext
+  fullName: Grpc.Core.ServerCallContext
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.PublishResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.PublishResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PublishResponse>
+  nameWithType: Task<PublishResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.PublishResponse>
+  nameWithType.vb: Task(Of PublishResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.PublishResponse)
+  name.vb: Task(Of PublishResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Protos.PublishResponse
+    name: PublishResponse
+    href: Virtufin.Api.Protos.PublishResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.PublishResponse
+    name: PublishResponse
+    href: Virtufin.Api.Protos.PublishResponse.html
+  - name: )
+- uid: Grpc.Core
+  commentId: N:Grpc.Core
+  isExternal: true
+  name: Grpc.Core
+  nameWithType: Grpc.Core
+  fullName: Grpc.Core
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe*
+  commentId: Overload:Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe
+  href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_Subscribe_Virtufin_Api_Protos_PubsubSubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
+  name: Subscribe
+  nameWithType: Pubsub.PubsubBase.Subscribe
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe
+- uid: Virtufin.Api.Protos.PubsubSubscribeRequest
+  commentId: T:Virtufin.Api.Protos.PubsubSubscribeRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.PubsubSubscribeRequest.html
+  name: PubsubSubscribeRequest
+  nameWithType: PubsubSubscribeRequest
+  fullName: Virtufin.Api.Protos.PubsubSubscribeRequest
+- uid: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+  commentId: T:Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+  parent: Grpc.Core
+  definition: Grpc.Core.IServerStreamWriter`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  name: IServerStreamWriter<PubsubSubscribeResponse>
+  nameWithType: IServerStreamWriter<PubsubSubscribeResponse>
+  fullName: Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>
+  nameWithType.vb: IServerStreamWriter(Of PubsubSubscribeResponse)
+  fullName.vb: Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
+  name.vb: IServerStreamWriter(Of PubsubSubscribeResponse)
+  spec.csharp:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: <
+  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
+    name: PubsubSubscribeResponse
+    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
+    name: PubsubSubscribeResponse
+    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Grpc.Core.IServerStreamWriter`1
+  commentId: T:Grpc.Core.IServerStreamWriter`1
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  name: IServerStreamWriter<T>
+  nameWithType: IServerStreamWriter<T>
+  fullName: Grpc.Core.IServerStreamWriter<T>
+  nameWithType.vb: IServerStreamWriter(Of T)
+  fullName.vb: Grpc.Core.IServerStreamWriter(Of T)
+  name.vb: IServerStreamWriter(Of T)
+  spec.csharp:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe*
+  commentId: Overload:Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe
+  href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_Unsubscribe_Virtufin_Api_Protos_UnsubscribeRequest_Grpc_Core_ServerCallContext_
+  name: Unsubscribe
+  nameWithType: Pubsub.PubsubBase.Unsubscribe
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe
+- uid: Virtufin.Api.Protos.UnsubscribeRequest
+  commentId: T:Virtufin.Api.Protos.UnsubscribeRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.UnsubscribeRequest.html
+  name: UnsubscribeRequest
+  nameWithType: UnsubscribeRequest
+  fullName: Virtufin.Api.Protos.UnsubscribeRequest
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.UnsubscribeResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.UnsubscribeResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<UnsubscribeResponse>
+  nameWithType: Task<UnsubscribeResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.UnsubscribeResponse>
+  nameWithType.vb: Task(Of UnsubscribeResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.UnsubscribeResponse)
+  name.vb: Task(Of UnsubscribeResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Protos.UnsubscribeResponse
+    name: UnsubscribeResponse
+    href: Virtufin.Api.Protos.UnsubscribeResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.UnsubscribeResponse
+    name: UnsubscribeResponse
+    href: Virtufin.Api.Protos.UnsubscribeResponse.html
+  - name: )

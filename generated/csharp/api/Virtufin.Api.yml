@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api
+  commentId: N:Virtufin.Api
+  id: Virtufin.Api
+  children:
+  - Virtufin.Api.ApiConstants
+  - Virtufin.Api.GrpcCallRequest
+  - Virtufin.Api.GrpcCallResponse
+  - Virtufin.Api.MethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Api
+  nameWithType: Virtufin.Api
+  fullName: Virtufin.Api
+  type: Namespace
+  assemblies:
+  - Virtufin.Api
+references:
+- uid: Virtufin.Api.ApiConstants
+  commentId: T:Virtufin.Api.ApiConstants
+  href: Virtufin.Api.ApiConstants.html
+  name: ApiConstants
+  nameWithType: ApiConstants
+  fullName: Virtufin.Api.ApiConstants
+- uid: Virtufin.Api.GrpcCallRequest
+  commentId: T:Virtufin.Api.GrpcCallRequest
+  href: Virtufin.Api.GrpcCallRequest.html
+  name: GrpcCallRequest
+  nameWithType: GrpcCallRequest
+  fullName: Virtufin.Api.GrpcCallRequest
+- uid: Virtufin.Api.GrpcCallResponse
+  commentId: T:Virtufin.Api.GrpcCallResponse
+  href: Virtufin.Api.GrpcCallResponse.html
+  name: GrpcCallResponse
+  nameWithType: GrpcCallResponse
+  fullName: Virtufin.Api.GrpcCallResponse
+- uid: Virtufin.Api.MethodInfo
+  commentId: T:Virtufin.Api.MethodInfo
+  href: Virtufin.Api.MethodInfo.html
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: Virtufin.Api.MethodInfo

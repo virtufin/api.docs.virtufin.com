@@ -1,0 +1,1130 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.GrpcReflectionService
+  commentId: T:Virtufin.Api.Services.GrpcReflectionService
+  id: GrpcReflectionService
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})
+  - Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: GrpcReflectionService
+  nameWithType: GrpcReflectionService
+  fullName: Virtufin.Api.Services.GrpcReflectionService
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GrpcReflectionService
+    path: ../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Provides gRPC reflection functionality including service discovery, method schema retrieval,
+
+    and dynamic gRPC invocation based on reflection data.
+  example: []
+  syntax:
+    content: public class GrpcReflectionService
+    content.vb: Public Class GrpcReflectionService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})
+  id: '#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})'
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>)
+  nameWithType: GrpcReflectionService.GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GrpcReflectionService(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GrpcReflectionService>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: .ctor
+    path: ../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public GrpcReflectionService(GrpcChannelPool channelPool, ILogger<GrpcReflectionService> logger)
+    parameters:
+    - id: channelPool
+      type: Virtufin.Api.Services.GrpcChannelPool
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService}
+    content.vb: Public Sub New(channelPool As GrpcChannelPool, logger As ILogger(Of GrpcReflectionService))
+  overload: Virtufin.Api.Services.GrpcReflectionService.#ctor*
+  nameWithType.vb: GrpcReflectionService.New(GrpcChannelPool, ILogger(Of GrpcReflectionService))
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.New(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GrpcReflectionService))
+  name.vb: New(GrpcChannelPool, ILogger(Of GrpcReflectionService))
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(System.String,System.Threading.CancellationToken)
+  id: GetMethodsAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: GetMethodsAsync(string, CancellationToken)
+  nameWithType: GrpcReflectionService.GetMethodsAsync(string, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GetMethodsAsync
+    path: ../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Retrieves all methods for a given service using gRPC reflection.
+  example: []
+  syntax:
+    content: public Task<List<ServiceMethodInfo>> GetMethodsAsync(string serviceName, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The name of the service to query.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Virtufin.Api.Services.ServiceMethodInfo}}
+      description: A list of ServiceMethodInfo describing each method.
+    content.vb: Public Function GetMethodsAsync(serviceName As String, cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ServiceMethodInfo))
+  overload: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync*
+  nameWithType.vb: GrpcReflectionService.GetMethodsAsync(String, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(String, System.Threading.CancellationToken)
+  name.vb: GetMethodsAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetMethodSchemaAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: GetMethodSchemaAsync(string, string, string?, CancellationToken)
+  nameWithType: GrpcReflectionService.GetMethodSchemaAsync(string, string, string?, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync(string, string, string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GetMethodSchemaAsync
+    path: ../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 56
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Gets the schema for a specific method including input/output types and field definitions.
+  example: []
+  syntax:
+    content: public Task<MethodSchema?> GetMethodSchemaAsync(string serviceName, string methodName, string? type = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The name of the service.
+    - id: methodName
+      type: System.String
+      description: The name of the method.
+    - id: type
+      type: System.String
+      description: Optional type name for schema resolution.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Services.MethodSchema}
+      description: The method schema or null if not found.
+    content.vb: Public Function GetMethodSchemaAsync(serviceName As String, methodName As String, type As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of MethodSchema)
+  overload: Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync*
+  nameWithType.vb: GrpcReflectionService.GetMethodSchemaAsync(String, String, String, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync(String, String, String, System.Threading.CancellationToken)
+  name.vb: GetMethodSchemaAsync(String, String, String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  id: ExecuteCallAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCallAsync(string, string, string, Dictionary<string, string>?, CancellationToken)
+  nameWithType: GrpcReflectionService.ExecuteCallAsync(string, string, string, Dictionary<string, string>?, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(string, string, string, System.Collections.Generic.Dictionary<string, string>?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: ExecuteCallAsync
+    path: ../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 78
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Executes a gRPC call by name, using reflection for type information.
+  example: []
+  syntax:
+    content: public Task<GrpcCallResult> ExecuteCallAsync(string serviceName, string methodName, string requestJson, Dictionary<string, string>? metadata = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The target service name.
+    - id: methodName
+      type: System.String
+      description: The method to invoke.
+    - id: requestJson
+      type: System.String
+      description: The request payload as JSON.
+    - id: metadata
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Optional metadata headers.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Services.GrpcCallResult}
+      description: The result of the gRPC call.
+    content.vb: Public Function ExecuteCallAsync(serviceName As String, methodName As String, requestJson As String, metadata As Dictionary(Of String, String) = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of GrpcCallResult)
+  overload: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync*
+  nameWithType.vb: GrpcReflectionService.ExecuteCallAsync(String, String, String, Dictionary(Of String, String), CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(String, String, String, System.Collections.Generic.Dictionary(Of String, String), System.Threading.CancellationToken)
+  name.vb: ExecuteCallAsync(String, String, String, Dictionary(Of String, String), CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  id: ExecuteCallAsync(System.String,System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCallAsync(string, string, byte[], Dictionary<string, string>?, CancellationToken)
+  nameWithType: GrpcReflectionService.ExecuteCallAsync(string, string, byte[], Dictionary<string, string>?, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(string, string, byte[], System.Collections.Generic.Dictionary<string, string>?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: ExecuteCallAsync
+    path: ../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 138
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Executes a gRPC call with raw protobuf bytes (passthrough, no conversion).
+  example: []
+  syntax:
+    content: public Task<GrpcCallResult> ExecuteCallAsync(string serviceName, string methodName, byte[] requestData, Dictionary<string, string>? metadata = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The target service name.
+    - id: methodName
+      type: System.String
+      description: The method to invoke.
+    - id: requestData
+      type: System.Byte[]
+      description: The raw protobuf request data as bytes.
+    - id: metadata
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Optional metadata headers.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Services.GrpcCallResult}
+      description: The result of the gRPC call with raw protobuf bytes.
+    content.vb: Public Function ExecuteCallAsync(serviceName As String, methodName As String, requestData As Byte(), metadata As Dictionary(Of String, String) = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of GrpcCallResult)
+  overload: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync*
+  nameWithType.vb: GrpcReflectionService.ExecuteCallAsync(String, String, Byte(), Dictionary(Of String, String), CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(String, String, Byte(), System.Collections.Generic.Dictionary(Of String, String), System.Threading.CancellationToken)
+  name.vb: ExecuteCallAsync(String, String, Byte(), Dictionary(Of String, String), CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  id: GetFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: GetFileDescriptorProtosAsync(string, CancellationToken)
+  nameWithType: GrpcReflectionService.GetFileDescriptorProtosAsync(string, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GetFileDescriptorProtosAsync
+    path: ../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 195
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Retrieves the raw file descriptor protos for a service.
+  example: []
+  syntax:
+    content: public Task<List<ByteString>> GetFileDescriptorProtosAsync(string serviceName, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The name of the service.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Google.Protobuf.ByteString}}
+      description: List of ByteString containing the descriptor protos.
+    content.vb: Public Function GetFileDescriptorProtosAsync(serviceName As String, cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ByteString))
+  overload: Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync*
+  nameWithType.vb: GrpcReflectionService.GetFileDescriptorProtosAsync(String, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(String, System.Threading.CancellationToken)
+  name.vb: GetFileDescriptorProtosAsync(String, CancellationToken)
+references:
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Api.Services.GrpcReflectionService.#ctor*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.#ctor
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService__ctor_Virtufin_Api_Services_GrpcChannelPool_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GrpcReflectionService__
+  name: GrpcReflectionService
+  nameWithType: GrpcReflectionService.GrpcReflectionService
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GrpcReflectionService
+  nameWithType.vb: GrpcReflectionService.New
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.New
+  name.vb: New
+- uid: Virtufin.Api.Services.GrpcChannelPool
+  commentId: T:Virtufin.Api.Services.GrpcChannelPool
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.GrpcChannelPool.html
+  name: GrpcChannelPool
+  nameWithType: GrpcChannelPool
+  fullName: Virtufin.Api.Services.GrpcChannelPool
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<GrpcReflectionService>
+  nameWithType: ILogger<GrpcReflectionService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GrpcReflectionService>
+  nameWithType.vb: ILogger(Of GrpcReflectionService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GrpcReflectionService)
+  name.vb: ILogger(Of GrpcReflectionService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Virtufin.Api.Services.GrpcReflectionService
+    name: GrpcReflectionService
+    href: Virtufin.Api.Services.GrpcReflectionService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.GrpcReflectionService
+    name: GrpcReflectionService
+    href: Virtufin.Api.Services.GrpcReflectionService.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetMethodsAsync_System_String_System_Threading_CancellationToken_
+  name: GetMethodsAsync
+  nameWithType: GrpcReflectionService.GetMethodsAsync
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Virtufin.Api.Services.ServiceMethodInfo}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Virtufin.Api.Services.ServiceMethodInfo}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<ServiceMethodInfo>>
+  nameWithType: Task<List<ServiceMethodInfo>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Virtufin.Api.Services.ServiceMethodInfo>>
+  nameWithType.vb: Task(Of List(Of ServiceMethodInfo))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Virtufin.Api.Services.ServiceMethodInfo))
+  name.vb: Task(Of List(Of ServiceMethodInfo))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Virtufin.Api.Services.ServiceMethodInfo
+    name: ServiceMethodInfo
+    href: Virtufin.Api.Services.ServiceMethodInfo.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.ServiceMethodInfo
+    name: ServiceMethodInfo
+    href: Virtufin.Api.Services.ServiceMethodInfo.html
+  - name: )
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetMethodSchemaAsync_System_String_System_String_System_String_System_Threading_CancellationToken_
+  name: GetMethodSchemaAsync
+  nameWithType: GrpcReflectionService.GetMethodSchemaAsync
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Services.MethodSchema}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Services.MethodSchema}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MethodSchema>
+  nameWithType: Task<MethodSchema>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Services.MethodSchema>
+  nameWithType.vb: Task(Of MethodSchema)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Services.MethodSchema)
+  name.vb: Task(Of MethodSchema)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Services.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Services.MethodSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Services.MethodSchema.html
+  - name: )
+- uid: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_ExecuteCallAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_
+  name: ExecuteCallAsync
+  nameWithType: GrpcReflectionService.ExecuteCallAsync
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Services.GrpcCallResult}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Services.GrpcCallResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GrpcCallResult>
+  nameWithType: Task<GrpcCallResult>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Services.GrpcCallResult>
+  nameWithType.vb: Task(Of GrpcCallResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Services.GrpcCallResult)
+  name.vb: Task(Of GrpcCallResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Services.GrpcCallResult
+    name: GrpcCallResult
+    href: Virtufin.Api.Services.GrpcCallResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.GrpcCallResult
+    name: GrpcCallResult
+    href: Virtufin.Api.Services.GrpcCallResult.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetFileDescriptorProtosAsync_System_String_System_Threading_CancellationToken_
+  name: GetFileDescriptorProtosAsync
+  nameWithType: GrpcReflectionService.GetFileDescriptorProtosAsync
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Google.Protobuf.ByteString}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Google.Protobuf.ByteString}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<ByteString>>
+  nameWithType: Task<List<ByteString>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Google.Protobuf.ByteString>>
+  nameWithType.vb: Task(Of List(Of ByteString))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Google.Protobuf.ByteString))
+  name.vb: Task(Of List(Of ByteString))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Google.Protobuf.ByteString
+    name: ByteString
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Google.Protobuf.ByteString
+    name: ByteString
+    isExternal: true
+  - name: )
+  - name: )

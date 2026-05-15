@@ -1,0 +1,1875 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Protos.State.StateClient
+  commentId: T:Virtufin.Api.Protos.State.StateClient
+  id: State.StateClient
+  parent: Virtufin.Api.Protos
+  children:
+  - Virtufin.Api.Protos.State.StateClient.#ctor
+  - Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.CallInvoker)
+  - Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ChannelBase)
+  - Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  - Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  - Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)
+  - Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: State.StateClient
+  nameWithType: State.StateClient
+  fullName: Virtufin.Api.Protos.State.StateClient
+  type: Class
+  source:
+    id: StateClient
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 151
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Client for State
+  example: []
+  syntax:
+    content: 'public class State.StateClient : ClientBase<State.StateClient>'
+    content.vb: Public Class State.StateClient Inherits ClientBase(Of State.StateClient)
+  inheritance:
+  - System.Object
+  - Grpc.Core.ClientBase
+  - Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}
+  inheritedMembers:
+  - Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.WithHost(System.String)
+  - Grpc.Core.ClientBase.CallInvoker
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ChannelBase)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ChannelBase)
+  id: '#ctor(Grpc.Core.ChannelBase)'
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: StateClient(ChannelBase)
+  nameWithType: State.StateClient.StateClient(ChannelBase)
+  fullName: Virtufin.Api.Protos.State.StateClient.StateClient(Grpc.Core.ChannelBase)
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 155
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Creates a new client for State
+  example: []
+  syntax:
+    content: public StateClient(ChannelBase channel)
+    parameters:
+    - id: channel
+      type: Grpc.Core.ChannelBase
+      description: The channel to use to make remote calls.
+    content.vb: Public Sub New(channel As ChannelBase)
+  overload: Virtufin.Api.Protos.State.StateClient.#ctor*
+  nameWithType.vb: State.StateClient.New(ChannelBase)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.New(Grpc.Core.ChannelBase)
+  name.vb: New(ChannelBase)
+- uid: Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.CallInvoker)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.CallInvoker)
+  id: '#ctor(Grpc.Core.CallInvoker)'
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: StateClient(CallInvoker)
+  nameWithType: State.StateClient.StateClient(CallInvoker)
+  fullName: Virtufin.Api.Protos.State.StateClient.StateClient(Grpc.Core.CallInvoker)
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 161
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Creates a new client for State that uses a custom <code>CallInvoker</code>.
+  example: []
+  syntax:
+    content: public StateClient(CallInvoker callInvoker)
+    parameters:
+    - id: callInvoker
+      type: Grpc.Core.CallInvoker
+      description: The callInvoker to use to make remote calls.
+    content.vb: Public Sub New(callInvoker As CallInvoker)
+  overload: Virtufin.Api.Protos.State.StateClient.#ctor*
+  nameWithType.vb: State.StateClient.New(CallInvoker)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.New(Grpc.Core.CallInvoker)
+  name.vb: New(CallInvoker)
+- uid: Virtufin.Api.Protos.State.StateClient.#ctor
+  commentId: M:Virtufin.Api.Protos.State.StateClient.#ctor
+  id: '#ctor'
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: StateClient()
+  nameWithType: State.StateClient.StateClient()
+  fullName: Virtufin.Api.Protos.State.StateClient.StateClient()
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 166
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Protected parameterless constructor to allow creation of test doubles.
+  example: []
+  syntax:
+    content: protected StateClient()
+    content.vb: Protected Sub New()
+  overload: Virtufin.Api.Protos.State.StateClient.#ctor*
+  nameWithType.vb: State.StateClient.New()
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.New()
+  name.vb: New()
+- uid: Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  id: '#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)'
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: StateClient(ClientBaseConfiguration)
+  nameWithType: State.StateClient.StateClient(ClientBase.ClientBaseConfiguration)
+  fullName: Virtufin.Api.Protos.State.StateClient.StateClient(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 172
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Protected constructor to allow creation of configured clients.
+  example: []
+  syntax:
+    content: protected StateClient(ClientBase.ClientBaseConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Grpc.Core.ClientBase.ClientBaseConfiguration
+      description: The client configuration.
+    content.vb: Protected Sub New(configuration As ClientBase.ClientBaseConfiguration)
+  overload: Virtufin.Api.Protos.State.StateClient.#ctor*
+  nameWithType.vb: State.StateClient.New(ClientBase.ClientBaseConfiguration)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.New(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  name.vb: New(ClientBaseConfiguration)
+- uid: Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: SaveState(SaveStateRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.SaveState(SaveStateRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SaveState
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 177
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual SaveStateResponse SaveState(SaveStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.SaveStateRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Virtufin.Api.Protos.SaveStateResponse
+    content.vb: Public Overridable Function SaveState(request As SaveStateRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As SaveStateResponse
+  overload: Virtufin.Api.Protos.State.StateClient.SaveState*
+  nameWithType.vb: State.StateClient.SaveState(SaveStateRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: SaveState(SaveStateRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)
+  id: SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: SaveState(SaveStateRequest, CallOptions)
+  nameWithType: State.StateClient.SaveState(SaveStateRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: SaveState
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 182
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual SaveStateResponse SaveState(SaveStateRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.SaveStateRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Virtufin.Api.Protos.SaveStateResponse
+    content.vb: Public Overridable Function SaveState(request As SaveStateRequest, options As CallOptions) As SaveStateResponse
+  overload: Virtufin.Api.Protos.State.StateClient.SaveState*
+- uid: Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: SaveStateAsync(SaveStateRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.SaveStateAsync(SaveStateRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SaveStateAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 187
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<SaveStateResponse> SaveStateAsync(SaveStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.SaveStateRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.SaveStateResponse}
+    content.vb: Public Overridable Function SaveStateAsync(request As SaveStateRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As AsyncUnaryCall(Of SaveStateResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.SaveStateAsync*
+  nameWithType.vb: State.StateClient.SaveStateAsync(SaveStateRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: SaveStateAsync(SaveStateRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)
+  id: SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: SaveStateAsync(SaveStateRequest, CallOptions)
+  nameWithType: State.StateClient.SaveStateAsync(SaveStateRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: SaveStateAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 192
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<SaveStateResponse> SaveStateAsync(SaveStateRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.SaveStateRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.SaveStateResponse}
+    content.vb: Public Overridable Function SaveStateAsync(request As SaveStateRequest, options As CallOptions) As AsyncUnaryCall(Of SaveStateResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.SaveStateAsync*
+- uid: Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: GetState(GetStateRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.GetState(GetStateRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetState
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 197
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual GetStateResponse GetState(GetStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.GetStateRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Virtufin.Api.Protos.GetStateResponse
+    content.vb: Public Overridable Function GetState(request As GetStateRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As GetStateResponse
+  overload: Virtufin.Api.Protos.State.StateClient.GetState*
+  nameWithType.vb: State.StateClient.GetState(GetStateRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: GetState(GetStateRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)
+  id: GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: GetState(GetStateRequest, CallOptions)
+  nameWithType: State.StateClient.GetState(GetStateRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: GetState
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 202
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual GetStateResponse GetState(GetStateRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.GetStateRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Virtufin.Api.Protos.GetStateResponse
+    content.vb: Public Overridable Function GetState(request As GetStateRequest, options As CallOptions) As GetStateResponse
+  overload: Virtufin.Api.Protos.State.StateClient.GetState*
+- uid: Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: GetStateAsync(GetStateRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.GetStateAsync(GetStateRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetStateAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 207
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<GetStateResponse> GetStateAsync(GetStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.GetStateRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.GetStateResponse}
+    content.vb: Public Overridable Function GetStateAsync(request As GetStateRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As AsyncUnaryCall(Of GetStateResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.GetStateAsync*
+  nameWithType.vb: State.StateClient.GetStateAsync(GetStateRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: GetStateAsync(GetStateRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)
+  id: GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: GetStateAsync(GetStateRequest, CallOptions)
+  nameWithType: State.StateClient.GetStateAsync(GetStateRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: GetStateAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 212
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<GetStateResponse> GetStateAsync(GetStateRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.GetStateRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.GetStateResponse}
+    content.vb: Public Overridable Function GetStateAsync(request As GetStateRequest, options As CallOptions) As AsyncUnaryCall(Of GetStateResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.GetStateAsync*
+- uid: Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: GetAllState(GetAllStateRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.GetAllState(GetAllStateRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetAllState
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 217
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual GetAllStateResponse GetAllState(GetAllStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.GetAllStateRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Virtufin.Api.Protos.GetAllStateResponse
+    content.vb: Public Overridable Function GetAllState(request As GetAllStateRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As GetAllStateResponse
+  overload: Virtufin.Api.Protos.State.StateClient.GetAllState*
+  nameWithType.vb: State.StateClient.GetAllState(GetAllStateRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: GetAllState(GetAllStateRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)
+  id: GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: GetAllState(GetAllStateRequest, CallOptions)
+  nameWithType: State.StateClient.GetAllState(GetAllStateRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: GetAllState
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 222
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual GetAllStateResponse GetAllState(GetAllStateRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.GetAllStateRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Virtufin.Api.Protos.GetAllStateResponse
+    content.vb: Public Overridable Function GetAllState(request As GetAllStateRequest, options As CallOptions) As GetAllStateResponse
+  overload: Virtufin.Api.Protos.State.StateClient.GetAllState*
+- uid: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: GetAllStateAsync(GetAllStateRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.GetAllStateAsync(GetAllStateRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: GetAllStateAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 227
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<GetAllStateResponse> GetAllStateAsync(GetAllStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.GetAllStateRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.GetAllStateResponse}
+    content.vb: Public Overridable Function GetAllStateAsync(request As GetAllStateRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As AsyncUnaryCall(Of GetAllStateResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync*
+  nameWithType.vb: State.StateClient.GetAllStateAsync(GetAllStateRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: GetAllStateAsync(GetAllStateRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)
+  id: GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: GetAllStateAsync(GetAllStateRequest, CallOptions)
+  nameWithType: State.StateClient.GetAllStateAsync(GetAllStateRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: GetAllStateAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 232
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<GetAllStateResponse> GetAllStateAsync(GetAllStateRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.GetAllStateRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.GetAllStateResponse}
+    content.vb: Public Overridable Function GetAllStateAsync(request As GetAllStateRequest, options As CallOptions) As AsyncUnaryCall(Of GetAllStateResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync*
+- uid: Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterKeys(RegisterKeysRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.RegisterKeys(RegisterKeysRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RegisterKeys
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 237
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual RegisterKeysResponse RegisterKeys(RegisterKeysRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.RegisterKeysRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Virtufin.Api.Protos.RegisterKeysResponse
+    content.vb: Public Overridable Function RegisterKeys(request As RegisterKeysRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As RegisterKeysResponse
+  overload: Virtufin.Api.Protos.State.StateClient.RegisterKeys*
+  nameWithType.vb: State.StateClient.RegisterKeys(RegisterKeysRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: RegisterKeys(RegisterKeysRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)
+  id: RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterKeys(RegisterKeysRequest, CallOptions)
+  nameWithType: State.StateClient.RegisterKeys(RegisterKeysRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: RegisterKeys
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 242
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual RegisterKeysResponse RegisterKeys(RegisterKeysRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.RegisterKeysRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Virtufin.Api.Protos.RegisterKeysResponse
+    content.vb: Public Overridable Function RegisterKeys(request As RegisterKeysRequest, options As CallOptions) As RegisterKeysResponse
+  overload: Virtufin.Api.Protos.State.StateClient.RegisterKeys*
+- uid: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterKeysAsync(RegisterKeysRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.RegisterKeysAsync(RegisterKeysRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RegisterKeysAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 247
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<RegisterKeysResponse> RegisterKeysAsync(RegisterKeysRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.RegisterKeysRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.RegisterKeysResponse}
+    content.vb: Public Overridable Function RegisterKeysAsync(request As RegisterKeysRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As AsyncUnaryCall(Of RegisterKeysResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync*
+  nameWithType.vb: State.StateClient.RegisterKeysAsync(RegisterKeysRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: RegisterKeysAsync(RegisterKeysRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)
+  id: RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterKeysAsync(RegisterKeysRequest, CallOptions)
+  nameWithType: State.StateClient.RegisterKeysAsync(RegisterKeysRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: RegisterKeysAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 252
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<RegisterKeysResponse> RegisterKeysAsync(RegisterKeysRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.RegisterKeysRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.RegisterKeysResponse}
+    content.vb: Public Overridable Function RegisterKeysAsync(request As RegisterKeysRequest, options As CallOptions) As AsyncUnaryCall(Of RegisterKeysResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync*
+- uid: Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteState(DeleteStateRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.DeleteState(DeleteStateRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DeleteState
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 257
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual DeleteStateResponse DeleteState(DeleteStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.DeleteStateRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Virtufin.Api.Protos.DeleteStateResponse
+    content.vb: Public Overridable Function DeleteState(request As DeleteStateRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As DeleteStateResponse
+  overload: Virtufin.Api.Protos.State.StateClient.DeleteState*
+  nameWithType.vb: State.StateClient.DeleteState(DeleteStateRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: DeleteState(DeleteStateRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)
+  id: DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteState(DeleteStateRequest, CallOptions)
+  nameWithType: State.StateClient.DeleteState(DeleteStateRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: DeleteState
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 262
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual DeleteStateResponse DeleteState(DeleteStateRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.DeleteStateRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Virtufin.Api.Protos.DeleteStateResponse
+    content.vb: Public Overridable Function DeleteState(request As DeleteStateRequest, options As CallOptions) As DeleteStateResponse
+  overload: Virtufin.Api.Protos.State.StateClient.DeleteState*
+- uid: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteStateAsync(DeleteStateRequest, Metadata, DateTime?, CancellationToken)
+  nameWithType: State.StateClient.DeleteStateAsync(DeleteStateRequest, Metadata, DateTime?, CancellationToken)
+  fullName: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest, Grpc.Core.Metadata, System.DateTime?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: DeleteStateAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 267
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<DeleteStateResponse> DeleteStateAsync(DeleteStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.DeleteStateRequest
+    - id: headers
+      type: Grpc.Core.Metadata
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.DeleteStateResponse}
+    content.vb: Public Overridable Function DeleteStateAsync(request As DeleteStateRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As AsyncUnaryCall(Of DeleteStateResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync*
+  nameWithType.vb: State.StateClient.DeleteStateAsync(DeleteStateRequest, Metadata, Date?, CancellationToken)
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest, Grpc.Core.Metadata, Date?, System.Threading.CancellationToken)
+  name.vb: DeleteStateAsync(DeleteStateRequest, Metadata, Date?, CancellationToken)
+- uid: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)
+  id: DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteStateAsync(DeleteStateRequest, CallOptions)
+  nameWithType: State.StateClient.DeleteStateAsync(DeleteStateRequest, CallOptions)
+  fullName: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    id: DeleteStateAsync
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 272
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public virtual AsyncUnaryCall<DeleteStateResponse> DeleteStateAsync(DeleteStateRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.DeleteStateRequest
+    - id: options
+      type: Grpc.Core.CallOptions
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.DeleteStateResponse}
+    content.vb: Public Overridable Function DeleteStateAsync(request As DeleteStateRequest, options As CallOptions) As AsyncUnaryCall(Of DeleteStateResponse)
+  overload: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync*
+- uid: Virtufin.Api.Protos.State.StateClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  commentId: M:Virtufin.Api.Protos.State.StateClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  id: NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  parent: Virtufin.Api.Protos.State.StateClient
+  langs:
+  - csharp
+  - vb
+  name: NewInstance(ClientBaseConfiguration)
+  nameWithType: State.StateClient.NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName: Virtufin.Api.Protos.State.StateClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  type: Method
+  source:
+    id: NewInstance
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/StateGrpc.cs
+    startLine: 278
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Creates a new instance of client from given <code>ClientBaseConfiguration</code>.
+  example: []
+  syntax:
+    content: protected override State.StateClient NewInstance(ClientBase.ClientBaseConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Grpc.Core.ClientBase.ClientBaseConfiguration
+    return:
+      type: Virtufin.Api.Protos.State.StateClient
+    content.vb: Protected Overrides Function NewInstance(configuration As ClientBase.ClientBaseConfiguration) As State.StateClient
+  overridden: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  overload: Virtufin.Api.Protos.State.StateClient.NewInstance*
+references:
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  href: Virtufin.html
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Grpc.Core.ClientBase
+  commentId: T:Grpc.Core.ClientBase
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: ClientBase
+  nameWithType: ClientBase
+  fullName: Grpc.Core.ClientBase
+- uid: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}
+  commentId: T:Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}
+  parent: Grpc.Core
+  definition: Grpc.Core.ClientBase`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: ClientBase<State.StateClient>
+  nameWithType: ClientBase<State.StateClient>
+  fullName: Grpc.Core.ClientBase<Virtufin.Api.Protos.State.StateClient>
+  nameWithType.vb: ClientBase(Of State.StateClient)
+  fullName.vb: Grpc.Core.ClientBase(Of Virtufin.Api.Protos.State.StateClient)
+  name.vb: ClientBase(Of State.StateClient)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1
+    name: ClientBase
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: <
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    href: Virtufin.Api.Protos.State.html
+  - name: .
+  - uid: Virtufin.Api.Protos.State.StateClient
+    name: StateClient
+    href: Virtufin.Api.Protos.State.StateClient.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1
+    name: ClientBase
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    href: Virtufin.Api.Protos.State.html
+  - name: .
+  - uid: Virtufin.Api.Protos.State.StateClient
+    name: StateClient
+    href: Virtufin.Api.Protos.State.StateClient.html
+  - name: )
+- uid: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.WithHost(System.String)
+  commentId: M:Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.WithHost(System.String)
+  parent: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}
+  definition: Grpc.Core.ClientBase`1.WithHost(System.String)
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: WithHost(string)
+  nameWithType: ClientBase<State.StateClient>.WithHost(string)
+  fullName: Grpc.Core.ClientBase<Virtufin.Api.Protos.State.StateClient>.WithHost(string)
+  nameWithType.vb: ClientBase(Of State.StateClient).WithHost(String)
+  fullName.vb: Grpc.Core.ClientBase(Of Virtufin.Api.Protos.State.StateClient).WithHost(String)
+  name.vb: WithHost(String)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.WithHost(System.String)
+    name: WithHost
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.WithHost(System.String)
+    name: WithHost
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Grpc.Core.ClientBase.CallInvoker
+  commentId: P:Grpc.Core.ClientBase.CallInvoker
+  parent: Grpc.Core.ClientBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: CallInvoker
+  nameWithType: ClientBase.CallInvoker
+  fullName: Grpc.Core.ClientBase.CallInvoker
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Grpc.Core
+  commentId: N:Grpc.Core
+  isExternal: true
+  name: Grpc.Core
+  nameWithType: Grpc.Core
+  fullName: Grpc.Core
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+- uid: Grpc.Core.ClientBase`1
+  commentId: T:Grpc.Core.ClientBase`1
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: ClientBase<T>
+  nameWithType: ClientBase<T>
+  fullName: Grpc.Core.ClientBase<T>
+  nameWithType.vb: ClientBase(Of T)
+  fullName.vb: Grpc.Core.ClientBase(Of T)
+  name.vb: ClientBase(Of T)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1
+    name: ClientBase
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1
+    name: ClientBase
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Grpc.Core.ClientBase`1.WithHost(System.String)
+  commentId: M:Grpc.Core.ClientBase`1.WithHost(System.String)
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: WithHost(string)
+  nameWithType: ClientBase<T>.WithHost(string)
+  fullName: Grpc.Core.ClientBase<T>.WithHost(string)
+  nameWithType.vb: ClientBase(Of T).WithHost(String)
+  fullName.vb: Grpc.Core.ClientBase(Of T).WithHost(String)
+  name.vb: WithHost(String)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1.WithHost(System.String)
+    name: WithHost
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1.WithHost(System.String)
+    name: WithHost
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Api.Protos.State.StateClient.#ctor*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.#ctor
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient__ctor_Grpc_Core_ChannelBase_
+  name: StateClient
+  nameWithType: State.StateClient.StateClient
+  fullName: Virtufin.Api.Protos.State.StateClient.StateClient
+  nameWithType.vb: State.StateClient.New
+  fullName.vb: Virtufin.Api.Protos.State.StateClient.New
+  name.vb: New
+- uid: Grpc.Core.ChannelBase
+  commentId: T:Grpc.Core.ChannelBase
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ChannelBase.cs
+  name: ChannelBase
+  nameWithType: ChannelBase
+  fullName: Grpc.Core.ChannelBase
+- uid: Grpc.Core.CallInvoker
+  commentId: T:Grpc.Core.CallInvoker
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallInvoker.cs
+  name: CallInvoker
+  nameWithType: CallInvoker
+  fullName: Grpc.Core.CallInvoker
+- uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+  commentId: T:Grpc.Core.ClientBase.ClientBaseConfiguration
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: ClientBase.ClientBaseConfiguration
+  nameWithType: ClientBase.ClientBaseConfiguration
+  fullName: Grpc.Core.ClientBase.ClientBaseConfiguration
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase
+    name: ClientBase
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: .
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBaseConfiguration
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  spec.vb:
+  - uid: Grpc.Core.ClientBase
+    name: ClientBase
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: .
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBaseConfiguration
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+- uid: Virtufin.Api.Protos.State.StateClient.SaveState*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.SaveState
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: SaveState
+  nameWithType: State.StateClient.SaveState
+  fullName: Virtufin.Api.Protos.State.StateClient.SaveState
+- uid: Virtufin.Api.Protos.SaveStateRequest
+  commentId: T:Virtufin.Api.Protos.SaveStateRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.SaveStateRequest.html
+  name: SaveStateRequest
+  nameWithType: SaveStateRequest
+  fullName: Virtufin.Api.Protos.SaveStateRequest
+- uid: Grpc.Core.Metadata
+  commentId: T:Grpc.Core.Metadata
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs
+  name: Metadata
+  nameWithType: Metadata
+  fullName: Grpc.Core.Metadata
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Virtufin.Api.Protos.SaveStateResponse
+  commentId: T:Virtufin.Api.Protos.SaveStateResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.SaveStateResponse.html
+  name: SaveStateResponse
+  nameWithType: SaveStateResponse
+  fullName: Virtufin.Api.Protos.SaveStateResponse
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Grpc.Core.CallOptions
+  commentId: T:Grpc.Core.CallOptions
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs
+  name: CallOptions
+  nameWithType: CallOptions
+  fullName: Grpc.Core.CallOptions
+- uid: Virtufin.Api.Protos.State.StateClient.SaveStateAsync*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.SaveStateAsync
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_SaveStateAsync_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: SaveStateAsync
+  nameWithType: State.StateClient.SaveStateAsync
+  fullName: Virtufin.Api.Protos.State.StateClient.SaveStateAsync
+- uid: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.SaveStateResponse}
+  commentId: T:Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.SaveStateResponse}
+  parent: Grpc.Core
+  definition: Grpc.Core.AsyncUnaryCall`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  name: AsyncUnaryCall<SaveStateResponse>
+  nameWithType: AsyncUnaryCall<SaveStateResponse>
+  fullName: Grpc.Core.AsyncUnaryCall<Virtufin.Api.Protos.SaveStateResponse>
+  nameWithType.vb: AsyncUnaryCall(Of SaveStateResponse)
+  fullName.vb: Grpc.Core.AsyncUnaryCall(Of Virtufin.Api.Protos.SaveStateResponse)
+  name.vb: AsyncUnaryCall(Of SaveStateResponse)
+  spec.csharp:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: <
+  - uid: Virtufin.Api.Protos.SaveStateResponse
+    name: SaveStateResponse
+    href: Virtufin.Api.Protos.SaveStateResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.SaveStateResponse
+    name: SaveStateResponse
+    href: Virtufin.Api.Protos.SaveStateResponse.html
+  - name: )
+- uid: Grpc.Core.AsyncUnaryCall`1
+  commentId: T:Grpc.Core.AsyncUnaryCall`1
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  name: AsyncUnaryCall<TResponse>
+  nameWithType: AsyncUnaryCall<TResponse>
+  fullName: Grpc.Core.AsyncUnaryCall<TResponse>
+  nameWithType.vb: AsyncUnaryCall(Of TResponse)
+  fullName.vb: Grpc.Core.AsyncUnaryCall(Of TResponse)
+  name.vb: AsyncUnaryCall(Of TResponse)
+  spec.csharp:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Virtufin.Api.Protos.State.StateClient.GetState*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.GetState
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: GetState
+  nameWithType: State.StateClient.GetState
+  fullName: Virtufin.Api.Protos.State.StateClient.GetState
+- uid: Virtufin.Api.Protos.GetStateRequest
+  commentId: T:Virtufin.Api.Protos.GetStateRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetStateRequest.html
+  name: GetStateRequest
+  nameWithType: GetStateRequest
+  fullName: Virtufin.Api.Protos.GetStateRequest
+- uid: Virtufin.Api.Protos.GetStateResponse
+  commentId: T:Virtufin.Api.Protos.GetStateResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetStateResponse.html
+  name: GetStateResponse
+  nameWithType: GetStateResponse
+  fullName: Virtufin.Api.Protos.GetStateResponse
+- uid: Virtufin.Api.Protos.State.StateClient.GetStateAsync*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.GetStateAsync
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_GetStateAsync_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: GetStateAsync
+  nameWithType: State.StateClient.GetStateAsync
+  fullName: Virtufin.Api.Protos.State.StateClient.GetStateAsync
+- uid: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.GetStateResponse}
+  commentId: T:Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.GetStateResponse}
+  parent: Grpc.Core
+  definition: Grpc.Core.AsyncUnaryCall`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  name: AsyncUnaryCall<GetStateResponse>
+  nameWithType: AsyncUnaryCall<GetStateResponse>
+  fullName: Grpc.Core.AsyncUnaryCall<Virtufin.Api.Protos.GetStateResponse>
+  nameWithType.vb: AsyncUnaryCall(Of GetStateResponse)
+  fullName.vb: Grpc.Core.AsyncUnaryCall(Of Virtufin.Api.Protos.GetStateResponse)
+  name.vb: AsyncUnaryCall(Of GetStateResponse)
+  spec.csharp:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: <
+  - uid: Virtufin.Api.Protos.GetStateResponse
+    name: GetStateResponse
+    href: Virtufin.Api.Protos.GetStateResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.GetStateResponse
+    name: GetStateResponse
+    href: Virtufin.Api.Protos.GetStateResponse.html
+  - name: )
+- uid: Virtufin.Api.Protos.State.StateClient.GetAllState*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.GetAllState
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: GetAllState
+  nameWithType: State.StateClient.GetAllState
+  fullName: Virtufin.Api.Protos.State.StateClient.GetAllState
+- uid: Virtufin.Api.Protos.GetAllStateRequest
+  commentId: T:Virtufin.Api.Protos.GetAllStateRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetAllStateRequest.html
+  name: GetAllStateRequest
+  nameWithType: GetAllStateRequest
+  fullName: Virtufin.Api.Protos.GetAllStateRequest
+- uid: Virtufin.Api.Protos.GetAllStateResponse
+  commentId: T:Virtufin.Api.Protos.GetAllStateResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetAllStateResponse.html
+  name: GetAllStateResponse
+  nameWithType: GetAllStateResponse
+  fullName: Virtufin.Api.Protos.GetAllStateResponse
+- uid: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.GetAllStateAsync
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_GetAllStateAsync_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: GetAllStateAsync
+  nameWithType: State.StateClient.GetAllStateAsync
+  fullName: Virtufin.Api.Protos.State.StateClient.GetAllStateAsync
+- uid: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.GetAllStateResponse}
+  commentId: T:Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.GetAllStateResponse}
+  parent: Grpc.Core
+  definition: Grpc.Core.AsyncUnaryCall`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  name: AsyncUnaryCall<GetAllStateResponse>
+  nameWithType: AsyncUnaryCall<GetAllStateResponse>
+  fullName: Grpc.Core.AsyncUnaryCall<Virtufin.Api.Protos.GetAllStateResponse>
+  nameWithType.vb: AsyncUnaryCall(Of GetAllStateResponse)
+  fullName.vb: Grpc.Core.AsyncUnaryCall(Of Virtufin.Api.Protos.GetAllStateResponse)
+  name.vb: AsyncUnaryCall(Of GetAllStateResponse)
+  spec.csharp:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: <
+  - uid: Virtufin.Api.Protos.GetAllStateResponse
+    name: GetAllStateResponse
+    href: Virtufin.Api.Protos.GetAllStateResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.GetAllStateResponse
+    name: GetAllStateResponse
+    href: Virtufin.Api.Protos.GetAllStateResponse.html
+  - name: )
+- uid: Virtufin.Api.Protos.State.StateClient.RegisterKeys*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.RegisterKeys
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: RegisterKeys
+  nameWithType: State.StateClient.RegisterKeys
+  fullName: Virtufin.Api.Protos.State.StateClient.RegisterKeys
+- uid: Virtufin.Api.Protos.RegisterKeysRequest
+  commentId: T:Virtufin.Api.Protos.RegisterKeysRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.RegisterKeysRequest.html
+  name: RegisterKeysRequest
+  nameWithType: RegisterKeysRequest
+  fullName: Virtufin.Api.Protos.RegisterKeysRequest
+- uid: Virtufin.Api.Protos.RegisterKeysResponse
+  commentId: T:Virtufin.Api.Protos.RegisterKeysResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.RegisterKeysResponse.html
+  name: RegisterKeysResponse
+  nameWithType: RegisterKeysResponse
+  fullName: Virtufin.Api.Protos.RegisterKeysResponse
+- uid: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_RegisterKeysAsync_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: RegisterKeysAsync
+  nameWithType: State.StateClient.RegisterKeysAsync
+  fullName: Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync
+- uid: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.RegisterKeysResponse}
+  commentId: T:Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.RegisterKeysResponse}
+  parent: Grpc.Core
+  definition: Grpc.Core.AsyncUnaryCall`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  name: AsyncUnaryCall<RegisterKeysResponse>
+  nameWithType: AsyncUnaryCall<RegisterKeysResponse>
+  fullName: Grpc.Core.AsyncUnaryCall<Virtufin.Api.Protos.RegisterKeysResponse>
+  nameWithType.vb: AsyncUnaryCall(Of RegisterKeysResponse)
+  fullName.vb: Grpc.Core.AsyncUnaryCall(Of Virtufin.Api.Protos.RegisterKeysResponse)
+  name.vb: AsyncUnaryCall(Of RegisterKeysResponse)
+  spec.csharp:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: <
+  - uid: Virtufin.Api.Protos.RegisterKeysResponse
+    name: RegisterKeysResponse
+    href: Virtufin.Api.Protos.RegisterKeysResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.RegisterKeysResponse
+    name: RegisterKeysResponse
+    href: Virtufin.Api.Protos.RegisterKeysResponse.html
+  - name: )
+- uid: Virtufin.Api.Protos.State.StateClient.DeleteState*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.DeleteState
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: DeleteState
+  nameWithType: State.StateClient.DeleteState
+  fullName: Virtufin.Api.Protos.State.StateClient.DeleteState
+- uid: Virtufin.Api.Protos.DeleteStateRequest
+  commentId: T:Virtufin.Api.Protos.DeleteStateRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.DeleteStateRequest.html
+  name: DeleteStateRequest
+  nameWithType: DeleteStateRequest
+  fullName: Virtufin.Api.Protos.DeleteStateRequest
+- uid: Virtufin.Api.Protos.DeleteStateResponse
+  commentId: T:Virtufin.Api.Protos.DeleteStateResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.DeleteStateResponse.html
+  name: DeleteStateResponse
+  nameWithType: DeleteStateResponse
+  fullName: Virtufin.Api.Protos.DeleteStateResponse
+- uid: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.DeleteStateAsync
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_DeleteStateAsync_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  name: DeleteStateAsync
+  nameWithType: State.StateClient.DeleteStateAsync
+  fullName: Virtufin.Api.Protos.State.StateClient.DeleteStateAsync
+- uid: Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.DeleteStateResponse}
+  commentId: T:Grpc.Core.AsyncUnaryCall{Virtufin.Api.Protos.DeleteStateResponse}
+  parent: Grpc.Core
+  definition: Grpc.Core.AsyncUnaryCall`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  name: AsyncUnaryCall<DeleteStateResponse>
+  nameWithType: AsyncUnaryCall<DeleteStateResponse>
+  fullName: Grpc.Core.AsyncUnaryCall<Virtufin.Api.Protos.DeleteStateResponse>
+  nameWithType.vb: AsyncUnaryCall(Of DeleteStateResponse)
+  fullName.vb: Grpc.Core.AsyncUnaryCall(Of Virtufin.Api.Protos.DeleteStateResponse)
+  name.vb: AsyncUnaryCall(Of DeleteStateResponse)
+  spec.csharp:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: <
+  - uid: Virtufin.Api.Protos.DeleteStateResponse
+    name: DeleteStateResponse
+    href: Virtufin.Api.Protos.DeleteStateResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.DeleteStateResponse
+    name: DeleteStateResponse
+    href: Virtufin.Api.Protos.DeleteStateResponse.html
+  - name: )
+- uid: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  commentId: M:Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  parent: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}
+  definition: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: NewInstance(ClientBaseConfiguration)
+  nameWithType: ClientBase<State.StateClient>.NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName: Grpc.Core.ClientBase<Virtufin.Api.Protos.State.StateClient>.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  nameWithType.vb: ClientBase(Of State.StateClient).NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName.vb: Grpc.Core.ClientBase(Of Virtufin.Api.Protos.State.StateClient).NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+    name: NewInstance
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBaseConfiguration
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: )
+  spec.vb:
+  - uid: Grpc.Core.ClientBase{Virtufin.Api.Protos.State.StateClient}.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+    name: NewInstance
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBaseConfiguration
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: )
+- uid: Virtufin.Api.Protos.State.StateClient.NewInstance*
+  commentId: Overload:Virtufin.Api.Protos.State.StateClient.NewInstance
+  href: Virtufin.Api.Protos.State.StateClient.html#Virtufin_Api_Protos_State_StateClient_NewInstance_Grpc_Core_ClientBase_ClientBaseConfiguration_
+  name: NewInstance
+  nameWithType: State.StateClient.NewInstance
+  fullName: Virtufin.Api.Protos.State.StateClient.NewInstance
+- uid: Virtufin.Api.Protos.State.StateClient
+  commentId: T:Virtufin.Api.Protos.State.StateClient
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.State.html
+  name: State.StateClient
+  nameWithType: State.StateClient
+  fullName: Virtufin.Api.Protos.State.StateClient
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    href: Virtufin.Api.Protos.State.html
+  - name: .
+  - uid: Virtufin.Api.Protos.State.StateClient
+    name: StateClient
+    href: Virtufin.Api.Protos.State.StateClient.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    href: Virtufin.Api.Protos.State.html
+  - name: .
+  - uid: Virtufin.Api.Protos.State.StateClient
+    name: StateClient
+    href: Virtufin.Api.Protos.State.StateClient.html
+- uid: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  commentId: M:Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  name: NewInstance(ClientBaseConfiguration)
+  nameWithType: ClientBase<T>.NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName: Grpc.Core.ClientBase<T>.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  nameWithType.vb: ClientBase(Of T).NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName.vb: Grpc.Core.ClientBase(Of T).NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+    name: NewInstance
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBaseConfiguration
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: )
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+    name: NewInstance
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: (
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBaseConfiguration
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs
+  - name: )

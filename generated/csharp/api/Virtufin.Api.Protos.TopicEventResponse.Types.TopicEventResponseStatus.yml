@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  commentId: T:Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  id: TopicEventResponse.Types.TopicEventResponseStatus
+  parent: Virtufin.Api.Protos
+  children:
+  - Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Drop
+  - Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Retry
+  - Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Success
+  langs:
+  - csharp
+  - vb
+  name: TopicEventResponse.Types.TopicEventResponseStatus
+  nameWithType: TopicEventResponse.Types.TopicEventResponseStatus
+  fullName: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  type: Enum
+  source:
+    id: TopicEventResponseStatus
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 5250
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public enum TopicEventResponse.Types.TopicEventResponseStatus
+    content.vb: Public Enum TopicEventResponse.Types.TopicEventResponseStatus
+- uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Success
+  commentId: F:Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Success
+  id: Success
+  parent: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: TopicEventResponse.Types.TopicEventResponseStatus.Success
+  fullName: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Success
+  type: Field
+  source:
+    id: Success
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 5251
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: >-
+      [OriginalName("SUCCESS")]
+
+      Success = 0
+    return:
+      type: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+    content.vb: >-
+      <OriginalName("SUCCESS")>
+
+      Success = 0
+  attributes:
+  - type: Google.Protobuf.Reflection.OriginalNameAttribute
+    ctor: Google.Protobuf.Reflection.OriginalNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SUCCESS
+- uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Retry
+  commentId: F:Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Retry
+  id: Retry
+  parent: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  langs:
+  - csharp
+  - vb
+  name: Retry
+  nameWithType: TopicEventResponse.Types.TopicEventResponseStatus.Retry
+  fullName: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Retry
+  type: Field
+  source:
+    id: Retry
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 5252
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: >-
+      [OriginalName("RETRY")]
+
+      Retry = 1
+    return:
+      type: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+    content.vb: >-
+      <OriginalName("RETRY")>
+
+      Retry = 1
+  attributes:
+  - type: Google.Protobuf.Reflection.OriginalNameAttribute
+    ctor: Google.Protobuf.Reflection.OriginalNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: RETRY
+- uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Drop
+  commentId: F:Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Drop
+  id: Drop
+  parent: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  langs:
+  - csharp
+  - vb
+  name: Drop
+  nameWithType: TopicEventResponse.Types.TopicEventResponseStatus.Drop
+  fullName: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.Drop
+  type: Field
+  source:
+    id: Drop
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 5253
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: >-
+      [OriginalName("DROP")]
+
+      Drop = 2
+    return:
+      type: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+    content.vb: >-
+      <OriginalName("DROP")>
+
+      Drop = 2
+  attributes:
+  - type: Google.Protobuf.Reflection.OriginalNameAttribute
+    ctor: Google.Protobuf.Reflection.OriginalNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DROP
+references:
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  href: Virtufin.html
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+- uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  commentId: T:Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.TopicEventResponse.html
+  name: TopicEventResponse.Types.TopicEventResponseStatus
+  nameWithType: TopicEventResponse.Types.TopicEventResponseStatus
+  fullName: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.TopicEventResponse
+    name: TopicEventResponse
+    href: Virtufin.Api.Protos.TopicEventResponse.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types
+    name: Types
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+    name: TopicEventResponseStatus
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.TopicEventResponse
+    name: TopicEventResponse
+    href: Virtufin.Api.Protos.TopicEventResponse.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types
+    name: Types
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+    name: TopicEventResponseStatus
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.html

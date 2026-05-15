@@ -1,0 +1,1796 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Protos.FieldSchema
+  commentId: T:Virtufin.Api.Protos.FieldSchema
+  id: FieldSchema
+  parent: Virtufin.Api.Protos
+  children:
+  - Virtufin.Api.Protos.FieldSchema.#ctor
+  - Virtufin.Api.Protos.FieldSchema.#ctor(Virtufin.Api.Protos.FieldSchema)
+  - Virtufin.Api.Protos.FieldSchema.CalculateSize
+  - Virtufin.Api.Protos.FieldSchema.Clone
+  - Virtufin.Api.Protos.FieldSchema.Descriptor
+  - Virtufin.Api.Protos.FieldSchema.Equals(System.Object)
+  - Virtufin.Api.Protos.FieldSchema.Equals(Virtufin.Api.Protos.FieldSchema)
+  - Virtufin.Api.Protos.FieldSchema.GetHashCode
+  - Virtufin.Api.Protos.FieldSchema.IsOptional
+  - Virtufin.Api.Protos.FieldSchema.IsOptionalFieldNumber
+  - Virtufin.Api.Protos.FieldSchema.IsRepeated
+  - Virtufin.Api.Protos.FieldSchema.IsRepeatedFieldNumber
+  - Virtufin.Api.Protos.FieldSchema.MergeFrom(Google.Protobuf.CodedInputStream)
+  - Virtufin.Api.Protos.FieldSchema.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  - Virtufin.Api.Protos.FieldSchema.Name
+  - Virtufin.Api.Protos.FieldSchema.NameFieldNumber
+  - Virtufin.Api.Protos.FieldSchema.OneofCases
+  - Virtufin.Api.Protos.FieldSchema.OneofCasesFieldNumber
+  - Virtufin.Api.Protos.FieldSchema.OneofGroup
+  - Virtufin.Api.Protos.FieldSchema.OneofGroupFieldNumber
+  - Virtufin.Api.Protos.FieldSchema.Parser
+  - Virtufin.Api.Protos.FieldSchema.ToString
+  - Virtufin.Api.Protos.FieldSchema.Type
+  - Virtufin.Api.Protos.FieldSchema.TypeFieldNumber
+  - Virtufin.Api.Protos.FieldSchema.TypeName
+  - Virtufin.Api.Protos.FieldSchema.TypeNameFieldNumber
+  - Virtufin.Api.Protos.FieldSchema.WriteTo(Google.Protobuf.CodedOutputStream)
+  langs:
+  - csharp
+  - vb
+  name: FieldSchema
+  nameWithType: FieldSchema
+  fullName: Virtufin.Api.Protos.FieldSchema
+  type: Class
+  source:
+    id: FieldSchema
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3837
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: 'public sealed class FieldSchema : IMessage<FieldSchema>, IEquatable<FieldSchema>, IDeepCloneable<FieldSchema>, IBufferMessage, IMessage'
+    content.vb: Public NotInheritable Class FieldSchema Implements IMessage(Of FieldSchema), IEquatable(Of FieldSchema), IDeepCloneable(Of FieldSchema), IBufferMessage, IMessage
+  inheritance:
+  - System.Object
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}
+  - System.IEquatable{Virtufin.Api.Protos.FieldSchema}
+  - Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}
+  - Google.Protobuf.IBufferMessage
+  - Google.Protobuf.IMessage
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Api.Protos.FieldSchema.Parser
+  commentId: P:Virtufin.Api.Protos.FieldSchema.Parser
+  id: Parser
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: Parser
+  nameWithType: FieldSchema.Parser
+  fullName: Virtufin.Api.Protos.FieldSchema.Parser
+  type: Property
+  source:
+    id: Parser
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3845
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public static MessageParser<FieldSchema> Parser { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.MessageParser{Virtufin.Api.Protos.FieldSchema}
+    content.vb: Public Shared ReadOnly Property Parser As MessageParser(Of FieldSchema)
+  overload: Virtufin.Api.Protos.FieldSchema.Parser*
+- uid: Virtufin.Api.Protos.FieldSchema.Descriptor
+  commentId: P:Virtufin.Api.Protos.FieldSchema.Descriptor
+  id: Descriptor
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: Descriptor
+  nameWithType: FieldSchema.Descriptor
+  fullName: Virtufin.Api.Protos.FieldSchema.Descriptor
+  type: Property
+  source:
+    id: Descriptor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3849
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public static MessageDescriptor Descriptor { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.Reflection.MessageDescriptor
+    content.vb: Public Shared ReadOnly Property Descriptor As MessageDescriptor
+  overload: Virtufin.Api.Protos.FieldSchema.Descriptor*
+- uid: Virtufin.Api.Protos.FieldSchema.#ctor
+  commentId: M:Virtufin.Api.Protos.FieldSchema.#ctor
+  id: '#ctor'
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: FieldSchema()
+  nameWithType: FieldSchema.FieldSchema()
+  fullName: Virtufin.Api.Protos.FieldSchema.FieldSchema()
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3861
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public FieldSchema()
+    content.vb: Public Sub New()
+  overload: Virtufin.Api.Protos.FieldSchema.#ctor*
+  nameWithType.vb: FieldSchema.New()
+  fullName.vb: Virtufin.Api.Protos.FieldSchema.New()
+  name.vb: New()
+- uid: Virtufin.Api.Protos.FieldSchema.#ctor(Virtufin.Api.Protos.FieldSchema)
+  commentId: M:Virtufin.Api.Protos.FieldSchema.#ctor(Virtufin.Api.Protos.FieldSchema)
+  id: '#ctor(Virtufin.Api.Protos.FieldSchema)'
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: FieldSchema(FieldSchema)
+  nameWithType: FieldSchema.FieldSchema(FieldSchema)
+  fullName: Virtufin.Api.Protos.FieldSchema.FieldSchema(Virtufin.Api.Protos.FieldSchema)
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3869
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public FieldSchema(FieldSchema other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.FieldSchema
+    content.vb: Public Sub New(other As FieldSchema)
+  overload: Virtufin.Api.Protos.FieldSchema.#ctor*
+  nameWithType.vb: FieldSchema.New(FieldSchema)
+  fullName.vb: Virtufin.Api.Protos.FieldSchema.New(Virtufin.Api.Protos.FieldSchema)
+  name.vb: New(FieldSchema)
+- uid: Virtufin.Api.Protos.FieldSchema.Clone
+  commentId: M:Virtufin.Api.Protos.FieldSchema.Clone
+  id: Clone
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: FieldSchema.Clone()
+  fullName: Virtufin.Api.Protos.FieldSchema.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3882
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Creates a deep clone of this object.
+  example: []
+  syntax:
+    content: public FieldSchema Clone()
+    return:
+      type: Virtufin.Api.Protos.FieldSchema
+      description: A deep clone of this object.
+    content.vb: Public Function Clone() As FieldSchema
+  overload: Virtufin.Api.Protos.FieldSchema.Clone*
+  implements:
+  - Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}.Clone
+- uid: Virtufin.Api.Protos.FieldSchema.NameFieldNumber
+  commentId: F:Virtufin.Api.Protos.FieldSchema.NameFieldNumber
+  id: NameFieldNumber
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: NameFieldNumber
+  nameWithType: FieldSchema.NameFieldNumber
+  fullName: Virtufin.Api.Protos.FieldSchema.NameFieldNumber
+  type: Field
+  source:
+    id: NameFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3889
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "name" field.
+  example: []
+  syntax:
+    content: public const int NameFieldNumber = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const NameFieldNumber As Integer = 1
+- uid: Virtufin.Api.Protos.FieldSchema.Name
+  commentId: P:Virtufin.Api.Protos.FieldSchema.Name
+  id: Name
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: FieldSchema.Name
+  fullName: Virtufin.Api.Protos.FieldSchema.Name
+  type: Property
+  source:
+    id: Name
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3891
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Virtufin.Api.Protos.FieldSchema.Name*
+- uid: Virtufin.Api.Protos.FieldSchema.TypeFieldNumber
+  commentId: F:Virtufin.Api.Protos.FieldSchema.TypeFieldNumber
+  id: TypeFieldNumber
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: TypeFieldNumber
+  nameWithType: FieldSchema.TypeFieldNumber
+  fullName: Virtufin.Api.Protos.FieldSchema.TypeFieldNumber
+  type: Field
+  source:
+    id: TypeFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3901
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "type" field.
+  example: []
+  syntax:
+    content: public const int TypeFieldNumber = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const TypeFieldNumber As Integer = 2
+- uid: Virtufin.Api.Protos.FieldSchema.Type
+  commentId: P:Virtufin.Api.Protos.FieldSchema.Type
+  id: Type
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: FieldSchema.Type
+  fullName: Virtufin.Api.Protos.FieldSchema.Type
+  type: Property
+  source:
+    id: Type
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3903
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Virtufin.Api.Protos.FieldSchema.Type*
+- uid: Virtufin.Api.Protos.FieldSchema.TypeNameFieldNumber
+  commentId: F:Virtufin.Api.Protos.FieldSchema.TypeNameFieldNumber
+  id: TypeNameFieldNumber
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: TypeNameFieldNumber
+  nameWithType: FieldSchema.TypeNameFieldNumber
+  fullName: Virtufin.Api.Protos.FieldSchema.TypeNameFieldNumber
+  type: Field
+  source:
+    id: TypeNameFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3913
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "type_name" field.
+  example: []
+  syntax:
+    content: public const int TypeNameFieldNumber = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const TypeNameFieldNumber As Integer = 3
+- uid: Virtufin.Api.Protos.FieldSchema.TypeName
+  commentId: P:Virtufin.Api.Protos.FieldSchema.TypeName
+  id: TypeName
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: TypeName
+  nameWithType: FieldSchema.TypeName
+  fullName: Virtufin.Api.Protos.FieldSchema.TypeName
+  type: Property
+  source:
+    id: TypeName
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3915
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public string TypeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TypeName As String
+  overload: Virtufin.Api.Protos.FieldSchema.TypeName*
+- uid: Virtufin.Api.Protos.FieldSchema.IsRepeatedFieldNumber
+  commentId: F:Virtufin.Api.Protos.FieldSchema.IsRepeatedFieldNumber
+  id: IsRepeatedFieldNumber
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: IsRepeatedFieldNumber
+  nameWithType: FieldSchema.IsRepeatedFieldNumber
+  fullName: Virtufin.Api.Protos.FieldSchema.IsRepeatedFieldNumber
+  type: Field
+  source:
+    id: IsRepeatedFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3925
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "is_repeated" field.
+  example: []
+  syntax:
+    content: public const int IsRepeatedFieldNumber = 4
+    return:
+      type: System.Int32
+    content.vb: Public Const IsRepeatedFieldNumber As Integer = 4
+- uid: Virtufin.Api.Protos.FieldSchema.IsRepeated
+  commentId: P:Virtufin.Api.Protos.FieldSchema.IsRepeated
+  id: IsRepeated
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: IsRepeated
+  nameWithType: FieldSchema.IsRepeated
+  fullName: Virtufin.Api.Protos.FieldSchema.IsRepeated
+  type: Property
+  source:
+    id: IsRepeated
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3927
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public bool IsRepeated { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRepeated As Boolean
+  overload: Virtufin.Api.Protos.FieldSchema.IsRepeated*
+- uid: Virtufin.Api.Protos.FieldSchema.IsOptionalFieldNumber
+  commentId: F:Virtufin.Api.Protos.FieldSchema.IsOptionalFieldNumber
+  id: IsOptionalFieldNumber
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: IsOptionalFieldNumber
+  nameWithType: FieldSchema.IsOptionalFieldNumber
+  fullName: Virtufin.Api.Protos.FieldSchema.IsOptionalFieldNumber
+  type: Field
+  source:
+    id: IsOptionalFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3937
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "is_optional" field.
+  example: []
+  syntax:
+    content: public const int IsOptionalFieldNumber = 5
+    return:
+      type: System.Int32
+    content.vb: Public Const IsOptionalFieldNumber As Integer = 5
+- uid: Virtufin.Api.Protos.FieldSchema.IsOptional
+  commentId: P:Virtufin.Api.Protos.FieldSchema.IsOptional
+  id: IsOptional
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: IsOptional
+  nameWithType: FieldSchema.IsOptional
+  fullName: Virtufin.Api.Protos.FieldSchema.IsOptional
+  type: Property
+  source:
+    id: IsOptional
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3939
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public bool IsOptional { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsOptional As Boolean
+  overload: Virtufin.Api.Protos.FieldSchema.IsOptional*
+- uid: Virtufin.Api.Protos.FieldSchema.OneofGroupFieldNumber
+  commentId: F:Virtufin.Api.Protos.FieldSchema.OneofGroupFieldNumber
+  id: OneofGroupFieldNumber
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: OneofGroupFieldNumber
+  nameWithType: FieldSchema.OneofGroupFieldNumber
+  fullName: Virtufin.Api.Protos.FieldSchema.OneofGroupFieldNumber
+  type: Field
+  source:
+    id: OneofGroupFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3949
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "oneof_group" field.
+  example: []
+  syntax:
+    content: public const int OneofGroupFieldNumber = 6
+    return:
+      type: System.Int32
+    content.vb: Public Const OneofGroupFieldNumber As Integer = 6
+- uid: Virtufin.Api.Protos.FieldSchema.OneofGroup
+  commentId: P:Virtufin.Api.Protos.FieldSchema.OneofGroup
+  id: OneofGroup
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: OneofGroup
+  nameWithType: FieldSchema.OneofGroup
+  fullName: Virtufin.Api.Protos.FieldSchema.OneofGroup
+  type: Property
+  source:
+    id: OneofGroup
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3951
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public string OneofGroup { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OneofGroup As String
+  overload: Virtufin.Api.Protos.FieldSchema.OneofGroup*
+- uid: Virtufin.Api.Protos.FieldSchema.OneofCasesFieldNumber
+  commentId: F:Virtufin.Api.Protos.FieldSchema.OneofCasesFieldNumber
+  id: OneofCasesFieldNumber
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: OneofCasesFieldNumber
+  nameWithType: FieldSchema.OneofCasesFieldNumber
+  fullName: Virtufin.Api.Protos.FieldSchema.OneofCasesFieldNumber
+  type: Field
+  source:
+    id: OneofCasesFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3961
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "oneof_cases" field.
+  example: []
+  syntax:
+    content: public const int OneofCasesFieldNumber = 7
+    return:
+      type: System.Int32
+    content.vb: Public Const OneofCasesFieldNumber As Integer = 7
+- uid: Virtufin.Api.Protos.FieldSchema.OneofCases
+  commentId: P:Virtufin.Api.Protos.FieldSchema.OneofCases
+  id: OneofCases
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: OneofCases
+  nameWithType: FieldSchema.OneofCases
+  fullName: Virtufin.Api.Protos.FieldSchema.OneofCases
+  type: Property
+  source:
+    id: OneofCases
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3965
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public RepeatedField<OneofCaseSchema> OneofCases { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.Collections.RepeatedField{Virtufin.Api.Protos.OneofCaseSchema}
+    content.vb: Public ReadOnly Property OneofCases As RepeatedField(Of OneofCaseSchema)
+  overload: Virtufin.Api.Protos.FieldSchema.OneofCases*
+- uid: Virtufin.Api.Protos.FieldSchema.Equals(System.Object)
+  commentId: M:Virtufin.Api.Protos.FieldSchema.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: FieldSchema.Equals(object)
+  fullName: Virtufin.Api.Protos.FieldSchema.Equals(object)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3971
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Virtufin.Api.Protos.FieldSchema.Equals*
+  nameWithType.vb: FieldSchema.Equals(Object)
+  fullName.vb: Virtufin.Api.Protos.FieldSchema.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Virtufin.Api.Protos.FieldSchema.Equals(Virtufin.Api.Protos.FieldSchema)
+  commentId: M:Virtufin.Api.Protos.FieldSchema.Equals(Virtufin.Api.Protos.FieldSchema)
+  id: Equals(Virtufin.Api.Protos.FieldSchema)
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: Equals(FieldSchema)
+  nameWithType: FieldSchema.Equals(FieldSchema)
+  fullName: Virtufin.Api.Protos.FieldSchema.Equals(Virtufin.Api.Protos.FieldSchema)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3977
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(FieldSchema other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.FieldSchema
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As FieldSchema) As Boolean
+  overload: Virtufin.Api.Protos.FieldSchema.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Api.Protos.FieldSchema}.Equals(Virtufin.Api.Protos.FieldSchema)
+- uid: Virtufin.Api.Protos.FieldSchema.GetHashCode
+  commentId: M:Virtufin.Api.Protos.FieldSchema.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: FieldSchema.GetHashCode()
+  fullName: Virtufin.Api.Protos.FieldSchema.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3996
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Virtufin.Api.Protos.FieldSchema.GetHashCode*
+- uid: Virtufin.Api.Protos.FieldSchema.ToString
+  commentId: M:Virtufin.Api.Protos.FieldSchema.ToString
+  id: ToString
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: FieldSchema.ToString()
+  fullName: Virtufin.Api.Protos.FieldSchema.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 4013
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Virtufin.Api.Protos.FieldSchema.ToString*
+- uid: Virtufin.Api.Protos.FieldSchema.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Virtufin.Api.Protos.FieldSchema.WriteTo(Google.Protobuf.CodedOutputStream)
+  id: WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(CodedOutputStream)
+  nameWithType: FieldSchema.WriteTo(CodedOutputStream)
+  fullName: Virtufin.Api.Protos.FieldSchema.WriteTo(Google.Protobuf.CodedOutputStream)
+  type: Method
+  source:
+    id: WriteTo
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 4019
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Writes the data to the given coded output stream.
+  example: []
+  syntax:
+    content: public void WriteTo(CodedOutputStream output)
+    parameters:
+    - id: output
+      type: Google.Protobuf.CodedOutputStream
+      description: Coded output stream to write the data to. Must not be null.
+    content.vb: Public Sub WriteTo(output As CodedOutputStream)
+  overload: Virtufin.Api.Protos.FieldSchema.WriteTo*
+  implements:
+  - Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+- uid: Virtufin.Api.Protos.FieldSchema.CalculateSize
+  commentId: M:Virtufin.Api.Protos.FieldSchema.CalculateSize
+  id: CalculateSize
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: CalculateSize()
+  nameWithType: FieldSchema.CalculateSize()
+  fullName: Virtufin.Api.Protos.FieldSchema.CalculateSize()
+  type: Method
+  source:
+    id: CalculateSize
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 4091
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Calculates the size of this message in Protocol Buffer wire format, in bytes.
+  example: []
+  syntax:
+    content: public int CalculateSize()
+    return:
+      type: System.Int32
+      description: >-
+        The number of bytes required to write this message
+                    to a coded output stream.
+    content.vb: Public Function CalculateSize() As Integer
+  overload: Virtufin.Api.Protos.FieldSchema.CalculateSize*
+  implements:
+  - Google.Protobuf.IMessage.CalculateSize
+- uid: Virtufin.Api.Protos.FieldSchema.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  commentId: M:Virtufin.Api.Protos.FieldSchema.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  id: MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(FieldSchema)
+  nameWithType: FieldSchema.MergeFrom(FieldSchema)
+  fullName: Virtufin.Api.Protos.FieldSchema.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 4120
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Merges the given message into this one.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(FieldSchema other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.FieldSchema
+    content.vb: Public Sub MergeFrom(other As FieldSchema)
+  overload: Virtufin.Api.Protos.FieldSchema.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+- uid: Virtufin.Api.Protos.FieldSchema.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Virtufin.Api.Protos.FieldSchema.MergeFrom(Google.Protobuf.CodedInputStream)
+  id: MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Virtufin.Api.Protos.FieldSchema
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(CodedInputStream)
+  nameWithType: FieldSchema.MergeFrom(CodedInputStream)
+  fullName: Virtufin.Api.Protos.FieldSchema.MergeFrom(Google.Protobuf.CodedInputStream)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 4148
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Merges the data from the specified coded input stream with the current message.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(CodedInputStream input)
+    parameters:
+    - id: input
+      type: Google.Protobuf.CodedInputStream
+      description: ''
+    content.vb: Public Sub MergeFrom(input As CodedInputStream)
+  overload: Virtufin.Api.Protos.FieldSchema.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+references:
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  href: Virtufin.html
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}
+  commentId: T:Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IMessage`1
+  href: Virtufin.Api.Protos.FieldSchema.html
+  name: IMessage<FieldSchema>
+  nameWithType: IMessage<FieldSchema>
+  fullName: Google.Protobuf.IMessage<Virtufin.Api.Protos.FieldSchema>
+  nameWithType.vb: IMessage(Of FieldSchema)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.Api.Protos.FieldSchema)
+  name.vb: IMessage(Of FieldSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Api.Protos.FieldSchema}
+  commentId: T:System.IEquatable{Virtufin.Api.Protos.FieldSchema}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<FieldSchema>
+  nameWithType: IEquatable<FieldSchema>
+  fullName: System.IEquatable<Virtufin.Api.Protos.FieldSchema>
+  nameWithType.vb: IEquatable(Of FieldSchema)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Protos.FieldSchema)
+  name.vb: IEquatable(Of FieldSchema)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}
+  commentId: T:Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IDeepCloneable`1
+  href: Virtufin.Api.Protos.FieldSchema.html
+  name: IDeepCloneable<FieldSchema>
+  nameWithType: IDeepCloneable<FieldSchema>
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.Api.Protos.FieldSchema>
+  nameWithType.vb: IDeepCloneable(Of FieldSchema)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.Api.Protos.FieldSchema)
+  name.vb: IDeepCloneable(Of FieldSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+- uid: Google.Protobuf.IBufferMessage
+  commentId: T:Google.Protobuf.IBufferMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IBufferMessage
+  nameWithType: IBufferMessage
+  fullName: Google.Protobuf.IBufferMessage
+- uid: Google.Protobuf.IMessage
+  commentId: T:Google.Protobuf.IMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Google.Protobuf.IMessage
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Google.Protobuf.IMessage`1
+  commentId: T:Google.Protobuf.IMessage`1
+  isExternal: true
+  name: IMessage<T>
+  nameWithType: IMessage<T>
+  fullName: Google.Protobuf.IMessage<T>
+  nameWithType.vb: IMessage(Of T)
+  fullName.vb: Google.Protobuf.IMessage(Of T)
+  name.vb: IMessage(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf
+  commentId: N:Google.Protobuf
+  isExternal: true
+  name: Google.Protobuf
+  nameWithType: Google.Protobuf
+  fullName: Google.Protobuf
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1
+  commentId: T:Google.Protobuf.IDeepCloneable`1
+  isExternal: true
+  name: IDeepCloneable<T>
+  nameWithType: IDeepCloneable<T>
+  fullName: Google.Protobuf.IDeepCloneable<T>
+  nameWithType.vb: IDeepCloneable(Of T)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T)
+  name.vb: IDeepCloneable(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Protos.FieldSchema.Parser*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.Parser
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_Parser
+  name: Parser
+  nameWithType: FieldSchema.Parser
+  fullName: Virtufin.Api.Protos.FieldSchema.Parser
+- uid: Google.Protobuf.MessageParser{Virtufin.Api.Protos.FieldSchema}
+  commentId: T:Google.Protobuf.MessageParser{Virtufin.Api.Protos.FieldSchema}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.MessageParser`1
+  href: Virtufin.Api.Protos.FieldSchema.html
+  name: MessageParser<FieldSchema>
+  nameWithType: MessageParser<FieldSchema>
+  fullName: Google.Protobuf.MessageParser<Virtufin.Api.Protos.FieldSchema>
+  nameWithType.vb: MessageParser(Of FieldSchema)
+  fullName.vb: Google.Protobuf.MessageParser(Of Virtufin.Api.Protos.FieldSchema)
+  name.vb: MessageParser(Of FieldSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+- uid: Google.Protobuf.MessageParser`1
+  commentId: T:Google.Protobuf.MessageParser`1
+  isExternal: true
+  name: MessageParser<T>
+  nameWithType: MessageParser<T>
+  fullName: Google.Protobuf.MessageParser<T>
+  nameWithType.vb: MessageParser(Of T)
+  fullName.vb: Google.Protobuf.MessageParser(Of T)
+  name.vb: MessageParser(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Protos.FieldSchema.Descriptor*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.Descriptor
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_Descriptor
+  name: Descriptor
+  nameWithType: FieldSchema.Descriptor
+  fullName: Virtufin.Api.Protos.FieldSchema.Descriptor
+- uid: Google.Protobuf.Reflection.MessageDescriptor
+  commentId: T:Google.Protobuf.Reflection.MessageDescriptor
+  parent: Google.Protobuf.Reflection
+  isExternal: true
+  name: MessageDescriptor
+  nameWithType: MessageDescriptor
+  fullName: Google.Protobuf.Reflection.MessageDescriptor
+- uid: Google.Protobuf.Reflection
+  commentId: N:Google.Protobuf.Reflection
+  isExternal: true
+  name: Google.Protobuf.Reflection
+  nameWithType: Google.Protobuf.Reflection
+  fullName: Google.Protobuf.Reflection
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+- uid: Virtufin.Api.Protos.FieldSchema.#ctor*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.#ctor
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema__ctor
+  name: FieldSchema
+  nameWithType: FieldSchema.FieldSchema
+  fullName: Virtufin.Api.Protos.FieldSchema.FieldSchema
+  nameWithType.vb: FieldSchema.New
+  fullName.vb: Virtufin.Api.Protos.FieldSchema.New
+  name.vb: New
+- uid: Virtufin.Api.Protos.FieldSchema
+  commentId: T:Virtufin.Api.Protos.FieldSchema
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.FieldSchema.html
+  name: FieldSchema
+  nameWithType: FieldSchema
+  fullName: Virtufin.Api.Protos.FieldSchema
+- uid: Virtufin.Api.Protos.FieldSchema.Clone*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.Clone
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_Clone
+  name: Clone
+  nameWithType: FieldSchema.Clone
+  fullName: Virtufin.Api.Protos.FieldSchema.Clone
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}.Clone
+  parent: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}
+  definition: Google.Protobuf.IDeepCloneable`1.Clone
+  name: Clone()
+  nameWithType: IDeepCloneable<FieldSchema>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.Api.Protos.FieldSchema>.Clone()
+  nameWithType.vb: IDeepCloneable(Of FieldSchema).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.Api.Protos.FieldSchema).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.FieldSchema}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable`1.Clone
+  isExternal: true
+  name: Clone()
+  nameWithType: IDeepCloneable<T>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<T>.Clone()
+  nameWithType.vb: IDeepCloneable(Of T).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Api.Protos.FieldSchema.Name*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.Name
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_Name
+  name: Name
+  nameWithType: FieldSchema.Name
+  fullName: Virtufin.Api.Protos.FieldSchema.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Api.Protos.FieldSchema.Type*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.Type
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_Type
+  name: Type
+  nameWithType: FieldSchema.Type
+  fullName: Virtufin.Api.Protos.FieldSchema.Type
+- uid: Virtufin.Api.Protos.FieldSchema.TypeName*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.TypeName
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_TypeName
+  name: TypeName
+  nameWithType: FieldSchema.TypeName
+  fullName: Virtufin.Api.Protos.FieldSchema.TypeName
+- uid: Virtufin.Api.Protos.FieldSchema.IsRepeated*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.IsRepeated
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_IsRepeated
+  name: IsRepeated
+  nameWithType: FieldSchema.IsRepeated
+  fullName: Virtufin.Api.Protos.FieldSchema.IsRepeated
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Virtufin.Api.Protos.FieldSchema.IsOptional*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.IsOptional
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_IsOptional
+  name: IsOptional
+  nameWithType: FieldSchema.IsOptional
+  fullName: Virtufin.Api.Protos.FieldSchema.IsOptional
+- uid: Virtufin.Api.Protos.FieldSchema.OneofGroup*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.OneofGroup
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_OneofGroup
+  name: OneofGroup
+  nameWithType: FieldSchema.OneofGroup
+  fullName: Virtufin.Api.Protos.FieldSchema.OneofGroup
+- uid: Virtufin.Api.Protos.FieldSchema.OneofCases*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.OneofCases
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_OneofCases
+  name: OneofCases
+  nameWithType: FieldSchema.OneofCases
+  fullName: Virtufin.Api.Protos.FieldSchema.OneofCases
+- uid: Google.Protobuf.Collections.RepeatedField{Virtufin.Api.Protos.OneofCaseSchema}
+  commentId: T:Google.Protobuf.Collections.RepeatedField{Virtufin.Api.Protos.OneofCaseSchema}
+  parent: Google.Protobuf.Collections
+  definition: Google.Protobuf.Collections.RepeatedField`1
+  href: Virtufin.Api.Protos.OneofCaseSchema.html
+  name: RepeatedField<OneofCaseSchema>
+  nameWithType: RepeatedField<OneofCaseSchema>
+  fullName: Google.Protobuf.Collections.RepeatedField<Virtufin.Api.Protos.OneofCaseSchema>
+  nameWithType.vb: RepeatedField(Of OneofCaseSchema)
+  fullName.vb: Google.Protobuf.Collections.RepeatedField(Of Virtufin.Api.Protos.OneofCaseSchema)
+  name.vb: RepeatedField(Of OneofCaseSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.Collections.RepeatedField`1
+    name: RepeatedField
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.OneofCaseSchema
+    name: OneofCaseSchema
+    href: Virtufin.Api.Protos.OneofCaseSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.Collections.RepeatedField`1
+    name: RepeatedField
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.OneofCaseSchema
+    name: OneofCaseSchema
+    href: Virtufin.Api.Protos.OneofCaseSchema.html
+  - name: )
+- uid: Google.Protobuf.Collections.RepeatedField`1
+  commentId: T:Google.Protobuf.Collections.RepeatedField`1
+  isExternal: true
+  name: RepeatedField<T>
+  nameWithType: RepeatedField<T>
+  fullName: Google.Protobuf.Collections.RepeatedField<T>
+  nameWithType.vb: RepeatedField(Of T)
+  fullName.vb: Google.Protobuf.Collections.RepeatedField(Of T)
+  name.vb: RepeatedField(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.Collections.RepeatedField`1
+    name: RepeatedField
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.Collections.RepeatedField`1
+    name: RepeatedField
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf.Collections
+  commentId: N:Google.Protobuf.Collections
+  isExternal: true
+  name: Google.Protobuf.Collections
+  nameWithType: Google.Protobuf.Collections
+  fullName: Google.Protobuf.Collections
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Collections
+    name: Collections
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Collections
+    name: Collections
+    isExternal: true
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Api.Protos.FieldSchema.Equals*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.Equals
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_Equals_System_Object_
+  name: Equals
+  nameWithType: FieldSchema.Equals
+  fullName: Virtufin.Api.Protos.FieldSchema.Equals
+- uid: System.IEquatable{Virtufin.Api.Protos.FieldSchema}.Equals(Virtufin.Api.Protos.FieldSchema)
+  commentId: M:System.IEquatable{Virtufin.Api.Protos.FieldSchema}.Equals(Virtufin.Api.Protos.FieldSchema)
+  parent: System.IEquatable{Virtufin.Api.Protos.FieldSchema}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(FieldSchema)
+  nameWithType: IEquatable<FieldSchema>.Equals(FieldSchema)
+  fullName: System.IEquatable<Virtufin.Api.Protos.FieldSchema>.Equals(Virtufin.Api.Protos.FieldSchema)
+  nameWithType.vb: IEquatable(Of FieldSchema).Equals(FieldSchema)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Protos.FieldSchema).Equals(Virtufin.Api.Protos.FieldSchema)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Api.Protos.FieldSchema}.Equals(Virtufin.Api.Protos.FieldSchema)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Api.Protos.FieldSchema}.Equals(Virtufin.Api.Protos.FieldSchema)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.FieldSchema.GetHashCode*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.GetHashCode
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_GetHashCode
+  name: GetHashCode
+  nameWithType: FieldSchema.GetHashCode
+  fullName: Virtufin.Api.Protos.FieldSchema.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.FieldSchema.ToString*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.ToString
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_ToString
+  name: ToString
+  nameWithType: FieldSchema.ToString
+  fullName: Virtufin.Api.Protos.FieldSchema.ToString
+- uid: Virtufin.Api.Protos.FieldSchema.WriteTo*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.WriteTo
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_WriteTo_Google_Protobuf_CodedOutputStream_
+  name: WriteTo
+  nameWithType: FieldSchema.WriteTo
+  fullName: Virtufin.Api.Protos.FieldSchema.WriteTo
+- uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: WriteTo(CodedOutputStream)
+  nameWithType: IMessage.WriteTo(CodedOutputStream)
+  fullName: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedOutputStream
+  commentId: T:Google.Protobuf.CodedOutputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedOutputStream
+  nameWithType: CodedOutputStream
+  fullName: Google.Protobuf.CodedOutputStream
+- uid: Virtufin.Api.Protos.FieldSchema.CalculateSize*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.CalculateSize
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_CalculateSize
+  name: CalculateSize
+  nameWithType: FieldSchema.CalculateSize
+  fullName: Virtufin.Api.Protos.FieldSchema.CalculateSize
+- uid: Google.Protobuf.IMessage.CalculateSize
+  commentId: M:Google.Protobuf.IMessage.CalculateSize
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: CalculateSize()
+  nameWithType: IMessage.CalculateSize()
+  fullName: Google.Protobuf.IMessage.CalculateSize()
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.FieldSchema.MergeFrom*
+  commentId: Overload:Virtufin.Api.Protos.FieldSchema.MergeFrom
+  href: Virtufin.Api.Protos.FieldSchema.html#Virtufin_Api_Protos_FieldSchema_MergeFrom_Virtufin_Api_Protos_FieldSchema_
+  name: MergeFrom
+  nameWithType: FieldSchema.MergeFrom
+  fullName: Virtufin.Api.Protos.FieldSchema.MergeFrom
+- uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  commentId: M:Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  parent: Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}
+  definition: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  href: Virtufin.Api.Protos.FieldSchema.html
+  name: MergeFrom(FieldSchema)
+  nameWithType: IMessage<FieldSchema>.MergeFrom(FieldSchema)
+  fullName: Google.Protobuf.IMessage<Virtufin.Api.Protos.FieldSchema>.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  nameWithType.vb: IMessage(Of FieldSchema).MergeFrom(FieldSchema)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.Api.Protos.FieldSchema).MergeFrom(Virtufin.Api.Protos.FieldSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.FieldSchema}.MergeFrom(Virtufin.Api.Protos.FieldSchema)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+- uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  commentId: M:Google.Protobuf.IMessage`1.MergeFrom(`0)
+  isExternal: true
+  name: MergeFrom(T)
+  nameWithType: IMessage<T>.MergeFrom(T)
+  fullName: Google.Protobuf.IMessage<T>.MergeFrom(T)
+  nameWithType.vb: IMessage(Of T).MergeFrom(T)
+  fullName.vb: Google.Protobuf.IMessage(Of T).MergeFrom(T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: MergeFrom(CodedInputStream)
+  nameWithType: IMessage.MergeFrom(CodedInputStream)
+  fullName: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedInputStream
+  commentId: T:Google.Protobuf.CodedInputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedInputStream
+  nameWithType: CodedInputStream
+  fullName: Google.Protobuf.CodedInputStream

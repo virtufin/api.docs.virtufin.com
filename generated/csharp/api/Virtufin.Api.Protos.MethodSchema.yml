@@ -1,0 +1,1622 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Protos.MethodSchema
+  commentId: T:Virtufin.Api.Protos.MethodSchema
+  id: MethodSchema
+  parent: Virtufin.Api.Protos
+  children:
+  - Virtufin.Api.Protos.MethodSchema.#ctor
+  - Virtufin.Api.Protos.MethodSchema.#ctor(Virtufin.Api.Protos.MethodSchema)
+  - Virtufin.Api.Protos.MethodSchema.CalculateSize
+  - Virtufin.Api.Protos.MethodSchema.Clone
+  - Virtufin.Api.Protos.MethodSchema.Descriptor
+  - Virtufin.Api.Protos.MethodSchema.Equals(System.Object)
+  - Virtufin.Api.Protos.MethodSchema.Equals(Virtufin.Api.Protos.MethodSchema)
+  - Virtufin.Api.Protos.MethodSchema.Fields
+  - Virtufin.Api.Protos.MethodSchema.FieldsFieldNumber
+  - Virtufin.Api.Protos.MethodSchema.GetHashCode
+  - Virtufin.Api.Protos.MethodSchema.InputTypeName
+  - Virtufin.Api.Protos.MethodSchema.InputTypeNameFieldNumber
+  - Virtufin.Api.Protos.MethodSchema.MergeFrom(Google.Protobuf.CodedInputStream)
+  - Virtufin.Api.Protos.MethodSchema.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  - Virtufin.Api.Protos.MethodSchema.OutputTypeName
+  - Virtufin.Api.Protos.MethodSchema.OutputTypeNameFieldNumber
+  - Virtufin.Api.Protos.MethodSchema.Parser
+  - Virtufin.Api.Protos.MethodSchema.SchemaType
+  - Virtufin.Api.Protos.MethodSchema.SchemaTypeFieldNumber
+  - Virtufin.Api.Protos.MethodSchema.ToString
+  - Virtufin.Api.Protos.MethodSchema.WriteTo(Google.Protobuf.CodedOutputStream)
+  langs:
+  - csharp
+  - vb
+  name: MethodSchema
+  nameWithType: MethodSchema
+  fullName: Virtufin.Api.Protos.MethodSchema
+  type: Class
+  source:
+    id: MethodSchema
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3539
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: 'public sealed class MethodSchema : IMessage<MethodSchema>, IEquatable<MethodSchema>, IDeepCloneable<MethodSchema>, IBufferMessage, IMessage'
+    content.vb: Public NotInheritable Class MethodSchema Implements IMessage(Of MethodSchema), IEquatable(Of MethodSchema), IDeepCloneable(Of MethodSchema), IBufferMessage, IMessage
+  inheritance:
+  - System.Object
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}
+  - System.IEquatable{Virtufin.Api.Protos.MethodSchema}
+  - Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}
+  - Google.Protobuf.IBufferMessage
+  - Google.Protobuf.IMessage
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Api.Protos.MethodSchema.Parser
+  commentId: P:Virtufin.Api.Protos.MethodSchema.Parser
+  id: Parser
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: Parser
+  nameWithType: MethodSchema.Parser
+  fullName: Virtufin.Api.Protos.MethodSchema.Parser
+  type: Property
+  source:
+    id: Parser
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3547
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public static MessageParser<MethodSchema> Parser { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.MessageParser{Virtufin.Api.Protos.MethodSchema}
+    content.vb: Public Shared ReadOnly Property Parser As MessageParser(Of MethodSchema)
+  overload: Virtufin.Api.Protos.MethodSchema.Parser*
+- uid: Virtufin.Api.Protos.MethodSchema.Descriptor
+  commentId: P:Virtufin.Api.Protos.MethodSchema.Descriptor
+  id: Descriptor
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: Descriptor
+  nameWithType: MethodSchema.Descriptor
+  fullName: Virtufin.Api.Protos.MethodSchema.Descriptor
+  type: Property
+  source:
+    id: Descriptor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3551
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public static MessageDescriptor Descriptor { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.Reflection.MessageDescriptor
+    content.vb: Public Shared ReadOnly Property Descriptor As MessageDescriptor
+  overload: Virtufin.Api.Protos.MethodSchema.Descriptor*
+- uid: Virtufin.Api.Protos.MethodSchema.#ctor
+  commentId: M:Virtufin.Api.Protos.MethodSchema.#ctor
+  id: '#ctor'
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: MethodSchema()
+  nameWithType: MethodSchema.MethodSchema()
+  fullName: Virtufin.Api.Protos.MethodSchema.MethodSchema()
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3563
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public MethodSchema()
+    content.vb: Public Sub New()
+  overload: Virtufin.Api.Protos.MethodSchema.#ctor*
+  nameWithType.vb: MethodSchema.New()
+  fullName.vb: Virtufin.Api.Protos.MethodSchema.New()
+  name.vb: New()
+- uid: Virtufin.Api.Protos.MethodSchema.#ctor(Virtufin.Api.Protos.MethodSchema)
+  commentId: M:Virtufin.Api.Protos.MethodSchema.#ctor(Virtufin.Api.Protos.MethodSchema)
+  id: '#ctor(Virtufin.Api.Protos.MethodSchema)'
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: MethodSchema(MethodSchema)
+  nameWithType: MethodSchema.MethodSchema(MethodSchema)
+  fullName: Virtufin.Api.Protos.MethodSchema.MethodSchema(Virtufin.Api.Protos.MethodSchema)
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3571
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public MethodSchema(MethodSchema other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.MethodSchema
+    content.vb: Public Sub New(other As MethodSchema)
+  overload: Virtufin.Api.Protos.MethodSchema.#ctor*
+  nameWithType.vb: MethodSchema.New(MethodSchema)
+  fullName.vb: Virtufin.Api.Protos.MethodSchema.New(Virtufin.Api.Protos.MethodSchema)
+  name.vb: New(MethodSchema)
+- uid: Virtufin.Api.Protos.MethodSchema.Clone
+  commentId: M:Virtufin.Api.Protos.MethodSchema.Clone
+  id: Clone
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: MethodSchema.Clone()
+  fullName: Virtufin.Api.Protos.MethodSchema.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3581
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Creates a deep clone of this object.
+  example: []
+  syntax:
+    content: public MethodSchema Clone()
+    return:
+      type: Virtufin.Api.Protos.MethodSchema
+      description: A deep clone of this object.
+    content.vb: Public Function Clone() As MethodSchema
+  overload: Virtufin.Api.Protos.MethodSchema.Clone*
+  implements:
+  - Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}.Clone
+- uid: Virtufin.Api.Protos.MethodSchema.InputTypeNameFieldNumber
+  commentId: F:Virtufin.Api.Protos.MethodSchema.InputTypeNameFieldNumber
+  id: InputTypeNameFieldNumber
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: InputTypeNameFieldNumber
+  nameWithType: MethodSchema.InputTypeNameFieldNumber
+  fullName: Virtufin.Api.Protos.MethodSchema.InputTypeNameFieldNumber
+  type: Field
+  source:
+    id: InputTypeNameFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3588
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "input_type_name" field.
+  example: []
+  syntax:
+    content: public const int InputTypeNameFieldNumber = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const InputTypeNameFieldNumber As Integer = 1
+- uid: Virtufin.Api.Protos.MethodSchema.InputTypeName
+  commentId: P:Virtufin.Api.Protos.MethodSchema.InputTypeName
+  id: InputTypeName
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: InputTypeName
+  nameWithType: MethodSchema.InputTypeName
+  fullName: Virtufin.Api.Protos.MethodSchema.InputTypeName
+  type: Property
+  source:
+    id: InputTypeName
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3590
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public string InputTypeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InputTypeName As String
+  overload: Virtufin.Api.Protos.MethodSchema.InputTypeName*
+- uid: Virtufin.Api.Protos.MethodSchema.OutputTypeNameFieldNumber
+  commentId: F:Virtufin.Api.Protos.MethodSchema.OutputTypeNameFieldNumber
+  id: OutputTypeNameFieldNumber
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: OutputTypeNameFieldNumber
+  nameWithType: MethodSchema.OutputTypeNameFieldNumber
+  fullName: Virtufin.Api.Protos.MethodSchema.OutputTypeNameFieldNumber
+  type: Field
+  source:
+    id: OutputTypeNameFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3600
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "output_type_name" field.
+  example: []
+  syntax:
+    content: public const int OutputTypeNameFieldNumber = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const OutputTypeNameFieldNumber As Integer = 2
+- uid: Virtufin.Api.Protos.MethodSchema.OutputTypeName
+  commentId: P:Virtufin.Api.Protos.MethodSchema.OutputTypeName
+  id: OutputTypeName
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: OutputTypeName
+  nameWithType: MethodSchema.OutputTypeName
+  fullName: Virtufin.Api.Protos.MethodSchema.OutputTypeName
+  type: Property
+  source:
+    id: OutputTypeName
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3602
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public string OutputTypeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OutputTypeName As String
+  overload: Virtufin.Api.Protos.MethodSchema.OutputTypeName*
+- uid: Virtufin.Api.Protos.MethodSchema.SchemaTypeFieldNumber
+  commentId: F:Virtufin.Api.Protos.MethodSchema.SchemaTypeFieldNumber
+  id: SchemaTypeFieldNumber
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: SchemaTypeFieldNumber
+  nameWithType: MethodSchema.SchemaTypeFieldNumber
+  fullName: Virtufin.Api.Protos.MethodSchema.SchemaTypeFieldNumber
+  type: Field
+  source:
+    id: SchemaTypeFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3612
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "schema_type" field.
+  example: []
+  syntax:
+    content: public const int SchemaTypeFieldNumber = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const SchemaTypeFieldNumber As Integer = 3
+- uid: Virtufin.Api.Protos.MethodSchema.SchemaType
+  commentId: P:Virtufin.Api.Protos.MethodSchema.SchemaType
+  id: SchemaType
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: SchemaType
+  nameWithType: MethodSchema.SchemaType
+  fullName: Virtufin.Api.Protos.MethodSchema.SchemaType
+  type: Property
+  source:
+    id: SchemaType
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3614
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public string SchemaType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SchemaType As String
+  overload: Virtufin.Api.Protos.MethodSchema.SchemaType*
+- uid: Virtufin.Api.Protos.MethodSchema.FieldsFieldNumber
+  commentId: F:Virtufin.Api.Protos.MethodSchema.FieldsFieldNumber
+  id: FieldsFieldNumber
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: FieldsFieldNumber
+  nameWithType: MethodSchema.FieldsFieldNumber
+  fullName: Virtufin.Api.Protos.MethodSchema.FieldsFieldNumber
+  type: Field
+  source:
+    id: FieldsFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3624
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "fields" field.
+  example: []
+  syntax:
+    content: public const int FieldsFieldNumber = 4
+    return:
+      type: System.Int32
+    content.vb: Public Const FieldsFieldNumber As Integer = 4
+- uid: Virtufin.Api.Protos.MethodSchema.Fields
+  commentId: P:Virtufin.Api.Protos.MethodSchema.Fields
+  id: Fields
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: MethodSchema.Fields
+  fullName: Virtufin.Api.Protos.MethodSchema.Fields
+  type: Property
+  source:
+    id: Fields
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3628
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public RepeatedField<FieldSchema> Fields { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.Collections.RepeatedField{Virtufin.Api.Protos.FieldSchema}
+    content.vb: Public ReadOnly Property Fields As RepeatedField(Of FieldSchema)
+  overload: Virtufin.Api.Protos.MethodSchema.Fields*
+- uid: Virtufin.Api.Protos.MethodSchema.Equals(System.Object)
+  commentId: M:Virtufin.Api.Protos.MethodSchema.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: MethodSchema.Equals(object)
+  fullName: Virtufin.Api.Protos.MethodSchema.Equals(object)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3634
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Virtufin.Api.Protos.MethodSchema.Equals*
+  nameWithType.vb: MethodSchema.Equals(Object)
+  fullName.vb: Virtufin.Api.Protos.MethodSchema.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Virtufin.Api.Protos.MethodSchema.Equals(Virtufin.Api.Protos.MethodSchema)
+  commentId: M:Virtufin.Api.Protos.MethodSchema.Equals(Virtufin.Api.Protos.MethodSchema)
+  id: Equals(Virtufin.Api.Protos.MethodSchema)
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: Equals(MethodSchema)
+  nameWithType: MethodSchema.Equals(MethodSchema)
+  fullName: Virtufin.Api.Protos.MethodSchema.Equals(Virtufin.Api.Protos.MethodSchema)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3640
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(MethodSchema other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.MethodSchema
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As MethodSchema) As Boolean
+  overload: Virtufin.Api.Protos.MethodSchema.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Api.Protos.MethodSchema}.Equals(Virtufin.Api.Protos.MethodSchema)
+- uid: Virtufin.Api.Protos.MethodSchema.GetHashCode
+  commentId: M:Virtufin.Api.Protos.MethodSchema.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: MethodSchema.GetHashCode()
+  fullName: Virtufin.Api.Protos.MethodSchema.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3656
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Virtufin.Api.Protos.MethodSchema.GetHashCode*
+- uid: Virtufin.Api.Protos.MethodSchema.ToString
+  commentId: M:Virtufin.Api.Protos.MethodSchema.ToString
+  id: ToString
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: MethodSchema.ToString()
+  fullName: Virtufin.Api.Protos.MethodSchema.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3670
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Virtufin.Api.Protos.MethodSchema.ToString*
+- uid: Virtufin.Api.Protos.MethodSchema.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Virtufin.Api.Protos.MethodSchema.WriteTo(Google.Protobuf.CodedOutputStream)
+  id: WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(CodedOutputStream)
+  nameWithType: MethodSchema.WriteTo(CodedOutputStream)
+  fullName: Virtufin.Api.Protos.MethodSchema.WriteTo(Google.Protobuf.CodedOutputStream)
+  type: Method
+  source:
+    id: WriteTo
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3676
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Writes the data to the given coded output stream.
+  example: []
+  syntax:
+    content: public void WriteTo(CodedOutputStream output)
+    parameters:
+    - id: output
+      type: Google.Protobuf.CodedOutputStream
+      description: Coded output stream to write the data to. Must not be null.
+    content.vb: Public Sub WriteTo(output As CodedOutputStream)
+  overload: Virtufin.Api.Protos.MethodSchema.WriteTo*
+  implements:
+  - Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+- uid: Virtufin.Api.Protos.MethodSchema.CalculateSize
+  commentId: M:Virtufin.Api.Protos.MethodSchema.CalculateSize
+  id: CalculateSize
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: CalculateSize()
+  nameWithType: MethodSchema.CalculateSize()
+  fullName: Virtufin.Api.Protos.MethodSchema.CalculateSize()
+  type: Method
+  source:
+    id: CalculateSize
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3724
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Calculates the size of this message in Protocol Buffer wire format, in bytes.
+  example: []
+  syntax:
+    content: public int CalculateSize()
+    return:
+      type: System.Int32
+      description: >-
+        The number of bytes required to write this message
+                    to a coded output stream.
+    content.vb: Public Function CalculateSize() As Integer
+  overload: Virtufin.Api.Protos.MethodSchema.CalculateSize*
+  implements:
+  - Google.Protobuf.IMessage.CalculateSize
+- uid: Virtufin.Api.Protos.MethodSchema.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  commentId: M:Virtufin.Api.Protos.MethodSchema.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  id: MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(MethodSchema)
+  nameWithType: MethodSchema.MergeFrom(MethodSchema)
+  fullName: Virtufin.Api.Protos.MethodSchema.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3744
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Merges the given message into this one.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(MethodSchema other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.MethodSchema
+    content.vb: Public Sub MergeFrom(other As MethodSchema)
+  overload: Virtufin.Api.Protos.MethodSchema.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+- uid: Virtufin.Api.Protos.MethodSchema.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Virtufin.Api.Protos.MethodSchema.MergeFrom(Google.Protobuf.CodedInputStream)
+  id: MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Virtufin.Api.Protos.MethodSchema
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(CodedInputStream)
+  nameWithType: MethodSchema.MergeFrom(CodedInputStream)
+  fullName: Virtufin.Api.Protos.MethodSchema.MergeFrom(Google.Protobuf.CodedInputStream)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Gateway.cs
+    startLine: 3763
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Merges the data from the specified coded input stream with the current message.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(CodedInputStream input)
+    parameters:
+    - id: input
+      type: Google.Protobuf.CodedInputStream
+      description: ''
+    content.vb: Public Sub MergeFrom(input As CodedInputStream)
+  overload: Virtufin.Api.Protos.MethodSchema.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+references:
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  href: Virtufin.html
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}
+  commentId: T:Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IMessage`1
+  href: Virtufin.Api.Protos.MethodSchema.html
+  name: IMessage<MethodSchema>
+  nameWithType: IMessage<MethodSchema>
+  fullName: Google.Protobuf.IMessage<Virtufin.Api.Protos.MethodSchema>
+  nameWithType.vb: IMessage(Of MethodSchema)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.Api.Protos.MethodSchema)
+  name.vb: IMessage(Of MethodSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Api.Protos.MethodSchema}
+  commentId: T:System.IEquatable{Virtufin.Api.Protos.MethodSchema}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<MethodSchema>
+  nameWithType: IEquatable<MethodSchema>
+  fullName: System.IEquatable<Virtufin.Api.Protos.MethodSchema>
+  nameWithType.vb: IEquatable(Of MethodSchema)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Protos.MethodSchema)
+  name.vb: IEquatable(Of MethodSchema)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}
+  commentId: T:Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IDeepCloneable`1
+  href: Virtufin.Api.Protos.MethodSchema.html
+  name: IDeepCloneable<MethodSchema>
+  nameWithType: IDeepCloneable<MethodSchema>
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.Api.Protos.MethodSchema>
+  nameWithType.vb: IDeepCloneable(Of MethodSchema)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.Api.Protos.MethodSchema)
+  name.vb: IDeepCloneable(Of MethodSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: )
+- uid: Google.Protobuf.IBufferMessage
+  commentId: T:Google.Protobuf.IBufferMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IBufferMessage
+  nameWithType: IBufferMessage
+  fullName: Google.Protobuf.IBufferMessage
+- uid: Google.Protobuf.IMessage
+  commentId: T:Google.Protobuf.IMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Google.Protobuf.IMessage
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Google.Protobuf.IMessage`1
+  commentId: T:Google.Protobuf.IMessage`1
+  isExternal: true
+  name: IMessage<T>
+  nameWithType: IMessage<T>
+  fullName: Google.Protobuf.IMessage<T>
+  nameWithType.vb: IMessage(Of T)
+  fullName.vb: Google.Protobuf.IMessage(Of T)
+  name.vb: IMessage(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf
+  commentId: N:Google.Protobuf
+  isExternal: true
+  name: Google.Protobuf
+  nameWithType: Google.Protobuf
+  fullName: Google.Protobuf
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1
+  commentId: T:Google.Protobuf.IDeepCloneable`1
+  isExternal: true
+  name: IDeepCloneable<T>
+  nameWithType: IDeepCloneable<T>
+  fullName: Google.Protobuf.IDeepCloneable<T>
+  nameWithType.vb: IDeepCloneable(Of T)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T)
+  name.vb: IDeepCloneable(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Protos.MethodSchema.Parser*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.Parser
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_Parser
+  name: Parser
+  nameWithType: MethodSchema.Parser
+  fullName: Virtufin.Api.Protos.MethodSchema.Parser
+- uid: Google.Protobuf.MessageParser{Virtufin.Api.Protos.MethodSchema}
+  commentId: T:Google.Protobuf.MessageParser{Virtufin.Api.Protos.MethodSchema}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.MessageParser`1
+  href: Virtufin.Api.Protos.MethodSchema.html
+  name: MessageParser<MethodSchema>
+  nameWithType: MessageParser<MethodSchema>
+  fullName: Google.Protobuf.MessageParser<Virtufin.Api.Protos.MethodSchema>
+  nameWithType.vb: MessageParser(Of MethodSchema)
+  fullName.vb: Google.Protobuf.MessageParser(Of Virtufin.Api.Protos.MethodSchema)
+  name.vb: MessageParser(Of MethodSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: )
+- uid: Google.Protobuf.MessageParser`1
+  commentId: T:Google.Protobuf.MessageParser`1
+  isExternal: true
+  name: MessageParser<T>
+  nameWithType: MessageParser<T>
+  fullName: Google.Protobuf.MessageParser<T>
+  nameWithType.vb: MessageParser(Of T)
+  fullName.vb: Google.Protobuf.MessageParser(Of T)
+  name.vb: MessageParser(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Protos.MethodSchema.Descriptor*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.Descriptor
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_Descriptor
+  name: Descriptor
+  nameWithType: MethodSchema.Descriptor
+  fullName: Virtufin.Api.Protos.MethodSchema.Descriptor
+- uid: Google.Protobuf.Reflection.MessageDescriptor
+  commentId: T:Google.Protobuf.Reflection.MessageDescriptor
+  parent: Google.Protobuf.Reflection
+  isExternal: true
+  name: MessageDescriptor
+  nameWithType: MessageDescriptor
+  fullName: Google.Protobuf.Reflection.MessageDescriptor
+- uid: Google.Protobuf.Reflection
+  commentId: N:Google.Protobuf.Reflection
+  isExternal: true
+  name: Google.Protobuf.Reflection
+  nameWithType: Google.Protobuf.Reflection
+  fullName: Google.Protobuf.Reflection
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+- uid: Virtufin.Api.Protos.MethodSchema.#ctor*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.#ctor
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema__ctor
+  name: MethodSchema
+  nameWithType: MethodSchema.MethodSchema
+  fullName: Virtufin.Api.Protos.MethodSchema.MethodSchema
+  nameWithType.vb: MethodSchema.New
+  fullName.vb: Virtufin.Api.Protos.MethodSchema.New
+  name.vb: New
+- uid: Virtufin.Api.Protos.MethodSchema
+  commentId: T:Virtufin.Api.Protos.MethodSchema
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.MethodSchema.html
+  name: MethodSchema
+  nameWithType: MethodSchema
+  fullName: Virtufin.Api.Protos.MethodSchema
+- uid: Virtufin.Api.Protos.MethodSchema.Clone*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.Clone
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_Clone
+  name: Clone
+  nameWithType: MethodSchema.Clone
+  fullName: Virtufin.Api.Protos.MethodSchema.Clone
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}.Clone
+  parent: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}
+  definition: Google.Protobuf.IDeepCloneable`1.Clone
+  name: Clone()
+  nameWithType: IDeepCloneable<MethodSchema>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.Api.Protos.MethodSchema>.Clone()
+  nameWithType.vb: IDeepCloneable(Of MethodSchema).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.Api.Protos.MethodSchema).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.MethodSchema}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable`1.Clone
+  isExternal: true
+  name: Clone()
+  nameWithType: IDeepCloneable<T>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<T>.Clone()
+  nameWithType.vb: IDeepCloneable(Of T).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Api.Protos.MethodSchema.InputTypeName*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.InputTypeName
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_InputTypeName
+  name: InputTypeName
+  nameWithType: MethodSchema.InputTypeName
+  fullName: Virtufin.Api.Protos.MethodSchema.InputTypeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Api.Protos.MethodSchema.OutputTypeName*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.OutputTypeName
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_OutputTypeName
+  name: OutputTypeName
+  nameWithType: MethodSchema.OutputTypeName
+  fullName: Virtufin.Api.Protos.MethodSchema.OutputTypeName
+- uid: Virtufin.Api.Protos.MethodSchema.SchemaType*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.SchemaType
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_SchemaType
+  name: SchemaType
+  nameWithType: MethodSchema.SchemaType
+  fullName: Virtufin.Api.Protos.MethodSchema.SchemaType
+- uid: Virtufin.Api.Protos.MethodSchema.Fields*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.Fields
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_Fields
+  name: Fields
+  nameWithType: MethodSchema.Fields
+  fullName: Virtufin.Api.Protos.MethodSchema.Fields
+- uid: Google.Protobuf.Collections.RepeatedField{Virtufin.Api.Protos.FieldSchema}
+  commentId: T:Google.Protobuf.Collections.RepeatedField{Virtufin.Api.Protos.FieldSchema}
+  parent: Google.Protobuf.Collections
+  definition: Google.Protobuf.Collections.RepeatedField`1
+  href: Virtufin.Api.Protos.FieldSchema.html
+  name: RepeatedField<FieldSchema>
+  nameWithType: RepeatedField<FieldSchema>
+  fullName: Google.Protobuf.Collections.RepeatedField<Virtufin.Api.Protos.FieldSchema>
+  nameWithType.vb: RepeatedField(Of FieldSchema)
+  fullName.vb: Google.Protobuf.Collections.RepeatedField(Of Virtufin.Api.Protos.FieldSchema)
+  name.vb: RepeatedField(Of FieldSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.Collections.RepeatedField`1
+    name: RepeatedField
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.Collections.RepeatedField`1
+    name: RepeatedField
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    href: Virtufin.Api.Protos.FieldSchema.html
+  - name: )
+- uid: Google.Protobuf.Collections.RepeatedField`1
+  commentId: T:Google.Protobuf.Collections.RepeatedField`1
+  isExternal: true
+  name: RepeatedField<T>
+  nameWithType: RepeatedField<T>
+  fullName: Google.Protobuf.Collections.RepeatedField<T>
+  nameWithType.vb: RepeatedField(Of T)
+  fullName.vb: Google.Protobuf.Collections.RepeatedField(Of T)
+  name.vb: RepeatedField(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.Collections.RepeatedField`1
+    name: RepeatedField
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.Collections.RepeatedField`1
+    name: RepeatedField
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf.Collections
+  commentId: N:Google.Protobuf.Collections
+  isExternal: true
+  name: Google.Protobuf.Collections
+  nameWithType: Google.Protobuf.Collections
+  fullName: Google.Protobuf.Collections
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Collections
+    name: Collections
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Collections
+    name: Collections
+    isExternal: true
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Api.Protos.MethodSchema.Equals*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.Equals
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_Equals_System_Object_
+  name: Equals
+  nameWithType: MethodSchema.Equals
+  fullName: Virtufin.Api.Protos.MethodSchema.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{Virtufin.Api.Protos.MethodSchema}.Equals(Virtufin.Api.Protos.MethodSchema)
+  commentId: M:System.IEquatable{Virtufin.Api.Protos.MethodSchema}.Equals(Virtufin.Api.Protos.MethodSchema)
+  parent: System.IEquatable{Virtufin.Api.Protos.MethodSchema}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(MethodSchema)
+  nameWithType: IEquatable<MethodSchema>.Equals(MethodSchema)
+  fullName: System.IEquatable<Virtufin.Api.Protos.MethodSchema>.Equals(Virtufin.Api.Protos.MethodSchema)
+  nameWithType.vb: IEquatable(Of MethodSchema).Equals(MethodSchema)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Protos.MethodSchema).Equals(Virtufin.Api.Protos.MethodSchema)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Api.Protos.MethodSchema}.Equals(Virtufin.Api.Protos.MethodSchema)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Api.Protos.MethodSchema}.Equals(Virtufin.Api.Protos.MethodSchema)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.MethodSchema.GetHashCode*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.GetHashCode
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_GetHashCode
+  name: GetHashCode
+  nameWithType: MethodSchema.GetHashCode
+  fullName: Virtufin.Api.Protos.MethodSchema.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.MethodSchema.ToString*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.ToString
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_ToString
+  name: ToString
+  nameWithType: MethodSchema.ToString
+  fullName: Virtufin.Api.Protos.MethodSchema.ToString
+- uid: Virtufin.Api.Protos.MethodSchema.WriteTo*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.WriteTo
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_WriteTo_Google_Protobuf_CodedOutputStream_
+  name: WriteTo
+  nameWithType: MethodSchema.WriteTo
+  fullName: Virtufin.Api.Protos.MethodSchema.WriteTo
+- uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: WriteTo(CodedOutputStream)
+  nameWithType: IMessage.WriteTo(CodedOutputStream)
+  fullName: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedOutputStream
+  commentId: T:Google.Protobuf.CodedOutputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedOutputStream
+  nameWithType: CodedOutputStream
+  fullName: Google.Protobuf.CodedOutputStream
+- uid: Virtufin.Api.Protos.MethodSchema.CalculateSize*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.CalculateSize
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_CalculateSize
+  name: CalculateSize
+  nameWithType: MethodSchema.CalculateSize
+  fullName: Virtufin.Api.Protos.MethodSchema.CalculateSize
+- uid: Google.Protobuf.IMessage.CalculateSize
+  commentId: M:Google.Protobuf.IMessage.CalculateSize
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: CalculateSize()
+  nameWithType: IMessage.CalculateSize()
+  fullName: Google.Protobuf.IMessage.CalculateSize()
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.MethodSchema.MergeFrom*
+  commentId: Overload:Virtufin.Api.Protos.MethodSchema.MergeFrom
+  href: Virtufin.Api.Protos.MethodSchema.html#Virtufin_Api_Protos_MethodSchema_MergeFrom_Virtufin_Api_Protos_MethodSchema_
+  name: MergeFrom
+  nameWithType: MethodSchema.MergeFrom
+  fullName: Virtufin.Api.Protos.MethodSchema.MergeFrom
+- uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  commentId: M:Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  parent: Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}
+  definition: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  href: Virtufin.Api.Protos.MethodSchema.html
+  name: MergeFrom(MethodSchema)
+  nameWithType: IMessage<MethodSchema>.MergeFrom(MethodSchema)
+  fullName: Google.Protobuf.IMessage<Virtufin.Api.Protos.MethodSchema>.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  nameWithType.vb: IMessage(Of MethodSchema).MergeFrom(MethodSchema)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.Api.Protos.MethodSchema).MergeFrom(Virtufin.Api.Protos.MethodSchema)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.MethodSchema}.MergeFrom(Virtufin.Api.Protos.MethodSchema)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    href: Virtufin.Api.Protos.MethodSchema.html
+  - name: )
+- uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  commentId: M:Google.Protobuf.IMessage`1.MergeFrom(`0)
+  isExternal: true
+  name: MergeFrom(T)
+  nameWithType: IMessage<T>.MergeFrom(T)
+  fullName: Google.Protobuf.IMessage<T>.MergeFrom(T)
+  nameWithType.vb: IMessage(Of T).MergeFrom(T)
+  fullName.vb: Google.Protobuf.IMessage(Of T).MergeFrom(T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: MergeFrom(CodedInputStream)
+  nameWithType: IMessage.MergeFrom(CodedInputStream)
+  fullName: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedInputStream
+  commentId: T:Google.Protobuf.CodedInputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedInputStream
+  nameWithType: CodedInputStream
+  fullName: Google.Protobuf.CodedInputStream

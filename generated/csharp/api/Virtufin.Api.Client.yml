@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Client
+  commentId: N:Virtufin.Api.Client
+  id: Virtufin.Api.Client
+  children:
+  - Virtufin.Api.Client.ApiClient
+  - Virtufin.Api.Client.GatewayClient
+  - Virtufin.Api.Client.IStreamEventHandler
+  - Virtufin.Api.Client.ServiceClient
+  - Virtufin.Api.Client.StreamEventHandler
+  - Virtufin.Api.Client.SyncApiClient
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Api.Client
+  nameWithType: Virtufin.Api.Client
+  fullName: Virtufin.Api.Client
+  type: Namespace
+  assemblies:
+  - Virtufin.Api.Client
+references:
+- uid: Virtufin.Api.Client.ServiceClient
+  commentId: T:Virtufin.Api.Client.ServiceClient
+  parent: Virtufin.Api.Client
+  href: Virtufin.Api.Client.ServiceClient.html
+  name: ServiceClient
+  nameWithType: ServiceClient
+  fullName: Virtufin.Api.Client.ServiceClient
+- uid: Virtufin.Api.Client.IStreamEventHandler
+  commentId: T:Virtufin.Api.Client.IStreamEventHandler
+  parent: Virtufin.Api.Client
+  href: Virtufin.Api.Client.IStreamEventHandler.html
+  name: IStreamEventHandler
+  nameWithType: IStreamEventHandler
+  fullName: Virtufin.Api.Client.IStreamEventHandler
+- uid: Virtufin.Api.Client.StreamEventHandler
+  commentId: T:Virtufin.Api.Client.StreamEventHandler
+  href: Virtufin.Api.Client.StreamEventHandler.html
+  name: StreamEventHandler
+  nameWithType: StreamEventHandler
+  fullName: Virtufin.Api.Client.StreamEventHandler
+- uid: Virtufin.Api.Client.GatewayClient
+  commentId: T:Virtufin.Api.Client.GatewayClient
+  parent: Virtufin.Api.Client
+  href: Virtufin.Api.Client.GatewayClient.html
+  name: GatewayClient
+  nameWithType: GatewayClient
+  fullName: Virtufin.Api.Client.GatewayClient
+- uid: Virtufin.Api.Client.ApiClient
+  commentId: T:Virtufin.Api.Client.ApiClient
+  parent: Virtufin.Api.Client
+  href: Virtufin.Api.Client.ApiClient.html
+  name: ApiClient
+  nameWithType: ApiClient
+  fullName: Virtufin.Api.Client.ApiClient
+- uid: Virtufin.Api.Client.SyncApiClient
+  commentId: T:Virtufin.Api.Client.SyncApiClient
+  href: Virtufin.Api.Client.SyncApiClient.html
+  name: SyncApiClient
+  nameWithType: SyncApiClient
+  fullName: Virtufin.Api.Client.SyncApiClient
+- uid: Virtufin.Api.Client
+  commentId: N:Virtufin.Api.Client
+  href: Virtufin.html
+  name: Virtufin.Api.Client
+  nameWithType: Virtufin.Api.Client
+  fullName: Virtufin.Api.Client
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html

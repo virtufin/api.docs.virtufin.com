@@ -1,0 +1,336 @@
+### YamlMime:TableOfContent
+items:
+- uid: Virtufin.Api
+  name: Virtufin.Api
+  type: Namespace
+  items:
+  - uid: Virtufin.Api.ApiConstants
+    name: ApiConstants
+    type: Class
+  - uid: Virtufin.Api.GrpcCallRequest
+    name: GrpcCallRequest
+    type: Class
+  - uid: Virtufin.Api.GrpcCallResponse
+    name: GrpcCallResponse
+    type: Class
+  - uid: Virtufin.Api.MethodInfo
+    name: MethodInfo
+    type: Class
+- uid: Virtufin.Api.Client
+  name: Virtufin.Api.Client
+  type: Namespace
+  items:
+  - uid: Virtufin.Api.Client.ApiClient
+    name: ApiClient
+    type: Class
+  - uid: Virtufin.Api.Client.GatewayClient
+    name: GatewayClient
+    type: Class
+  - uid: Virtufin.Api.Client.IStreamEventHandler
+    name: IStreamEventHandler
+    type: Interface
+  - uid: Virtufin.Api.Client.ServiceClient
+    name: ServiceClient
+    type: Class
+  - uid: Virtufin.Api.Client.StreamEventHandler
+    name: StreamEventHandler
+    type: Class
+  - uid: Virtufin.Api.Client.SyncApiClient
+    name: SyncApiClient
+    type: Class
+- uid: Virtufin.Api.Configuration
+  name: Virtufin.Api.Configuration
+  type: Namespace
+  items:
+  - uid: Virtufin.Api.Configuration.CronJobConfig
+    name: CronJobConfig
+    type: Class
+  - uid: Virtufin.Api.Configuration.GrpcConfig
+    name: GrpcConfig
+    type: Class
+  - uid: Virtufin.Api.Configuration.JobsConfig
+    name: JobsConfig
+    type: Class
+  - uid: Virtufin.Api.Configuration.PortConstants
+    name: PortConstants
+    type: Class
+  - uid: Virtufin.Api.Configuration.PubsubConfig
+    name: PubsubConfig
+    type: Class
+  - uid: Virtufin.Api.Configuration.ServiceConfig
+    name: ServiceConfig
+    type: Class
+  - uid: Virtufin.Api.Configuration.ServicesConfiguration
+    name: ServicesConfiguration
+    type: Class
+  - uid: Virtufin.Api.Configuration.ServicesConfigurationExtensions
+    name: ServicesConfigurationExtensions
+    type: Class
+  - uid: Virtufin.Api.Configuration.ServicesConfigurationLoader
+    name: ServicesConfigurationLoader
+    type: Class
+  - uid: Virtufin.Api.Configuration.StateConfig
+    name: StateConfig
+    type: Class
+- uid: Virtufin.Api.HealthChecks
+  name: Virtufin.Api.HealthChecks
+  type: Namespace
+  items:
+  - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
+    name: DaprHealthCheck
+    type: Class
+  - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+    name: GrpcChannelPoolHealthCheck
+    type: Class
+- uid: Virtufin.Api.Protos
+  name: Virtufin.Api.Protos
+  type: Namespace
+  items:
+  - uid: Virtufin.Api.Protos.Config
+    name: Config
+    type: Class
+  - uid: Virtufin.Api.Protos.Config.ConfigBase
+    name: Config.ConfigBase
+    type: Class
+  - uid: Virtufin.Api.Protos.Config.ConfigClient
+    name: Config.ConfigClient
+    type: Class
+  - uid: Virtufin.Api.Protos.ConfigReflection
+    name: ConfigReflection
+    type: Class
+  - uid: Virtufin.Api.Protos.ConfigService
+    name: ConfigService
+    type: Class
+  - uid: Virtufin.Api.Protos.CronJobConfig
+    name: CronJobConfig
+    type: Class
+  - uid: Virtufin.Api.Protos.DeleteStateRequest
+    name: DeleteStateRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.DeleteStateResponse
+    name: DeleteStateResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.FieldSchema
+    name: FieldSchema
+    type: Class
+  - uid: Virtufin.Api.Protos.Gateway
+    name: Gateway
+    type: Class
+  - uid: Virtufin.Api.Protos.Gateway.GatewayBase
+    name: Gateway.GatewayBase
+    type: Class
+  - uid: Virtufin.Api.Protos.Gateway.GatewayClient
+    name: Gateway.GatewayClient
+    type: Class
+  - uid: Virtufin.Api.Protos.GatewayReflection
+    name: GatewayReflection
+    type: Class
+  - uid: Virtufin.Api.Protos.GetAllStateRequest
+    name: GetAllStateRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.GetAllStateResponse
+    name: GetAllStateResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.GetConfigServiceRequest
+    name: GetConfigServiceRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.GetConfigServiceResponse
+    name: GetConfigServiceResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.GetMethodSchemaRequest
+    name: GetMethodSchemaRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.GetMethodSchemaResponse
+    name: GetMethodSchemaResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.GetStateRequest
+    name: GetStateRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.GetStateResponse
+    name: GetStateResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    type: Class
+  - uid: Virtufin.Api.Protos.InvokeJsonRequest
+    name: InvokeJsonRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.InvokeJsonResponse
+    name: InvokeJsonResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.InvokeRequest
+    name: InvokeRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.InvokeResponse
+    name: InvokeResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.JobsConfig
+    name: JobsConfig
+    type: Class
+  - uid: Virtufin.Api.Protos.ListConfigServicesRequest
+    name: ListConfigServicesRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.ListConfigServicesResponse
+    name: ListConfigServicesResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.ListMethodsRequest
+    name: ListMethodsRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.ListMethodsResponse
+    name: ListMethodsResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.ListServicesRequest
+    name: ListServicesRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.ListServicesResponse
+    name: ListServicesResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.MethodInfo
+    name: MethodInfo
+    type: Class
+  - uid: Virtufin.Api.Protos.MethodSchema
+    name: MethodSchema
+    type: Class
+  - uid: Virtufin.Api.Protos.OneofCaseSchema
+    name: OneofCaseSchema
+    type: Class
+  - uid: Virtufin.Api.Protos.PublishRequest
+    name: PublishRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.PublishResponse
+    name: PublishResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.Pubsub
+    name: Pubsub
+    type: Class
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase
+    name: Pubsub.PubsubBase
+    type: Class
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubClient
+    name: Pubsub.PubsubClient
+    type: Class
+  - uid: Virtufin.Api.Protos.PubsubConfig
+    name: PubsubConfig
+    type: Class
+  - uid: Virtufin.Api.Protos.PubsubReflection
+    name: PubsubReflection
+    type: Class
+  - uid: Virtufin.Api.Protos.PubsubSubscribeRequest
+    name: PubsubSubscribeRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
+    name: PubsubSubscribeResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.RegisterKeysRequest
+    name: RegisterKeysRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.RegisterKeysResponse
+    name: RegisterKeysResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.SaveStateRequest
+    name: SaveStateRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.SaveStateResponse
+    name: SaveStateResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    type: Class
+  - uid: Virtufin.Api.Protos.State.StateBase
+    name: State.StateBase
+    type: Class
+  - uid: Virtufin.Api.Protos.State.StateClient
+    name: State.StateClient
+    type: Class
+  - uid: Virtufin.Api.Protos.StateConfig
+    name: StateConfig
+    type: Class
+  - uid: Virtufin.Api.Protos.StateReflection
+    name: StateReflection
+    type: Class
+  - uid: Virtufin.Api.Protos.StatusResponse
+    name: StatusResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.SubscribeRequest
+    name: SubscribeRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.SystemEventsRequest
+    name: SystemEventsRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.TopicEventRequest
+    name: TopicEventRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.TopicEventResponse
+    name: TopicEventResponse
+    type: Class
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types
+    name: TopicEventResponse.Types
+    type: Class
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+    name: TopicEventResponse.Types.TopicEventResponseStatus
+    type: Enum
+  - uid: Virtufin.Api.Protos.UnsubscribeRequest
+    name: UnsubscribeRequest
+    type: Class
+  - uid: Virtufin.Api.Protos.UnsubscribeResponse
+    name: UnsubscribeResponse
+    type: Class
+- uid: Virtufin.Api.Services
+  name: Virtufin.Api.Services
+  type: Namespace
+  items:
+  - uid: Virtufin.Api.Services.ChannelEntry
+    name: ChannelEntry
+    type: Class
+  - uid: Virtufin.Api.Services.ConfigService
+    name: ConfigService
+    type: Class
+  - uid: Virtufin.Api.Services.DaprConstants
+    name: DaprConstants
+    type: Class
+  - uid: Virtufin.Api.Services.DaprPubSubBridgeService
+    name: DaprPubSubBridgeService
+    type: Class
+  - uid: Virtufin.Api.Services.FieldSchema
+    name: FieldSchema
+    type: Class
+  - uid: Virtufin.Api.Services.GatewayService
+    name: GatewayService
+    type: Class
+  - uid: Virtufin.Api.Services.GrpcCallResult
+    name: GrpcCallResult
+    type: Class
+  - uid: Virtufin.Api.Services.GrpcChannelPool
+    name: GrpcChannelPool
+    type: Class
+  - uid: Virtufin.Api.Services.GrpcReflectionService
+    name: GrpcReflectionService
+    type: Class
+  - uid: Virtufin.Api.Services.MethodSchema
+    name: MethodSchema
+    type: Class
+  - uid: Virtufin.Api.Services.OneofCaseSchema
+    name: OneofCaseSchema
+    type: Class
+  - uid: Virtufin.Api.Services.PubSubTopics
+    name: PubSubTopics
+    type: Class
+  - uid: Virtufin.Api.Services.PubsubService
+    name: PubsubService
+    type: Class
+  - uid: Virtufin.Api.Services.PubsubSubscription
+    name: PubsubSubscription
+    type: Class
+  - uid: Virtufin.Api.Services.PubsubSubscriptionManager
+    name: PubsubSubscriptionManager
+    type: Class
+  - uid: Virtufin.Api.Services.ServiceMethodInfo
+    name: ServiceMethodInfo
+    type: Class
+  - uid: Virtufin.Api.Services.StateService
+    name: StateService
+    type: Class
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
+    name: SubscriptionManagerBase<TEvent, TSubscription>
+    type: Class
+memberLayout: SamePage

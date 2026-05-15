@@ -1,0 +1,1478 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Protos.GrpcConfig
+  commentId: T:Virtufin.Api.Protos.GrpcConfig
+  id: GrpcConfig
+  parent: Virtufin.Api.Protos
+  children:
+  - Virtufin.Api.Protos.GrpcConfig.#ctor
+  - Virtufin.Api.Protos.GrpcConfig.#ctor(Virtufin.Api.Protos.GrpcConfig)
+  - Virtufin.Api.Protos.GrpcConfig.CalculateSize
+  - Virtufin.Api.Protos.GrpcConfig.Clone
+  - Virtufin.Api.Protos.GrpcConfig.Descriptor
+  - Virtufin.Api.Protos.GrpcConfig.Equals(System.Object)
+  - Virtufin.Api.Protos.GrpcConfig.Equals(Virtufin.Api.Protos.GrpcConfig)
+  - Virtufin.Api.Protos.GrpcConfig.GetHashCode
+  - Virtufin.Api.Protos.GrpcConfig.Host
+  - Virtufin.Api.Protos.GrpcConfig.HostFieldNumber
+  - Virtufin.Api.Protos.GrpcConfig.MergeFrom(Google.Protobuf.CodedInputStream)
+  - Virtufin.Api.Protos.GrpcConfig.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  - Virtufin.Api.Protos.GrpcConfig.Parser
+  - Virtufin.Api.Protos.GrpcConfig.Port
+  - Virtufin.Api.Protos.GrpcConfig.PortFieldNumber
+  - Virtufin.Api.Protos.GrpcConfig.ReflectionEnabled
+  - Virtufin.Api.Protos.GrpcConfig.ReflectionEnabledFieldNumber
+  - Virtufin.Api.Protos.GrpcConfig.ToString
+  - Virtufin.Api.Protos.GrpcConfig.WriteTo(Google.Protobuf.CodedOutputStream)
+  langs:
+  - csharp
+  - vb
+  name: GrpcConfig
+  nameWithType: GrpcConfig
+  fullName: Virtufin.Api.Protos.GrpcConfig
+  type: Class
+  source:
+    id: GrpcConfig
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1241
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: 'public sealed class GrpcConfig : IMessage<GrpcConfig>, IEquatable<GrpcConfig>, IDeepCloneable<GrpcConfig>, IBufferMessage, IMessage'
+    content.vb: Public NotInheritable Class GrpcConfig Implements IMessage(Of GrpcConfig), IEquatable(Of GrpcConfig), IDeepCloneable(Of GrpcConfig), IBufferMessage, IMessage
+  inheritance:
+  - System.Object
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}
+  - System.IEquatable{Virtufin.Api.Protos.GrpcConfig}
+  - Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}
+  - Google.Protobuf.IBufferMessage
+  - Google.Protobuf.IMessage
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Virtufin.Api.Protos.GrpcConfig.Parser
+  commentId: P:Virtufin.Api.Protos.GrpcConfig.Parser
+  id: Parser
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Parser
+  nameWithType: GrpcConfig.Parser
+  fullName: Virtufin.Api.Protos.GrpcConfig.Parser
+  type: Property
+  source:
+    id: Parser
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1249
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public static MessageParser<GrpcConfig> Parser { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.MessageParser{Virtufin.Api.Protos.GrpcConfig}
+    content.vb: Public Shared ReadOnly Property Parser As MessageParser(Of GrpcConfig)
+  overload: Virtufin.Api.Protos.GrpcConfig.Parser*
+- uid: Virtufin.Api.Protos.GrpcConfig.Descriptor
+  commentId: P:Virtufin.Api.Protos.GrpcConfig.Descriptor
+  id: Descriptor
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Descriptor
+  nameWithType: GrpcConfig.Descriptor
+  fullName: Virtufin.Api.Protos.GrpcConfig.Descriptor
+  type: Property
+  source:
+    id: Descriptor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1253
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public static MessageDescriptor Descriptor { get; }
+    parameters: []
+    return:
+      type: Google.Protobuf.Reflection.MessageDescriptor
+    content.vb: Public Shared ReadOnly Property Descriptor As MessageDescriptor
+  overload: Virtufin.Api.Protos.GrpcConfig.Descriptor*
+- uid: Virtufin.Api.Protos.GrpcConfig.#ctor
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.#ctor
+  id: '#ctor'
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: GrpcConfig()
+  nameWithType: GrpcConfig.GrpcConfig()
+  fullName: Virtufin.Api.Protos.GrpcConfig.GrpcConfig()
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1265
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public GrpcConfig()
+    content.vb: Public Sub New()
+  overload: Virtufin.Api.Protos.GrpcConfig.#ctor*
+  nameWithType.vb: GrpcConfig.New()
+  fullName.vb: Virtufin.Api.Protos.GrpcConfig.New()
+  name.vb: New()
+- uid: Virtufin.Api.Protos.GrpcConfig.#ctor(Virtufin.Api.Protos.GrpcConfig)
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.#ctor(Virtufin.Api.Protos.GrpcConfig)
+  id: '#ctor(Virtufin.Api.Protos.GrpcConfig)'
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: GrpcConfig(GrpcConfig)
+  nameWithType: GrpcConfig.GrpcConfig(GrpcConfig)
+  fullName: Virtufin.Api.Protos.GrpcConfig.GrpcConfig(Virtufin.Api.Protos.GrpcConfig)
+  type: Constructor
+  source:
+    id: .ctor
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1273
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public GrpcConfig(GrpcConfig other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.GrpcConfig
+    content.vb: Public Sub New(other As GrpcConfig)
+  overload: Virtufin.Api.Protos.GrpcConfig.#ctor*
+  nameWithType.vb: GrpcConfig.New(GrpcConfig)
+  fullName.vb: Virtufin.Api.Protos.GrpcConfig.New(Virtufin.Api.Protos.GrpcConfig)
+  name.vb: New(GrpcConfig)
+- uid: Virtufin.Api.Protos.GrpcConfig.Clone
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.Clone
+  id: Clone
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: GrpcConfig.Clone()
+  fullName: Virtufin.Api.Protos.GrpcConfig.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1282
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Creates a deep clone of this object.
+  example: []
+  syntax:
+    content: public GrpcConfig Clone()
+    return:
+      type: Virtufin.Api.Protos.GrpcConfig
+      description: A deep clone of this object.
+    content.vb: Public Function Clone() As GrpcConfig
+  overload: Virtufin.Api.Protos.GrpcConfig.Clone*
+  implements:
+  - Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}.Clone
+- uid: Virtufin.Api.Protos.GrpcConfig.HostFieldNumber
+  commentId: F:Virtufin.Api.Protos.GrpcConfig.HostFieldNumber
+  id: HostFieldNumber
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: HostFieldNumber
+  nameWithType: GrpcConfig.HostFieldNumber
+  fullName: Virtufin.Api.Protos.GrpcConfig.HostFieldNumber
+  type: Field
+  source:
+    id: HostFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1289
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "host" field.
+  example: []
+  syntax:
+    content: public const int HostFieldNumber = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const HostFieldNumber As Integer = 1
+- uid: Virtufin.Api.Protos.GrpcConfig.Host
+  commentId: P:Virtufin.Api.Protos.GrpcConfig.Host
+  id: Host
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: GrpcConfig.Host
+  fullName: Virtufin.Api.Protos.GrpcConfig.Host
+  type: Property
+  source:
+    id: Host
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1291
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public string Host { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Host As String
+  overload: Virtufin.Api.Protos.GrpcConfig.Host*
+- uid: Virtufin.Api.Protos.GrpcConfig.PortFieldNumber
+  commentId: F:Virtufin.Api.Protos.GrpcConfig.PortFieldNumber
+  id: PortFieldNumber
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: PortFieldNumber
+  nameWithType: GrpcConfig.PortFieldNumber
+  fullName: Virtufin.Api.Protos.GrpcConfig.PortFieldNumber
+  type: Field
+  source:
+    id: PortFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1301
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "port" field.
+  example: []
+  syntax:
+    content: public const int PortFieldNumber = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const PortFieldNumber As Integer = 2
+- uid: Virtufin.Api.Protos.GrpcConfig.Port
+  commentId: P:Virtufin.Api.Protos.GrpcConfig.Port
+  id: Port
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: GrpcConfig.Port
+  fullName: Virtufin.Api.Protos.GrpcConfig.Port
+  type: Property
+  source:
+    id: Port
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1303
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: Virtufin.Api.Protos.GrpcConfig.Port*
+- uid: Virtufin.Api.Protos.GrpcConfig.ReflectionEnabledFieldNumber
+  commentId: F:Virtufin.Api.Protos.GrpcConfig.ReflectionEnabledFieldNumber
+  id: ReflectionEnabledFieldNumber
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: ReflectionEnabledFieldNumber
+  nameWithType: GrpcConfig.ReflectionEnabledFieldNumber
+  fullName: Virtufin.Api.Protos.GrpcConfig.ReflectionEnabledFieldNumber
+  type: Field
+  source:
+    id: ReflectionEnabledFieldNumber
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1313
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Field number for the "reflection_enabled" field.
+  example: []
+  syntax:
+    content: public const int ReflectionEnabledFieldNumber = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const ReflectionEnabledFieldNumber As Integer = 3
+- uid: Virtufin.Api.Protos.GrpcConfig.ReflectionEnabled
+  commentId: P:Virtufin.Api.Protos.GrpcConfig.ReflectionEnabled
+  id: ReflectionEnabled
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: ReflectionEnabled
+  nameWithType: GrpcConfig.ReflectionEnabled
+  fullName: Virtufin.Api.Protos.GrpcConfig.ReflectionEnabled
+  type: Property
+  source:
+    id: ReflectionEnabled
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1315
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  syntax:
+    content: public bool ReflectionEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ReflectionEnabled As Boolean
+  overload: Virtufin.Api.Protos.GrpcConfig.ReflectionEnabled*
+- uid: Virtufin.Api.Protos.GrpcConfig.Equals(System.Object)
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: GrpcConfig.Equals(object)
+  fullName: Virtufin.Api.Protos.GrpcConfig.Equals(object)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1324
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Virtufin.Api.Protos.GrpcConfig.Equals*
+  nameWithType.vb: GrpcConfig.Equals(Object)
+  fullName.vb: Virtufin.Api.Protos.GrpcConfig.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Virtufin.Api.Protos.GrpcConfig.Equals(Virtufin.Api.Protos.GrpcConfig)
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.Equals(Virtufin.Api.Protos.GrpcConfig)
+  id: Equals(Virtufin.Api.Protos.GrpcConfig)
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Equals(GrpcConfig)
+  nameWithType: GrpcConfig.Equals(GrpcConfig)
+  fullName: Virtufin.Api.Protos.GrpcConfig.Equals(Virtufin.Api.Protos.GrpcConfig)
+  type: Method
+  source:
+    id: Equals
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1330
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(GrpcConfig other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.GrpcConfig
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As GrpcConfig) As Boolean
+  overload: Virtufin.Api.Protos.GrpcConfig.Equals*
+  implements:
+  - System.IEquatable{Virtufin.Api.Protos.GrpcConfig}.Equals(Virtufin.Api.Protos.GrpcConfig)
+- uid: Virtufin.Api.Protos.GrpcConfig.GetHashCode
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.GetHashCode
+  id: GetHashCode
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: GrpcConfig.GetHashCode()
+  fullName: Virtufin.Api.Protos.GrpcConfig.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1345
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Virtufin.Api.Protos.GrpcConfig.GetHashCode*
+- uid: Virtufin.Api.Protos.GrpcConfig.ToString
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.ToString
+  id: ToString
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: GrpcConfig.ToString()
+  fullName: Virtufin.Api.Protos.GrpcConfig.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1358
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Virtufin.Api.Protos.GrpcConfig.ToString*
+- uid: Virtufin.Api.Protos.GrpcConfig.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.WriteTo(Google.Protobuf.CodedOutputStream)
+  id: WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(CodedOutputStream)
+  nameWithType: GrpcConfig.WriteTo(CodedOutputStream)
+  fullName: Virtufin.Api.Protos.GrpcConfig.WriteTo(Google.Protobuf.CodedOutputStream)
+  type: Method
+  source:
+    id: WriteTo
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1364
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Writes the data to the given coded output stream.
+  example: []
+  syntax:
+    content: public void WriteTo(CodedOutputStream output)
+    parameters:
+    - id: output
+      type: Google.Protobuf.CodedOutputStream
+      description: Coded output stream to write the data to. Must not be null.
+    content.vb: Public Sub WriteTo(output As CodedOutputStream)
+  overload: Virtufin.Api.Protos.GrpcConfig.WriteTo*
+  implements:
+  - Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+- uid: Virtufin.Api.Protos.GrpcConfig.CalculateSize
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.CalculateSize
+  id: CalculateSize
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: CalculateSize()
+  nameWithType: GrpcConfig.CalculateSize()
+  fullName: Virtufin.Api.Protos.GrpcConfig.CalculateSize()
+  type: Method
+  source:
+    id: CalculateSize
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1410
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Calculates the size of this message in Protocol Buffer wire format, in bytes.
+  example: []
+  syntax:
+    content: public int CalculateSize()
+    return:
+      type: System.Int32
+      description: >-
+        The number of bytes required to write this message
+                    to a coded output stream.
+    content.vb: Public Function CalculateSize() As Integer
+  overload: Virtufin.Api.Protos.GrpcConfig.CalculateSize*
+  implements:
+  - Google.Protobuf.IMessage.CalculateSize
+- uid: Virtufin.Api.Protos.GrpcConfig.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  id: MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(GrpcConfig)
+  nameWithType: GrpcConfig.MergeFrom(GrpcConfig)
+  fullName: Virtufin.Api.Protos.GrpcConfig.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1429
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Merges the given message into this one.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(GrpcConfig other)
+    parameters:
+    - id: other
+      type: Virtufin.Api.Protos.GrpcConfig
+    content.vb: Public Sub MergeFrom(other As GrpcConfig)
+  overload: Virtufin.Api.Protos.GrpcConfig.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+- uid: Virtufin.Api.Protos.GrpcConfig.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Virtufin.Api.Protos.GrpcConfig.MergeFrom(Google.Protobuf.CodedInputStream)
+  id: MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Virtufin.Api.Protos.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: MergeFrom(CodedInputStream)
+  nameWithType: GrpcConfig.MergeFrom(CodedInputStream)
+  fullName: Virtufin.Api.Protos.GrpcConfig.MergeFrom(Google.Protobuf.CodedInputStream)
+  type: Method
+  source:
+    id: MergeFrom
+    path: /workspace/virtufin/virtufin-api/src/Virtufin.Api/obj/Release/net10.0/Protos/Config.cs
+    startLine: 1447
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Protos
+  summary: Merges the data from the specified coded input stream with the current message.
+  remarks: See the user guide for precise merge semantics.
+  example: []
+  syntax:
+    content: public void MergeFrom(CodedInputStream input)
+    parameters:
+    - id: input
+      type: Google.Protobuf.CodedInputStream
+      description: ''
+    content.vb: Public Sub MergeFrom(input As CodedInputStream)
+  overload: Virtufin.Api.Protos.GrpcConfig.MergeFrom*
+  implements:
+  - Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+references:
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  href: Virtufin.html
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}
+  commentId: T:Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IMessage`1
+  href: Virtufin.Api.Protos.GrpcConfig.html
+  name: IMessage<GrpcConfig>
+  nameWithType: IMessage<GrpcConfig>
+  fullName: Google.Protobuf.IMessage<Virtufin.Api.Protos.GrpcConfig>
+  nameWithType.vb: IMessage(Of GrpcConfig)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.Api.Protos.GrpcConfig)
+  name.vb: IMessage(Of GrpcConfig)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: )
+- uid: System.IEquatable{Virtufin.Api.Protos.GrpcConfig}
+  commentId: T:System.IEquatable{Virtufin.Api.Protos.GrpcConfig}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GrpcConfig>
+  nameWithType: IEquatable<GrpcConfig>
+  fullName: System.IEquatable<Virtufin.Api.Protos.GrpcConfig>
+  nameWithType.vb: IEquatable(Of GrpcConfig)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Protos.GrpcConfig)
+  name.vb: IEquatable(Of GrpcConfig)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}
+  commentId: T:Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.IDeepCloneable`1
+  href: Virtufin.Api.Protos.GrpcConfig.html
+  name: IDeepCloneable<GrpcConfig>
+  nameWithType: IDeepCloneable<GrpcConfig>
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.Api.Protos.GrpcConfig>
+  nameWithType.vb: IDeepCloneable(Of GrpcConfig)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.Api.Protos.GrpcConfig)
+  name.vb: IDeepCloneable(Of GrpcConfig)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: )
+- uid: Google.Protobuf.IBufferMessage
+  commentId: T:Google.Protobuf.IBufferMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IBufferMessage
+  nameWithType: IBufferMessage
+  fullName: Google.Protobuf.IBufferMessage
+- uid: Google.Protobuf.IMessage
+  commentId: T:Google.Protobuf.IMessage
+  parent: Google.Protobuf
+  isExternal: true
+  name: IMessage
+  nameWithType: IMessage
+  fullName: Google.Protobuf.IMessage
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Google.Protobuf.IMessage`1
+  commentId: T:Google.Protobuf.IMessage`1
+  isExternal: true
+  name: IMessage<T>
+  nameWithType: IMessage<T>
+  fullName: Google.Protobuf.IMessage<T>
+  nameWithType.vb: IMessage(Of T)
+  fullName.vb: Google.Protobuf.IMessage(Of T)
+  name.vb: IMessage(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1
+    name: IMessage
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf
+  commentId: N:Google.Protobuf
+  isExternal: true
+  name: Google.Protobuf
+  nameWithType: Google.Protobuf
+  fullName: Google.Protobuf
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1
+  commentId: T:Google.Protobuf.IDeepCloneable`1
+  isExternal: true
+  name: IDeepCloneable<T>
+  nameWithType: IDeepCloneable<T>
+  fullName: Google.Protobuf.IDeepCloneable<T>
+  nameWithType.vb: IDeepCloneable(Of T)
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T)
+  name.vb: IDeepCloneable(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1
+    name: IDeepCloneable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Protos.GrpcConfig.Parser*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.Parser
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_Parser
+  name: Parser
+  nameWithType: GrpcConfig.Parser
+  fullName: Virtufin.Api.Protos.GrpcConfig.Parser
+- uid: Google.Protobuf.MessageParser{Virtufin.Api.Protos.GrpcConfig}
+  commentId: T:Google.Protobuf.MessageParser{Virtufin.Api.Protos.GrpcConfig}
+  parent: Google.Protobuf
+  definition: Google.Protobuf.MessageParser`1
+  href: Virtufin.Api.Protos.GrpcConfig.html
+  name: MessageParser<GrpcConfig>
+  nameWithType: MessageParser<GrpcConfig>
+  fullName: Google.Protobuf.MessageParser<Virtufin.Api.Protos.GrpcConfig>
+  nameWithType.vb: MessageParser(Of GrpcConfig)
+  fullName.vb: Google.Protobuf.MessageParser(Of Virtufin.Api.Protos.GrpcConfig)
+  name.vb: MessageParser(Of GrpcConfig)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: )
+- uid: Google.Protobuf.MessageParser`1
+  commentId: T:Google.Protobuf.MessageParser`1
+  isExternal: true
+  name: MessageParser<T>
+  nameWithType: MessageParser<T>
+  fullName: Google.Protobuf.MessageParser<T>
+  nameWithType.vb: MessageParser(Of T)
+  fullName.vb: Google.Protobuf.MessageParser(Of T)
+  name.vb: MessageParser(Of T)
+  spec.csharp:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Google.Protobuf.MessageParser`1
+    name: MessageParser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Protos.GrpcConfig.Descriptor*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.Descriptor
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_Descriptor
+  name: Descriptor
+  nameWithType: GrpcConfig.Descriptor
+  fullName: Virtufin.Api.Protos.GrpcConfig.Descriptor
+- uid: Google.Protobuf.Reflection.MessageDescriptor
+  commentId: T:Google.Protobuf.Reflection.MessageDescriptor
+  parent: Google.Protobuf.Reflection
+  isExternal: true
+  name: MessageDescriptor
+  nameWithType: MessageDescriptor
+  fullName: Google.Protobuf.Reflection.MessageDescriptor
+- uid: Google.Protobuf.Reflection
+  commentId: N:Google.Protobuf.Reflection
+  isExternal: true
+  name: Google.Protobuf.Reflection
+  nameWithType: Google.Protobuf.Reflection
+  fullName: Google.Protobuf.Reflection
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf
+    name: Protobuf
+    isExternal: true
+  - name: .
+  - uid: Google.Protobuf.Reflection
+    name: Reflection
+    isExternal: true
+- uid: Virtufin.Api.Protos.GrpcConfig.#ctor*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.#ctor
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig__ctor
+  name: GrpcConfig
+  nameWithType: GrpcConfig.GrpcConfig
+  fullName: Virtufin.Api.Protos.GrpcConfig.GrpcConfig
+  nameWithType.vb: GrpcConfig.New
+  fullName.vb: Virtufin.Api.Protos.GrpcConfig.New
+  name.vb: New
+- uid: Virtufin.Api.Protos.GrpcConfig
+  commentId: T:Virtufin.Api.Protos.GrpcConfig
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GrpcConfig.html
+  name: GrpcConfig
+  nameWithType: GrpcConfig
+  fullName: Virtufin.Api.Protos.GrpcConfig
+- uid: Virtufin.Api.Protos.GrpcConfig.Clone*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.Clone
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_Clone
+  name: Clone
+  nameWithType: GrpcConfig.Clone
+  fullName: Virtufin.Api.Protos.GrpcConfig.Clone
+- uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}.Clone
+  parent: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}
+  definition: Google.Protobuf.IDeepCloneable`1.Clone
+  name: Clone()
+  nameWithType: IDeepCloneable<GrpcConfig>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<Virtufin.Api.Protos.GrpcConfig>.Clone()
+  nameWithType.vb: IDeepCloneable(Of GrpcConfig).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of Virtufin.Api.Protos.GrpcConfig).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable{Virtufin.Api.Protos.GrpcConfig}.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Google.Protobuf.IDeepCloneable`1.Clone
+  commentId: M:Google.Protobuf.IDeepCloneable`1.Clone
+  isExternal: true
+  name: Clone()
+  nameWithType: IDeepCloneable<T>.Clone()
+  fullName: Google.Protobuf.IDeepCloneable<T>.Clone()
+  nameWithType.vb: IDeepCloneable(Of T).Clone()
+  fullName.vb: Google.Protobuf.IDeepCloneable(Of T).Clone()
+  spec.csharp:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IDeepCloneable`1.Clone
+    name: Clone
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Api.Protos.GrpcConfig.Host*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.Host
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_Host
+  name: Host
+  nameWithType: GrpcConfig.Host
+  fullName: Virtufin.Api.Protos.GrpcConfig.Host
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Api.Protos.GrpcConfig.Port*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.Port
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_Port
+  name: Port
+  nameWithType: GrpcConfig.Port
+  fullName: Virtufin.Api.Protos.GrpcConfig.Port
+- uid: Virtufin.Api.Protos.GrpcConfig.ReflectionEnabled*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.ReflectionEnabled
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_ReflectionEnabled
+  name: ReflectionEnabled
+  nameWithType: GrpcConfig.ReflectionEnabled
+  fullName: Virtufin.Api.Protos.GrpcConfig.ReflectionEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Api.Protos.GrpcConfig.Equals*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.Equals
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_Equals_System_Object_
+  name: Equals
+  nameWithType: GrpcConfig.Equals
+  fullName: Virtufin.Api.Protos.GrpcConfig.Equals
+- uid: System.IEquatable{Virtufin.Api.Protos.GrpcConfig}.Equals(Virtufin.Api.Protos.GrpcConfig)
+  commentId: M:System.IEquatable{Virtufin.Api.Protos.GrpcConfig}.Equals(Virtufin.Api.Protos.GrpcConfig)
+  parent: System.IEquatable{Virtufin.Api.Protos.GrpcConfig}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(GrpcConfig)
+  nameWithType: IEquatable<GrpcConfig>.Equals(GrpcConfig)
+  fullName: System.IEquatable<Virtufin.Api.Protos.GrpcConfig>.Equals(Virtufin.Api.Protos.GrpcConfig)
+  nameWithType.vb: IEquatable(Of GrpcConfig).Equals(GrpcConfig)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Protos.GrpcConfig).Equals(Virtufin.Api.Protos.GrpcConfig)
+  spec.csharp:
+  - uid: System.IEquatable{Virtufin.Api.Protos.GrpcConfig}.Equals(Virtufin.Api.Protos.GrpcConfig)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Virtufin.Api.Protos.GrpcConfig}.Equals(Virtufin.Api.Protos.GrpcConfig)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.GrpcConfig.GetHashCode*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.GetHashCode
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_GetHashCode
+  name: GetHashCode
+  nameWithType: GrpcConfig.GetHashCode
+  fullName: Virtufin.Api.Protos.GrpcConfig.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.GrpcConfig.ToString*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.ToString
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_ToString
+  name: ToString
+  nameWithType: GrpcConfig.ToString
+  fullName: Virtufin.Api.Protos.GrpcConfig.ToString
+- uid: Virtufin.Api.Protos.GrpcConfig.WriteTo*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.WriteTo
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_WriteTo_Google_Protobuf_CodedOutputStream_
+  name: WriteTo
+  nameWithType: GrpcConfig.WriteTo
+  fullName: Virtufin.Api.Protos.GrpcConfig.WriteTo
+- uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  commentId: M:Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: WriteTo(CodedOutputStream)
+  nameWithType: IMessage.WriteTo(CodedOutputStream)
+  fullName: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.WriteTo(Google.Protobuf.CodedOutputStream)
+    name: WriteTo
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedOutputStream
+    name: CodedOutputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedOutputStream
+  commentId: T:Google.Protobuf.CodedOutputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedOutputStream
+  nameWithType: CodedOutputStream
+  fullName: Google.Protobuf.CodedOutputStream
+- uid: Virtufin.Api.Protos.GrpcConfig.CalculateSize*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.CalculateSize
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_CalculateSize
+  name: CalculateSize
+  nameWithType: GrpcConfig.CalculateSize
+  fullName: Virtufin.Api.Protos.GrpcConfig.CalculateSize
+- uid: Google.Protobuf.IMessage.CalculateSize
+  commentId: M:Google.Protobuf.IMessage.CalculateSize
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: CalculateSize()
+  nameWithType: IMessage.CalculateSize()
+  fullName: Google.Protobuf.IMessage.CalculateSize()
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.CalculateSize
+    name: CalculateSize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Virtufin.Api.Protos.GrpcConfig.MergeFrom*
+  commentId: Overload:Virtufin.Api.Protos.GrpcConfig.MergeFrom
+  href: Virtufin.Api.Protos.GrpcConfig.html#Virtufin_Api_Protos_GrpcConfig_MergeFrom_Virtufin_Api_Protos_GrpcConfig_
+  name: MergeFrom
+  nameWithType: GrpcConfig.MergeFrom
+  fullName: Virtufin.Api.Protos.GrpcConfig.MergeFrom
+- uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  commentId: M:Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  parent: Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}
+  definition: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  href: Virtufin.Api.Protos.GrpcConfig.html
+  name: MergeFrom(GrpcConfig)
+  nameWithType: IMessage<GrpcConfig>.MergeFrom(GrpcConfig)
+  fullName: Google.Protobuf.IMessage<Virtufin.Api.Protos.GrpcConfig>.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  nameWithType.vb: IMessage(Of GrpcConfig).MergeFrom(GrpcConfig)
+  fullName.vb: Google.Protobuf.IMessage(Of Virtufin.Api.Protos.GrpcConfig).MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage{Virtufin.Api.Protos.GrpcConfig}.MergeFrom(Virtufin.Api.Protos.GrpcConfig)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Virtufin.Api.Protos.GrpcConfig
+    name: GrpcConfig
+    href: Virtufin.Api.Protos.GrpcConfig.html
+  - name: )
+- uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+  commentId: M:Google.Protobuf.IMessage`1.MergeFrom(`0)
+  isExternal: true
+  name: MergeFrom(T)
+  nameWithType: IMessage<T>.MergeFrom(T)
+  fullName: Google.Protobuf.IMessage<T>.MergeFrom(T)
+  nameWithType.vb: IMessage(Of T).MergeFrom(T)
+  fullName.vb: Google.Protobuf.IMessage(Of T).MergeFrom(T)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage`1.MergeFrom(`0)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  commentId: M:Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  parent: Google.Protobuf.IMessage
+  isExternal: true
+  name: MergeFrom(CodedInputStream)
+  nameWithType: IMessage.MergeFrom(CodedInputStream)
+  fullName: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+  spec.csharp:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Google.Protobuf.IMessage.MergeFrom(Google.Protobuf.CodedInputStream)
+    name: MergeFrom
+    isExternal: true
+  - name: (
+  - uid: Google.Protobuf.CodedInputStream
+    name: CodedInputStream
+    isExternal: true
+  - name: )
+- uid: Google.Protobuf.CodedInputStream
+  commentId: T:Google.Protobuf.CodedInputStream
+  parent: Google.Protobuf
+  isExternal: true
+  name: CodedInputStream
+  nameWithType: CodedInputStream
+  fullName: Google.Protobuf.CodedInputStream

@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Configuration
+  commentId: N:Virtufin.Api.Configuration
+  id: Virtufin.Api.Configuration
+  children:
+  - Virtufin.Api.Configuration.CronJobConfig
+  - Virtufin.Api.Configuration.GrpcConfig
+  - Virtufin.Api.Configuration.JobsConfig
+  - Virtufin.Api.Configuration.PortConstants
+  - Virtufin.Api.Configuration.PubsubConfig
+  - Virtufin.Api.Configuration.ServiceConfig
+  - Virtufin.Api.Configuration.ServicesConfiguration
+  - Virtufin.Api.Configuration.ServicesConfigurationExtensions
+  - Virtufin.Api.Configuration.ServicesConfigurationLoader
+  - Virtufin.Api.Configuration.StateConfig
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Api.Configuration
+  nameWithType: Virtufin.Api.Configuration
+  fullName: Virtufin.Api.Configuration
+  type: Namespace
+  assemblies:
+  - Virtufin.Api
+references:
+- uid: Virtufin.Api.Configuration.ServicesConfigurationExtensions
+  commentId: T:Virtufin.Api.Configuration.ServicesConfigurationExtensions
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.ServicesConfigurationExtensions.html
+  name: ServicesConfigurationExtensions
+  nameWithType: ServicesConfigurationExtensions
+  fullName: Virtufin.Api.Configuration.ServicesConfigurationExtensions
+- uid: Virtufin.Api.Configuration.ServicesConfiguration
+  commentId: T:Virtufin.Api.Configuration.ServicesConfiguration
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.ServicesConfiguration.html
+  name: ServicesConfiguration
+  nameWithType: ServicesConfiguration
+  fullName: Virtufin.Api.Configuration.ServicesConfiguration
+- uid: Virtufin.Api.Configuration.ServiceConfig
+  commentId: T:Virtufin.Api.Configuration.ServiceConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.ServiceConfig.html
+  name: ServiceConfig
+  nameWithType: ServiceConfig
+  fullName: Virtufin.Api.Configuration.ServiceConfig
+- uid: Virtufin.Api.Configuration.GrpcConfig
+  commentId: T:Virtufin.Api.Configuration.GrpcConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.GrpcConfig.html
+  name: GrpcConfig
+  nameWithType: GrpcConfig
+  fullName: Virtufin.Api.Configuration.GrpcConfig
+- uid: Virtufin.Api.Configuration.PubsubConfig
+  commentId: T:Virtufin.Api.Configuration.PubsubConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.PubsubConfig.html
+  name: PubsubConfig
+  nameWithType: PubsubConfig
+  fullName: Virtufin.Api.Configuration.PubsubConfig
+- uid: Virtufin.Api.Configuration.StateConfig
+  commentId: T:Virtufin.Api.Configuration.StateConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.StateConfig.html
+  name: StateConfig
+  nameWithType: StateConfig
+  fullName: Virtufin.Api.Configuration.StateConfig
+- uid: Virtufin.Api.Configuration.JobsConfig
+  commentId: T:Virtufin.Api.Configuration.JobsConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.JobsConfig.html
+  name: JobsConfig
+  nameWithType: JobsConfig
+  fullName: Virtufin.Api.Configuration.JobsConfig
+- uid: Virtufin.Api.Configuration.CronJobConfig
+  commentId: T:Virtufin.Api.Configuration.CronJobConfig
+  href: Virtufin.Api.Configuration.CronJobConfig.html
+  name: CronJobConfig
+  nameWithType: CronJobConfig
+  fullName: Virtufin.Api.Configuration.CronJobConfig
+- uid: Virtufin.Api.Configuration.PortConstants
+  commentId: T:Virtufin.Api.Configuration.PortConstants
+  href: Virtufin.Api.Configuration.PortConstants.html
+  name: PortConstants
+  nameWithType: PortConstants
+  fullName: Virtufin.Api.Configuration.PortConstants
+- uid: Virtufin.Api.Configuration.ServicesConfigurationLoader
+  commentId: T:Virtufin.Api.Configuration.ServicesConfigurationLoader
+  href: Virtufin.Api.Configuration.ServicesConfigurationLoader.html
+  name: ServicesConfigurationLoader
+  nameWithType: ServicesConfigurationLoader
+  fullName: Virtufin.Api.Configuration.ServicesConfigurationLoader
+- uid: Virtufin.Api.Configuration
+  commentId: N:Virtufin.Api.Configuration
+  href: Virtufin.html
+  name: Virtufin.Api.Configuration
+  nameWithType: Virtufin.Api.Configuration
+  fullName: Virtufin.Api.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html

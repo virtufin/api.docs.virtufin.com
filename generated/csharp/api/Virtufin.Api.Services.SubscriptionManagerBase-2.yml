@@ -1,0 +1,1073 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2
+  commentId: T:Virtufin.Api.Services.SubscriptionManagerBase`2
+  id: SubscriptionManagerBase`2
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor(Microsoft.Extensions.Logging.ILogger)
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.BroadcastAsync(System.String,`0,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.GetIdleTimeout(`1)
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionCount(System.String)
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey(`1)
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.GetTotalSubscriptionCount
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.SendEventAsync(`1,`0,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe(`1)
+  - Virtufin.Api.Services.SubscriptionManagerBase`2.Unsubscribe(System.String,System.String)
+  - Virtufin.Api.Services.SubscriptionManagerBase`2._logger
+  - Virtufin.Api.Services.SubscriptionManagerBase`2._subscriptions
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionManagerBase<TEvent, TSubscription>
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: SubscriptionManagerBase
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: 'public abstract class SubscriptionManagerBase<TEvent, TSubscription> where TSubscription : class'
+    typeParameters:
+    - id: TEvent
+    - id: TSubscription
+    content.vb: Public MustInherit Class SubscriptionManagerBase(Of TEvent, TSubscription As Class)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Virtufin.Api.Services.PubsubSubscriptionManager
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription)
+  name.vb: SubscriptionManagerBase(Of TEvent, TSubscription)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2._subscriptions
+  commentId: F:Virtufin.Api.Services.SubscriptionManagerBase`2._subscriptions
+  id: _subscriptions
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: _subscriptions
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>._subscriptions
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>._subscriptions
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: _subscriptions
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 8
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: protected readonly ConcurrentDictionary<string, ConcurrentDictionary<string, TSubscription>> _subscriptions
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.String,System.Collections.Concurrent.ConcurrentDictionary{System.String,{TSubscription}}}
+    content.vb: Protected ReadOnly _subscriptions As ConcurrentDictionary(Of String, ConcurrentDictionary(Of String, TSubscription))
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription)._subscriptions
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription)._subscriptions
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2._logger
+  commentId: F:Virtufin.Api.Services.SubscriptionManagerBase`2._logger
+  id: _logger
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: _logger
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>._logger
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>._logger
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: _logger
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 9
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: protected readonly ILogger _logger
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Protected ReadOnly _logger As ILogger
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription)._logger
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription)._logger
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey(`1)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey(`1)
+  id: GetSubscriptionKey(`1)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: GetSubscriptionKey(TSubscription)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.GetSubscriptionKey(TSubscription)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.GetSubscriptionKey(TSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GetSubscriptionKey
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: protected abstract string GetSubscriptionKey(TSubscription subscription)
+    parameters:
+    - id: subscription
+      type: '{TSubscription}'
+    return:
+      type: System.String
+    content.vb: Protected MustOverride Function GetSubscriptionKey(subscription As TSubscription) As String
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionKey(TSubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionKey(TSubscription)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetIdleTimeout(`1)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.GetIdleTimeout(`1)
+  id: GetIdleTimeout(`1)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: GetIdleTimeout(TSubscription)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.GetIdleTimeout(TSubscription)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.GetIdleTimeout(TSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GetIdleTimeout
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: protected abstract TimeSpan GetIdleTimeout(TSubscription subscription)
+    parameters:
+    - id: subscription
+      type: '{TSubscription}'
+    return:
+      type: System.TimeSpan
+    content.vb: Protected MustOverride Function GetIdleTimeout(subscription As TSubscription) As TimeSpan
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.GetIdleTimeout*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetIdleTimeout(TSubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).GetIdleTimeout(TSubscription)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.SendEventAsync(`1,`0,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.SendEventAsync(`1,`0,System.Threading.CancellationToken)
+  id: SendEventAsync(`1,`0,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: SendEventAsync(TSubscription, TEvent, CancellationToken)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.SendEventAsync(TSubscription, TEvent, CancellationToken)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.SendEventAsync(TSubscription, TEvent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: SendEventAsync
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: protected abstract Task SendEventAsync(TSubscription subscription, TEvent evt, CancellationToken cancellationToken)
+    parameters:
+    - id: subscription
+      type: '{TSubscription}'
+    - id: evt
+      type: '{TEvent}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected MustOverride Function SendEventAsync(subscription As TSubscription, evt As TEvent, cancellationToken As CancellationToken) As Task
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.SendEventAsync*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).SendEventAsync(TSubscription, TEvent, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).SendEventAsync(TSubscription, TEvent, System.Threading.CancellationToken)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor(Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor(Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger)'
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionManagerBase(ILogger)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase(ILogger)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase(Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: .ctor
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: protected SubscriptionManagerBase(ILogger logger)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Protected Sub New(logger As ILogger)
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).New(ILogger)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).New(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe(`1)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe(`1)
+  id: Subscribe(`1)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(TSubscription)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.Subscribe(TSubscription)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.Subscribe(TSubscription)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Subscribe
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public string Subscribe(TSubscription subscription)
+    parameters:
+    - id: subscription
+      type: '{TSubscription}'
+    return:
+      type: System.String
+    content.vb: Public Function Subscribe(subscription As TSubscription) As String
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).Subscribe(TSubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).Subscribe(TSubscription)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.Unsubscribe(System.String,System.String)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.Unsubscribe(System.String,System.String)
+  id: Unsubscribe(System.String,System.String)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(string, string)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.Unsubscribe(string, string)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.Unsubscribe(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Unsubscribe
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public void Unsubscribe(string subscriptionKey, string subscriptionId)
+    parameters:
+    - id: subscriptionKey
+      type: System.String
+    - id: subscriptionId
+      type: System.String
+    content.vb: Public Sub Unsubscribe(subscriptionKey As String, subscriptionId As String)
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.Unsubscribe*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).Unsubscribe(String, String)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).Unsubscribe(String, String)
+  name.vb: Unsubscribe(String, String)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.BroadcastAsync(System.String,`0,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.BroadcastAsync(System.String,`0,System.Threading.CancellationToken)
+  id: BroadcastAsync(System.String,`0,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: BroadcastAsync(string, TEvent, CancellationToken)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.BroadcastAsync(string, TEvent, CancellationToken)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.BroadcastAsync(string, TEvent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: BroadcastAsync
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 49
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public Task BroadcastAsync(string topic, TEvent evt, CancellationToken cancellationToken)
+    parameters:
+    - id: topic
+      type: System.String
+    - id: evt
+      type: '{TEvent}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function BroadcastAsync(topic As String, evt As TEvent, cancellationToken As CancellationToken) As Task
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.BroadcastAsync*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).BroadcastAsync(String, TEvent, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).BroadcastAsync(String, TEvent, System.Threading.CancellationToken)
+  name.vb: BroadcastAsync(String, TEvent, CancellationToken)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionCount(System.String)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionCount(System.String)
+  id: GetSubscriptionCount(System.String)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: GetSubscriptionCount(string)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.GetSubscriptionCount(string)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.GetSubscriptionCount(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GetSubscriptionCount
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 105
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public int GetSubscriptionCount(string topic)
+    parameters:
+    - id: topic
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function GetSubscriptionCount(topic As String) As Integer
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionCount*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionCount(String)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionCount(String)
+  name.vb: GetSubscriptionCount(String)
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetTotalSubscriptionCount
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.GetTotalSubscriptionCount
+  id: GetTotalSubscriptionCount
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: GetTotalSubscriptionCount()
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.GetTotalSubscriptionCount()
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.GetTotalSubscriptionCount()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GetTotalSubscriptionCount
+    path: ../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 108
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public int GetTotalSubscriptionCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetTotalSubscriptionCount() As Integer
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.GetTotalSubscriptionCount*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetTotalSubscriptionCount()
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).GetTotalSubscriptionCount()
+references:
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.String,System.Collections.Concurrent.ConcurrentDictionary{System.String,{TSubscription}}}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.String,System.Collections.Concurrent.ConcurrentDictionary{System.String,`1}}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<string, ConcurrentDictionary<string, TSubscription>>
+  nameWithType: ConcurrentDictionary<string, ConcurrentDictionary<string, TSubscription>>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<string, System.Collections.Concurrent.ConcurrentDictionary<string, TSubscription>>
+  nameWithType.vb: ConcurrentDictionary(Of String, ConcurrentDictionary(Of String, TSubscription))
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of String, System.Collections.Concurrent.ConcurrentDictionary(Of String, TSubscription))
+  name.vb: ConcurrentDictionary(Of String, ConcurrentDictionary(Of String, TSubscription))
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TSubscription
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TSubscription
+  - name: )
+  - name: )
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<TKey, TValue>
+  nameWithType: ConcurrentDictionary<TKey, TValue>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
+  nameWithType.vb: ConcurrentDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
+  name.vb: ConcurrentDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionKey__1_
+  name: GetSubscriptionKey
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.GetSubscriptionKey
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.GetSubscriptionKey
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionKey
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionKey
+- uid: '{TSubscription}'
+  commentId: '!:TSubscription'
+  definition: TSubscription
+  name: TSubscription
+  nameWithType: TSubscription
+  fullName: TSubscription
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TSubscription
+  name: TSubscription
+  nameWithType: TSubscription
+  fullName: TSubscription
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetIdleTimeout*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.GetIdleTimeout
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetIdleTimeout__1_
+  name: GetIdleTimeout
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.GetIdleTimeout
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.GetIdleTimeout
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetIdleTimeout
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).GetIdleTimeout
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.SendEventAsync*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.SendEventAsync
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_SendEventAsync__1__0_System_Threading_CancellationToken_
+  name: SendEventAsync
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.SendEventAsync
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.SendEventAsync
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).SendEventAsync
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).SendEventAsync
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2__ctor_Microsoft_Extensions_Logging_ILogger_
+  name: SubscriptionManagerBase
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).New
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).New
+  name.vb: New
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Subscribe__1_
+  name: Subscribe
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.Subscribe
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.Subscribe
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).Subscribe
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).Subscribe
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.Unsubscribe*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.Unsubscribe
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Unsubscribe_System_String_System_String_
+  name: Unsubscribe
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.Unsubscribe
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.Unsubscribe
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).Unsubscribe
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).Unsubscribe
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.BroadcastAsync*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.BroadcastAsync
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_BroadcastAsync_System_String__0_System_Threading_CancellationToken_
+  name: BroadcastAsync
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.BroadcastAsync
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.BroadcastAsync
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).BroadcastAsync
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).BroadcastAsync
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionCount*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionCount
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionCount_System_String_
+  name: GetSubscriptionCount
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.GetSubscriptionCount
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.GetSubscriptionCount
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionCount
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetTotalSubscriptionCount*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.GetTotalSubscriptionCount
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetTotalSubscriptionCount
+  name: GetTotalSubscriptionCount
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.GetTotalSubscriptionCount
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.GetTotalSubscriptionCount
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetTotalSubscriptionCount
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).GetTotalSubscriptionCount

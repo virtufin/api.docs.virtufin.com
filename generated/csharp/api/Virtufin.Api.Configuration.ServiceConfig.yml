@@ -1,0 +1,597 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Configuration.ServiceConfig
+  commentId: T:Virtufin.Api.Configuration.ServiceConfig
+  id: ServiceConfig
+  parent: Virtufin.Api.Configuration
+  children:
+  - Virtufin.Api.Configuration.ServiceConfig.DaprAppId
+  - Virtufin.Api.Configuration.ServiceConfig.Grpc
+  - Virtufin.Api.Configuration.ServiceConfig.Jobs
+  - Virtufin.Api.Configuration.ServiceConfig.Name
+  - Virtufin.Api.Configuration.ServiceConfig.Protocol
+  - Virtufin.Api.Configuration.ServiceConfig.Pubsub
+  - Virtufin.Api.Configuration.ServiceConfig.State
+  langs:
+  - csharp
+  - vb
+  name: ServiceConfig
+  nameWithType: ServiceConfig
+  fullName: Virtufin.Api.Configuration.ServiceConfig
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: ServiceConfig
+    path: ../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public class ServiceConfig
+    content.vb: Public Class ServiceConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Configuration.ServiceConfig.Name
+  commentId: P:Virtufin.Api.Configuration.ServiceConfig.Name
+  id: Name
+  parent: Virtufin.Api.Configuration.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ServiceConfig.Name
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Name
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Name
+    path: ../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Virtufin.Api.Configuration.ServiceConfig.Name*
+- uid: Virtufin.Api.Configuration.ServiceConfig.Protocol
+  commentId: P:Virtufin.Api.Configuration.ServiceConfig.Protocol
+  id: Protocol
+  parent: Virtufin.Api.Configuration.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: Protocol
+  nameWithType: ServiceConfig.Protocol
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Protocol
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Protocol
+    path: ../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public string Protocol { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Protocol As String
+  overload: Virtufin.Api.Configuration.ServiceConfig.Protocol*
+- uid: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
+  commentId: P:Virtufin.Api.Configuration.ServiceConfig.DaprAppId
+  id: DaprAppId
+  parent: Virtufin.Api.Configuration.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: DaprAppId
+  nameWithType: ServiceConfig.DaprAppId
+  fullName: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: DaprAppId
+    path: ../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public string DaprAppId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DaprAppId As String
+  overload: Virtufin.Api.Configuration.ServiceConfig.DaprAppId*
+- uid: Virtufin.Api.Configuration.ServiceConfig.Grpc
+  commentId: P:Virtufin.Api.Configuration.ServiceConfig.Grpc
+  id: Grpc
+  parent: Virtufin.Api.Configuration.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: Grpc
+  nameWithType: ServiceConfig.Grpc
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Grpc
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Grpc
+    path: ../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 23
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public GrpcConfig Grpc { get; set; }
+    parameters: []
+    return:
+      type: Virtufin.Api.Configuration.GrpcConfig
+    content.vb: Public Property Grpc As GrpcConfig
+  overload: Virtufin.Api.Configuration.ServiceConfig.Grpc*
+- uid: Virtufin.Api.Configuration.ServiceConfig.Pubsub
+  commentId: P:Virtufin.Api.Configuration.ServiceConfig.Pubsub
+  id: Pubsub
+  parent: Virtufin.Api.Configuration.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: Pubsub
+  nameWithType: ServiceConfig.Pubsub
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Pubsub
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Pubsub
+    path: ../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public PubsubConfig Pubsub { get; set; }
+    parameters: []
+    return:
+      type: Virtufin.Api.Configuration.PubsubConfig
+    content.vb: Public Property Pubsub As PubsubConfig
+  overload: Virtufin.Api.Configuration.ServiceConfig.Pubsub*
+- uid: Virtufin.Api.Configuration.ServiceConfig.State
+  commentId: P:Virtufin.Api.Configuration.ServiceConfig.State
+  id: State
+  parent: Virtufin.Api.Configuration.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: ServiceConfig.State
+  fullName: Virtufin.Api.Configuration.ServiceConfig.State
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: State
+    path: ../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public StateConfig State { get; set; }
+    parameters: []
+    return:
+      type: Virtufin.Api.Configuration.StateConfig
+    content.vb: Public Property State As StateConfig
+  overload: Virtufin.Api.Configuration.ServiceConfig.State*
+- uid: Virtufin.Api.Configuration.ServiceConfig.Jobs
+  commentId: P:Virtufin.Api.Configuration.ServiceConfig.Jobs
+  id: Jobs
+  parent: Virtufin.Api.Configuration.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: Jobs
+  nameWithType: ServiceConfig.Jobs
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Jobs
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Jobs
+    path: ../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 26
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public JobsConfig Jobs { get; set; }
+    parameters: []
+    return:
+      type: Virtufin.Api.Configuration.JobsConfig
+    content.vb: Public Property Jobs As JobsConfig
+  overload: Virtufin.Api.Configuration.ServiceConfig.Jobs*
+references:
+- uid: Virtufin.Api.Configuration
+  commentId: N:Virtufin.Api.Configuration
+  href: Virtufin.html
+  name: Virtufin.Api.Configuration
+  nameWithType: Virtufin.Api.Configuration
+  fullName: Virtufin.Api.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Api.Configuration.ServiceConfig.Name*
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Name
+  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Name
+  name: Name
+  nameWithType: ServiceConfig.Name
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Api.Configuration.ServiceConfig.Protocol*
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Protocol
+  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Protocol
+  name: Protocol
+  nameWithType: ServiceConfig.Protocol
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Protocol
+- uid: Virtufin.Api.Configuration.ServiceConfig.DaprAppId*
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.DaprAppId
+  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_DaprAppId
+  name: DaprAppId
+  nameWithType: ServiceConfig.DaprAppId
+  fullName: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
+- uid: Virtufin.Api.Configuration.ServiceConfig.Grpc*
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Grpc
+  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Grpc
+  name: Grpc
+  nameWithType: ServiceConfig.Grpc
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Grpc
+- uid: Virtufin.Api.Configuration.GrpcConfig
+  commentId: T:Virtufin.Api.Configuration.GrpcConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.GrpcConfig.html
+  name: GrpcConfig
+  nameWithType: GrpcConfig
+  fullName: Virtufin.Api.Configuration.GrpcConfig
+- uid: Virtufin.Api.Configuration.ServiceConfig.Pubsub*
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Pubsub
+  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Pubsub
+  name: Pubsub
+  nameWithType: ServiceConfig.Pubsub
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Pubsub
+- uid: Virtufin.Api.Configuration.PubsubConfig
+  commentId: T:Virtufin.Api.Configuration.PubsubConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.PubsubConfig.html
+  name: PubsubConfig
+  nameWithType: PubsubConfig
+  fullName: Virtufin.Api.Configuration.PubsubConfig
+- uid: Virtufin.Api.Configuration.ServiceConfig.State*
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.State
+  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_State
+  name: State
+  nameWithType: ServiceConfig.State
+  fullName: Virtufin.Api.Configuration.ServiceConfig.State
+- uid: Virtufin.Api.Configuration.StateConfig
+  commentId: T:Virtufin.Api.Configuration.StateConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.StateConfig.html
+  name: StateConfig
+  nameWithType: StateConfig
+  fullName: Virtufin.Api.Configuration.StateConfig
+- uid: Virtufin.Api.Configuration.ServiceConfig.Jobs*
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Jobs
+  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Jobs
+  name: Jobs
+  nameWithType: ServiceConfig.Jobs
+  fullName: Virtufin.Api.Configuration.ServiceConfig.Jobs
+- uid: Virtufin.Api.Configuration.JobsConfig
+  commentId: T:Virtufin.Api.Configuration.JobsConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.JobsConfig.html
+  name: JobsConfig
+  nameWithType: JobsConfig
+  fullName: Virtufin.Api.Configuration.JobsConfig

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.HealthChecks
+  commentId: N:Virtufin.Api.HealthChecks
+  id: Virtufin.Api.HealthChecks
+  children:
+  - Virtufin.Api.HealthChecks.DaprHealthCheck
+  - Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Api.HealthChecks
+  nameWithType: Virtufin.Api.HealthChecks
+  fullName: Virtufin.Api.HealthChecks
+  type: Namespace
+  assemblies:
+  - Virtufin.Api
+references:
+- uid: Virtufin.Api.HealthChecks.DaprHealthCheck
+  commentId: T:Virtufin.Api.HealthChecks.DaprHealthCheck
+  href: Virtufin.Api.HealthChecks.DaprHealthCheck.html
+  name: DaprHealthCheck
+  nameWithType: DaprHealthCheck
+  fullName: Virtufin.Api.HealthChecks.DaprHealthCheck
+- uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+  commentId: T:Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+  href: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.html
+  name: GrpcChannelPoolHealthCheck
+  nameWithType: GrpcChannelPoolHealthCheck
+  fullName: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck

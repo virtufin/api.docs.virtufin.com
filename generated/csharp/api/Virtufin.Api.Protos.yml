@@ -1,0 +1,713 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  id: Virtufin.Api.Protos
+  children:
+  - Virtufin.Api.Protos.Config
+  - Virtufin.Api.Protos.Config.ConfigBase
+  - Virtufin.Api.Protos.Config.ConfigClient
+  - Virtufin.Api.Protos.ConfigReflection
+  - Virtufin.Api.Protos.ConfigService
+  - Virtufin.Api.Protos.CronJobConfig
+  - Virtufin.Api.Protos.DeleteStateRequest
+  - Virtufin.Api.Protos.DeleteStateResponse
+  - Virtufin.Api.Protos.FieldSchema
+  - Virtufin.Api.Protos.Gateway
+  - Virtufin.Api.Protos.Gateway.GatewayBase
+  - Virtufin.Api.Protos.Gateway.GatewayClient
+  - Virtufin.Api.Protos.GatewayReflection
+  - Virtufin.Api.Protos.GetAllStateRequest
+  - Virtufin.Api.Protos.GetAllStateResponse
+  - Virtufin.Api.Protos.GetConfigServiceRequest
+  - Virtufin.Api.Protos.GetConfigServiceResponse
+  - Virtufin.Api.Protos.GetMethodSchemaRequest
+  - Virtufin.Api.Protos.GetMethodSchemaResponse
+  - Virtufin.Api.Protos.GetStateRequest
+  - Virtufin.Api.Protos.GetStateResponse
+  - Virtufin.Api.Protos.GrpcConfig
+  - Virtufin.Api.Protos.InvokeJsonRequest
+  - Virtufin.Api.Protos.InvokeJsonResponse
+  - Virtufin.Api.Protos.InvokeRequest
+  - Virtufin.Api.Protos.InvokeResponse
+  - Virtufin.Api.Protos.JobsConfig
+  - Virtufin.Api.Protos.ListConfigServicesRequest
+  - Virtufin.Api.Protos.ListConfigServicesResponse
+  - Virtufin.Api.Protos.ListMethodsRequest
+  - Virtufin.Api.Protos.ListMethodsResponse
+  - Virtufin.Api.Protos.ListServicesRequest
+  - Virtufin.Api.Protos.ListServicesResponse
+  - Virtufin.Api.Protos.MethodInfo
+  - Virtufin.Api.Protos.MethodSchema
+  - Virtufin.Api.Protos.OneofCaseSchema
+  - Virtufin.Api.Protos.PublishRequest
+  - Virtufin.Api.Protos.PublishResponse
+  - Virtufin.Api.Protos.Pubsub
+  - Virtufin.Api.Protos.Pubsub.PubsubBase
+  - Virtufin.Api.Protos.Pubsub.PubsubClient
+  - Virtufin.Api.Protos.PubsubConfig
+  - Virtufin.Api.Protos.PubsubReflection
+  - Virtufin.Api.Protos.PubsubSubscribeRequest
+  - Virtufin.Api.Protos.PubsubSubscribeResponse
+  - Virtufin.Api.Protos.RegisterKeysRequest
+  - Virtufin.Api.Protos.RegisterKeysResponse
+  - Virtufin.Api.Protos.SaveStateRequest
+  - Virtufin.Api.Protos.SaveStateResponse
+  - Virtufin.Api.Protos.State
+  - Virtufin.Api.Protos.State.StateBase
+  - Virtufin.Api.Protos.State.StateClient
+  - Virtufin.Api.Protos.StateConfig
+  - Virtufin.Api.Protos.StateReflection
+  - Virtufin.Api.Protos.StatusResponse
+  - Virtufin.Api.Protos.SubscribeRequest
+  - Virtufin.Api.Protos.SystemEventsRequest
+  - Virtufin.Api.Protos.TopicEventRequest
+  - Virtufin.Api.Protos.TopicEventResponse
+  - Virtufin.Api.Protos.TopicEventResponse.Types
+  - Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  - Virtufin.Api.Protos.UnsubscribeRequest
+  - Virtufin.Api.Protos.UnsubscribeResponse
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  type: Namespace
+  assemblies:
+  - Virtufin.Api
+references:
+- uid: Virtufin.Api.Protos.GatewayReflection
+  commentId: T:Virtufin.Api.Protos.GatewayReflection
+  href: Virtufin.Api.Protos.GatewayReflection.html
+  name: GatewayReflection
+  nameWithType: GatewayReflection
+  fullName: Virtufin.Api.Protos.GatewayReflection
+- uid: Virtufin.Api.Protos.StatusResponse
+  commentId: T:Virtufin.Api.Protos.StatusResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.StatusResponse.html
+  name: StatusResponse
+  nameWithType: StatusResponse
+  fullName: Virtufin.Api.Protos.StatusResponse
+- uid: Virtufin.Api.Protos.InvokeRequest
+  commentId: T:Virtufin.Api.Protos.InvokeRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.InvokeRequest.html
+  name: InvokeRequest
+  nameWithType: InvokeRequest
+  fullName: Virtufin.Api.Protos.InvokeRequest
+- uid: Virtufin.Api.Protos.InvokeResponse
+  commentId: T:Virtufin.Api.Protos.InvokeResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.InvokeResponse.html
+  name: InvokeResponse
+  nameWithType: InvokeResponse
+  fullName: Virtufin.Api.Protos.InvokeResponse
+- uid: Virtufin.Api.Protos.InvokeJsonRequest
+  commentId: T:Virtufin.Api.Protos.InvokeJsonRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.InvokeJsonRequest.html
+  name: InvokeJsonRequest
+  nameWithType: InvokeJsonRequest
+  fullName: Virtufin.Api.Protos.InvokeJsonRequest
+- uid: Virtufin.Api.Protos.InvokeJsonResponse
+  commentId: T:Virtufin.Api.Protos.InvokeJsonResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.InvokeJsonResponse.html
+  name: InvokeJsonResponse
+  nameWithType: InvokeJsonResponse
+  fullName: Virtufin.Api.Protos.InvokeJsonResponse
+- uid: Virtufin.Api.Protos.ListServicesRequest
+  commentId: T:Virtufin.Api.Protos.ListServicesRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.ListServicesRequest.html
+  name: ListServicesRequest
+  nameWithType: ListServicesRequest
+  fullName: Virtufin.Api.Protos.ListServicesRequest
+- uid: Virtufin.Api.Protos.ListServicesResponse
+  commentId: T:Virtufin.Api.Protos.ListServicesResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.ListServicesResponse.html
+  name: ListServicesResponse
+  nameWithType: ListServicesResponse
+  fullName: Virtufin.Api.Protos.ListServicesResponse
+- uid: Virtufin.Api.Protos.ListMethodsRequest
+  commentId: T:Virtufin.Api.Protos.ListMethodsRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.ListMethodsRequest.html
+  name: ListMethodsRequest
+  nameWithType: ListMethodsRequest
+  fullName: Virtufin.Api.Protos.ListMethodsRequest
+- uid: Virtufin.Api.Protos.MethodInfo
+  commentId: T:Virtufin.Api.Protos.MethodInfo
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.MethodInfo.html
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: Virtufin.Api.Protos.MethodInfo
+- uid: Virtufin.Api.Protos.ListMethodsResponse
+  commentId: T:Virtufin.Api.Protos.ListMethodsResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.ListMethodsResponse.html
+  name: ListMethodsResponse
+  nameWithType: ListMethodsResponse
+  fullName: Virtufin.Api.Protos.ListMethodsResponse
+- uid: Virtufin.Api.Protos.SubscribeRequest
+  commentId: T:Virtufin.Api.Protos.SubscribeRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.SubscribeRequest.html
+  name: SubscribeRequest
+  nameWithType: SubscribeRequest
+  fullName: Virtufin.Api.Protos.SubscribeRequest
+- uid: Virtufin.Api.Protos.SystemEventsRequest
+  commentId: T:Virtufin.Api.Protos.SystemEventsRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.SystemEventsRequest.html
+  name: SystemEventsRequest
+  nameWithType: SystemEventsRequest
+  fullName: Virtufin.Api.Protos.SystemEventsRequest
+- uid: Virtufin.Api.Protos.GetMethodSchemaRequest
+  commentId: T:Virtufin.Api.Protos.GetMethodSchemaRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetMethodSchemaRequest.html
+  name: GetMethodSchemaRequest
+  nameWithType: GetMethodSchemaRequest
+  fullName: Virtufin.Api.Protos.GetMethodSchemaRequest
+- uid: Virtufin.Api.Protos.GetMethodSchemaResponse
+  commentId: T:Virtufin.Api.Protos.GetMethodSchemaResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetMethodSchemaResponse.html
+  name: GetMethodSchemaResponse
+  nameWithType: GetMethodSchemaResponse
+  fullName: Virtufin.Api.Protos.GetMethodSchemaResponse
+- uid: Virtufin.Api.Protos.MethodSchema
+  commentId: T:Virtufin.Api.Protos.MethodSchema
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.MethodSchema.html
+  name: MethodSchema
+  nameWithType: MethodSchema
+  fullName: Virtufin.Api.Protos.MethodSchema
+- uid: Virtufin.Api.Protos.FieldSchema
+  commentId: T:Virtufin.Api.Protos.FieldSchema
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.FieldSchema.html
+  name: FieldSchema
+  nameWithType: FieldSchema
+  fullName: Virtufin.Api.Protos.FieldSchema
+- uid: Virtufin.Api.Protos.OneofCaseSchema
+  commentId: T:Virtufin.Api.Protos.OneofCaseSchema
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.OneofCaseSchema.html
+  name: OneofCaseSchema
+  nameWithType: OneofCaseSchema
+  fullName: Virtufin.Api.Protos.OneofCaseSchema
+- uid: Virtufin.Api.Protos.TopicEventRequest
+  commentId: T:Virtufin.Api.Protos.TopicEventRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.TopicEventRequest.html
+  name: TopicEventRequest
+  nameWithType: TopicEventRequest
+  fullName: Virtufin.Api.Protos.TopicEventRequest
+- uid: Virtufin.Api.Protos.TopicEventResponse
+  commentId: T:Virtufin.Api.Protos.TopicEventResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.TopicEventResponse.html
+  name: TopicEventResponse
+  nameWithType: TopicEventResponse
+  fullName: Virtufin.Api.Protos.TopicEventResponse
+- uid: Virtufin.Api.Protos.TopicEventResponse.Types
+  commentId: T:Virtufin.Api.Protos.TopicEventResponse.Types
+  href: Virtufin.Api.Protos.TopicEventResponse.html
+  name: TopicEventResponse.Types
+  nameWithType: TopicEventResponse.Types
+  fullName: Virtufin.Api.Protos.TopicEventResponse.Types
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.TopicEventResponse
+    name: TopicEventResponse
+    href: Virtufin.Api.Protos.TopicEventResponse.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types
+    name: Types
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.TopicEventResponse
+    name: TopicEventResponse
+    href: Virtufin.Api.Protos.TopicEventResponse.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types
+    name: Types
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.html
+- uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  commentId: T:Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.TopicEventResponse.html
+  name: TopicEventResponse.Types.TopicEventResponseStatus
+  nameWithType: TopicEventResponse.Types.TopicEventResponseStatus
+  fullName: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.TopicEventResponse
+    name: TopicEventResponse
+    href: Virtufin.Api.Protos.TopicEventResponse.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types
+    name: Types
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+    name: TopicEventResponseStatus
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.TopicEventResponse
+    name: TopicEventResponse
+    href: Virtufin.Api.Protos.TopicEventResponse.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types
+    name: Types
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.html
+  - name: .
+  - uid: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus
+    name: TopicEventResponseStatus
+    href: Virtufin.Api.Protos.TopicEventResponse.Types.TopicEventResponseStatus.html
+- uid: Virtufin.Api.Protos.Gateway
+  commentId: T:Virtufin.Api.Protos.Gateway
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Gateway.html
+  name: Gateway
+  nameWithType: Gateway
+  fullName: Virtufin.Api.Protos.Gateway
+- uid: Virtufin.Api.Protos.Gateway.GatewayBase
+  commentId: T:Virtufin.Api.Protos.Gateway.GatewayBase
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Gateway.html
+  name: Gateway.GatewayBase
+  nameWithType: Gateway.GatewayBase
+  fullName: Virtufin.Api.Protos.Gateway.GatewayBase
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Gateway
+    name: Gateway
+    href: Virtufin.Api.Protos.Gateway.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Gateway.GatewayBase
+    name: GatewayBase
+    href: Virtufin.Api.Protos.Gateway.GatewayBase.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Gateway
+    name: Gateway
+    href: Virtufin.Api.Protos.Gateway.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Gateway.GatewayBase
+    name: GatewayBase
+    href: Virtufin.Api.Protos.Gateway.GatewayBase.html
+- uid: Virtufin.Api.Protos.Gateway.GatewayClient
+  commentId: T:Virtufin.Api.Protos.Gateway.GatewayClient
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Gateway.html
+  name: Gateway.GatewayClient
+  nameWithType: Gateway.GatewayClient
+  fullName: Virtufin.Api.Protos.Gateway.GatewayClient
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Gateway
+    name: Gateway
+    href: Virtufin.Api.Protos.Gateway.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Gateway.GatewayClient
+    name: GatewayClient
+    href: Virtufin.Api.Protos.Gateway.GatewayClient.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Gateway
+    name: Gateway
+    href: Virtufin.Api.Protos.Gateway.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Gateway.GatewayClient
+    name: GatewayClient
+    href: Virtufin.Api.Protos.Gateway.GatewayClient.html
+- uid: Virtufin.Api.Protos.ConfigReflection
+  commentId: T:Virtufin.Api.Protos.ConfigReflection
+  href: Virtufin.Api.Protos.ConfigReflection.html
+  name: ConfigReflection
+  nameWithType: ConfigReflection
+  fullName: Virtufin.Api.Protos.ConfigReflection
+- uid: Virtufin.Api.Protos.ListConfigServicesRequest
+  commentId: T:Virtufin.Api.Protos.ListConfigServicesRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.ListConfigServicesRequest.html
+  name: ListConfigServicesRequest
+  nameWithType: ListConfigServicesRequest
+  fullName: Virtufin.Api.Protos.ListConfigServicesRequest
+- uid: Virtufin.Api.Protos.ListConfigServicesResponse
+  commentId: T:Virtufin.Api.Protos.ListConfigServicesResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.ListConfigServicesResponse.html
+  name: ListConfigServicesResponse
+  nameWithType: ListConfigServicesResponse
+  fullName: Virtufin.Api.Protos.ListConfigServicesResponse
+- uid: Virtufin.Api.Protos.GetConfigServiceRequest
+  commentId: T:Virtufin.Api.Protos.GetConfigServiceRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetConfigServiceRequest.html
+  name: GetConfigServiceRequest
+  nameWithType: GetConfigServiceRequest
+  fullName: Virtufin.Api.Protos.GetConfigServiceRequest
+- uid: Virtufin.Api.Protos.GetConfigServiceResponse
+  commentId: T:Virtufin.Api.Protos.GetConfigServiceResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetConfigServiceResponse.html
+  name: GetConfigServiceResponse
+  nameWithType: GetConfigServiceResponse
+  fullName: Virtufin.Api.Protos.GetConfigServiceResponse
+- uid: Virtufin.Api.Protos.ConfigService
+  commentId: T:Virtufin.Api.Protos.ConfigService
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.ConfigService.html
+  name: ConfigService
+  nameWithType: ConfigService
+  fullName: Virtufin.Api.Protos.ConfigService
+- uid: Virtufin.Api.Protos.GrpcConfig
+  commentId: T:Virtufin.Api.Protos.GrpcConfig
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GrpcConfig.html
+  name: GrpcConfig
+  nameWithType: GrpcConfig
+  fullName: Virtufin.Api.Protos.GrpcConfig
+- uid: Virtufin.Api.Protos.PubsubConfig
+  commentId: T:Virtufin.Api.Protos.PubsubConfig
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.PubsubConfig.html
+  name: PubsubConfig
+  nameWithType: PubsubConfig
+  fullName: Virtufin.Api.Protos.PubsubConfig
+- uid: Virtufin.Api.Protos.StateConfig
+  commentId: T:Virtufin.Api.Protos.StateConfig
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.StateConfig.html
+  name: StateConfig
+  nameWithType: StateConfig
+  fullName: Virtufin.Api.Protos.StateConfig
+- uid: Virtufin.Api.Protos.JobsConfig
+  commentId: T:Virtufin.Api.Protos.JobsConfig
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.JobsConfig.html
+  name: JobsConfig
+  nameWithType: JobsConfig
+  fullName: Virtufin.Api.Protos.JobsConfig
+- uid: Virtufin.Api.Protos.CronJobConfig
+  commentId: T:Virtufin.Api.Protos.CronJobConfig
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.CronJobConfig.html
+  name: CronJobConfig
+  nameWithType: CronJobConfig
+  fullName: Virtufin.Api.Protos.CronJobConfig
+- uid: Virtufin.Api.Protos.Config
+  commentId: T:Virtufin.Api.Protos.Config
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Config.html
+  name: Config
+  nameWithType: Config
+  fullName: Virtufin.Api.Protos.Config
+- uid: Virtufin.Api.Protos.Config.ConfigBase
+  commentId: T:Virtufin.Api.Protos.Config.ConfigBase
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Config.html
+  name: Config.ConfigBase
+  nameWithType: Config.ConfigBase
+  fullName: Virtufin.Api.Protos.Config.ConfigBase
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Config
+    name: Config
+    href: Virtufin.Api.Protos.Config.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Config.ConfigBase
+    name: ConfigBase
+    href: Virtufin.Api.Protos.Config.ConfigBase.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Config
+    name: Config
+    href: Virtufin.Api.Protos.Config.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Config.ConfigBase
+    name: ConfigBase
+    href: Virtufin.Api.Protos.Config.ConfigBase.html
+- uid: Virtufin.Api.Protos.Config.ConfigClient
+  commentId: T:Virtufin.Api.Protos.Config.ConfigClient
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Config.html
+  name: Config.ConfigClient
+  nameWithType: Config.ConfigClient
+  fullName: Virtufin.Api.Protos.Config.ConfigClient
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Config
+    name: Config
+    href: Virtufin.Api.Protos.Config.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Config.ConfigClient
+    name: ConfigClient
+    href: Virtufin.Api.Protos.Config.ConfigClient.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Config
+    name: Config
+    href: Virtufin.Api.Protos.Config.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Config.ConfigClient
+    name: ConfigClient
+    href: Virtufin.Api.Protos.Config.ConfigClient.html
+- uid: Virtufin.Api.Protos.StateReflection
+  commentId: T:Virtufin.Api.Protos.StateReflection
+  href: Virtufin.Api.Protos.StateReflection.html
+  name: StateReflection
+  nameWithType: StateReflection
+  fullName: Virtufin.Api.Protos.StateReflection
+- uid: Virtufin.Api.Protos.SaveStateRequest
+  commentId: T:Virtufin.Api.Protos.SaveStateRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.SaveStateRequest.html
+  name: SaveStateRequest
+  nameWithType: SaveStateRequest
+  fullName: Virtufin.Api.Protos.SaveStateRequest
+- uid: Virtufin.Api.Protos.SaveStateResponse
+  commentId: T:Virtufin.Api.Protos.SaveStateResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.SaveStateResponse.html
+  name: SaveStateResponse
+  nameWithType: SaveStateResponse
+  fullName: Virtufin.Api.Protos.SaveStateResponse
+- uid: Virtufin.Api.Protos.GetStateRequest
+  commentId: T:Virtufin.Api.Protos.GetStateRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetStateRequest.html
+  name: GetStateRequest
+  nameWithType: GetStateRequest
+  fullName: Virtufin.Api.Protos.GetStateRequest
+- uid: Virtufin.Api.Protos.GetStateResponse
+  commentId: T:Virtufin.Api.Protos.GetStateResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetStateResponse.html
+  name: GetStateResponse
+  nameWithType: GetStateResponse
+  fullName: Virtufin.Api.Protos.GetStateResponse
+- uid: Virtufin.Api.Protos.GetAllStateRequest
+  commentId: T:Virtufin.Api.Protos.GetAllStateRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetAllStateRequest.html
+  name: GetAllStateRequest
+  nameWithType: GetAllStateRequest
+  fullName: Virtufin.Api.Protos.GetAllStateRequest
+- uid: Virtufin.Api.Protos.GetAllStateResponse
+  commentId: T:Virtufin.Api.Protos.GetAllStateResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.GetAllStateResponse.html
+  name: GetAllStateResponse
+  nameWithType: GetAllStateResponse
+  fullName: Virtufin.Api.Protos.GetAllStateResponse
+- uid: Virtufin.Api.Protos.RegisterKeysRequest
+  commentId: T:Virtufin.Api.Protos.RegisterKeysRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.RegisterKeysRequest.html
+  name: RegisterKeysRequest
+  nameWithType: RegisterKeysRequest
+  fullName: Virtufin.Api.Protos.RegisterKeysRequest
+- uid: Virtufin.Api.Protos.RegisterKeysResponse
+  commentId: T:Virtufin.Api.Protos.RegisterKeysResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.RegisterKeysResponse.html
+  name: RegisterKeysResponse
+  nameWithType: RegisterKeysResponse
+  fullName: Virtufin.Api.Protos.RegisterKeysResponse
+- uid: Virtufin.Api.Protos.DeleteStateRequest
+  commentId: T:Virtufin.Api.Protos.DeleteStateRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.DeleteStateRequest.html
+  name: DeleteStateRequest
+  nameWithType: DeleteStateRequest
+  fullName: Virtufin.Api.Protos.DeleteStateRequest
+- uid: Virtufin.Api.Protos.DeleteStateResponse
+  commentId: T:Virtufin.Api.Protos.DeleteStateResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.DeleteStateResponse.html
+  name: DeleteStateResponse
+  nameWithType: DeleteStateResponse
+  fullName: Virtufin.Api.Protos.DeleteStateResponse
+- uid: Virtufin.Api.Protos.State
+  commentId: T:Virtufin.Api.Protos.State
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.State.html
+  name: State
+  nameWithType: State
+  fullName: Virtufin.Api.Protos.State
+- uid: Virtufin.Api.Protos.State.StateBase
+  commentId: T:Virtufin.Api.Protos.State.StateBase
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.State.html
+  name: State.StateBase
+  nameWithType: State.StateBase
+  fullName: Virtufin.Api.Protos.State.StateBase
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    href: Virtufin.Api.Protos.State.html
+  - name: .
+  - uid: Virtufin.Api.Protos.State.StateBase
+    name: StateBase
+    href: Virtufin.Api.Protos.State.StateBase.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    href: Virtufin.Api.Protos.State.html
+  - name: .
+  - uid: Virtufin.Api.Protos.State.StateBase
+    name: StateBase
+    href: Virtufin.Api.Protos.State.StateBase.html
+- uid: Virtufin.Api.Protos.State.StateClient
+  commentId: T:Virtufin.Api.Protos.State.StateClient
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.State.html
+  name: State.StateClient
+  nameWithType: State.StateClient
+  fullName: Virtufin.Api.Protos.State.StateClient
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    href: Virtufin.Api.Protos.State.html
+  - name: .
+  - uid: Virtufin.Api.Protos.State.StateClient
+    name: StateClient
+    href: Virtufin.Api.Protos.State.StateClient.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.State
+    name: State
+    href: Virtufin.Api.Protos.State.html
+  - name: .
+  - uid: Virtufin.Api.Protos.State.StateClient
+    name: StateClient
+    href: Virtufin.Api.Protos.State.StateClient.html
+- uid: Virtufin.Api.Protos.PubsubReflection
+  commentId: T:Virtufin.Api.Protos.PubsubReflection
+  href: Virtufin.Api.Protos.PubsubReflection.html
+  name: PubsubReflection
+  nameWithType: PubsubReflection
+  fullName: Virtufin.Api.Protos.PubsubReflection
+- uid: Virtufin.Api.Protos.PublishRequest
+  commentId: T:Virtufin.Api.Protos.PublishRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.PublishRequest.html
+  name: PublishRequest
+  nameWithType: PublishRequest
+  fullName: Virtufin.Api.Protos.PublishRequest
+- uid: Virtufin.Api.Protos.PublishResponse
+  commentId: T:Virtufin.Api.Protos.PublishResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.PublishResponse.html
+  name: PublishResponse
+  nameWithType: PublishResponse
+  fullName: Virtufin.Api.Protos.PublishResponse
+- uid: Virtufin.Api.Protos.PubsubSubscribeRequest
+  commentId: T:Virtufin.Api.Protos.PubsubSubscribeRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.PubsubSubscribeRequest.html
+  name: PubsubSubscribeRequest
+  nameWithType: PubsubSubscribeRequest
+  fullName: Virtufin.Api.Protos.PubsubSubscribeRequest
+- uid: Virtufin.Api.Protos.PubsubSubscribeResponse
+  commentId: T:Virtufin.Api.Protos.PubsubSubscribeResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
+  name: PubsubSubscribeResponse
+  nameWithType: PubsubSubscribeResponse
+  fullName: Virtufin.Api.Protos.PubsubSubscribeResponse
+- uid: Virtufin.Api.Protos.UnsubscribeRequest
+  commentId: T:Virtufin.Api.Protos.UnsubscribeRequest
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.UnsubscribeRequest.html
+  name: UnsubscribeRequest
+  nameWithType: UnsubscribeRequest
+  fullName: Virtufin.Api.Protos.UnsubscribeRequest
+- uid: Virtufin.Api.Protos.UnsubscribeResponse
+  commentId: T:Virtufin.Api.Protos.UnsubscribeResponse
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.UnsubscribeResponse.html
+  name: UnsubscribeResponse
+  nameWithType: UnsubscribeResponse
+  fullName: Virtufin.Api.Protos.UnsubscribeResponse
+- uid: Virtufin.Api.Protos.Pubsub
+  commentId: T:Virtufin.Api.Protos.Pubsub
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Pubsub.html
+  name: Pubsub
+  nameWithType: Pubsub
+  fullName: Virtufin.Api.Protos.Pubsub
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase
+  commentId: T:Virtufin.Api.Protos.Pubsub.PubsubBase
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Pubsub.html
+  name: Pubsub.PubsubBase
+  nameWithType: Pubsub.PubsubBase
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Pubsub
+    name: Pubsub
+    href: Virtufin.Api.Protos.Pubsub.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase
+    name: PubsubBase
+    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Pubsub
+    name: Pubsub
+    href: Virtufin.Api.Protos.Pubsub.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase
+    name: PubsubBase
+    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html
+- uid: Virtufin.Api.Protos.Pubsub.PubsubClient
+  commentId: T:Virtufin.Api.Protos.Pubsub.PubsubClient
+  parent: Virtufin.Api.Protos
+  href: Virtufin.Api.Protos.Pubsub.html
+  name: Pubsub.PubsubClient
+  nameWithType: Pubsub.PubsubClient
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubClient
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Pubsub
+    name: Pubsub
+    href: Virtufin.Api.Protos.Pubsub.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubClient
+    name: PubsubClient
+    href: Virtufin.Api.Protos.Pubsub.PubsubClient.html
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Pubsub
+    name: Pubsub
+    href: Virtufin.Api.Protos.Pubsub.html
+  - name: .
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubClient
+    name: PubsubClient
+    href: Virtufin.Api.Protos.Pubsub.PubsubClient.html
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  href: Virtufin.html
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+    href: Virtufin.Api.Protos.html

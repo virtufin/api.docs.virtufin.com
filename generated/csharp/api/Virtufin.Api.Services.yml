@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  id: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.ChannelEntry
+  - Virtufin.Api.Services.ConfigService
+  - Virtufin.Api.Services.DaprConstants
+  - Virtufin.Api.Services.DaprPubSubBridgeService
+  - Virtufin.Api.Services.FieldSchema
+  - Virtufin.Api.Services.GatewayService
+  - Virtufin.Api.Services.GrpcCallResult
+  - Virtufin.Api.Services.GrpcChannelPool
+  - Virtufin.Api.Services.GrpcReflectionService
+  - Virtufin.Api.Services.MethodSchema
+  - Virtufin.Api.Services.OneofCaseSchema
+  - Virtufin.Api.Services.PubSubTopics
+  - Virtufin.Api.Services.PubsubService
+  - Virtufin.Api.Services.PubsubSubscription
+  - Virtufin.Api.Services.PubsubSubscriptionManager
+  - Virtufin.Api.Services.ServiceMethodInfo
+  - Virtufin.Api.Services.StateService
+  - Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  type: Namespace
+  assemblies:
+  - Virtufin.Api
+references:
+- uid: Virtufin.Api.Services.ConfigService
+  commentId: T:Virtufin.Api.Services.ConfigService
+  href: Virtufin.Api.Services.ConfigService.html
+  name: ConfigService
+  nameWithType: ConfigService
+  fullName: Virtufin.Api.Services.ConfigService
+- uid: Virtufin.Api.Services.DaprConstants
+  commentId: T:Virtufin.Api.Services.DaprConstants
+  href: Virtufin.Api.Services.DaprConstants.html
+  name: DaprConstants
+  nameWithType: DaprConstants
+  fullName: Virtufin.Api.Services.DaprConstants
+- uid: Virtufin.Api.Services.PubSubTopics
+  commentId: T:Virtufin.Api.Services.PubSubTopics
+  href: Virtufin.Api.Services.PubSubTopics.html
+  name: PubSubTopics
+  nameWithType: PubSubTopics
+  fullName: Virtufin.Api.Services.PubSubTopics
+- uid: Virtufin.Api.Services.DaprPubSubBridgeService
+  commentId: T:Virtufin.Api.Services.DaprPubSubBridgeService
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.DaprPubSubBridgeService.html
+  name: DaprPubSubBridgeService
+  nameWithType: DaprPubSubBridgeService
+  fullName: Virtufin.Api.Services.DaprPubSubBridgeService
+- uid: Virtufin.Api.Services.GatewayService
+  commentId: T:Virtufin.Api.Services.GatewayService
+  href: Virtufin.Api.Services.GatewayService.html
+  name: GatewayService
+  nameWithType: GatewayService
+  fullName: Virtufin.Api.Services.GatewayService
+- uid: Virtufin.Api.Services.ChannelEntry
+  commentId: T:Virtufin.Api.Services.ChannelEntry
+  href: Virtufin.Api.Services.ChannelEntry.html
+  name: ChannelEntry
+  nameWithType: ChannelEntry
+  fullName: Virtufin.Api.Services.ChannelEntry
+- uid: Virtufin.Api.Services.GrpcChannelPool
+  commentId: T:Virtufin.Api.Services.GrpcChannelPool
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.GrpcChannelPool.html
+  name: GrpcChannelPool
+  nameWithType: GrpcChannelPool
+  fullName: Virtufin.Api.Services.GrpcChannelPool
+- uid: Virtufin.Api.Services.GrpcReflectionService
+  commentId: T:Virtufin.Api.Services.GrpcReflectionService
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.GrpcReflectionService.html
+  name: GrpcReflectionService
+  nameWithType: GrpcReflectionService
+  fullName: Virtufin.Api.Services.GrpcReflectionService
+- uid: Virtufin.Api.Services.ServiceMethodInfo
+  commentId: T:Virtufin.Api.Services.ServiceMethodInfo
+  href: Virtufin.Api.Services.ServiceMethodInfo.html
+  name: ServiceMethodInfo
+  nameWithType: ServiceMethodInfo
+  fullName: Virtufin.Api.Services.ServiceMethodInfo
+- uid: Virtufin.Api.Services.MethodSchema
+  commentId: T:Virtufin.Api.Services.MethodSchema
+  href: Virtufin.Api.Services.MethodSchema.html
+  name: MethodSchema
+  nameWithType: MethodSchema
+  fullName: Virtufin.Api.Services.MethodSchema
+- uid: Virtufin.Api.Services.FieldSchema
+  commentId: T:Virtufin.Api.Services.FieldSchema
+  href: Virtufin.Api.Services.FieldSchema.html
+  name: FieldSchema
+  nameWithType: FieldSchema
+  fullName: Virtufin.Api.Services.FieldSchema
+- uid: Virtufin.Api.Services.OneofCaseSchema
+  commentId: T:Virtufin.Api.Services.OneofCaseSchema
+  href: Virtufin.Api.Services.OneofCaseSchema.html
+  name: OneofCaseSchema
+  nameWithType: OneofCaseSchema
+  fullName: Virtufin.Api.Services.OneofCaseSchema
+- uid: Virtufin.Api.Services.GrpcCallResult
+  commentId: T:Virtufin.Api.Services.GrpcCallResult
+  href: Virtufin.Api.Services.GrpcCallResult.html
+  name: GrpcCallResult
+  nameWithType: GrpcCallResult
+  fullName: Virtufin.Api.Services.GrpcCallResult
+- uid: Virtufin.Api.Services.PubsubService
+  commentId: T:Virtufin.Api.Services.PubsubService
+  href: Virtufin.Api.Services.PubsubService.html
+  name: PubsubService
+  nameWithType: PubsubService
+  fullName: Virtufin.Api.Services.PubsubService
+- uid: Virtufin.Api.Services.PubsubSubscription
+  commentId: T:Virtufin.Api.Services.PubsubSubscription
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.PubsubSubscription.html
+  name: PubsubSubscription
+  nameWithType: PubsubSubscription
+  fullName: Virtufin.Api.Services.PubsubSubscription
+- uid: Virtufin.Api.Services.PubsubSubscriptionManager
+  commentId: T:Virtufin.Api.Services.PubsubSubscriptionManager
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.PubsubSubscriptionManager.html
+  name: PubsubSubscriptionManager
+  nameWithType: PubsubSubscriptionManager
+  fullName: Virtufin.Api.Services.PubsubSubscriptionManager
+- uid: Virtufin.Api.Services.StateService
+  commentId: T:Virtufin.Api.Services.StateService
+  href: Virtufin.Api.Services.StateService.html
+  name: StateService
+  nameWithType: StateService
+  fullName: Virtufin.Api.Services.StateService
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2
+  commentId: T:Virtufin.Api.Services.SubscriptionManagerBase`2
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html
+  name: SubscriptionManagerBase<TEvent, TSubscription>
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription)
+  name.vb: SubscriptionManagerBase(Of TEvent, TSubscription)
+  spec.csharp:
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
+    name: SubscriptionManagerBase
+    href: Virtufin.Api.Services.SubscriptionManagerBase-2.html
+  - name: <
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSubscription
+  - name: '>'
+  spec.vb:
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
+    name: SubscriptionManagerBase
+    href: Virtufin.Api.Services.SubscriptionManagerBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSubscription
+  - name: )
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
