@@ -1,0 +1,2289 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Virtufin API gateway">
+      
+      
+      
+        <link rel="canonical" href="https://api.doc.virtufin.com/v1/v1/api/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../architecture/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>API Reference - Virtufin API Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Virtufin API Documentation" class="md-header__button md-logo" aria-label="Virtufin API Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Virtufin API Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/virtufin/virtufin-api" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    virtufin/virtufin-api
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Virtufin API
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../architecture/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../client/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  C# Client Library
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../configuration/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Configuration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../deployment/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Deployment Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../development/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Development Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../events/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Event Streaming Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../python-client/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Python Client Library
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../services/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Services Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../typescript-client/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TypeScript Client Library
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Virtufin API Documentation" class="md-nav__button md-logo" aria-label="Virtufin API Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Virtufin API Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/virtufin/virtufin-api" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    virtufin/virtufin-api
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtufin API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generated-api-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generated API Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REST API Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="REST API Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-all-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List All Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-service-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Service Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gateway Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gateway Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-method-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke Method (REST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-reflection-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC Reflection Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="gRPC Reflection Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-service-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Service Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-method-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Method Schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-grpc-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execute gRPC Call
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-protocol-buffer-descriptors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Protocol Buffer Descriptors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="State Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-state-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get State Value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-all-state-for-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get All State for Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete State
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#health-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grpc-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="gRPC Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gateway-service-virtufingateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gateway Service (virtufin.Gateway)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-service-virtufinstate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State Service (virtufin.State)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#config-service-virtufinconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config Service (virtufin.Config)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gateway-service-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gateway Service Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gateway Service Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listservices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ListServices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listmethods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ListMethods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscribe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subscribe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#watchsystemevents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WatchSystemEvents
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requestresponse-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request/Response Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request/Response Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-grpc-with-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using gRPC with C
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-grpc-with-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using gRPC with Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-rest-with-curl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using REST with curl
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C# Client Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Event Streaming Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python-client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Client Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typescript-client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TypeScript Client Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generated-api-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generated API Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REST API Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="REST API Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-all-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List All Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-service-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Service Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gateway Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gateway Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-method-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke Method (REST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-reflection-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC Reflection Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="gRPC Reflection Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-service-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Service Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-method-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Method Schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-grpc-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execute gRPC Call
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-protocol-buffer-descriptors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Protocol Buffer Descriptors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="State Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-state-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get State Value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-all-state-for-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get All State for Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete State
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#health-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grpc-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="gRPC Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gateway-service-virtufingateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gateway Service (virtufin.Gateway)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-service-virtufinstate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State Service (virtufin.State)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#config-service-virtufinconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config Service (virtufin.Config)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gateway-service-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gateway Service Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gateway Service Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listservices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ListServices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listmethods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ListMethods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscribe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subscribe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#watchsystemevents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WatchSystemEvents
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requestresponse-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request/Response Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request/Response Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-grpc-with-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using gRPC with C
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-grpc-with-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using gRPC with Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-rest-with-curl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using REST with curl
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="api-reference">API Reference</h1>
+<p>Complete API documentation for the Virtufin API gateway.</p>
+<h2 id="generated-api-documentation">Generated API Documentation</h2>
+<ul>
+<li><a href="/generated/csharp/api/">C# SDK Reference</a> — Auto-generated docs for <code>Virtufin.Api</code> and <code>Virtufin.Api.Client</code></li>
+<li><a href="/generated/python/">Python SDK Reference</a> — Auto-generated docs for <code>virtufin</code> package</li>
+<li><a href="/generated/typescript/">TypeScript SDK Reference</a> — Auto-generated docs for TypeScript client</li>
+</ul>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#rest-api-endpoints">REST API Endpoints</a></li>
+<li><a href="#grpc-services">gRPC Services</a></li>
+<li><a href="#gateway-service-methods">Gateway Service Methods</a></li>
+<li><a href="#config-service-methods">Config Service Methods</a></li>
+<li><a href="#requestresponse-examples">Request/Response Examples</a></li>
+</ul>
+<hr />
+<h2 id="rest-api-endpoints">REST API Endpoints</h2>
+<h3 id="configuration-endpoints">Configuration Endpoints</h3>
+<h4 id="list-all-services">List All Services</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/config/list-services
+</code></pre></div>
+<p>Returns configuration for all registered services.</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;services&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workmanager&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;daprAppId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;grpc&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5102</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;reflectionEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;pubsub&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;pubsubName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pubsub&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;storeName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;statestore&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;workmanager/workers/index&quot;</span><span class="p">]</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;jobs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;crons&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="get-service-configuration">Get Service Configuration</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/config/get-service?name={serviceName}
+</code></pre></div>
+<p><strong>Parameters:</strong>
+- <code>name</code> (required): The service name</p>
+<p><strong>Response:</strong> Single <code>ConfigService</code> object or <code>null</code> if not found.</p>
+<hr />
+<h3 id="gateway-endpoints">Gateway Endpoints</h3>
+<h4 id="list-services">List Services</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/gateway/list-services
+</code></pre></div>
+<p>Lists all services registered with the gateway.</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;services&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;workmanager&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;websocketmanager&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="list-methods">List Methods</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/gateway/list-methods?service={serviceName}
+</code></pre></div>
+<p><strong>Parameters:</strong>
+- <code>service</code> (required): The service name</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;methods&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GetWorker&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fullName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;virtufin.workmanager.GetWorker&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;virtufin.GetWorkerRequest&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;virtufin.GetWorkerResponse&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;isClientStreaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;isServerStreaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="invoke-method-rest">Invoke Method (REST)</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/gateway/invoke
+Content-Type: application/json
+
+{
+  &quot;service&quot;: &quot;workmanager&quot;,
+  &quot;method&quot;: &quot;GetWorker&quot;,
+  &quot;requestData&quot;: { &quot;workerId&quot;: &quot;123&quot; }
+}
+</code></pre></div>
+<hr />
+<h3 id="grpc-reflection-endpoints">gRPC Reflection Endpoints</h3>
+<h4 id="get-service-methods">Get Service Methods</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/grpc/{service}/methods
+</code></pre></div>
+<p>Returns methods for the specified service.</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GetWorker&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;virtufin.GetWorkerRequest&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;outputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;virtufin.GetWorkerResponse&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;streamingType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;unary&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div></p>
+<p><strong>Streaming Types:</strong>
+- <code>unary</code> - Single request, single response
+- <code>server</code> - Server-side streaming
+- <code>client</code> - Client-side streaming
+- <code>bidi</code> - Bidirectional streaming</p>
+<h4 id="get-method-schema">Get Method Schema</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/grpc/{service}/schema/{method}?type=input
+</code></pre></div>
+<p>Returns the schema (field definitions) for a method's input or output type.</p>
+<p><strong>Parameters:</strong>
+- <code>type</code> (optional): <code>input</code> or <code>output</code> (default: <code>input</code>)</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;inputTypeName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;virtufin.GetWorkerRequest&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;outputTypeName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;virtufin.GetWorkerResponse&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schemaType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;input&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workerId&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;String&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;typeName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;isRepeated&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;isOptional&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="execute-grpc-call">Execute gRPC Call</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/grpc/call
+Content-Type: application/json
+
+{
+  &quot;service&quot;: &quot;workmanager&quot;,
+  &quot;method&quot;: &quot;GetWorker&quot;,
+  &quot;request&quot;: &quot;{\&quot;workerId\&quot;: \&quot;123\&quot;}&quot;
+}
+</code></pre></div>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;statusCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;name\&quot;: \&quot;Worker 123\&quot;, \&quot;status\&quot;: \&quot;active\&quot;}&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="get-protocol-buffer-descriptors">Get Protocol Buffer Descriptors</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/grpc/{service}/protos
+</code></pre></div>
+<p>Returns the raw protocol buffer descriptors for a service (in protobuf binary format).</p>
+<hr />
+<h3 id="state-endpoints">State Endpoints</h3>
+<h4 id="save-state">Save State</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/state/save-state
+Content-Type: application/json
+
+{
+  &quot;service&quot;: &quot;workmanager&quot;,
+  &quot;key&quot;: &quot;workers/index&quot;,
+  &quot;value&quot;: &quot;{\&quot;activeWorkers\&quot;: 5}&quot;,
+  &quot;etag&quot;: &quot;optional-etag&quot;,
+  &quot;include_value&quot;: false
+}
+</code></pre></div>
+<p><strong>Parameters:</strong>
+- <code>service</code> (required): Service name
+- <code>key</code> (required): State key
+- <code>value</code> (required): State value as string
+- <code>etag</code> (optional): ETag for concurrency control
+- <code>include_value</code> (optional, default: false): If true, the value is included in the state change event payload</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;State saved for workmanager/workers/index&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="get-state-value">Get State Value</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/state/{service}/{key}
+</code></pre></div>
+<p>Retrieves a state value for a service.</p>
+<p><strong>Parameters:</strong>
+- <code>service</code> - Service name
+- <code>key</code> - State key</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workers/index&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;activeWorkers\&quot;: 5}&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="get-all-state-for-service">Get All State for Service</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/state/{service}
+</code></pre></div>
+<p>Returns all registered state keys for a service. Keys are registered dynamically via <code>State.RegisterKeys</code> RPC or automatically tracked on first use.</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;key1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;key2&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="delete-state">Delete State</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/state/{service}/{key}
+</code></pre></div>
+<p>Deletes a state entry and publishes a delete event.</p>
+<p><strong>Parameters:</strong>
+- <code>service</code> - Service name
+- <code>key</code> - State key
+- <code>include_value</code> (optional, query param): If true, includes the last value in the event payload</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;State deleted for workmanager/my-key&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>See <a href="../events/">Events Documentation</a> for event streaming details.</strong></p>
+<hr />
+<h3 id="health-check">Health Check</h3>
+<div class="highlight"><pre><span></span><code>GET /health
+</code></pre></div>
+<p>Returns the health status of the API gateway.</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Healthy&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;totalDuration&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00:00:00.0100000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;entries&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;dapr&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Healthy&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Dapr is available&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;grpc-channel-pool&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Healthy&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gRPC channel pool is initialized&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<hr />
+<h2 id="grpc-services">gRPC Services</h2>
+<p>The Virtufin API exposes two main gRPC services defined in <code>gateway.proto</code> and <code>config.proto</code>.</p>
+<h3 id="gateway-service-virtufingateway">Gateway Service (<code>virtufin.Gateway</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Request</th>
+<th>Response</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>InvokeRequest</code></td>
+<td><code>InvokeResponse</code></td>
+<td>Invoke a method on a service</td>
+</tr>
+<tr>
+<td><code>ListServices</code></td>
+<td><code>ListServicesRequest</code></td>
+<td><code>ListServicesResponse</code></td>
+<td>List all registered services</td>
+</tr>
+<tr>
+<td><code>ListMethods</code></td>
+<td><code>ListMethodsRequest</code></td>
+<td><code>ListMethodsResponse</code></td>
+<td>List methods for a service</td>
+</tr>
+<tr>
+<td><code>Subscribe</code></td>
+<td><code>SubscribeRequest</code></td>
+<td>stream <code>TopicEventRequest</code></td>
+<td>Subscribe to topic events</td>
+</tr>
+<tr>
+<td><code>WatchSystemEvents</code></td>
+<td><code>SystemEventsRequest</code></td>
+<td>stream <code>TopicEventRequest</code></td>
+<td>Subscribe to system events</td>
+</tr>
+</tbody>
+</table>
+<h3 id="state-service-virtufinstate">State Service (<code>virtufin.State</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Request</th>
+<th>Response</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SaveState</code></td>
+<td><code>SaveStateRequest</code></td>
+<td><code>SaveStateResponse</code></td>
+<td>Save state and publish event</td>
+</tr>
+<tr>
+<td><code>GetState</code></td>
+<td><code>GetStateRequest</code></td>
+<td><code>GetStateResponse</code></td>
+<td>Get a single state value</td>
+</tr>
+<tr>
+<td><code>GetAllState</code></td>
+<td><code>GetAllStateRequest</code></td>
+<td><code>GetAllStateResponse</code></td>
+<td>Get all state for a service</td>
+</tr>
+<tr>
+<td><code>RegisterKeys</code></td>
+<td><code>RegisterKeysRequest</code></td>
+<td><code>RegisterKeysResponse</code></td>
+<td>Register state keys</td>
+</tr>
+<tr>
+<td><code>DeleteState</code></td>
+<td><code>DeleteStateRequest</code></td>
+<td><code>DeleteStateResponse</code></td>
+<td>Delete state and publish event</td>
+</tr>
+</tbody>
+</table>
+<h3 id="config-service-virtufinconfig">Config Service (<code>virtufin.Config</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Request</th>
+<th>Response</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ListServices</code></td>
+<td><code>ListConfigServicesRequest</code></td>
+<td><code>ListConfigServicesResponse</code></td>
+<td>List all service configs</td>
+</tr>
+<tr>
+<td><code>GetService</code></td>
+<td><code>GetConfigServiceRequest</code></td>
+<td><code>GetConfigServiceResponse</code></td>
+<td>Get a specific service config</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="gateway-service-methods">Gateway Service Methods</h2>
+<h3 id="invoke">Invoke</h3>
+<p>Invokes a method on a registered service.</p>
+<p><strong>Request (<code>InvokeRequest</code>):</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">InvokeRequest</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="kd">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">      </span><span class="c1">// Service name (e.g., &quot;workmanager&quot;)</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">       </span><span class="c1">// Method name (e.g., &quot;GetWorker&quot;)</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">request_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="c1">// JSON request payload</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>Response (<code>InvokeResponse</code>):</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">InvokeResponse</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="na">success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">           </span><span class="c1">// Whether the call succeeded</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">           </span><span class="c1">// gRPC status code</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="kd">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w">          </span><span class="c1">// Error message if failed</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">response_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w">    </span><span class="c1">// JSON response payload</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="listservices">ListServices</h3>
+<p>Lists all services registered with the gateway.</p>
+<p><strong>Request:</strong> <code>ListServicesRequest</code> (empty)</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">ListServicesResponse</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">services</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// List of service names</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="listmethods">ListMethods</h3>
+<p>Lists all methods available on a service.</p>
+<p><strong>Request:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">ListMethodsRequest</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="kd">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// Service name</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">ListMethodsResponse</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="n">MethodInfo</span><span class="w"> </span><span class="na">methods</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">message</span><span class="w"> </span><span class="nc">MethodInfo</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">full_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">input_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">output_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="na">is_client_streaming</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="na">is_server_streaming</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="subscribe">Subscribe</h3>
+<p>Subscribes to events matching the specified criteria. Returns a streaming response.</p>
+<p><strong>Request:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">SubscribeRequest</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">services</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">    </span><span class="c1">// Filter by services</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">topics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">      </span><span class="c1">// Filter by topics</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">event_types</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="c1">// Filter by event types</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>Response (stream):</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">TopicEventRequest</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">spec_version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">data_content_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bytes</span><span class="w"> </span><span class="na">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">pubsub_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="watchsystemevents">WatchSystemEvents</h3>
+<p>Subscribes to system-level events like connection status changes.</p>
+<p><strong>Request:</strong> <code>SystemEventsRequest</code> (empty)</p>
+<p><strong>Response (stream):</strong> Same <code>TopicEventRequest</code> message as Subscribe</p>
+<hr />
+<h2 id="requestresponse-examples">Request/Response Examples</h2>
+<h3 id="using-grpc-with-c">Using gRPC with C</h3>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">Grpc.Net.Client</span><span class="p">;</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">Virtufin.Api.Protos</span><span class="p">;</span>
+
+<span class="c1">// Create channel</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GrpcChannel</span><span class="p">.</span><span class="n">ForAddress</span><span class="p">(</span><span class="s">&quot;http://localhost:5002&quot;</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Gateway</span><span class="p">.</span><span class="n">GatewayClient</span><span class="p">(</span><span class="n">channel</span><span class="p">);</span>
+
+<span class="c1">// List services</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">services</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">ListServices</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ListServicesRequest</span><span class="p">());</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Services: {string.Join(&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;, services.Services)}&quot;</span><span class="p">);</span>
+
+<span class="c1">// Invoke a method</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">invokeResponse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">InvokeRequest</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;workmanager&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">Method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;GetStatus&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">RequestData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;{}&quot;</span>
+<span class="p">});</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Success: {invokeResponse.Success}&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Response: {invokeResponse.ResponseData}&quot;</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="using-grpc-with-python">Using gRPC with Python</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">grpc</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">gateway_pb2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">gateway_pb2_grpc</span>
+
+<span class="n">channel</span> <span class="o">=</span> <span class="n">grpc</span><span class="o">.</span><span class="n">insecure_channel</span><span class="p">(</span><span class="s1">&#39;localhost:5002&#39;</span><span class="p">)</span>
+<span class="n">stub</span> <span class="o">=</span> <span class="n">gateway_pb2_grpc</span><span class="o">.</span><span class="n">GatewayStub</span><span class="p">(</span><span class="n">channel</span><span class="p">)</span>
+
+<span class="c1"># List services</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">stub</span><span class="o">.</span><span class="n">ListServices</span><span class="p">(</span><span class="n">gateway_pb2</span><span class="o">.</span><span class="n">ListServicesRequest</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Services: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">services</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Invoke a method</span>
+<span class="n">invoke_response</span> <span class="o">=</span> <span class="n">stub</span><span class="o">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">gateway_pb2</span><span class="o">.</span><span class="n">InvokeRequest</span><span class="p">(</span>
+    <span class="n">service</span><span class="o">=</span><span class="s2">&quot;workmanager&quot;</span><span class="p">,</span>
+    <span class="n">method</span><span class="o">=</span><span class="s2">&quot;GetStatus&quot;</span><span class="p">,</span>
+    <span class="n">request_data</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span>
+<span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Success: </span><span class="si">{</span><span class="n">invoke_response</span><span class="o">.</span><span class="n">success</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="using-rest-with-curl">Using REST with curl</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># List services</span>
+curl<span class="w"> </span>http://localhost:5001/v1/gateway/list-services
+
+<span class="c1"># Get service configuration</span>
+curl<span class="w"> </span>http://localhost:5001/v1/config/get-service?name<span class="o">=</span>workmanager
+
+<span class="c1"># Get method schema</span>
+curl<span class="w"> </span>http://localhost:5001/v1/grpc/workmanager/methods
+
+<span class="c1"># Get state</span>
+curl<span class="w"> </span>http://localhost:5001/v1/api/state/workmanager/workers/index
+
+<span class="c1"># Health check</span>
+curl<span class="w"> </span>http://localhost:5001/v1/api/health
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

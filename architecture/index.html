@@ -1,0 +1,2092 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for the Virtufin API gateway">
+      
+      
+      
+        <link rel="canonical" href="https://api.doc.virtufin.com/v1/v1/architecture/">
+      
+      
+        <link rel="prev" href="../api/">
+      
+      
+        <link rel="next" href="../client/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Architecture - Virtufin API Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#architecture" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Virtufin API Documentation" class="md-header__button md-logo" aria-label="Virtufin API Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Virtufin API Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Architecture
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/virtufin/virtufin-api" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    virtufin/virtufin-api
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Virtufin API
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../client/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  C# Client Library
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../configuration/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Configuration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../deployment/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Deployment Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../development/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Development Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../events/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Event Streaming Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../python-client/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Python Client Library
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../services/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Services Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../typescript-client/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TypeScript Client Library
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Virtufin API Documentation" class="md-nav__button md-logo" aria-label="Virtufin API Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Virtufin API Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/virtufin/virtufin-api" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    virtufin/virtufin-api
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtufin API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-architecture_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-flow-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow Diagrams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-flow-diagrams_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow Diagrams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-invocation-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method Invocation (REST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-invocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC Invocation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-streaming-dapr-grpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Event Streaming (Dapr → gRPC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpcchannelpool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GrpcChannelPool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpcreflectionservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GrpcReflectionService
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gatewayservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GatewayService
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventsubscriptionmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EventSubscriptionManager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daprstreamingsubscriptionmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DaprStreamingSubscriptionManager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemeventmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SystemEventManager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow-diagrams_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow Diagrams
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Flow Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-invocation-rest_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method Invocation (REST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-invocation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC Invocation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-streaming-dapr-grpc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Event Streaming (Dapr → gRPC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-architecture_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health Checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C# Client Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Event Streaming Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python-client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Client Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typescript-client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TypeScript Client Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-architecture_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-flow-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow Diagrams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-flow-diagrams_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow Diagrams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-invocation-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method Invocation (REST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-invocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC Invocation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-streaming-dapr-grpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Event Streaming (Dapr → gRPC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpcchannelpool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GrpcChannelPool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpcreflectionservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GrpcReflectionService
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gatewayservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GatewayService
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventsubscriptionmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EventSubscriptionManager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daprstreamingsubscriptionmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DaprStreamingSubscriptionManager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemeventmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SystemEventManager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow-diagrams_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flow Diagrams
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Flow Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-invocation-rest_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method Invocation (REST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-invocation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC Invocation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-streaming-dapr-grpc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Event Streaming (Dapr → gRPC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-architecture_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health Checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="architecture">Architecture</h1>
+<p>Detailed architecture documentation for the Virtufin API gateway.</p>
+<h2 id="system-overview">System Overview</h2>
+<p>Virtufin API is a gRPC-based API gateway that provides:</p>
+<ol>
+<li><strong>Service Discovery</strong> - Dynamic discovery via gRPC reflection</li>
+<li><strong>Method Invocation</strong> - Transparent forwarding to backend services</li>
+<li><strong>Event Streaming</strong> - gRPC streaming and Dapr pub/sub</li>
+<li><strong>State Management</strong> - Dapr state store integration</li>
+<li><strong>Multi-Protocol Support</strong> - REST, gRPC, and gRPC-Web</li>
+</ol>
+<h2 id="system-architecture">System Architecture</h2>
+<pre class="mermaid"><code>flowchart TB
+    subgraph Clients["Clients"]
+        CSharp[C# Client]
+        Python[Python Client]
+        Browser[Browser&lt;br/&gt;gRPC-Web]
+        REST[REST Client&lt;br/&gt;Swagger]
+    end
+
+    subgraph ProtocolLayer["Protocol Layer"]
+        gRPC[gRPC&lt;br/&gt;:8081]
+        gRPCWeb[gRPC-Web&lt;br/&gt;:8082]
+        REST_API[REST API&lt;br/&gt;:8080&lt;br/&gt;JSON Transcoding]
+    end
+
+    subgraph ApplicationLayer["Application Layer"]
+        Kestrel[Kestrel Server]
+        GatewaySvc[GatewayService]
+        EventSubMgr[EventSubscriptionManager]
+        SystemEventMgr[SystemEventManager]
+        StateSvc[StateService]
+    end
+
+    subgraph Infrastructure["Infrastructure"]
+        DaprClient[Dapr Client]
+        ChannelPool[gRPC Channel Pool]
+    end
+
+    subgraph Backend["Backend Services"]
+        WM[WorkManager&lt;br/&gt;:5102]
+        WSM[WebSocketManager&lt;br/&gt;:5202]
+    end
+
+    subgraph Dapr["Dapr Sidecar"]
+        State[Dapr State]
+        PubSub[Dapr PubSub]
+    end
+
+    Clients --&gt; ProtocolLayer
+    ProtocolLayer --&gt; ApplicationLayer
+    ApplicationLayer --&gt; Infrastructure
+    Infrastructure --&gt; Backend
+    Infrastructure --&gt; Dapr</code></pre>
+<h2 id="component-architecture">Component Architecture</h2>
+<pre class="mermaid"><code>flowchart LR
+    subgraph Clients
+        C[C#]
+        P[Python]
+        B[Browser]
+    end
+
+    subgraph Gateway["Virtufin.Api"]
+        G[gRPC Gateway]
+        E[Event System]
+        S[State Service]
+    end
+
+    subgraph Backends
+        WM[WorkManager]
+        WSM[WebSocketManager]
+    end
+
+    C --&gt; G
+    P --&gt; G
+    B --&gt; G
+    G --&gt; WM
+    G --&gt; WSM
+    G &lt;--&gt; S
+    S &lt;--&gt; State
+    E &lt;--&gt; PubSub</code></pre>
+<h2 id="component-details">Component Details</h2>
+<h3 id="component-architecture_1">Component Architecture</h3>
+<pre class="mermaid"><code>flowchart TB
+    subgraph Clients[Clients]
+        CSharp[C# Client]
+        Python[Python Client]
+        Browser[Browser gRPC-Web]
+        REST[REST HTTP Swagger]
+    end
+
+    subgraph ProtocolLayer[Protocol Layer]
+        gRPC[gRPC :5002]
+        gRPCWeb[gRPC-Web :5003]
+        REST_API[REST API :5001 JSON Transcoding]
+    end
+
+    subgraph ApplicationLayer[Application Layer]
+        Kestrel[Kestrel Server]
+        RESTCtrl[REST Controllers]
+        GatewaySvc[GatewayService gRPC]
+        ConfigSvc[ConfigService gRPC]
+        GrpcReflSvc[GrpcReflectionService gRPC]
+        EventSubMgr[EventSubscriptionManager]
+        SystemEventMgr[SystemEventManager]
+        StateSvc[StateService]
+    end
+
+    subgraph Infrastructure[Infrastructure]
+        ChannelPool[GrpcChannelPool]
+        DaprClient[DaprClient]
+        ConfigLoader[ServicesConfigurationLoader]
+    end
+
+    subgraph Backend[Backend Services]
+        WM[WorkManager :5102]
+        WSM[WebSocketManager :5202]
+    end
+
+    subgraph Dapr[Dapr Sidecar]
+        State[Dapr State]
+        PubSub[Dapr PubSub]
+    end
+
+    Clients --&gt; ProtocolLayer
+    ProtocolLayer --&gt; ApplicationLayer
+    ApplicationLayer --&gt; Infrastructure
+    Infrastructure --&gt; Backend
+    Infrastructure --&gt; Dapr</code></pre>
+<hr />
+<h3 id="data-flow-diagrams">Data Flow Diagrams</h3>
+<pre class="mermaid"><code>flowchart TB
+    subgraph Clients[Clients]
+        CSharp[C# Client]
+        Python[Python Client]
+        Browser[Browser gRPC-Web]
+        REST[REST HTTP Swagger]
+    end
+
+    subgraph ProtocolLayer[Protocol Layer]
+        gRPC[gRPC :5002]
+        gRPCWeb[gRPC-Web :5003]
+        REST_API[REST API :5001 JSON Transcoding]
+    end
+
+    subgraph ApplicationLayer[Application Layer]
+        Kestrel[Kestrel Server]
+        RESTCtrl[REST Controllers]
+        GatewaySvc[GatewayService gRPC]
+        ConfigSvc[ConfigService gRPC]
+        GrpcReflSvc[GrpcReflectionService gRPC]
+        EventSubMgr[EventSubscriptionManager]
+        SystemEventMgr[SystemEventManager]
+        StateSvc[StateService]
+    end
+
+    subgraph Infrastructure[Infrastructure]
+        ChannelPool[GrpcChannelPool]
+        DaprClient[DaprClient]
+        ConfigLoader[ServicesConfigurationLoader]
+    end
+
+    subgraph Backend[Backend Services]
+        WM[WorkManager :5102]
+        WSM[WebSocketManager :5202]
+    end
+
+    subgraph Dapr[Dapr Sidecar]
+        State[Dapr State]
+        PubSub[Dapr PubSub]
+    end
+
+    Clients --&gt; ProtocolLayer
+    ProtocolLayer --&gt; ApplicationLayer
+    ApplicationLayer --&gt; Infrastructure
+    Infrastructure --&gt; Backend
+    Infrastructure --&gt; Dapr</code></pre>
+<hr />
+<h3 id="data-flow-diagrams_1">Data Flow Diagrams</h3>
+<h3 id="method-invocation-rest">Method Invocation (REST)</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client as curl
+    participant Kestrel as Kestrel
+    participant Gateway as GrpcGateway Extensions
+    participant Pool as GrpcChannel Pool
+    participant Backend as Backend Service :5102
+    participant Reflection as gRPC Reflection
+
+    Client-&gt;&gt;Kestrel: HTTP/REST JSON
+    Kestrel-&gt;&gt;Gateway: JSON
+    Gateway-&gt;&gt;Pool: GetChannel(service)
+    Pool-&gt;&gt;Backend: gRPC Call
+    Backend-&gt;&gt;Reflection: Reflection Request
+    Reflection--&gt;&gt;Backend: Service Descriptors
+    Backend--&gt;&gt;Pool: Response
+    Pool--&gt;&gt;Gateway: InvokeResponse
+    Gateway--&gt;&gt;Kestrel: JSON
+    Kestrel--&gt;&gt;Client: HTTP Response</code></pre>
+<h3 id="grpc-invocation">gRPC Invocation</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client as C# Client
+    participant Kestrel as Kestrel
+    participant Gateway as Gateway Service
+    participant Pool as GrpcChannel Pool
+    participant Backend as Backend Service :5102
+
+    Client-&gt;&gt;Kestrel: gRPC
+    Kestrel-&gt;&gt;Gateway: InvokeRequest
+    Gateway-&gt;&gt;Pool: GetChannel(service)
+    Pool-&gt;&gt;Backend: gRPC Call
+    Backend--&gt;&gt;Pool: Response
+    Pool--&gt;&gt;Gateway: InvokeResponse
+    Gateway--&gt;&gt;Kestrel: InvokeResponse
+    Kestrel--&gt;&gt;Client: gRPC Response</code></pre>
+<h3 id="event-streaming-dapr-grpc">Event Streaming (Dapr → gRPC)</h3>
+<pre class="mermaid"><code>flowchart LR
+    Dapr[Dapr Sidecar] --&gt; PubSub[PubSub Event]
+    PubSub --&gt; DaprStreamMgr[DaprStreamingSub Manager]
+    DaprStreamMgr --&gt; EventSubMgr[EventSub Manager]
+    DaprStreamMgr --&gt; Removed[(removed)]
+    EventSubMgr --&gt; GrpcClient[gRPC Client Subscribe]</code></pre>
+<h3 id="configuration-architecture">Configuration Architecture</h3>
+<p><pre class="mermaid"><code>flowchart TB
+    ConfigFile[services.yaml] --&gt; Loader[ServicesConfigurationLoader]
+    Loader --&gt; ServicesConfig[ServicesConfiguration]
+    ServicesConfig --&gt; ChannelPool[GrpcChannelPool]
+    ServicesConfig --&gt; Reflection[GrpcReflectionService]
+    ServicesConfig --&gt; DaprMgr[DaprStreamingSubscriptionManager]
+    ServicesConfig --&gt; State[StateService]
+    ServicesConfig --&gt; Config[ConfigService]</code></pre>
+        Python[Python Client]
+        Browser[Browser gRPC-Web]
+        REST[REST Client Swagger]
+    end</p>
+<pre><code>subgraph ProtocolLayer[Protocol Layer]
+    gRPC[gRPC :5002]
+    gRPCWeb[gRPC-Web :5003]
+    REST_API[REST API :5001 JSON Transcoding]
+end
+
+subgraph ApplicationLayer[Application Layer]
+    Kestrel[Kestrel Server]
+    GatewaySvc[GatewayService]
+    ConfigSvc[ConfigService]
+    GrpcReflSvc[GrpcReflectionService]
+    EventSubMgr[EventSubscriptionManager]
+    SystemEventMgr[SystemEventManager]
+    StateSvc[StateService]
+end
+
+subgraph Infrastructure[Infrastructure]
+    ChannelPool[GrpcChannelPool]
+    DaprClient[DaprClient]
+    ConfigLoader[ServicesConfigurationLoader]
+end
+
+subgraph Backend[Backend Services]
+    WM[WorkManager :5102]
+    WSM[WebSocketManager :5202]
+end
+
+subgraph Dapr[Dapr Sidecar]
+    State[Dapr State]
+    PubSub[Dapr PubSub]
+end
+
+subgraph Reflection[gRPC Reflection]
+    ReflServer[Reflection Server]
+end
+
+Clients --&gt; ProtocolLayer
+ProtocolLayer --&gt; ApplicationLayer
+ApplicationLayer --&gt; Infrastructure
+Infrastructure --&gt; Backend
+Infrastructure --&gt; Dapr
+Backend --&gt; Reflection
+</code></pre>
+<p>```
+</p>
+<h3 id="grpcchannelpool">GrpcChannelPool</h3>
+<p><strong>Location:</strong> <code>Services/GrpcChannelPool.cs</code>
+
+The <code>GrpcChannelPool</code> maintains a thread-safe pool of gRPC channels, one per backend service.
+
+<strong>Key Features:</strong>
+- Lazy channel creation (created on first access)
+- Channel reuse across invocations
+- LRU eviction when channel limit is reached
+- Automatic cleanup on application shutdown
+- Configuration-driven service endpoints
+
+<strong>Flow:</strong>
+
+<code>mermaid
+sequenceDiagram
+    participant Client
+    participant Gateway as GatewayService
+    participant Pool as GrpcChannelPool
+    participant Cache as Channel Cache
+    participant Backend as Backend Service
+
+    Client-&gt;&gt;Gateway: Invoke(service, method, data)
+    Gateway-&gt;&gt;Pool: GetChannel(serviceName)
+    Pool-&gt;&gt;Cache: Check cached?
+    Cache--&gt;&gt;Pool: Not found
+    Pool-&gt;&gt;Pool: Create new GrpcChannel
+    Pool-&gt;&gt;Cache: Store in cache
+    Cache--&gt;&gt;Pool: Channel
+    Pool--&gt;&gt;Gateway: Channel
+    Gateway-&gt;&gt;Backend: gRPC Call
+    Backend--&gt;&gt;Gateway: Response
+    Gateway--&gt;&gt;Client: InvokeResponse</code></p>
+<p><strong>Configuration (services.yaml):</strong>
+<div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">workmanager</span>
+<span class="w">    </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span>
+<span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5102</span>
+<span class="w">    </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">grpc</span>
+</code></pre></div></p>
+<hr />
+<h3 id="grpcreflectionservice">GrpcReflectionService</h3>
+<p><strong>Location:</strong> <code>Services/GrpcReflectionService.cs</code></p>
+<p>Provides dynamic service discovery and method invocation using gRPC reflection.</p>
+<p><strong>Key Features:</strong>
+- Fetches service descriptors from backend services via reflection
+- Caches descriptors per service for performance
+- Uses TypeRegistry for robust JSON↔Protobuf conversion
+- Handles well-known type descriptors</p>
+<p><strong>Class Structure:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GrpcReflectionService</code></td>
+<td>Public API, manages cache instances</td>
+</tr>
+<tr>
+<td><code>ServiceDescriptorCache</code></td>
+<td>Per-service cache, loads and parses descriptors</td>
+</tr>
+<tr>
+<td><code>ServiceMethodInfo</code></td>
+<td>Method metadata (name, input/output types, streaming)</td>
+</tr>
+<tr>
+<td><code>MethodSchema</code></td>
+<td>Schema for request/response types</td>
+</tr>
+<tr>
+<td><code>FieldSchema</code></td>
+<td>Individual field definitions</td>
+</tr>
+<tr>
+<td><code>GrpcCallResult</code></td>
+<td>Invocation result wrapper</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discovery Flow:</strong></p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client as GatewayClient
+    participant Cache as ServiceDescriptorCache
+    participant Reflection as gRPC Reflection
+    participant Backend as Backend Service
+
+    Client-&gt;&gt;Cache: GetMethodsAsync(serviceName)
+    Cache-&gt;&gt;Cache: GetOrCreateCache()
+    Cache-&gt;&gt;Reflection: ServerReflectionInfo()
+    Reflection-&gt;&gt;Backend: ServerReflectionInfo()
+    Backend--&gt;&gt;Reflection: FileDescriptorProtos
+    Reflection--&gt;&gt;Cache: Descriptors
+    Cache-&gt;&gt;Cache: Parse and Index
+    Cache--&gt;&gt;Client: List&lt;MethodInfo&gt;</code></pre>
+<p><strong>Invocation Flow:</strong></p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client
+    participant Gateway as GatewayService
+    participant Cache as ServiceDescriptorCache
+    participant Channel as gRPC Channel
+    participant Backend as Backend Service
+
+    Client-&gt;&gt;Gateway: Invoke(request)
+    Gateway-&gt;&gt;Cache: GetOrCreateCache(service)
+    Cache--&gt;&gt;Gateway: Cached descriptors
+    Gateway-&gt;&gt;Gateway: Create protobuf from JSON
+    Gateway-&gt;&gt;Channel: AsyncUnaryCall()
+    Channel-&gt;&gt;Backend: gRPC Request
+    Backend--&gt;&gt;Channel: gRPC Response
+    Channel--&gt;&gt;Gateway: Response bytes
+    Gateway-&gt;&gt;Gateway: Parse to JSON
+    Gateway--&gt;&gt;Client: GrpcCallResult</code></pre>
+<p><strong>Invocation Flow:</strong>
+<div class="highlight"><pre><span></span><code>ExecuteCallAsync(service, method, json)
+         │
+         ▼
+GetOrCreateCache(service) → EnsureLoadedAsync()
+         │
+         ▼
+Find method by name
+         │
+         ▼
+Create protobuf message from JSON (field-by-field or parser)
+         │
+         ▼
+Create generic Method&lt;byte[],byte[]&gt;
+         │
+         ▼
+channel.CreateCallInvoker().AsyncUnaryCall()
+         │
+         ▼
+Parse response bytes to JSON
+         │
+         ▼
+Return GrpcCallResult
+</code></pre></div></p>
+<hr />
+<h3 id="gatewayservice">GatewayService</h3>
+<p><strong>Location:</strong> <code>Services/GatewayService.cs</code></p>
+<p>The main gRPC service implementing the Gateway protocol.</p>
+<p><strong>gRPC Methods:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Invoke</code></td>
+<td>Unary</td>
+<td>Invoke a method on a backend service</td>
+</tr>
+<tr>
+<td><code>ListServices</code></td>
+<td>Unary</td>
+<td>List all registered services</td>
+</tr>
+<tr>
+<td><code>ListMethods</code></td>
+<td>Unary</td>
+<td>List methods for a service</td>
+</tr>
+<tr>
+<td><code>Subscribe</code></td>
+<td>Server Streaming</td>
+<td>Subscribe to events</td>
+</tr>
+<tr>
+<td><code>WatchSystemEvents</code></td>
+<td>Server Streaming</td>
+<td>Subscribe to system events</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Invoke Flow:</strong>
+<div class="highlight"><pre><span></span><code>Client calls Gateway.Invoke(InvokeRequest)
+         │
+         ▼
+Extract request headers as metadata
+         │
+         ▼
+Call GrpcReflectionService.ExecuteCallAsync()
+         │
+         ▼
+Map result to InvokeResponse
+         │
+         ▼
+Return to client
+</code></pre></div></p>
+<hr />
+<h3 id="eventsubscriptionmanager">EventSubscriptionManager</h3>
+<p><strong>Location:</strong> <code>Services/EventSubscriptionManager.cs</code></p>
+<p>Manages event subscriptions for the <code>Subscribe</code> gRPC method.</p>
+<p><strong>Scope System:</strong>
+Subscriptions use hierarchical scopes for filtering:</p>
+<pre class="mermaid"><code>graph TD
+    global[global&lt;br/&gt;All events]
+    service[service&lt;br/&gt;All events from service]
+    topic[service/topic&lt;br/&gt;Specific topic]
+    type[type&lt;br/&gt;By event type]
+    typeService[type/service&lt;br/&gt;By type and service]
+
+    global --&gt; service
+    global --&gt; topic
+    global --&gt; type
+    topic --&gt; typeService
+    type --&gt; typeService</code></pre>
+<p><strong>Subscription Flow:</strong></p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client
+    participant SubMgr as EventSubscriptionManager
+    participant Scope as Scope Dictionary
+
+    Client-&gt;&gt;SubMgr: Subscribe(request)
+    SubMgr-&gt;&gt;SubMgr: Generate subscriptionId
+    SubMgr-&gt;&gt;SubMgr: BuildScope(request)
+    SubMgr-&gt;&gt;Scope: Add subscription
+    SubMgr-&gt;&gt;SubMgr: Start health monitor
+    SubMgr--&gt;&gt;Client: subscriptionId</code></pre>
+<p><strong>Broadcast Flow:</strong></p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Source
+    participant SubMgr as EventSubscriptionManager
+    participant Scope as Scopes
+    participant Sub as Subscribers
+
+    Source-&gt;&gt;SubMgr: BroadcastEventAsync()
+    SubMgr-&gt;&gt;SubMgr: Create StreamEvent
+    SubMgr-&gt;&gt;SubMgr: GetMatchingScopes()
+    loop For each matching scope
+        SubMgr-&gt;&gt;Scope: Get subscriptions
+        loop For each subscription
+            SubMgr-&gt;&gt;Sub: Write event
+        end
+        SubMgr-&gt;&gt;Scope: Remove dead subscriptions
+    end</code></pre>
+<hr />
+<h3 id="daprstreamingsubscriptionmanager">DaprStreamingSubscriptionManager</h3>
+<p><strong>Location:</strong> <code>Services/DaprStreamingSubscriptionManager.cs</code></p>
+<p>Integrates Dapr pub/sub with Virtufin's event streaming.</p>
+<p><strong>Flow:</strong></p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant App as Virtufin.Api
+    participant DaprMgr as DaprStreamingSubMgr
+    participant Dapr as Dapr Sidecar
+    participant SubMgr as EventSubscriptionManager
+
+    App-&gt;&gt;DaprMgr: StartAllSubscriptionsAsync()
+    loop For each subscription
+        DaprMgr-&gt;&gt;Dapr: SubscribeAsync(topic, handler)
+        Dapr--&gt;&gt;DaprMgr: Subscription
+        DaprMgr-&gt;&gt;SubMgr: BroadcastConnectionStatus(connected)
+    end
+
+    Note over Dapr,App: Normal operation
+    Dapr-&gt;&gt;DaprMgr: Message received
+    DaprMgr-&gt;&gt;SubMgr: BroadcastToTopicAsync()
+    SubMgr-&gt;&gt;SubMgr: Broadcast to gRPC streams
+    DaprMgr--&gt;&gt;Dapr: TopicResponseAction.Success</code></pre>
+<p><strong>Message Handler:</strong></p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Dapr as Dapr Sidecar
+    participant DaprMgr as DaprStreamingSubMgr
+    participant SubMgr as EventSubscriptionManager
+
+    Dapr-&gt;&gt;DaprMgr: TopicMessage
+    DaprMgr-&gt;&gt;DaprMgr: Deserialize JSON
+    DaprMgr-&gt;&gt;SubMgr: BroadcastToTopicAsync()
+    SubMgr-&gt;&gt;SubMgr: Broadcast to gRPC clients
+    DaprMgr--&gt;&gt;Dapr: TopicResponseAction.Success</code></pre>
+<hr />
+<h3 id="systemeventmanager">SystemEventManager</h3>
+<p><strong>Location:</strong> <code>Services/EventSubscriptionManager.cs</code> (same file)</p>
+<p>Manages system-level event subscriptions (connection status, errors).</p>
+<p><strong>Event Types:</strong>
+- <code>pubsub_subscription</code> - Pub/sub connection status changes
+- Connection/disconnection notifications</p>
+<hr />
+<h2 id="data-flow-diagrams_2">Data Flow Diagrams</h2>
+<h3 id="method-invocation-rest_1">Method Invocation (REST)</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client as curl
+    participant Kestrel as Kestrel
+    participant Gateway as GrpcGateway Extensions
+    participant Pool as GrpcChannel Pool
+    participant Backend as Backend Service :5102
+    participant Reflection as gRPC Reflection
+
+    Client-&gt;&gt;Kestrel: HTTP/REST JSON
+    Kestrel-&gt;&gt;Gateway: JSON
+    Gateway-&gt;&gt;Pool: GetChannel(service)
+    Pool-&gt;&gt;Backend: gRPC Call
+    Backend-&gt;&gt;Reflection: Reflection Request
+    Reflection--&gt;&gt;Backend: Service Descriptors
+    Backend--&gt;&gt;Pool: Response
+    Pool--&gt;&gt;Gateway: InvokeResponse
+    Gateway--&gt;&gt;Kestrel: JSON
+    Kestrel--&gt;&gt;Client: HTTP Response</code></pre>
+<h3 id="grpc-invocation_1">gRPC Invocation</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client as C# Client
+    participant Kestrel as Kestrel
+    participant Gateway as Gateway Service
+    participant Pool as GrpcChannel Pool
+    participant Backend as Backend Service :5102
+
+    Client-&gt;&gt;Kestrel: gRPC
+    Kestrel-&gt;&gt;Gateway: InvokeRequest
+    Gateway-&gt;&gt;Pool: GetChannel(service)
+    Pool-&gt;&gt;Backend: gRPC Call
+    Backend--&gt;&gt;Pool: Response
+    Pool--&gt;&gt;Gateway: InvokeResponse
+    Gateway--&gt;&gt;Kestrel: InvokeResponse
+    Kestrel--&gt;&gt;Client: gRPC Response</code></pre>
+<h3 id="event-streaming-dapr-grpc_1">Event Streaming (Dapr → gRPC)</h3>
+<pre class="mermaid"><code>flowchart LR
+    Dapr[Dapr Sidecar] --&gt;|Pub/Sub| DaprMgr[DaprStreamingSub Manager]
+    DaprMgr --&gt;|event| EventSubMgr[EventSub Manager]
+    DaprMgr --&gt; Removed[(removed)]
+    EventSubMgr --&gt; GrpcClient[gRPC Client Subscribe]</code></pre>
+<hr />
+<h2 id="configuration-architecture_1">Configuration Architecture</h2>
+<pre class="mermaid"><code>flowchart TB
+    ConfigFile[services.yaml] --&gt; Loader[ServicesConfigurationLoader]
+    Loader --&gt; ServicesConfig[ServicesConfiguration]
+    ServicesConfig --&gt; ChannelPool[GrpcChannelPool]
+    ServicesConfig --&gt; Reflection[GrpcReflectionService]
+    ServicesConfig --&gt; DaprMgr[DaprStreamingSubscriptionManager]
+    ServicesConfig --&gt; State[StateService]
+    ServicesConfig --&gt; Config[ConfigService]</code></pre>
+<hr />
+<h2 id="health-checks">Health Checks</h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Component</th>
+<th>Status When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DaprHealthCheck</code></td>
+<td>DaprClient</td>
+<td>Dapr sidecar is reachable</td>
+</tr>
+<tr>
+<td><code>GrpcChannelPoolHealthCheck</code></td>
+<td>GrpcChannelPool</td>
+<td>Channel pool is initialized</td>
+</tr>
+</tbody>
+</table>
+<p>Both checks run on <code>/health</code> endpoint.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
