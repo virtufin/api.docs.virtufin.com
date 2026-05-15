@@ -1,130 +1,92 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class GatewayClient | Virtufin API - C# Reference </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class GatewayClient | Virtufin API - C# Reference ">
-      
-      <meta name="description" content="Client for interacting with the gateway service. Provides service discovery, method listing, invocation, and streaming capabilities.">
-      <link rel="icon" href="../../../favicon.ico">
-      <link rel="stylesheet" href="../../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../../public/main.css">
-      <meta name="docfx:navrel" content="">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      
-      
-      
-      
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../../../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+    
+    <meta name="description" content="Client for interacting with the gateway service. Provides service discovery, method listing, invocation, and streaming capabilities.">
+      <link rel="shortcut icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../../styles/docfx.css">
+      <link rel="stylesheet" href="../../../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../../index.html">
-            <img id="logo" class="svg" src="../../../logo.svg" alt="">
-            
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Virtufin.Api.Client.GatewayClient">
 
-        <article data-uid="Virtufin.Api.Client.GatewayClient">
 
 
-
-  <h1 id="Virtufin_Api_Client_GatewayClient" data-uid="Virtufin.Api.Client.GatewayClient" class="text-break">
-Class GatewayClient  
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Client.html">Client</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Virtufin.Api.Client.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Client for interacting with the gateway service.
+  <h1 id="Virtufin_Api_Client_GatewayClient" data-uid="Virtufin.Api.Client.GatewayClient" class="text-break">Class GatewayClient</h1>
+  <div class="markdown level0 summary"><p>Client for interacting with the gateway service.
 Provides service discovery, method listing, invocation, and streaming capabilities.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GatewayClient : DynamicObject, IDynamicMetaObjectProvider</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+    <div class="level2"><span class="xref">GatewayClient</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">GatewayClient</span></div>
-    </dd>
-  </dl>
-
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
-    </dd>
-  </dl>
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
     </div>
@@ -185,812 +147,967 @@ Provides service discovery, method listing, invocation, and streaming capabiliti
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Client.html">Client</a></h6>
+  <h6><strong>Assembly</strong>: Virtufin.Api.Client.dll</h6>
+  <h5 id="Virtufin_Api_Client_GatewayClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GatewayClient : DynamicObject, IDynamicMetaObjectProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
   <a id="Virtufin_Api_Client_GatewayClient__ctor_" data-uid="Virtufin.Api.Client.GatewayClient.#ctor*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient__ctor_Grpc_Net_Client_GrpcChannel_" data-uid="Virtufin.Api.Client.GatewayClient.#ctor(Grpc.Net.Client.GrpcChannel)">
-  GatewayClient(GrpcChannel)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient__ctor_Grpc_Net_Client_GrpcChannel_" data-uid="Virtufin.Api.Client.GatewayClient.#ctor(Grpc.Net.Client.GrpcChannel)">GatewayClient(GrpcChannel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public GatewayClient(GrpcChannel channel)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>channel</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Net.Client/GrpcChannel.cs">GrpcChannel</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Net.Client/GrpcChannel.cs">GrpcChannel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
   <a id="Virtufin_Api_Client_GatewayClient_DeleteStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.DeleteStateAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_DeleteStateAsync_System_String_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)">
-  DeleteStateAsync(string, string, bool, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_DeleteStateAsync_System_String_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)">DeleteStateAsync(string, string, bool, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Deletes a state entry and broadcasts a delete event to subscribers asynchronously.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;DeleteStateResponse&gt; DeleteStateAsync(string service, string key, bool includeValue = false, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The service name.</p>
-</dd>
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The state key.</p>
-</dd>
-    <dt><code>includeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>If true, the last value is included in the state change event payload.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a>&gt;</dt>
-    <dd><p>DeleteStateResponse with success status.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>The service name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The state key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">includeValue</span></td>
+        <td><p>If true, the last value is included in the state change event payload.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a>&gt;</td>
+        <td><p>DeleteStateResponse with success status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_GetAllStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.GetAllStateAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_GetAllStateAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.GetAllStateAsync(System.String,System.Threading.CancellationToken)">
-  GetAllStateAsync(string, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_GetAllStateAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.GetAllStateAsync(System.String,System.Threading.CancellationToken)">GetAllStateAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets all state key-value pairs asynchronously for a service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;Dictionary&lt;string, string&gt;&gt; GetAllStateAsync(string service, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The service name.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
-    <dd><p>Dictionary of key-value pairs.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>The service name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td><p>Dictionary of key-value pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_GetService_" data-uid="Virtufin.Api.Client.GatewayClient.GetService*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_GetService_System_String_" data-uid="Virtufin.Api.Client.GatewayClient.GetService(System.String)">
-  GetService(string)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_GetService_System_String_" data-uid="Virtufin.Api.Client.GatewayClient.GetService(System.String)">GetService(string)</h4>
   <div class="markdown level1 summary"><p>Gets a client for a specific service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ServiceClient GetService(string name)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The service name.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.Api.Client.ServiceClient.html">ServiceClient</a></dt>
-    <dd><p>A ServiceClient for the service.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The service name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Virtufin.Api.Client.ServiceClient.html">ServiceClient</a></td>
+        <td><p>A ServiceClient for the service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_GetStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.GetStateAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_GetStateAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.GetStateAsync(System.String,System.String,System.Threading.CancellationToken)">
-  GetStateAsync(string, string, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_GetStateAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.GetStateAsync(System.String,System.String,System.Threading.CancellationToken)">GetStateAsync(string, string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets a single state value asynchronously by service and key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;(string Value, string Etag)&gt; GetStateAsync(string service, string key, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The service name.</p>
-</dd>
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The state key.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.value">Value</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.etag">Etag</a>)&gt;</dt>
-    <dd><p>Tuple of (value, etag).</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>The service name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The state key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.value">Value</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.etag">Etag</a>)&gt;</td>
+        <td><p>Tuple of (value, etag).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_InvokeAsync_" data-uid="Virtufin.Api.Client.GatewayClient.InvokeAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_InvokeAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="Virtufin.Api.Client.GatewayClient.InvokeAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
-  InvokeAsync(string, string, Dictionary&lt;string, object?&gt;?)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_InvokeAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="Virtufin.Api.Client.GatewayClient.InvokeAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">InvokeAsync(string, string, Dictionary&lt;string, object?&gt;?)</h4>
   <div class="markdown level1 summary"><p>Invokes a method on a service asynchronously.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;Dictionary&lt;string, object?&gt;&gt; InvokeAsync(string service, string method, Dictionary&lt;string, object?&gt;? requestData = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The service name.</p>
-</dd>
-    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The method name.</p>
-</dd>
-    <dt><code>requestData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>Optional request data as dictionary.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
-    <dd><p>The response as a dictionary.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p>Thrown when the invocation fails.</p>
-</dd>
-  </dl>
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>The service name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>The method name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><span class="parametername">requestData</span></td>
+        <td><p>Optional request data as dictionary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>The response as a dictionary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the invocation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_ListMethodsAsync_" data-uid="Virtufin.Api.Client.GatewayClient.ListMethodsAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_ListMethodsAsync_System_String_" data-uid="Virtufin.Api.Client.GatewayClient.ListMethodsAsync(System.String)">
-  ListMethodsAsync(string)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_ListMethodsAsync_System_String_" data-uid="Virtufin.Api.Client.GatewayClient.ListMethodsAsync(System.String)">ListMethodsAsync(string)</h4>
   <div class="markdown level1 summary"><p>Lists all methods for a given service asynchronously.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Dictionary&lt;string, object?&gt;&gt;&gt; ListMethodsAsync(string service)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The service name.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;&gt;</dt>
-    <dd><p>List of method information dictionaries.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>The service name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;&gt;</td>
+        <td><p>List of method information dictionaries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_ListServicesAsync_" data-uid="Virtufin.Api.Client.GatewayClient.ListServicesAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_ListServicesAsync" data-uid="Virtufin.Api.Client.GatewayClient.ListServicesAsync">
-  ListServicesAsync()
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_ListServicesAsync" data-uid="Virtufin.Api.Client.GatewayClient.ListServicesAsync">ListServicesAsync()</h4>
   <div class="markdown level1 summary"><p>Lists all available services asynchronously.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;List&lt;string&gt;&gt; ListServicesAsync()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
-    <dd><p>List of service names.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td><p>List of service names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_PublishEventAsync_" data-uid="Virtufin.Api.Client.GatewayClient.PublishEventAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_PublishEventAsync_System_String_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)">
-  PublishEventAsync(string, byte[], Dictionary&lt;string, string&gt;?, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_PublishEventAsync_System_String_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)">PublishEventAsync(string, byte[], Dictionary&lt;string, string&gt;?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Publishes an event to a topic asynchronously.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;PublishResponse&gt; PublishEventAsync(string topic, byte[] data, Dictionary&lt;string, string&gt;? metadata = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The topic name.</p>
-</dd>
-    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p>The event data as bytes.</p>
-</dd>
-    <dt><code>metadata</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>Optional metadata dictionary.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.PublishResponse.html">PublishResponse</a>&gt;</dt>
-    <dd><p>PublishResponse with success status.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">topic</span></td>
+        <td><p>The topic name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The event data as bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional metadata dictionary.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.PublishResponse.html">PublishResponse</a>&gt;</td>
+        <td><p>PublishResponse with success status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_SaveStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.SaveStateAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_SaveStateAsync_System_String_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)">
-  SaveStateAsync(string, string, string, string?, bool, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_SaveStateAsync_System_String_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)">SaveStateAsync(string, string, string, string?, bool, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Saves state and broadcasts a change event to subscribers asynchronously.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;SaveStateResponse&gt; SaveStateAsync(string service, string key, string value, string? etag = null, bool includeValue = false, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The service name.</p>
-</dd>
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The state key.</p>
-</dd>
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The state value.</p>
-</dd>
-    <dt><code>etag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Optional etag for concurrency.</p>
-</dd>
-    <dt><code>includeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>If true, the value is included in the state change event payload.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a>&gt;</dt>
-    <dd><p>SaveStateResponse with success status.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>The service name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The state key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The state value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">etag</span></td>
+        <td><p>Optional etag for concurrency.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">includeValue</span></td>
+        <td><p>If true, the value is included in the state change event payload.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a>&gt;</td>
+        <td><p>SaveStateResponse with success status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_Subscribe_" data-uid="Virtufin.Api.Client.GatewayClient.Subscribe*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_Subscribe_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
-  Subscribe(IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_Subscribe_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">Subscribe(IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Subscribes to events from specified services and topics.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AsyncServerStreamingCall&lt;TopicEventRequest&gt; Subscribe(IEnumerable&lt;string&gt;? services = null, IEnumerable&lt;string&gt;? topics = null, IEnumerable&lt;string&gt;? eventTypes = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>List of service names to subscribe to (empty for all).</p>
-</dd>
-    <dt><code>topics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>List of topics to subscribe to (empty for all).</p>
-</dd>
-    <dt><code>eventTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>List of event types to subscribe to (empty for all).</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs">AsyncServerStreamingCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a>&gt;</dt>
-    <dd><p>The async call handle. Dispose to cancel subscription.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">services</span></td>
+        <td><p>List of service names to subscribe to (empty for all).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">topics</span></td>
+        <td><p>List of topics to subscribe to (empty for all).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">eventTypes</span></td>
+        <td><p>List of event types to subscribe to (empty for all).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs">AsyncServerStreamingCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a>&gt;</td>
+        <td><p>The async call handle. Dispose to cancel subscription.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_SubscribeAsync_" data-uid="Virtufin.Api.Client.GatewayClient.SubscribeAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_SubscribeAsync_Virtufin_Api_Client_IStreamEventHandler_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
-  SubscribeAsync(IStreamEventHandler, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_SubscribeAsync_Virtufin_Api_Client_IStreamEventHandler_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">SubscribeAsync(IStreamEventHandler, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Subscribes to events with a handler callback.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task SubscribeAsync(IStreamEventHandler handler, IEnumerable&lt;string&gt;? services = null, IEnumerable&lt;string&gt;? topics = null, IEnumerable&lt;string&gt;? eventTypes = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>handler</code> <a class="xref" href="Virtufin.Api.Client.IStreamEventHandler.html">IStreamEventHandler</a></dt>
-    <dd><p>Handler to receive events.</p>
-</dd>
-    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>Optional service filter.</p>
-</dd>
-    <dt><code>topics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>Optional topic filter.</p>
-</dd>
-    <dt><code>eventTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>Optional event type filter.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd><p>Task that completes when subscription is cancelled.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Virtufin.Api.Client.IStreamEventHandler.html">IStreamEventHandler</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Handler to receive events.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">services</span></td>
+        <td><p>Optional service filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">topics</span></td>
+        <td><p>Optional topic filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">eventTypes</span></td>
+        <td><p>Optional event type filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task that completes when subscription is cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_SubscribeToTopic_" data-uid="Virtufin.Api.Client.GatewayClient.SubscribeToTopic*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_SubscribeToTopic_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.SubscribeToTopic(System.String,System.Threading.CancellationToken)">
-  SubscribeToTopic(string, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_SubscribeToTopic_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.SubscribeToTopic(System.String,System.Threading.CancellationToken)">SubscribeToTopic(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Subscribes to a pub/sub topic and streams events.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AsyncServerStreamingCall&lt;PubsubSubscribeResponse&gt; SubscribeToTopic(string topic, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The topic name.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs">AsyncServerStreamingCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.PubsubSubscribeResponse.html">PubsubSubscribeResponse</a>&gt;</dt>
-    <dd><p>Async streaming call for PubsubSubscribeResponse. Dispose to cancel.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">topic</span></td>
+        <td><p>The topic name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs">AsyncServerStreamingCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.PubsubSubscribeResponse.html">PubsubSubscribeResponse</a>&gt;</td>
+        <td><p>Async streaming call for PubsubSubscribeResponse. Dispose to cancel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_TryGetMember_" data-uid="Virtufin.Api.Client.GatewayClient.TryGetMember*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_TryGetMember_System_Dynamic_GetMemberBinder_System_Object__" data-uid="Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
-  TryGetMember(GetMemberBinder, out object?)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_TryGetMember_System_Dynamic_GetMemberBinder_System_Object__" data-uid="Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">TryGetMember(GetMemberBinder, out object?)</h4>
   <div class="markdown level1 summary"><p>Dynamic property access returns a ServiceClient for the named service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool TryGetMember(GetMemberBinder binder, out object? result)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>binder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.getmemberbinder">GetMemberBinder</a></dt>
-    <dd></dd>
-    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.getmemberbinder">GetMemberBinder</a></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a></div>
   <a id="Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopic_" data-uid="Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopic_System_String_" data-uid="Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(System.String)">
-  UnsubscribeFromTopic(string)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopic_System_String_" data-uid="Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(System.String)">UnsubscribeFromTopic(string)</h4>
   <div class="markdown level1 summary"><p>Unsubscribes from a pub/sub topic.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UnsubscribeResponse UnsubscribeFromTopic(string subscriptionId)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>subscriptionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The subscription ID to cancel.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Virtufin.Api.Protos.UnsubscribeResponse.html">UnsubscribeResponse</a></dt>
-    <dd><p>UnsubscribeResponse with success status.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">subscriptionId</span></td>
+        <td><p>The subscription ID to cancel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Virtufin.Api.Protos.UnsubscribeResponse.html">UnsubscribeResponse</a></td>
+        <td><p>UnsubscribeResponse with success status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopicAsync_" data-uid="Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopicAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(System.String,System.Threading.CancellationToken)">
-  UnsubscribeFromTopicAsync(string, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopicAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(System.String,System.Threading.CancellationToken)">UnsubscribeFromTopicAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Unsubscribes from a pub/sub topic asynchronously.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;UnsubscribeResponse&gt; UnsubscribeFromTopicAsync(string subscriptionId, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>subscriptionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The subscription ID to cancel.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.UnsubscribeResponse.html">UnsubscribeResponse</a>&gt;</dt>
-    <dd><p>UnsubscribeResponse with success status.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">subscriptionId</span></td>
+        <td><p>The subscription ID to cancel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.UnsubscribeResponse.html">UnsubscribeResponse</a>&gt;</td>
+        <td><p>UnsubscribeResponse with success status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_WatchSystemEvents_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEvents*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_WatchSystemEvents_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)">
-  WatchSystemEvents(CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_WatchSystemEvents_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)">WatchSystemEvents(CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Watches system events like connection status changes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AsyncServerStreamingCall&lt;TopicEventRequest&gt; WatchSystemEvents(CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs">AsyncServerStreamingCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a>&gt;</dt>
-    <dd><p>The async call handle. Dispose to cancel subscription.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs">AsyncServerStreamingCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a>&gt;</td>
+        <td><p>The async call handle. Dispose to cancel subscription.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Virtufin_Api_Client_GatewayClient_WatchSystemEventsAsync_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_WatchSystemEventsAsync_Virtufin_Api_Client_IStreamEventHandler_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)">
-  WatchSystemEventsAsync(IStreamEventHandler, CancellationToken)
-  
-  </h3>
-
+  <h4 id="Virtufin_Api_Client_GatewayClient_WatchSystemEventsAsync_Virtufin_Api_Client_IStreamEventHandler_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)">WatchSystemEventsAsync(IStreamEventHandler, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Watches system events with a handler callback.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task WatchSystemEventsAsync(IStreamEventHandler handler, CancellationToken cancellationToken = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>handler</code> <a class="xref" href="Virtufin.Api.Client.IStreamEventHandler.html">IStreamEventHandler</a></dt>
-    <dd><p>Handler to receive system events.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd><p>Task that completes when subscription is cancelled.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Virtufin.Api.Client.IStreamEventHandler.html">IStreamEventHandler</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Handler to receive system events.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task that completes when subscription is cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a>
+  </div>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>
