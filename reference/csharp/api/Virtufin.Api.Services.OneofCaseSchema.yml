@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.OneofCaseSchema
+  commentId: T:Virtufin.Api.Services.OneofCaseSchema
+  id: OneofCaseSchema
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.OneofCaseSchema.FieldNumber
+  - Virtufin.Api.Services.OneofCaseSchema.Name
+  - Virtufin.Api.Services.OneofCaseSchema.Type
+  - Virtufin.Api.Services.OneofCaseSchema.TypeName
+  langs:
+  - csharp
+  - vb
+  name: OneofCaseSchema
+  nameWithType: OneofCaseSchema
+  fullName: Virtufin.Api.Services.OneofCaseSchema
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: OneofCaseSchema
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 1163
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Represents a case within a oneof field group.
+  example: []
+  syntax:
+    content: public class OneofCaseSchema
+    content.vb: Public Class OneofCaseSchema
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Services.OneofCaseSchema.Name
+  commentId: P:Virtufin.Api.Services.OneofCaseSchema.Name
+  id: Name
+  parent: Virtufin.Api.Services.OneofCaseSchema
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: OneofCaseSchema.Name
+  fullName: Virtufin.Api.Services.OneofCaseSchema.Name
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Name
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 1165
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Virtufin.Api.Services.OneofCaseSchema.Name*
+- uid: Virtufin.Api.Services.OneofCaseSchema.Type
+  commentId: P:Virtufin.Api.Services.OneofCaseSchema.Type
+  id: Type
+  parent: Virtufin.Api.Services.OneofCaseSchema
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: OneofCaseSchema.Type
+  fullName: Virtufin.Api.Services.OneofCaseSchema.Type
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Type
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 1166
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Virtufin.Api.Services.OneofCaseSchema.Type*
+- uid: Virtufin.Api.Services.OneofCaseSchema.TypeName
+  commentId: P:Virtufin.Api.Services.OneofCaseSchema.TypeName
+  id: TypeName
+  parent: Virtufin.Api.Services.OneofCaseSchema
+  langs:
+  - csharp
+  - vb
+  name: TypeName
+  nameWithType: OneofCaseSchema.TypeName
+  fullName: Virtufin.Api.Services.OneofCaseSchema.TypeName
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: TypeName
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 1167
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public string TypeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TypeName As String
+  overload: Virtufin.Api.Services.OneofCaseSchema.TypeName*
+- uid: Virtufin.Api.Services.OneofCaseSchema.FieldNumber
+  commentId: P:Virtufin.Api.Services.OneofCaseSchema.FieldNumber
+  id: FieldNumber
+  parent: Virtufin.Api.Services.OneofCaseSchema
+  langs:
+  - csharp
+  - vb
+  name: FieldNumber
+  nameWithType: OneofCaseSchema.FieldNumber
+  fullName: Virtufin.Api.Services.OneofCaseSchema.FieldNumber
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: FieldNumber
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 1168
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public int FieldNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FieldNumber As Integer
+  overload: Virtufin.Api.Services.OneofCaseSchema.FieldNumber*
+references:
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Api.Services.OneofCaseSchema.Name*
+  commentId: Overload:Virtufin.Api.Services.OneofCaseSchema.Name
+  href: Virtufin.Api.Services.OneofCaseSchema.html#Virtufin_Api_Services_OneofCaseSchema_Name
+  name: Name
+  nameWithType: OneofCaseSchema.Name
+  fullName: Virtufin.Api.Services.OneofCaseSchema.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Api.Services.OneofCaseSchema.Type*
+  commentId: Overload:Virtufin.Api.Services.OneofCaseSchema.Type
+  href: Virtufin.Api.Services.OneofCaseSchema.html#Virtufin_Api_Services_OneofCaseSchema_Type
+  name: Type
+  nameWithType: OneofCaseSchema.Type
+  fullName: Virtufin.Api.Services.OneofCaseSchema.Type
+- uid: Virtufin.Api.Services.OneofCaseSchema.TypeName*
+  commentId: Overload:Virtufin.Api.Services.OneofCaseSchema.TypeName
+  href: Virtufin.Api.Services.OneofCaseSchema.html#Virtufin_Api_Services_OneofCaseSchema_TypeName
+  name: TypeName
+  nameWithType: OneofCaseSchema.TypeName
+  fullName: Virtufin.Api.Services.OneofCaseSchema.TypeName
+- uid: Virtufin.Api.Services.OneofCaseSchema.FieldNumber*
+  commentId: Overload:Virtufin.Api.Services.OneofCaseSchema.FieldNumber
+  href: Virtufin.Api.Services.OneofCaseSchema.html#Virtufin_Api_Services_OneofCaseSchema_FieldNumber
+  name: FieldNumber
+  nameWithType: OneofCaseSchema.FieldNumber
+  fullName: Virtufin.Api.Services.OneofCaseSchema.FieldNumber
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

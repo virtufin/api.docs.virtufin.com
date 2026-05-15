@@ -1,0 +1,447 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Configuration.GrpcConfig
+  commentId: T:Virtufin.Api.Configuration.GrpcConfig
+  id: GrpcConfig
+  parent: Virtufin.Api.Configuration
+  children:
+  - Virtufin.Api.Configuration.GrpcConfig.Host
+  - Virtufin.Api.Configuration.GrpcConfig.Port
+  - Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
+  langs:
+  - csharp
+  - vb
+  name: GrpcConfig
+  nameWithType: GrpcConfig
+  fullName: Virtufin.Api.Configuration.GrpcConfig
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: GrpcConfig
+    path: ../../../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 29
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public class GrpcConfig
+    content.vb: Public Class GrpcConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Configuration.GrpcConfig.Host
+  commentId: P:Virtufin.Api.Configuration.GrpcConfig.Host
+  id: Host
+  parent: Virtufin.Api.Configuration.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: GrpcConfig.Host
+  fullName: Virtufin.Api.Configuration.GrpcConfig.Host
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Host
+    path: ../../../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public string Host { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Host As String
+  overload: Virtufin.Api.Configuration.GrpcConfig.Host*
+- uid: Virtufin.Api.Configuration.GrpcConfig.Port
+  commentId: P:Virtufin.Api.Configuration.GrpcConfig.Port
+  id: Port
+  parent: Virtufin.Api.Configuration.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: GrpcConfig.Port
+  fullName: Virtufin.Api.Configuration.GrpcConfig.Port
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: Port
+    path: ../../../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 32
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: Virtufin.Api.Configuration.GrpcConfig.Port*
+- uid: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
+  commentId: P:Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
+  id: ReflectionEnabled
+  parent: Virtufin.Api.Configuration.GrpcConfig
+  langs:
+  - csharp
+  - vb
+  name: ReflectionEnabled
+  nameWithType: GrpcConfig.ReflectionEnabled
+  fullName: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: ReflectionEnabled
+    path: ../../../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public bool ReflectionEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ReflectionEnabled As Boolean
+  overload: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled*
+references:
+- uid: Virtufin.Api.Configuration
+  commentId: N:Virtufin.Api.Configuration
+  href: Virtufin.html
+  name: Virtufin.Api.Configuration
+  nameWithType: Virtufin.Api.Configuration
+  fullName: Virtufin.Api.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Api.Configuration.GrpcConfig.Host*
+  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.Host
+  href: Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_Host
+  name: Host
+  nameWithType: GrpcConfig.Host
+  fullName: Virtufin.Api.Configuration.GrpcConfig.Host
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Api.Configuration.GrpcConfig.Port*
+  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.Port
+  href: Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_Port
+  name: Port
+  nameWithType: GrpcConfig.Port
+  fullName: Virtufin.Api.Configuration.GrpcConfig.Port
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled*
+  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
+  href: Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_ReflectionEnabled
+  name: ReflectionEnabled
+  nameWithType: GrpcConfig.ReflectionEnabled
+  fullName: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

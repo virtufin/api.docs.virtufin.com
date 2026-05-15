@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schema/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Virtufin.Api/Virtufin.Api.csproj",
+            "Virtufin.Api.Client/Virtufin.Api.Client.csproj"
+          ],
+          "src": "/workspace/virtufin/virtufin-api/src"
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "dest": ".",
+    "template": ["default"],
+    "content": [{ "files": ["api/**/*.yml"] }],
+    "globalMetadata": {
+      "_appTitle": "Virtufin API - C# Reference",
+      "_disableContribution": true
+    }
+  }
+}
