@@ -68,6 +68,7 @@
             <img id="logo" class="svg" src="{{_rel}}{{{_appLogoPath}}}{{^_appLogoPath}}logo.svg{{/_appLogoPath}}" alt="{{_appName}}" >
             {{_appName}}
           </a>
+          {{>partials/git-info}}
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -84,8 +85,6 @@
         </div>
       </nav>
       {{/_disableNavbar}}
-      {{! CUSTOM - modern template has no navbar.tmpl.partial; inject git-info via custom partial }}
-      {{> git-info}}
     </header>
 
     <main class="container-xxl">

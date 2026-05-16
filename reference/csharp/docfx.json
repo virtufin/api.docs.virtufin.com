@@ -16,20 +16,21 @@
   ],
   "build": {
     "dest": ".",
-    "template": ["templates/custom", "default", "modern"],
+    "template": ["default", "modern", "templates/custom"],
     "content": [
       { "files": ["api/**/*.yml"] },
       { "files": ["index.md"] }
     ],
     "globalMetadata": {
       "_appTitle": "Virtufin API - C# Reference",
+      "_appName": "Virtufin API",
       "_appLogoPath": "logo.png",
       "_appFaviconPath": "favicon.ico",
       "_appFooter": "© 2026 Häner Consulting. All Rights Reserved.",
       "_disableContribution": true,
       "_disableAffix": true,
-      "gitCommitHash": "46bcade",
-      "gitCommitUrl": "https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/46bcade86300cc584fb954d9e18edb6d929574bd",
+      "gitCommitHash": "01261a8",
+      "gitCommitUrl": "https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/01261a89da401124656db88c5d07dd32e8466412",
       "gitBranch": "master"
     }
   }
