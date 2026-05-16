@@ -1,88 +1,124 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Class State.StateClient | Virtufin API - C# Reference </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class State.StateClient | Virtufin API - C# Reference ">
-    
-    <meta name="description" content="Client for State">
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      
+      <meta name="description" content="Client for State">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
+    </header>
 
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
+      </div>
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Virtufin.Api.Protos.State.StateClient">
+
+        <article data-uid="Virtufin.Api.Protos.State.StateClient">
 
 
 
-  <h1 id="Virtufin_Api_Protos_State_StateClient" data-uid="Virtufin.Api.Protos.State.StateClient" class="text-break">Class State.StateClient</h1>
-  <div class="markdown level0 summary"><p>Client for State</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase</a></div>
-    <div class="level2"><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase</a>&lt;<a class="xref" href="Virtufin.Api.Protos.State.html">State</a>.<a class="xref" href="Virtufin.Api.Protos.State.StateClient.html">StateClient</a>&gt;</div>
-    <div class="level3"><span class="xref">State.StateClient</span></div>
+  <h1 id="Virtufin_Api_Protos_State_StateClient" data-uid="Virtufin.Api.Protos.State.StateClient" class="text-break">
+Class State.StateClient  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Protos.html">Protos</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+  <div class="markdown summary"><p>Client for State</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class State.StateClient : ClientBase&lt;State.StateClient&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase</a></div>
+      <div><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase</a>&lt;<a class="xref" href="Virtufin.Api.Protos.State.html">State</a>.<a class="xref" href="Virtufin.Api.Protos.State.StateClient.html">StateClient</a>&gt;</div>
+      <div><span class="xref">State.StateClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase&lt;State.StateClient&gt;.WithHost(string)</a>
     </div>
@@ -110,1181 +146,1003 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Protos.html">Protos</a></h6>
-  <h6><strong>Assembly</strong>: Virtufin.Api.dll</h6>
-  <h5 id="Virtufin_Api_Protos_State_StateClient_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class State.StateClient : ClientBase&lt;State.StateClient&gt;</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-</h3>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="Virtufin_Api_Protos_State_StateClient__ctor_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient__ctor" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor">StateClient()</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient__ctor" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor">
+  StateClient()
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Protected parameterless constructor to allow creation of test doubles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected StateClient()</code></pre>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient__ctor_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient__ctor_Grpc_Core_CallInvoker_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.CallInvoker)">StateClient(CallInvoker)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient__ctor_Grpc_Core_CallInvoker_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.CallInvoker)">
+  StateClient(CallInvoker)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Creates a new client for State that uses a custom <code>CallInvoker</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public StateClient(CallInvoker callInvoker)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallInvoker.cs">CallInvoker</a></td>
-        <td><span class="parametername">callInvoker</span></td>
-        <td><p>The callInvoker to use to make remote calls.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callInvoker</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallInvoker.cs">CallInvoker</a></dt>
+    <dd><p>The callInvoker to use to make remote calls.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient__ctor_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient__ctor_Grpc_Core_ChannelBase_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ChannelBase)">StateClient(ChannelBase)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient__ctor_Grpc_Core_ChannelBase_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ChannelBase)">
+  StateClient(ChannelBase)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Creates a new client for State</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public StateClient(ChannelBase channel)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ChannelBase.cs">ChannelBase</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td><p>The channel to use to make remote calls.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channel</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ChannelBase.cs">ChannelBase</a></dt>
+    <dd><p>The channel to use to make remote calls.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient__ctor_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient__ctor_Grpc_Core_ClientBase_ClientBaseConfiguration_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">StateClient(ClientBaseConfiguration)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient__ctor_Grpc_Core_ClientBase_ClientBaseConfiguration_" data-uid="Virtufin.Api.Protos.State.StateClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+  StateClient(ClientBaseConfiguration)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Protected constructor to allow creation of configured clients.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected StateClient(ClientBase.ClientBaseConfiguration configuration)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase</a>.<a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBaseConfiguration</a></td>
-        <td><span class="parametername">configuration</span></td>
-        <td><p>The client configuration.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configuration</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase</a>.<a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBaseConfiguration</a></dt>
+    <dd><p>The client configuration.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_DeleteState_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteState*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)">DeleteState(DeleteStateRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)">
+  DeleteState(DeleteStateRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual DeleteStateResponse DeleteState(DeleteStateRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_DeleteState_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteState*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">DeleteState(DeleteStateRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  DeleteState(DeleteStateRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual DeleteStateResponse DeleteState(DeleteStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_DeleteStateAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteStateAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_DeleteStateAsync_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)">DeleteStateAsync(DeleteStateRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_DeleteStateAsync_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.CallOptions)">
+  DeleteStateAsync(DeleteStateRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;DeleteStateResponse&gt; DeleteStateAsync(DeleteStateRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_DeleteStateAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteStateAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_DeleteStateAsync_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">DeleteStateAsync(DeleteStateRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_DeleteStateAsync_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.DeleteStateAsync(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  DeleteStateAsync(DeleteStateRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;DeleteStateResponse&gt; DeleteStateAsync(DeleteStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_GetAllState_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllState*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)">GetAllState(GetAllStateRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)">
+  GetAllState(GetAllStateRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual GetAllStateResponse GetAllState(GetAllStateRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_GetAllState_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllState*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetAllState(GetAllStateRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  GetAllState(GetAllStateRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual GetAllStateResponse GetAllState(GetAllStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_GetAllStateAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllStateAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_GetAllStateAsync_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)">GetAllStateAsync(GetAllStateRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_GetAllStateAsync_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.CallOptions)">
+  GetAllStateAsync(GetAllStateRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;GetAllStateResponse&gt; GetAllStateAsync(GetAllStateRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_GetAllStateAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllStateAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_GetAllStateAsync_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetAllStateAsync(GetAllStateRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_GetAllStateAsync_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.GetAllStateAsync(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  GetAllStateAsync(GetAllStateRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;GetAllStateResponse&gt; GetAllStateAsync(GetAllStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_GetState_" data-uid="Virtufin.Api.Protos.State.StateClient.GetState*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)">GetState(GetStateRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)">
+  GetState(GetStateRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual GetStateResponse GetState(GetStateRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_GetState_" data-uid="Virtufin.Api.Protos.State.StateClient.GetState*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetState(GetStateRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  GetState(GetStateRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual GetStateResponse GetState(GetStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_GetStateAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.GetStateAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_GetStateAsync_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)">GetStateAsync(GetStateRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_GetStateAsync_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.CallOptions)">
+  GetStateAsync(GetStateRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;GetStateResponse&gt; GetStateAsync(GetStateRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_GetStateAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.GetStateAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_GetStateAsync_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetStateAsync(GetStateRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_GetStateAsync_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.GetStateAsync(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  GetStateAsync(GetStateRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;GetStateResponse&gt; GetStateAsync(GetStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_NewInstance_" data-uid="Virtufin.Api.Protos.State.StateClient.NewInstance*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_NewInstance_Grpc_Core_ClientBase_ClientBaseConfiguration_" data-uid="Virtufin.Api.Protos.State.StateClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">NewInstance(ClientBaseConfiguration)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_NewInstance_Grpc_Core_ClientBase_ClientBaseConfiguration_" data-uid="Virtufin.Api.Protos.State.StateClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+  NewInstance(ClientBaseConfiguration)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Creates a new instance of client from given <code>ClientBaseConfiguration</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override State.StateClient NewInstance(ClientBase.ClientBaseConfiguration configuration)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase</a>.<a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBaseConfiguration</a></td>
-        <td><span class="parametername">configuration</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.State.html">State</a>.<a class="xref" href="Virtufin.Api.Protos.State.StateClient.html">StateClient</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase&lt;State.StateClient&gt;.NewInstance(ClientBase.ClientBaseConfiguration)</a></div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configuration</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBase</a>.<a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ClientBase.cs">ClientBaseConfiguration</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.State.html">State</a>.<a class="xref" href="Virtufin.Api.Protos.State.StateClient.html">StateClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_RegisterKeys_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeys*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)">RegisterKeys(RegisterKeysRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)">
+  RegisterKeys(RegisterKeysRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual RegisterKeysResponse RegisterKeys(RegisterKeysRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_RegisterKeys_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeys*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">RegisterKeys(RegisterKeysRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  RegisterKeys(RegisterKeysRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual RegisterKeysResponse RegisterKeys(RegisterKeysRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_RegisterKeysAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_RegisterKeysAsync_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)">RegisterKeysAsync(RegisterKeysRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_RegisterKeysAsync_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.CallOptions)">
+  RegisterKeysAsync(RegisterKeysRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;RegisterKeysResponse&gt; RegisterKeysAsync(RegisterKeysRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_RegisterKeysAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_RegisterKeysAsync_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">RegisterKeysAsync(RegisterKeysRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_RegisterKeysAsync_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.RegisterKeysAsync(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  RegisterKeysAsync(RegisterKeysRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;RegisterKeysResponse&gt; RegisterKeysAsync(RegisterKeysRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_SaveState_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveState*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)">SaveState(SaveStateRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)">
+  SaveState(SaveStateRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual SaveStateResponse SaveState(SaveStateRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_SaveState_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveState*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">SaveState(SaveStateRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  SaveState(SaveStateRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual SaveStateResponse SaveState(SaveStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_SaveStateAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveStateAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_SaveStateAsync_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)">SaveStateAsync(SaveStateRequest, CallOptions)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_SaveStateAsync_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_CallOptions_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.CallOptions)">
+  SaveStateAsync(SaveStateRequest, CallOptions)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;SaveStateResponse&gt; SaveStateAsync(SaveStateRequest request, CallOptions options)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/CallOptions.cs">CallOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Protos_State_StateClient_SaveStateAsync_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveStateAsync*"></a>
-  <h4 id="Virtufin_Api_Protos_State_StateClient_SaveStateAsync_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">SaveStateAsync(SaveStateRequest, Metadata, DateTime?, CancellationToken)</h4>
+
+  <h3 id="Virtufin_Api_Protos_State_StateClient_SaveStateAsync_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_Metadata_System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Protos.State.StateClient.SaveStateAsync(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+  SaveStateAsync(SaveStateRequest, Metadata, DateTime?, CancellationToken)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual AsyncUnaryCall&lt;SaveStateResponse&gt; SaveStateAsync(SaveStateRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></td>
-        <td><span class="parametername">headers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">deadline</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></dt>
+    <dd></dd>
+    <dt><code>headers</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Metadata.cs">Metadata</a></dt>
+    <dd></dd>
+    <dt><code>deadline</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncUnaryCall.cs">AsyncUnaryCall</a>&lt;<a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
-        </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      
-      <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

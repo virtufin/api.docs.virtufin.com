@@ -16,8 +16,11 @@
   ],
   "build": {
     "dest": ".",
-    "template": ["default"],
-    "content": [{ "files": ["api/**/*.yml"] }],
+    "template": ["default", "modern"],
+    "content": [
+      { "files": ["api/**/*.yml"] },
+      { "files": ["index.md"] }
+    ],
     "globalMetadata": {
       "_appTitle": "Virtufin API - C# Reference",
       "_disableContribution": true
