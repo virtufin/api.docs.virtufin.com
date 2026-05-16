@@ -23,6 +23,8 @@
     ],
     "globalMetadata": {
       "_appTitle": "Virtufin API - C# Reference",
+      "_appLogoPath": "logo.svg",
+      "_appFaviconPath": "favicon.ico",
       "_disableContribution": true
     }
   }
