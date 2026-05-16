@@ -1,0 +1,6 @@
+{{#gitCommitHash}}
+<div class="git-info">
+  {{#gitBranch}}<span class="git-branch">{{gitBranch}}</span>{{/gitBranch}}
+  <a href="{{gitCommitUrl}}" target="_blank" rel="noopener">{{gitBranch}}@{{gitCommitHash}}</a>
+</div>
+{{/gitCommitHash}}
