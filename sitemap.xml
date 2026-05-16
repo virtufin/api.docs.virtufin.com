@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://api.doc.virtufin.com/v1/</loc>
+         <loc>https://api.doc.virtufin.com/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/api/</loc>
+         <loc>https://api.doc.virtufin.com/api/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/architecture/</loc>
+         <loc>https://api.doc.virtufin.com/architecture/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/configuration/</loc>
+         <loc>https://api.doc.virtufin.com/configuration/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/csharp-client/</loc>
+         <loc>https://api.doc.virtufin.com/csharp-client/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/deployment/</loc>
+         <loc>https://api.doc.virtufin.com/deployment/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/development/</loc>
+         <loc>https://api.doc.virtufin.com/development/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/events/</loc>
+         <loc>https://api.doc.virtufin.com/events/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/python-client/</loc>
+         <loc>https://api.doc.virtufin.com/python-client/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/services/</loc>
+         <loc>https://api.doc.virtufin.com/services/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
     <url>
-         <loc>https://api.doc.virtufin.com/v1/typescript-client/</loc>
+         <loc>https://api.doc.virtufin.com/typescript-client/</loc>
          <lastmod>2026-05-16</lastmod>
     </url>
 </urlset>
