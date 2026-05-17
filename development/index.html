@@ -203,8 +203,8 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/b636be59edee4dad6a9d13719bf9b061416babdb" class="md-source__commit" style="margin-left:auto;">
-      b636be5
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" class="md-source__commit" style="margin-left:auto;">
+      09f361f
     </a>
 </div>
       </div>
@@ -343,8 +343,8 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/b636be59edee4dad6a9d13719bf9b061416babdb" class="md-source__commit" style="margin-left:auto;">
-      b636be5
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" class="md-source__commit" style="margin-left:auto;">
+      09f361f
     </a>
 </div>
     </div>
@@ -2123,47 +2123,44 @@ winget<span class="w"> </span>install<span class="w"> </span>Dapr.CLI
 <div class="highlight"><pre><span></span><code>virtufin-api/
 ├── src/
 │   ├── Virtufin.Api/                    # Main API project
-│   │   ├── Controllers/                  # REST controllers
-│   │   │   └── StateController.cs
-│   │   ├── Services/                     # Business logic
-│   │   │   ├── GatewayService.cs
-│   │   │   ├── GrpcReflectionService.cs
-│   │   │   ├── GrpcChannelPool.cs
-│   │   │   ├── EventSubscriptionManager.cs
-│   │   │   ├── DaprStreamingSubscriptionManager.cs
-│   │   │   ├── ConfigService.cs
-│   │   │   ├── StateService.cs
-│   │   │   └── GrpcGatewayExtensions.cs
 │   │   ├── Configuration/                # Configuration models
-│   │   │   ├── PortOptions.cs
 │   │   │   ├── Models.cs
+│   │   │   ├── PortConstants.cs
 │   │   │   └── ServicesConfigurationLoader.cs
-│   │   ├── HealthChecks/                  # Health check implementations
-│   │   │   └── HealthChecks.cs
-│   │   ├── Protos/                        # Protocol buffer definitions
+│   │   ├── deploy/                       # Kubernetes deployment YAMLs
+│   │   ├── HealthChecks/                 # Health check implementations
+│   │   ├── Protos/                       # Protocol buffer definitions
+│   │   │   ├── buf.yaml
 │   │   │   ├── gateway.proto
 │   │   │   ├── config.proto
-│   │   │   └── google/api/
-│   │   ├── config/
-│   │   │   └── services.yaml              # Default services config
-│   │   ├── Program.cs                     # Application entry point
+│   │   │   ├── state.proto
+│   │   │   ├── pubsub.proto
+│   │   │   ├── google/api/               # Google API protos
+│   │   │   └── dapr/                     # Dapr proto definitions
+│   │   ├── Services/                     # Business logic
+│   │   │   ├── ConfigService.cs
+│   │   │   ├── Constants.cs
+│   │   │   ├── DaprPubSubBridgeService.cs
+│   │   │   ├── GatewayService.cs
+│   │   │   ├── GrpcChannelPool.cs
+│   │   │   ├── GrpcReflectionService.cs
+│   │   │   ├── PubSubService.cs
+│   │   │   ├── StateService.cs
+│   │   │   └── SubscriptionManagerBase.cs
+│   │   ├── Constants.cs
+│   │   ├── GrpcModels.cs
+│   │   ├── Program.cs
+│   │   ├── Version.props
 │   │   └── Virtufin.Api.csproj
-│   │
-│   └── Virtufin.Api.Client/              # C# client library
-│       └── ApiClient.cs
-│
+│   ├── Virtufin.Api.Client/              # C# client library
+│   ├── python/                           # Python client
+│   └── typescript/                       # TypeScript client
 ├── tests/
 │   └── Virtufin.Api.Tests/               # Test project
-│       ├── GrpcIntegrationTests.cs
-│       ├── GrpcStreamingTests.cs
-│       ├── ServicesTests.cs
-│       ├── ConfigServiceTests.cs
-│       └── Virtufin.Api.Tests.csproj
-│
-├── docs/                                  # Documentation
-├── scripts/                               # Utility scripts
-├── examples/                              # Example code
-└── Virtufin.Api.slnx                      # Solution file
+├── docs/                                 # Documentation
+├── scripts/                              # Utility scripts
+├── examples/                             # Example code
+└── versions.env                          # Version configuration
 </code></pre></div>
 <hr />
 <h2 id="building">Building</h2>
