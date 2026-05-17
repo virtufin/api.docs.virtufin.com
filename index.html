@@ -201,8 +201,8 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/1d67d82f89b1f1e78dc0aee78a509e45e3126d8f" class="md-source__commit" style="margin-left:auto;">
-      1d67d82
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/7b974bb4b059e7466a18aa05f88f6b769532c5cc" class="md-source__commit" style="margin-left:auto;">
+      7b974bb
     </a>
 </div>
       </div>
@@ -341,8 +341,8 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/1d67d82f89b1f1e78dc0aee78a509e45e3126d8f" class="md-source__commit" style="margin-left:auto;">
-      1d67d82
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/7b974bb4b059e7466a18aa05f88f6b769532c5cc" class="md-source__commit" style="margin-left:auto;">
+      7b974bb
     </a>
 </div>
     </div>
@@ -522,17 +522,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#local-preview" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -555,32 +544,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#deploying" class="md-nav__link">
+  <a href="#cicd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deploying
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#version-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Version Management
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-new-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding a New Version
+        CI/CD
       
     </span>
   </a>
@@ -1218,17 +1185,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#local-preview" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1251,32 +1207,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#deploying" class="md-nav__link">
+  <a href="#cicd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deploying
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#version-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Version Management
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-new-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding a New Version
+        CI/CD
       
     </span>
   </a>
@@ -1431,15 +1365,15 @@ dotnet<span class="w"> </span>run
 <span class="k">using</span><span class="w"> </span><span class="nn">var</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ApiClient</span><span class="p">(</span><span class="s">&quot;localhost&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">5002</span><span class="p">);</span>
 
 <span class="c1">// List available services</span>
-<span class="kt">var</span><span class="w"> </span><span class="n">services</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">ListServices</span><span class="p">();</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Services: {string.Join(&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;, services)}&quot;</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">services</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">ListServicesAsync</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Services: {string.Join(&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;, services.Services)}&quot;</span><span class="p">);</span>
 
 <span class="c1">// Get service client and invoke a method</span>
 <span class="kt">var</span><span class="w"> </span><span class="n">serviceClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">Gateway</span><span class="p">.</span><span class="n">GetService</span><span class="p">(</span><span class="s">&quot;workmanager&quot;</span><span class="p">);</span>
-<span class="kt">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">serviceClient</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="s">&quot;GetStatus&quot;</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">serviceClient</span><span class="p">.</span><span class="n">InvokeAsync</span><span class="p">(</span><span class="s">&quot;GetStatus&quot;</span><span class="p">);</span>
 
 <span class="c1">// Or invoke directly</span>
-<span class="kt">var</span><span class="w"> </span><span class="n">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">InvokeAsync</span><span class="p">(</span><span class="s">&quot;workmanager&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;GetStatus&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="kt">var</span><span class="w"> </span><span class="n">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">client</span><span class="p">.</span><span class="n">InvokeAsync</span><span class="p">(</span><span class="s">&quot;workmanager&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;GetStatus&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">object?</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;key&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;value&quot;</span><span class="w"> </span><span class="p">});</span>
 </code></pre></div>
 <h2 id="documentation">Documentation</h2>
@@ -1453,45 +1387,28 @@ dotnet<span class="w"> </span>run
 <li><a href="development/">Development</a> - Building and testing</li>
 </ul>
 <h2 id="documentation-building">Documentation Building</h2>
-<p>This documentation is versioned using <a href="https://github.com/jimporter/mike">Mike</a>, a MkDocs plugin for versioning.</p>
-<h3 id="prerequisites_1">Prerequisites</h3>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements_docs.txt
-</code></pre></div>
+<p>This documentation is built using <a href="https://www.mkdocs.org/">MkDocs</a> and published automatically via CI on the <code>master</code> branch.</p>
 <h3 id="local-preview">Local Preview</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Preview current version</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Preview documentation</span>
 python<span class="w"> </span>scripts/generate_docs.py<span class="w"> </span>--serve
-
-<span class="c1"># Preview specific version</span>
-python<span class="w"> </span>scripts/generate_docs.py<span class="w"> </span>--serve<span class="w"> </span>--version<span class="w"> </span>v2
 </code></pre></div>
 <h3 id="building">Building</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Build documentation for current version (from versions.env)</span>
+<p>The documentation is automatically built and deployed by CI. To build locally:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Build documentation site to docs-site/</span>
 python<span class="w"> </span>scripts/generate_docs.py
 
-<span class="c1"># Build specific version</span>
-python<span class="w"> </span>scripts/generate_docs.py<span class="w"> </span>--version<span class="w"> </span>v2
+<span class="c1"># Generate API reference docs (C#, Python, TypeScript)</span>
+python<span class="w"> </span>scripts/generate_docs.py<span class="w"> </span>--api-docs
 </code></pre></div>
-<h3 id="deploying">Deploying</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Deploy current version to GitHub Pages</span>
-python<span class="w"> </span>scripts/generate_docs.py<span class="w"> </span>--deploy
-
-<span class="c1"># Deploy specific version</span>
-python<span class="w"> </span>scripts/generate_docs.py<span class="w"> </span>--deploy<span class="w"> </span>--version<span class="w"> </span>v2
-</code></pre></div>
-<h3 id="version-management">Version Management</h3>
-<ul>
-<li>Version is read from <code>versions.env</code> (<code>API_VERSION=v1</code>)</li>
-<li>Use <code>--version</code> flag to override for testing future versions</li>
-<li>Run <code>mike set-default v1</code> to change the default version shown to users</li>
-<li>Run <code>mike list-versions</code> to see all deployed versions</li>
-</ul>
-<h3 id="adding-a-new-version">Adding a New Version</h3>
+<h3 id="cicd">CI/CD</h3>
+<p>Documentation is automatically built and deployed when changes are pushed to <code>master</code>. The workflow:</p>
 <ol>
-<li>Create new docs directory (e.g., <code>docs/v2/</code>)</li>
-<li>Update <code>versions.env</code> to <code>API_VERSION=v2</code></li>
-<li>Run <code>python scripts/generate_docs.py --deploy --version v2</code></li>
-<li>Run <code>mike set-default v2</code> to make it the default</li>
+<li>CI builds MkDocs site (<code>mkdocs build</code>)</li>
+<li>CI injects the Git commit SHA into <code>mkdocs_v1.yml</code></li>
+<li>CI generates API reference docs (DocFX, pdoc, TypeDoc)</li>
+<li>CI deploys to GitHub Pages</li>
 </ol>
+<p>No manual deployment is required.</p>
 <h2 id="port-configuration">Port Configuration</h2>
 <table>
 <thead>
