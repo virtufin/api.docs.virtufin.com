@@ -224,14 +224,17 @@ items:
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the subscription key for a subscription.
   example: []
   syntax:
     content: protected override string GetSubscriptionKey(PubsubSubscription subscription)
     parameters:
     - id: subscription
       type: Virtufin.Api.Services.PubsubSubscription
+      description: The subscription to get the key for.
     return:
       type: System.String
+      description: The subscription key string.
     content.vb: Protected Overrides Function GetSubscriptionKey(subscription As PubsubSubscription) As String
   overridden: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.PubsubSubscribeResponse,Virtufin.Api.Services.PubsubSubscription}.GetSubscriptionKey(Virtufin.Api.Services.PubsubSubscription)
   overload: Virtufin.Api.Services.PubsubSubscriptionManager.GetSubscriptionKey*
@@ -257,14 +260,17 @@ items:
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the idle timeout for a subscription.
   example: []
   syntax:
     content: protected override TimeSpan GetIdleTimeout(PubsubSubscription subscription)
     parameters:
     - id: subscription
       type: Virtufin.Api.Services.PubsubSubscription
+      description: The subscription to get the timeout for.
     return:
       type: System.TimeSpan
+      description: The idle timeout duration.
     content.vb: Protected Overrides Function GetIdleTimeout(subscription As PubsubSubscription) As TimeSpan
   overridden: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.PubsubSubscribeResponse,Virtufin.Api.Services.PubsubSubscription}.GetIdleTimeout(Virtufin.Api.Services.PubsubSubscription)
   overload: Virtufin.Api.Services.PubsubSubscriptionManager.GetIdleTimeout*
@@ -290,16 +296,20 @@ items:
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Sends an event to a subscription.
   example: []
   syntax:
     content: protected override Task SendEventAsync(PubsubSubscription subscription, PubsubSubscribeResponse evt, CancellationToken cancellationToken)
     parameters:
     - id: subscription
       type: Virtufin.Api.Services.PubsubSubscription
+      description: The subscription to send to.
     - id: evt
       type: Virtufin.Api.Protos.PubsubSubscribeResponse
+      description: The event to send.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token.
     return:
       type: System.Threading.Tasks.Task
     content.vb: Protected Overrides Function SendEventAsync(subscription As PubsubSubscription, evt As PubsubSubscribeResponse, cancellationToken As CancellationToken) As Task

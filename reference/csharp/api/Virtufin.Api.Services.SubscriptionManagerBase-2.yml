@@ -30,15 +30,22 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: SubscriptionManagerBase
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 5
+    startLine: 11
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Abstract base class for managing event subscriptions with health monitoring.
+
+    Provides common subscription management, broadcasting, and cleanup functionality.
+  example: []
   syntax:
     content: 'public abstract class SubscriptionManagerBase<TEvent, TSubscription> where TSubscription : class'
     typeParameters:
     - id: TEvent
+      description: The type of events to broadcast.
     - id: TSubscription
+      description: The type of subscription handles.
     content.vb: Public MustInherit Class SubscriptionManagerBase(Of TEvent, TSubscription As Class)
   inheritance:
   - System.Object
@@ -73,7 +80,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: _subscriptions
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 8
+    startLine: 14
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -102,7 +109,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: _logger
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 9
+    startLine: 15
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -113,6 +120,41 @@ items:
     content.vb: Protected ReadOnly _logger As ILogger
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription)._logger
   fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription)._logger
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor(Microsoft.Extensions.Logging.ILogger)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor(Microsoft.Extensions.Logging.ILogger)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger)'
+  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionManagerBase(ILogger)
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase(ILogger)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase(Microsoft.Extensions.Logging.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: .ctor
+    path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Creates a new SubscriptionManagerBase instance.
+  example: []
+  syntax:
+    content: protected SubscriptionManagerBase(ILogger logger)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+      description: The logger for recording subscription operations.
+    content.vb: Protected Sub New(logger As ILogger)
+  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor*
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).New(ILogger)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).New(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
 - uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey(`1)
   commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey(`1)
   id: GetSubscriptionKey(`1)
@@ -131,17 +173,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetSubscriptionKey
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 12
+    startLine: 32
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the subscription key for a subscription.
+  example: []
   syntax:
     content: protected abstract string GetSubscriptionKey(TSubscription subscription)
     parameters:
     - id: subscription
       type: '{TSubscription}'
+      description: The subscription to get the key for.
     return:
       type: System.String
+      description: The subscription key string.
     content.vb: Protected MustOverride Function GetSubscriptionKey(subscription As TSubscription) As String
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionKey(TSubscription)
@@ -164,17 +210,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetIdleTimeout
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 13
+    startLine: 39
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the idle timeout for a subscription.
+  example: []
   syntax:
     content: protected abstract TimeSpan GetIdleTimeout(TSubscription subscription)
     parameters:
     - id: subscription
       type: '{TSubscription}'
+      description: The subscription to get the timeout for.
     return:
       type: System.TimeSpan
+      description: The idle timeout duration.
     content.vb: Protected MustOverride Function GetIdleTimeout(subscription As TSubscription) As TimeSpan
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.GetIdleTimeout*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetIdleTimeout(TSubscription)
@@ -197,57 +247,30 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: SendEventAsync
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 14
+    startLine: 47
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Sends an event to a subscription.
+  example: []
   syntax:
     content: protected abstract Task SendEventAsync(TSubscription subscription, TEvent evt, CancellationToken cancellationToken)
     parameters:
     - id: subscription
       type: '{TSubscription}'
+      description: The subscription to send to.
     - id: evt
       type: '{TEvent}'
+      description: The event to send.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token.
     return:
       type: System.Threading.Tasks.Task
     content.vb: Protected MustOverride Function SendEventAsync(subscription As TSubscription, evt As TEvent, cancellationToken As CancellationToken) As Task
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.SendEventAsync*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).SendEventAsync(TSubscription, TEvent, CancellationToken)
   fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).SendEventAsync(TSubscription, TEvent, System.Threading.CancellationToken)
-- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor(Microsoft.Extensions.Logging.ILogger)
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor(Microsoft.Extensions.Logging.ILogger)
-  id: '#ctor(Microsoft.Extensions.Logging.ILogger)'
-  parent: Virtufin.Api.Services.SubscriptionManagerBase`2
-  langs:
-  - csharp
-  - vb
-  name: SubscriptionManagerBase(ILogger)
-  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase(ILogger)
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase(Microsoft.Extensions.Logging.ILogger)
-  type: Constructor
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-      branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
-    id: .ctor
-    path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 16
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: protected SubscriptionManagerBase(ILogger logger)
-    parameters:
-    - id: logger
-      type: Microsoft.Extensions.Logging.ILogger
-    content.vb: Protected Sub New(logger As ILogger)
-  overload: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor*
-  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).New(ILogger)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).New(Microsoft.Extensions.Logging.ILogger)
-  name.vb: New(ILogger)
 - uid: Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe(`1)
   commentId: M:Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe(`1)
   id: Subscribe(`1)
@@ -266,17 +289,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 21
+    startLine: 54
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Creates a subscription for a topic and returns a unique subscription ID.
+  example: []
   syntax:
     content: public string Subscribe(TSubscription subscription)
     parameters:
     - id: subscription
       type: '{TSubscription}'
+      description: The subscription handle containing connection details.
     return:
       type: System.String
+      description: A unique subscription identifier.
     content.vb: Public Function Subscribe(subscription As TSubscription) As String
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).Subscribe(TSubscription)
@@ -299,17 +326,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 36
+    startLine: 74
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Removes a subscription by its key and ID.
+  example: []
   syntax:
     content: public void Unsubscribe(string subscriptionKey, string subscriptionId)
     parameters:
     - id: subscriptionKey
       type: System.String
+      description: The subscription key (typically topic name).
     - id: subscriptionId
       type: System.String
+      description: The subscription identifier to remove.
     content.vb: Public Sub Unsubscribe(subscriptionKey As String, subscriptionId As String)
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.Unsubscribe*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).Unsubscribe(String, String)
@@ -333,21 +364,27 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: BroadcastAsync
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 49
+    startLine: 94
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Broadcasts an event to all subscriptions for a topic.
+  example: []
   syntax:
     content: public Task BroadcastAsync(string topic, TEvent evt, CancellationToken cancellationToken)
     parameters:
     - id: topic
       type: System.String
+      description: The topic to broadcast to.
     - id: evt
       type: '{TEvent}'
+      description: The event to broadcast.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token for the broadcast.
     return:
       type: System.Threading.Tasks.Task
+      description: A task that completes when all event sends have finished.
     content.vb: Public Function BroadcastAsync(topic As String, evt As TEvent, cancellationToken As CancellationToken) As Task
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.BroadcastAsync*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).BroadcastAsync(String, TEvent, CancellationToken)
@@ -371,17 +408,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetSubscriptionCount
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 105
+    startLine: 155
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the number of subscriptions for a specific topic.
+  example: []
   syntax:
     content: public int GetSubscriptionCount(string topic)
     parameters:
     - id: topic
       type: System.String
+      description: The topic name.
     return:
       type: System.Int32
+      description: The count of subscriptions for the topic.
     content.vb: Public Function GetSubscriptionCount(topic As String) As Integer
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionCount*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetSubscriptionCount(String)
@@ -405,14 +446,17 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetTotalSubscriptionCount
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 108
+    startLine: 162
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the total number of subscriptions across all topics.
+  example: []
   syntax:
     content: public int GetTotalSubscriptionCount()
     return:
       type: System.Int32
+      description: The total subscription count.
     content.vb: Public Function GetTotalSubscriptionCount() As Integer
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.GetTotalSubscriptionCount*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).GetTotalSubscriptionCount()
@@ -868,6 +912,15 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor*
+  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor
+  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2__ctor_Microsoft_Extensions_Logging_ILogger_
+  name: SubscriptionManagerBase
+  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase
+  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).New
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).New
+  name.vb: New
 - uid: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey*
   commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionKey__1_
@@ -1011,15 +1064,6 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor*
-  commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor
-  href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2__ctor_Microsoft_Extensions_Logging_ILogger_
-  name: SubscriptionManagerBase
-  nameWithType: SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>.SubscriptionManagerBase
-  nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).New
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription).New
-  name.vb: New
 - uid: Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe*
   commentId: Overload:Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Subscribe__1_

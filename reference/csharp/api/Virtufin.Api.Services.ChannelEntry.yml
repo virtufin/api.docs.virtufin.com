@@ -23,10 +23,12 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ChannelEntry
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Represents a cached gRPC channel entry with access tracking.
+  example: []
   syntax:
     content: public class ChannelEntry
     content.vb: Public Class ChannelEntry
@@ -58,10 +60,12 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ServiceName
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 8
+    startLine: 14
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: The name of the service this channel connects to.
+  example: []
   syntax:
     content: public string ServiceName { get; }
     parameters: []
@@ -87,10 +91,12 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Channel
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 9
+    startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: The gRPC channel instance.
+  example: []
   syntax:
     content: public GrpcChannel Channel { get; }
     parameters: []
@@ -116,10 +122,12 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: LastAccess
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 10
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: The timestamp of the last access to this channel.
+  example: []
   syntax:
     content: public DateTime LastAccess { get; set; }
     parameters: []
@@ -145,17 +153,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 12
+    startLine: 31
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Creates a new channel entry for a service.
+  example: []
   syntax:
     content: public ChannelEntry(string serviceName, GrpcChannel channel)
     parameters:
     - id: serviceName
       type: System.String
+      description: The name of the service.
     - id: channel
       type: Grpc.Net.Client.GrpcChannel
+      description: The gRPC channel to cache.
     content.vb: Public Sub New(serviceName As String, channel As GrpcChannel)
   overload: Virtufin.Api.Services.ChannelEntry.#ctor*
   nameWithType.vb: ChannelEntry.New(String, GrpcChannel)

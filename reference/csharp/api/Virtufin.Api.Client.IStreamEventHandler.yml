@@ -22,7 +22,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: IStreamEventHandler
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 58
+    startLine: 63
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -51,15 +51,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: OnEvent
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 60
+    startLine: 69
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Called when a regular event is received.
+  example: []
   syntax:
     content: void OnEvent(TopicEventRequest e)
     parameters:
     - id: e
       type: Virtufin.Api.Protos.TopicEventRequest
+      description: The topic event request containing event data.
     content.vb: Sub OnEvent(e As TopicEventRequest)
   overload: Virtufin.Api.Client.IStreamEventHandler.OnEvent*
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
@@ -80,15 +83,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: OnSystemEvent
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 61
+    startLine: 75
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Called when a system event is received.
+  example: []
   syntax:
     content: void OnSystemEvent(TopicEventRequest e)
     parameters:
     - id: e
       type: Virtufin.Api.Protos.TopicEventRequest
+      description: The topic event request containing system event data.
     content.vb: Sub OnSystemEvent(e As TopicEventRequest)
   overload: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent*
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
@@ -109,15 +115,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: OnError
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 62
+    startLine: 81
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Called when an error occurs in the event stream.
+  example: []
   syntax:
     content: void OnError(Exception ex)
     parameters:
     - id: ex
       type: System.Exception
+      description: The exception that occurred.
     content.vb: Sub OnError(ex As Exception)
   overload: Virtufin.Api.Client.IStreamEventHandler.OnError*
 references:

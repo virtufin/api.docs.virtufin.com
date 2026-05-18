@@ -78,17 +78,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 21
+    startLine: 26
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Creates a new ServiceClient for a specific service.
+  example: []
   syntax:
     content: public ServiceClient(GatewayClient gateway, string serviceName)
     parameters:
     - id: gateway
       type: Virtufin.Api.Client.GatewayClient
+      description: The parent GatewayClient instance.
     - id: serviceName
       type: System.String
+      description: The name of the service to target.
     content.vb: Public Sub New(gateway As GatewayClient, serviceName As String)
   overload: Virtufin.Api.Client.ServiceClient.#ctor*
   nameWithType.vb: ServiceClient.New(GatewayClient, String)
@@ -112,7 +116,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 33
+    startLine: 38
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -153,7 +157,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: TryGetMember
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client

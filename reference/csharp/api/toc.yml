@@ -35,9 +35,6 @@ items:
   - uid: Virtufin.Api.Client.StreamEventHandler
     name: StreamEventHandler
     type: Class
-  - uid: Virtufin.Api.Client.SyncApiClient
-    name: SyncApiClient
-    type: Class
 - uid: Virtufin.Api.Configuration
   name: Virtufin.Api.Configuration
   type: Namespace

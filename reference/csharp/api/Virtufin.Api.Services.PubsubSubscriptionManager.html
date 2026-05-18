@@ -49,7 +49,7 @@
             Virtufin API
           </a>
           <div class="git-info">
-              <a href="{git_repo_url}/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" target="_blank" rel="noopener">09f361f</a>
+              <a href="{git_repo_url}/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" target="_blank" rel="noopener">6875a63</a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -268,7 +268,8 @@ Class PubsubSubscriptionManager
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the idle timeout for a subscription.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -278,13 +279,15 @@ Class PubsubSubscriptionManager
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>subscription</code> <a class="xref" href="Virtufin.Api.Services.PubsubSubscription.html">PubsubSubscription</a></dt>
-    <dd></dd>
+    <dd><p>The subscription to get the timeout for.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>The idle timeout duration.</p>
+</dd>
   </dl>
 
 
@@ -304,7 +307,8 @@ Class PubsubSubscriptionManager
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the subscription key for a subscription.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -314,13 +318,15 @@ Class PubsubSubscriptionManager
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>subscription</code> <a class="xref" href="Virtufin.Api.Services.PubsubSubscription.html">PubsubSubscription</a></dt>
-    <dd></dd>
+    <dd><p>The subscription to get the key for.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The subscription key string.</p>
+</dd>
   </dl>
 
 
@@ -340,7 +346,8 @@ Class PubsubSubscriptionManager
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sends an event to a subscription.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -350,11 +357,14 @@ Class PubsubSubscriptionManager
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>subscription</code> <a class="xref" href="Virtufin.Api.Services.PubsubSubscription.html">PubsubSubscription</a></dt>
-    <dd></dd>
+    <dd><p>The subscription to send to.</p>
+</dd>
     <dt><code>evt</code> <a class="xref" href="Virtufin.Api.Protos.PubsubSubscribeResponse.html">PubsubSubscribeResponse</a></dt>
-    <dd></dd>
+    <dd><p>The event to send.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>

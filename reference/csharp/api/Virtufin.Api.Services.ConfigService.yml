@@ -22,10 +22,15 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ConfigService
     path: ../../../src/Virtufin.Api/Services/ConfigService.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Implementation of the gRPC Config service.
+
+    Provides service configuration discovery and management capabilities.
+  example: []
   syntax:
     content: 'public class ConfigService : Config.ConfigBase'
     content.vb: Public Class ConfigService Inherits Config.ConfigBase
@@ -58,15 +63,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/ConfigService.cs
-    startLine: 10
+    startLine: 18
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Creates a new ConfigService instance.
+  example: []
   syntax:
     content: public ConfigService(ServicesConfiguration config)
     parameters:
     - id: config
       type: Virtufin.Api.Configuration.ServicesConfiguration
+      description: The services configuration to expose.
     content.vb: Public Sub New(config As ServicesConfiguration)
   overload: Virtufin.Api.Services.ConfigService.#ctor*
   nameWithType.vb: ConfigService.New(ServicesConfiguration)
@@ -90,20 +98,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ListServices
     path: ../../../src/Virtufin.Api/Services/ConfigService.cs
-    startLine: 15
+    startLine: 29
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Lists all services registered in the configuration.
   example: []
   syntax:
     content: public override Task<ListConfigServicesResponse> ListServices(ListConfigServicesRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.ListConfigServicesRequest
+      description: The list config services request.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListConfigServicesResponse}
+      description: A list of all configured services.
     content.vb: Public Overrides Function ListServices(request As ListConfigServicesRequest, context As ServerCallContext) As Task(Of ListConfigServicesResponse)
   overridden: Virtufin.Api.Protos.Config.ConfigBase.ListServices(Virtufin.Api.Protos.ListConfigServicesRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.ConfigService.ListServices*
@@ -125,20 +137,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api/Services/ConfigService.cs
-    startLine: 25
+    startLine: 45
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the configuration for a specific service by name.
   example: []
   syntax:
     content: public override Task<GetConfigServiceResponse> GetService(GetConfigServiceRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.GetConfigServiceRequest
+      description: The get config service request containing the service name.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetConfigServiceResponse}
+      description: The service configuration or null if not found.
     content.vb: Public Overrides Function GetService(request As GetConfigServiceRequest, context As ServerCallContext) As Task(Of GetConfigServiceResponse)
   overridden: Virtufin.Api.Protos.Config.ConfigBase.GetService(Virtufin.Api.Protos.GetConfigServiceRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.ConfigService.GetService*

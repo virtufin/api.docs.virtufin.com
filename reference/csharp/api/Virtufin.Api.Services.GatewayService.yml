@@ -27,10 +27,15 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GatewayService
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 9
+    startLine: 13
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Implementation of the gRPC Gateway service.
+
+    Provides service discovery, method invocation, and event subscription capabilities.
+  example: []
   syntax:
     content: 'public class GatewayService : Gateway.GatewayBase'
     content.vb: Public Class GatewayService Inherits Gateway.GatewayBase
@@ -63,21 +68,27 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 17
+    startLine: 28
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Creates a new GatewayService instance.
+  example: []
   syntax:
     content: public GatewayService(GrpcReflectionService reflectionService, ServicesConfiguration config, ILogger<GatewayService> logger, DaprPubSubBridgeService pubsubBridge)
     parameters:
     - id: reflectionService
       type: Virtufin.Api.Services.GrpcReflectionService
+      description: The gRPC reflection service for method discovery.
     - id: config
       type: Virtufin.Api.Configuration.ServicesConfiguration
+      description: The services configuration containing registered services.
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService}
+      description: The logger for recording service operations.
     - id: pubsubBridge
       type: Virtufin.Api.Services.DaprPubSubBridgeService
+      description: The Dapr pub/sub bridge for event streaming.
     content.vb: Public Sub New(reflectionService As GrpcReflectionService, config As ServicesConfiguration, logger As ILogger(Of GatewayService), pubsubBridge As DaprPubSubBridgeService)
   overload: Virtufin.Api.Services.GatewayService.#ctor*
   nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPubSubBridgeService)
@@ -101,20 +112,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Invoke
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 87
+    startLine: 104
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Invokes a method on a backend service using raw protobuf bytes.
   example: []
   syntax:
     content: public override Task<InvokeResponse> Invoke(InvokeRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.InvokeRequest
+      description: The invoke request containing service name, method name, and request data.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.InvokeResponse}
+      description: The invoke response containing success status and response data.
     content.vb: Public Overrides Function Invoke(request As InvokeRequest, context As ServerCallContext) As Task(Of InvokeResponse)
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.Invoke*
@@ -136,20 +151,27 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: InvokeJson
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 125
+    startLine: 149
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Invokes a method on a backend service using JSON request/response data.
+
+    This is the recommended method for most use cases.
   example: []
   syntax:
     content: public override Task<InvokeJsonResponse> InvokeJson(InvokeJsonRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.InvokeJsonRequest
+      description: The invoke JSON request containing service name, method name, and JSON request data.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.InvokeJsonResponse}
+      description: The invoke JSON response containing success status and JSON response data.
     content.vb: Public Overrides Function InvokeJson(request As InvokeJsonRequest, context As ServerCallContext) As Task(Of InvokeJsonResponse)
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.InvokeJson*
@@ -171,20 +193,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ListServices
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 163
+    startLine: 193
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Lists all services registered with the gateway.
   example: []
   syntax:
     content: public override Task<ListServicesResponse> ListServices(ListServicesRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.ListServicesRequest
+      description: The list services request.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListServicesResponse}
+      description: A list of service names.
     content.vb: Public Overrides Function ListServices(request As ListServicesRequest, context As ServerCallContext) As Task(Of ListServicesResponse)
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.ListServices(Virtufin.Api.Protos.ListServicesRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.ListServices*
@@ -206,20 +232,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ListMethods
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 181
+    startLine: 217
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Lists all methods available for a specific service.
   example: []
   syntax:
     content: public override Task<ListMethodsResponse> ListMethods(ListMethodsRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.ListMethodsRequest
+      description: The list methods request containing the service name.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListMethodsResponse}
+      description: A list of method descriptors.
     content.vb: Public Overrides Function ListMethods(request As ListMethodsRequest, context As ServerCallContext) As Task(Of ListMethodsResponse)
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.ListMethods(Virtufin.Api.Protos.ListMethodsRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.ListMethods*
@@ -241,22 +271,30 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 213
+    startLine: 257
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Subscribes to events from specified services and topics.
+
+    Returns a stream of TopicEventRequest messages.
   example: []
   syntax:
     content: public override Task Subscribe(SubscribeRequest request, IServerStreamWriter<TopicEventRequest> responseStream, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.SubscribeRequest
+      description: The subscribe request containing service, topic, and event type filters.
     - id: responseStream
       type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest}
+      description: The stream writer for sending events to the client.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task
+      description: A task that completes when the subscription is cancelled.
     content.vb: Public Overrides Function Subscribe(request As SubscribeRequest, responseStream As IServerStreamWriter(Of TopicEventRequest), context As ServerCallContext) As Task
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.Subscribe*
@@ -281,22 +319,30 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: WatchSystemEvents
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 248
+    startLine: 300
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Subscribes to system events like connection status changes.
+
+    Returns a stream of TopicEventRequest messages for system-level events.
   example: []
   syntax:
     content: public override Task WatchSystemEvents(SystemEventsRequest request, IServerStreamWriter<TopicEventRequest> responseStream, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.SystemEventsRequest
+      description: The system events request.
     - id: responseStream
       type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest}
+      description: The stream writer for sending system events to the client.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task
+      description: A task that completes when the subscription is cancelled.
     content.vb: Public Overrides Function WatchSystemEvents(request As SystemEventsRequest, responseStream As IServerStreamWriter(Of TopicEventRequest), context As ServerCallContext) As Task
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.WatchSystemEvents*
@@ -321,20 +367,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetMethodSchema
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 262
+    startLine: 320
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the schema for a specific method including input/output types and field definitions.
   example: []
   syntax:
     content: public override Task<GetMethodSchemaResponse> GetMethodSchema(GetMethodSchemaRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.GetMethodSchemaRequest
+      description: The get method schema request containing service, method, and schema type.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetMethodSchemaResponse}
+      description: The method schema including field definitions.
     content.vb: Public Overrides Function GetMethodSchema(request As GetMethodSchemaRequest, context As ServerCallContext) As Task(Of GetMethodSchemaResponse)
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.GetMethodSchema*

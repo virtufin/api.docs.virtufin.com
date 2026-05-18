@@ -30,7 +30,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ApiClient
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 419
+    startLine: 467
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -44,8 +44,6 @@ items:
     content.vb: Public Class ApiClient Implements IDisposable
   inheritance:
   - System.Object
-  derivedClasses:
-  - Virtufin.Api.Client.SyncApiClient
   implements:
   - System.IDisposable
   inheritedMembers:
@@ -74,7 +72,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Host
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 428
+    startLine: 476
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -105,7 +103,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GrpcPort
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 433
+    startLine: 481
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -136,7 +134,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 441
+    startLine: 489
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -177,7 +175,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Gateway
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 453
+    startLine: 501
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -208,7 +206,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 459
+    startLine: 507
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -239,7 +237,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 466
+    startLine: 514
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -277,7 +275,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 475
+    startLine: 523
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -321,7 +319,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Close
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 481
+    startLine: 529
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -349,7 +347,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: CloseAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 489
+    startLine: 537
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -379,7 +377,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 497
+    startLine: 545
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -409,7 +407,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: DisposeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 508
+    startLine: 556
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client

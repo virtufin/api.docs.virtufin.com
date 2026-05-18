@@ -49,7 +49,7 @@
             Virtufin API
           </a>
           <div class="git-info">
-              <a href="{git_repo_url}/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" target="_blank" rel="noopener">09f361f</a>
+              <a href="{git_repo_url}/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" target="_blank" rel="noopener">6875a63</a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -154,6 +154,37 @@ Class StreamEventHandler
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_Api_Client_StreamEventHandler__ctor_" data-uid="Virtufin.Api.Client.StreamEventHandler.#ctor*"></a>
+
+  <h3 id="Virtufin_Api_Client_StreamEventHandler__ctor" data-uid="Virtufin.Api.Client.StreamEventHandler.#ctor">
+  StreamEventHandler()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new StreamEventHandler instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamEventHandler()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -165,7 +196,8 @@ Class StreamEventHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when an error occurs in the event stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,7 +207,8 @@ Class StreamEventHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
-    <dd></dd>
+    <dd><p>The exception that occurred.</p>
+</dd>
   </dl>
 
 
@@ -196,7 +229,8 @@ Class StreamEventHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when a regular event is received.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -206,7 +240,8 @@ Class StreamEventHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>e</code> <a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a></dt>
-    <dd></dd>
+    <dd><p>The topic event request containing event data.</p>
+</dd>
   </dl>
 
 
@@ -227,7 +262,8 @@ Class StreamEventHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when a system event is received.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -237,7 +273,8 @@ Class StreamEventHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>e</code> <a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a></dt>
-    <dd></dd>
+    <dd><p>The topic event request containing system event data.</p>
+</dd>
   </dl>
 
 
@@ -261,7 +298,8 @@ Class StreamEventHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event fired when an error occurs in the event stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -291,7 +329,8 @@ Class StreamEventHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event fired when a regular event is received.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -321,7 +360,8 @@ Class StreamEventHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event fired when a system event is received.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

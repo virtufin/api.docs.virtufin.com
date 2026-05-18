@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GatewayService | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Implementation of the gRPC Gateway service. Provides service discovery, method invocation, and event subscription capabilities.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,7 +49,7 @@
             Virtufin API
           </a>
           <div class="git-info">
-              <a href="{git_repo_url}/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" target="_blank" rel="noopener">09f361f</a>
+              <a href="{git_repo_url}/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" target="_blank" rel="noopener">6875a63</a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -96,7 +96,9 @@ Class GatewayService
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Implementation of the gRPC Gateway service.
+Provides service discovery, method invocation, and event subscription capabilities.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -159,7 +161,8 @@ Class GatewayService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new GatewayService instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +172,17 @@ Class GatewayService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>reflectionService</code> <a class="xref" href="Virtufin.Api.Services.GrpcReflectionService.html">GrpcReflectionService</a></dt>
-    <dd></dd>
+    <dd><p>The gRPC reflection service for method discovery.</p>
+</dd>
     <dt><code>config</code> <a class="xref" href="Virtufin.Api.Configuration.ServicesConfiguration.html">ServicesConfiguration</a></dt>
-    <dd></dd>
+    <dd><p>The services configuration containing registered services.</p>
+</dd>
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.GatewayService.html">GatewayService</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The logger for recording service operations.</p>
+</dd>
     <dt><code>pubsubBridge</code> <a class="xref" href="Virtufin.Api.Services.DaprPubSubBridgeService.html">DaprPubSubBridgeService</a></dt>
-    <dd></dd>
+    <dd><p>The Dapr pub/sub bridge for event streaming.</p>
+</dd>
   </dl>
 
 
@@ -200,7 +207,8 @@ Class GatewayService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the schema for a specific method including input/output types and field definitions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -210,15 +218,18 @@ Class GatewayService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetMethodSchemaRequest.html">GetMethodSchemaRequest</a></dt>
-    <dd></dd>
+    <dd><p>The get method schema request containing service, method, and schema type.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetMethodSchemaResponse.html">GetMethodSchemaResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The method schema including field definitions.</p>
+</dd>
   </dl>
 
 
@@ -238,7 +249,8 @@ Class GatewayService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes a method on a backend service using raw protobuf bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -248,15 +260,18 @@ Class GatewayService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.InvokeRequest.html">InvokeRequest</a></dt>
-    <dd></dd>
+    <dd><p>The invoke request containing service name, method name, and request data.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.InvokeResponse.html">InvokeResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The invoke response containing success status and response data.</p>
+</dd>
   </dl>
 
 
@@ -276,7 +291,9 @@ Class GatewayService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes a method on a backend service using JSON request/response data.
+This is the recommended method for most use cases.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -286,15 +303,18 @@ Class GatewayService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.InvokeJsonRequest.html">InvokeJsonRequest</a></dt>
-    <dd></dd>
+    <dd><p>The invoke JSON request containing service name, method name, and JSON request data.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.InvokeJsonResponse.html">InvokeJsonResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The invoke JSON response containing success status and JSON response data.</p>
+</dd>
   </dl>
 
 
@@ -314,7 +334,8 @@ Class GatewayService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all methods available for a specific service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -324,15 +345,18 @@ Class GatewayService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.ListMethodsRequest.html">ListMethodsRequest</a></dt>
-    <dd></dd>
+    <dd><p>The list methods request containing the service name.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.ListMethodsResponse.html">ListMethodsResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A list of method descriptors.</p>
+</dd>
   </dl>
 
 
@@ -352,7 +376,8 @@ Class GatewayService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all services registered with the gateway.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -362,15 +387,18 @@ Class GatewayService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.ListServicesRequest.html">ListServicesRequest</a></dt>
-    <dd></dd>
+    <dd><p>The list services request.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.ListServicesResponse.html">ListServicesResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A list of service names.</p>
+</dd>
   </dl>
 
 
@@ -390,7 +418,9 @@ Class GatewayService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Subscribes to events from specified services and topics.
+Returns a stream of TopicEventRequest messages.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -400,17 +430,21 @@ Class GatewayService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.SubscribeRequest.html">SubscribeRequest</a></dt>
-    <dd></dd>
+    <dd><p>The subscribe request containing service, topic, and event type filters.</p>
+</dd>
     <dt><code>responseStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs">IServerStreamWriter</a>&lt;<a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The stream writer for sending events to the client.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>A task that completes when the subscription is cancelled.</p>
+</dd>
   </dl>
 
 
@@ -430,7 +464,9 @@ Class GatewayService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Subscribes to system events like connection status changes.
+Returns a stream of TopicEventRequest messages for system-level events.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -440,17 +476,21 @@ Class GatewayService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.SystemEventsRequest.html">SystemEventsRequest</a></dt>
-    <dd></dd>
+    <dd><p>The system events request.</p>
+</dd>
     <dt><code>responseStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs">IServerStreamWriter</a>&lt;<a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The stream writer for sending system events to the client.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>A task that completes when the subscription is cancelled.</p>
+</dd>
   </dl>
 
 

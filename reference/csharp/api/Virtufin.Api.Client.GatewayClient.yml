@@ -37,7 +37,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GatewayClient
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 83
+    startLine: 123
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -93,15 +93,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 91
+    startLine: 135
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Creates a new GatewayClient with the specified gRPC channel.
+  example: []
   syntax:
     content: public GatewayClient(GrpcChannel channel)
     parameters:
     - id: channel
       type: Grpc.Net.Client.GrpcChannel
+      description: The gRPC channel to use for communication.
     content.vb: Public Sub New(channel As GrpcChannel)
   overload: Virtufin.Api.Client.GatewayClient.#ctor*
   nameWithType.vb: GatewayClient.New(GrpcChannel)
@@ -125,7 +128,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: TryGetMember
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 102
+    startLine: 146
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -164,7 +167,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 112
+    startLine: 156
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -195,7 +198,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 124
+    startLine: 168
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -233,7 +236,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 147
+    startLine: 191
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -281,7 +284,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: SaveStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 185
+    startLine: 229
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -334,7 +337,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: DeleteStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 207
+    startLine: 251
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -381,7 +384,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 226
+    startLine: 270
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -425,7 +428,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetAllStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 239
+    startLine: 283
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -466,7 +469,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 254
+    startLine: 298
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -513,7 +516,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 277
+    startLine: 321
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -554,7 +557,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: UnsubscribeFromTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 288
+    startLine: 332
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -592,7 +595,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 300
+    startLine: 344
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -633,7 +636,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 315
+    startLine: 359
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -680,7 +683,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 338
+    startLine: 382
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -730,7 +733,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: WatchSystemEvents
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 372
+    startLine: 416
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -765,7 +768,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: WatchSystemEventsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 383
+    startLine: 427
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -803,11 +806,15 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 409
+    startLine: 457
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: Gets a client for a specific service.
+  remarks: >-
+    ServiceClients are cached internally. Calling this method multiple times
+
+    with the same service name returns the same cached instance.
   example: []
   syntax:
     content: public ServiceClient GetService(string name)

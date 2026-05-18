@@ -5,6 +5,7 @@ items:
   id: StreamEventHandler
   parent: Virtufin.Api.Client
   children:
+  - Virtufin.Api.Client.StreamEventHandler.#ctor
   - Virtufin.Api.Client.StreamEventHandler.ErrorOccurred
   - Virtufin.Api.Client.StreamEventHandler.EventReceived
   - Virtufin.Api.Client.StreamEventHandler.OnError(System.Exception)
@@ -25,7 +26,7 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: StreamEventHandler
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 68
+    startLine: 87
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -64,10 +65,12 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: EventReceived
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 70
+    startLine: 92
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Event fired when a regular event is received.
+  example: []
   syntax:
     content: public event Action<TopicEventRequest>? EventReceived
     return:
@@ -91,10 +94,12 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: SystemEventReceived
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 71
+    startLine: 97
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Event fired when a system event is received.
+  example: []
   syntax:
     content: public event Action<TopicEventRequest>? SystemEventReceived
     return:
@@ -118,15 +123,48 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ErrorOccurred
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 72
+    startLine: 102
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Event fired when an error occurs in the event stream.
+  example: []
   syntax:
     content: public event Action<Exception>? ErrorOccurred
     return:
       type: System.Action{System.Exception}
     content.vb: Public Event ErrorOccurred As Action(Of Exception)
+- uid: Virtufin.Api.Client.StreamEventHandler.#ctor
+  commentId: M:Virtufin.Api.Client.StreamEventHandler.#ctor
+  id: '#ctor'
+  parent: Virtufin.Api.Client.StreamEventHandler
+  langs:
+  - csharp
+  - vb
+  name: StreamEventHandler()
+  nameWithType: StreamEventHandler.StreamEventHandler()
+  fullName: Virtufin.Api.Client.StreamEventHandler.StreamEventHandler()
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/ApiClient.cs
+      branch: master
+      repo: http://gitea.gitea/virtufin/virtufin-api
+    id: .ctor
+    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
+    startLine: 107
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Creates a new StreamEventHandler instance.
+  example: []
+  syntax:
+    content: public StreamEventHandler()
+    content.vb: Public Sub New()
+  overload: Virtufin.Api.Client.StreamEventHandler.#ctor*
+  nameWithType.vb: StreamEventHandler.New()
+  fullName.vb: Virtufin.Api.Client.StreamEventHandler.New()
+  name.vb: New()
 - uid: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
   commentId: M:Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
   id: OnEvent(Virtufin.Api.Protos.TopicEventRequest)
@@ -145,16 +183,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: OnEvent
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 74
+    startLine: 110
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Called when a regular event is received.
   example: []
   syntax:
     content: public void OnEvent(TopicEventRequest e)
     parameters:
     - id: e
       type: Virtufin.Api.Protos.TopicEventRequest
+      description: The topic event request containing event data.
     content.vb: Public Sub OnEvent(e As TopicEventRequest)
   overload: Virtufin.Api.Client.StreamEventHandler.OnEvent*
   implements:
@@ -177,16 +217,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: OnSystemEvent
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 75
+    startLine: 113
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Called when a system event is received.
   example: []
   syntax:
     content: public void OnSystemEvent(TopicEventRequest e)
     parameters:
     - id: e
       type: Virtufin.Api.Protos.TopicEventRequest
+      description: The topic event request containing system event data.
     content.vb: Public Sub OnSystemEvent(e As TopicEventRequest)
   overload: Virtufin.Api.Client.StreamEventHandler.OnSystemEvent*
   implements:
@@ -209,16 +251,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: OnError
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 76
+    startLine: 116
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
+  summary: Called when an error occurs in the event stream.
   example: []
   syntax:
     content: public void OnError(Exception ex)
     parameters:
     - id: ex
       type: System.Exception
+      description: The exception that occurred.
     content.vb: Public Sub OnError(ex As Exception)
   overload: Virtufin.Api.Client.StreamEventHandler.OnError*
   implements:
@@ -594,6 +638,15 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
+- uid: Virtufin.Api.Client.StreamEventHandler.#ctor*
+  commentId: Overload:Virtufin.Api.Client.StreamEventHandler.#ctor
+  href: Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler__ctor
+  name: StreamEventHandler
+  nameWithType: StreamEventHandler.StreamEventHandler
+  fullName: Virtufin.Api.Client.StreamEventHandler.StreamEventHandler
+  nameWithType.vb: StreamEventHandler.New
+  fullName.vb: Virtufin.Api.Client.StreamEventHandler.New
+  name.vb: New
 - uid: Virtufin.Api.Client.StreamEventHandler.OnEvent*
   commentId: Overload:Virtufin.Api.Client.StreamEventHandler.OnEvent
   href: Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_

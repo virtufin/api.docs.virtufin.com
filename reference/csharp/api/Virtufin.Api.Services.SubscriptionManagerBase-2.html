@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt; | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Abstract base class for managing event subscriptions with health monitoring. Provides common subscription management, broadcasting, and cleanup functionality.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,7 +49,7 @@
             Virtufin API
           </a>
           <div class="git-info">
-              <a href="{git_repo_url}/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" target="_blank" rel="noopener">09f361f</a>
+              <a href="{git_repo_url}/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" target="_blank" rel="noopener">6875a63</a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -96,7 +96,9 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Abstract base class for managing event subscriptions with health monitoring.
+Provides common subscription management, broadcasting, and cleanup functionality.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -108,9 +110,11 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TEvent</code></dt>
-    <dd></dd>
+    <dd><p>The type of events to broadcast.</p>
+</dd>
     <dt><code>TSubscription</code></dt>
-    <dd></dd>
+    <dd><p>The type of subscription handles.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -171,7 +175,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new SubscriptionManagerBase instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -181,7 +186,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
-    <dd></dd>
+    <dd><p>The logger for recording subscription operations.</p>
+</dd>
   </dl>
 
 
@@ -270,7 +276,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Broadcasts an event to all subscriptions for a topic.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -280,17 +287,21 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The topic to broadcast to.</p>
+</dd>
     <dt><code>evt</code> <span class="xref">TEvent</span></dt>
-    <dd></dd>
+    <dd><p>The event to broadcast.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token for the broadcast.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>A task that completes when all event sends have finished.</p>
+</dd>
   </dl>
 
 
@@ -310,7 +321,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the idle timeout for a subscription.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -320,13 +332,15 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>subscription</code> <span class="xref">TSubscription</span></dt>
-    <dd></dd>
+    <dd><p>The subscription to get the timeout for.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
-    <dd></dd>
+    <dd><p>The idle timeout duration.</p>
+</dd>
   </dl>
 
 
@@ -346,7 +360,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the number of subscriptions for a specific topic.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -356,13 +371,15 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The topic name.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The count of subscriptions for the topic.</p>
+</dd>
   </dl>
 
 
@@ -382,7 +399,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the subscription key for a subscription.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -392,13 +410,15 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>subscription</code> <span class="xref">TSubscription</span></dt>
-    <dd></dd>
+    <dd><p>The subscription to get the key for.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The subscription key string.</p>
+</dd>
   </dl>
 
 
@@ -418,7 +438,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total number of subscriptions across all topics.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -429,7 +450,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The total subscription count.</p>
+</dd>
   </dl>
 
 
@@ -449,7 +471,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sends an event to a subscription.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -459,11 +482,14 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>subscription</code> <span class="xref">TSubscription</span></dt>
-    <dd></dd>
+    <dd><p>The subscription to send to.</p>
+</dd>
     <dt><code>evt</code> <span class="xref">TEvent</span></dt>
-    <dd></dd>
+    <dd><p>The event to send.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -489,7 +515,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a subscription for a topic and returns a unique subscription ID.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -499,13 +526,15 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>subscription</code> <span class="xref">TSubscription</span></dt>
-    <dd></dd>
+    <dd><p>The subscription handle containing connection details.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A unique subscription identifier.</p>
+</dd>
   </dl>
 
 
@@ -525,7 +554,8 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes a subscription by its key and ID.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -535,9 +565,11 @@ Class SubscriptionManagerBase&lt;TEvent, TSubscription&gt;
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>subscriptionKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The subscription key (typically topic name).</p>
+</dd>
     <dt><code>subscriptionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The subscription identifier to remove.</p>
+</dd>
   </dl>
 
 

@@ -203,8 +203,8 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" class="md-source__commit" style="margin-left:auto;">
-      09f361f
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" class="md-source__commit" style="margin-left:auto;">
+      6875a63
     </a>
 </div>
       </div>
@@ -343,8 +343,8 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" class="md-source__commit" style="margin-left:auto;">
-      09f361f
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" class="md-source__commit" style="margin-left:auto;">
+      6875a63
     </a>
 </div>
     </div>
@@ -569,17 +569,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-flow-diagrams_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Flow Diagrams
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#method-invocation-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -695,7 +684,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-flow-diagrams_2" class="md-nav__link">
+  <a href="#data-flow-diagrams_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         Data Flow Diagrams
@@ -1250,17 +1239,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-flow-diagrams_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Flow Diagrams
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#method-invocation-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1376,7 +1354,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-flow-diagrams_2" class="md-nav__link">
+  <a href="#data-flow-diagrams_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         Data Flow Diagrams
@@ -1642,7 +1620,6 @@
     Infrastructure --&gt; Backend
     Infrastructure --&gt; Dapr</code></pre>
 <hr />
-<h3 id="data-flow-diagrams_1">Data Flow Diagrams</h3>
 <h3 id="method-invocation-rest">Method Invocation (REST)</h3>
 <pre class="mermaid"><code>sequenceDiagram
     participant Client as curl
@@ -1683,82 +1660,27 @@
     Dapr[Dapr Sidecar] --&gt; PubSub[PubSub Event]
     PubSub --&gt; DaprStreamMgr[DaprStreamingSub Manager]
     DaprStreamMgr --&gt; EventSubMgr[EventSub Manager]
-    DaprStreamMgr --&gt; Removed[(removed)]
     EventSubMgr --&gt; GrpcClient[gRPC Client Subscribe]</code></pre>
 <h3 id="configuration-architecture">Configuration Architecture</h3>
-<p><pre class="mermaid"><code>flowchart TB
+<pre class="mermaid"><code>flowchart TB
     ConfigFile[services.yaml] --&gt; Loader[ServicesConfigurationLoader]
     Loader --&gt; ServicesConfig[ServicesConfiguration]
     ServicesConfig --&gt; ChannelPool[GrpcChannelPool]
     ServicesConfig --&gt; Reflection[GrpcReflectionService]
-    ServicesConfig --&gt; DaprMgr[DaprStreamingSubscriptionManager]
+    ServicesConfig --&gt; PubsubSvc[PubSubService]
     ServicesConfig --&gt; State[StateService]
     ServicesConfig --&gt; Config[ConfigService]</code></pre>
-        Python[Python Client]
-        Browser[Browser gRPC-Web]
-        REST[REST Client Swagger]
-    end</p>
-<pre><code>subgraph ProtocolLayer[Protocol Layer]
-    gRPC[gRPC :5002]
-    gRPCWeb[gRPC-Web :5003]
-    REST_API[REST API :5001 JSON Transcoding]
-end
-
-subgraph ApplicationLayer[Application Layer]
-    Kestrel[Kestrel Server]
-    GatewaySvc[GatewayService]
-    ConfigSvc[ConfigService]
-    GrpcReflSvc[GrpcReflectionService]
-    EventSubMgr[EventSubscriptionManager]
-    SystemEventMgr[SystemEventManager]
-    StateSvc[StateService]
-end
-
-subgraph Infrastructure[Infrastructure]
-    ChannelPool[GrpcChannelPool]
-    DaprClient[DaprClient]
-    ConfigLoader[ServicesConfigurationLoader]
-end
-
-subgraph Backend[Backend Services]
-    WM[WorkManager :5102]
-    WSM[WebSocketManager :5202]
-end
-
-subgraph Dapr[Dapr Sidecar]
-    State[Dapr State]
-    PubSub[Dapr PubSub]
-end
-
-subgraph Reflection[gRPC Reflection]
-    ReflServer[Reflection Server]
-end
-
-Clients --&gt; ProtocolLayer
-ProtocolLayer --&gt; ApplicationLayer
-ApplicationLayer --&gt; Infrastructure
-Infrastructure --&gt; Backend
-Infrastructure --&gt; Dapr
-Backend --&gt; Reflection
-</code></pre>
-<p>```
-</p>
 <h3 id="grpcchannelpool">GrpcChannelPool</h3>
-<p><strong>Location:</strong> <code>Services/GrpcChannelPool.cs</code>
-
-The <code>GrpcChannelPool</code> maintains a thread-safe pool of gRPC channels, one per backend service.
-
-<strong>Key Features:</strong>
+<p><strong>Location:</strong> <code>Services/GrpcChannelPool.cs</code></p>
+<p>The <code>GrpcChannelPool</code> maintains a thread-safe pool of gRPC channels, one per backend service.</p>
+<p><strong>Key Features:</strong>
 - Lazy channel creation (created on first access)
 - Channel reuse across invocations
 - LRU eviction when channel limit is reached
 - Automatic cleanup on application shutdown
-- Configuration-driven service endpoints
-
-<strong>Flow:</strong>
-
-<code>mermaid
-sequenceDiagram
+- Configuration-driven service endpoints</p>
+<p><strong>Flow:</strong></p>
+<pre class="mermaid"><code>sequenceDiagram
     participant Client
     participant Gateway as GatewayService
     participant Pool as GrpcChannelPool
@@ -1775,7 +1697,7 @@ sequenceDiagram
     Pool--&gt;&gt;Gateway: Channel
     Gateway-&gt;&gt;Backend: gRPC Call
     Backend--&gt;&gt;Gateway: Response
-    Gateway--&gt;&gt;Client: InvokeResponse</code></p>
+    Gateway--&gt;&gt;Client: InvokeResponse</code></pre>
 <p><strong>Configuration (services.yaml):</strong>
 <div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">workmanager</span>
@@ -2029,7 +1951,7 @@ Subscriptions use hierarchical scopes for filtering:</p>
 - <code>pubsub_subscription</code> - Pub/sub connection status changes
 - Connection/disconnection notifications</p>
 <hr />
-<h2 id="data-flow-diagrams_2">Data Flow Diagrams</h2>
+<h2 id="data-flow-diagrams_1">Data Flow Diagrams</h2>
 <h3 id="method-invocation-rest_1">Method Invocation (REST)</h3>
 <pre class="mermaid"><code>sequenceDiagram
     participant Client as curl

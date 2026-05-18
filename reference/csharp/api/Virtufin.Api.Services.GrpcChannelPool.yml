@@ -25,10 +25,15 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GrpcChannelPool
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 20
+    startLine: 43
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Thread-safe pool of gRPC channels for backend services.
+
+    Manages channel lifecycle with LRU eviction and configurable limits.
+  example: []
   syntax:
     content: 'public class GrpcChannelPool : IDisposable'
     content.vb: Public Class GrpcChannelPool Implements IDisposable
@@ -62,17 +67,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 28
+    startLine: 56
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Creates a new GrpcChannelPool instance.
+  example: []
   syntax:
     content: public GrpcChannelPool(ServicesConfiguration config, ILogger<GrpcChannelPool> logger)
     parameters:
     - id: config
       type: Virtufin.Api.Configuration.ServicesConfiguration
+      description: The services configuration containing service endpoint information.
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool}
+      description: The logger for recording pool operations.
     content.vb: Public Sub New(config As ServicesConfiguration, logger As ILogger(Of GrpcChannelPool))
   overload: Virtufin.Api.Services.GrpcChannelPool.#ctor*
   nameWithType.vb: GrpcChannelPool.New(ServicesConfiguration, ILogger(Of GrpcChannelPool))
@@ -96,10 +105,12 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ChannelCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 34
+    startLine: 65
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the current number of cached channels in the pool.
+  example: []
   syntax:
     content: public int ChannelCount { get; }
     parameters: []
@@ -125,10 +136,12 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: ConfiguredServiceCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 35
+    startLine: 70
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets the number of services configured in the services configuration.
+  example: []
   syntax:
     content: public int ConfiguredServiceCount { get; }
     parameters: []
@@ -154,19 +167,30 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetChannel
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 37
+    startLine: 79
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Gets a gRPC channel for the specified service, creating one if needed.
+
+    Uses LRU eviction when the pool size limit is reached.
+  example: []
   syntax:
     content: public GrpcChannel GetChannel(string serviceName)
     parameters:
     - id: serviceName
       type: System.String
+      description: The name of the service to connect to.
     return:
       type: Grpc.Net.Client.GrpcChannel
+      description: A gRPC channel for the service.
     content.vb: Public Function GetChannel(serviceName As String) As GrpcChannel
   overload: Virtufin.Api.Services.GrpcChannelPool.GetChannel*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when service configuration is invalid.
   nameWithType.vb: GrpcChannelPool.GetChannel(String)
   fullName.vb: Virtufin.Api.Services.GrpcChannelPool.GetChannel(String)
   name.vb: GetChannel(String)
@@ -188,15 +212,18 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: EvictChannel
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 71
+    startLine: 117
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Evicts a specific channel from the pool by service name.
+  example: []
   syntax:
     content: public void EvictChannel(string serviceName)
     parameters:
     - id: serviceName
       type: System.String
+      description: The name of the service whose channel should be evicted.
     content.vb: Public Sub EvictChannel(serviceName As String)
   overload: Virtufin.Api.Services.GrpcChannelPool.EvictChannel*
   nameWithType.vb: GrpcChannelPool.EvictChannel(String)
@@ -220,11 +247,11 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 111
+    startLine: 160
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  summary: Disposes of all channels in the pool.
   example: []
   syntax:
     content: public void Dispose()
@@ -675,6 +702,13 @@ references:
   name: ConfiguredServiceCount
   nameWithType: GrpcChannelPool.ConfiguredServiceCount
   fullName: Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
 - uid: Virtufin.Api.Services.GrpcChannelPool.GetChannel*
   commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.GetChannel
   href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannel_System_String_

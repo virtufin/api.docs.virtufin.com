@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GrpcChannelPool | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Thread-safe pool of gRPC channels for backend services. Manages channel lifecycle with LRU eviction and configurable limits.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,7 +49,7 @@
             Virtufin API
           </a>
           <div class="git-info">
-              <a href="{git_repo_url}/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" target="_blank" rel="noopener">09f361f</a>
+              <a href="{git_repo_url}/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" target="_blank" rel="noopener">6875a63</a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -96,7 +96,9 @@ Class GrpcChannelPool
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Thread-safe pool of gRPC channels for backend services.
+Manages channel lifecycle with LRU eviction and configurable limits.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -164,7 +166,8 @@ Class GrpcChannelPool
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new GrpcChannelPool instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -174,9 +177,11 @@ Class GrpcChannelPool
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>config</code> <a class="xref" href="Virtufin.Api.Configuration.ServicesConfiguration.html">ServicesConfiguration</a></dt>
-    <dd></dd>
+    <dd><p>The services configuration containing service endpoint information.</p>
+</dd>
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.GrpcChannelPool.html">GrpcChannelPool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The logger for recording pool operations.</p>
+</dd>
   </dl>
 
 
@@ -201,7 +206,8 @@ Class GrpcChannelPool
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the current number of cached channels in the pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -232,7 +238,8 @@ Class GrpcChannelPool
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the number of services configured in the services configuration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -267,7 +274,7 @@ Class GrpcChannelPool
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+  <div class="markdown level1 summary"><p>Disposes of all channels in the pool.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -294,7 +301,8 @@ Class GrpcChannelPool
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evicts a specific channel from the pool by service name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -304,7 +312,8 @@ Class GrpcChannelPool
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>serviceName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the service whose channel should be evicted.</p>
+</dd>
   </dl>
 
 
@@ -325,7 +334,9 @@ Class GrpcChannelPool
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a gRPC channel for the specified service, creating one if needed.
+Uses LRU eviction when the pool size limit is reached.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -335,13 +346,15 @@ Class GrpcChannelPool
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>serviceName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the service to connect to.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Net.Client/GrpcChannel.cs">GrpcChannel</a></dt>
-    <dd></dd>
+    <dd><p>A gRPC channel for the service.</p>
+</dd>
   </dl>
 
 
@@ -351,6 +364,12 @@ Class GrpcChannelPool
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when service configuration is invalid.</p>
+</dd>
+  </dl>
 
 
 

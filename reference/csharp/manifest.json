@@ -88,20 +88,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Api.Client.SyncApiClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Api.Client.SyncApiClient.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Api.Client.SyncApiClient",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.SyncApiClient.yml\" sourcestartlinenumber=\"1\">Synchronous API client variant.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Client.yml",
       "output": {
         ".html": {
@@ -1260,7 +1246,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.ChannelEntry",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.ChannelEntry.yml\" sourcestartlinenumber=\"1\">Represents a cached gRPC channel entry with access tracking.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1274,7 +1260,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.ConfigService",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.ConfigService.yml\" sourcestartlinenumber=\"1\">Implementation of the gRPC Config service.\nProvides service configuration discovery and management capabilities.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1302,7 +1288,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.DaprPubSubBridgeService",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.DaprPubSubBridgeService.yml\" sourcestartlinenumber=\"1\">Bridge service that connects Dapr pub/sub to gRPC streaming clients.\nSubscribes to Dapr topics and forwards events to connected gRPC clients.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1330,7 +1316,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.GatewayService",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.GatewayService.yml\" sourcestartlinenumber=\"1\">Implementation of the gRPC Gateway service.\nProvides service discovery, method invocation, and event subscription capabilities.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1358,7 +1344,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.GrpcChannelPool",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.GrpcChannelPool.yml\" sourcestartlinenumber=\"1\">Thread-safe pool of gRPC channels for backend services.\nManages channel lifecycle with LRU eviction and configurable limits.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1484,7 +1470,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.StateService",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.StateService.yml\" sourcestartlinenumber=\"1\">Implementation of the gRPC State service.\nProvides state management operations with Dapr backend and pub/sub notifications.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1498,7 +1484,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.SubscriptionManagerBase<TEvent, TSubscription>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.SubscriptionManagerBase-2.yml\" sourcestartlinenumber=\"1\">Abstract base class for managing event subscriptions with health monitoring.\nProvides common subscription management, broadcasting, and cleanup functionality.</p>\n"
     },
     {
       "type": "ManagedReference",

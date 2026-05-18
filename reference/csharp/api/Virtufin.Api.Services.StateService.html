@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class StateService | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Implementation of the gRPC State service. Provides state management operations with Dapr backend and pub/sub notifications.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,7 +49,7 @@
             Virtufin API
           </a>
           <div class="git-info">
-              <a href="{git_repo_url}/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" target="_blank" rel="noopener">09f361f</a>
+              <a href="{git_repo_url}/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" target="_blank" rel="noopener">6875a63</a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -96,7 +96,9 @@ Class StateService
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Implementation of the gRPC State service.
+Provides state management operations with Dapr backend and pub/sub notifications.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -159,7 +161,8 @@ Class StateService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new StateService instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,11 +172,14 @@ Class StateService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>config</code> <a class="xref" href="Virtufin.Api.Configuration.ServicesConfiguration.html">ServicesConfiguration</a></dt>
-    <dd></dd>
+    <dd><p>The services configuration containing state store settings.</p>
+</dd>
     <dt><code>daprClient</code> <span class="xref">DaprClient</span></dt>
-    <dd></dd>
+    <dd><p>The Dapr client for state operations.</p>
+</dd>
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.StateService.html">StateService</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The logger for recording service operations.</p>
+</dd>
   </dl>
 
 
@@ -198,7 +204,8 @@ Class StateService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes state for a service and key, then broadcasts a state change event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -208,15 +215,18 @@ Class StateService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></dt>
-    <dd></dd>
+    <dd><p>The delete state request containing service, key, and optional includeValue.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The delete state response with success status.</p>
+</dd>
   </dl>
 
 
@@ -236,7 +246,9 @@ Class StateService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all registered state key-value pairs for a service.
+Only returns keys that have been registered via RegisterKeys.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -246,15 +258,18 @@ Class StateService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></dt>
-    <dd></dd>
+    <dd><p>The get all state request containing the service name.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A dictionary of all state key-value pairs for the service.</p>
+</dd>
   </dl>
 
 
@@ -274,7 +289,8 @@ Class StateService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a single state value for a service and key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -284,15 +300,18 @@ Class StateService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></dt>
-    <dd></dd>
+    <dd><p>The get state request containing service and key.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The state value and etag.</p>
+</dd>
   </dl>
 
 
@@ -302,6 +321,12 @@ Class StateService
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/RpcException.cs">RpcException</a></dt>
+    <dd><p>Thrown when service/key not found or invalid arguments.</p>
+</dd>
+  </dl>
 
 
 
@@ -312,7 +337,9 @@ Class StateService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers state keys for a service to enable GetAllState and tracking.
+Services should call this on startup to re-register their known keys.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -322,15 +349,18 @@ Class StateService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></dt>
-    <dd></dd>
+    <dd><p>The register keys request containing service name and keys to register.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The register keys response with success status.</p>
+</dd>
   </dl>
 
 
@@ -350,7 +380,8 @@ Class StateService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Saves state for a service and broadcasts a state change event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -360,15 +391,18 @@ Class StateService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></dt>
-    <dd></dd>
+    <dd><p>The save state request containing service, key, value, and optional etag.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The save state response with success status.</p>
+</dd>
   </dl>
 
 

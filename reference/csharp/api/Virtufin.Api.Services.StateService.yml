@@ -25,10 +25,15 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: StateService
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Implementation of the gRPC State service.
+
+    Provides state management operations with Dapr backend and pub/sub notifications.
+  example: []
   syntax:
     content: 'public class StateService : State.StateBase'
     content.vb: Public Class StateService Inherits State.StateBase
@@ -61,19 +66,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 19
+    startLine: 29
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Creates a new StateService instance.
+  example: []
   syntax:
     content: public StateService(ServicesConfiguration config, DaprClient daprClient, ILogger<StateService> logger)
     parameters:
     - id: config
       type: Virtufin.Api.Configuration.ServicesConfiguration
+      description: The services configuration containing state store settings.
     - id: daprClient
       type: Dapr.Client.DaprClient
+      description: The Dapr client for state operations.
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService}
+      description: The logger for recording service operations.
     content.vb: Public Sub New(config As ServicesConfiguration, daprClient As DaprClient, logger As ILogger(Of StateService))
   overload: Virtufin.Api.Services.StateService.#ctor*
   nameWithType.vb: StateService.New(ServicesConfiguration, DaprClient, ILogger(Of StateService))
@@ -97,20 +107,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: SaveState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 29
+    startLine: 45
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Saves state for a service and broadcasts a state change event.
   example: []
   syntax:
     content: public override Task<SaveStateResponse> SaveState(SaveStateRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.SaveStateRequest
+      description: The save state request containing service, key, value, and optional etag.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.SaveStateResponse}
+      description: The save state response with success status.
     content.vb: Public Overrides Function SaveState(request As SaveStateRequest, context As ServerCallContext) As Task(Of SaveStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.SaveState*
@@ -132,23 +146,31 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 91
+    startLine: 114
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Gets a single state value for a service and key.
   example: []
   syntax:
     content: public override Task<GetStateResponse> GetState(GetStateRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.GetStateRequest
+      description: The get state request containing service and key.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetStateResponse}
+      description: The state value and etag.
     content.vb: Public Overrides Function GetState(request As GetStateRequest, context As ServerCallContext) As Task(Of GetStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.GetState*
+  exceptions:
+  - type: Grpc.Core.RpcException
+    commentId: T:Grpc.Core.RpcException
+    description: Thrown when service/key not found or invalid arguments.
 - uid: Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
   id: GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
@@ -167,20 +189,27 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: GetAllState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 132
+    startLine: 162
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Gets all registered state key-value pairs for a service.
+
+    Only returns keys that have been registered via RegisterKeys.
   example: []
   syntax:
     content: public override Task<GetAllStateResponse> GetAllState(GetAllStateRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.GetAllStateRequest
+      description: The get all state request containing the service name.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetAllStateResponse}
+      description: A dictionary of all state key-value pairs for the service.
     content.vb: Public Overrides Function GetAllState(request As GetAllStateRequest, context As ServerCallContext) As Task(Of GetAllStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.GetAllState*
@@ -202,20 +231,27 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: RegisterKeys
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 172
+    startLine: 209
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Registers state keys for a service to enable GetAllState and tracking.
+
+    Services should call this on startup to re-register their known keys.
   example: []
   syntax:
     content: public override Task<RegisterKeysResponse> RegisterKeys(RegisterKeysRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.RegisterKeysRequest
+      description: The register keys request containing service name and keys to register.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.RegisterKeysResponse}
+      description: The register keys response with success status.
     content.vb: Public Overrides Function RegisterKeys(request As RegisterKeysRequest, context As ServerCallContext) As Task(Of RegisterKeysResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.RegisterKeys*
@@ -237,20 +273,24 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 230
+    startLine: 273
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Deletes state for a service and key, then broadcasts a state change event.
   example: []
   syntax:
     content: public override Task<DeleteStateResponse> DeleteState(DeleteStateRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.DeleteStateRequest
+      description: The delete state request containing service, key, and optional includeValue.
     - id: context
       type: Grpc.Core.ServerCallContext
+      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteStateResponse}
+      description: The delete state response with success status.
     content.vb: Public Overrides Function DeleteState(request As DeleteStateRequest, context As ServerCallContext) As Task(Of DeleteStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.DeleteState*
@@ -927,6 +967,13 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Grpc.Core.RpcException
+  commentId: T:Grpc.Core.RpcException
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/RpcException.cs
+  name: RpcException
+  nameWithType: RpcException
+  fullName: Grpc.Core.RpcException
 - uid: Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase

@@ -582,6 +582,25 @@ references:
   commentId: T:Virtufin.Api.Client.StreamEventHandler
   fullName: Virtufin.Api.Client.StreamEventHandler
   nameWithType: StreamEventHandler
+- uid: Virtufin.Api.Client.StreamEventHandler.#ctor
+  name: StreamEventHandler()
+  href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler__ctor
+  commentId: M:Virtufin.Api.Client.StreamEventHandler.#ctor
+  name.vb: New()
+  fullName: Virtufin.Api.Client.StreamEventHandler.StreamEventHandler()
+  fullName.vb: Virtufin.Api.Client.StreamEventHandler.New()
+  nameWithType: StreamEventHandler.StreamEventHandler()
+  nameWithType.vb: StreamEventHandler.New()
+- uid: Virtufin.Api.Client.StreamEventHandler.#ctor*
+  name: StreamEventHandler
+  href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler__ctor_
+  commentId: Overload:Virtufin.Api.Client.StreamEventHandler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Client.StreamEventHandler.StreamEventHandler
+  fullName.vb: Virtufin.Api.Client.StreamEventHandler.New
+  nameWithType: StreamEventHandler.StreamEventHandler
+  nameWithType.vb: StreamEventHandler.New
 - uid: Virtufin.Api.Client.StreamEventHandler.ErrorOccurred
   name: ErrorOccurred
   href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_ErrorOccurred
@@ -639,40 +658,6 @@ references:
   commentId: E:Virtufin.Api.Client.StreamEventHandler.SystemEventReceived
   fullName: Virtufin.Api.Client.StreamEventHandler.SystemEventReceived
   nameWithType: StreamEventHandler.SystemEventReceived
-- uid: Virtufin.Api.Client.SyncApiClient
-  name: SyncApiClient
-  href: api/Virtufin.Api.Client.SyncApiClient.html
-  commentId: T:Virtufin.Api.Client.SyncApiClient
-  fullName: Virtufin.Api.Client.SyncApiClient
-  nameWithType: SyncApiClient
-- uid: Virtufin.Api.Client.SyncApiClient.#ctor
-  name: SyncApiClient()
-  href: api/Virtufin.Api.Client.SyncApiClient.html#Virtufin_Api_Client_SyncApiClient__ctor
-  commentId: M:Virtufin.Api.Client.SyncApiClient.#ctor
-  name.vb: New()
-  fullName: Virtufin.Api.Client.SyncApiClient.SyncApiClient()
-  fullName.vb: Virtufin.Api.Client.SyncApiClient.New()
-  nameWithType: SyncApiClient.SyncApiClient()
-  nameWithType.vb: SyncApiClient.New()
-- uid: Virtufin.Api.Client.SyncApiClient.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name: SyncApiClient(string, int?, int?)
-  href: api/Virtufin.Api.Client.SyncApiClient.html#Virtufin_Api_Client_SyncApiClient__ctor_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__
-  commentId: M:Virtufin.Api.Client.SyncApiClient.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name.vb: New(String, Integer?, Integer?)
-  fullName: Virtufin.Api.Client.SyncApiClient.SyncApiClient(string, int?, int?)
-  fullName.vb: Virtufin.Api.Client.SyncApiClient.New(String, Integer?, Integer?)
-  nameWithType: SyncApiClient.SyncApiClient(string, int?, int?)
-  nameWithType.vb: SyncApiClient.New(String, Integer?, Integer?)
-- uid: Virtufin.Api.Client.SyncApiClient.#ctor*
-  name: SyncApiClient
-  href: api/Virtufin.Api.Client.SyncApiClient.html#Virtufin_Api_Client_SyncApiClient__ctor_
-  commentId: Overload:Virtufin.Api.Client.SyncApiClient.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Api.Client.SyncApiClient.SyncApiClient
-  fullName.vb: Virtufin.Api.Client.SyncApiClient.New
-  nameWithType: SyncApiClient.SyncApiClient
-  nameWithType.vb: SyncApiClient.New
 - uid: Virtufin.Api.Configuration
   name: Virtufin.Api.Configuration
   href: api/Virtufin.Api.Configuration.html

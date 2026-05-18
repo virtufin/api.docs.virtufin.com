@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ConfigService | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Implementation of the gRPC Config service. Provides service configuration discovery and management capabilities.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,7 +49,7 @@
             Virtufin API
           </a>
           <div class="git-info">
-              <a href="{git_repo_url}/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" target="_blank" rel="noopener">09f361f</a>
+              <a href="{git_repo_url}/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" target="_blank" rel="noopener">6875a63</a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -96,7 +96,9 @@ Class ConfigService
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Implementation of the gRPC Config service.
+Provides service configuration discovery and management capabilities.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -159,7 +161,8 @@ Class ConfigService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new ConfigService instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,7 +172,8 @@ Class ConfigService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>config</code> <a class="xref" href="Virtufin.Api.Configuration.ServicesConfiguration.html">ServicesConfiguration</a></dt>
-    <dd></dd>
+    <dd><p>The services configuration to expose.</p>
+</dd>
   </dl>
 
 
@@ -194,7 +198,8 @@ Class ConfigService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the configuration for a specific service by name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -204,15 +209,18 @@ Class ConfigService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetConfigServiceRequest.html">GetConfigServiceRequest</a></dt>
-    <dd></dd>
+    <dd><p>The get config service request containing the service name.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetConfigServiceResponse.html">GetConfigServiceResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The service configuration or null if not found.</p>
+</dd>
   </dl>
 
 
@@ -232,7 +240,8 @@ Class ConfigService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all services registered in the configuration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -242,15 +251,18 @@ Class ConfigService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.ListConfigServicesRequest.html">ListConfigServicesRequest</a></dt>
-    <dd></dd>
+    <dd><p>The list config services request.</p>
+</dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
-    <dd></dd>
+    <dd><p>The server call context.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.ListConfigServicesResponse.html">ListConfigServicesResponse</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A list of all configured services.</p>
+</dd>
   </dl>
 
 

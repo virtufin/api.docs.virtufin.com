@@ -21,10 +21,15 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: DaprPubSubBridgeService
     path: ../../../src/Virtufin.Api/Services/DaprPubSubBridgeService.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Bridge service that connects Dapr pub/sub to gRPC streaming clients.
+
+    Subscribes to Dapr topics and forwards events to connected gRPC clients.
+  example: []
   syntax:
     content: public class DaprPubSubBridgeService
     content.vb: Public Class DaprPubSubBridgeService
@@ -56,17 +61,21 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/DaprPubSubBridgeService.cs
-    startLine: 10
+    startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Creates a new DaprPubSubBridgeService instance.
+  example: []
   syntax:
     content: public DaprPubSubBridgeService(DaprPublishSubscribeClient pubsubClient, ILogger<DaprPubSubBridgeService> logger)
     parameters:
     - id: pubsubClient
       type: Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
+      description: The Dapr pub/sub client for subscriptions.
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprPubSubBridgeService}
+      description: The logger for recording bridge operations.
     content.vb: Public Sub New(pubsubClient As DaprPublishSubscribeClient, logger As ILogger(Of DaprPubSubBridgeService))
   overload: Virtufin.Api.Services.DaprPubSubBridgeService.#ctor*
   nameWithType.vb: DaprPubSubBridgeService.New(DaprPublishSubscribeClient, ILogger(Of DaprPubSubBridgeService))
@@ -90,21 +99,27 @@ items:
       repo: http://gitea.gitea/virtufin/virtufin-api
     id: SubscribeToTopicAsync
     path: ../../../src/Virtufin.Api/Services/DaprPubSubBridgeService.cs
-    startLine: 18
+    startLine: 34
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Subscribes to a Dapr topic and forwards all events to the gRPC client stream.
+  example: []
   syntax:
     content: public Task SubscribeToTopicAsync(IServerStreamWriter<TopicEventRequest> clientStream, string topic, CancellationToken cancellationToken)
     parameters:
     - id: clientStream
       type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest}
+      description: The gRPC stream writer to forward events to.
     - id: topic
       type: System.String
+      description: The Dapr topic name to subscribe to.
     - id: cancellationToken
       type: System.Threading.CancellationToken
+      description: The cancellation token for the subscription.
     return:
       type: System.Threading.Tasks.Task
+      description: A task that completes when the subscription is cancelled.
     content.vb: Public Function SubscribeToTopicAsync(clientStream As IServerStreamWriter(Of TopicEventRequest), topic As String, cancellationToken As CancellationToken) As Task
   overload: Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync*
   nameWithType.vb: DaprPubSubBridgeService.SubscribeToTopicAsync(IServerStreamWriter(Of TopicEventRequest), String, CancellationToken)

@@ -9,7 +9,6 @@ items:
   - Virtufin.Api.Client.IStreamEventHandler
   - Virtufin.Api.Client.ServiceClient
   - Virtufin.Api.Client.StreamEventHandler
-  - Virtufin.Api.Client.SyncApiClient
   langs:
   - csharp
   - vb
@@ -49,17 +48,10 @@ references:
   fullName: Virtufin.Api.Client.GatewayClient
 - uid: Virtufin.Api.Client.ApiClient
   commentId: T:Virtufin.Api.Client.ApiClient
-  parent: Virtufin.Api.Client
   href: Virtufin.Api.Client.ApiClient.html
   name: ApiClient
   nameWithType: ApiClient
   fullName: Virtufin.Api.Client.ApiClient
-- uid: Virtufin.Api.Client.SyncApiClient
-  commentId: T:Virtufin.Api.Client.SyncApiClient
-  href: Virtufin.Api.Client.SyncApiClient.html
-  name: SyncApiClient
-  nameWithType: SyncApiClient
-  fullName: Virtufin.Api.Client.SyncApiClient
 - uid: Virtufin.Api.Client
   commentId: N:Virtufin.Api.Client
   href: Virtufin.html

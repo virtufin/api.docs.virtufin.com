@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DaprPubSubBridgeService | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Bridge service that connects Dapr pub/sub to gRPC streaming clients. Subscribes to Dapr topics and forwards events to connected gRPC clients.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,7 +49,7 @@
             Virtufin API
           </a>
           <div class="git-info">
-              <a href="{git_repo_url}/commit/09f361fdaca905515e21d10202a89106f6b3f6a6" target="_blank" rel="noopener">09f361f</a>
+              <a href="{git_repo_url}/commit/6875a63abf500490df4c4eb051816f0a9284f5f8" target="_blank" rel="noopener">6875a63</a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
           </button>
@@ -96,7 +96,9 @@ Class DaprPubSubBridgeService
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Bridge service that connects Dapr pub/sub to gRPC streaming clients.
+Subscribes to Dapr topics and forwards events to connected gRPC clients.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -158,7 +160,8 @@ Class DaprPubSubBridgeService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new DaprPubSubBridgeService instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -168,9 +171,11 @@ Class DaprPubSubBridgeService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>pubsubClient</code> <span class="xref">DaprPublishSubscribeClient</span></dt>
-    <dd></dd>
+    <dd><p>The Dapr pub/sub client for subscriptions.</p>
+</dd>
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.DaprPubSubBridgeService.html">DaprPubSubBridgeService</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The logger for recording bridge operations.</p>
+</dd>
   </dl>
 
 
@@ -195,7 +200,8 @@ Class DaprPubSubBridgeService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Subscribes to a Dapr topic and forwards all events to the gRPC client stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,17 +211,21 @@ Class DaprPubSubBridgeService
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>clientStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs">IServerStreamWriter</a>&lt;<a class="xref" href="Virtufin.Api.Protos.TopicEventRequest.html">TopicEventRequest</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The gRPC stream writer to forward events to.</p>
+</dd>
     <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The Dapr topic name to subscribe to.</p>
+</dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token for the subscription.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>A task that completes when the subscription is cancelled.</p>
+</dd>
   </dl>
 
 
