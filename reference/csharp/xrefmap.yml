@@ -12348,9 +12348,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Protos.UnsubscribeResponse.WriteTo
   nameWithType: UnsubscribeResponse.WriteTo
-- uid: Virtufin.Api.Reference
-  name: C# API Reference
-  href: index.html
 - uid: Virtufin.Api.Services
   name: Virtufin.Api.Services
   href: api/Virtufin.Api.Services.html
