@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Api/Constants.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ApiConstants
     path: ../../../src/Virtufin.Api/Constants.cs
     startLine: 2
@@ -52,7 +52,7 @@ items:
     remote:
       path: src/Virtufin.Api/Constants.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Version
     path: ../../../src/Virtufin.Api/Constants.cs
     startLine: 4

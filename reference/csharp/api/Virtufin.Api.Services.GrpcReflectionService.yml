@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcReflectionService
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 17
@@ -62,7 +62,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 29
@@ -96,7 +96,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodsAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 41
@@ -137,7 +137,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodSchemaAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 56
@@ -184,7 +184,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ExecuteCallAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 78
@@ -234,7 +234,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ExecuteCallAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 138
@@ -284,7 +284,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetFileDescriptorProtosAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 195

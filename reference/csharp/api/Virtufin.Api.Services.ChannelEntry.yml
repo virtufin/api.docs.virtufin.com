@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ChannelEntry
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 9
@@ -57,7 +57,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ServiceName
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 14
@@ -88,7 +88,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Channel
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 19
@@ -119,7 +119,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: LastAccess
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 24
@@ -150,7 +150,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 31

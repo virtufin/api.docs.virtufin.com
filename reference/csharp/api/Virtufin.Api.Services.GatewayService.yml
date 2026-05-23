@@ -24,7 +24,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GatewayService
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 13
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 28
@@ -109,7 +109,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Invoke
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 104
@@ -148,7 +148,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeJson
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 149
@@ -190,7 +190,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServices
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 193
@@ -229,7 +229,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethods
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 217
@@ -268,7 +268,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 257
@@ -316,7 +316,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: WatchSystemEvents
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 300
@@ -364,7 +364,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GatewayService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodSchema
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
     startLine: 320

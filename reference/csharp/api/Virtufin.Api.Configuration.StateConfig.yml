@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StateConfig
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 41
@@ -52,7 +52,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StoreName
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 43

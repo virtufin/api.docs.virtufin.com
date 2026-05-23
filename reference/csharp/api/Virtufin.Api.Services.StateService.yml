@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StateService
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 12
@@ -63,7 +63,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 29
@@ -104,7 +104,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 45
@@ -143,7 +143,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 114
@@ -186,7 +186,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetAllState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 162
@@ -228,7 +228,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: RegisterKeys
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 209
@@ -270,7 +270,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 273

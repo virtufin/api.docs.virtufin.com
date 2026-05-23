@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: JobsConfig
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 46
@@ -52,7 +52,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Crons
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 48

@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ServicesConfigurationExtensions
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 2
@@ -53,7 +53,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetServiceConfig
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 4

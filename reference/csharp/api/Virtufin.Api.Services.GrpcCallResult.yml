@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcCallResult
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1174
@@ -58,7 +58,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Success
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1176
@@ -87,7 +87,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StatusCode
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1177
@@ -116,7 +116,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Message
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1178
@@ -145,7 +145,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Data
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1179
@@ -174,7 +174,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ResponseDataBytes
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1180

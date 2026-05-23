@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/ConfigService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ConfigService
     path: ../../../src/Virtufin.Api/Services/ConfigService.cs
     startLine: 10
@@ -60,7 +60,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/ConfigService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/ConfigService.cs
     startLine: 18
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/ConfigService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServices
     path: ../../../src/Virtufin.Api/Services/ConfigService.cs
     startLine: 29
@@ -134,7 +134,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/ConfigService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api/Services/ConfigService.cs
     startLine: 45

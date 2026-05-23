@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: FieldSchema
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1149
@@ -60,7 +60,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Name
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1151
@@ -89,7 +89,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Type
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1152
@@ -118,7 +118,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TypeName
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1153
@@ -147,7 +147,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: IsRepeated
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1154
@@ -176,7 +176,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: IsOptional
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1155
@@ -205,7 +205,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OneofGroup
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1156
@@ -234,7 +234,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OneofCases
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1157

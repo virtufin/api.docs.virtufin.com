@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ServiceConfig
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 18
@@ -58,7 +58,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Name
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 20
@@ -87,7 +87,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Protocol
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 21
@@ -116,7 +116,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DaprAppId
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 22
@@ -145,7 +145,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Grpc
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 23
@@ -174,7 +174,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Pubsub
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 24
@@ -203,7 +203,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: State
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 25
@@ -232,7 +232,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
-      repo: http://gitea.gitea/virtufin/virtufin-api
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Jobs
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
     startLine: 26
