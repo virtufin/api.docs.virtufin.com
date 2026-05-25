@@ -1,1 +1,15 @@
 /* Custom styles for Virtufin API Documentation */
+
+/* Commit badge — shown next to repo name, independently hoverable */
+.md-source-commit {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.md-source-commit .md-source__commit {
+  display: inline-flex;
+}
+.md-source-commit .md-source__commit:hover svg rect {
+  fill: #dee2e6;
+  opacity: 0.8;
+}
