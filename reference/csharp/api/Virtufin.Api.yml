@@ -18,12 +18,6 @@ items:
   assemblies:
   - Virtufin.Api
 references:
-- uid: Virtufin.Api.ApiConstants
-  commentId: T:Virtufin.Api.ApiConstants
-  href: Virtufin.Api.ApiConstants.html
-  name: ApiConstants
-  nameWithType: ApiConstants
-  fullName: Virtufin.Api.ApiConstants
 - uid: Virtufin.Api.GrpcCallRequest
   commentId: T:Virtufin.Api.GrpcCallRequest
   href: Virtufin.Api.GrpcCallRequest.html
@@ -42,3 +36,9 @@ references:
   name: MethodInfo
   nameWithType: MethodInfo
   fullName: Virtufin.Api.MethodInfo
+- uid: Virtufin.Api.ApiConstants
+  commentId: T:Virtufin.Api.ApiConstants
+  href: Virtufin.Api.ApiConstants.html
+  name: ApiConstants
+  nameWithType: ApiConstants
+  fullName: Virtufin.Api.ApiConstants

@@ -169,40 +169,32 @@ references:
 - uid: Virtufin.Api.Protos.TopicEventRequest
   commentId: T:Virtufin.Api.Protos.TopicEventRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.TopicEventRequest.html
   name: TopicEventRequest
   nameWithType: TopicEventRequest
   fullName: Virtufin.Api.Protos.TopicEventRequest
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
-  href: Virtufin.html
   name: Virtufin.Api.Protos
   nameWithType: Virtufin.Api.Protos
   fullName: Virtufin.Api.Protos
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent*
   commentId: Overload:Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent
   href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnSystemEvent_Virtufin_Api_Protos_TopicEventRequest_

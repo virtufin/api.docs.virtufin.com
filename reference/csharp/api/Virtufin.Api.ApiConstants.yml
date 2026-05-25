@@ -20,7 +20,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ApiConstants
     path: ../../../src/Virtufin.Api/Constants.cs
-    startLine: 2
+    startLine: 1
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -55,7 +55,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Version
     path: ../../../src/Virtufin.Api/Constants.cs
-    startLine: 4
+    startLine: 3
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api

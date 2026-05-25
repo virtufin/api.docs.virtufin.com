@@ -203,26 +203,21 @@ references:
 - uid: Virtufin.Api.Protos.Config.ConfigBase
   commentId: T:Virtufin.Api.Protos.Config.ConfigBase
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.Config.html
   name: Config.ConfigBase
   nameWithType: Config.ConfigBase
   fullName: Virtufin.Api.Protos.Config.ConfigBase
   spec.csharp:
   - uid: Virtufin.Api.Protos.Config
     name: Config
-    href: Virtufin.Api.Protos.Config.html
   - name: .
   - uid: Virtufin.Api.Protos.Config.ConfigBase
     name: ConfigBase
-    href: Virtufin.Api.Protos.Config.ConfigBase.html
   spec.vb:
   - uid: Virtufin.Api.Protos.Config
     name: Config
-    href: Virtufin.Api.Protos.Config.html
   - name: .
   - uid: Virtufin.Api.Protos.Config.ConfigBase
     name: ConfigBase
-    href: Virtufin.Api.Protos.Config.ConfigBase.html
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -451,34 +446,27 @@ references:
   fullName: System
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
-  href: Virtufin.html
   name: Virtufin.Api.Protos
   nameWithType: Virtufin.Api.Protos
   fullName: Virtufin.Api.Protos
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
 - uid: Virtufin.Api.Services.ConfigService.#ctor*
   commentId: Overload:Virtufin.Api.Services.ConfigService.#ctor
   href: Virtufin.Api.Services.ConfigService.html#Virtufin_Api_Services_ConfigService__ctor_Virtufin_Api_Configuration_ServicesConfiguration_
@@ -529,18 +517,16 @@ references:
   commentId: M:Virtufin.Api.Protos.Config.ConfigBase.ListServices(Virtufin.Api.Protos.ListConfigServicesRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Config.ConfigBase
   isExternal: true
-  href: Virtufin.Api.Protos.Config.ConfigBase.html#Virtufin_Api_Protos_Config_ConfigBase_ListServices_Virtufin_Api_Protos_ListConfigServicesRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: ListServices(ListConfigServicesRequest, ServerCallContext)
   nameWithType: Config.ConfigBase.ListServices(ListConfigServicesRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Config.ConfigBase.ListServices(Virtufin.Api.Protos.ListConfigServicesRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Config.ConfigBase.ListServices(Virtufin.Api.Protos.ListConfigServicesRequest,Grpc.Core.ServerCallContext)
     name: ListServices
-    href: Virtufin.Api.Protos.Config.ConfigBase.html#Virtufin_Api_Protos_Config_ConfigBase_ListServices_Virtufin_Api_Protos_ListConfigServicesRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.ListConfigServicesRequest
     name: ListConfigServicesRequest
-    href: Virtufin.Api.Protos.ListConfigServicesRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -551,11 +537,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Config.ConfigBase.ListServices(Virtufin.Api.Protos.ListConfigServicesRequest,Grpc.Core.ServerCallContext)
     name: ListServices
-    href: Virtufin.Api.Protos.Config.ConfigBase.html#Virtufin_Api_Protos_Config_ConfigBase_ListServices_Virtufin_Api_Protos_ListConfigServicesRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.ListConfigServicesRequest
     name: ListConfigServicesRequest
-    href: Virtufin.Api.Protos.ListConfigServicesRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -572,7 +556,6 @@ references:
 - uid: Virtufin.Api.Protos.ListConfigServicesRequest
   commentId: T:Virtufin.Api.Protos.ListConfigServicesRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.ListConfigServicesRequest.html
   name: ListConfigServicesRequest
   nameWithType: ListConfigServicesRequest
   fullName: Virtufin.Api.Protos.ListConfigServicesRequest
@@ -603,7 +586,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.ListConfigServicesResponse
     name: ListConfigServicesResponse
-    href: Virtufin.Api.Protos.ListConfigServicesResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -615,7 +597,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.ListConfigServicesResponse
     name: ListConfigServicesResponse
-    href: Virtufin.Api.Protos.ListConfigServicesResponse.html
   - name: )
 - uid: Grpc.Core
   commentId: N:Grpc.Core
@@ -708,18 +689,16 @@ references:
   commentId: M:Virtufin.Api.Protos.Config.ConfigBase.GetService(Virtufin.Api.Protos.GetConfigServiceRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Config.ConfigBase
   isExternal: true
-  href: Virtufin.Api.Protos.Config.ConfigBase.html#Virtufin_Api_Protos_Config_ConfigBase_GetService_Virtufin_Api_Protos_GetConfigServiceRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: GetService(GetConfigServiceRequest, ServerCallContext)
   nameWithType: Config.ConfigBase.GetService(GetConfigServiceRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Config.ConfigBase.GetService(Virtufin.Api.Protos.GetConfigServiceRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Config.ConfigBase.GetService(Virtufin.Api.Protos.GetConfigServiceRequest,Grpc.Core.ServerCallContext)
     name: GetService
-    href: Virtufin.Api.Protos.Config.ConfigBase.html#Virtufin_Api_Protos_Config_ConfigBase_GetService_Virtufin_Api_Protos_GetConfigServiceRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.GetConfigServiceRequest
     name: GetConfigServiceRequest
-    href: Virtufin.Api.Protos.GetConfigServiceRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -730,11 +709,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Config.ConfigBase.GetService(Virtufin.Api.Protos.GetConfigServiceRequest,Grpc.Core.ServerCallContext)
     name: GetService
-    href: Virtufin.Api.Protos.Config.ConfigBase.html#Virtufin_Api_Protos_Config_ConfigBase_GetService_Virtufin_Api_Protos_GetConfigServiceRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.GetConfigServiceRequest
     name: GetConfigServiceRequest
-    href: Virtufin.Api.Protos.GetConfigServiceRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -751,7 +728,6 @@ references:
 - uid: Virtufin.Api.Protos.GetConfigServiceRequest
   commentId: T:Virtufin.Api.Protos.GetConfigServiceRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.GetConfigServiceRequest.html
   name: GetConfigServiceRequest
   nameWithType: GetConfigServiceRequest
   fullName: Virtufin.Api.Protos.GetConfigServiceRequest
@@ -774,7 +750,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.GetConfigServiceResponse
     name: GetConfigServiceResponse
-    href: Virtufin.Api.Protos.GetConfigServiceResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -786,5 +761,4 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.GetConfigServiceResponse
     name: GetConfigServiceResponse
-    href: Virtufin.Api.Protos.GetConfigServiceResponse.html
   - name: )

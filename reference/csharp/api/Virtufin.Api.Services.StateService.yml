@@ -339,26 +339,21 @@ references:
 - uid: Virtufin.Api.Protos.State.StateBase
   commentId: T:Virtufin.Api.Protos.State.StateBase
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.State.html
   name: State.StateBase
   nameWithType: State.StateBase
   fullName: Virtufin.Api.Protos.State.StateBase
   spec.csharp:
   - uid: Virtufin.Api.Protos.State
     name: State
-    href: Virtufin.Api.Protos.State.html
   - name: .
   - uid: Virtufin.Api.Protos.State.StateBase
     name: StateBase
-    href: Virtufin.Api.Protos.State.StateBase.html
   spec.vb:
   - uid: Virtufin.Api.Protos.State
     name: State
-    href: Virtufin.Api.Protos.State.html
   - name: .
   - uid: Virtufin.Api.Protos.State.StateBase
     name: StateBase
-    href: Virtufin.Api.Protos.State.StateBase.html
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -587,34 +582,27 @@ references:
   fullName: System
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
-  href: Virtufin.html
   name: Virtufin.Api.Protos
   nameWithType: Virtufin.Api.Protos
   fullName: Virtufin.Api.Protos
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
 - uid: Virtufin.Api.Services.StateService.#ctor*
   commentId: Overload:Virtufin.Api.Services.StateService.#ctor
   href: Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService__ctor_Virtufin_Api_Configuration_ServicesConfiguration_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_StateService__
@@ -792,18 +780,16 @@ references:
   commentId: M:Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
   isExternal: true
-  href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: SaveState(SaveStateRequest, ServerCallContext)
   nameWithType: State.StateBase.SaveState(SaveStateRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
     name: SaveState
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.SaveStateRequest
     name: SaveStateRequest
-    href: Virtufin.Api.Protos.SaveStateRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -814,11 +800,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
     name: SaveState
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.SaveStateRequest
     name: SaveStateRequest
-    href: Virtufin.Api.Protos.SaveStateRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -835,7 +819,6 @@ references:
 - uid: Virtufin.Api.Protos.SaveStateRequest
   commentId: T:Virtufin.Api.Protos.SaveStateRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.SaveStateRequest.html
   name: SaveStateRequest
   nameWithType: SaveStateRequest
   fullName: Virtufin.Api.Protos.SaveStateRequest
@@ -866,7 +849,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.SaveStateResponse
     name: SaveStateResponse
-    href: Virtufin.Api.Protos.SaveStateResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -878,7 +860,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.SaveStateResponse
     name: SaveStateResponse
-    href: Virtufin.Api.Protos.SaveStateResponse.html
   - name: )
 - uid: Grpc.Core
   commentId: N:Grpc.Core
@@ -978,18 +959,16 @@ references:
   commentId: M:Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
   isExternal: true
-  href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: GetState(GetStateRequest, ServerCallContext)
   nameWithType: State.StateBase.GetState(GetStateRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
     name: GetState
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.GetStateRequest
     name: GetStateRequest
-    href: Virtufin.Api.Protos.GetStateRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1000,11 +979,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
     name: GetState
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.GetStateRequest
     name: GetStateRequest
-    href: Virtufin.Api.Protos.GetStateRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1021,7 +998,6 @@ references:
 - uid: Virtufin.Api.Protos.GetStateRequest
   commentId: T:Virtufin.Api.Protos.GetStateRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.GetStateRequest.html
   name: GetStateRequest
   nameWithType: GetStateRequest
   fullName: Virtufin.Api.Protos.GetStateRequest
@@ -1044,7 +1020,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.GetStateResponse
     name: GetStateResponse
-    href: Virtufin.Api.Protos.GetStateResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1056,24 +1031,21 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.GetStateResponse
     name: GetStateResponse
-    href: Virtufin.Api.Protos.GetStateResponse.html
   - name: )
 - uid: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
   isExternal: true
-  href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: GetAllState(GetAllStateRequest, ServerCallContext)
   nameWithType: State.StateBase.GetAllState(GetAllStateRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
     name: GetAllState
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.GetAllStateRequest
     name: GetAllStateRequest
-    href: Virtufin.Api.Protos.GetAllStateRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1084,11 +1056,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
     name: GetAllState
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.GetAllStateRequest
     name: GetAllStateRequest
-    href: Virtufin.Api.Protos.GetAllStateRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1105,7 +1075,6 @@ references:
 - uid: Virtufin.Api.Protos.GetAllStateRequest
   commentId: T:Virtufin.Api.Protos.GetAllStateRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.GetAllStateRequest.html
   name: GetAllStateRequest
   nameWithType: GetAllStateRequest
   fullName: Virtufin.Api.Protos.GetAllStateRequest
@@ -1128,7 +1097,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.GetAllStateResponse
     name: GetAllStateResponse
-    href: Virtufin.Api.Protos.GetAllStateResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1140,24 +1108,21 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.GetAllStateResponse
     name: GetAllStateResponse
-    href: Virtufin.Api.Protos.GetAllStateResponse.html
   - name: )
 - uid: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
   isExternal: true
-  href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: RegisterKeys(RegisterKeysRequest, ServerCallContext)
   nameWithType: State.StateBase.RegisterKeys(RegisterKeysRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
     name: RegisterKeys
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.RegisterKeysRequest
     name: RegisterKeysRequest
-    href: Virtufin.Api.Protos.RegisterKeysRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1168,11 +1133,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
     name: RegisterKeys
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.RegisterKeysRequest
     name: RegisterKeysRequest
-    href: Virtufin.Api.Protos.RegisterKeysRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1189,7 +1152,6 @@ references:
 - uid: Virtufin.Api.Protos.RegisterKeysRequest
   commentId: T:Virtufin.Api.Protos.RegisterKeysRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.RegisterKeysRequest.html
   name: RegisterKeysRequest
   nameWithType: RegisterKeysRequest
   fullName: Virtufin.Api.Protos.RegisterKeysRequest
@@ -1212,7 +1174,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.RegisterKeysResponse
     name: RegisterKeysResponse
-    href: Virtufin.Api.Protos.RegisterKeysResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1224,24 +1185,21 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.RegisterKeysResponse
     name: RegisterKeysResponse
-    href: Virtufin.Api.Protos.RegisterKeysResponse.html
   - name: )
 - uid: Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
   isExternal: true
-  href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: DeleteState(DeleteStateRequest, ServerCallContext)
   nameWithType: State.StateBase.DeleteState(DeleteStateRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
     name: DeleteState
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.DeleteStateRequest
     name: DeleteStateRequest
-    href: Virtufin.Api.Protos.DeleteStateRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1252,11 +1210,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
     name: DeleteState
-    href: Virtufin.Api.Protos.State.StateBase.html#Virtufin_Api_Protos_State_StateBase_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.DeleteStateRequest
     name: DeleteStateRequest
-    href: Virtufin.Api.Protos.DeleteStateRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1273,7 +1229,6 @@ references:
 - uid: Virtufin.Api.Protos.DeleteStateRequest
   commentId: T:Virtufin.Api.Protos.DeleteStateRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.DeleteStateRequest.html
   name: DeleteStateRequest
   nameWithType: DeleteStateRequest
   fullName: Virtufin.Api.Protos.DeleteStateRequest
@@ -1296,7 +1251,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.DeleteStateResponse
     name: DeleteStateResponse
-    href: Virtufin.Api.Protos.DeleteStateResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1308,5 +1262,4 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.DeleteStateResponse
     name: DeleteStateResponse
-    href: Virtufin.Api.Protos.DeleteStateResponse.html
   - name: )

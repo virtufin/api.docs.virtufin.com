@@ -433,26 +433,21 @@ references:
 - uid: Virtufin.Api.Protos.Gateway.GatewayBase
   commentId: T:Virtufin.Api.Protos.Gateway.GatewayBase
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.Gateway.html
   name: Gateway.GatewayBase
   nameWithType: Gateway.GatewayBase
   fullName: Virtufin.Api.Protos.Gateway.GatewayBase
   spec.csharp:
   - uid: Virtufin.Api.Protos.Gateway
     name: Gateway
-    href: Virtufin.Api.Protos.Gateway.html
   - name: .
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase
     name: GatewayBase
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html
   spec.vb:
   - uid: Virtufin.Api.Protos.Gateway
     name: Gateway
-    href: Virtufin.Api.Protos.Gateway.html
   - name: .
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase
     name: GatewayBase
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -681,34 +676,27 @@ references:
   fullName: System
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
-  href: Virtufin.html
   name: Virtufin.Api.Protos
   nameWithType: Virtufin.Api.Protos
   fullName: Virtufin.Api.Protos
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
 - uid: Virtufin.Api.Services.GatewayService.#ctor*
   commentId: Overload:Virtufin.Api.Services.GatewayService.#ctor
   href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Virtufin_Api_Services_DaprPubSubBridgeService_
@@ -871,18 +859,16 @@ references:
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase
   isExternal: true
-  href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_Invoke_Virtufin_Api_Protos_InvokeRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: Invoke(InvokeRequest, ServerCallContext)
   nameWithType: Gateway.GatewayBase.Invoke(InvokeRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Gateway.GatewayBase.Invoke(Virtufin.Api.Protos.InvokeRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
     name: Invoke
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_Invoke_Virtufin_Api_Protos_InvokeRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.InvokeRequest
     name: InvokeRequest
-    href: Virtufin.Api.Protos.InvokeRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -893,11 +879,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
     name: Invoke
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_Invoke_Virtufin_Api_Protos_InvokeRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.InvokeRequest
     name: InvokeRequest
-    href: Virtufin.Api.Protos.InvokeRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -914,7 +898,6 @@ references:
 - uid: Virtufin.Api.Protos.InvokeRequest
   commentId: T:Virtufin.Api.Protos.InvokeRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.InvokeRequest.html
   name: InvokeRequest
   nameWithType: InvokeRequest
   fullName: Virtufin.Api.Protos.InvokeRequest
@@ -945,7 +928,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.InvokeResponse
     name: InvokeResponse
-    href: Virtufin.Api.Protos.InvokeResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -957,7 +939,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.InvokeResponse
     name: InvokeResponse
-    href: Virtufin.Api.Protos.InvokeResponse.html
   - name: )
 - uid: Grpc.Core
   commentId: N:Grpc.Core
@@ -1050,18 +1031,16 @@ references:
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase
   isExternal: true
-  href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_InvokeJson_Virtufin_Api_Protos_InvokeJsonRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: InvokeJson(InvokeJsonRequest, ServerCallContext)
   nameWithType: Gateway.GatewayBase.InvokeJson(InvokeJsonRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Gateway.GatewayBase.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)
     name: InvokeJson
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_InvokeJson_Virtufin_Api_Protos_InvokeJsonRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.InvokeJsonRequest
     name: InvokeJsonRequest
-    href: Virtufin.Api.Protos.InvokeJsonRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1072,11 +1051,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)
     name: InvokeJson
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_InvokeJson_Virtufin_Api_Protos_InvokeJsonRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.InvokeJsonRequest
     name: InvokeJsonRequest
-    href: Virtufin.Api.Protos.InvokeJsonRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1093,7 +1070,6 @@ references:
 - uid: Virtufin.Api.Protos.InvokeJsonRequest
   commentId: T:Virtufin.Api.Protos.InvokeJsonRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.InvokeJsonRequest.html
   name: InvokeJsonRequest
   nameWithType: InvokeJsonRequest
   fullName: Virtufin.Api.Protos.InvokeJsonRequest
@@ -1116,7 +1092,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.InvokeJsonResponse
     name: InvokeJsonResponse
-    href: Virtufin.Api.Protos.InvokeJsonResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1128,24 +1103,21 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.InvokeJsonResponse
     name: InvokeJsonResponse
-    href: Virtufin.Api.Protos.InvokeJsonResponse.html
   - name: )
 - uid: Virtufin.Api.Protos.Gateway.GatewayBase.ListServices(Virtufin.Api.Protos.ListServicesRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.ListServices(Virtufin.Api.Protos.ListServicesRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase
   isExternal: true
-  href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_ListServices_Virtufin_Api_Protos_ListServicesRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: ListServices(ListServicesRequest, ServerCallContext)
   nameWithType: Gateway.GatewayBase.ListServices(ListServicesRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Gateway.GatewayBase.ListServices(Virtufin.Api.Protos.ListServicesRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.ListServices(Virtufin.Api.Protos.ListServicesRequest,Grpc.Core.ServerCallContext)
     name: ListServices
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_ListServices_Virtufin_Api_Protos_ListServicesRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.ListServicesRequest
     name: ListServicesRequest
-    href: Virtufin.Api.Protos.ListServicesRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1156,11 +1128,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.ListServices(Virtufin.Api.Protos.ListServicesRequest,Grpc.Core.ServerCallContext)
     name: ListServices
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_ListServices_Virtufin_Api_Protos_ListServicesRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.ListServicesRequest
     name: ListServicesRequest
-    href: Virtufin.Api.Protos.ListServicesRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1177,7 +1147,6 @@ references:
 - uid: Virtufin.Api.Protos.ListServicesRequest
   commentId: T:Virtufin.Api.Protos.ListServicesRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.ListServicesRequest.html
   name: ListServicesRequest
   nameWithType: ListServicesRequest
   fullName: Virtufin.Api.Protos.ListServicesRequest
@@ -1200,7 +1169,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.ListServicesResponse
     name: ListServicesResponse
-    href: Virtufin.Api.Protos.ListServicesResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1212,24 +1180,21 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.ListServicesResponse
     name: ListServicesResponse
-    href: Virtufin.Api.Protos.ListServicesResponse.html
   - name: )
 - uid: Virtufin.Api.Protos.Gateway.GatewayBase.ListMethods(Virtufin.Api.Protos.ListMethodsRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.ListMethods(Virtufin.Api.Protos.ListMethodsRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase
   isExternal: true
-  href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_ListMethods_Virtufin_Api_Protos_ListMethodsRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: ListMethods(ListMethodsRequest, ServerCallContext)
   nameWithType: Gateway.GatewayBase.ListMethods(ListMethodsRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Gateway.GatewayBase.ListMethods(Virtufin.Api.Protos.ListMethodsRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.ListMethods(Virtufin.Api.Protos.ListMethodsRequest,Grpc.Core.ServerCallContext)
     name: ListMethods
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_ListMethods_Virtufin_Api_Protos_ListMethodsRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.ListMethodsRequest
     name: ListMethodsRequest
-    href: Virtufin.Api.Protos.ListMethodsRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1240,11 +1205,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.ListMethods(Virtufin.Api.Protos.ListMethodsRequest,Grpc.Core.ServerCallContext)
     name: ListMethods
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_ListMethods_Virtufin_Api_Protos_ListMethodsRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.ListMethodsRequest
     name: ListMethodsRequest
-    href: Virtufin.Api.Protos.ListMethodsRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1261,7 +1224,6 @@ references:
 - uid: Virtufin.Api.Protos.ListMethodsRequest
   commentId: T:Virtufin.Api.Protos.ListMethodsRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.ListMethodsRequest.html
   name: ListMethodsRequest
   nameWithType: ListMethodsRequest
   fullName: Virtufin.Api.Protos.ListMethodsRequest
@@ -1284,7 +1246,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.ListMethodsResponse
     name: ListMethodsResponse
-    href: Virtufin.Api.Protos.ListMethodsResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1296,13 +1257,12 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.ListMethodsResponse
     name: ListMethodsResponse
-    href: Virtufin.Api.Protos.ListMethodsResponse.html
   - name: )
 - uid: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase
   isExternal: true
-  href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_Subscribe_Virtufin_Api_Protos_SubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
   name: Subscribe(SubscribeRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
   nameWithType: Gateway.GatewayBase.Subscribe(SubscribeRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
   fullName: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
@@ -1312,11 +1272,9 @@ references:
   spec.csharp:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
     name: Subscribe
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_Subscribe_Virtufin_Api_Protos_SubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.SubscribeRequest
     name: SubscribeRequest
-    href: Virtufin.Api.Protos.SubscribeRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -1326,7 +1284,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: '>'
   - name: ','
   - name: " "
@@ -1338,11 +1295,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
     name: Subscribe
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_Subscribe_Virtufin_Api_Protos_SubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.SubscribeRequest
     name: SubscribeRequest
-    href: Virtufin.Api.Protos.SubscribeRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -1354,7 +1309,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: )
   - name: ','
   - name: " "
@@ -1372,7 +1326,6 @@ references:
 - uid: Virtufin.Api.Protos.SubscribeRequest
   commentId: T:Virtufin.Api.Protos.SubscribeRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.SubscribeRequest.html
   name: SubscribeRequest
   nameWithType: SubscribeRequest
   fullName: Virtufin.Api.Protos.SubscribeRequest
@@ -1395,7 +1348,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -1407,7 +1359,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: )
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
@@ -1449,7 +1400,7 @@ references:
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase
   isExternal: true
-  href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_WatchSystemEvents_Virtufin_Api_Protos_SystemEventsRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
   name: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
   nameWithType: Gateway.GatewayBase.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
   fullName: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
@@ -1459,11 +1410,9 @@ references:
   spec.csharp:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
     name: WatchSystemEvents
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_WatchSystemEvents_Virtufin_Api_Protos_SystemEventsRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.SystemEventsRequest
     name: SystemEventsRequest
-    href: Virtufin.Api.Protos.SystemEventsRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -1473,7 +1422,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: '>'
   - name: ','
   - name: " "
@@ -1485,11 +1433,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
     name: WatchSystemEvents
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_WatchSystemEvents_Virtufin_Api_Protos_SystemEventsRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.SystemEventsRequest
     name: SystemEventsRequest
-    href: Virtufin.Api.Protos.SystemEventsRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -1501,7 +1447,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: )
   - name: ','
   - name: " "
@@ -1519,7 +1464,6 @@ references:
 - uid: Virtufin.Api.Protos.SystemEventsRequest
   commentId: T:Virtufin.Api.Protos.SystemEventsRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.SystemEventsRequest.html
   name: SystemEventsRequest
   nameWithType: SystemEventsRequest
   fullName: Virtufin.Api.Protos.SystemEventsRequest
@@ -1527,18 +1471,16 @@ references:
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase
   isExternal: true
-  href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_GetMethodSchema_Virtufin_Api_Protos_GetMethodSchemaRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: GetMethodSchema(GetMethodSchemaRequest, ServerCallContext)
   nameWithType: Gateway.GatewayBase.GetMethodSchema(GetMethodSchemaRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
     name: GetMethodSchema
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_GetMethodSchema_Virtufin_Api_Protos_GetMethodSchemaRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.GetMethodSchemaRequest
     name: GetMethodSchemaRequest
-    href: Virtufin.Api.Protos.GetMethodSchemaRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1549,11 +1491,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
     name: GetMethodSchema
-    href: Virtufin.Api.Protos.Gateway.GatewayBase.html#Virtufin_Api_Protos_Gateway_GatewayBase_GetMethodSchema_Virtufin_Api_Protos_GetMethodSchemaRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.GetMethodSchemaRequest
     name: GetMethodSchemaRequest
-    href: Virtufin.Api.Protos.GetMethodSchemaRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1570,7 +1510,6 @@ references:
 - uid: Virtufin.Api.Protos.GetMethodSchemaRequest
   commentId: T:Virtufin.Api.Protos.GetMethodSchemaRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.GetMethodSchemaRequest.html
   name: GetMethodSchemaRequest
   nameWithType: GetMethodSchemaRequest
   fullName: Virtufin.Api.Protos.GetMethodSchemaRequest
@@ -1593,7 +1532,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.GetMethodSchemaResponse
     name: GetMethodSchemaResponse
-    href: Virtufin.Api.Protos.GetMethodSchemaResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1605,5 +1543,4 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.GetMethodSchemaResponse
     name: GetMethodSchemaResponse
-    href: Virtufin.Api.Protos.GetMethodSchemaResponse.html
   - name: )

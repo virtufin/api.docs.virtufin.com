@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/1abe6fc252ca73f7a123eebcebbf7371957ff732" target="_blank" rel="noopener" class="commit-badge" title="View commit 1abe6fc">
+            <a href="{git_repo_url}/commit/5d9527aacbe7e34d0e967f9e1c2d990cbf75fdf4" target="_blank" rel="noopener" class="commit-badge" title="View commit 5d9527a">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">1abe6fc</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5d9527a</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,7 +117,7 @@ Provides state management operations with Dapr backend and pub/sub notifications
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Virtufin.Api.Protos.State.html">State</a>.<a class="xref" href="Virtufin.Api.Protos.State.StateBase.html">StateBase</a></div>
+      <div><span class="xref">State</span>.<span class="xref">StateBase</span></div>
       <div><span class="xref">StateService</span></div>
     </dd>
   </dl>
@@ -219,7 +219,7 @@ Provides state management operations with Dapr backend and pub/sub notifications
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.DeleteStateRequest.html">DeleteStateRequest</a></dt>
+    <dt><code>request</code> <span class="xref">DeleteStateRequest</span></dt>
     <dd><p>The delete state request containing service, key, and optional includeValue.</p>
 </dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
@@ -229,7 +229,7 @@ Provides state management operations with Dapr backend and pub/sub notifications
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.DeleteStateResponse.html">DeleteStateResponse</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">DeleteStateResponse</span>&gt;</dt>
     <dd><p>The delete state response with success status.</p>
 </dd>
   </dl>
@@ -262,7 +262,7 @@ Only returns keys that have been registered via RegisterKeys.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetAllStateRequest.html">GetAllStateRequest</a></dt>
+    <dt><code>request</code> <span class="xref">GetAllStateRequest</span></dt>
     <dd><p>The get all state request containing the service name.</p>
 </dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
@@ -272,7 +272,7 @@ Only returns keys that have been registered via RegisterKeys.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetAllStateResponse.html">GetAllStateResponse</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">GetAllStateResponse</span>&gt;</dt>
     <dd><p>A dictionary of all state key-value pairs for the service.</p>
 </dd>
   </dl>
@@ -304,7 +304,7 @@ Only returns keys that have been registered via RegisterKeys.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.GetStateRequest.html">GetStateRequest</a></dt>
+    <dt><code>request</code> <span class="xref">GetStateRequest</span></dt>
     <dd><p>The get state request containing service and key.</p>
 </dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
@@ -314,7 +314,7 @@ Only returns keys that have been registered via RegisterKeys.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.GetStateResponse.html">GetStateResponse</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">GetStateResponse</span>&gt;</dt>
     <dd><p>The state value and etag.</p>
 </dd>
   </dl>
@@ -353,7 +353,7 @@ Services should call this on startup to re-register their known keys.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.RegisterKeysRequest.html">RegisterKeysRequest</a></dt>
+    <dt><code>request</code> <span class="xref">RegisterKeysRequest</span></dt>
     <dd><p>The register keys request containing service name and keys to register.</p>
 </dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
@@ -363,7 +363,7 @@ Services should call this on startup to re-register their known keys.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.RegisterKeysResponse.html">RegisterKeysResponse</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">RegisterKeysResponse</span>&gt;</dt>
     <dd><p>The register keys response with success status.</p>
 </dd>
   </dl>
@@ -395,7 +395,7 @@ Services should call this on startup to re-register their known keys.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="Virtufin.Api.Protos.SaveStateRequest.html">SaveStateRequest</a></dt>
+    <dt><code>request</code> <span class="xref">SaveStateRequest</span></dt>
     <dd><p>The save state request containing service, key, value, and optional etag.</p>
 </dd>
     <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
@@ -405,7 +405,7 @@ Services should call this on startup to re-register their known keys.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Protos.SaveStateResponse.html">SaveStateResponse</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">SaveStateResponse</span>&gt;</dt>
     <dd><p>The save state response with success status.</p>
 </dd>
   </dl>

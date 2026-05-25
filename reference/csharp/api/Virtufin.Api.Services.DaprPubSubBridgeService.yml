@@ -562,7 +562,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -574,7 +573,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: )
 - uid: System.String
   commentId: T:System.String

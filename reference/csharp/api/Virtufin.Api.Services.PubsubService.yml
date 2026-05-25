@@ -236,26 +236,21 @@ references:
 - uid: Virtufin.Api.Protos.Pubsub.PubsubBase
   commentId: T:Virtufin.Api.Protos.Pubsub.PubsubBase
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.Pubsub.html
   name: Pubsub.PubsubBase
   nameWithType: Pubsub.PubsubBase
   fullName: Virtufin.Api.Protos.Pubsub.PubsubBase
   spec.csharp:
   - uid: Virtufin.Api.Protos.Pubsub
     name: Pubsub
-    href: Virtufin.Api.Protos.Pubsub.html
   - name: .
   - uid: Virtufin.Api.Protos.Pubsub.PubsubBase
     name: PubsubBase
-    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html
   spec.vb:
   - uid: Virtufin.Api.Protos.Pubsub
     name: Pubsub
-    href: Virtufin.Api.Protos.Pubsub.html
   - name: .
   - uid: Virtufin.Api.Protos.Pubsub.PubsubBase
     name: PubsubBase
-    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -484,34 +479,27 @@ references:
   fullName: System
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
-  href: Virtufin.html
   name: Virtufin.Api.Protos
   nameWithType: Virtufin.Api.Protos
   fullName: Virtufin.Api.Protos
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
 - uid: Virtufin.Api.Services.PubsubService.#ctor*
   commentId: Overload:Virtufin.Api.Services.PubsubService.#ctor
   href: Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService__ctor_Dapr_Client_DaprClient_Virtufin_Api_Services_PubsubSubscriptionManager_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_PubsubService__
@@ -659,18 +647,16 @@ references:
   commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Pubsub.PubsubBase
   isExternal: true
-  href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_PublishEvent_Virtufin_Api_Protos_PublishRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: PublishEvent(PublishRequest, ServerCallContext)
   nameWithType: Pubsub.PubsubBase.PublishEvent(PublishRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
     name: PublishEvent
-    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_PublishEvent_Virtufin_Api_Protos_PublishRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.PublishRequest
     name: PublishRequest
-    href: Virtufin.Api.Protos.PublishRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -681,11 +667,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
     name: PublishEvent
-    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_PublishEvent_Virtufin_Api_Protos_PublishRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.PublishRequest
     name: PublishRequest
-    href: Virtufin.Api.Protos.PublishRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -702,7 +686,6 @@ references:
 - uid: Virtufin.Api.Protos.PublishRequest
   commentId: T:Virtufin.Api.Protos.PublishRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.PublishRequest.html
   name: PublishRequest
   nameWithType: PublishRequest
   fullName: Virtufin.Api.Protos.PublishRequest
@@ -733,7 +716,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.PublishResponse
     name: PublishResponse
-    href: Virtufin.Api.Protos.PublishResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -745,7 +727,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PublishResponse
     name: PublishResponse
-    href: Virtufin.Api.Protos.PublishResponse.html
   - name: )
 - uid: Grpc.Core
   commentId: N:Grpc.Core
@@ -838,7 +819,7 @@ references:
   commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Pubsub.PubsubBase
   isExternal: true
-  href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_Subscribe_Virtufin_Api_Protos_PubsubSubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
   name: Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
   nameWithType: Pubsub.PubsubBase.Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
   fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, Grpc.Core.ServerCallContext)
@@ -848,11 +829,9 @@ references:
   spec.csharp:
   - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
     name: Subscribe
-    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_Subscribe_Virtufin_Api_Protos_PubsubSubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.PubsubSubscribeRequest
     name: PubsubSubscribeRequest
-    href: Virtufin.Api.Protos.PubsubSubscribeRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -862,7 +841,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: '>'
   - name: ','
   - name: " "
@@ -874,11 +852,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
     name: Subscribe
-    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_Subscribe_Virtufin_Api_Protos_PubsubSubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.PubsubSubscribeRequest
     name: PubsubSubscribeRequest
-    href: Virtufin.Api.Protos.PubsubSubscribeRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -890,7 +866,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: )
   - name: ','
   - name: " "
@@ -908,7 +883,6 @@ references:
 - uid: Virtufin.Api.Protos.PubsubSubscribeRequest
   commentId: T:Virtufin.Api.Protos.PubsubSubscribeRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.PubsubSubscribeRequest.html
   name: PubsubSubscribeRequest
   nameWithType: PubsubSubscribeRequest
   fullName: Virtufin.Api.Protos.PubsubSubscribeRequest
@@ -931,7 +905,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -943,7 +916,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: )
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
@@ -985,18 +957,16 @@ references:
   commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Pubsub.PubsubBase
   isExternal: true
-  href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_Unsubscribe_Virtufin_Api_Protos_UnsubscribeRequest_Grpc_Core_ServerCallContext_
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   name: Unsubscribe(UnsubscribeRequest, ServerCallContext)
   nameWithType: Pubsub.PubsubBase.Unsubscribe(UnsubscribeRequest, ServerCallContext)
   fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
   - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
     name: Unsubscribe
-    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_Unsubscribe_Virtufin_Api_Protos_UnsubscribeRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.UnsubscribeRequest
     name: UnsubscribeRequest
-    href: Virtufin.Api.Protos.UnsubscribeRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1007,11 +977,9 @@ references:
   spec.vb:
   - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
     name: Unsubscribe
-    href: Virtufin.Api.Protos.Pubsub.PubsubBase.html#Virtufin_Api_Protos_Pubsub_PubsubBase_Unsubscribe_Virtufin_Api_Protos_UnsubscribeRequest_Grpc_Core_ServerCallContext_
   - name: (
   - uid: Virtufin.Api.Protos.UnsubscribeRequest
     name: UnsubscribeRequest
-    href: Virtufin.Api.Protos.UnsubscribeRequest.html
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1028,7 +996,6 @@ references:
 - uid: Virtufin.Api.Protos.UnsubscribeRequest
   commentId: T:Virtufin.Api.Protos.UnsubscribeRequest
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.UnsubscribeRequest.html
   name: UnsubscribeRequest
   nameWithType: UnsubscribeRequest
   fullName: Virtufin.Api.Protos.UnsubscribeRequest
@@ -1051,7 +1018,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.UnsubscribeResponse
     name: UnsubscribeResponse
-    href: Virtufin.Api.Protos.UnsubscribeResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1063,5 +1029,4 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.UnsubscribeResponse
     name: UnsubscribeResponse
-    href: Virtufin.Api.Protos.UnsubscribeResponse.html
   - name: )

@@ -2339,7 +2339,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.SaveStateResponse
     name: SaveStateResponse
-    href: Virtufin.Api.Protos.SaveStateResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -2351,7 +2350,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.SaveStateResponse
     name: SaveStateResponse
-    href: Virtufin.Api.Protos.SaveStateResponse.html
   - name: )
 - uid: System.Threading
   commentId: N:System.Threading
@@ -2405,7 +2403,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.DeleteStateResponse
     name: DeleteStateResponse
-    href: Virtufin.Api.Protos.DeleteStateResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -2417,7 +2414,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.DeleteStateResponse
     name: DeleteStateResponse
-    href: Virtufin.Api.Protos.DeleteStateResponse.html
   - name: )
 - uid: Virtufin.Api.Client.GatewayClient.GetStateAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.GetStateAsync
@@ -2658,7 +2654,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.PublishResponse
     name: PublishResponse
-    href: Virtufin.Api.Protos.PublishResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -2670,7 +2665,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PublishResponse
     name: PublishResponse
-    href: Virtufin.Api.Protos.PublishResponse.html
   - name: )
 - uid: Virtufin.Api.Client.GatewayClient.SubscribeToTopic*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.SubscribeToTopic
@@ -2697,7 +2691,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.AsyncServerStreamingCall`1
@@ -2709,7 +2702,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: )
 - uid: Grpc.Core.AsyncServerStreamingCall`1
   commentId: T:Grpc.Core.AsyncServerStreamingCall`1
@@ -2770,40 +2762,32 @@ references:
 - uid: Virtufin.Api.Protos.UnsubscribeResponse
   commentId: T:Virtufin.Api.Protos.UnsubscribeResponse
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.UnsubscribeResponse.html
   name: UnsubscribeResponse
   nameWithType: UnsubscribeResponse
   fullName: Virtufin.Api.Protos.UnsubscribeResponse
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
-  href: Virtufin.html
   name: Virtufin.Api.Protos
   nameWithType: Virtufin.Api.Protos
   fullName: Virtufin.Api.Protos
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
 - uid: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync
   href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopicAsync_System_String_System_Threading_CancellationToken_
@@ -2829,7 +2813,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.UnsubscribeResponse
     name: UnsubscribeResponse
-    href: Virtufin.Api.Protos.UnsubscribeResponse.html
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -2841,7 +2824,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.UnsubscribeResponse
     name: UnsubscribeResponse
-    href: Virtufin.Api.Protos.UnsubscribeResponse.html
   - name: )
 - uid: Virtufin.Api.Client.GatewayClient.Subscribe*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.Subscribe
@@ -2903,7 +2885,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.AsyncServerStreamingCall`1
@@ -2915,7 +2896,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-    href: Virtufin.Api.Protos.TopicEventRequest.html
   - name: )
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1

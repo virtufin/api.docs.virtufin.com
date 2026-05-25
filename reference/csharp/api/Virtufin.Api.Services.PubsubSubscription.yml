@@ -496,7 +496,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -508,7 +507,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: )
 - uid: Grpc.Core.IServerStreamWriter`1
   commentId: T:Grpc.Core.IServerStreamWriter`1

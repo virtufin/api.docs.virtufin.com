@@ -375,7 +375,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: ','
   - name: " "
   - uid: Virtufin.Api.Services.PubsubSubscription
@@ -391,7 +390,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: ','
   - name: " "
   - uid: Virtufin.Api.Services.PubsubSubscription
@@ -496,7 +494,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -516,7 +513,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -619,7 +615,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -640,7 +635,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -1364,7 +1358,6 @@ references:
   - name: <
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -1376,7 +1369,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
-    href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   - name: )
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
@@ -1697,37 +1689,29 @@ references:
 - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
   commentId: T:Virtufin.Api.Protos.PubsubSubscribeResponse
   parent: Virtufin.Api.Protos
-  href: Virtufin.Api.Protos.PubsubSubscribeResponse.html
   name: PubsubSubscribeResponse
   nameWithType: PubsubSubscribeResponse
   fullName: Virtufin.Api.Protos.PubsubSubscribeResponse
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
-  href: Virtufin.html
   name: Virtufin.Api.Protos
   nameWithType: Virtufin.Api.Protos
   fullName: Virtufin.Api.Protos
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
-    href: Virtufin.html
   - name: .
   - uid: Virtufin.Api
     name: Api
-    href: Virtufin.Api.html
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-    href: Virtufin.Api.Protos.html
