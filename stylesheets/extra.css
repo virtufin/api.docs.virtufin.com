@@ -28,3 +28,8 @@
 .md-source-commit-badge:hover svg rect {
   fill: #dee2e6;
 }
+
+/* Footer copyright — expand to full width so build date sits flush right */
+.md-copyright {
+  flex: 1;
+}
