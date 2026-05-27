@@ -107,11 +107,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 45
+    startLine: 47
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Saves state for a service and broadcasts a state change event.
+  summary: >-
+    Saves state for a service and broadcasts a state change event.
+
+    Uses optimistic concurrency when an ETag is provided.
   example: []
   syntax:
     content: public override Task<SaveStateResponse> SaveState(SaveStateRequest request, ServerCallContext context)
@@ -128,6 +131,10 @@ items:
     content.vb: Public Overrides Function SaveState(request As SaveStateRequest, context As ServerCallContext) As Task(Of SaveStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.SaveState*
+  exceptions:
+  - type: Grpc.Core.RpcException
+    commentId: T:Grpc.Core.RpcException
+    description: StatusCode.Aborted when ETag mismatch occurs.
 - uid: Virtufin.Api.Services.StateService.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.StateService.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   id: GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
@@ -146,7 +153,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 114
+    startLine: 120
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -189,7 +196,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetAllState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 162
+    startLine: 168
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -231,7 +238,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: RegisterKeys
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 209
+    startLine: 215
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -273,18 +280,21 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 273
+    startLine: 281
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Deletes state for a service and key, then broadcasts a state change event.
+  summary: >-
+    Deletes state for a service and key, then broadcasts a state change event.
+
+    Supports optimistic concurrency via ETag — throws Aborted on mismatch.
   example: []
   syntax:
     content: public override Task<DeleteStateResponse> DeleteState(DeleteStateRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.DeleteStateRequest
-      description: The delete state request containing service, key, and optional includeValue.
+      description: The delete state request containing service, key, optional etag, and optional includeValue.
     - id: context
       type: Grpc.Core.ServerCallContext
       description: The server call context.
@@ -294,6 +304,10 @@ items:
     content.vb: Public Overrides Function DeleteState(request As DeleteStateRequest, context As ServerCallContext) As Task(Of DeleteStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.DeleteState*
+  exceptions:
+  - type: Grpc.Core.RpcException
+    commentId: T:Grpc.Core.RpcException
+    description: StatusCode.Aborted when ETag mismatch occurs.
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -776,6 +790,13 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Grpc.Core.RpcException
+  commentId: T:Grpc.Core.RpcException
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/RpcException.cs
+  name: RpcException
+  nameWithType: RpcException
+  fullName: Grpc.Core.RpcException
 - uid: Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
@@ -948,13 +969,6 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: Grpc.Core.RpcException
-  commentId: T:Grpc.Core.RpcException
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/RpcException.cs
-  name: RpcException
-  nameWithType: RpcException
-  fullName: Grpc.Core.RpcException
 - uid: Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase

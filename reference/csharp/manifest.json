@@ -284,6 +284,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.yml\" sourcestartlinenumber=\"1\">Health check that reports Dapr circuit breaker state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.HealthChecks.DaprHealthCheck.yml",
       "output": {
         ".html": {
@@ -295,6 +309,20 @@
       "IsMRef": true,
       "Title": "Virtufin.Api.HealthChecks.DaprHealthCheck",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.HealthChecks.DaprResiliencePipeline",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.yml\" sourcestartlinenumber=\"1\">Provides resilience policies for Dapr operations with retry and circuit breaker.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -575,6 +603,20 @@
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.StateService",
       "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.StateService.yml\" sourcestartlinenumber=\"1\">Implementation of the gRPC State service.\nProvides state management operations with Dapr backend and pub/sub notifications.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.SubscriptionHealthSweeperHostedService",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.yml\" sourcestartlinenumber=\"1\">Background service that periodically sweeps subscriptions and removes dead ones.\nReplaces per-subscription fire-and-forget health monitoring tasks.</p>\n"
     },
     {
       "type": "ManagedReference",

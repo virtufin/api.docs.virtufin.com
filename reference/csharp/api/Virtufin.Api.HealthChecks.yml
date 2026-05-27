@@ -4,7 +4,9 @@ items:
   commentId: N:Virtufin.Api.HealthChecks
   id: Virtufin.Api.HealthChecks
   children:
+  - Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   - Virtufin.Api.HealthChecks.DaprHealthCheck
+  - Virtufin.Api.HealthChecks.DaprResiliencePipeline
   - Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
   langs:
   - csharp
@@ -16,6 +18,19 @@ items:
   assemblies:
   - Virtufin.Api
 references:
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  parent: Virtufin.Api.HealthChecks
+  href: Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
+  name: DaprResiliencePipeline
+  nameWithType: DaprResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+  commentId: T:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+  href: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html
+  name: DaprCircuitBreakerHealthCheck
+  nameWithType: DaprCircuitBreakerHealthCheck
+  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
 - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
   commentId: T:Virtufin.Api.HealthChecks.DaprHealthCheck
   href: Virtufin.Api.HealthChecks.DaprHealthCheck.html
@@ -28,3 +43,33 @@ references:
   name: GrpcChannelPoolHealthCheck
   nameWithType: GrpcChannelPoolHealthCheck
   fullName: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+- uid: Virtufin.Api.HealthChecks
+  commentId: N:Virtufin.Api.HealthChecks
+  href: Virtufin.html
+  name: Virtufin.Api.HealthChecks
+  nameWithType: Virtufin.Api.HealthChecks
+  fullName: Virtufin.Api.HealthChecks
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.HealthChecks
+    name: HealthChecks
+    href: Virtufin.Api.HealthChecks.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.HealthChecks
+    name: HealthChecks
+    href: Virtufin.Api.HealthChecks.html

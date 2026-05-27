@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class GrpcCallResult | Virtufin API - C# Reference </title>
+      <title>Class DaprCircuitBreakerHealthCheck | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class GrpcCallResult | Virtufin API - C# Reference ">
+      <meta name="title" content="Class DaprCircuitBreakerHealthCheck | Virtufin API - C# Reference ">
       
-      <meta name="description" content="Represents the result of a gRPC call invocation.">
+      <meta name="description" content="Health check that reports Dapr circuit breaker state.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,25 +88,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.GrpcCallResult">
+        <article data-uid="Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck">
 
 
 
-  <h1 id="Virtufin_Api_Services_GrpcCallResult" data-uid="Virtufin.Api.Services.GrpcCallResult" class="text-break">
-Class GrpcCallResult  
+  <h1 id="Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck" data-uid="Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck" class="text-break">
+Class DaprCircuitBreakerHealthCheck  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Services.html">Services</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.HealthChecks.html">HealthChecks</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents the result of a gRPC call invocation.</p>
+  <div class="markdown summary"><p>Health check that reports Dapr circuit breaker state.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GrpcCallResult</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DaprCircuitBreakerHealthCheck : IHealthCheck</code></pre>
   </div>
 
 
@@ -116,10 +116,16 @@ Class GrpcCallResult
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">GrpcCallResult</span></div>
+      <div><span class="xref">DaprCircuitBreakerHealthCheck</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.ihealthcheck">IHealthCheck</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -138,9 +144,6 @@ Class GrpcCallResult
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -153,14 +156,14 @@ Class GrpcCallResult
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Virtufin_Api_Services_GrpcCallResult_Data_" data-uid="Virtufin.Api.Services.GrpcCallResult.Data*"></a>
+  <a id="Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck__ctor_" data-uid="Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor*"></a>
 
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_Data" data-uid="Virtufin.Api.Services.GrpcCallResult.Data">
-  Data
+  <h3 id="Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck__ctor_Virtufin_Api_HealthChecks_DaprResiliencePipeline_" data-uid="Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)">
+  DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
   
   </h3>
 
@@ -168,16 +171,12 @@ Class GrpcCallResult
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Data { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DaprCircuitBreakerHealthCheck(DaprResiliencePipeline resilience)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>resilience</code> <a class="xref" href="Virtufin.Api.HealthChecks.DaprResiliencePipeline.html">DaprResiliencePipeline</a></dt>
     <dd></dd>
   </dl>
 
@@ -188,122 +187,48 @@ Class GrpcCallResult
 
 
 
-  <a id="Virtufin_Api_Services_GrpcCallResult_Message_" data-uid="Virtufin.Api.Services.GrpcCallResult.Message*"></a>
 
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_Message" data-uid="Virtufin.Api.Services.GrpcCallResult.Message">
-  Message
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck_CheckHealthAsync_" data-uid="Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync*"></a>
+
+  <h3 id="Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_" data-uid="Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)">
+  CheckHealthAsync(HealthCheckContext, CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Runs the health check, returning the status of the component being checked.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Message { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;HealthCheckResult&gt; CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.healthcheckcontext">HealthCheckContext</a></dt>
+    <dd><p>A context object associated with the current execution.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> that can be used to cancel the health check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.healthcheckresult">HealthCheckResult</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a> that completes when the health check has finished, yielding the status of the component being checked.</p>
+</dd>
   </dl>
 
 
 
-
-
-
-
-
-  <a id="Virtufin_Api_Services_GrpcCallResult_ResponseDataBytes_" data-uid="Virtufin.Api.Services.GrpcCallResult.ResponseDataBytes*"></a>
-
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_ResponseDataBytes" data-uid="Virtufin.Api.Services.GrpcCallResult.ResponseDataBytes">
-  ResponseDataBytes
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[]? ResponseDataBytes { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_GrpcCallResult_StatusCode_" data-uid="Virtufin.Api.Services.GrpcCallResult.StatusCode*"></a>
-
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_StatusCode" data-uid="Virtufin.Api.Services.GrpcCallResult.StatusCode">
-  StatusCode
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? StatusCode { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_GrpcCallResult_Success_" data-uid="Virtufin.Api.Services.GrpcCallResult.Success*"></a>
-
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_Success" data-uid="Virtufin.Api.Services.GrpcCallResult.Success">
-  Success
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Success { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

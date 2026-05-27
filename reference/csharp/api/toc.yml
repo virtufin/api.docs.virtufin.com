@@ -73,8 +73,14 @@ items:
   name: Virtufin.Api.HealthChecks
   type: Namespace
   items:
+  - uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+    name: DaprCircuitBreakerHealthCheck
+    type: Class
   - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
     name: DaprHealthCheck
+    type: Class
+  - uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+    name: DaprResiliencePipeline
     type: Class
   - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
     name: GrpcChannelPoolHealthCheck
@@ -133,6 +139,9 @@ items:
     type: Class
   - uid: Virtufin.Api.Services.StateService
     name: StateService
+    type: Class
+  - uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
+    name: SubscriptionHealthSweeperHostedService
     type: Class
   - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
     name: SubscriptionManagerBase<TEvent, TSubscription>

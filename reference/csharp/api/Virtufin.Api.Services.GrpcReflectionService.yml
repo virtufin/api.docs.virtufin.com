@@ -5,12 +5,14 @@ items:
   id: GrpcReflectionService
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})
+  - Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService},Microsoft.Extensions.Configuration.IConfiguration)
   - Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
+  - Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)
   langs:
   - csharp
   - vb
@@ -47,16 +49,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})
-  commentId: M:Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})
-  id: '#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})'
+- uid: Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService},Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService},Microsoft.Extensions.Configuration.IConfiguration)
+  id: '#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService},Microsoft.Extensions.Configuration.IConfiguration)'
   parent: Virtufin.Api.Services.GrpcReflectionService
   langs:
   - csharp
   - vb
-  name: GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>)
-  nameWithType: GrpcReflectionService.GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>)
-  fullName: Virtufin.Api.Services.GrpcReflectionService.GrpcReflectionService(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GrpcReflectionService>)
+  name: GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>, IConfiguration)
+  nameWithType: GrpcReflectionService.GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>, IConfiguration)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GrpcReflectionService(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GrpcReflectionService>, Microsoft.Extensions.Configuration.IConfiguration)
   type: Constructor
   source:
     remote:
@@ -65,22 +67,24 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public GrpcReflectionService(GrpcChannelPool channelPool, ILogger<GrpcReflectionService> logger)
+    content: public GrpcReflectionService(GrpcChannelPool channelPool, ILogger<GrpcReflectionService> logger, IConfiguration configuration)
     parameters:
     - id: channelPool
       type: Virtufin.Api.Services.GrpcChannelPool
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService}
-    content.vb: Public Sub New(channelPool As GrpcChannelPool, logger As ILogger(Of GrpcReflectionService))
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Public Sub New(channelPool As GrpcChannelPool, logger As ILogger(Of GrpcReflectionService), configuration As IConfiguration)
   overload: Virtufin.Api.Services.GrpcReflectionService.#ctor*
-  nameWithType.vb: GrpcReflectionService.New(GrpcChannelPool, ILogger(Of GrpcReflectionService))
-  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.New(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GrpcReflectionService))
-  name.vb: New(GrpcChannelPool, ILogger(Of GrpcReflectionService))
+  nameWithType.vb: GrpcReflectionService.New(GrpcChannelPool, ILogger(Of GrpcReflectionService), IConfiguration)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.New(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GrpcReflectionService), Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: New(GrpcChannelPool, ILogger(Of GrpcReflectionService), IConfiguration)
 - uid: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(System.String,System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(System.String,System.Threading.CancellationToken)
   id: GetMethodsAsync(System.String,System.Threading.CancellationToken)
@@ -99,7 +103,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodsAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 41
+    startLine: 45
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -140,7 +144,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodSchemaAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 56
+    startLine: 60
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -187,7 +191,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ExecuteCallAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 78
+    startLine: 82
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -237,7 +241,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ExecuteCallAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 138
+    startLine: 142
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -287,7 +291,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetFileDescriptorProtosAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 195
+    startLine: 199
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -310,6 +314,72 @@ items:
   nameWithType.vb: GrpcReflectionService.GetFileDescriptorProtosAsync(String, CancellationToken)
   fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(String, System.Threading.CancellationToken)
   name.vb: GetFileDescriptorProtosAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)
+  id: InvalidateCache(System.String)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: InvalidateCache(string)
+  nameWithType: GrpcReflectionService.InvalidateCache(string)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: InvalidateCache
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 216
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Invalidates the reflection descriptor cache for a specific service.
+
+    Forces a reload of proto schemas on the next access.
+  example: []
+  syntax:
+    content: public void InvalidateCache(string serviceName)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The service name to invalidate.
+    content.vb: Public Sub InvalidateCache(serviceName As String)
+  overload: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache*
+  nameWithType.vb: GrpcReflectionService.InvalidateCache(String)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(String)
+  name.vb: InvalidateCache(String)
+- uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
+  id: InvalidateAllCaches
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: InvalidateAllCaches()
+  nameWithType: GrpcReflectionService.InvalidateAllCaches()
+  fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: InvalidateAllCaches
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 227
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Invalidates all service descriptor caches.
+  example: []
+  syntax:
+    content: public void InvalidateAllCaches()
+    content.vb: Public Sub InvalidateAllCaches()
+  overload: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches*
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -580,7 +650,7 @@ references:
   fullName: System
 - uid: Virtufin.Api.Services.GrpcReflectionService.#ctor*
   commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.#ctor
-  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService__ctor_Virtufin_Api_Services_GrpcChannelPool_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GrpcReflectionService__
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService__ctor_Virtufin_Api_Services_GrpcChannelPool_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GrpcReflectionService__Microsoft_Extensions_Configuration_IConfiguration_
   name: GrpcReflectionService
   nameWithType: GrpcReflectionService.GrpcReflectionService
   fullName: Virtufin.Api.Services.GrpcReflectionService.GrpcReflectionService
@@ -627,6 +697,14 @@ references:
     name: GrpcReflectionService
     href: Virtufin.Api.Services.GrpcReflectionService.html
   - name: )
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
 - uid: Microsoft.Extensions.Logging.ILogger`1
   commentId: T:Microsoft.Extensions.Logging.ILogger`1
   isExternal: true
@@ -692,6 +770,43 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
 - uid: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync*
   commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync
   href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetMethodsAsync_System_String_System_Threading_CancellationToken_
@@ -1128,3 +1243,15 @@ references:
     isExternal: true
   - name: )
   - name: )
+- uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.InvalidateCache
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_InvalidateCache_System_String_
+  name: InvalidateCache
+  nameWithType: GrpcReflectionService.InvalidateCache
+  fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache
+- uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_InvalidateAllCaches
+  name: InvalidateAllCaches
+  nameWithType: GrpcReflectionService.InvalidateAllCaches
+  fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches

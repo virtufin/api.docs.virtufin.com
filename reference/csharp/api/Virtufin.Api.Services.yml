@@ -21,6 +21,7 @@ items:
   - Virtufin.Api.Services.PubsubSubscriptionManager
   - Virtufin.Api.Services.ServiceMethodInfo
   - Virtufin.Api.Services.StateService
+  - Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
   - Virtufin.Api.Services.SubscriptionManagerBase`2
   langs:
   - csharp
@@ -139,6 +140,12 @@ references:
   name: StateService
   nameWithType: StateService
   fullName: Virtufin.Api.Services.StateService
+- uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
+  commentId: T:Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
+  href: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html
+  name: SubscriptionHealthSweeperHostedService
+  nameWithType: SubscriptionHealthSweeperHostedService
+  fullName: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
 - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
   commentId: T:Virtufin.Api.Services.SubscriptionManagerBase`2
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html

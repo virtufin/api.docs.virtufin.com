@@ -1213,6 +1213,44 @@ references:
   commentId: N:Virtufin.Api.HealthChecks
   fullName: Virtufin.Api.HealthChecks
   nameWithType: Virtufin.Api.HealthChecks
+- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+  name: DaprCircuitBreakerHealthCheck
+  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html
+  commentId: T:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+  nameWithType: DaprCircuitBreakerHealthCheck
+- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  name: DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
+  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck__ctor_Virtufin_Api_HealthChecks_DaprResiliencePipeline_
+  commentId: M:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  name.vb: New(DaprResiliencePipeline)
+  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  fullName.vb: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.New(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  nameWithType: DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
+  nameWithType.vb: DaprCircuitBreakerHealthCheck.New(DaprResiliencePipeline)
+- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor*
+  name: DaprCircuitBreakerHealthCheck
+  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck__ctor_
+  commentId: Overload:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck
+  fullName.vb: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.New
+  nameWithType: DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck
+  nameWithType.vb: DaprCircuitBreakerHealthCheck.New
+- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  name: CheckHealthAsync(HealthCheckContext, CancellationToken)
+  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
+  nameWithType: DaprCircuitBreakerHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
+- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync*
+  name: CheckHealthAsync
+  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck_CheckHealthAsync_
+  commentId: Overload:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync
+  nameWithType: DaprCircuitBreakerHealthCheck.CheckHealthAsync
 - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
   name: DaprHealthCheck
   href: api/Virtufin.Api.HealthChecks.DaprHealthCheck.html
@@ -1251,6 +1289,69 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.HealthChecks.DaprHealthCheck.CheckHealthAsync
   nameWithType: DaprHealthCheck.CheckHealthAsync
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  name: DaprResiliencePipeline
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
+  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  nameWithType: DaprResiliencePipeline
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline})
+  name: DaprResiliencePipeline(ILogger<DaprResiliencePipeline>)
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_HealthChecks_DaprResiliencePipeline__
+  commentId: M:Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline})
+  name.vb: New(ILogger(Of DaprResiliencePipeline))
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.DaprResiliencePipeline(Microsoft.Extensions.Logging.ILogger<Virtufin.Api.HealthChecks.DaprResiliencePipeline>)
+  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.HealthChecks.DaprResiliencePipeline))
+  nameWithType: DaprResiliencePipeline.DaprResiliencePipeline(ILogger<DaprResiliencePipeline>)
+  nameWithType.vb: DaprResiliencePipeline.New(ILogger(Of DaprResiliencePipeline))
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor*
+  name: DaprResiliencePipeline
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_
+  commentId: Overload:Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.DaprResiliencePipeline
+  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.New
+  nameWithType: DaprResiliencePipeline.DaprResiliencePipeline
+  nameWithType.vb: DaprResiliencePipeline.New
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
+  name: CircuitBroken
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_CircuitBroken
+  commentId: P:Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
+  nameWithType: DaprResiliencePipeline.CircuitBroken
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken*
+  name: CircuitBroken
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_CircuitBroken_
+  commentId: Overload:Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
+  isSpec: "True"
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
+  nameWithType: DaprResiliencePipeline.CircuitBroken
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  name: ExecuteAsync(Func<CancellationToken, Task>, CancellationToken)
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  name.vb: ExecuteAsync(Func(Of CancellationToken, Task), CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  nameWithType: DaprResiliencePipeline.ExecuteAsync(Func<CancellationToken, Task>, CancellationToken)
+  nameWithType.vb: DaprResiliencePipeline.ExecuteAsync(Func(Of CancellationToken, Task), CancellationToken)
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync_
+  commentId: Overload:Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync
+  nameWithType: DaprResiliencePipeline.ExecuteAsync
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: ExecuteAsync<T>(Func<CancellationToken, Task<T>>, CancellationToken)
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync__1_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: ExecuteAsync(Of T)(Func(Of CancellationToken, Task(Of T)), CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync<T>(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(Of T)(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: DaprResiliencePipeline.ExecuteAsync<T>(Func<CancellationToken, Task<T>>, CancellationToken)
+  nameWithType.vb: DaprResiliencePipeline.ExecuteAsync(Of T)(Func(Of CancellationToken, Task(Of T)), CancellationToken)
 - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
   name: GrpcChannelPoolHealthCheck
   href: api/Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.html
@@ -1938,15 +2039,15 @@ references:
   commentId: T:Virtufin.Api.Services.GrpcReflectionService
   fullName: Virtufin.Api.Services.GrpcReflectionService
   nameWithType: GrpcReflectionService
-- uid: Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})
-  name: GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>)
-  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService__ctor_Virtufin_Api_Services_GrpcChannelPool_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GrpcReflectionService__
-  commentId: M:Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService})
-  name.vb: New(GrpcChannelPool, ILogger(Of GrpcReflectionService))
-  fullName: Virtufin.Api.Services.GrpcReflectionService.GrpcReflectionService(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GrpcReflectionService>)
-  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.New(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GrpcReflectionService))
-  nameWithType: GrpcReflectionService.GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>)
-  nameWithType.vb: GrpcReflectionService.New(GrpcChannelPool, ILogger(Of GrpcReflectionService))
+- uid: Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService},Microsoft.Extensions.Configuration.IConfiguration)
+  name: GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>, IConfiguration)
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService__ctor_Virtufin_Api_Services_GrpcChannelPool_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GrpcReflectionService__Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService},Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: New(GrpcChannelPool, ILogger(Of GrpcReflectionService), IConfiguration)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GrpcReflectionService(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GrpcReflectionService>, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.New(Virtufin.Api.Services.GrpcChannelPool, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GrpcReflectionService), Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: GrpcReflectionService.GrpcReflectionService(GrpcChannelPool, ILogger<GrpcReflectionService>, IConfiguration)
+  nameWithType.vb: GrpcReflectionService.New(GrpcChannelPool, ILogger(Of GrpcReflectionService), IConfiguration)
 - uid: Virtufin.Api.Services.GrpcReflectionService.#ctor*
   name: GrpcReflectionService
   href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService__ctor_
@@ -2030,6 +2131,35 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync
   nameWithType: GrpcReflectionService.GetMethodsAsync
+- uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
+  name: InvalidateAllCaches()
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_InvalidateAllCaches
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
+  fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches()
+  nameWithType: GrpcReflectionService.InvalidateAllCaches()
+- uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches*
+  name: InvalidateAllCaches
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_InvalidateAllCaches_
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
+  nameWithType: GrpcReflectionService.InvalidateAllCaches
+- uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)
+  name: InvalidateCache(string)
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_InvalidateCache_System_String_
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)
+  name.vb: InvalidateCache(String)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(string)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(String)
+  nameWithType: GrpcReflectionService.InvalidateCache(string)
+  nameWithType.vb: GrpcReflectionService.InvalidateCache(String)
+- uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache*
+  name: InvalidateCache
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_InvalidateCache_
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.InvalidateCache
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache
+  nameWithType: GrpcReflectionService.InvalidateCache
 - uid: Virtufin.Api.Services.MethodSchema
   name: MethodSchema
   href: api/Virtufin.Api.Services.MethodSchema.html
@@ -2607,6 +2737,44 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.SaveState
   nameWithType: StateService.SaveState
+- uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
+  name: SubscriptionHealthSweeperHostedService
+  href: api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html
+  commentId: T:Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
+  fullName: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
+  nameWithType: SubscriptionHealthSweeperHostedService
+- uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.#ctor(Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.SubscriptionHealthSweeperHostedService})
+  name: SubscriptionHealthSweeperHostedService(PubsubSubscriptionManager, ILogger<SubscriptionHealthSweeperHostedService>)
+  href: api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html#Virtufin_Api_Services_SubscriptionHealthSweeperHostedService__ctor_Virtufin_Api_Services_PubsubSubscriptionManager_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_SubscriptionHealthSweeperHostedService__
+  commentId: M:Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.#ctor(Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.SubscriptionHealthSweeperHostedService})
+  name.vb: New(PubsubSubscriptionManager, ILogger(Of SubscriptionHealthSweeperHostedService))
+  fullName: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.SubscriptionHealthSweeperHostedService(Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.SubscriptionHealthSweeperHostedService>)
+  fullName.vb: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.New(Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.SubscriptionHealthSweeperHostedService))
+  nameWithType: SubscriptionHealthSweeperHostedService.SubscriptionHealthSweeperHostedService(PubsubSubscriptionManager, ILogger<SubscriptionHealthSweeperHostedService>)
+  nameWithType.vb: SubscriptionHealthSweeperHostedService.New(PubsubSubscriptionManager, ILogger(Of SubscriptionHealthSweeperHostedService))
+- uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.#ctor*
+  name: SubscriptionHealthSweeperHostedService
+  href: api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html#Virtufin_Api_Services_SubscriptionHealthSweeperHostedService__ctor_
+  commentId: Overload:Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.SubscriptionHealthSweeperHostedService
+  fullName.vb: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.New
+  nameWithType: SubscriptionHealthSweeperHostedService.SubscriptionHealthSweeperHostedService
+  nameWithType.vb: SubscriptionHealthSweeperHostedService.New
+- uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html#Virtufin_Api_Services_SubscriptionHealthSweeperHostedService_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: SubscriptionHealthSweeperHostedService.ExecuteAsync(CancellationToken)
+- uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html#Virtufin_Api_Services_SubscriptionHealthSweeperHostedService_ExecuteAsync_
+  commentId: Overload:Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.ExecuteAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.ExecuteAsync
+  nameWithType: SubscriptionHealthSweeperHostedService.ExecuteAsync
 - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
   name: SubscriptionManagerBase<TEvent, TSubscription>
   href: api/Virtufin.Api.Services.SubscriptionManagerBase-2.html
