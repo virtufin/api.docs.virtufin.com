@@ -138,18 +138,15 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 22
+    startLine: 17
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Creates a new SubscriptionManagerBase instance.
-  example: []
   syntax:
     content: protected SubscriptionManagerBase(ILogger logger)
     parameters:
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger
-      description: The logger for recording subscription operations.
     content.vb: Protected Sub New(logger As ILogger)
   overload: Virtufin.Api.Services.SubscriptionManagerBase`2.#ctor*
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription).New(ILogger)
@@ -173,7 +170,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetSubscriptionKey
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 32
+    startLine: 27
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -210,7 +207,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetIdleTimeout
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 39
+    startLine: 34
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -247,7 +244,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SendEventAsync
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 47
+    startLine: 42
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -289,7 +286,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 54
+    startLine: 49
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -326,7 +323,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 74
+    startLine: 66
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -364,7 +361,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: BroadcastAsync
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 94
+    startLine: 86
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -408,7 +405,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetSubscriptionCount
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 155
+    startLine: 117
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -446,7 +443,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetTotalSubscriptionCount
     path: ../../../src/Virtufin.Api/Services/SubscriptionManagerBase.cs
-    startLine: 162
+    startLine: 124
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

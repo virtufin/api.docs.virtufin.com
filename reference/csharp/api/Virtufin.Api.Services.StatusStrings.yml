@@ -1,34 +1,34 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.PubSubTopics
-  commentId: T:Virtufin.Api.Services.PubSubTopics
-  id: PubSubTopics
+- uid: Virtufin.Api.Services.StatusStrings
+  commentId: T:Virtufin.Api.Services.StatusStrings
+  id: StatusStrings
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubSubTopics.StateChanges
-  - Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  - Virtufin.Api.Services.PubSubTopics.SystemEvents
+  - Virtufin.Api.Services.StatusStrings.Conflict
+  - Virtufin.Api.Services.StatusStrings.Error
+  - Virtufin.Api.Services.StatusStrings.Ok
   langs:
   - csharp
   - vb
-  name: PubSubTopics
-  nameWithType: PubSubTopics
-  fullName: Virtufin.Api.Services.PubSubTopics
+  name: StatusStrings
+  nameWithType: StatusStrings
+  fullName: Virtufin.Api.Services.StatusStrings
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: PubSubTopics
+    id: StatusStrings
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 8
+    startLine: 15
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public static class PubSubTopics
-    content.vb: Public Module PubSubTopics
+    content: public static class StatusStrings
+    content.vb: Public Module StatusStrings
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,87 +39,87 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.PubSubTopics.StateChanges
-  commentId: F:Virtufin.Api.Services.PubSubTopics.StateChanges
-  id: StateChanges
-  parent: Virtufin.Api.Services.PubSubTopics
+- uid: Virtufin.Api.Services.StatusStrings.Ok
+  commentId: F:Virtufin.Api.Services.StatusStrings.Ok
+  id: Ok
+  parent: Virtufin.Api.Services.StatusStrings
   langs:
   - csharp
   - vb
-  name: StateChanges
-  nameWithType: PubSubTopics.StateChanges
-  fullName: Virtufin.Api.Services.PubSubTopics.StateChanges
+  name: Ok
+  nameWithType: StatusStrings.Ok
+  fullName: Virtufin.Api.Services.StatusStrings.Ok
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: StateChanges
+    id: Ok
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 10
+    startLine: 17
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string StateChanges = "state-changes"
+    content: public const string Ok = "OK"
     return:
       type: System.String
-    content.vb: Public Const StateChanges As String = "state-changes"
-- uid: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SystemEvents
-  id: SystemEvents
-  parent: Virtufin.Api.Services.PubSubTopics
+    content.vb: Public Const Ok As String = "OK"
+- uid: Virtufin.Api.Services.StatusStrings.Error
+  commentId: F:Virtufin.Api.Services.StatusStrings.Error
+  id: Error
+  parent: Virtufin.Api.Services.StatusStrings
   langs:
   - csharp
   - vb
-  name: SystemEvents
-  nameWithType: PubSubTopics.SystemEvents
-  fullName: Virtufin.Api.Services.PubSubTopics.SystemEvents
+  name: Error
+  nameWithType: StatusStrings.Error
+  fullName: Virtufin.Api.Services.StatusStrings.Error
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SystemEvents
+    id: Error
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 11
+    startLine: 18
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string SystemEvents = "system-events"
+    content: public const string Error = "ERROR"
     return:
       type: System.String
-    content.vb: Public Const SystemEvents As String = "system-events"
-- uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  id: SubscriptionKeyPrefix
-  parent: Virtufin.Api.Services.PubSubTopics
+    content.vb: Public Const Error As String = "ERROR"
+- uid: Virtufin.Api.Services.StatusStrings.Conflict
+  commentId: F:Virtufin.Api.Services.StatusStrings.Conflict
+  id: Conflict
+  parent: Virtufin.Api.Services.StatusStrings
   langs:
   - csharp
   - vb
-  name: SubscriptionKeyPrefix
-  nameWithType: PubSubTopics.SubscriptionKeyPrefix
-  fullName: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
+  name: Conflict
+  nameWithType: StatusStrings.Conflict
+  fullName: Virtufin.Api.Services.StatusStrings.Conflict
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SubscriptionKeyPrefix
+    id: Conflict
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 12
+    startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string SubscriptionKeyPrefix = "pubsub/"
+    content: public const string Conflict = "CONFLICT"
     return:
       type: System.String
-    content.vb: Public Const SubscriptionKeyPrefix As String = "pubsub/"
+    content.vb: Public Const Conflict As String = "CONFLICT"
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services

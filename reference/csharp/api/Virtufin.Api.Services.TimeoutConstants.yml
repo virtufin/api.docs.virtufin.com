@@ -1,34 +1,34 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.PubSubTopics
-  commentId: T:Virtufin.Api.Services.PubSubTopics
-  id: PubSubTopics
+- uid: Virtufin.Api.Services.TimeoutConstants
+  commentId: T:Virtufin.Api.Services.TimeoutConstants
+  id: TimeoutConstants
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubSubTopics.StateChanges
-  - Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  - Virtufin.Api.Services.PubSubTopics.SystemEvents
+  - Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
+  - Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
+  - Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
   langs:
   - csharp
   - vb
-  name: PubSubTopics
-  nameWithType: PubSubTopics
-  fullName: Virtufin.Api.Services.PubSubTopics
+  name: TimeoutConstants
+  nameWithType: TimeoutConstants
+  fullName: Virtufin.Api.Services.TimeoutConstants
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: PubSubTopics
+    id: TimeoutConstants
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 8
+    startLine: 31
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public static class PubSubTopics
-    content.vb: Public Module PubSubTopics
+    content: public static class TimeoutConstants
+    content.vb: Public Module TimeoutConstants
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,87 +39,87 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.PubSubTopics.StateChanges
-  commentId: F:Virtufin.Api.Services.PubSubTopics.StateChanges
-  id: StateChanges
-  parent: Virtufin.Api.Services.PubSubTopics
+- uid: Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
+  id: SendEventTimeoutSeconds
+  parent: Virtufin.Api.Services.TimeoutConstants
   langs:
   - csharp
   - vb
-  name: StateChanges
-  nameWithType: PubSubTopics.StateChanges
-  fullName: Virtufin.Api.Services.PubSubTopics.StateChanges
+  name: SendEventTimeoutSeconds
+  nameWithType: TimeoutConstants.SendEventTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: StateChanges
+    id: SendEventTimeoutSeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 10
+    startLine: 33
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string StateChanges = "state-changes"
+    content: public const int SendEventTimeoutSeconds = 5
     return:
-      type: System.String
-    content.vb: Public Const StateChanges As String = "state-changes"
-- uid: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SystemEvents
-  id: SystemEvents
-  parent: Virtufin.Api.Services.PubSubTopics
+      type: System.Int32
+    content.vb: Public Const SendEventTimeoutSeconds As Integer = 5
+- uid: Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
+  id: MessageHandlingTimeoutSeconds
+  parent: Virtufin.Api.Services.TimeoutConstants
   langs:
   - csharp
   - vb
-  name: SystemEvents
-  nameWithType: PubSubTopics.SystemEvents
-  fullName: Virtufin.Api.Services.PubSubTopics.SystemEvents
+  name: MessageHandlingTimeoutSeconds
+  nameWithType: TimeoutConstants.MessageHandlingTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SystemEvents
+    id: MessageHandlingTimeoutSeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 11
+    startLine: 34
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string SystemEvents = "system-events"
+    content: public const int MessageHandlingTimeoutSeconds = 30
     return:
-      type: System.String
-    content.vb: Public Const SystemEvents As String = "system-events"
-- uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  id: SubscriptionKeyPrefix
-  parent: Virtufin.Api.Services.PubSubTopics
+      type: System.Int32
+    content.vb: Public Const MessageHandlingTimeoutSeconds As Integer = 30
+- uid: Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
+  id: SubscriptionIdleTimeoutMinutes
+  parent: Virtufin.Api.Services.TimeoutConstants
   langs:
   - csharp
   - vb
-  name: SubscriptionKeyPrefix
-  nameWithType: PubSubTopics.SubscriptionKeyPrefix
-  fullName: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
+  name: SubscriptionIdleTimeoutMinutes
+  nameWithType: TimeoutConstants.SubscriptionIdleTimeoutMinutes
+  fullName: Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SubscriptionKeyPrefix
+    id: SubscriptionIdleTimeoutMinutes
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 12
+    startLine: 35
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string SubscriptionKeyPrefix = "pubsub/"
+    content: public const int SubscriptionIdleTimeoutMinutes = 5
     return:
-      type: System.String
-    content.vb: Public Const SubscriptionKeyPrefix As String = "pubsub/"
+      type: System.Int32
+    content.vb: Public Const SubscriptionIdleTimeoutMinutes As Integer = 5
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -388,14 +388,14 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

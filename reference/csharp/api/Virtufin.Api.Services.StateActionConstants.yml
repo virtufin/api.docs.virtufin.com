@@ -1,34 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.PubSubTopics
-  commentId: T:Virtufin.Api.Services.PubSubTopics
-  id: PubSubTopics
+- uid: Virtufin.Api.Services.StateActionConstants
+  commentId: T:Virtufin.Api.Services.StateActionConstants
+  id: StateActionConstants
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubSubTopics.StateChanges
-  - Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  - Virtufin.Api.Services.PubSubTopics.SystemEvents
+  - Virtufin.Api.Services.StateActionConstants.Delete
+  - Virtufin.Api.Services.StateActionConstants.Save
   langs:
   - csharp
   - vb
-  name: PubSubTopics
-  nameWithType: PubSubTopics
-  fullName: Virtufin.Api.Services.PubSubTopics
+  name: StateActionConstants
+  nameWithType: StateActionConstants
+  fullName: Virtufin.Api.Services.StateActionConstants
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: PubSubTopics
+    id: StateActionConstants
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 8
+    startLine: 43
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public static class PubSubTopics
-    content.vb: Public Module PubSubTopics
+    content: public static class StateActionConstants
+    content.vb: Public Module StateActionConstants
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,87 +38,60 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.PubSubTopics.StateChanges
-  commentId: F:Virtufin.Api.Services.PubSubTopics.StateChanges
-  id: StateChanges
-  parent: Virtufin.Api.Services.PubSubTopics
+- uid: Virtufin.Api.Services.StateActionConstants.Save
+  commentId: F:Virtufin.Api.Services.StateActionConstants.Save
+  id: Save
+  parent: Virtufin.Api.Services.StateActionConstants
   langs:
   - csharp
   - vb
-  name: StateChanges
-  nameWithType: PubSubTopics.StateChanges
-  fullName: Virtufin.Api.Services.PubSubTopics.StateChanges
+  name: Save
+  nameWithType: StateActionConstants.Save
+  fullName: Virtufin.Api.Services.StateActionConstants.Save
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: StateChanges
+    id: Save
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 10
+    startLine: 45
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string StateChanges = "state-changes"
+    content: public const string Save = "save"
     return:
       type: System.String
-    content.vb: Public Const StateChanges As String = "state-changes"
-- uid: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SystemEvents
-  id: SystemEvents
-  parent: Virtufin.Api.Services.PubSubTopics
+    content.vb: Public Const Save As String = "save"
+- uid: Virtufin.Api.Services.StateActionConstants.Delete
+  commentId: F:Virtufin.Api.Services.StateActionConstants.Delete
+  id: Delete
+  parent: Virtufin.Api.Services.StateActionConstants
   langs:
   - csharp
   - vb
-  name: SystemEvents
-  nameWithType: PubSubTopics.SystemEvents
-  fullName: Virtufin.Api.Services.PubSubTopics.SystemEvents
+  name: Delete
+  nameWithType: StateActionConstants.Delete
+  fullName: Virtufin.Api.Services.StateActionConstants.Delete
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SystemEvents
+    id: Delete
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 11
+    startLine: 46
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string SystemEvents = "system-events"
+    content: public const string Delete = "delete"
     return:
       type: System.String
-    content.vb: Public Const SystemEvents As String = "system-events"
-- uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  id: SubscriptionKeyPrefix
-  parent: Virtufin.Api.Services.PubSubTopics
-  langs:
-  - csharp
-  - vb
-  name: SubscriptionKeyPrefix
-  nameWithType: PubSubTopics.SubscriptionKeyPrefix
-  fullName: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SubscriptionKeyPrefix
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 12
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string SubscriptionKeyPrefix = "pubsub/"
-    return:
-      type: System.String
-    content.vb: Public Const SubscriptionKeyPrefix As String = "pubsub/"
+    content.vb: Public Const Delete As String = "delete"
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services

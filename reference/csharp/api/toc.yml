@@ -101,6 +101,9 @@ items:
   - uid: Virtufin.Api.Services.DaprPubSubBridgeService
     name: DaprPubSubBridgeService
     type: Class
+  - uid: Virtufin.Api.Services.DateTimeFormatConstants
+    name: DateTimeFormatConstants
+    type: Class
   - uid: Virtufin.Api.Services.FieldSchema
     name: FieldSchema
     type: Class
@@ -109,6 +112,9 @@ items:
     type: Class
   - uid: Virtufin.Api.Services.GrpcCallResult
     name: GrpcCallResult
+    type: Class
+  - uid: Virtufin.Api.Services.GrpcCallStatusCodes
+    name: GrpcCallStatusCodes
     type: Class
   - uid: Virtufin.Api.Services.GrpcChannelPool
     name: GrpcChannelPool
@@ -137,13 +143,22 @@ items:
   - uid: Virtufin.Api.Services.ServiceMethodInfo
     name: ServiceMethodInfo
     type: Class
+  - uid: Virtufin.Api.Services.StateActionConstants
+    name: StateActionConstants
+    type: Class
   - uid: Virtufin.Api.Services.StateService
     name: StateService
+    type: Class
+  - uid: Virtufin.Api.Services.StatusStrings
+    name: StatusStrings
     type: Class
   - uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
     name: SubscriptionHealthSweeperHostedService
     type: Class
   - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
     name: SubscriptionManagerBase<TEvent, TSubscription>
+    type: Class
+  - uid: Virtufin.Api.Services.TimeoutConstants
+    name: TimeoutConstants
     type: Class
 memberLayout: SamePage

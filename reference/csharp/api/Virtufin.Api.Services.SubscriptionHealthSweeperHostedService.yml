@@ -21,14 +21,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscriptionHealthSweeperHostedService
     path: ../../../src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   summary: >-
     Background service that periodically sweeps subscriptions and removes dead ones.
 
-    Replaces per-subscription fire-and-forget health monitoring tasks.
+    Uses heartbeat writes to detect subscriptions whose clients have disconnected.
   example: []
   syntax:
     content: 'public sealed class SubscriptionHealthSweeperHostedService : BackgroundService, IHostedService, IDisposable'
@@ -68,12 +68,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
-    startLine: 18
+    startLine: 16
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Creates a new SubscriptionHealthSweeperHostedService.
-  example: []
   syntax:
     content: public SubscriptionHealthSweeperHostedService(PubsubSubscriptionManager pubsubManager, ILogger<SubscriptionHealthSweeperHostedService> logger)
     parameters:
@@ -104,7 +102,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ExecuteAsync
     path: ../../../src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
-    startLine: 27
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

@@ -1647,6 +1647,18 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync
   nameWithType: DaprPubSubBridgeService.SubscribeToTopicAsync
+- uid: Virtufin.Api.Services.DateTimeFormatConstants
+  name: DateTimeFormatConstants
+  href: api/Virtufin.Api.Services.DateTimeFormatConstants.html
+  commentId: T:Virtufin.Api.Services.DateTimeFormatConstants
+  fullName: Virtufin.Api.Services.DateTimeFormatConstants
+  nameWithType: DateTimeFormatConstants
+- uid: Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
+  name: Iso8601
+  href: api/Virtufin.Api.Services.DateTimeFormatConstants.html#Virtufin_Api_Services_DateTimeFormatConstants_Iso8601
+  commentId: F:Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
+  fullName: Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
+  nameWithType: DateTimeFormatConstants.Iso8601
 - uid: Virtufin.Api.Services.FieldSchema
   name: FieldSchema
   href: api/Virtufin.Api.Services.FieldSchema.html
@@ -1937,6 +1949,42 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GrpcCallResult.Success
   nameWithType: GrpcCallResult.Success
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes
+  name: GrpcCallStatusCodes
+  href: api/Virtufin.Api.Services.GrpcCallStatusCodes.html
+  commentId: T:Virtufin.Api.Services.GrpcCallStatusCodes
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes
+  nameWithType: GrpcCallStatusCodes
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
+  name: Internal
+  href: api/Virtufin.Api.Services.GrpcCallStatusCodes.html#Virtufin_Api_Services_GrpcCallStatusCodes_Internal
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Internal
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
+  nameWithType: GrpcCallStatusCodes.Internal
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
+  name: InvalidRequest
+  href: api/Virtufin.Api.Services.GrpcCallStatusCodes.html#Virtufin_Api_Services_GrpcCallStatusCodes_InvalidRequest
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
+  nameWithType: GrpcCallStatusCodes.InvalidRequest
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  name: NotFound
+  href: api/Virtufin.Api.Services.GrpcCallStatusCodes.html#Virtufin_Api_Services_GrpcCallStatusCodes_NotFound
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  nameWithType: GrpcCallStatusCodes.NotFound
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  name: Unknown
+  href: api/Virtufin.Api.Services.GrpcCallStatusCodes.html#Virtufin_Api_Services_GrpcCallStatusCodes_Unknown
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  nameWithType: GrpcCallStatusCodes.Unknown
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  name: Unsupported
+  href: api/Virtufin.Api.Services.GrpcCallStatusCodes.html#Virtufin_Api_Services_GrpcCallStatusCodes_Unsupported
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  nameWithType: GrpcCallStatusCodes.Unsupported
 - uid: Virtufin.Api.Services.GrpcChannelPool
   name: GrpcChannelPool
   href: api/Virtufin.Api.Services.GrpcChannelPool.html
@@ -2288,6 +2336,12 @@ references:
   commentId: F:Virtufin.Api.Services.PubSubTopics.StateChanges
   fullName: Virtufin.Api.Services.PubSubTopics.StateChanges
   nameWithType: PubSubTopics.StateChanges
+- uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
+  name: SubscriptionKeyPrefix
+  href: api/Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_SubscriptionKeyPrefix
+  commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
+  fullName: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
+  nameWithType: PubSubTopics.SubscriptionKeyPrefix
 - uid: Virtufin.Api.Services.PubSubTopics.SystemEvents
   name: SystemEvents
   href: api/Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_SystemEvents
@@ -2479,6 +2533,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync
   nameWithType: PubsubSubscriptionManager.BroadcastToTopicAsync
+- uid: Virtufin.Api.Services.PubsubSubscriptionManager.GetAllSubscriptions
+  name: GetAllSubscriptions()
+  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_GetAllSubscriptions
+  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.GetAllSubscriptions
+  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.GetAllSubscriptions()
+  nameWithType: PubsubSubscriptionManager.GetAllSubscriptions()
+- uid: Virtufin.Api.Services.PubsubSubscriptionManager.GetAllSubscriptions*
+  name: GetAllSubscriptions
+  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_GetAllSubscriptions_
+  commentId: Overload:Virtufin.Api.Services.PubsubSubscriptionManager.GetAllSubscriptions
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.GetAllSubscriptions
+  nameWithType: PubsubSubscriptionManager.GetAllSubscriptions
 - uid: Virtufin.Api.Services.PubsubSubscriptionManager.GetIdleTimeout(Virtufin.Api.Services.PubsubSubscription)
   name: GetIdleTimeout(PubsubSubscription)
   href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_GetIdleTimeout_Virtufin_Api_Services_PubsubSubscription_
@@ -2647,6 +2714,24 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.ServiceMethodInfo.ServiceName
   nameWithType: ServiceMethodInfo.ServiceName
+- uid: Virtufin.Api.Services.StateActionConstants
+  name: StateActionConstants
+  href: api/Virtufin.Api.Services.StateActionConstants.html
+  commentId: T:Virtufin.Api.Services.StateActionConstants
+  fullName: Virtufin.Api.Services.StateActionConstants
+  nameWithType: StateActionConstants
+- uid: Virtufin.Api.Services.StateActionConstants.Delete
+  name: Delete
+  href: api/Virtufin.Api.Services.StateActionConstants.html#Virtufin_Api_Services_StateActionConstants_Delete
+  commentId: F:Virtufin.Api.Services.StateActionConstants.Delete
+  fullName: Virtufin.Api.Services.StateActionConstants.Delete
+  nameWithType: StateActionConstants.Delete
+- uid: Virtufin.Api.Services.StateActionConstants.Save
+  name: Save
+  href: api/Virtufin.Api.Services.StateActionConstants.html#Virtufin_Api_Services_StateActionConstants_Save
+  commentId: F:Virtufin.Api.Services.StateActionConstants.Save
+  fullName: Virtufin.Api.Services.StateActionConstants.Save
+  nameWithType: StateActionConstants.Save
 - uid: Virtufin.Api.Services.StateService
   name: StateService
   href: api/Virtufin.Api.Services.StateService.html
@@ -2737,6 +2822,30 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.SaveState
   nameWithType: StateService.SaveState
+- uid: Virtufin.Api.Services.StatusStrings
+  name: StatusStrings
+  href: api/Virtufin.Api.Services.StatusStrings.html
+  commentId: T:Virtufin.Api.Services.StatusStrings
+  fullName: Virtufin.Api.Services.StatusStrings
+  nameWithType: StatusStrings
+- uid: Virtufin.Api.Services.StatusStrings.Conflict
+  name: Conflict
+  href: api/Virtufin.Api.Services.StatusStrings.html#Virtufin_Api_Services_StatusStrings_Conflict
+  commentId: F:Virtufin.Api.Services.StatusStrings.Conflict
+  fullName: Virtufin.Api.Services.StatusStrings.Conflict
+  nameWithType: StatusStrings.Conflict
+- uid: Virtufin.Api.Services.StatusStrings.Error
+  name: Error
+  href: api/Virtufin.Api.Services.StatusStrings.html#Virtufin_Api_Services_StatusStrings_Error
+  commentId: F:Virtufin.Api.Services.StatusStrings.Error
+  fullName: Virtufin.Api.Services.StatusStrings.Error
+  nameWithType: StatusStrings.Error
+- uid: Virtufin.Api.Services.StatusStrings.Ok
+  name: Ok
+  href: api/Virtufin.Api.Services.StatusStrings.html#Virtufin_Api_Services_StatusStrings_Ok
+  commentId: F:Virtufin.Api.Services.StatusStrings.Ok
+  fullName: Virtufin.Api.Services.StatusStrings.Ok
+  nameWithType: StatusStrings.Ok
 - uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
   name: SubscriptionHealthSweeperHostedService
   href: api/Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html
@@ -2958,3 +3067,27 @@ references:
   fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of TEvent, TSubscription)._subscriptions
   nameWithType: SubscriptionManagerBase<TEvent, TSubscription>._subscriptions
   nameWithType.vb: SubscriptionManagerBase(Of TEvent, TSubscription)._subscriptions
+- uid: Virtufin.Api.Services.TimeoutConstants
+  name: TimeoutConstants
+  href: api/Virtufin.Api.Services.TimeoutConstants.html
+  commentId: T:Virtufin.Api.Services.TimeoutConstants
+  fullName: Virtufin.Api.Services.TimeoutConstants
+  nameWithType: TimeoutConstants
+- uid: Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
+  name: MessageHandlingTimeoutSeconds
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_MessageHandlingTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
+  nameWithType: TimeoutConstants.MessageHandlingTimeoutSeconds
+- uid: Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
+  name: SendEventTimeoutSeconds
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_SendEventTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
+  nameWithType: TimeoutConstants.SendEventTimeoutSeconds
+- uid: Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
+  name: SubscriptionIdleTimeoutMinutes
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_SubscriptionIdleTimeoutMinutes
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
+  fullName: Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
+  nameWithType: TimeoutConstants.SubscriptionIdleTimeoutMinutes

@@ -1,34 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.PubSubTopics
-  commentId: T:Virtufin.Api.Services.PubSubTopics
-  id: PubSubTopics
+- uid: Virtufin.Api.Services.DateTimeFormatConstants
+  commentId: T:Virtufin.Api.Services.DateTimeFormatConstants
+  id: DateTimeFormatConstants
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubSubTopics.StateChanges
-  - Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  - Virtufin.Api.Services.PubSubTopics.SystemEvents
+  - Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
   langs:
   - csharp
   - vb
-  name: PubSubTopics
-  nameWithType: PubSubTopics
-  fullName: Virtufin.Api.Services.PubSubTopics
+  name: DateTimeFormatConstants
+  nameWithType: DateTimeFormatConstants
+  fullName: Virtufin.Api.Services.DateTimeFormatConstants
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: PubSubTopics
+    id: DateTimeFormatConstants
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 8
+    startLine: 38
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public static class PubSubTopics
-    content.vb: Public Module PubSubTopics
+    content: public static class DateTimeFormatConstants
+    content.vb: Public Module DateTimeFormatConstants
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,87 +37,33 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.PubSubTopics.StateChanges
-  commentId: F:Virtufin.Api.Services.PubSubTopics.StateChanges
-  id: StateChanges
-  parent: Virtufin.Api.Services.PubSubTopics
+- uid: Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
+  commentId: F:Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
+  id: Iso8601
+  parent: Virtufin.Api.Services.DateTimeFormatConstants
   langs:
   - csharp
   - vb
-  name: StateChanges
-  nameWithType: PubSubTopics.StateChanges
-  fullName: Virtufin.Api.Services.PubSubTopics.StateChanges
+  name: Iso8601
+  nameWithType: DateTimeFormatConstants.Iso8601
+  fullName: Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: StateChanges
+    id: Iso8601
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 10
+    startLine: 40
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string StateChanges = "state-changes"
+    content: public const string Iso8601 = "O"
     return:
       type: System.String
-    content.vb: Public Const StateChanges As String = "state-changes"
-- uid: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SystemEvents
-  id: SystemEvents
-  parent: Virtufin.Api.Services.PubSubTopics
-  langs:
-  - csharp
-  - vb
-  name: SystemEvents
-  nameWithType: PubSubTopics.SystemEvents
-  fullName: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SystemEvents
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 11
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string SystemEvents = "system-events"
-    return:
-      type: System.String
-    content.vb: Public Const SystemEvents As String = "system-events"
-- uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  id: SubscriptionKeyPrefix
-  parent: Virtufin.Api.Services.PubSubTopics
-  langs:
-  - csharp
-  - vb
-  name: SubscriptionKeyPrefix
-  nameWithType: PubSubTopics.SubscriptionKeyPrefix
-  fullName: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SubscriptionKeyPrefix
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 12
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string SubscriptionKeyPrefix = "pubsub/"
-    return:
-      type: System.String
-    content.vb: Public Const SubscriptionKeyPrefix As String = "pubsub/"
+    content.vb: Public Const Iso8601 As String = "O"
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services

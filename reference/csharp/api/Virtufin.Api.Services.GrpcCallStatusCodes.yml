@@ -1,40 +1,36 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.ServiceMethodInfo
-  commentId: T:Virtufin.Api.Services.ServiceMethodInfo
-  id: ServiceMethodInfo
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes
+  commentId: T:Virtufin.Api.Services.GrpcCallStatusCodes
+  id: GrpcCallStatusCodes
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.ServiceMethodInfo.FullName
-  - Virtufin.Api.Services.ServiceMethodInfo.InputTypeFullName
-  - Virtufin.Api.Services.ServiceMethodInfo.IsClientStreaming
-  - Virtufin.Api.Services.ServiceMethodInfo.IsServerStreaming
-  - Virtufin.Api.Services.ServiceMethodInfo.Name
-  - Virtufin.Api.Services.ServiceMethodInfo.OutputTypeFullName
-  - Virtufin.Api.Services.ServiceMethodInfo.ServiceName
+  - Virtufin.Api.Services.GrpcCallStatusCodes.Internal
+  - Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
+  - Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  - Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  - Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
   langs:
   - csharp
   - vb
-  name: ServiceMethodInfo
-  nameWithType: ServiceMethodInfo
-  fullName: Virtufin.Api.Services.ServiceMethodInfo
+  name: GrpcCallStatusCodes
+  nameWithType: GrpcCallStatusCodes
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: ServiceMethodInfo
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1163
+    id: GrpcCallStatusCodes
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 22
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Represents a gRPC method with its metadata.
-  example: []
   syntax:
-    content: public class ServiceMethodInfo
-    content.vb: Public Class ServiceMethodInfo
+    content: public static class GrpcCallStatusCodes
+    content.vb: Public Module GrpcCallStatusCodes
   inheritance:
   - System.Object
   inheritedMembers:
@@ -45,209 +41,141 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.ServiceMethodInfo.Name
-  commentId: P:Virtufin.Api.Services.ServiceMethodInfo.Name
-  id: Name
-  parent: Virtufin.Api.Services.ServiceMethodInfo
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  id: Unknown
+  parent: Virtufin.Api.Services.GrpcCallStatusCodes
   langs:
   - csharp
   - vb
-  name: Name
-  nameWithType: ServiceMethodInfo.Name
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.Name
-  type: Property
+  name: Unknown
+  nameWithType: GrpcCallStatusCodes.Unknown
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Name
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1165
+    id: Unknown
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public string Name { get; set; }
-    parameters: []
+    content: public const string Unknown = "UNKNOWN"
     return:
       type: System.String
-    content.vb: Public Property Name As String
-  overload: Virtufin.Api.Services.ServiceMethodInfo.Name*
-- uid: Virtufin.Api.Services.ServiceMethodInfo.FullName
-  commentId: P:Virtufin.Api.Services.ServiceMethodInfo.FullName
-  id: FullName
-  parent: Virtufin.Api.Services.ServiceMethodInfo
+    content.vb: Public Const Unknown As String = "UNKNOWN"
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  id: NotFound
+  parent: Virtufin.Api.Services.GrpcCallStatusCodes
   langs:
   - csharp
   - vb
-  name: FullName
-  nameWithType: ServiceMethodInfo.FullName
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.FullName
-  type: Property
+  name: NotFound
+  nameWithType: GrpcCallStatusCodes.NotFound
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: FullName
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1166
+    id: NotFound
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 25
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public string FullName { get; set; }
-    parameters: []
+    content: public const string NotFound = "NOT_FOUND"
     return:
       type: System.String
-    content.vb: Public Property FullName As String
-  overload: Virtufin.Api.Services.ServiceMethodInfo.FullName*
-- uid: Virtufin.Api.Services.ServiceMethodInfo.ServiceName
-  commentId: P:Virtufin.Api.Services.ServiceMethodInfo.ServiceName
-  id: ServiceName
-  parent: Virtufin.Api.Services.ServiceMethodInfo
+    content.vb: Public Const NotFound As String = "NOT_FOUND"
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  id: Unsupported
+  parent: Virtufin.Api.Services.GrpcCallStatusCodes
   langs:
   - csharp
   - vb
-  name: ServiceName
-  nameWithType: ServiceMethodInfo.ServiceName
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.ServiceName
-  type: Property
+  name: Unsupported
+  nameWithType: GrpcCallStatusCodes.Unsupported
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: ServiceName
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1167
+    id: Unsupported
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 26
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public string ServiceName { get; set; }
-    parameters: []
+    content: public const string Unsupported = "UNSUPPORTED"
     return:
       type: System.String
-    content.vb: Public Property ServiceName As String
-  overload: Virtufin.Api.Services.ServiceMethodInfo.ServiceName*
-- uid: Virtufin.Api.Services.ServiceMethodInfo.InputTypeFullName
-  commentId: P:Virtufin.Api.Services.ServiceMethodInfo.InputTypeFullName
-  id: InputTypeFullName
-  parent: Virtufin.Api.Services.ServiceMethodInfo
+    content.vb: Public Const Unsupported As String = "UNSUPPORTED"
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Internal
+  id: Internal
+  parent: Virtufin.Api.Services.GrpcCallStatusCodes
   langs:
   - csharp
   - vb
-  name: InputTypeFullName
-  nameWithType: ServiceMethodInfo.InputTypeFullName
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.InputTypeFullName
-  type: Property
+  name: Internal
+  nameWithType: GrpcCallStatusCodes.Internal
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
+  type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: InputTypeFullName
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1168
+    id: Internal
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 27
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public string InputTypeFullName { get; set; }
-    parameters: []
+    content: public const string Internal = "INTERNAL"
     return:
       type: System.String
-    content.vb: Public Property InputTypeFullName As String
-  overload: Virtufin.Api.Services.ServiceMethodInfo.InputTypeFullName*
-- uid: Virtufin.Api.Services.ServiceMethodInfo.OutputTypeFullName
-  commentId: P:Virtufin.Api.Services.ServiceMethodInfo.OutputTypeFullName
-  id: OutputTypeFullName
-  parent: Virtufin.Api.Services.ServiceMethodInfo
+    content.vb: Public Const Internal As String = "INTERNAL"
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
+  id: InvalidRequest
+  parent: Virtufin.Api.Services.GrpcCallStatusCodes
   langs:
   - csharp
   - vb
-  name: OutputTypeFullName
-  nameWithType: ServiceMethodInfo.OutputTypeFullName
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.OutputTypeFullName
-  type: Property
+  name: InvalidRequest
+  nameWithType: GrpcCallStatusCodes.InvalidRequest
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
+  type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: OutputTypeFullName
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1169
+    id: InvalidRequest
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 28
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public string OutputTypeFullName { get; set; }
-    parameters: []
+    content: public const string InvalidRequest = "INVALID_REQUEST"
     return:
       type: System.String
-    content.vb: Public Property OutputTypeFullName As String
-  overload: Virtufin.Api.Services.ServiceMethodInfo.OutputTypeFullName*
-- uid: Virtufin.Api.Services.ServiceMethodInfo.IsClientStreaming
-  commentId: P:Virtufin.Api.Services.ServiceMethodInfo.IsClientStreaming
-  id: IsClientStreaming
-  parent: Virtufin.Api.Services.ServiceMethodInfo
-  langs:
-  - csharp
-  - vb
-  name: IsClientStreaming
-  nameWithType: ServiceMethodInfo.IsClientStreaming
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.IsClientStreaming
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: IsClientStreaming
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1170
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public bool IsClientStreaming { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property IsClientStreaming As Boolean
-  overload: Virtufin.Api.Services.ServiceMethodInfo.IsClientStreaming*
-- uid: Virtufin.Api.Services.ServiceMethodInfo.IsServerStreaming
-  commentId: P:Virtufin.Api.Services.ServiceMethodInfo.IsServerStreaming
-  id: IsServerStreaming
-  parent: Virtufin.Api.Services.ServiceMethodInfo
-  langs:
-  - csharp
-  - vb
-  name: IsServerStreaming
-  nameWithType: ServiceMethodInfo.IsServerStreaming
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.IsServerStreaming
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: IsServerStreaming
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1171
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public bool IsServerStreaming { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property IsServerStreaming As Boolean
-  overload: Virtufin.Api.Services.ServiceMethodInfo.IsServerStreaming*
+    content.vb: Public Const InvalidRequest As String = "INVALID_REQUEST"
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -516,12 +444,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Virtufin.Api.Services.ServiceMethodInfo.Name*
-  commentId: Overload:Virtufin.Api.Services.ServiceMethodInfo.Name
-  href: Virtufin.Api.Services.ServiceMethodInfo.html#Virtufin_Api_Services_ServiceMethodInfo_Name
-  name: Name
-  nameWithType: ServiceMethodInfo.Name
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.Name
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -533,50 +455,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Virtufin.Api.Services.ServiceMethodInfo.FullName*
-  commentId: Overload:Virtufin.Api.Services.ServiceMethodInfo.FullName
-  href: Virtufin.Api.Services.ServiceMethodInfo.html#Virtufin_Api_Services_ServiceMethodInfo_FullName
-  name: FullName
-  nameWithType: ServiceMethodInfo.FullName
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.FullName
-- uid: Virtufin.Api.Services.ServiceMethodInfo.ServiceName*
-  commentId: Overload:Virtufin.Api.Services.ServiceMethodInfo.ServiceName
-  href: Virtufin.Api.Services.ServiceMethodInfo.html#Virtufin_Api_Services_ServiceMethodInfo_ServiceName
-  name: ServiceName
-  nameWithType: ServiceMethodInfo.ServiceName
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.ServiceName
-- uid: Virtufin.Api.Services.ServiceMethodInfo.InputTypeFullName*
-  commentId: Overload:Virtufin.Api.Services.ServiceMethodInfo.InputTypeFullName
-  href: Virtufin.Api.Services.ServiceMethodInfo.html#Virtufin_Api_Services_ServiceMethodInfo_InputTypeFullName
-  name: InputTypeFullName
-  nameWithType: ServiceMethodInfo.InputTypeFullName
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.InputTypeFullName
-- uid: Virtufin.Api.Services.ServiceMethodInfo.OutputTypeFullName*
-  commentId: Overload:Virtufin.Api.Services.ServiceMethodInfo.OutputTypeFullName
-  href: Virtufin.Api.Services.ServiceMethodInfo.html#Virtufin_Api_Services_ServiceMethodInfo_OutputTypeFullName
-  name: OutputTypeFullName
-  nameWithType: ServiceMethodInfo.OutputTypeFullName
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.OutputTypeFullName
-- uid: Virtufin.Api.Services.ServiceMethodInfo.IsClientStreaming*
-  commentId: Overload:Virtufin.Api.Services.ServiceMethodInfo.IsClientStreaming
-  href: Virtufin.Api.Services.ServiceMethodInfo.html#Virtufin_Api_Services_ServiceMethodInfo_IsClientStreaming
-  name: IsClientStreaming
-  nameWithType: ServiceMethodInfo.IsClientStreaming
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.IsClientStreaming
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: Virtufin.Api.Services.ServiceMethodInfo.IsServerStreaming*
-  commentId: Overload:Virtufin.Api.Services.ServiceMethodInfo.IsServerStreaming
-  href: Virtufin.Api.Services.ServiceMethodInfo.html#Virtufin_Api_Services_ServiceMethodInfo_IsServerStreaming
-  name: IsServerStreaming
-  nameWithType: ServiceMethodInfo.IsServerStreaming
-  fullName: Virtufin.Api.Services.ServiceMethodInfo.IsServerStreaming

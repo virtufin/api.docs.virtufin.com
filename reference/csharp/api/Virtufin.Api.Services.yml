@@ -8,9 +8,11 @@ items:
   - Virtufin.Api.Services.ConfigService
   - Virtufin.Api.Services.DaprConstants
   - Virtufin.Api.Services.DaprPubSubBridgeService
+  - Virtufin.Api.Services.DateTimeFormatConstants
   - Virtufin.Api.Services.FieldSchema
   - Virtufin.Api.Services.GatewayService
   - Virtufin.Api.Services.GrpcCallResult
+  - Virtufin.Api.Services.GrpcCallStatusCodes
   - Virtufin.Api.Services.GrpcChannelPool
   - Virtufin.Api.Services.GrpcReflectionService
   - Virtufin.Api.Services.MethodSchema
@@ -20,9 +22,12 @@ items:
   - Virtufin.Api.Services.PubsubSubscription
   - Virtufin.Api.Services.PubsubSubscriptionManager
   - Virtufin.Api.Services.ServiceMethodInfo
+  - Virtufin.Api.Services.StateActionConstants
   - Virtufin.Api.Services.StateService
+  - Virtufin.Api.Services.StatusStrings
   - Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
   - Virtufin.Api.Services.SubscriptionManagerBase`2
+  - Virtufin.Api.Services.TimeoutConstants
   langs:
   - csharp
   - vb
@@ -51,6 +56,36 @@ references:
   name: PubSubTopics
   nameWithType: PubSubTopics
   fullName: Virtufin.Api.Services.PubSubTopics
+- uid: Virtufin.Api.Services.StatusStrings
+  commentId: T:Virtufin.Api.Services.StatusStrings
+  href: Virtufin.Api.Services.StatusStrings.html
+  name: StatusStrings
+  nameWithType: StatusStrings
+  fullName: Virtufin.Api.Services.StatusStrings
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes
+  commentId: T:Virtufin.Api.Services.GrpcCallStatusCodes
+  href: Virtufin.Api.Services.GrpcCallStatusCodes.html
+  name: GrpcCallStatusCodes
+  nameWithType: GrpcCallStatusCodes
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes
+- uid: Virtufin.Api.Services.TimeoutConstants
+  commentId: T:Virtufin.Api.Services.TimeoutConstants
+  href: Virtufin.Api.Services.TimeoutConstants.html
+  name: TimeoutConstants
+  nameWithType: TimeoutConstants
+  fullName: Virtufin.Api.Services.TimeoutConstants
+- uid: Virtufin.Api.Services.DateTimeFormatConstants
+  commentId: T:Virtufin.Api.Services.DateTimeFormatConstants
+  href: Virtufin.Api.Services.DateTimeFormatConstants.html
+  name: DateTimeFormatConstants
+  nameWithType: DateTimeFormatConstants
+  fullName: Virtufin.Api.Services.DateTimeFormatConstants
+- uid: Virtufin.Api.Services.StateActionConstants
+  commentId: T:Virtufin.Api.Services.StateActionConstants
+  href: Virtufin.Api.Services.StateActionConstants.html
+  name: StateActionConstants
+  nameWithType: StateActionConstants
+  fullName: Virtufin.Api.Services.StateActionConstants
 - uid: Virtufin.Api.Services.DaprPubSubBridgeService
   commentId: T:Virtufin.Api.Services.DaprPubSubBridgeService
   parent: Virtufin.Api.Services
