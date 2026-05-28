@@ -1467,6 +1467,9 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.MethodInfo.StreamingType
   nameWithType: MethodInfo.StreamingType
+- uid: Virtufin.Api.Reference
+  name: C# API Reference
+  href: index.html
 - uid: Virtufin.Api.Services
   name: Virtufin.Api.Services
   href: api/Virtufin.Api.Services.html
