@@ -105,7 +105,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ChannelCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 65
+    startLine: 74
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -136,7 +136,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ConfiguredServiceCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 70
+    startLine: 79
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -167,7 +167,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetChannel
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 79
+    startLine: 88
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -212,7 +212,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: EvictChannel
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 117
+    startLine: 126
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -247,7 +247,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 160
+    startLine: 169
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
