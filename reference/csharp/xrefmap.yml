@@ -670,6 +670,25 @@ references:
   commentId: T:Virtufin.Api.Configuration.CronJobConfig
   fullName: Virtufin.Api.Configuration.CronJobConfig
   nameWithType: CronJobConfig
+- uid: Virtufin.Api.Configuration.CronJobConfig.#ctor
+  name: CronJobConfig()
+  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig__ctor
+  commentId: M:Virtufin.Api.Configuration.CronJobConfig.#ctor
+  name.vb: New()
+  fullName: Virtufin.Api.Configuration.CronJobConfig.CronJobConfig()
+  fullName.vb: Virtufin.Api.Configuration.CronJobConfig.New()
+  nameWithType: CronJobConfig.CronJobConfig()
+  nameWithType.vb: CronJobConfig.New()
+- uid: Virtufin.Api.Configuration.CronJobConfig.#ctor*
+  name: CronJobConfig
+  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig__ctor_
+  commentId: Overload:Virtufin.Api.Configuration.CronJobConfig.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Configuration.CronJobConfig.CronJobConfig
+  fullName.vb: Virtufin.Api.Configuration.CronJobConfig.New
+  nameWithType: CronJobConfig.CronJobConfig
+  nameWithType.vb: CronJobConfig.New
 - uid: Virtufin.Api.Configuration.CronJobConfig.Endpoint
   name: Endpoint
   href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig_Endpoint
@@ -715,6 +734,25 @@ references:
   commentId: T:Virtufin.Api.Configuration.GrpcConfig
   fullName: Virtufin.Api.Configuration.GrpcConfig
   nameWithType: GrpcConfig
+- uid: Virtufin.Api.Configuration.GrpcConfig.#ctor
+  name: GrpcConfig()
+  href: api/Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig__ctor
+  commentId: M:Virtufin.Api.Configuration.GrpcConfig.#ctor
+  name.vb: New()
+  fullName: Virtufin.Api.Configuration.GrpcConfig.GrpcConfig()
+  fullName.vb: Virtufin.Api.Configuration.GrpcConfig.New()
+  nameWithType: GrpcConfig.GrpcConfig()
+  nameWithType.vb: GrpcConfig.New()
+- uid: Virtufin.Api.Configuration.GrpcConfig.#ctor*
+  name: GrpcConfig
+  href: api/Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig__ctor_
+  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Configuration.GrpcConfig.GrpcConfig
+  fullName.vb: Virtufin.Api.Configuration.GrpcConfig.New
+  nameWithType: GrpcConfig.GrpcConfig
+  nameWithType.vb: GrpcConfig.New
 - uid: Virtufin.Api.Configuration.GrpcConfig.Host
   name: Host
   href: api/Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_Host
@@ -760,6 +798,25 @@ references:
   commentId: T:Virtufin.Api.Configuration.JobsConfig
   fullName: Virtufin.Api.Configuration.JobsConfig
   nameWithType: JobsConfig
+- uid: Virtufin.Api.Configuration.JobsConfig.#ctor
+  name: JobsConfig()
+  href: api/Virtufin.Api.Configuration.JobsConfig.html#Virtufin_Api_Configuration_JobsConfig__ctor
+  commentId: M:Virtufin.Api.Configuration.JobsConfig.#ctor
+  name.vb: New()
+  fullName: Virtufin.Api.Configuration.JobsConfig.JobsConfig()
+  fullName.vb: Virtufin.Api.Configuration.JobsConfig.New()
+  nameWithType: JobsConfig.JobsConfig()
+  nameWithType.vb: JobsConfig.New()
+- uid: Virtufin.Api.Configuration.JobsConfig.#ctor*
+  name: JobsConfig
+  href: api/Virtufin.Api.Configuration.JobsConfig.html#Virtufin_Api_Configuration_JobsConfig__ctor_
+  commentId: Overload:Virtufin.Api.Configuration.JobsConfig.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Configuration.JobsConfig.JobsConfig
+  fullName.vb: Virtufin.Api.Configuration.JobsConfig.New
+  nameWithType: JobsConfig.JobsConfig
+  nameWithType.vb: JobsConfig.New
 - uid: Virtufin.Api.Configuration.JobsConfig.Crons
   name: Crons
   href: api/Virtufin.Api.Configuration.JobsConfig.html#Virtufin_Api_Configuration_JobsConfig_Crons
@@ -821,6 +878,25 @@ references:
   commentId: T:Virtufin.Api.Configuration.PubsubConfig
   fullName: Virtufin.Api.Configuration.PubsubConfig
   nameWithType: PubsubConfig
+- uid: Virtufin.Api.Configuration.PubsubConfig.#ctor
+  name: PubsubConfig()
+  href: api/Virtufin.Api.Configuration.PubsubConfig.html#Virtufin_Api_Configuration_PubsubConfig__ctor
+  commentId: M:Virtufin.Api.Configuration.PubsubConfig.#ctor
+  name.vb: New()
+  fullName: Virtufin.Api.Configuration.PubsubConfig.PubsubConfig()
+  fullName.vb: Virtufin.Api.Configuration.PubsubConfig.New()
+  nameWithType: PubsubConfig.PubsubConfig()
+  nameWithType.vb: PubsubConfig.New()
+- uid: Virtufin.Api.Configuration.PubsubConfig.#ctor*
+  name: PubsubConfig
+  href: api/Virtufin.Api.Configuration.PubsubConfig.html#Virtufin_Api_Configuration_PubsubConfig__ctor_
+  commentId: Overload:Virtufin.Api.Configuration.PubsubConfig.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Configuration.PubsubConfig.PubsubConfig
+  fullName.vb: Virtufin.Api.Configuration.PubsubConfig.New
+  nameWithType: PubsubConfig.PubsubConfig
+  nameWithType.vb: PubsubConfig.New
 - uid: Virtufin.Api.Configuration.PubsubConfig.PubsubName
   name: PubsubName
   href: api/Virtufin.Api.Configuration.PubsubConfig.html#Virtufin_Api_Configuration_PubsubConfig_PubsubName
@@ -840,6 +916,25 @@ references:
   commentId: T:Virtufin.Api.Configuration.ServiceConfig
   fullName: Virtufin.Api.Configuration.ServiceConfig
   nameWithType: ServiceConfig
+- uid: Virtufin.Api.Configuration.ServiceConfig.#ctor
+  name: ServiceConfig()
+  href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig__ctor
+  commentId: M:Virtufin.Api.Configuration.ServiceConfig.#ctor
+  name.vb: New()
+  fullName: Virtufin.Api.Configuration.ServiceConfig.ServiceConfig()
+  fullName.vb: Virtufin.Api.Configuration.ServiceConfig.New()
+  nameWithType: ServiceConfig.ServiceConfig()
+  nameWithType.vb: ServiceConfig.New()
+- uid: Virtufin.Api.Configuration.ServiceConfig.#ctor*
+  name: ServiceConfig
+  href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig__ctor_
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Configuration.ServiceConfig.ServiceConfig
+  fullName.vb: Virtufin.Api.Configuration.ServiceConfig.New
+  nameWithType: ServiceConfig.ServiceConfig
+  nameWithType.vb: ServiceConfig.New
 - uid: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
   name: DaprAppId
   href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_DaprAppId
@@ -937,6 +1032,25 @@ references:
   commentId: T:Virtufin.Api.Configuration.ServicesConfiguration
   fullName: Virtufin.Api.Configuration.ServicesConfiguration
   nameWithType: ServicesConfiguration
+- uid: Virtufin.Api.Configuration.ServicesConfiguration.#ctor
+  name: ServicesConfiguration()
+  href: api/Virtufin.Api.Configuration.ServicesConfiguration.html#Virtufin_Api_Configuration_ServicesConfiguration__ctor
+  commentId: M:Virtufin.Api.Configuration.ServicesConfiguration.#ctor
+  name.vb: New()
+  fullName: Virtufin.Api.Configuration.ServicesConfiguration.ServicesConfiguration()
+  fullName.vb: Virtufin.Api.Configuration.ServicesConfiguration.New()
+  nameWithType: ServicesConfiguration.ServicesConfiguration()
+  nameWithType.vb: ServicesConfiguration.New()
+- uid: Virtufin.Api.Configuration.ServicesConfiguration.#ctor*
+  name: ServicesConfiguration
+  href: api/Virtufin.Api.Configuration.ServicesConfiguration.html#Virtufin_Api_Configuration_ServicesConfiguration__ctor_
+  commentId: Overload:Virtufin.Api.Configuration.ServicesConfiguration.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Configuration.ServicesConfiguration.ServicesConfiguration
+  fullName.vb: Virtufin.Api.Configuration.ServicesConfiguration.New
+  nameWithType: ServicesConfiguration.ServicesConfiguration
+  nameWithType.vb: ServicesConfiguration.New
 - uid: Virtufin.Api.Configuration.ServicesConfiguration.Services
   name: Services
   href: api/Virtufin.Api.Configuration.ServicesConfiguration.html#Virtufin_Api_Configuration_ServicesConfiguration_Services
@@ -1016,6 +1130,25 @@ references:
   commentId: T:Virtufin.Api.Configuration.StateConfig
   fullName: Virtufin.Api.Configuration.StateConfig
   nameWithType: StateConfig
+- uid: Virtufin.Api.Configuration.StateConfig.#ctor
+  name: StateConfig()
+  href: api/Virtufin.Api.Configuration.StateConfig.html#Virtufin_Api_Configuration_StateConfig__ctor
+  commentId: M:Virtufin.Api.Configuration.StateConfig.#ctor
+  name.vb: New()
+  fullName: Virtufin.Api.Configuration.StateConfig.StateConfig()
+  fullName.vb: Virtufin.Api.Configuration.StateConfig.New()
+  nameWithType: StateConfig.StateConfig()
+  nameWithType.vb: StateConfig.New()
+- uid: Virtufin.Api.Configuration.StateConfig.#ctor*
+  name: StateConfig
+  href: api/Virtufin.Api.Configuration.StateConfig.html#Virtufin_Api_Configuration_StateConfig__ctor_
+  commentId: Overload:Virtufin.Api.Configuration.StateConfig.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Configuration.StateConfig.StateConfig
+  fullName.vb: Virtufin.Api.Configuration.StateConfig.New
+  nameWithType: StateConfig.StateConfig
+  nameWithType.vb: StateConfig.New
 - uid: Virtufin.Api.Configuration.StateConfig.StoreName
   name: StoreName
   href: api/Virtufin.Api.Configuration.StateConfig.html#Virtufin_Api_Configuration_StateConfig_StoreName

@@ -5,6 +5,7 @@ items:
   id: ServiceConfig
   parent: Virtufin.Api.Configuration
   children:
+  - Virtufin.Api.Configuration.ServiceConfig.#ctor
   - Virtufin.Api.Configuration.ServiceConfig.DaprAppId
   - Virtufin.Api.Configuration.ServiceConfig.Grpc
   - Virtufin.Api.Configuration.ServiceConfig.Jobs
@@ -26,7 +27,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ServiceConfig
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -43,6 +44,35 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: Virtufin.Api.Configuration.ServiceConfig.#ctor
+  commentId: M:Virtufin.Api.Configuration.ServiceConfig.#ctor
+  id: '#ctor'
+  parent: Virtufin.Api.Configuration.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: ServiceConfig()
+  nameWithType: ServiceConfig.ServiceConfig()
+  fullName: Virtufin.Api.Configuration.ServiceConfig.ServiceConfig()
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: .ctor
+    path: ../../../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public ServiceConfig()
+    content.vb: Public Sub New()
+  overload: Virtufin.Api.Configuration.ServiceConfig.#ctor*
+  nameWithType.vb: ServiceConfig.New()
+  fullName.vb: Virtufin.Api.Configuration.ServiceConfig.New()
+  name.vb: New()
 - uid: Virtufin.Api.Configuration.ServiceConfig.Name
   commentId: P:Virtufin.Api.Configuration.ServiceConfig.Name
   id: Name
@@ -61,7 +91,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Name
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -90,7 +120,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Protocol
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -119,7 +149,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DaprAppId
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -148,7 +178,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Grpc
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -177,7 +207,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Pubsub
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -206,7 +236,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: State
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -235,7 +265,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Jobs
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 26
+    startLine: 28
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -514,6 +544,15 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Virtufin.Api.Configuration.ServiceConfig.#ctor*
+  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.#ctor
+  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig__ctor
+  name: ServiceConfig
+  nameWithType: ServiceConfig.ServiceConfig
+  fullName: Virtufin.Api.Configuration.ServiceConfig.ServiceConfig
+  nameWithType.vb: ServiceConfig.New
+  fullName.vb: Virtufin.Api.Configuration.ServiceConfig.New
+  name.vb: New
 - uid: Virtufin.Api.Configuration.ServiceConfig.Name*
   commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Name
   href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Name

@@ -5,6 +5,7 @@ items:
   id: ServicesConfiguration
   parent: Virtufin.Api.Configuration
   children:
+  - Virtufin.Api.Configuration.ServicesConfiguration.#ctor
   - Virtufin.Api.Configuration.ServicesConfiguration.Services
   langs:
   - csharp
@@ -39,6 +40,35 @@ items:
   - System.Object.ToString
   extensionMethods:
   - Virtufin.Api.Configuration.ServicesConfiguration.Virtufin.Api.Configuration.ServicesConfigurationExtensions.GetServiceConfig(System.String)
+- uid: Virtufin.Api.Configuration.ServicesConfiguration.#ctor
+  commentId: M:Virtufin.Api.Configuration.ServicesConfiguration.#ctor
+  id: '#ctor'
+  parent: Virtufin.Api.Configuration.ServicesConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ServicesConfiguration()
+  nameWithType: ServicesConfiguration.ServicesConfiguration()
+  fullName: Virtufin.Api.Configuration.ServicesConfiguration.ServicesConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: .ctor
+    path: ../../../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 15
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public ServicesConfiguration()
+    content.vb: Public Sub New()
+  overload: Virtufin.Api.Configuration.ServicesConfiguration.#ctor*
+  nameWithType.vb: ServicesConfiguration.New()
+  fullName.vb: Virtufin.Api.Configuration.ServicesConfiguration.New()
+  name.vb: New()
 - uid: Virtufin.Api.Configuration.ServicesConfiguration.Services
   commentId: P:Virtufin.Api.Configuration.ServicesConfiguration.Services
   id: Services
@@ -57,7 +87,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Services
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -424,6 +454,15 @@ references:
   name: ServicesConfigurationExtensions
   nameWithType: ServicesConfigurationExtensions
   fullName: Virtufin.Api.Configuration.ServicesConfigurationExtensions
+- uid: Virtufin.Api.Configuration.ServicesConfiguration.#ctor*
+  commentId: Overload:Virtufin.Api.Configuration.ServicesConfiguration.#ctor
+  href: Virtufin.Api.Configuration.ServicesConfiguration.html#Virtufin_Api_Configuration_ServicesConfiguration__ctor
+  name: ServicesConfiguration
+  nameWithType: ServicesConfiguration.ServicesConfiguration
+  fullName: Virtufin.Api.Configuration.ServicesConfiguration.ServicesConfiguration
+  nameWithType.vb: ServicesConfiguration.New
+  fullName.vb: Virtufin.Api.Configuration.ServicesConfiguration.New
+  name.vb: New
 - uid: Virtufin.Api.Configuration.ServicesConfiguration.Services*
   commentId: Overload:Virtufin.Api.Configuration.ServicesConfiguration.Services
   href: Virtufin.Api.Configuration.ServicesConfiguration.html#Virtufin_Api_Configuration_ServicesConfiguration_Services
