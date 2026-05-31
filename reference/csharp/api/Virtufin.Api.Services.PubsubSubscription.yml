@@ -5,9 +5,8 @@ items:
   id: PubsubSubscription
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
+  - Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
   - Virtufin.Api.Services.PubsubSubscription.AddedAt
-  - Virtufin.Api.Services.PubsubSubscription.Cts
   - Virtufin.Api.Services.PubsubSubscription.Topic
   - Virtufin.Api.Services.PubsubSubscription.Writer
   langs:
@@ -24,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubSubscription
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 128
+    startLine: 127
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -61,18 +60,16 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Writer
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 133
+    startLine: 129
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: The stream writer used to send messages to the subscriber.
-  example: []
   syntax:
-    content: public IServerStreamWriter<PubsubSubscribeResponse> Writer { get; }
+    content: public ChannelWriter<PubsubSubscribeResponse> Writer { get; }
     parameters: []
     return:
-      type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-    content.vb: Public ReadOnly Property Writer As IServerStreamWriter(Of PubsubSubscribeResponse)
+      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+    content.vb: Public ReadOnly Property Writer As ChannelWriter(Of PubsubSubscribeResponse)
   overload: Virtufin.Api.Services.PubsubSubscription.Writer*
 - uid: Virtufin.Api.Services.PubsubSubscription.Topic
   commentId: P:Virtufin.Api.Services.PubsubSubscription.Topic
@@ -92,12 +89,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Topic
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 137
+    startLine: 130
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: The topic this subscription is subscribed to.
-  example: []
   syntax:
     content: public string Topic { get; }
     parameters: []
@@ -123,12 +118,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: AddedAt
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 141
+    startLine: 131
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: When the subscription was created.
-  example: []
   syntax:
     content: public DateTime AddedAt { get; }
     parameters: []
@@ -136,47 +129,16 @@ items:
       type: System.DateTime
     content.vb: Public ReadOnly Property AddedAt As Date
   overload: Virtufin.Api.Services.PubsubSubscription.AddedAt*
-- uid: Virtufin.Api.Services.PubsubSubscription.Cts
-  commentId: P:Virtufin.Api.Services.PubsubSubscription.Cts
-  id: Cts
+- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
+  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
+  id: '#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})'
   parent: Virtufin.Api.Services.PubsubSubscription
   langs:
   - csharp
   - vb
-  name: Cts
-  nameWithType: PubsubSubscription.Cts
-  fullName: Virtufin.Api.Services.PubsubSubscription.Cts
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Cts
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 145
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  summary: Cancellation token source for the subscription.
-  example: []
-  syntax:
-    content: public CancellationTokenSource Cts { get; }
-    parameters: []
-    return:
-      type: System.Threading.CancellationTokenSource
-    content.vb: Public ReadOnly Property Cts As CancellationTokenSource
-  overload: Virtufin.Api.Services.PubsubSubscription.Cts*
-- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  id: '#ctor(System.String,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})'
-  parent: Virtufin.Api.Services.PubsubSubscription
-  langs:
-  - csharp
-  - vb
-  name: PubsubSubscription(string, IServerStreamWriter<PubsubSubscribeResponse>)
-  nameWithType: PubsubSubscription.PubsubSubscription(string, IServerStreamWriter<PubsubSubscribeResponse>)
-  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
+  name: PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
+  nameWithType: PubsubSubscription.PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
+  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
   type: Constructor
   source:
     remote:
@@ -185,24 +147,22 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 150
+    startLine: 133
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Creates a new pub/sub subscription.
-  example: []
   syntax:
-    content: public PubsubSubscription(string topic, IServerStreamWriter<PubsubSubscribeResponse> writer)
+    content: public PubsubSubscription(string topic, ChannelWriter<PubsubSubscribeResponse> writer)
     parameters:
     - id: topic
       type: System.String
     - id: writer
-      type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-    content.vb: Public Sub New(topic As String, writer As IServerStreamWriter(Of PubsubSubscribeResponse))
+      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+    content.vb: Public Sub New(topic As String, writer As ChannelWriter(Of PubsubSubscribeResponse))
   overload: Virtufin.Api.Services.PubsubSubscription.#ctor*
-  nameWithType.vb: PubsubSubscription.New(String, IServerStreamWriter(Of PubsubSubscribeResponse))
-  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
-  name.vb: New(String, IServerStreamWriter(Of PubsubSubscribeResponse))
+  nameWithType.vb: PubsubSubscription.New(String, ChannelWriter(Of PubsubSubscribeResponse))
+  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
+  name.vb: New(String, ChannelWriter(Of PubsubSubscribeResponse))
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -477,87 +437,102 @@ references:
   name: Writer
   nameWithType: PubsubSubscription.Writer
   fullName: Virtufin.Api.Services.PubsubSubscription.Writer
-- uid: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-  commentId: T:Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-  parent: Grpc.Core
-  definition: Grpc.Core.IServerStreamWriter`1
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: IServerStreamWriter<PubsubSubscribeResponse>
-  nameWithType: IServerStreamWriter<PubsubSubscribeResponse>
-  fullName: Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>
-  nameWithType.vb: IServerStreamWriter(Of PubsubSubscribeResponse)
-  fullName.vb: Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
-  name.vb: IServerStreamWriter(Of PubsubSubscribeResponse)
+- uid: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+  commentId: T:System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+  parent: System.Threading.Channels
+  definition: System.Threading.Channels.ChannelWriter`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
+  name: ChannelWriter<PubsubSubscribeResponse>
+  nameWithType: ChannelWriter<PubsubSubscribeResponse>
+  fullName: System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>
+  nameWithType.vb: ChannelWriter(Of PubsubSubscribeResponse)
+  fullName.vb: System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
+  name.vb: ChannelWriter(Of PubsubSubscribeResponse)
   spec.csharp:
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
+  - uid: System.Threading.Channels.ChannelWriter`1
+    name: ChannelWriter
     isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+    href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
   - name: <
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
   - name: '>'
   spec.vb:
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
+  - uid: System.Threading.Channels.ChannelWriter`1
+    name: ChannelWriter
     isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+    href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
   - name: (
   - name: Of
   - name: " "
   - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
     name: PubsubSubscribeResponse
   - name: )
-- uid: Grpc.Core.IServerStreamWriter`1
-  commentId: T:Grpc.Core.IServerStreamWriter`1
+- uid: System.Threading.Channels.ChannelWriter`1
+  commentId: T:System.Threading.Channels.ChannelWriter`1
   isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: IServerStreamWriter<T>
-  nameWithType: IServerStreamWriter<T>
-  fullName: Grpc.Core.IServerStreamWriter<T>
-  nameWithType.vb: IServerStreamWriter(Of T)
-  fullName.vb: Grpc.Core.IServerStreamWriter(Of T)
-  name.vb: IServerStreamWriter(Of T)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
+  name: ChannelWriter<T>
+  nameWithType: ChannelWriter<T>
+  fullName: System.Threading.Channels.ChannelWriter<T>
+  nameWithType.vb: ChannelWriter(Of T)
+  fullName.vb: System.Threading.Channels.ChannelWriter(Of T)
+  name.vb: ChannelWriter(Of T)
   spec.csharp:
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
+  - uid: System.Threading.Channels.ChannelWriter`1
+    name: ChannelWriter
     isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+    href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
+  - uid: System.Threading.Channels.ChannelWriter`1
+    name: ChannelWriter
     isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+    href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
-- uid: Grpc.Core
-  commentId: N:Grpc.Core
+- uid: System.Threading.Channels
+  commentId: N:System.Threading.Channels
   isExternal: true
-  name: Grpc.Core
-  nameWithType: Grpc.Core
-  fullName: Grpc.Core
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Channels
+  nameWithType: System.Threading.Channels
+  fullName: System.Threading.Channels
   spec.csharp:
-  - uid: Grpc
-    name: Grpc
+  - uid: System
+    name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Grpc.Core
-    name: Core
+  - uid: System.Threading
+    name: Threading
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Channels
+    name: Channels
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.channels
   spec.vb:
-  - uid: Grpc
-    name: Grpc
+  - uid: System
+    name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Grpc.Core
-    name: Core
+  - uid: System.Threading
+    name: Threading
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Channels
+    name: Channels
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.channels
 - uid: Virtufin.Api.Services.PubsubSubscription.Topic*
   commentId: Overload:Virtufin.Api.Services.PubsubSubscription.Topic
   href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription_Topic
@@ -592,50 +567,9 @@ references:
   nameWithType.vb: Date
   fullName.vb: Date
   name.vb: Date
-- uid: Virtufin.Api.Services.PubsubSubscription.Cts*
-  commentId: Overload:Virtufin.Api.Services.PubsubSubscription.Cts
-  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription_Cts
-  name: Cts
-  nameWithType: PubsubSubscription.Cts
-  fullName: Virtufin.Api.Services.PubsubSubscription.Cts
-- uid: System.Threading.CancellationTokenSource
-  commentId: T:System.Threading.CancellationTokenSource
-  parent: System.Threading
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
-  name: CancellationTokenSource
-  nameWithType: CancellationTokenSource
-  fullName: System.Threading.CancellationTokenSource
-- uid: System.Threading
-  commentId: N:System.Threading
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading
-  nameWithType: System.Threading
-  fullName: System.Threading
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
 - uid: Virtufin.Api.Services.PubsubSubscription.#ctor*
   commentId: Overload:Virtufin.Api.Services.PubsubSubscription.#ctor
-  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
+  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
   name: PubsubSubscription
   nameWithType: PubsubSubscription.PubsubSubscription
   fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription

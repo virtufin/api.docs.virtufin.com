@@ -4,10 +4,8 @@ items:
   commentId: N:Virtufin.Api.Services
   id: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.ChannelEntry
   - Virtufin.Api.Services.ConfigService
   - Virtufin.Api.Services.DaprConstants
-  - Virtufin.Api.Services.DaprPubSubBridgeService
   - Virtufin.Api.Services.DateTimeFormatConstants
   - Virtufin.Api.Services.FieldSchema
   - Virtufin.Api.Services.GatewayService
@@ -86,25 +84,12 @@ references:
   name: StateActionConstants
   nameWithType: StateActionConstants
   fullName: Virtufin.Api.Services.StateActionConstants
-- uid: Virtufin.Api.Services.DaprPubSubBridgeService
-  commentId: T:Virtufin.Api.Services.DaprPubSubBridgeService
-  parent: Virtufin.Api.Services
-  href: Virtufin.Api.Services.DaprPubSubBridgeService.html
-  name: DaprPubSubBridgeService
-  nameWithType: DaprPubSubBridgeService
-  fullName: Virtufin.Api.Services.DaprPubSubBridgeService
 - uid: Virtufin.Api.Services.GatewayService
   commentId: T:Virtufin.Api.Services.GatewayService
   href: Virtufin.Api.Services.GatewayService.html
   name: GatewayService
   nameWithType: GatewayService
   fullName: Virtufin.Api.Services.GatewayService
-- uid: Virtufin.Api.Services.ChannelEntry
-  commentId: T:Virtufin.Api.Services.ChannelEntry
-  href: Virtufin.Api.Services.ChannelEntry.html
-  name: ChannelEntry
-  nameWithType: ChannelEntry
-  fullName: Virtufin.Api.Services.ChannelEntry
 - uid: Virtufin.Api.Services.GrpcChannelPool
   commentId: T:Virtufin.Api.Services.GrpcChannelPool
   parent: Virtufin.Api.Services

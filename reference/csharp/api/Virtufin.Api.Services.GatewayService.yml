@@ -5,14 +5,13 @@ items:
   id: GatewayService
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.Services.DaprPubSubBridgeService)
+  - Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
   - Virtufin.Api.Services.GatewayService.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.ListMethods(Virtufin.Api.Protos.ListMethodsRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.ListServices(Virtufin.Api.Protos.ListServicesRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   langs:
   - csharp
   - vb
@@ -27,7 +26,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GatewayService
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -43,6 +42,7 @@ items:
   - System.Object
   - Virtufin.Api.Protos.Gateway.GatewayBase
   inheritedMembers:
+  - Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -50,16 +50,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.Services.DaprPubSubBridgeService)
-  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.Services.DaprPubSubBridgeService)
-  id: '#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.Services.DaprPubSubBridgeService)'
+- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
+  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
+  id: '#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)'
   parent: Virtufin.Api.Services.GatewayService
   langs:
   - csharp
   - vb
-  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPubSubBridgeService)
-  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPubSubBridgeService)
-  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Virtufin.Api.Services.DaprPubSubBridgeService)
+  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient)
+  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient)
+  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
   type: Constructor
   source:
     remote:
@@ -68,14 +68,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   summary: Creates a new GatewayService instance.
   example: []
   syntax:
-    content: public GatewayService(GrpcReflectionService reflectionService, ServicesConfiguration config, ILogger<GatewayService> logger, DaprPubSubBridgeService pubsubBridge)
+    content: public GatewayService(GrpcReflectionService reflectionService, ServicesConfiguration config, ILogger<GatewayService> logger, DaprPublishSubscribeClient pubsubClient)
     parameters:
     - id: reflectionService
       type: Virtufin.Api.Services.GrpcReflectionService
@@ -86,14 +86,14 @@ items:
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService}
       description: The logger for recording service operations.
-    - id: pubsubBridge
-      type: Virtufin.Api.Services.DaprPubSubBridgeService
-      description: The Dapr pub/sub bridge for event streaming.
-    content.vb: Public Sub New(reflectionService As GrpcReflectionService, config As ServicesConfiguration, logger As ILogger(Of GatewayService), pubsubBridge As DaprPubSubBridgeService)
+    - id: pubsubClient
+      type: Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
+      description: The Dapr pub/sub client for event streaming.
+    content.vb: Public Sub New(reflectionService As GrpcReflectionService, config As ServicesConfiguration, logger As ILogger(Of GatewayService), pubsubClient As DaprPublishSubscribeClient)
   overload: Virtufin.Api.Services.GatewayService.#ctor*
-  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPubSubBridgeService)
-  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Virtufin.Api.Services.DaprPubSubBridgeService)
-  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPubSubBridgeService)
+  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient)
+  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
+  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient)
 - uid: Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   id: Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
@@ -112,7 +112,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Invoke
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 104
+    startLine: 97
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -151,7 +151,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeJson
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 149
+    startLine: 142
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -193,7 +193,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServices
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 193
+    startLine: 186
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -232,7 +232,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethods
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 217
+    startLine: 210
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -271,7 +271,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 257
+    startLine: 250
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -301,54 +301,6 @@ items:
   nameWithType.vb: GatewayService.Subscribe(SubscribeRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
   fullName.vb: Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
   name.vb: Subscribe(SubscribeRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-- uid: Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  id: WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Services.GatewayService
-  langs:
-  - csharp
-  - vb
-  name: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  nameWithType: GatewayService.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  fullName: Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GatewayService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: WatchSystemEvents
-    path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 300
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  summary: >-
-    Subscribes to system events like connection status changes.
-
-    Returns a stream of TopicEventRequest messages for system-level events.
-  example: []
-  syntax:
-    content: public override Task WatchSystemEvents(SystemEventsRequest request, IServerStreamWriter<TopicEventRequest> responseStream, ServerCallContext context)
-    parameters:
-    - id: request
-      type: Virtufin.Api.Protos.SystemEventsRequest
-      description: The system events request.
-    - id: responseStream
-      type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest}
-      description: The stream writer for sending system events to the client.
-    - id: context
-      type: Grpc.Core.ServerCallContext
-      description: The server call context.
-    return:
-      type: System.Threading.Tasks.Task
-      description: A task that completes when the subscription is cancelled.
-    content.vb: Public Overrides Function WatchSystemEvents(request As SystemEventsRequest, responseStream As IServerStreamWriter(Of TopicEventRequest), context As ServerCallContext) As Task
-  overridden: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.GatewayService.WatchSystemEvents*
-  nameWithType.vb: GatewayService.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  fullName.vb: Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
-  name.vb: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
 - uid: Virtufin.Api.Services.GatewayService.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.GatewayService.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   id: GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
@@ -367,7 +319,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodSchema
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 320
+    startLine: 329
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -448,6 +400,65 @@ references:
   - name: .
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase
     name: GatewayBase
+- uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Gateway.GatewayBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  name: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
+  nameWithType: Gateway.GatewayBase.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: Gateway.GatewayBase.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
+  fullName.vb: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
+  name.vb: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
+    name: WatchSystemEvents
+  - name: (
+  - uid: Virtufin.Api.Protos.SystemEventsRequest
+    name: SystemEventsRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: <
+  - uid: Virtufin.Api.Protos.TopicEventRequest
+    name: TopicEventRequest
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
+    name: WatchSystemEvents
+  - name: (
+  - uid: Virtufin.Api.Protos.SystemEventsRequest
+    name: SystemEventsRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.TopicEventRequest
+    name: TopicEventRequest
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -699,7 +710,7 @@ references:
     name: Protos
 - uid: Virtufin.Api.Services.GatewayService.#ctor*
   commentId: Overload:Virtufin.Api.Services.GatewayService.#ctor
-  href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Virtufin_Api_Services_DaprPubSubBridgeService_
+  href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_
   name: GatewayService
   nameWithType: GatewayService.GatewayService
   fullName: Virtufin.Api.Services.GatewayService.GatewayService
@@ -753,13 +764,13 @@ references:
     name: GatewayService
     href: Virtufin.Api.Services.GatewayService.html
   - name: )
-- uid: Virtufin.Api.Services.DaprPubSubBridgeService
-  commentId: T:Virtufin.Api.Services.DaprPubSubBridgeService
-  parent: Virtufin.Api.Services
-  href: Virtufin.Api.Services.DaprPubSubBridgeService.html
-  name: DaprPubSubBridgeService
-  nameWithType: DaprPubSubBridgeService
-  fullName: Virtufin.Api.Services.DaprPubSubBridgeService
+- uid: Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
+  commentId: T:Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
+  parent: Dapr.Messaging.PublishSubscribe
+  isExternal: true
+  name: DaprPublishSubscribeClient
+  nameWithType: DaprPublishSubscribeClient
+  fullName: Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration
   href: Virtufin.html
@@ -855,6 +866,36 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Dapr.Messaging.PublishSubscribe
+  commentId: N:Dapr.Messaging.PublishSubscribe
+  isExternal: true
+  name: Dapr.Messaging.PublishSubscribe
+  nameWithType: Dapr.Messaging.PublishSubscribe
+  fullName: Dapr.Messaging.PublishSubscribe
+  spec.csharp:
+  - uid: Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.Messaging
+    name: Messaging
+    isExternal: true
+  - name: .
+  - uid: Dapr.Messaging.PublishSubscribe
+    name: PublishSubscribe
+    isExternal: true
+  spec.vb:
+  - uid: Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.Messaging
+    name: Messaging
+    isExternal: true
+  - name: .
+  - uid: Dapr.Messaging.PublishSubscribe
+    name: PublishSubscribe
+    isExternal: true
 - uid: Virtufin.Api.Protos.Gateway.GatewayBase.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase
@@ -1396,77 +1437,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Gateway.GatewayBase
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  nameWithType: Gateway.GatewayBase.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
-  nameWithType.vb: Gateway.GatewayBase.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  fullName.vb: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
-  name.vb: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  spec.csharp:
-  - uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-    name: WatchSystemEvents
-  - name: (
-  - uid: Virtufin.Api.Protos.SystemEventsRequest
-    name: SystemEventsRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: <
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: '>'
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-  spec.vb:
-  - uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-    name: WatchSystemEvents
-  - name: (
-  - uid: Virtufin.Api.Protos.SystemEventsRequest
-    name: SystemEventsRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: )
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-- uid: Virtufin.Api.Services.GatewayService.WatchSystemEvents*
-  commentId: Overload:Virtufin.Api.Services.GatewayService.WatchSystemEvents
-  href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService_WatchSystemEvents_Virtufin_Api_Protos_SystemEventsRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
-  name: WatchSystemEvents
-  nameWithType: GatewayService.WatchSystemEvents
-  fullName: Virtufin.Api.Services.GatewayService.WatchSystemEvents
-- uid: Virtufin.Api.Protos.SystemEventsRequest
-  commentId: T:Virtufin.Api.Protos.SystemEventsRequest
-  parent: Virtufin.Api.Protos
-  name: SystemEventsRequest
-  nameWithType: SystemEventsRequest
-  fullName: Virtufin.Api.Protos.SystemEventsRequest
 - uid: Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Gateway.GatewayBase

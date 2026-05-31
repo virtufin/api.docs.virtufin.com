@@ -1585,70 +1585,6 @@ references:
   commentId: N:Virtufin.Api.Services
   fullName: Virtufin.Api.Services
   nameWithType: Virtufin.Api.Services
-- uid: Virtufin.Api.Services.ChannelEntry
-  name: ChannelEntry
-  href: api/Virtufin.Api.Services.ChannelEntry.html
-  commentId: T:Virtufin.Api.Services.ChannelEntry
-  fullName: Virtufin.Api.Services.ChannelEntry
-  nameWithType: ChannelEntry
-- uid: Virtufin.Api.Services.ChannelEntry.#ctor(System.String,Grpc.Net.Client.GrpcChannel)
-  name: ChannelEntry(string, GrpcChannel)
-  href: api/Virtufin.Api.Services.ChannelEntry.html#Virtufin_Api_Services_ChannelEntry__ctor_System_String_Grpc_Net_Client_GrpcChannel_
-  commentId: M:Virtufin.Api.Services.ChannelEntry.#ctor(System.String,Grpc.Net.Client.GrpcChannel)
-  name.vb: New(String, GrpcChannel)
-  fullName: Virtufin.Api.Services.ChannelEntry.ChannelEntry(string, Grpc.Net.Client.GrpcChannel)
-  fullName.vb: Virtufin.Api.Services.ChannelEntry.New(String, Grpc.Net.Client.GrpcChannel)
-  nameWithType: ChannelEntry.ChannelEntry(string, GrpcChannel)
-  nameWithType.vb: ChannelEntry.New(String, GrpcChannel)
-- uid: Virtufin.Api.Services.ChannelEntry.#ctor*
-  name: ChannelEntry
-  href: api/Virtufin.Api.Services.ChannelEntry.html#Virtufin_Api_Services_ChannelEntry__ctor_
-  commentId: Overload:Virtufin.Api.Services.ChannelEntry.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Api.Services.ChannelEntry.ChannelEntry
-  fullName.vb: Virtufin.Api.Services.ChannelEntry.New
-  nameWithType: ChannelEntry.ChannelEntry
-  nameWithType.vb: ChannelEntry.New
-- uid: Virtufin.Api.Services.ChannelEntry.Channel
-  name: Channel
-  href: api/Virtufin.Api.Services.ChannelEntry.html#Virtufin_Api_Services_ChannelEntry_Channel
-  commentId: P:Virtufin.Api.Services.ChannelEntry.Channel
-  fullName: Virtufin.Api.Services.ChannelEntry.Channel
-  nameWithType: ChannelEntry.Channel
-- uid: Virtufin.Api.Services.ChannelEntry.Channel*
-  name: Channel
-  href: api/Virtufin.Api.Services.ChannelEntry.html#Virtufin_Api_Services_ChannelEntry_Channel_
-  commentId: Overload:Virtufin.Api.Services.ChannelEntry.Channel
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.ChannelEntry.Channel
-  nameWithType: ChannelEntry.Channel
-- uid: Virtufin.Api.Services.ChannelEntry.LastAccess
-  name: LastAccess
-  href: api/Virtufin.Api.Services.ChannelEntry.html#Virtufin_Api_Services_ChannelEntry_LastAccess
-  commentId: P:Virtufin.Api.Services.ChannelEntry.LastAccess
-  fullName: Virtufin.Api.Services.ChannelEntry.LastAccess
-  nameWithType: ChannelEntry.LastAccess
-- uid: Virtufin.Api.Services.ChannelEntry.LastAccess*
-  name: LastAccess
-  href: api/Virtufin.Api.Services.ChannelEntry.html#Virtufin_Api_Services_ChannelEntry_LastAccess_
-  commentId: Overload:Virtufin.Api.Services.ChannelEntry.LastAccess
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.ChannelEntry.LastAccess
-  nameWithType: ChannelEntry.LastAccess
-- uid: Virtufin.Api.Services.ChannelEntry.ServiceName
-  name: ServiceName
-  href: api/Virtufin.Api.Services.ChannelEntry.html#Virtufin_Api_Services_ChannelEntry_ServiceName
-  commentId: P:Virtufin.Api.Services.ChannelEntry.ServiceName
-  fullName: Virtufin.Api.Services.ChannelEntry.ServiceName
-  nameWithType: ChannelEntry.ServiceName
-- uid: Virtufin.Api.Services.ChannelEntry.ServiceName*
-  name: ServiceName
-  href: api/Virtufin.Api.Services.ChannelEntry.html#Virtufin_Api_Services_ChannelEntry_ServiceName_
-  commentId: Overload:Virtufin.Api.Services.ChannelEntry.ServiceName
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.ChannelEntry.ServiceName
-  nameWithType: ChannelEntry.ServiceName
 - uid: Virtufin.Api.Services.ConfigService
   name: ConfigService
   href: api/Virtufin.Api.Services.ConfigService.html
@@ -1718,47 +1654,6 @@ references:
   commentId: F:Virtufin.Api.Services.DaprConstants.StateStoreName
   fullName: Virtufin.Api.Services.DaprConstants.StateStoreName
   nameWithType: DaprConstants.StateStoreName
-- uid: Virtufin.Api.Services.DaprPubSubBridgeService
-  name: DaprPubSubBridgeService
-  href: api/Virtufin.Api.Services.DaprPubSubBridgeService.html
-  commentId: T:Virtufin.Api.Services.DaprPubSubBridgeService
-  fullName: Virtufin.Api.Services.DaprPubSubBridgeService
-  nameWithType: DaprPubSubBridgeService
-- uid: Virtufin.Api.Services.DaprPubSubBridgeService.#ctor(Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprPubSubBridgeService})
-  name: DaprPubSubBridgeService(DaprPublishSubscribeClient, ILogger<DaprPubSubBridgeService>)
-  href: api/Virtufin.Api.Services.DaprPubSubBridgeService.html#Virtufin_Api_Services_DaprPubSubBridgeService__ctor_Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_DaprPubSubBridgeService__
-  commentId: M:Virtufin.Api.Services.DaprPubSubBridgeService.#ctor(Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprPubSubBridgeService})
-  name.vb: New(DaprPublishSubscribeClient, ILogger(Of DaprPubSubBridgeService))
-  fullName: Virtufin.Api.Services.DaprPubSubBridgeService.DaprPubSubBridgeService(Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.DaprPubSubBridgeService>)
-  fullName.vb: Virtufin.Api.Services.DaprPubSubBridgeService.New(Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.DaprPubSubBridgeService))
-  nameWithType: DaprPubSubBridgeService.DaprPubSubBridgeService(DaprPublishSubscribeClient, ILogger<DaprPubSubBridgeService>)
-  nameWithType.vb: DaprPubSubBridgeService.New(DaprPublishSubscribeClient, ILogger(Of DaprPubSubBridgeService))
-- uid: Virtufin.Api.Services.DaprPubSubBridgeService.#ctor*
-  name: DaprPubSubBridgeService
-  href: api/Virtufin.Api.Services.DaprPubSubBridgeService.html#Virtufin_Api_Services_DaprPubSubBridgeService__ctor_
-  commentId: Overload:Virtufin.Api.Services.DaprPubSubBridgeService.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Api.Services.DaprPubSubBridgeService.DaprPubSubBridgeService
-  fullName.vb: Virtufin.Api.Services.DaprPubSubBridgeService.New
-  nameWithType: DaprPubSubBridgeService.DaprPubSubBridgeService
-  nameWithType.vb: DaprPubSubBridgeService.New
-- uid: Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync(Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},System.String,System.Threading.CancellationToken)
-  name: SubscribeToTopicAsync(IServerStreamWriter<TopicEventRequest>, string, CancellationToken)
-  href: api/Virtufin.Api.Services.DaprPubSubBridgeService.html#Virtufin_Api_Services_DaprPubSubBridgeService_SubscribeToTopicAsync_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__System_String_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync(Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},System.String,System.Threading.CancellationToken)
-  name.vb: SubscribeToTopicAsync(IServerStreamWriter(Of TopicEventRequest), String, CancellationToken)
-  fullName: Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync(Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, string, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync(Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), String, System.Threading.CancellationToken)
-  nameWithType: DaprPubSubBridgeService.SubscribeToTopicAsync(IServerStreamWriter<TopicEventRequest>, string, CancellationToken)
-  nameWithType.vb: DaprPubSubBridgeService.SubscribeToTopicAsync(IServerStreamWriter(Of TopicEventRequest), String, CancellationToken)
-- uid: Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync*
-  name: SubscribeToTopicAsync
-  href: api/Virtufin.Api.Services.DaprPubSubBridgeService.html#Virtufin_Api_Services_DaprPubSubBridgeService_SubscribeToTopicAsync_
-  commentId: Overload:Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.DaprPubSubBridgeService.SubscribeToTopicAsync
-  nameWithType: DaprPubSubBridgeService.SubscribeToTopicAsync
 - uid: Virtufin.Api.Services.DateTimeFormatConstants
   name: DateTimeFormatConstants
   href: api/Virtufin.Api.Services.DateTimeFormatConstants.html
@@ -1874,15 +1769,15 @@ references:
   commentId: T:Virtufin.Api.Services.GatewayService
   fullName: Virtufin.Api.Services.GatewayService
   nameWithType: GatewayService
-- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.Services.DaprPubSubBridgeService)
-  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPubSubBridgeService)
-  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Virtufin_Api_Services_DaprPubSubBridgeService_
-  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.Services.DaprPubSubBridgeService)
-  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPubSubBridgeService)
-  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Virtufin.Api.Services.DaprPubSubBridgeService)
-  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Virtufin.Api.Services.DaprPubSubBridgeService)
-  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPubSubBridgeService)
-  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPubSubBridgeService)
+- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
+  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient)
+  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_
+  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
+  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient)
+  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
+  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
+  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient)
+  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient)
 - uid: Virtufin.Api.Services.GatewayService.#ctor*
   name: GatewayService
   href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_
@@ -1974,22 +1869,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GatewayService.Subscribe
   nameWithType: GatewayService.Subscribe
-- uid: Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  name: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService_WatchSystemEvents_Virtufin_Api_Protos_SystemEventsRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  name.vb: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  fullName: Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
-  fullName.vb: Virtufin.Api.Services.GatewayService.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
-  nameWithType: GatewayService.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  nameWithType.vb: GatewayService.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-- uid: Virtufin.Api.Services.GatewayService.WatchSystemEvents*
-  name: WatchSystemEvents
-  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService_WatchSystemEvents_
-  commentId: Overload:Virtufin.Api.Services.GatewayService.WatchSystemEvents
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.GatewayService.WatchSystemEvents
-  nameWithType: GatewayService.WatchSystemEvents
 - uid: Virtufin.Api.Services.GrpcCallResult
   name: GrpcCallResult
   href: api/Virtufin.Api.Services.GrpcCallResult.html
@@ -2161,22 +2040,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GrpcChannelPool.Dispose
   nameWithType: GrpcChannelPool.Dispose
-- uid: Virtufin.Api.Services.GrpcChannelPool.EvictChannel(System.String)
-  name: EvictChannel(string)
-  href: api/Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_EvictChannel_System_String_
-  commentId: M:Virtufin.Api.Services.GrpcChannelPool.EvictChannel(System.String)
-  name.vb: EvictChannel(String)
-  fullName: Virtufin.Api.Services.GrpcChannelPool.EvictChannel(string)
-  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.EvictChannel(String)
-  nameWithType: GrpcChannelPool.EvictChannel(string)
-  nameWithType.vb: GrpcChannelPool.EvictChannel(String)
-- uid: Virtufin.Api.Services.GrpcChannelPool.EvictChannel*
-  name: EvictChannel
-  href: api/Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_EvictChannel_
-  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.EvictChannel
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.GrpcChannelPool.EvictChannel
-  nameWithType: GrpcChannelPool.EvictChannel
 - uid: Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
   name: GetChannel(string)
   href: api/Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannel_System_String_
@@ -2533,15 +2396,15 @@ references:
   commentId: T:Virtufin.Api.Services.PubsubSubscription
   fullName: Virtufin.Api.Services.PubsubSubscription
   nameWithType: PubsubSubscription
-- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  name: PubsubSubscription(string, IServerStreamWriter<PubsubSubscribeResponse>)
-  href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
-  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  name.vb: New(String, IServerStreamWriter(Of PubsubSubscribeResponse))
-  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
-  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
-  nameWithType: PubsubSubscription.PubsubSubscription(string, IServerStreamWriter<PubsubSubscribeResponse>)
-  nameWithType.vb: PubsubSubscription.New(String, IServerStreamWriter(Of PubsubSubscribeResponse))
+- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
+  name: PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
+  href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
+  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
+  name.vb: New(String, ChannelWriter(Of PubsubSubscribeResponse))
+  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
+  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
+  nameWithType: PubsubSubscription.PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
+  nameWithType.vb: PubsubSubscription.New(String, ChannelWriter(Of PubsubSubscribeResponse))
 - uid: Virtufin.Api.Services.PubsubSubscription.#ctor*
   name: PubsubSubscription
   href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_
@@ -2565,19 +2428,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubSubscription.AddedAt
   nameWithType: PubsubSubscription.AddedAt
-- uid: Virtufin.Api.Services.PubsubSubscription.Cts
-  name: Cts
-  href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription_Cts
-  commentId: P:Virtufin.Api.Services.PubsubSubscription.Cts
-  fullName: Virtufin.Api.Services.PubsubSubscription.Cts
-  nameWithType: PubsubSubscription.Cts
-- uid: Virtufin.Api.Services.PubsubSubscription.Cts*
-  name: Cts
-  href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription_Cts_
-  commentId: Overload:Virtufin.Api.Services.PubsubSubscription.Cts
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.PubsubSubscription.Cts
-  nameWithType: PubsubSubscription.Cts
 - uid: Virtufin.Api.Services.PubsubSubscription.Topic
   name: Topic
   href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription_Topic
@@ -2697,15 +2547,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync
   nameWithType: PubsubSubscriptionManager.SendEventAsync
-- uid: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(System.String,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},System.Threading.CancellationToken)
-  name: Subscribe(string, IServerStreamWriter<PubsubSubscribeResponse>, CancellationToken)
-  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_Subscribe_System_String_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(System.String,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},System.Threading.CancellationToken)
-  name.vb: Subscribe(String, IServerStreamWriter(Of PubsubSubscribeResponse), CancellationToken)
-  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(string, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(String, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse), System.Threading.CancellationToken)
-  nameWithType: PubsubSubscriptionManager.Subscribe(string, IServerStreamWriter<PubsubSubscribeResponse>, CancellationToken)
-  nameWithType.vb: PubsubSubscriptionManager.Subscribe(String, IServerStreamWriter(Of PubsubSubscribeResponse), CancellationToken)
+- uid: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
+  name: Subscribe(string, ChannelWriter<PubsubSubscribeResponse>)
+  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_Subscribe_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
+  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
+  name.vb: Subscribe(String, ChannelWriter(Of PubsubSubscribeResponse))
+  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
+  fullName.vb: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
+  nameWithType: PubsubSubscriptionManager.Subscribe(string, ChannelWriter<PubsubSubscribeResponse>)
+  nameWithType.vb: PubsubSubscriptionManager.Subscribe(String, ChannelWriter(Of PubsubSubscribeResponse))
 - uid: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe*
   name: Subscribe
   href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_Subscribe_

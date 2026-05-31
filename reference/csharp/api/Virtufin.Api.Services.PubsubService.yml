@@ -23,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubService
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -61,12 +61,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 20
+    startLine: 18
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Creates a new PubsubService.
-  example: []
   syntax:
     content: public PubsubService(DaprClient daprClient, PubsubSubscriptionManager subscriptionManager, ILogger<PubsubService> logger)
     parameters:
@@ -99,7 +97,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEvent
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 30
+    startLine: 28
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -134,7 +132,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 68
+    startLine: 66
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -174,7 +172,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 92
+    startLine: 91
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

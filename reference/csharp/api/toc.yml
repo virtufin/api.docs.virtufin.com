@@ -89,17 +89,11 @@ items:
   name: Virtufin.Api.Services
   type: Namespace
   items:
-  - uid: Virtufin.Api.Services.ChannelEntry
-    name: ChannelEntry
-    type: Class
   - uid: Virtufin.Api.Services.ConfigService
     name: ConfigService
     type: Class
   - uid: Virtufin.Api.Services.DaprConstants
     name: DaprConstants
-    type: Class
-  - uid: Virtufin.Api.Services.DaprPubSubBridgeService
-    name: DaprPubSubBridgeService
     type: Class
   - uid: Virtufin.Api.Services.DateTimeFormatConstants
     name: DateTimeFormatConstants

@@ -368,20 +368,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Api.Services.ChannelEntry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Api.Services.ChannelEntry.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Api.Services.ChannelEntry",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.ChannelEntry.yml\" sourcestartlinenumber=\"1\">Represents a cached gRPC channel entry with access tracking.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Services.ConfigService.yml",
       "output": {
         ".html": {
@@ -407,20 +393,6 @@
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.DaprConstants",
       "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Api.Services.DaprPubSubBridgeService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Api.Services.DaprPubSubBridgeService.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Api.Services.DaprPubSubBridgeService",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.DaprPubSubBridgeService.yml\" sourcestartlinenumber=\"1\">Bridge service that connects Dapr pub/sub to gRPC streaming clients.\nSubscribes to Dapr topics and forwards events to connected gRPC clients.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -504,7 +476,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.GrpcChannelPool",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.GrpcChannelPool.yml\" sourcestartlinenumber=\"1\">Thread-safe pool of gRPC channels for backend services.\nManages channel lifecycle with LRU eviction and configurable limits.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.GrpcChannelPool.yml\" sourcestartlinenumber=\"1\">Thread-safe pool of gRPC channels for backend services.\nUses .NET's built-in HTTP/2 connection pooling via SocketsHttpHandler.</p>\n"
     },
     {
       "type": "ManagedReference",
