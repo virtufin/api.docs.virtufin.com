@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/db2bf7c2152c5814b3723d262fd30d1de9e4b5f7"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/620f6cdd4d9a3b2ffd6c569a8a398a7636936975"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit db2bf7c">
+       title="View commit 620f6cd">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">db2bf7c</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">620f6cd</text>
       </svg>
     </a>
 </div>
@@ -390,14 +390,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/db2bf7c2152c5814b3723d262fd30d1de9e4b5f7"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/620f6cdd4d9a3b2ffd6c569a8a398a7636936975"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit db2bf7c">
+       title="View commit 620f6cd">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">db2bf7c</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">620f6cd</text>
       </svg>
     </a>
 </div>
@@ -1494,14 +1494,9 @@
 </thead>
 <tbody>
 <tr>
-<td><code>HttpPort</code></td>
+<td><code>ServerPort</code></td>
 <td>HTTP/gRPC/gRPC-web shared port</td>
 <td><code>5001</code> (local dev), <code>8080</code> (K8s)</td>
-</tr>
-<tr>
-<td><code>GrpcPort</code></td>
-<td><strong>Deprecated.</strong> Merged with <code>HttpPort</code>. All protocols now share one port.</td>
-<td>—</td>
 </tr>
 <tr>
 <td><code>DaprHttpPort</code></td>
@@ -1517,13 +1512,13 @@
 </table>
 <h2 id="environment-variables">Environment Variables</h2>
 <p>Set configuration using environment variables:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">HttpPort</span><span class="o">=</span><span class="m">8080</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ServerPort</span><span class="o">=</span><span class="m">8080</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">DaprHttpPort</span><span class="o">=</span><span class="m">3500</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">DaprGrpcPort</span><span class="o">=</span><span class="m">50001</span>
 </code></pre></div>
 <h2 id="command-line-arguments">Command-Line Arguments</h2>
 <p>Pass arguments when running the application:</p>
-<div class="highlight"><pre><span></span><code>Virtufin.Api<span class="w"> </span>--http-port<span class="w"> </span><span class="m">8080</span>
+<div class="highlight"><pre><span></span><code>Virtufin.Api<span class="w"> </span>--server-port<span class="w"> </span><span class="m">8080</span>
 </code></pre></div>
 <h3 id="available-arguments">Available Arguments</h3>
 <table>
@@ -1536,7 +1531,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>--http-port &lt;port&gt;</code></td>
+<td><code>--server-port &lt;port&gt;</code></td>
 <td>HTTP/gRPC/gRPC-web shared port</td>
 <td><code>5001</code> (local dev), <code>8080</code> (K8s)</td>
 </tr>
@@ -1553,22 +1548,22 @@
 </tbody>
 </table>
 <blockquote>
-<p><strong>Note:</strong> <code>--grpc-port</code> and <code>--grpc-web-port</code> have been removed. All protocols (HTTP, gRPC, gRPC-web) now share the single <code>--http-port</code>.</p>
+<p><strong>Note:</strong> All protocols (HTTP, gRPC, gRPC-web) share the single <code>--server-port</code>.</p>
 </blockquote>
 <h2 id="examples">Examples</h2>
 <h3 id="using-environment-variables">Using Environment Variables</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">HttpPort</span><span class="o">=</span><span class="m">3000</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ServerPort</span><span class="o">=</span><span class="m">3000</span>
 ./Virtufin.Api
 </code></pre></div>
 <h3 id="using-command-line-arguments">Using Command-Line Arguments</h3>
-<div class="highlight"><pre><span></span><code>./Virtufin.Api<span class="w"> </span>--http-port<span class="w"> </span><span class="m">3000</span>
+<div class="highlight"><pre><span></span><code>./Virtufin.Api<span class="w"> </span>--server-port<span class="w"> </span><span class="m">3000</span>
 </code></pre></div>
 <h3 id="combining-both">Combining Both</h3>
 <p>Environment variables set defaults, command-line arguments override:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">HttpPort</span><span class="o">=</span><span class="m">3000</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ServerPort</span><span class="o">=</span><span class="m">3000</span>
 ./Virtufin.Api<span class="w"> </span>--dapr-http-port<span class="w"> </span><span class="m">3501</span>
 </code></pre></div>
-<p>In this example, <code>HttpPort</code> is <code>3000</code> (from environment) and <code>DaprHttpPort</code> is <code>3501</code> (from command line).</p>
+<p>In this example, <code>ServerPort</code> is <code>3000</code> (from environment) and <code>DaprHttpPort</code> is <code>3501</code> (from command line).</p>
 <h2 id="cors-configuration">CORS Configuration</h2>
 <p>The API supports CORS configuration via the <code>Cors:AllowedOrigins</code> configuration key:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span>Cors:AllowedOrigins__0<span class="o">=</span>https://example.com
@@ -1613,7 +1608,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-05-31T08:17:49Z</span>
+  <span style="display:table-cell;text-align:right">2026-05-31T08:35:55Z</span>
 </div>
 
     </div>
