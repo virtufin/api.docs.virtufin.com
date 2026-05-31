@@ -31,15 +31,15 @@ references:
   commentId: T:Virtufin.Api.Client.ApiClient
   fullName: Virtufin.Api.Client.ApiClient
   nameWithType: ApiClient
-- uid: Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name: ApiClient(string, int?, int?)
-  href: api/Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient__ctor_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__
-  commentId: M:Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name.vb: New(String, Integer?, Integer?)
-  fullName: Virtufin.Api.Client.ApiClient.ApiClient(string, int?, int?)
-  fullName.vb: Virtufin.Api.Client.ApiClient.New(String, Integer?, Integer?)
-  nameWithType: ApiClient.ApiClient(string, int?, int?)
-  nameWithType.vb: ApiClient.New(String, Integer?, Integer?)
+- uid: Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32})
+  name: ApiClient(string, int?)
+  href: api/Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient__ctor_System_String_System_Nullable_System_Int32__
+  commentId: M:Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32})
+  name.vb: New(String, Integer?)
+  fullName: Virtufin.Api.Client.ApiClient.ApiClient(string, int?)
+  fullName.vb: Virtufin.Api.Client.ApiClient.New(String, Integer?)
+  nameWithType: ApiClient.ApiClient(string, int?)
+  nameWithType.vb: ApiClient.New(String, Integer?)
 - uid: Virtufin.Api.Client.ApiClient.#ctor*
   name: ApiClient
   href: api/Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient__ctor_
@@ -115,19 +115,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.ApiClient.Gateway
   nameWithType: ApiClient.Gateway
-- uid: Virtufin.Api.Client.ApiClient.GrpcPort
-  name: GrpcPort
-  href: api/Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient_GrpcPort
-  commentId: P:Virtufin.Api.Client.ApiClient.GrpcPort
-  fullName: Virtufin.Api.Client.ApiClient.GrpcPort
-  nameWithType: ApiClient.GrpcPort
-- uid: Virtufin.Api.Client.ApiClient.GrpcPort*
-  name: GrpcPort
-  href: api/Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient_GrpcPort_
-  commentId: Overload:Virtufin.Api.Client.ApiClient.GrpcPort
-  isSpec: "True"
-  fullName: Virtufin.Api.Client.ApiClient.GrpcPort
-  nameWithType: ApiClient.GrpcPort
 - uid: Virtufin.Api.Client.ApiClient.Host
   name: Host
   href: api/Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient_Host
@@ -186,6 +173,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.ApiClient.ListServicesAsync
   nameWithType: ApiClient.ListServicesAsync
+- uid: Virtufin.Api.Client.ApiClient.ServerPort
+  name: ServerPort
+  href: api/Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient_ServerPort
+  commentId: P:Virtufin.Api.Client.ApiClient.ServerPort
+  fullName: Virtufin.Api.Client.ApiClient.ServerPort
+  nameWithType: ApiClient.ServerPort
+- uid: Virtufin.Api.Client.ApiClient.ServerPort*
+  name: ServerPort
+  href: api/Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient_ServerPort_
+  commentId: Overload:Virtufin.Api.Client.ApiClient.ServerPort
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.ApiClient.ServerPort
+  nameWithType: ApiClient.ServerPort
 - uid: Virtufin.Api.Client.GatewayClient
   name: GatewayClient
   href: api/Virtufin.Api.Client.GatewayClient.html
@@ -803,42 +803,18 @@ references:
   commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultDaprHttpPort
   fullName: Virtufin.Api.Configuration.PortConstants.DefaultDaprHttpPort
   nameWithType: PortConstants.DefaultDaprHttpPort
-- uid: Virtufin.Api.Configuration.PortConstants.DefaultGrpcPort
-  name: DefaultGrpcPort
-  href: api/Virtufin.Api.Configuration.PortConstants.html#Virtufin_Api_Configuration_PortConstants_DefaultGrpcPort
-  commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultGrpcPort
-  fullName: Virtufin.Api.Configuration.PortConstants.DefaultGrpcPort
-  nameWithType: PortConstants.DefaultGrpcPort
-- uid: Virtufin.Api.Configuration.PortConstants.DefaultGrpcWebPort
-  name: DefaultGrpcWebPort
-  href: api/Virtufin.Api.Configuration.PortConstants.html#Virtufin_Api_Configuration_PortConstants_DefaultGrpcWebPort
-  commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultGrpcWebPort
-  fullName: Virtufin.Api.Configuration.PortConstants.DefaultGrpcWebPort
-  nameWithType: PortConstants.DefaultGrpcWebPort
-- uid: Virtufin.Api.Configuration.PortConstants.DefaultHttpPort
-  name: DefaultHttpPort
-  href: api/Virtufin.Api.Configuration.PortConstants.html#Virtufin_Api_Configuration_PortConstants_DefaultHttpPort
-  commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultHttpPort
-  fullName: Virtufin.Api.Configuration.PortConstants.DefaultHttpPort
-  nameWithType: PortConstants.DefaultHttpPort
-- uid: Virtufin.Api.Configuration.PortConstants.GrpcPortKey
-  name: GrpcPortKey
-  href: api/Virtufin.Api.Configuration.PortConstants.html#Virtufin_Api_Configuration_PortConstants_GrpcPortKey
-  commentId: F:Virtufin.Api.Configuration.PortConstants.GrpcPortKey
-  fullName: Virtufin.Api.Configuration.PortConstants.GrpcPortKey
-  nameWithType: PortConstants.GrpcPortKey
-- uid: Virtufin.Api.Configuration.PortConstants.GrpcWebPortKey
-  name: GrpcWebPortKey
-  href: api/Virtufin.Api.Configuration.PortConstants.html#Virtufin_Api_Configuration_PortConstants_GrpcWebPortKey
-  commentId: F:Virtufin.Api.Configuration.PortConstants.GrpcWebPortKey
-  fullName: Virtufin.Api.Configuration.PortConstants.GrpcWebPortKey
-  nameWithType: PortConstants.GrpcWebPortKey
-- uid: Virtufin.Api.Configuration.PortConstants.HttpPortKey
-  name: HttpPortKey
-  href: api/Virtufin.Api.Configuration.PortConstants.html#Virtufin_Api_Configuration_PortConstants_HttpPortKey
-  commentId: F:Virtufin.Api.Configuration.PortConstants.HttpPortKey
-  fullName: Virtufin.Api.Configuration.PortConstants.HttpPortKey
-  nameWithType: PortConstants.HttpPortKey
+- uid: Virtufin.Api.Configuration.PortConstants.DefaultServerPort
+  name: DefaultServerPort
+  href: api/Virtufin.Api.Configuration.PortConstants.html#Virtufin_Api_Configuration_PortConstants_DefaultServerPort
+  commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultServerPort
+  fullName: Virtufin.Api.Configuration.PortConstants.DefaultServerPort
+  nameWithType: PortConstants.DefaultServerPort
+- uid: Virtufin.Api.Configuration.PortConstants.ServerPortKey
+  name: ServerPortKey
+  href: api/Virtufin.Api.Configuration.PortConstants.html#Virtufin_Api_Configuration_PortConstants_ServerPortKey
+  commentId: F:Virtufin.Api.Configuration.PortConstants.ServerPortKey
+  fullName: Virtufin.Api.Configuration.PortConstants.ServerPortKey
+  nameWithType: PortConstants.ServerPortKey
 - uid: Virtufin.Api.Configuration.PubsubConfig
   name: PubsubConfig
   href: api/Virtufin.Api.Configuration.PubsubConfig.html

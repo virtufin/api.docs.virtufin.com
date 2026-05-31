@@ -5,17 +5,17 @@ items:
   id: ApiClient
   parent: Virtufin.Api.Client
   children:
-  - Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  - Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32})
   - Virtufin.Api.Client.ApiClient.Close
   - Virtufin.Api.Client.ApiClient.CloseAsync
   - Virtufin.Api.Client.ApiClient.Dispose
   - Virtufin.Api.Client.ApiClient.DisposeAsync
   - Virtufin.Api.Client.ApiClient.Gateway
-  - Virtufin.Api.Client.ApiClient.GrpcPort
   - Virtufin.Api.Client.ApiClient.Host
   - Virtufin.Api.Client.ApiClient.InvokeAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
   - Virtufin.Api.Client.ApiClient.ListMethodsAsync(System.String)
   - Virtufin.Api.Client.ApiClient.ListServicesAsync
+  - Virtufin.Api.Client.ApiClient.ServerPort
   langs:
   - csharp
   - vb
@@ -85,47 +85,47 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property Host As String
   overload: Virtufin.Api.Client.ApiClient.Host*
-- uid: Virtufin.Api.Client.ApiClient.GrpcPort
-  commentId: P:Virtufin.Api.Client.ApiClient.GrpcPort
-  id: GrpcPort
+- uid: Virtufin.Api.Client.ApiClient.ServerPort
+  commentId: P:Virtufin.Api.Client.ApiClient.ServerPort
+  id: ServerPort
   parent: Virtufin.Api.Client.ApiClient
   langs:
   - csharp
   - vb
-  name: GrpcPort
-  nameWithType: ApiClient.GrpcPort
-  fullName: Virtufin.Api.Client.ApiClient.GrpcPort
+  name: ServerPort
+  nameWithType: ApiClient.ServerPort
+  fullName: Virtufin.Api.Client.ApiClient.ServerPort
   type: Property
   source:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GrpcPort
+    id: ServerPort
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 481
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
-  summary: The gRPC port of the gateway.
+  summary: The server port of the gateway.
   example: []
   syntax:
-    content: public int GrpcPort { get; }
+    content: public int ServerPort { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property GrpcPort As Integer
-  overload: Virtufin.Api.Client.ApiClient.GrpcPort*
-- uid: Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  commentId: M:Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  id: '#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})'
+    content.vb: Public ReadOnly Property ServerPort As Integer
+  overload: Virtufin.Api.Client.ApiClient.ServerPort*
+- uid: Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32})
+  commentId: M:Virtufin.Api.Client.ApiClient.#ctor(System.String,System.Nullable{System.Int32})
+  id: '#ctor(System.String,System.Nullable{System.Int32})'
   parent: Virtufin.Api.Client.ApiClient
   langs:
   - csharp
   - vb
-  name: ApiClient(string, int?, int?)
-  nameWithType: ApiClient.ApiClient(string, int?, int?)
-  fullName: Virtufin.Api.Client.ApiClient.ApiClient(string, int?, int?)
+  name: ApiClient(string, int?)
+  nameWithType: ApiClient.ApiClient(string, int?)
+  fullName: Virtufin.Api.Client.ApiClient.ApiClient(string, int?)
   type: Constructor
   source:
     remote:
@@ -134,29 +134,26 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 489
+    startLine: 488
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: Creates a new ApiClient.
   example: []
   syntax:
-    content: public ApiClient(string host = "localhost", int? grpcPort = null, int? httpPort = null)
+    content: public ApiClient(string host = "localhost", int? serverPort = null)
     parameters:
     - id: host
       type: System.String
       description: 'The host address (default: "localhost").'
-    - id: grpcPort
+    - id: serverPort
       type: System.Nullable{System.Int32}
-      description: 'The gRPC port (default: 5002).'
-    - id: httpPort
-      type: System.Nullable{System.Int32}
-      description: 'The HTTP port (default: 5001).'
-    content.vb: Public Sub New(host As String = "localhost", grpcPort As Integer? = Nothing, httpPort As Integer? = Nothing)
+      description: The server port (default from PortConstants).
+    content.vb: Public Sub New(host As String = "localhost", serverPort As Integer? = Nothing)
   overload: Virtufin.Api.Client.ApiClient.#ctor*
-  nameWithType.vb: ApiClient.New(String, Integer?, Integer?)
-  fullName.vb: Virtufin.Api.Client.ApiClient.New(String, Integer?, Integer?)
-  name.vb: New(String, Integer?, Integer?)
+  nameWithType.vb: ApiClient.New(String, Integer?)
+  fullName.vb: Virtufin.Api.Client.ApiClient.New(String, Integer?)
+  name.vb: New(String, Integer?)
 - uid: Virtufin.Api.Client.ApiClient.Gateway
   commentId: P:Virtufin.Api.Client.ApiClient.Gateway
   id: Gateway
@@ -175,7 +172,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Gateway
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 501
+    startLine: 500
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -206,7 +203,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 507
+    startLine: 506
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -237,7 +234,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 514
+    startLine: 513
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -275,7 +272,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 523
+    startLine: 522
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -319,7 +316,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Close
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 529
+    startLine: 528
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -347,7 +344,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: CloseAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 537
+    startLine: 536
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -377,7 +374,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 545
+    startLine: 544
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -407,7 +404,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DisposeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 556
+    startLine: 555
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -712,12 +709,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Virtufin.Api.Client.ApiClient.GrpcPort*
-  commentId: Overload:Virtufin.Api.Client.ApiClient.GrpcPort
-  href: Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient_GrpcPort
-  name: GrpcPort
-  nameWithType: ApiClient.GrpcPort
-  fullName: Virtufin.Api.Client.ApiClient.GrpcPort
+- uid: Virtufin.Api.Client.ApiClient.ServerPort*
+  commentId: Overload:Virtufin.Api.Client.ApiClient.ServerPort
+  href: Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient_ServerPort
+  name: ServerPort
+  nameWithType: ApiClient.ServerPort
+  fullName: Virtufin.Api.Client.ApiClient.ServerPort
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -731,7 +728,7 @@ references:
   name.vb: Integer
 - uid: Virtufin.Api.Client.ApiClient.#ctor*
   commentId: Overload:Virtufin.Api.Client.ApiClient.#ctor
-  href: Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient__ctor_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__
+  href: Virtufin.Api.Client.ApiClient.html#Virtufin_Api_Client_ApiClient__ctor_System_String_System_Nullable_System_Int32__
   name: ApiClient
   nameWithType: ApiClient.ApiClient
   fullName: Virtufin.Api.Client.ApiClient.ApiClient
