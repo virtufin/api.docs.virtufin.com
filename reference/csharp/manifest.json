@@ -224,7 +224,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Configuration.ServicesConfigurationLoader",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Configuration.ServicesConfigurationLoader.yml\" sourcestartlinenumber=\"1\">Loads services configuration from a YAML file.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",

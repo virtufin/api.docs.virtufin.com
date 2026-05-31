@@ -21,12 +21,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ServicesConfigurationLoader
     path: ../../../src/Virtufin.Api/Configuration/ServicesConfigurationLoader.cs
-    startLine: 8
+    startLine: 5
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
-  summary: Loads services configuration from a YAML file.
-  example: []
   syntax:
     content: public class ServicesConfigurationLoader
     content.vb: Public Class ServicesConfigurationLoader
@@ -58,7 +56,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Configuration/ServicesConfigurationLoader.cs
-    startLine: 12
+    startLine: 14
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -90,17 +88,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Load
     path: ../../../src/Virtufin.Api/Configuration/ServicesConfigurationLoader.cs
-    startLine: 21
+    startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
-  summary: Loads and deserializes the services configuration from the configured YAML path.
-  example: []
   syntax:
     content: public ServicesConfiguration Load()
     return:
       type: Virtufin.Api.Configuration.ServicesConfiguration
-      description: The deserialized ServicesConfiguration or an empty configuration if file not found.
     content.vb: Public Function Load() As ServicesConfiguration
   overload: Virtufin.Api.Configuration.ServicesConfigurationLoader.Load*
 references:
