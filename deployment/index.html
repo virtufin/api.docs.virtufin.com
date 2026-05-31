@@ -201,14 +201,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/3e7dfb9e3e98d06baf0f57271d727f61c3577e3c"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/e3517bca9fa1d8106258d97dfc2714d5d81e33e1"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 3e7dfb9">
+       title="View commit e3517bc">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3e7dfb9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e3517bc</text>
       </svg>
     </a>
 </div>
@@ -388,14 +388,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/3e7dfb9e3e98d06baf0f57271d727f61c3577e3c"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/e3517bca9fa1d8106258d97dfc2714d5d81e33e1"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 3e7dfb9">
+       title="View commit e3517bc">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3e7dfb9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e3517bc</text>
       </svg>
     </a>
 </div>
@@ -2427,12 +2427,8 @@ docker<span class="w"> </span>pull<span class="w"> </span>docker.haenerconsultin
 
 <span class="c1"># Run with configuration</span>
 docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span><span class="se">\</span>
-<span class="w">           </span>-p<span class="w"> </span><span class="m">8081</span>:8081<span class="w"> </span><span class="se">\</span>
-<span class="w">           </span>-p<span class="w"> </span><span class="m">8082</span>:8082<span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-e<span class="w"> </span><span class="nv">SERVICES_CONFIG_PATH</span><span class="o">=</span>/config/services.yaml<span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-e<span class="w"> </span><span class="nv">HTTP_PORT</span><span class="o">=</span><span class="m">8080</span><span class="w"> </span><span class="se">\</span>
-<span class="w">           </span>-e<span class="w"> </span><span class="nv">GRPC_PORT</span><span class="o">=</span><span class="m">8081</span><span class="w"> </span><span class="se">\</span>
-<span class="w">           </span>-e<span class="w"> </span><span class="nv">GRPC_WEB_PORT</span><span class="o">=</span><span class="m">8082</span><span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-e<span class="w"> </span><span class="nv">DAPR_HTTP_PORT</span><span class="o">=</span><span class="m">3500</span><span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-e<span class="w"> </span><span class="nv">DAPR_GRPC_PORT</span><span class="o">=</span><span class="m">50001</span><span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-v<span class="w"> </span>/path/to/services.yaml:/config/services.yaml<span class="w"> </span><span class="se">\</span>
@@ -2450,18 +2446,8 @@ docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </sp
 <tbody>
 <tr>
 <td>8080</td>
-<td>HTTP</td>
-<td>REST API and health endpoints</td>
-</tr>
-<tr>
-<td>8081</td>
-<td>gRPC</td>
-<td>gRPC gateway</td>
-</tr>
-<tr>
-<td>8082</td>
-<td>gRPC-Web</td>
-<td>gRPC-Web proxy</td>
+<td>HTTP/gRPC/gRPC-Web</td>
+<td>All protocols share this single port</td>
 </tr>
 </tbody>
 </table>
@@ -2478,17 +2464,7 @@ docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </sp
 <tr>
 <td><code>HTTP_PORT</code></td>
 <td>8080</td>
-<td>HTTP server port</td>
-</tr>
-<tr>
-<td><code>GRPC_PORT</code></td>
-<td>8081</td>
-<td>gRPC port</td>
-</tr>
-<tr>
-<td><code>GRPC_WEB_PORT</code></td>
-<td>8082</td>
-<td>gRPC-Web port</td>
+<td>Shared HTTP/gRPC/gRPC-web port</td>
 </tr>
 <tr>
 <td><code>DAPR_HTTP_PORT</code></td>
@@ -2658,7 +2634,7 @@ kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class=
 <h4 id="troubleshooting_1">Troubleshooting</h4>
 <ul>
 <li><strong>Kubernetes not enabled</strong>: Ensure Podman Desktop settings have Kubernetes enabled</li>
-<li><strong>Port conflicts</strong>: Ensure ports 8080, 8081, 8082 are not in use</li>
+<li><strong>Port conflicts</strong>: Ensure port 8080 is not in use</li>
 <li><strong>Image pull issues</strong>: Verify <code>docker.haenerconsulting.com</code> registry credentials are configured</li>
 </ul>
 <hr />
@@ -2770,7 +2746,7 @@ kubectl<span class="w"> </span>logs<span class="w"> </span>&lt;pod-name&gt;<span
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-05-31T05:26:43Z</span>
+  <span style="display:table-cell;text-align:right">2026-05-31T05:37:50Z</span>
 </div>
 
     </div>

@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/3e7dfb9e3e98d06baf0f57271d727f61c3577e3c"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/e3517bca9fa1d8106258d97dfc2714d5d81e33e1"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 3e7dfb9">
+       title="View commit e3517bc">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3e7dfb9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e3517bc</text>
       </svg>
     </a>
 </div>
@@ -390,14 +390,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/3e7dfb9e3e98d06baf0f57271d727f61c3577e3c"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/e3517bca9fa1d8106258d97dfc2714d5d81e33e1"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 3e7dfb9">
+       title="View commit e3517bc">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3e7dfb9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e3517bc</text>
       </svg>
     </a>
 </div>
@@ -1473,17 +1473,17 @@ dotnet<span class="w"> </span>build
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src/Virtufin.Api
 dapr<span class="w"> </span>run<span class="w"> </span>--app-id<span class="w"> </span>virtufin-api<span class="w"> </span>--app-port<span class="w"> </span><span class="m">5201</span><span class="w"> </span>--<span class="w"> </span>dotnet<span class="w"> </span>run
 </code></pre></div>
-<p>The service starts on ports 5201 (HTTP) and 5202 (gRPC).</p>
+<p>The service starts on port 5201 (HTTP/gRPC/gRPC-web all share this port).</p>
 <h3 id="4-verify">4. Verify</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Health check</span>
 curl<span class="w"> </span>http://localhost:5201/health
 
 <span class="c1"># List available services</span>
-grpcurl<span class="w"> </span>-plaintext<span class="w"> </span>localhost:5202<span class="w"> </span>virtufin.api.Gateway/ListServices
+grpcurl<span class="w"> </span>-plaintext<span class="w"> </span>localhost:5201<span class="w"> </span>virtufin.api.Gateway/ListServices
 </code></pre></div>
 <h2 id="running-with-docker">Running with Docker</h2>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>build<span class="w"> </span>--build-arg<span class="w"> </span><span class="nv">DOTNET_VERSION</span><span class="o">=</span><span class="m">10</span>.0<span class="w"> </span>-t<span class="w"> </span>virtufin-api<span class="w"> </span>-f<span class="w"> </span>src/Virtufin.Api/Dockerfile<span class="w"> </span>.
-docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span>:5201<span class="w"> </span>-p<span class="w"> </span><span class="m">5202</span>:5202<span class="w"> </span>virtufin-api
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">5201</span>:5201<span class="w"> </span>virtufin-api
 </code></pre></div>
 <h2 id="configuration">Configuration</h2>
 <p>Configuration is read from <code>appsettings.json</code> with environment variable overrides:</p>
@@ -1532,7 +1532,7 @@ docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </sp
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-05-31T05:26:43Z</span>
+  <span style="display:table-cell;text-align:right">2026-05-31T05:37:50Z</span>
 </div>
 
     </div>
