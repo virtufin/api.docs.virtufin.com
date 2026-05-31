@@ -56,7 +56,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Configuration/ServicesConfigurationLoader.cs
-    startLine: 14
+    startLine: 9
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -88,7 +88,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Load
     path: ../../../src/Virtufin.Api/Configuration/ServicesConfigurationLoader.cs
-    startLine: 19
+    startLine: 14
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration

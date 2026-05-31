@@ -24,7 +24,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcCallResponse
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -61,7 +61,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -99,7 +99,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Error
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -128,7 +128,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StatusCode
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -157,7 +157,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Message
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -186,7 +186,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Data
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
