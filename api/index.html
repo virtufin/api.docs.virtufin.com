@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/67d87e9240d50c26a853d456763c6087703175d8"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/24ac8889a40e7186f38efcc4ac60d0c21834d048"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 67d87e9">
+       title="View commit 24ac888">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">67d87e9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">24ac888</text>
       </svg>
     </a>
 </div>
@@ -390,14 +390,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/67d87e9240d50c26a853d456763c6087703175d8"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/24ac8889a40e7186f38efcc4ac60d0c21834d048"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 67d87e9">
+       title="View commit 24ac888">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">67d87e9</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">24ac888</text>
       </svg>
     </a>
 </div>
@@ -2092,7 +2092,7 @@
 <span class="w">      </span><span class="nt">&quot;daprAppId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;grpc&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5102</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5002</span><span class="p">,</span>
 <span class="w">        </span><span class="nt">&quot;reflectionEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="w">      </span><span class="p">},</span>
 <span class="w">      </span><span class="nt">&quot;pubsub&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -2508,7 +2508,7 @@ Content-Type: application/json
 <span class="k">using</span><span class="w"> </span><span class="nn">Virtufin.Api.Protos</span><span class="p">;</span>
 
 <span class="c1">// Create channel</span>
-<span class="kt">var</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GrpcChannel</span><span class="p">.</span><span class="n">ForAddress</span><span class="p">(</span><span class="s">&quot;http://localhost:5001&quot;</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GrpcChannel</span><span class="p">.</span><span class="n">ForAddress</span><span class="p">(</span><span class="s">&quot;http://localhost:5002&quot;</span><span class="p">);</span>
 <span class="kt">var</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Gateway</span><span class="p">.</span><span class="n">GatewayClient</span><span class="p">(</span><span class="n">channel</span><span class="p">);</span>
 
 <span class="c1">// List services</span>
@@ -2531,7 +2531,7 @@ Content-Type: application/json
 <span class="kn">import</span><span class="w"> </span><span class="nn">gateway_pb2</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">gateway_pb2_grpc</span>
 
-<span class="n">channel</span> <span class="o">=</span> <span class="n">grpc</span><span class="o">.</span><span class="n">insecure_channel</span><span class="p">(</span><span class="s1">&#39;localhost:5001&#39;</span><span class="p">)</span>
+<span class="n">channel</span> <span class="o">=</span> <span class="n">grpc</span><span class="o">.</span><span class="n">insecure_channel</span><span class="p">(</span><span class="s1">&#39;localhost:5002&#39;</span><span class="p">)</span>
 <span class="n">stub</span> <span class="o">=</span> <span class="n">gateway_pb2_grpc</span><span class="o">.</span><span class="n">GatewayStub</span><span class="p">(</span><span class="n">channel</span><span class="p">)</span>
 
 <span class="c1"># List services</span>
@@ -2593,7 +2593,7 @@ curl<span class="w"> </span>http://localhost:5001/health
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-05-31T20:58:50Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-01T04:25:30Z</span>
 </div>
 
     </div>
