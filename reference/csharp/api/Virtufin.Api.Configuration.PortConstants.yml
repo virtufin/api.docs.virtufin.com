@@ -10,9 +10,9 @@ items:
   - Virtufin.Api.Configuration.PortConstants.DefaultDaprGrpcPort
   - Virtufin.Api.Configuration.PortConstants.DefaultDaprHttpPort
   - Virtufin.Api.Configuration.PortConstants.DefaultGrpcPort
-  - Virtufin.Api.Configuration.PortConstants.DefaultServerPort
+  - Virtufin.Api.Configuration.PortConstants.DefaultHttpPort
   - Virtufin.Api.Configuration.PortConstants.GrpcPortKey
-  - Virtufin.Api.Configuration.PortConstants.ServerPortKey
+  - Virtufin.Api.Configuration.PortConstants.HttpPortKey
   langs:
   - csharp
   - vb
@@ -44,33 +44,33 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Configuration.PortConstants.DefaultServerPort
-  commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultServerPort
-  id: DefaultServerPort
+- uid: Virtufin.Api.Configuration.PortConstants.DefaultHttpPort
+  commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultHttpPort
+  id: DefaultHttpPort
   parent: Virtufin.Api.Configuration.PortConstants
   langs:
   - csharp
   - vb
-  name: DefaultServerPort
-  nameWithType: PortConstants.DefaultServerPort
-  fullName: Virtufin.Api.Configuration.PortConstants.DefaultServerPort
+  name: DefaultHttpPort
+  nameWithType: PortConstants.DefaultHttpPort
+  fullName: Virtufin.Api.Configuration.PortConstants.DefaultHttpPort
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: DefaultServerPort
+    id: DefaultHttpPort
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 4
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
   syntax:
-    content: public const int DefaultServerPort = 5001
+    content: public const int DefaultHttpPort = 5001
     return:
       type: System.Int32
-    content.vb: Public Const DefaultServerPort As Integer = 5001
+    content.vb: Public Const DefaultHttpPort As Integer = 5001
 - uid: Virtufin.Api.Configuration.PortConstants.DefaultGrpcPort
   commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultGrpcPort
   id: DefaultGrpcPort
@@ -152,33 +152,33 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const DefaultDaprGrpcPort As Integer = 50001
-- uid: Virtufin.Api.Configuration.PortConstants.ServerPortKey
-  commentId: F:Virtufin.Api.Configuration.PortConstants.ServerPortKey
-  id: ServerPortKey
+- uid: Virtufin.Api.Configuration.PortConstants.HttpPortKey
+  commentId: F:Virtufin.Api.Configuration.PortConstants.HttpPortKey
+  id: HttpPortKey
   parent: Virtufin.Api.Configuration.PortConstants
   langs:
   - csharp
   - vb
-  name: ServerPortKey
-  nameWithType: PortConstants.ServerPortKey
-  fullName: Virtufin.Api.Configuration.PortConstants.ServerPortKey
+  name: HttpPortKey
+  nameWithType: PortConstants.HttpPortKey
+  fullName: Virtufin.Api.Configuration.PortConstants.HttpPortKey
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: ServerPortKey
+    id: HttpPortKey
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 8
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
   syntax:
-    content: public const string ServerPortKey = "ServerPort"
+    content: public const string HttpPortKey = "HttpPort"
     return:
       type: System.String
-    content.vb: Public Const ServerPortKey As String = "ServerPort"
+    content.vb: Public Const HttpPortKey As String = "HttpPort"
 - uid: Virtufin.Api.Configuration.PortConstants.GrpcPortKey
   commentId: F:Virtufin.Api.Configuration.PortConstants.GrpcPortKey
   id: GrpcPortKey
