@@ -23,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: CronJobConfig
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 57
+    startLine: 56
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -58,7 +58,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 59
+    startLine: 58
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -87,7 +87,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Name
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 60
+    startLine: 59
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -116,7 +116,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Schedule
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 61
+    startLine: 60
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -145,7 +145,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Endpoint
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 62
+    startLine: 61
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration

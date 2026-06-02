@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/698d6ebbe52666c8e9b9bb7fc367e082e96ccac0"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/30f85f059ae7e8d374533a7579edafb2137fb17e"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 698d6eb">
+       title="View commit 30f85f0">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">698d6eb</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">30f85f0</text>
       </svg>
     </a>
 </div>
@@ -390,14 +390,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/698d6ebbe52666c8e9b9bb7fc367e082e96ccac0"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/30f85f059ae7e8d374533a7579edafb2137fb17e"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 698d6eb">
+       title="View commit 30f85f0">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">698d6eb</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">30f85f0</text>
       </svg>
     </a>
 </div>
@@ -790,19 +790,19 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#watchsystemevents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WatchSystemEvents
-      
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#subscribe-system-events-via-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subscribe (System Events via topic)
+      
+    </span>
+  </a>
   
 </li>
         
@@ -1823,19 +1823,19 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#watchsystemevents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WatchSystemEvents
-      
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#subscribe-system-events-via-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subscribe (System Events via topic)
+      
+    </span>
+  </a>
   
 </li>
         
@@ -2329,7 +2329,6 @@
 <span class="w">  </span><span class="k">rpc</span><span class="w"> </span><span class="n">ListServices</span><span class="w"> </span><span class="p">(</span><span class="n">ListServicesRequest</span><span class="p">)</span><span class="w"> </span><span class="k">returns</span><span class="w"> </span><span class="p">(</span><span class="n">ListServicesResponse</span><span class="p">);</span>
 <span class="w">  </span><span class="k">rpc</span><span class="w"> </span><span class="n">ListMethods</span><span class="w"> </span><span class="p">(</span><span class="n">ListMethodsRequest</span><span class="p">)</span><span class="w"> </span><span class="k">returns</span><span class="w"> </span><span class="p">(</span><span class="n">ListMethodsResponse</span><span class="p">);</span>
 <span class="w">  </span><span class="k">rpc</span><span class="w"> </span><span class="n">Subscribe</span><span class="w"> </span><span class="p">(</span><span class="n">SubscribeRequest</span><span class="p">)</span><span class="w"> </span><span class="k">returns</span><span class="w"> </span><span class="p">(</span><span class="n">stream</span><span class="w"> </span><span class="n">StreamEvent</span><span class="p">);</span>
-<span class="w">  </span><span class="k">rpc</span><span class="w"> </span><span class="n">WatchSystemEvents</span><span class="w"> </span><span class="p">(</span><span class="n">SystemEventsRequest</span><span class="p">)</span><span class="w"> </span><span class="k">returns</span><span class="w"> </span><span class="p">(</span><span class="n">stream</span><span class="w"> </span><span class="n">SystemEvent</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="methods">Methods</h3>
@@ -2384,13 +2383,10 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
 - Waits indefinitely (uses <code>Task.Delay(Infinite)</code>)
 - Cleans up subscription on cancellation
 - Unsubscribes using scope built from request filters</p>
-<h4 id="watchsystemevents">WatchSystemEvents</h4>
-<p>Subscribes to system-level events (connection status, errors).</p>
-<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="w"> </span><span class="nf">WatchSystemEvents</span><span class="p">(</span>
-<span class="w">    </span><span class="n">SystemEventsRequest</span><span class="w"> </span><span class="n">request</span><span class="p">,</span>
-<span class="w">    </span><span class="n">IServerStreamWriter</span><span class="o">&lt;</span><span class="n">SystemEvent</span><span class="o">&gt;</span><span class="w"> </span><span class="n">responseStream</span><span class="p">,</span>
-<span class="w">    </span><span class="n">ServerCallContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
-</code></pre></div>
+<h3 id="subscribe-system-events-via-topic">Subscribe (System Events via topic)</h3>
+<blockquote>
+<p><strong>Note:</strong> The <code>WatchSystemEvents</code> RPC was removed. System events (connection status, errors, heartbeats) are now delivered through the regular <code>Subscribe</code> RPC using the <code>system-events</code> topic. Subscribe to topic <code>system-events</code> to receive system-level event notifications.</p>
+</blockquote>
 <p><strong>Behavior:</strong>
 - Creates a subscription for system events
 - Broadcasts connection status changes
@@ -2517,9 +2513,21 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
 <p>Channels are created using service configuration:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">workmanager</span>
-<span class="w">    </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span>
-<span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5102</span>
+<span class="w">    </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">grpc</span>
+<span class="w">    </span><span class="nt">daprAppId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">work-manager</span>
+<span class="w">    </span><span class="nt">grpc</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span>
+<span class="w">      </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5002</span>
+<span class="w">    </span><span class="nt">pubsub</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">pubsubName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pubsub</span>
+<span class="w">    </span><span class="nt">state</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">storeName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">statestore</span>
+<span class="w">    </span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">crons</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
 </code></pre></div>
+<blockquote>
+<p><strong>Hard requirement:</strong> Every service in the configuration <strong>must implement gRPC reflection</strong>. When a gRPC channel is created for a service, the API Gateway probes for reflection support. If reflection is not available, an <code>InvalidOperationException</code> is thrown — the channel is not created and the service cannot be proxied. Ensure all backend services register gRPC reflection via <code>Grpc.AspNetCore.Server.Reflection</code>.</p>
+</blockquote>
 <p>Channel address: <code>http://{host}:{port}</code></p>
 <hr />
 <h2 id="pubsubservice">PubsubService</h2>
@@ -2791,7 +2799,7 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-01T08:55:15Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-02T07:56:17Z</span>
 </div>
 
     </div>

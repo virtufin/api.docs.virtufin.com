@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StateConfig
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 45
+    startLine: 44
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -56,7 +56,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 47
+    startLine: 46
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -85,7 +85,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StoreName
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 48
+    startLine: 47
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration

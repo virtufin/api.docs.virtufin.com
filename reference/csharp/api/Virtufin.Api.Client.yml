@@ -7,6 +7,7 @@ items:
   - Virtufin.Api.Client.ApiClient
   - Virtufin.Api.Client.GatewayClient
   - Virtufin.Api.Client.IStreamEventHandler
+  - Virtufin.Api.Client.PortConstants
   - Virtufin.Api.Client.ServiceClient
   - Virtufin.Api.Client.StreamEventHandler
   langs:
@@ -52,6 +53,12 @@ references:
   name: ApiClient
   nameWithType: ApiClient
   fullName: Virtufin.Api.Client.ApiClient
+- uid: Virtufin.Api.Client.PortConstants
+  commentId: T:Virtufin.Api.Client.PortConstants
+  href: Virtufin.Api.Client.PortConstants.html
+  name: PortConstants
+  nameWithType: PortConstants
+  fullName: Virtufin.Api.Client.PortConstants
 - uid: Virtufin.Api.Client
   commentId: N:Virtufin.Api.Client
   href: Virtufin.html

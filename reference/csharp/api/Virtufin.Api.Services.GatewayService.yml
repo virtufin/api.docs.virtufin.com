@@ -42,7 +42,6 @@ items:
   - System.Object
   - Virtufin.Api.Protos.Gateway.GatewayBase
   inheritedMembers:
-  - Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -319,7 +318,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodSchema
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 329
+    startLine: 342
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -400,65 +399,6 @@ references:
   - name: .
   - uid: Virtufin.Api.Protos.Gateway.GatewayBase
     name: GatewayBase
-- uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Gateway.GatewayBase
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  nameWithType: Gateway.GatewayBase.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
-  nameWithType.vb: Gateway.GatewayBase.WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  fullName.vb: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
-  name.vb: WatchSystemEvents(SystemEventsRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  spec.csharp:
-  - uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-    name: WatchSystemEvents
-  - name: (
-  - uid: Virtufin.Api.Protos.SystemEventsRequest
-    name: SystemEventsRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: <
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: '>'
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-  spec.vb:
-  - uid: Virtufin.Api.Protos.Gateway.GatewayBase.WatchSystemEvents(Virtufin.Api.Protos.SystemEventsRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-    name: WatchSystemEvents
-  - name: (
-  - uid: Virtufin.Api.Protos.SystemEventsRequest
-    name: SystemEventsRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: )
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object

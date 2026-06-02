@@ -29,6 +29,9 @@ items:
   - uid: Virtufin.Api.Client.IStreamEventHandler
     name: IStreamEventHandler
     type: Interface
+  - uid: Virtufin.Api.Client.PortConstants
+    name: PortConstants
+    type: Class
   - uid: Virtufin.Api.Client.ServiceClient
     name: ServiceClient
     type: Class

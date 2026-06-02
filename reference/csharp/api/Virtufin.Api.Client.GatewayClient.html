@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/698d6ebbe52666c8e9b9bb7fc367e082e96ccac0" target="_blank" rel="noopener" class="commit-badge" title="View commit 698d6eb">
+            <a href="{git_repo_url}/commit/30f85f059ae7e8d374533a7579edafb2137fb17e" target="_blank" rel="noopener" class="commit-badge" title="View commit 30f85f0">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">698d6eb</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">30f85f0</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -892,87 +892,6 @@ with the same service name returns the same cached instance.</p>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">UnsubscribeResponse</span>&gt;</dt>
     <dd><p>UnsubscribeResponse with success status.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Client_GatewayClient_WatchSystemEvents_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEvents*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_WatchSystemEvents_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)">
-  WatchSystemEvents(CancellationToken)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Watches system events like connection status changes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AsyncServerStreamingCall&lt;TopicEventRequest&gt; WatchSystemEvents(CancellationToken cancellationToken = default)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs">AsyncServerStreamingCall</a>&lt;<span class="xref">TopicEventRequest</span>&gt;</dt>
-    <dd><p>The async call handle. Dispose to cancel subscription.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Client_GatewayClient_WatchSystemEventsAsync_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync*"></a>
-
-  <h3 id="Virtufin_Api_Client_GatewayClient_WatchSystemEventsAsync_Virtufin_Api_Client_IStreamEventHandler_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)">
-  WatchSystemEventsAsync(IStreamEventHandler, CancellationToken)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Watches system events with a handler callback.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task WatchSystemEventsAsync(IStreamEventHandler handler, CancellationToken cancellationToken = default)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>handler</code> <a class="xref" href="Virtufin.Api.Client.IStreamEventHandler.html">IStreamEventHandler</a></dt>
-    <dd><p>Handler to receive system events.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd><p>Task that completes when subscription is cancelled.</p>
 </dd>
   </dl>
 

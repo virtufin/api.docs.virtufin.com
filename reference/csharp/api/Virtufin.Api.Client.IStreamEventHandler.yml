@@ -7,7 +7,6 @@ items:
   children:
   - Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
   - Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  - Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
   langs:
   - csharp
   - vb
@@ -22,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: IStreamEventHandler
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 63
+    startLine: 61
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -51,7 +50,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OnEvent
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 69
+    startLine: 67
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -65,38 +64,6 @@ items:
       description: The topic event request containing event data.
     content.vb: Sub OnEvent(e As TopicEventRequest)
   overload: Virtufin.Api.Client.IStreamEventHandler.OnEvent*
-- uid: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  id: OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  parent: Virtufin.Api.Client.IStreamEventHandler
-  langs:
-  - csharp
-  - vb
-  name: OnSystemEvent(TopicEventRequest)
-  nameWithType: IStreamEventHandler.OnSystemEvent(TopicEventRequest)
-  fullName: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Api.Client/ApiClient.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: OnSystemEvent
-    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 75
-  assemblies:
-  - Virtufin.Api.Client
-  namespace: Virtufin.Api.Client
-  summary: Called when a system event is received.
-  example: []
-  syntax:
-    content: void OnSystemEvent(TopicEventRequest e)
-    parameters:
-    - id: e
-      type: Virtufin.Api.Protos.TopicEventRequest
-      description: The topic event request containing system event data.
-    content.vb: Sub OnSystemEvent(e As TopicEventRequest)
-  overload: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent*
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
   commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
   id: OnError(System.Exception)
@@ -115,7 +82,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OnError
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 81
+    startLine: 73
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -195,12 +162,6 @@ references:
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-- uid: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent*
-  commentId: Overload:Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent
-  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnSystemEvent_Virtufin_Api_Protos_TopicEventRequest_
-  name: OnSystemEvent
-  nameWithType: IStreamEventHandler.OnSystemEvent
-  fullName: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnError*
   commentId: Overload:Virtufin.Api.Client.IStreamEventHandler.OnError
   href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnError_System_Exception_

@@ -1,34 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Configuration.GrpcConfig
-  commentId: T:Virtufin.Api.Configuration.GrpcConfig
-  id: GrpcConfig
-  parent: Virtufin.Api.Configuration
+- uid: Virtufin.Api.Client.PortConstants
+  commentId: T:Virtufin.Api.Client.PortConstants
+  id: PortConstants
+  parent: Virtufin.Api.Client
   children:
-  - Virtufin.Api.Configuration.GrpcConfig.#ctor
-  - Virtufin.Api.Configuration.GrpcConfig.Host
-  - Virtufin.Api.Configuration.GrpcConfig.Port
+  - Virtufin.Api.Client.PortConstants.DefaultGrpcPort
+  - Virtufin.Api.Client.PortConstants.DefaultHttpPort
   langs:
   - csharp
   - vb
-  name: GrpcConfig
-  nameWithType: GrpcConfig
-  fullName: Virtufin.Api.Configuration.GrpcConfig
+  name: PortConstants
+  nameWithType: PortConstants
+  fullName: Virtufin.Api.Client.PortConstants
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/Models.cs
+      path: src/Virtufin.Api.Client/PortConstants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GrpcConfig
-    path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 31
+    id: PortConstants
+    path: ../../../src/Virtufin.Api.Client/PortConstants.cs
+    startLine: 2
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Configuration
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
   syntax:
-    content: public class GrpcConfig
-    content.vb: Public Class GrpcConfig
+    content: public static class PortConstants
+    content.vb: Public Module PortConstants
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,100 +38,67 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Configuration.GrpcConfig.#ctor
-  commentId: M:Virtufin.Api.Configuration.GrpcConfig.#ctor
-  id: '#ctor'
-  parent: Virtufin.Api.Configuration.GrpcConfig
+- uid: Virtufin.Api.Client.PortConstants.DefaultHttpPort
+  commentId: F:Virtufin.Api.Client.PortConstants.DefaultHttpPort
+  id: DefaultHttpPort
+  parent: Virtufin.Api.Client.PortConstants
   langs:
   - csharp
   - vb
-  name: GrpcConfig()
-  nameWithType: GrpcConfig.GrpcConfig()
-  fullName: Virtufin.Api.Configuration.GrpcConfig.GrpcConfig()
-  type: Constructor
+  name: DefaultHttpPort
+  nameWithType: PortConstants.DefaultHttpPort
+  fullName: Virtufin.Api.Client.PortConstants.DefaultHttpPort
+  type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/Models.cs
+      path: src/Virtufin.Api.Client/PortConstants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: .ctor
-    path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 33
+    id: DefaultHttpPort
+    path: ../../../src/Virtufin.Api.Client/PortConstants.cs
+    startLine: 4
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Configuration
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
   syntax:
-    content: public GrpcConfig()
-    content.vb: Public Sub New()
-  overload: Virtufin.Api.Configuration.GrpcConfig.#ctor*
-  nameWithType.vb: GrpcConfig.New()
-  fullName.vb: Virtufin.Api.Configuration.GrpcConfig.New()
-  name.vb: New()
-- uid: Virtufin.Api.Configuration.GrpcConfig.Host
-  commentId: P:Virtufin.Api.Configuration.GrpcConfig.Host
-  id: Host
-  parent: Virtufin.Api.Configuration.GrpcConfig
-  langs:
-  - csharp
-  - vb
-  name: Host
-  nameWithType: GrpcConfig.Host
-  fullName: Virtufin.Api.Configuration.GrpcConfig.Host
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Configuration/Models.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Host
-    path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 34
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Configuration
-  syntax:
-    content: public string Host { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Host As String
-  overload: Virtufin.Api.Configuration.GrpcConfig.Host*
-- uid: Virtufin.Api.Configuration.GrpcConfig.Port
-  commentId: P:Virtufin.Api.Configuration.GrpcConfig.Port
-  id: Port
-  parent: Virtufin.Api.Configuration.GrpcConfig
-  langs:
-  - csharp
-  - vb
-  name: Port
-  nameWithType: GrpcConfig.Port
-  fullName: Virtufin.Api.Configuration.GrpcConfig.Port
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Configuration/Models.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Port
-    path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 35
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Configuration
-  syntax:
-    content: public int Port { get; set; }
-    parameters: []
+    content: public const int DefaultHttpPort = 5001
     return:
       type: System.Int32
-    content.vb: Public Property Port As Integer
-  overload: Virtufin.Api.Configuration.GrpcConfig.Port*
+    content.vb: Public Const DefaultHttpPort As Integer = 5001
+- uid: Virtufin.Api.Client.PortConstants.DefaultGrpcPort
+  commentId: F:Virtufin.Api.Client.PortConstants.DefaultGrpcPort
+  id: DefaultGrpcPort
+  parent: Virtufin.Api.Client.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DefaultGrpcPort
+  nameWithType: PortConstants.DefaultGrpcPort
+  fullName: Virtufin.Api.Client.PortConstants.DefaultGrpcPort
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DefaultGrpcPort
+    path: ../../../src/Virtufin.Api.Client/PortConstants.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  syntax:
+    content: public const int DefaultGrpcPort = 5002
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultGrpcPort As Integer = 5002
 references:
-- uid: Virtufin.Api.Configuration
-  commentId: N:Virtufin.Api.Configuration
+- uid: Virtufin.Api.Client
+  commentId: N:Virtufin.Api.Client
   href: Virtufin.html
-  name: Virtufin.Api.Configuration
-  nameWithType: Virtufin.Api.Configuration
-  fullName: Virtufin.Api.Configuration
+  name: Virtufin.Api.Client
+  nameWithType: Virtufin.Api.Client
+  fullName: Virtufin.Api.Client
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
@@ -142,9 +108,9 @@ references:
     name: Api
     href: Virtufin.Api.html
   - name: .
-  - uid: Virtufin.Api.Configuration
-    name: Configuration
-    href: Virtufin.Api.Configuration.html
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
@@ -154,9 +120,9 @@ references:
     name: Api
     href: Virtufin.Api.html
   - name: .
-  - uid: Virtufin.Api.Configuration
-    name: Configuration
-    href: Virtufin.Api.Configuration.html
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -394,38 +360,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Virtufin.Api.Configuration.GrpcConfig.#ctor*
-  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.#ctor
-  href: Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig__ctor
-  name: GrpcConfig
-  nameWithType: GrpcConfig.GrpcConfig
-  fullName: Virtufin.Api.Configuration.GrpcConfig.GrpcConfig
-  nameWithType.vb: GrpcConfig.New
-  fullName.vb: Virtufin.Api.Configuration.GrpcConfig.New
-  name.vb: New
-- uid: Virtufin.Api.Configuration.GrpcConfig.Host*
-  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.Host
-  href: Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_Host
-  name: Host
-  nameWithType: GrpcConfig.Host
-  fullName: Virtufin.Api.Configuration.GrpcConfig.Host
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Virtufin.Api.Configuration.GrpcConfig.Port*
-  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.Port
-  href: Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_Port
-  name: Port
-  nameWithType: GrpcConfig.Port
-  fullName: Virtufin.Api.Configuration.GrpcConfig.Port
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

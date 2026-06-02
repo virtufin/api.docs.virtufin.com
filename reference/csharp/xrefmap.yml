@@ -448,32 +448,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync
   nameWithType: GatewayClient.UnsubscribeFromTopicAsync
-- uid: Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)
-  name: WatchSystemEvents(CancellationToken)
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_WatchSystemEvents_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)
-  nameWithType: GatewayClient.WatchSystemEvents(CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.WatchSystemEvents*
-  name: WatchSystemEvents
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_WatchSystemEvents_
-  commentId: Overload:Virtufin.Api.Client.GatewayClient.WatchSystemEvents
-  isSpec: "True"
-  fullName: Virtufin.Api.Client.GatewayClient.WatchSystemEvents
-  nameWithType: GatewayClient.WatchSystemEvents
-- uid: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)
-  name: WatchSystemEventsAsync(IStreamEventHandler, CancellationToken)
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_WatchSystemEventsAsync_Virtufin_Api_Client_IStreamEventHandler_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler, System.Threading.CancellationToken)
-  nameWithType: GatewayClient.WatchSystemEventsAsync(IStreamEventHandler, CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync*
-  name: WatchSystemEventsAsync
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_WatchSystemEventsAsync_
-  commentId: Overload:Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync
-  isSpec: "True"
-  fullName: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync
-  nameWithType: GatewayClient.WatchSystemEventsAsync
 - uid: Virtufin.Api.Client.IStreamEventHandler
   name: IStreamEventHandler
   href: api/Virtufin.Api.Client.IStreamEventHandler.html
@@ -506,19 +480,24 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent
   nameWithType: IStreamEventHandler.OnEvent
-- uid: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  name: OnSystemEvent(TopicEventRequest)
-  href: api/Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnSystemEvent_Virtufin_Api_Protos_TopicEventRequest_
-  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  fullName: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  nameWithType: IStreamEventHandler.OnSystemEvent(TopicEventRequest)
-- uid: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent*
-  name: OnSystemEvent
-  href: api/Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnSystemEvent_
-  commentId: Overload:Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent
-  isSpec: "True"
-  fullName: Virtufin.Api.Client.IStreamEventHandler.OnSystemEvent
-  nameWithType: IStreamEventHandler.OnSystemEvent
+- uid: Virtufin.Api.Client.PortConstants
+  name: PortConstants
+  href: api/Virtufin.Api.Client.PortConstants.html
+  commentId: T:Virtufin.Api.Client.PortConstants
+  fullName: Virtufin.Api.Client.PortConstants
+  nameWithType: PortConstants
+- uid: Virtufin.Api.Client.PortConstants.DefaultGrpcPort
+  name: DefaultGrpcPort
+  href: api/Virtufin.Api.Client.PortConstants.html#Virtufin_Api_Client_PortConstants_DefaultGrpcPort
+  commentId: F:Virtufin.Api.Client.PortConstants.DefaultGrpcPort
+  fullName: Virtufin.Api.Client.PortConstants.DefaultGrpcPort
+  nameWithType: PortConstants.DefaultGrpcPort
+- uid: Virtufin.Api.Client.PortConstants.DefaultHttpPort
+  name: DefaultHttpPort
+  href: api/Virtufin.Api.Client.PortConstants.html#Virtufin_Api_Client_PortConstants_DefaultHttpPort
+  commentId: F:Virtufin.Api.Client.PortConstants.DefaultHttpPort
+  fullName: Virtufin.Api.Client.PortConstants.DefaultHttpPort
+  nameWithType: PortConstants.DefaultHttpPort
 - uid: Virtufin.Api.Client.ServiceClient
   name: ServiceClient
   href: api/Virtufin.Api.Client.ServiceClient.html
@@ -639,25 +618,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.StreamEventHandler.OnEvent
   nameWithType: StreamEventHandler.OnEvent
-- uid: Virtufin.Api.Client.StreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  name: OnSystemEvent(TopicEventRequest)
-  href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_OnSystemEvent_Virtufin_Api_Protos_TopicEventRequest_
-  commentId: M:Virtufin.Api.Client.StreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  fullName: Virtufin.Api.Client.StreamEventHandler.OnSystemEvent(Virtufin.Api.Protos.TopicEventRequest)
-  nameWithType: StreamEventHandler.OnSystemEvent(TopicEventRequest)
-- uid: Virtufin.Api.Client.StreamEventHandler.OnSystemEvent*
-  name: OnSystemEvent
-  href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_OnSystemEvent_
-  commentId: Overload:Virtufin.Api.Client.StreamEventHandler.OnSystemEvent
-  isSpec: "True"
-  fullName: Virtufin.Api.Client.StreamEventHandler.OnSystemEvent
-  nameWithType: StreamEventHandler.OnSystemEvent
-- uid: Virtufin.Api.Client.StreamEventHandler.SystemEventReceived
-  name: SystemEventReceived
-  href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_SystemEventReceived
-  commentId: E:Virtufin.Api.Client.StreamEventHandler.SystemEventReceived
-  fullName: Virtufin.Api.Client.StreamEventHandler.SystemEventReceived
-  nameWithType: StreamEventHandler.SystemEventReceived
 - uid: Virtufin.Api.Configuration
   name: Virtufin.Api.Configuration
   href: api/Virtufin.Api.Configuration.html
@@ -779,19 +739,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Configuration.GrpcConfig.Port
   nameWithType: GrpcConfig.Port
-- uid: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
-  name: ReflectionEnabled
-  href: api/Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_ReflectionEnabled
-  commentId: P:Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
-  fullName: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
-  nameWithType: GrpcConfig.ReflectionEnabled
-- uid: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled*
-  name: ReflectionEnabled
-  href: api/Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_ReflectionEnabled_
-  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
-  isSpec: "True"
-  fullName: Virtufin.Api.Configuration.GrpcConfig.ReflectionEnabled
-  nameWithType: GrpcConfig.ReflectionEnabled
 - uid: Virtufin.Api.Configuration.JobsConfig
   name: JobsConfig
   href: api/Virtufin.Api.Configuration.JobsConfig.html

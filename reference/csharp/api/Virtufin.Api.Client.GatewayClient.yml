@@ -21,8 +21,6 @@ items:
   - Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
   - Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(System.String)
   - Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(System.String,System.Threading.CancellationToken)
-  - Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)
-  - Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -37,7 +35,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GatewayClient
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 123
+    startLine: 107
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -93,7 +91,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 135
+    startLine: 119
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -128,7 +126,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TryGetMember
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 146
+    startLine: 130
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -167,7 +165,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 156
+    startLine: 140
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -198,7 +196,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 168
+    startLine: 152
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -236,7 +234,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 191
+    startLine: 175
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -284,7 +282,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 229
+    startLine: 213
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -337,7 +335,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 251
+    startLine: 235
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -384,7 +382,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 270
+    startLine: 254
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -428,7 +426,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetAllStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 283
+    startLine: 267
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -469,7 +467,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 298
+    startLine: 282
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -516,7 +514,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 321
+    startLine: 305
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -557,7 +555,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 332
+    startLine: 316
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -595,7 +593,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 344
+    startLine: 328
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -636,7 +634,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 359
+    startLine: 343
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -683,7 +681,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 382
+    startLine: 366
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -715,79 +713,6 @@ items:
   nameWithType.vb: GatewayClient.SubscribeAsync(IStreamEventHandler, IEnumerable(Of String), IEnumerable(Of String), IEnumerable(Of String), CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler, System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
   name.vb: SubscribeAsync(IStreamEventHandler, IEnumerable(Of String), IEnumerable(Of String), IEnumerable(Of String), CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)
-  id: WatchSystemEvents(System.Threading.CancellationToken)
-  parent: Virtufin.Api.Client.GatewayClient
-  langs:
-  - csharp
-  - vb
-  name: WatchSystemEvents(CancellationToken)
-  nameWithType: GatewayClient.WatchSystemEvents(CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.WatchSystemEvents(System.Threading.CancellationToken)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Api.Client/ApiClient.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: WatchSystemEvents
-    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 416
-  assemblies:
-  - Virtufin.Api.Client
-  namespace: Virtufin.Api.Client
-  summary: Watches system events like connection status changes.
-  example: []
-  syntax:
-    content: public AsyncServerStreamingCall<TopicEventRequest> WatchSystemEvents(CancellationToken cancellationToken = default)
-    parameters:
-    - id: cancellationToken
-      type: System.Threading.CancellationToken
-      description: Cancellation token.
-    return:
-      type: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.TopicEventRequest}
-      description: The async call handle. Dispose to cancel subscription.
-    content.vb: Public Function WatchSystemEvents(cancellationToken As CancellationToken = Nothing) As AsyncServerStreamingCall(Of TopicEventRequest)
-  overload: Virtufin.Api.Client.GatewayClient.WatchSystemEvents*
-- uid: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)
-  id: WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler,System.Threading.CancellationToken)
-  parent: Virtufin.Api.Client.GatewayClient
-  langs:
-  - csharp
-  - vb
-  name: WatchSystemEventsAsync(IStreamEventHandler, CancellationToken)
-  nameWithType: GatewayClient.WatchSystemEventsAsync(IStreamEventHandler, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync(Virtufin.Api.Client.IStreamEventHandler, System.Threading.CancellationToken)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Api.Client/ApiClient.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: WatchSystemEventsAsync
-    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 427
-  assemblies:
-  - Virtufin.Api.Client
-  namespace: Virtufin.Api.Client
-  summary: Watches system events with a handler callback.
-  example: []
-  syntax:
-    content: public Task WatchSystemEventsAsync(IStreamEventHandler handler, CancellationToken cancellationToken = default)
-    parameters:
-    - id: handler
-      type: Virtufin.Api.Client.IStreamEventHandler
-      description: Handler to receive system events.
-    - id: cancellationToken
-      type: System.Threading.CancellationToken
-      description: Cancellation token.
-    return:
-      type: System.Threading.Tasks.Task
-      description: Task that completes when subscription is cancelled.
-    content.vb: Public Function WatchSystemEventsAsync(handler As IStreamEventHandler, cancellationToken As CancellationToken = Nothing) As Task
-  overload: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync*
 - uid: Virtufin.Api.Client.GatewayClient.GetService(System.String)
   commentId: M:Virtufin.Api.Client.GatewayClient.GetService(System.String)
   id: GetService(System.String)
@@ -806,7 +731,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 457
+    startLine: 404
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -2946,18 +2871,6 @@ references:
   name: Task
   nameWithType: Task
   fullName: System.Threading.Tasks.Task
-- uid: Virtufin.Api.Client.GatewayClient.WatchSystemEvents*
-  commentId: Overload:Virtufin.Api.Client.GatewayClient.WatchSystemEvents
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_WatchSystemEvents_System_Threading_CancellationToken_
-  name: WatchSystemEvents
-  nameWithType: GatewayClient.WatchSystemEvents
-  fullName: Virtufin.Api.Client.GatewayClient.WatchSystemEvents
-- uid: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync*
-  commentId: Overload:Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_WatchSystemEventsAsync_Virtufin_Api_Client_IStreamEventHandler_System_Threading_CancellationToken_
-  name: WatchSystemEventsAsync
-  nameWithType: GatewayClient.WatchSystemEventsAsync
-  fullName: Virtufin.Api.Client.GatewayClient.WatchSystemEventsAsync
 - uid: Virtufin.Api.Client.GatewayClient.GetService*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.GetService
   href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_GetService_System_String_

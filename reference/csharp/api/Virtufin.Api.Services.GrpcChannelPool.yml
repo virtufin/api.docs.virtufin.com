@@ -24,15 +24,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcChannelPool
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: >-
-    Thread-safe pool of gRPC channels for backend services.
-
-    Uses .NET's built-in HTTP/2 connection pooling via SocketsHttpHandler.
-  example: []
   syntax:
     content: 'public class GrpcChannelPool : IDisposable'
     content.vb: Public Class GrpcChannelPool Implements IDisposable
@@ -66,12 +61,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 19
+    startLine: 15
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Creates a new GrpcChannelPool instance.
-  example: []
   syntax:
     content: public GrpcChannelPool(ServicesConfiguration config, ILogger<GrpcChannelPool> logger)
     parameters:
@@ -102,7 +95,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ChannelCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 34
+    startLine: 21
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -131,7 +124,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ConfiguredServiceCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 36
+    startLine: 22
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -160,15 +153,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetChannel
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 42
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: >-
-    Gets a gRPC channel for the specified service, creating one if needed.
-
-    Channels are shared and use .NET's built-in connection pooling for HTTP/2.
-  example: []
   syntax:
     content: public GrpcChannel GetChannel(string serviceName)
     parameters:
@@ -199,7 +187,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 47
+    startLine: 29
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
