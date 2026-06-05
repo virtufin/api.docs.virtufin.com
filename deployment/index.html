@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/5db228696d8a96dc982160f0fbbf6c735fa82df5"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/48d6de654d3b3220d5c39c0a186265e868de3644"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 5db2286">
+       title="View commit 48d6de6">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5db2286</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">48d6de6</text>
       </svg>
     </a>
 </div>
@@ -370,14 +370,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/5db228696d8a96dc982160f0fbbf6c735fa82df5"
+    <a href="https://gitea.haenerconsulting.com/virtufin/virtufin-api/commit/48d6de654d3b3220d5c39c0a186265e868de3644"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 5db2286">
+       title="View commit 48d6de6">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5db2286</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">48d6de6</text>
       </svg>
     </a>
 </div>
@@ -2403,11 +2403,11 @@ npm<span class="w"> </span>config<span class="w"> </span><span class="nb">set</s
 docker<span class="w"> </span>pull<span class="w"> </span>docker.haenerconsulting.com/virtufin/api:latest
 
 <span class="c1"># Run with configuration</span>
-docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span><span class="se">\</span>
-<span class="w">           </span>-p<span class="w"> </span><span class="m">8081</span>:8081<span class="w"> </span><span class="se">\</span>
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">5001</span>:5001<span class="w"> </span><span class="se">\</span>
+<span class="w">           </span>-p<span class="w"> </span><span class="m">5002</span>:5002<span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-e<span class="w"> </span><span class="nv">SERVICES_CONFIG_PATH</span><span class="o">=</span>/config/services.yaml<span class="w"> </span><span class="se">\</span>
-<span class="w">            </span>-e<span class="w"> </span><span class="nv">HTTP_PORT</span><span class="o">=</span><span class="m">8080</span><span class="w"> </span><span class="se">\</span>
-<span class="w">           </span>-e<span class="w"> </span><span class="nv">GRPC_PORT</span><span class="o">=</span><span class="m">8081</span><span class="w"> </span><span class="se">\</span>
+<span class="w">            </span>-e<span class="w"> </span><span class="nv">HTTP_PORT</span><span class="o">=</span><span class="m">5001</span><span class="w"> </span><span class="se">\</span>
+<span class="w">           </span>-e<span class="w"> </span><span class="nv">GRPC_PORT</span><span class="o">=</span><span class="m">5002</span><span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-e<span class="w"> </span><span class="nv">DAPR_HTTP_PORT</span><span class="o">=</span><span class="m">3500</span><span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-e<span class="w"> </span><span class="nv">DAPR_GRPC_PORT</span><span class="o">=</span><span class="m">50001</span><span class="w"> </span><span class="se">\</span>
 <span class="w">           </span>-v<span class="w"> </span>/path/to/services.yaml:/config/services.yaml<span class="w"> </span><span class="se">\</span>
@@ -2424,12 +2424,12 @@ docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </sp
 </thead>
 <tbody>
 <tr>
-<td>8080</td>
+<td>5001</td>
 <td>HTTP/gRPC-Web</td>
 <td>HTTP port (REST, Swagger, health, gRPC-Web)</td>
 </tr>
 <tr>
-<td>8081</td>
+<td>5002</td>
 <td>gRPC (h2c)</td>
 <td>Native gRPC HTTP/2 port</td>
 </tr>
@@ -2447,12 +2447,12 @@ docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </sp
 <tbody>
 <tr>
 <td><code>HTTP_PORT</code></td>
-<td>8080</td>
+<td>5001</td>
 <td>HTTP port (REST, Swagger, gRPC-Web)</td>
 </tr>
 <tr>
 <td><code>GRPC_PORT</code></td>
-<td>8081</td>
+<td>5002</td>
 <td>gRPC port (native gRPC h2c)</td>
 </tr>
 <tr>
@@ -2477,10 +2477,10 @@ docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </sp
 </blockquote>
 <h3 id="verify-deployment">Verify Deployment</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Health check</span>
-curl<span class="w"> </span>http://localhost:8080/health
+curl<span class="w"> </span>http://localhost:5001/health
 
 <span class="c1"># List services (requires running backend services)</span>
-curl<span class="w"> </span>http://localhost:8080/v1/gateway/list-services
+curl<span class="w"> </span>http://localhost:5001/v1/gateway/list-services
 </code></pre></div>
 <hr />
 <h2 id="kubernetes-deployment">Kubernetes Deployment</h2>
@@ -2550,7 +2550,7 @@ kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </
 kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class="w"> </span>deployment/virtufin-api<span class="w"> </span>-n<span class="w"> </span>virtufin
 
 <span class="c1"># Access the API</span>
-curl<span class="w"> </span>http://localhost:8080/health
+curl<span class="w"> </span>http://localhost:5001/health
 </code></pre></div>
 <h4 id="stop-colima">Stop Colima</h4>
 <div class="highlight"><pre><span></span><code>colima<span class="w"> </span>stop
@@ -2617,8 +2617,8 @@ kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class=
 </code></pre></div>
 <h4 id="access-the-api">Access the API</h4>
 <p>On macOS with Colima or Podman, port forwarding may be needed:
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>svc/virtufin-api<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span><span class="m">8081</span>:8081
-<span class="c1"># Then access: http://localhost:8080/health (HTTP), http://localhost:8081 (gRPC)</span>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>svc/virtufin-api<span class="w"> </span><span class="m">5001</span>:5001<span class="w"> </span><span class="m">5002</span>:5002
+<span class="c1"># Then access: http://localhost:5001/health (HTTP), http://localhost:5002 (gRPC)</span>
 </code></pre></div></p>
 <h4 id="stop-podman-machine">Stop Podman Machine</h4>
 <div class="highlight"><pre><span></span><code>podman<span class="w"> </span>machine<span class="w"> </span>stop<span class="w"> </span>my-k8s
@@ -2626,7 +2626,7 @@ kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class=
 <h4 id="troubleshooting_1">Troubleshooting</h4>
 <ul>
 <li><strong>Kubernetes not enabled</strong>: Ensure Podman Desktop settings have Kubernetes enabled</li>
-<li><strong>Port conflicts</strong>: Ensure port 8080 is not in use</li>
+<li><strong>Port conflicts</strong>: Ensure port 5001 is not in use</li>
 <li><strong>Image pull issues</strong>: Verify <code>docker.haenerconsulting.com</code> registry credentials are configured</li>
 </ul>
 <hr />
@@ -2648,14 +2648,14 @@ kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class=
 <div class="highlight"><pre><span></span><code><span class="nt">livenessProbe</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">httpGet</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/health</span>
-<span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080</span>
+<span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5001</span>
 <span class="w">  </span><span class="nt">initialDelaySeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
 <span class="w">  </span><span class="nt">periodSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15</span>
 
 <span class="nt">readinessProbe</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">httpGet</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/health</span>
-<span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080</span>
+<span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5001</span>
 <span class="w">  </span><span class="nt">initialDelaySeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
 <span class="w">  </span><span class="nt">periodSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
 </code></pre></div>
@@ -2701,7 +2701,7 @@ kubectl<span class="w"> </span>logs<span class="w"> </span>&lt;pod-name&gt;<span
 </ol>
 <h3 id="health-check-failures">Health Check Failures</h3>
 <ol>
-<li>Verify API is listening on correct port (8080)</li>
+<li>Verify API is listening on correct port (5001)</li>
 <li>Check service has gRPC reflection enabled (mandatory for API Gateway to function)</li>
 <li>Review logs for startup errors:
    <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span>&lt;pod-name&gt;<span class="w"> </span>-n<span class="w"> </span>virtufin
@@ -2742,7 +2742,7 @@ kubectl<span class="w"> </span>logs<span class="w"> </span>&lt;pod-name&gt;<span
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-03T10:16:39Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-05T01:07:53Z</span>
 </div>
 
     </div>
