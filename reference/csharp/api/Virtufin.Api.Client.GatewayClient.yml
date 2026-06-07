@@ -14,6 +14,7 @@ items:
   - Virtufin.Api.Client.GatewayClient.ListMethodsAsync(System.String)
   - Virtufin.Api.Client.GatewayClient.ListServicesAsync
   - Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+  - Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
@@ -636,6 +637,69 @@ items:
   nameWithType.vb: GatewayClient.UnsubscribeFromTopicAsync(String, CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(String, System.Threading.CancellationToken)
   name.vb: UnsubscribeFromTopicAsync(String, CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
+  id: PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Client.GatewayClient
+  langs:
+  - csharp
+  - vb
+  name: PublishWithResultAsync(string, byte[], string, TimeSpan?, Dictionary<string, string>?, string?, CancellationToken)
+  nameWithType: GatewayClient.PublishWithResultAsync(string, byte[], string, TimeSpan?, Dictionary<string, string>?, string?, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(string, byte[], string, System.TimeSpan?, System.Collections.Generic.Dictionary<string, string>?, string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/ApiClient.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: PublishWithResultAsync
+    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
+    startLine: 376
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: >-
+    Publishes to a topic and waits for a correlated response on a reply topic.
+
+    Implements the request-reply pattern over pub/sub using correlation IDs.
+  example: []
+  syntax:
+    content: public Task<PubsubSubscribeResponse> PublishWithResultAsync(string topic, byte[] data, string replyTopic, TimeSpan? timeout = null, Dictionary<string, string>? metadata = null, string? correlationId = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: topic
+      type: System.String
+      description: The topic to publish the request to.
+    - id: data
+      type: System.Byte[]
+      description: The request data as bytes.
+    - id: replyTopic
+      type: System.String
+      description: The topic to listen for responses on.
+    - id: timeout
+      type: System.Nullable{System.TimeSpan}
+      description: 'Maximum time to wait for a response (default: 30s).'
+    - id: metadata
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Optional additional metadata to include.
+    - id: correlationId
+      type: System.String
+      description: Optional correlation ID (auto-generated if null).
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.PubsubSubscribeResponse}
+      description: The correlated PubsubSubscribeResponse.
+    content.vb: Public Function PublishWithResultAsync(topic As String, data As Byte(), replyTopic As String, timeout As TimeSpan? = Nothing, metadata As Dictionary(Of String, String) = Nothing, correlationId As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of PubsubSubscribeResponse)
+  overload: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync*
+  exceptions:
+  - type: System.TimeoutException
+    commentId: T:System.TimeoutException
+    description: Thrown if no response arrives within the timeout.
+  nameWithType.vb: GatewayClient.PublishWithResultAsync(String, Byte(), String, TimeSpan?, Dictionary(Of String, String), String, CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(String, Byte(), String, System.TimeSpan?, System.Collections.Generic.Dictionary(Of String, String), String, System.Threading.CancellationToken)
+  name.vb: PublishWithResultAsync(String, Byte(), String, TimeSpan?, Dictionary(Of String, String), String, CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   id: Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
@@ -654,7 +718,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 372
+    startLine: 437
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -701,7 +765,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 395
+    startLine: 460
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -751,7 +815,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 433
+    startLine: 498
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -2864,6 +2928,98 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.UnsubscribeResponse
     name: UnsubscribeResponse
+  - name: )
+- uid: System.TimeoutException
+  commentId: T:System.TimeoutException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timeoutexception
+  name: TimeoutException
+  nameWithType: TimeoutException
+  fullName: System.TimeoutException
+- uid: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync*
+  commentId: Overload:Virtufin.Api.Client.GatewayClient.PublishWithResultAsync
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_PublishWithResultAsync_System_String_System_Byte___System_String_System_Nullable_System_TimeSpan__System_Collections_Generic_Dictionary_System_String_System_String__System_String_System_Threading_CancellationToken_
+  name: PublishWithResultAsync
+  nameWithType: GatewayClient.PublishWithResultAsync
+  fullName: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.PubsubSubscribeResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.PubsubSubscribeResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PubsubSubscribeResponse>
+  nameWithType: Task<PubsubSubscribeResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.PubsubSubscribeResponse>
+  nameWithType.vb: Task(Of PubsubSubscribeResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
+  name.vb: Task(Of PubsubSubscribeResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
+    name: PubsubSubscribeResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
+    name: PubsubSubscribeResponse
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
 - uid: Virtufin.Api.Client.GatewayClient.Subscribe*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.Subscribe

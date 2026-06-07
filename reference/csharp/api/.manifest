@@ -25,6 +25,7 @@
   "Virtufin.Api.Client.GatewayClient.ListMethodsAsync(System.String)": "Virtufin.Api.Client.GatewayClient.yml",
   "Virtufin.Api.Client.GatewayClient.ListServicesAsync": "Virtufin.Api.Client.GatewayClient.yml",
   "Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)": "Virtufin.Api.Client.GatewayClient.yml",
+  "Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)": "Virtufin.Api.Client.GatewayClient.yml",
   "Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)": "Virtufin.Api.Client.GatewayClient.yml",
   "Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)": "Virtufin.Api.Client.GatewayClient.yml",
   "Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)": "Virtufin.Api.Client.GatewayClient.yml",

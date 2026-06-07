@@ -336,6 +336,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.GatewayClient.PublishEventAsync
   nameWithType: GatewayClient.PublishEventAsync
+- uid: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
+  name: PublishWithResultAsync(string, byte[], string, TimeSpan?, Dictionary<string, string>?, string?, CancellationToken)
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_PublishWithResultAsync_System_String_System_Byte___System_String_System_Nullable_System_TimeSpan__System_Collections_Generic_Dictionary_System_String_System_String__System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
+  name.vb: PublishWithResultAsync(String, Byte(), String, TimeSpan?, Dictionary(Of String, String), String, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(string, byte[], string, System.TimeSpan?, System.Collections.Generic.Dictionary<string, string>?, string?, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(String, Byte(), String, System.TimeSpan?, System.Collections.Generic.Dictionary(Of String, String), String, System.Threading.CancellationToken)
+  nameWithType: GatewayClient.PublishWithResultAsync(string, byte[], string, TimeSpan?, Dictionary<string, string>?, string?, CancellationToken)
+  nameWithType.vb: GatewayClient.PublishWithResultAsync(String, Byte(), String, TimeSpan?, Dictionary(Of String, String), String, CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync*
+  name: PublishWithResultAsync
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_PublishWithResultAsync_
+  commentId: Overload:Virtufin.Api.Client.GatewayClient.PublishWithResultAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync
+  nameWithType: GatewayClient.PublishWithResultAsync
 - uid: Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
   name: SaveStateAsync(string, string, string, string?, bool, CancellationToken)
   href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SaveStateAsync_System_String_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_
