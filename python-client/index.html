@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/f90811de397dc73df5a17db2964ad3f9ae151b96"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/238600c3149ec0dd1a2bbcdd29be002e0ccd3c99"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit f90811d">
+       title="View commit 238600c">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">f90811d</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">238600c</text>
       </svg>
     </a>
 </div>
@@ -370,14 +370,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/f90811de397dc73df5a17db2964ad3f9ae151b96"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/238600c3149ec0dd1a2bbcdd29be002e0ccd3c99"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit f90811d">
+       title="View commit 238600c">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">f90811d</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">238600c</text>
       </svg>
     </a>
 </div>
@@ -1077,10 +1077,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pubsubevent" class="md-nav__link">
+  <a href="#example-pubsub" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PubsubEvent
+        Example: Pub/Sub
       
     </span>
   </a>
@@ -1088,10 +1088,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-pubsub" class="md-nav__link">
+  <a href="#example-request-reply" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example: Pub/Sub
+        Example: Request-Reply
       
     </span>
   </a>
@@ -1608,10 +1608,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pubsubevent" class="md-nav__link">
+  <a href="#example-pubsub" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PubsubEvent
+        Example: Pub/Sub
       
     </span>
   </a>
@@ -1619,10 +1619,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-pubsub" class="md-nav__link">
+  <a href="#example-request-reply" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example: Pub/Sub
+        Example: Request-Reply
       
     </span>
   </a>
@@ -1887,6 +1887,15 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 <span class="k">async</span> <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">subscribe_async_iter</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Received: </span><span class="si">{</span><span class="n">event</span><span class="o">.</span><span class="n">topic</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">event</span><span class="o">.</span><span class="n">data_as_text</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
+<span class="c1"># Request-reply: publish and await correlated response</span>
+<span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_with_result_async</span><span class="p">(</span>
+    <span class="n">topic</span><span class="o">=</span><span class="s2">&quot;requests&quot;</span><span class="p">,</span>
+    <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;hello&quot;</span><span class="p">},</span>
+    <span class="n">reply_topic</span><span class="o">=</span><span class="s2">&quot;responses&quot;</span><span class="p">,</span>
+    <span class="n">timeout</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Response: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">data_as_json</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
 <span class="c1"># Subscribe with handler (blocking)</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">handler</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Event: </span><span class="si">{</span><span class="n">event</span><span class="o">.</span><span class="n">topic</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1894,16 +1903,33 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 
 <span class="c1"># Unsubscribe (note: subscription_id not returned from Subscribe)</span>
 <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">unsubscribe_async</span><span class="p">(</span><span class="n">subscription_id</span><span class="p">)</span>
+
+<span class="c1"># Publish with result (request-reply pattern)</span>
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_with_result_async</span><span class="p">(</span>
+    <span class="n">topic</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">reply_topic</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span>
+    <span class="n">timeout</span><span class="o">=</span><span class="mf">30.0</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">correlation_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PubsubEvent</span>
 </code></pre></div>
-<h3 id="pubsubevent">PubsubEvent</h3>
-<div class="highlight"><pre><span></span><code><span class="n">event</span><span class="o">.</span><span class="n">topic</span>       <span class="c1"># Topic name</span>
-<span class="n">event</span><span class="o">.</span><span class="n">data</span>        <span class="c1"># Raw bytes</span>
-<span class="n">event</span><span class="o">.</span><span class="n">data_as_text</span><span class="p">()</span>    <span class="c1"># Decode as UTF-8 string</span>
-<span class="n">event</span><span class="o">.</span><span class="n">data_as_json</span><span class="p">()</span>    <span class="c1"># Decode as JSON object</span>
-<span class="n">event</span><span class="o">.</span><span class="n">metadata</span>    <span class="c1"># Dict of metadata</span>
-<span class="n">event</span><span class="o">.</span><span class="n">message_id</span>  <span class="c1"># Unique message ID</span>
-<span class="n">event</span><span class="o">.</span><span class="n">timestamp</span>   <span class="c1"># ISO timestamp</span>
-</code></pre></div>
+<p><strong>Parameters for <code>publish_with_result_async</code>:</strong>
+- <code>topic</code> — Topic to publish the request to
+- <code>data</code> — Request data (str, bytes, or JSON-serializable object)
+- <code>reply_topic</code> — Topic to listen for the correlated response on
+- <code>timeout</code> — Maximum wait time in seconds (default: 30.0)
+- <code>metadata</code> — Optional dict of additional metadata
+- <code>correlation_id</code> — Optional correlation ID (auto-generated UUID if omitted)</p>
+<p><strong>Returns:</strong> The matching <code>PubsubEvent</code> with a <code>correlationid</code> matching the request.
+<strong>Raises:</strong> <code>TimeoutError</code> if no response arrives within the timeout.
+<div class="highlight"><pre><span></span><code>### PubsubEvent
+
+```python
+event.topic       # Topic name
+event.data        # Raw bytes
+event.data_as_text()    # Decode as UTF-8 string
+event.data_as_json()    # Decode as JSON object
+event.metadata    # Dict of metadata
+event.message_id  # Unique message ID
+event.timestamp   # ISO timestamp
+</code></pre></div></p>
 <h3 id="example-pubsub">Example: Pub/Sub</h3>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="n">topic</span> <span class="o">=</span> <span class="s2">&quot;my-topic&quot;</span>
@@ -1925,6 +1951,20 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
         <span class="k">await</span> <span class="n">sub_task</span>
     <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
         <span class="k">pass</span>
+</code></pre></div>
+<h3 id="example-request-reply">Example: Request-Reply</h3>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="n">request_topic</span> <span class="o">=</span> <span class="s2">&quot;worker-commands&quot;</span>
+    <span class="n">reply_topic</span> <span class="o">=</span> <span class="s2">&quot;worker-responses&quot;</span>
+
+    <span class="c1"># Publish a command and wait for the correlated response</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_with_result_async</span><span class="p">(</span>
+        <span class="n">topic</span><span class="o">=</span><span class="n">request_topic</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;status&quot;</span><span class="p">},</span>
+        <span class="n">reply_topic</span><span class="o">=</span><span class="n">reply_topic</span><span class="p">,</span>
+        <span class="n">timeout</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Got response: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">data_as_json</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
 <hr />
 <h2 id="gatewayclient">GatewayClient</h2>
@@ -2032,7 +2072,7 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-07T07:23:04Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-07T08:38:24Z</span>
 </div>
 
     </div>
