@@ -134,10 +134,16 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 100
+    startLine: 105
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Handles a client subscribe request. Creates a Dapr subscription for the topic
+
+    and streams received messages back to the client via gRPC server streaming.
+
+    Messages are enhanced with correlationid from CloudEvent data and extensions.
   example: []
   syntax:
     content: public override Task Subscribe(PubsubSubscribeRequest request, IServerStreamWriter<PubsubSubscribeResponse> responseStream, ServerCallContext context)
@@ -174,7 +180,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 202
+    startLine: 208
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

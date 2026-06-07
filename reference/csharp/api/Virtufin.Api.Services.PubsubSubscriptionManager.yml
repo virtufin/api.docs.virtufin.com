@@ -27,7 +27,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubSubscriptionManager
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 255
+    startLine: 261
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -75,7 +75,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 257
+    startLine: 263
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -107,7 +107,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 264
+    startLine: 270
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -145,15 +145,18 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeById
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 270
+    startLine: 280
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: Removes a subscription by its ID. Iterates all topics to find and remove the subscription.
+  example: []
   syntax:
     content: public void UnsubscribeById(string subscriptionId)
     parameters:
     - id: subscriptionId
       type: System.String
+      description: The subscription ID to remove.
     content.vb: Public Sub UnsubscribeById(subscriptionId As String)
   overload: Virtufin.Api.Services.PubsubSubscriptionManager.UnsubscribeById*
   nameWithType.vb: PubsubSubscriptionManager.UnsubscribeById(String)
@@ -177,7 +180,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetAllSubscriptions
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 279
+    startLine: 289
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -205,21 +208,32 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: BroadcastToTopicAsync
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 284
+    startLine: 303
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Broadcasts a pub/sub event directly to all gRPC subscribers on the given topic.
+
+    Packages the raw data and metadata into a PubsubSubscribeResponse and delivers
+
+    through the in-process subscription channel.
+  example: []
   syntax:
     content: public Task BroadcastToTopicAsync(string topic, byte[] data, string? messageId = null, Dictionary<string, string>? metadata = null)
     parameters:
     - id: topic
       type: System.String
+      description: The topic to broadcast to.
     - id: data
       type: System.Byte[]
+      description: The raw event data bytes.
     - id: messageId
       type: System.String
+      description: Optional message ID.
     - id: metadata
       type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Optional metadata key-value pairs.
     return:
       type: System.Threading.Tasks.Task
     content.vb: Public Function BroadcastToTopicAsync(topic As String, data As Byte(), messageId As String = Nothing, metadata As Dictionary(Of String, String) = Nothing) As Task
@@ -245,7 +259,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SendEventAsync
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 305
+    startLine: 324
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -286,7 +300,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetSubscriptionKey
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 312
+    startLine: 331
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -322,7 +336,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetIdleTimeout
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 313
+    startLine: 332
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
