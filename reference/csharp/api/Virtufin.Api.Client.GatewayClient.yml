@@ -35,15 +35,35 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GatewayClient
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 107
+    startLine: 136
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: >-
-    Client for interacting with the gateway service.
+    Dynamic proxy for the API Gateway. Service names are accessed as properties,
 
-    Provides service discovery, method listing, invocation, and streaming capabilities.
-  example: []
+    and backend RPC methods are called dynamically on the returned ServiceClient.
+
+
+    <code>client.Gateway.workmanager</code> triggers <xref href="Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder%2cSystem.Object%40)" data-throw-if-not-resolved="false"></xref>,
+
+    which creates or returns a cached <xref href="Virtufin.Api.Client.ServiceClient" data-throw-if-not-resolved="false"></xref> for "workmanager".
+
+    <code>service.ListWorkers()</code> triggers <xref href="Virtufin.Api.Client.ServiceClient.TryGetMember(System.Dynamic.GetMemberBinder%2cSystem.Object%40)" data-throw-if-not-resolved="false"></xref>,
+
+    which returns a callable that invokes via the Gateway's InvokeJson RPC.
+
+
+    Provides service discovery, method listing, invocation, publishing, and streaming capabilities.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using var client = new ApiClient();
+
+    var workers = await client.Gateway.workmanager.ListWorkers();
+
+    // Equivalent to:
+
+    var workers = await client.InvokeAsync("workmanager", "ListWorkers");</code></pre>
   syntax:
     content: 'public class GatewayClient : DynamicObject, IDynamicMetaObjectProvider'
     content.vb: Public Class GatewayClient Inherits DynamicObject Implements IDynamicMetaObjectProvider
@@ -91,7 +111,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 119
+    startLine: 148
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -126,7 +146,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TryGetMember
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 130
+    startLine: 159
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -165,7 +185,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 140
+    startLine: 169
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -196,7 +216,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 152
+    startLine: 181
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -234,7 +254,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 175
+    startLine: 204
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -282,7 +302,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 213
+    startLine: 242
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -335,7 +355,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 235
+    startLine: 264
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -382,7 +402,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 254
+    startLine: 283
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -426,7 +446,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetAllStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 267
+    startLine: 296
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -467,7 +487,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 282
+    startLine: 311
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -514,7 +534,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 305
+    startLine: 334
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -555,7 +575,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 316
+    startLine: 345
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -593,7 +613,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 328
+    startLine: 357
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -634,7 +654,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 343
+    startLine: 372
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -681,7 +701,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 366
+    startLine: 395
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -731,7 +751,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 404
+    startLine: 433
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -756,6 +776,101 @@ items:
   fullName.vb: Virtufin.Api.Client.GatewayClient.GetService(String)
   name.vb: GetService(String)
 references:
+- uid: Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
+  commentId: M:Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
+  isExternal: true
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_TryGetMember_System_Dynamic_GetMemberBinder_System_Object__
+  name: TryGetMember(GetMemberBinder, out object)
+  nameWithType: GatewayClient.TryGetMember(GetMemberBinder, out object)
+  fullName: Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder, out object)
+  nameWithType.vb: GatewayClient.TryGetMember(GetMemberBinder, Object)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder, Object)
+  name.vb: TryGetMember(GetMemberBinder, Object)
+  spec.csharp:
+  - uid: Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
+    name: TryGetMember
+    href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_TryGetMember_System_Dynamic_GetMemberBinder_System_Object__
+  - name: (
+  - uid: System.Dynamic.GetMemberBinder
+    name: GetMemberBinder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dynamic.getmemberbinder
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
+    name: TryGetMember
+    href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_TryGetMember_System_Dynamic_GetMemberBinder_System_Object__
+  - name: (
+  - uid: System.Dynamic.GetMemberBinder
+    name: GetMemberBinder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dynamic.getmemberbinder
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Virtufin.Api.Client.ServiceClient
+  commentId: T:Virtufin.Api.Client.ServiceClient
+  parent: Virtufin.Api.Client
+  href: Virtufin.Api.Client.ServiceClient.html
+  name: ServiceClient
+  nameWithType: ServiceClient
+  fullName: Virtufin.Api.Client.ServiceClient
+- uid: Virtufin.Api.Client.ServiceClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
+  commentId: M:Virtufin.Api.Client.ServiceClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
+  isExternal: true
+  href: Virtufin.Api.Client.ServiceClient.html#Virtufin_Api_Client_ServiceClient_TryGetMember_System_Dynamic_GetMemberBinder_System_Object__
+  name: TryGetMember(GetMemberBinder, out object)
+  nameWithType: ServiceClient.TryGetMember(GetMemberBinder, out object)
+  fullName: Virtufin.Api.Client.ServiceClient.TryGetMember(System.Dynamic.GetMemberBinder, out object)
+  nameWithType.vb: ServiceClient.TryGetMember(GetMemberBinder, Object)
+  fullName.vb: Virtufin.Api.Client.ServiceClient.TryGetMember(System.Dynamic.GetMemberBinder, Object)
+  name.vb: TryGetMember(GetMemberBinder, Object)
+  spec.csharp:
+  - uid: Virtufin.Api.Client.ServiceClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
+    name: TryGetMember
+    href: Virtufin.Api.Client.ServiceClient.html#Virtufin_Api_Client_ServiceClient_TryGetMember_System_Dynamic_GetMemberBinder_System_Object__
+  - name: (
+  - uid: System.Dynamic.GetMemberBinder
+    name: GetMemberBinder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dynamic.getmemberbinder
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Client.ServiceClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
+    name: TryGetMember
+    href: Virtufin.Api.Client.ServiceClient.html#Virtufin_Api_Client_ServiceClient_TryGetMember_System_Dynamic_GetMemberBinder_System_Object__
+  - name: (
+  - uid: System.Dynamic.GetMemberBinder
+    name: GetMemberBinder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dynamic.getmemberbinder
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: Virtufin.Api.Client
   commentId: N:Virtufin.Api.Client
   href: Virtufin.html
@@ -2877,10 +2992,3 @@ references:
   name: GetService
   nameWithType: GatewayClient.GetService
   fullName: Virtufin.Api.Client.GatewayClient.GetService
-- uid: Virtufin.Api.Client.ServiceClient
-  commentId: T:Virtufin.Api.Client.ServiceClient
-  parent: Virtufin.Api.Client
-  href: Virtufin.Api.Client.ServiceClient.html
-  name: ServiceClient
-  nameWithType: ServiceClient
-  fullName: Virtufin.Api.Client.ServiceClient

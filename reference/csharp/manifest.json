@@ -42,7 +42,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Client.GatewayClient",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.GatewayClient.yml\" sourcestartlinenumber=\"1\">Client for interacting with the gateway service.\nProvides service discovery, method listing, invocation, and streaming capabilities.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.GatewayClient.yml\" sourcestartlinenumber=\"1\">Dynamic proxy for the API Gateway. Service names are accessed as properties,\nand backend RPC methods are called dynamically on the returned ServiceClient.</p>\n<p sourcefile=\"api/Virtufin.Api.Client.GatewayClient.yml\" sourcestartlinenumber=\"4\"><code>client.Gateway.workmanager</code> triggers <xref href=\"Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder%2cSystem.Object%40)\" data-throw-if-not-resolved=\"false\"></xref>,\nwhich creates or returns a cached <xref href=\"Virtufin.Api.Client.ServiceClient\" data-throw-if-not-resolved=\"false\"></xref> for &quot;workmanager&quot;.\n<code>service.ListWorkers()</code> triggers <xref href=\"Virtufin.Api.Client.ServiceClient.TryGetMember(System.Dynamic.GetMemberBinder%2cSystem.Object%40)\" data-throw-if-not-resolved=\"false\"></xref>,\nwhich returns a callable that invokes via the Gateway's InvokeJson RPC.</p>\n<p sourcefile=\"api/Virtufin.Api.Client.GatewayClient.yml\" sourcestartlinenumber=\"9\">Provides service discovery, method listing, invocation, publishing, and streaming capabilities.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -84,7 +84,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Client.ServiceClient",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.ServiceClient.yml\" sourcestartlinenumber=\"1\">Dynamic client for invoking methods on a specific service through the gateway.\nAllows syntax like: client.Gateway.workmanager.SomeMethod()</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.ServiceClient.yml\" sourcestartlinenumber=\"1\">Dynamic client for invoking methods on a specific service through the gateway.\nAllows syntax like: <code>client.Gateway.workmanager.SomeMethod()</code>.</p>\n<p sourcefile=\"api/Virtufin.Api.Client.ServiceClient.yml\" sourcestartlinenumber=\"4\">RPC method names are accessed as dynamic members. Each member\nreturns a <code>Func&lt;Dictionary, Task&lt;Dictionary&gt;&gt;</code> that\ninvokes the method via the Gateway's InvokeJson RPC.</p>\n<p sourcefile=\"api/Virtufin.Api.Client.ServiceClient.yml\" sourcestartlinenumber=\"8\">ServiceClient instances are created by <xref href=\"Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder%2cSystem.Object%40)\" data-throw-if-not-resolved=\"false\"></xref>\n(i.e. <code>client.Gateway.workmanager</code>) and cached per service name.</p>\n"
     },
     {
       "type": "ManagedReference",

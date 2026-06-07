@@ -5,7 +5,7 @@ items:
   id: PubsubService
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
+  - Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
   - Virtufin.Api.Services.PubsubService.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.PubsubService.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
@@ -23,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubService
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -43,16 +43,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
-  commentId: M:Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
-  id: '#ctor(Dapr.Client.DaprClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})'
+- uid: Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
+  commentId: M:Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
+  id: '#ctor(Dapr.Client.DaprClient,Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})'
   parent: Virtufin.Api.Services.PubsubService
   langs:
   - csharp
   - vb
-  name: PubsubService(DaprClient, PubsubSubscriptionManager, ILogger<PubsubService>)
-  nameWithType: PubsubService.PubsubService(DaprClient, PubsubSubscriptionManager, ILogger<PubsubService>)
-  fullName: Virtufin.Api.Services.PubsubService.PubsubService(Dapr.Client.DaprClient, Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.PubsubService>)
+  name: PubsubService(DaprClient, DaprPublishSubscribeClient, PubsubSubscriptionManager, ILogger<PubsubService>)
+  nameWithType: PubsubService.PubsubService(DaprClient, DaprPublishSubscribeClient, PubsubSubscriptionManager, ILogger<PubsubService>)
+  fullName: Virtufin.Api.Services.PubsubService.PubsubService(Dapr.Client.DaprClient, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.PubsubService>)
   type: Constructor
   source:
     remote:
@@ -61,24 +61,26 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public PubsubService(DaprClient daprClient, PubsubSubscriptionManager subscriptionManager, ILogger<PubsubService> logger)
+    content: public PubsubService(DaprClient daprClient, DaprPublishSubscribeClient daprPubsubClient, PubsubSubscriptionManager subscriptionManager, ILogger<PubsubService> logger)
     parameters:
     - id: daprClient
       type: Dapr.Client.DaprClient
+    - id: daprPubsubClient
+      type: Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
     - id: subscriptionManager
       type: Virtufin.Api.Services.PubsubSubscriptionManager
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService}
-    content.vb: Public Sub New(daprClient As DaprClient, subscriptionManager As PubsubSubscriptionManager, logger As ILogger(Of PubsubService))
+    content.vb: Public Sub New(daprClient As DaprClient, daprPubsubClient As DaprPublishSubscribeClient, subscriptionManager As PubsubSubscriptionManager, logger As ILogger(Of PubsubService))
   overload: Virtufin.Api.Services.PubsubService.#ctor*
-  nameWithType.vb: PubsubService.New(DaprClient, PubsubSubscriptionManager, ILogger(Of PubsubService))
-  fullName.vb: Virtufin.Api.Services.PubsubService.New(Dapr.Client.DaprClient, Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.PubsubService))
-  name.vb: New(DaprClient, PubsubSubscriptionManager, ILogger(Of PubsubService))
+  nameWithType.vb: PubsubService.New(DaprClient, DaprPublishSubscribeClient, PubsubSubscriptionManager, ILogger(Of PubsubService))
+  fullName.vb: Virtufin.Api.Services.PubsubService.New(Dapr.Client.DaprClient, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.PubsubService))
+  name.vb: New(DaprClient, DaprPublishSubscribeClient, PubsubSubscriptionManager, ILogger(Of PubsubService))
 - uid: Virtufin.Api.Services.PubsubService.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.PubsubService.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
   id: PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
@@ -97,7 +99,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEvent
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 28
+    startLine: 32
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -132,7 +134,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 66
+    startLine: 70
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -172,7 +174,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 91
+    startLine: 121
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -500,7 +502,7 @@ references:
     name: Protos
 - uid: Virtufin.Api.Services.PubsubService.#ctor*
   commentId: Overload:Virtufin.Api.Services.PubsubService.#ctor
-  href: Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService__ctor_Dapr_Client_DaprClient_Virtufin_Api_Services_PubsubSubscriptionManager_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_PubsubService__
+  href: Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService__ctor_Dapr_Client_DaprClient_Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_Virtufin_Api_Services_PubsubSubscriptionManager_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_PubsubService__
   name: PubsubService
   nameWithType: PubsubService.PubsubService
   fullName: Virtufin.Api.Services.PubsubService.PubsubService
@@ -514,6 +516,13 @@ references:
   name: DaprClient
   nameWithType: DaprClient
   fullName: Dapr.Client.DaprClient
+- uid: Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
+  commentId: T:Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
+  parent: Dapr.Messaging.PublishSubscribe
+  isExternal: true
+  name: DaprPublishSubscribeClient
+  nameWithType: DaprPublishSubscribeClient
+  fullName: Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
 - uid: Virtufin.Api.Services.PubsubSubscriptionManager
   commentId: T:Virtufin.Api.Services.PubsubSubscriptionManager
   parent: Virtufin.Api.Services
@@ -575,6 +584,36 @@ references:
   - name: .
   - uid: Dapr.Client
     name: Client
+    isExternal: true
+- uid: Dapr.Messaging.PublishSubscribe
+  commentId: N:Dapr.Messaging.PublishSubscribe
+  isExternal: true
+  name: Dapr.Messaging.PublishSubscribe
+  nameWithType: Dapr.Messaging.PublishSubscribe
+  fullName: Dapr.Messaging.PublishSubscribe
+  spec.csharp:
+  - uid: Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.Messaging
+    name: Messaging
+    isExternal: true
+  - name: .
+  - uid: Dapr.Messaging.PublishSubscribe
+    name: PublishSubscribe
+    isExternal: true
+  spec.vb:
+  - uid: Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.Messaging
+    name: Messaging
+    isExternal: true
+  - name: .
+  - uid: Dapr.Messaging.PublishSubscribe
+    name: PublishSubscribe
     isExternal: true
 - uid: Microsoft.Extensions.Logging.ILogger`1
   commentId: T:Microsoft.Extensions.Logging.ILogger`1

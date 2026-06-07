@@ -194,7 +194,7 @@
   "Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix": "Virtufin.Api.Services.PubSubTopics.yml",
   "Virtufin.Api.Services.PubSubTopics.SystemEvents": "Virtufin.Api.Services.PubSubTopics.yml",
   "Virtufin.Api.Services.PubsubService": "Virtufin.Api.Services.PubsubService.yml",
-  "Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})": "Virtufin.Api.Services.PubsubService.yml",
+  "Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})": "Virtufin.Api.Services.PubsubService.yml",
   "Virtufin.Api.Services.PubsubService.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.PubsubService.yml",
   "Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.PubsubService.yml",
   "Virtufin.Api.Services.PubsubService.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.PubsubService.yml",

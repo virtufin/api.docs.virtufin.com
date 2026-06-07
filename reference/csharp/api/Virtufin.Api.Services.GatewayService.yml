@@ -111,7 +111,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Invoke
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 97
+    startLine: 106
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -150,7 +150,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeJson
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 142
+    startLine: 151
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -192,7 +192,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServices
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 186
+    startLine: 195
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -231,7 +231,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethods
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 210
+    startLine: 219
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -270,7 +270,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 250
+    startLine: 259
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -318,7 +318,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodSchema
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 342
+    startLine: 351
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
