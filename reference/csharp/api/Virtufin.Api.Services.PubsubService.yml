@@ -134,7 +134,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 107
+    startLine: 100
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -174,7 +174,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 208
+    startLine: 202
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
