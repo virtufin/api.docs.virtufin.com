@@ -106,15 +106,20 @@ See [helm](https://helm.haenerconsulting.com/virtufin/helm) for all configurable
 ```
 virtufin-api/
 ├── src/
-│   ├── Virtufin.Api/           # Main API project
-│   ├── Virtufin.Api.Client/    # C# client library
-│   └── python/                 # Python client library
-├── examples/                   # Example usage
-├── scripts/                    # Helper scripts
-├── docs/                       # Documentation (Markdown)
-├── mkdocs_*.yml               # MkDocs configurations per version
-└── requirements_docs.txt       # Documentation dependencies
-```
+│   ├── Virtufin.Api/               # .NET API Gateway service
+│   ├── Virtufin.Api.Client/        # .NET client NuGet package
+│   ├── Virtufin.Api.Protos/        # Protobuf definitions (gateway, pubsub, config, state)
+│   ├── python/virtufin/api/        # Python client library (PubSub, service discovery)
+│   └── typescript/src/             # TypeScript client library (ApiClient, publishWithResult)
+├── tests/
+│   ├── python/                     # Python client tests
+│   ├── typescript/                 # TypeScript client tests
+│   └── Virtufin.Api.*.Tests/       # .NET integration and unit tests
+├── docs/                           # MkDocs documentation (api.doc.virtufin.com)
+├── scripts/                        # Helper scripts
+├── deploy/                         # Deployment configs
+├── versions.env                    # API_VERSION and LIBRARY_VERSION pin
+└── AGENTS.md                       # Agent documentation
 
 ## API Endpoints
 
