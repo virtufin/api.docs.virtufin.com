@@ -29,8 +29,6 @@ Without gRPC reflection enabled, Virtufin cannot determine the method signatures
 
 ## Documentation
 
-Live documentation: https://virtufin-api.doc.virtufin.com/v0/
-
 ### Building Documentation Locally
 
 ```bash
