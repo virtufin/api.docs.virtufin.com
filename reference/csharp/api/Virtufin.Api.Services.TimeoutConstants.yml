@@ -5,9 +5,15 @@ items:
   id: TimeoutConstants
   parent: Virtufin.Api.Services
   children:
+  - Virtufin.Api.Services.TimeoutConstants.GrpcGatewayTimeoutSeconds
+  - Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+  - Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+  - Virtufin.Api.Services.TimeoutConstants.GrpcReflectionCacheTtlMinutes
   - Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
+  - Virtufin.Api.Services.TimeoutConstants.ReflectionProbeTimeoutSeconds
   - Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
   - Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
+  - Virtufin.Api.Services.TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds
   langs:
   - csharp
   - vb
@@ -120,6 +126,168 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const SubscriptionIdleTimeoutMinutes As Integer = 5
+- uid: Virtufin.Api.Services.TimeoutConstants.GrpcGatewayTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.GrpcGatewayTimeoutSeconds
+  id: GrpcGatewayTimeoutSeconds
+  parent: Virtufin.Api.Services.TimeoutConstants
+  langs:
+  - csharp
+  - vb
+  name: GrpcGatewayTimeoutSeconds
+  nameWithType: TimeoutConstants.GrpcGatewayTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.GrpcGatewayTimeoutSeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/Constants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: GrpcGatewayTimeoutSeconds
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public const int GrpcGatewayTimeoutSeconds = 30
+    return:
+      type: System.Int32
+    content.vb: Public Const GrpcGatewayTimeoutSeconds As Integer = 30
+- uid: Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+  id: GrpcKeepAlivePingDelaySeconds
+  parent: Virtufin.Api.Services.TimeoutConstants
+  langs:
+  - csharp
+  - vb
+  name: GrpcKeepAlivePingDelaySeconds
+  nameWithType: TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/Constants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: GrpcKeepAlivePingDelaySeconds
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 37
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public const int GrpcKeepAlivePingDelaySeconds = 60
+    return:
+      type: System.Int32
+    content.vb: Public Const GrpcKeepAlivePingDelaySeconds As Integer = 60
+- uid: Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+  id: GrpcKeepAlivePingTimeoutSeconds
+  parent: Virtufin.Api.Services.TimeoutConstants
+  langs:
+  - csharp
+  - vb
+  name: GrpcKeepAlivePingTimeoutSeconds
+  nameWithType: TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/Constants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: GrpcKeepAlivePingTimeoutSeconds
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public const int GrpcKeepAlivePingTimeoutSeconds = 30
+    return:
+      type: System.Int32
+    content.vb: Public Const GrpcKeepAlivePingTimeoutSeconds As Integer = 30
+- uid: Virtufin.Api.Services.TimeoutConstants.ReflectionProbeTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.ReflectionProbeTimeoutSeconds
+  id: ReflectionProbeTimeoutSeconds
+  parent: Virtufin.Api.Services.TimeoutConstants
+  langs:
+  - csharp
+  - vb
+  name: ReflectionProbeTimeoutSeconds
+  nameWithType: TimeoutConstants.ReflectionProbeTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.ReflectionProbeTimeoutSeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/Constants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ReflectionProbeTimeoutSeconds
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 39
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public const int ReflectionProbeTimeoutSeconds = 5
+    return:
+      type: System.Int32
+    content.vb: Public Const ReflectionProbeTimeoutSeconds As Integer = 5
+- uid: Virtufin.Api.Services.TimeoutConstants.GrpcReflectionCacheTtlMinutes
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.GrpcReflectionCacheTtlMinutes
+  id: GrpcReflectionCacheTtlMinutes
+  parent: Virtufin.Api.Services.TimeoutConstants
+  langs:
+  - csharp
+  - vb
+  name: GrpcReflectionCacheTtlMinutes
+  nameWithType: TimeoutConstants.GrpcReflectionCacheTtlMinutes
+  fullName: Virtufin.Api.Services.TimeoutConstants.GrpcReflectionCacheTtlMinutes
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/Constants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: GrpcReflectionCacheTtlMinutes
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 40
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public const int GrpcReflectionCacheTtlMinutes = 60
+    return:
+      type: System.Int32
+    content.vb: Public Const GrpcReflectionCacheTtlMinutes As Integer = 60
+- uid: Virtufin.Api.Services.TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds
+  id: SubscriptionWriterDrainTimeoutSeconds
+  parent: Virtufin.Api.Services.TimeoutConstants
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionWriterDrainTimeoutSeconds
+  nameWithType: TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/Constants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: SubscriptionWriterDrainTimeoutSeconds
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 41
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public const int SubscriptionWriterDrainTimeoutSeconds = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const SubscriptionWriterDrainTimeoutSeconds As Integer = 3
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services

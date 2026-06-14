@@ -20,7 +20,6 @@ items:
   - Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.SubscribeToTopic(System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)
-  - Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(System.String)
   - Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(System.String,System.Threading.CancellationToken)
   langs:
   - csharp
@@ -36,7 +35,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GatewayClient
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 136
+    startLine: 158
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -112,7 +111,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 148
+    startLine: 173
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -147,7 +146,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TryGetMember
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 159
+    startLine: 184
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -186,7 +185,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 169
+    startLine: 194
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -217,7 +216,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 181
+    startLine: 206
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -255,7 +254,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 204
+    startLine: 229
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -303,7 +302,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 242
+    startLine: 267
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -356,7 +355,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 264
+    startLine: 289
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -403,7 +402,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 283
+    startLine: 308
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -447,7 +446,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetAllStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 296
+    startLine: 321
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -488,7 +487,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 311
+    startLine: 336
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -535,7 +534,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 334
+    startLine: 359
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -558,44 +557,6 @@ items:
   nameWithType.vb: GatewayClient.SubscribeToTopic(String, CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.SubscribeToTopic(String, System.Threading.CancellationToken)
   name.vb: SubscribeToTopic(String, CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(System.String)
-  commentId: M:Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(System.String)
-  id: UnsubscribeFromTopic(System.String)
-  parent: Virtufin.Api.Client.GatewayClient
-  langs:
-  - csharp
-  - vb
-  name: UnsubscribeFromTopic(string)
-  nameWithType: GatewayClient.UnsubscribeFromTopic(string)
-  fullName: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(string)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Api.Client/ApiClient.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: UnsubscribeFromTopic
-    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 345
-  assemblies:
-  - Virtufin.Api.Client
-  namespace: Virtufin.Api.Client
-  summary: Unsubscribes from a pub/sub topic.
-  example: []
-  syntax:
-    content: public UnsubscribeResponse UnsubscribeFromTopic(string subscriptionId)
-    parameters:
-    - id: subscriptionId
-      type: System.String
-      description: The subscription ID to cancel.
-    return:
-      type: Virtufin.Api.Protos.UnsubscribeResponse
-      description: UnsubscribeResponse with success status.
-    content.vb: Public Function UnsubscribeFromTopic(subscriptionId As String) As UnsubscribeResponse
-  overload: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic*
-  nameWithType.vb: GatewayClient.UnsubscribeFromTopic(String)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(String)
-  name.vb: UnsubscribeFromTopic(String)
 - uid: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(System.String,System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(System.String,System.Threading.CancellationToken)
   id: UnsubscribeFromTopicAsync(System.String,System.Threading.CancellationToken)
@@ -614,11 +575,11 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 357
+    startLine: 371
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
-  summary: Unsubscribes from a pub/sub topic asynchronously.
+  summary: Unsubscribes from a pub/sub topic.
   example: []
   syntax:
     content: public Task<UnsubscribeResponse> UnsubscribeFromTopicAsync(string subscriptionId, CancellationToken cancellationToken = default)
@@ -655,7 +616,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishWithResultAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 376
+    startLine: 390
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -718,7 +679,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 437
+    startLine: 451
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -765,7 +726,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 460
+    startLine: 474
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -815,7 +776,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 498
+    startLine: 532
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -2857,41 +2818,6 @@ references:
   - uid: Grpc.Core
     name: Core
     isExternal: true
-- uid: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic*
-  commentId: Overload:Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopic_System_String_
-  name: UnsubscribeFromTopic
-  nameWithType: GatewayClient.UnsubscribeFromTopic
-  fullName: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic
-- uid: Virtufin.Api.Protos.UnsubscribeResponse
-  commentId: T:Virtufin.Api.Protos.UnsubscribeResponse
-  parent: Virtufin.Api.Protos
-  name: UnsubscribeResponse
-  nameWithType: UnsubscribeResponse
-  fullName: Virtufin.Api.Protos.UnsubscribeResponse
-- uid: Virtufin.Api.Protos
-  commentId: N:Virtufin.Api.Protos
-  name: Virtufin.Api.Protos
-  nameWithType: Virtufin.Api.Protos
-  fullName: Virtufin.Api.Protos
-  spec.csharp:
-  - uid: Virtufin
-    name: Virtufin
-  - name: .
-  - uid: Virtufin.Api
-    name: Api
-  - name: .
-  - uid: Virtufin.Api.Protos
-    name: Protos
-  spec.vb:
-  - uid: Virtufin
-    name: Virtufin
-  - name: .
-  - uid: Virtufin.Api
-    name: Api
-  - name: .
-  - uid: Virtufin.Api.Protos
-    name: Protos
 - uid: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync
   href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopicAsync_System_String_System_Threading_CancellationToken_

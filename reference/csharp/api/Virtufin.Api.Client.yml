@@ -6,6 +6,7 @@ items:
   children:
   - Virtufin.Api.Client.ApiClient
   - Virtufin.Api.Client.GatewayClient
+  - Virtufin.Api.Client.IAsyncStreamEventHandler
   - Virtufin.Api.Client.IStreamEventHandler
   - Virtufin.Api.Client.PortConstants
   - Virtufin.Api.Client.ServiceClient
@@ -34,6 +35,12 @@ references:
   name: IStreamEventHandler
   nameWithType: IStreamEventHandler
   fullName: Virtufin.Api.Client.IStreamEventHandler
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler
+  commentId: T:Virtufin.Api.Client.IAsyncStreamEventHandler
+  href: Virtufin.Api.Client.IAsyncStreamEventHandler.html
+  name: IAsyncStreamEventHandler
+  nameWithType: IAsyncStreamEventHandler
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler
 - uid: Virtufin.Api.Client.StreamEventHandler
   commentId: T:Virtufin.Api.Client.StreamEventHandler
   href: Virtufin.Api.Client.StreamEventHandler.html

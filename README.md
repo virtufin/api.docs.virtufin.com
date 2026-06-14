@@ -1,5 +1,10 @@
 # Virtufin API
 
+[![Build Status](https://git.haenerconsulting.com/virtufin/virtufin-api/actions/workflows/docs/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-api/actions)
+[![NuGet](https://git.haenerconsulting.com/virtufin/virtufin-api/actions/workflows/nuget/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-api/packages/nuget/Virtufin.Api.Client)
+[![PyPI](https://git.haenerconsulting.com/virtufin/virtufin-api/actions/workflows/pypi/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-api/packages/pypi/virtufin-api)
+[![npm](https://git.haenerconsulting.com/virtufin/virtufin-api/actions/workflows/npm/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-api/packages/npm/virtufin-api)
+
 📖 Documentation: [api.doc.virtufin.com](https://api.doc.virtufin.com)
 
 High-performance gRPC API gateway with event streaming, service discovery, and Dapr integration.
@@ -132,13 +137,13 @@ virtufin-api/
 
 - **gRPC Gateway**: Dynamic service discovery and invocation
 - **Event Streaming**: Server-side streaming via `Subscribe` and `WatchSystemEvents`
-- **State Management**: `SaveState` broadcasts events to all subscribers
+- **State Management**: `SaveStateAsync` broadcasts events to all subscribers
 - **Dapr Integration**: Pub/sub, state store, and service invocation
 - **Client Libraries**: C# and Python with async support
 
 ## Development
 
-See [docs/v0/development.md](docs/v0/development.md) for development setup.
+See [docs/v1/development.md](docs/v1/development.md) for development setup.
 
 ## License
 

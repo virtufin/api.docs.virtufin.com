@@ -1,33 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Configuration.StateConfig
-  commentId: T:Virtufin.Api.Configuration.StateConfig
-  id: StateConfig
+- uid: Virtufin.Api.Configuration.GrpcEndpoint
+  commentId: T:Virtufin.Api.Configuration.GrpcEndpoint
+  id: GrpcEndpoint
   parent: Virtufin.Api.Configuration
   children:
-  - Virtufin.Api.Configuration.StateConfig.#ctor
-  - Virtufin.Api.Configuration.StateConfig.StoreName
+  - Virtufin.Api.Configuration.GrpcEndpoint.Host
+  - Virtufin.Api.Configuration.GrpcEndpoint.Port
   langs:
   - csharp
   - vb
-  name: StateConfig
-  nameWithType: StateConfig
-  fullName: Virtufin.Api.Configuration.StateConfig
+  name: GrpcEndpoint
+  nameWithType: GrpcEndpoint
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: StateConfig
+    id: GrpcEndpoint
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 51
+    startLine: 39
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
   syntax:
-    content: public class StateConfig
-    content.vb: Public Class StateConfig
+    content: public class GrpcEndpoint
+    content.vb: Public Class GrpcEndpoint
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,64 +38,64 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Configuration.StateConfig.#ctor
-  commentId: M:Virtufin.Api.Configuration.StateConfig.#ctor
-  id: '#ctor'
-  parent: Virtufin.Api.Configuration.StateConfig
+- uid: Virtufin.Api.Configuration.GrpcEndpoint.Host
+  commentId: P:Virtufin.Api.Configuration.GrpcEndpoint.Host
+  id: Host
+  parent: Virtufin.Api.Configuration.GrpcEndpoint
   langs:
   - csharp
   - vb
-  name: StateConfig()
-  nameWithType: StateConfig.StateConfig()
-  fullName: Virtufin.Api.Configuration.StateConfig.StateConfig()
-  type: Constructor
-  source:
-    remote:
-      path: src/Virtufin.Api/Configuration/Models.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: .ctor
-    path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 53
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Configuration
-  syntax:
-    content: public StateConfig()
-    content.vb: Public Sub New()
-  overload: Virtufin.Api.Configuration.StateConfig.#ctor*
-  nameWithType.vb: StateConfig.New()
-  fullName.vb: Virtufin.Api.Configuration.StateConfig.New()
-  name.vb: New()
-- uid: Virtufin.Api.Configuration.StateConfig.StoreName
-  commentId: P:Virtufin.Api.Configuration.StateConfig.StoreName
-  id: StoreName
-  parent: Virtufin.Api.Configuration.StateConfig
-  langs:
-  - csharp
-  - vb
-  name: StoreName
-  nameWithType: StateConfig.StoreName
-  fullName: Virtufin.Api.Configuration.StateConfig.StoreName
+  name: Host
+  nameWithType: GrpcEndpoint.Host
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint.Host
   type: Property
   source:
     remote:
       path: src/Virtufin.Api/Configuration/Models.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: StoreName
+    id: Host
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 54
+    startLine: 41
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
   syntax:
-    content: public string StoreName { get; set; }
+    content: public string Host { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property StoreName As String
-  overload: Virtufin.Api.Configuration.StateConfig.StoreName*
+    content.vb: Public Property Host As String
+  overload: Virtufin.Api.Configuration.GrpcEndpoint.Host*
+- uid: Virtufin.Api.Configuration.GrpcEndpoint.Port
+  commentId: P:Virtufin.Api.Configuration.GrpcEndpoint.Port
+  id: Port
+  parent: Virtufin.Api.Configuration.GrpcEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: GrpcEndpoint.Port
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint.Port
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/Models.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: Port
+    path: ../../../src/Virtufin.Api/Configuration/Models.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: Virtufin.Api.Configuration.GrpcEndpoint.Port*
 references:
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration
@@ -364,21 +364,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Virtufin.Api.Configuration.StateConfig.#ctor*
-  commentId: Overload:Virtufin.Api.Configuration.StateConfig.#ctor
-  href: Virtufin.Api.Configuration.StateConfig.html#Virtufin_Api_Configuration_StateConfig__ctor
-  name: StateConfig
-  nameWithType: StateConfig.StateConfig
-  fullName: Virtufin.Api.Configuration.StateConfig.StateConfig
-  nameWithType.vb: StateConfig.New
-  fullName.vb: Virtufin.Api.Configuration.StateConfig.New
-  name.vb: New
-- uid: Virtufin.Api.Configuration.StateConfig.StoreName*
-  commentId: Overload:Virtufin.Api.Configuration.StateConfig.StoreName
-  href: Virtufin.Api.Configuration.StateConfig.html#Virtufin_Api_Configuration_StateConfig_StoreName
-  name: StoreName
-  nameWithType: StateConfig.StoreName
-  fullName: Virtufin.Api.Configuration.StateConfig.StoreName
+- uid: Virtufin.Api.Configuration.GrpcEndpoint.Host*
+  commentId: Overload:Virtufin.Api.Configuration.GrpcEndpoint.Host
+  href: Virtufin.Api.Configuration.GrpcEndpoint.html#Virtufin_Api_Configuration_GrpcEndpoint_Host
+  name: Host
+  nameWithType: GrpcEndpoint.Host
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint.Host
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -390,3 +381,20 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Virtufin.Api.Configuration.GrpcEndpoint.Port*
+  commentId: Overload:Virtufin.Api.Configuration.GrpcEndpoint.Port
+  href: Virtufin.Api.Configuration.GrpcEndpoint.html#Virtufin_Api_Configuration_GrpcEndpoint_Port
+  name: Port
+  nameWithType: GrpcEndpoint.Port
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint.Port
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

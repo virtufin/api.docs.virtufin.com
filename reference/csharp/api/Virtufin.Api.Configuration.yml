@@ -6,6 +6,7 @@ items:
   children:
   - Virtufin.Api.Configuration.CronJobConfig
   - Virtufin.Api.Configuration.GrpcConfig
+  - Virtufin.Api.Configuration.GrpcEndpoint
   - Virtufin.Api.Configuration.JobsConfig
   - Virtufin.Api.Configuration.PortConstants
   - Virtufin.Api.Configuration.PubsubConfig
@@ -52,6 +53,12 @@ references:
   name: GrpcConfig
   nameWithType: GrpcConfig
   fullName: Virtufin.Api.Configuration.GrpcConfig
+- uid: Virtufin.Api.Configuration.GrpcEndpoint
+  commentId: T:Virtufin.Api.Configuration.GrpcEndpoint
+  href: Virtufin.Api.Configuration.GrpcEndpoint.html
+  name: GrpcEndpoint
+  nameWithType: GrpcEndpoint
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint
 - uid: Virtufin.Api.Configuration.PubsubConfig
   commentId: T:Virtufin.Api.Configuration.PubsubConfig
   parent: Virtufin.Api.Configuration

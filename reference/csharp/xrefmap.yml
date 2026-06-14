@@ -432,22 +432,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.GatewayClient.TryGetMember
   nameWithType: GatewayClient.TryGetMember
-- uid: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(System.String)
-  name: UnsubscribeFromTopic(string)
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopic_System_String_
-  commentId: M:Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(System.String)
-  name.vb: UnsubscribeFromTopic(String)
-  fullName: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(string)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic(String)
-  nameWithType: GatewayClient.UnsubscribeFromTopic(string)
-  nameWithType.vb: GatewayClient.UnsubscribeFromTopic(String)
-- uid: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic*
-  name: UnsubscribeFromTopic
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopic_
-  commentId: Overload:Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic
-  isSpec: "True"
-  fullName: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopic
-  nameWithType: GatewayClient.UnsubscribeFromTopic
 - uid: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(System.String,System.Threading.CancellationToken)
   name: UnsubscribeFromTopicAsync(string, CancellationToken)
   href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_UnsubscribeFromTopicAsync_System_String_System_Threading_CancellationToken_
@@ -464,6 +448,38 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync
   nameWithType: GatewayClient.UnsubscribeFromTopicAsync
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler
+  name: IAsyncStreamEventHandler
+  href: api/Virtufin.Api.Client.IAsyncStreamEventHandler.html
+  commentId: T:Virtufin.Api.Client.IAsyncStreamEventHandler
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler
+  nameWithType: IAsyncStreamEventHandler
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception,System.Threading.CancellationToken)
+  name: OnErrorAsync(Exception, CancellationToken)
+  href: api/Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnErrorAsync_System_Exception_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception,System.Threading.CancellationToken)
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception, System.Threading.CancellationToken)
+  nameWithType: IAsyncStreamEventHandler.OnErrorAsync(Exception, CancellationToken)
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync*
+  name: OnErrorAsync
+  href: api/Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnErrorAsync_
+  commentId: Overload:Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync
+  nameWithType: IAsyncStreamEventHandler.OnErrorAsync
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  name: OnEventAsync(TopicEventRequest, CancellationToken)
+  href: api/Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnEventAsync_Virtufin_Api_Protos_TopicEventRequest_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
+  nameWithType: IAsyncStreamEventHandler.OnEventAsync(TopicEventRequest, CancellationToken)
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync*
+  name: OnEventAsync
+  href: api/Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnEventAsync_
+  commentId: Overload:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync
+  nameWithType: IAsyncStreamEventHandler.OnEventAsync
 - uid: Virtufin.Api.Client.IStreamEventHandler
   name: IStreamEventHandler
   href: api/Virtufin.Api.Client.IStreamEventHandler.html
@@ -742,6 +758,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Configuration.GrpcConfig.Host
   nameWithType: GrpcConfig.Host
+- uid: Virtufin.Api.Configuration.GrpcConfig.Hosts
+  name: Hosts
+  href: api/Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_Hosts
+  commentId: P:Virtufin.Api.Configuration.GrpcConfig.Hosts
+  fullName: Virtufin.Api.Configuration.GrpcConfig.Hosts
+  nameWithType: GrpcConfig.Hosts
+- uid: Virtufin.Api.Configuration.GrpcConfig.Hosts*
+  name: Hosts
+  href: api/Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_Hosts_
+  commentId: Overload:Virtufin.Api.Configuration.GrpcConfig.Hosts
+  isSpec: "True"
+  fullName: Virtufin.Api.Configuration.GrpcConfig.Hosts
+  nameWithType: GrpcConfig.Hosts
 - uid: Virtufin.Api.Configuration.GrpcConfig.Port
   name: Port
   href: api/Virtufin.Api.Configuration.GrpcConfig.html#Virtufin_Api_Configuration_GrpcConfig_Port
@@ -755,6 +784,38 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Configuration.GrpcConfig.Port
   nameWithType: GrpcConfig.Port
+- uid: Virtufin.Api.Configuration.GrpcEndpoint
+  name: GrpcEndpoint
+  href: api/Virtufin.Api.Configuration.GrpcEndpoint.html
+  commentId: T:Virtufin.Api.Configuration.GrpcEndpoint
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint
+  nameWithType: GrpcEndpoint
+- uid: Virtufin.Api.Configuration.GrpcEndpoint.Host
+  name: Host
+  href: api/Virtufin.Api.Configuration.GrpcEndpoint.html#Virtufin_Api_Configuration_GrpcEndpoint_Host
+  commentId: P:Virtufin.Api.Configuration.GrpcEndpoint.Host
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint.Host
+  nameWithType: GrpcEndpoint.Host
+- uid: Virtufin.Api.Configuration.GrpcEndpoint.Host*
+  name: Host
+  href: api/Virtufin.Api.Configuration.GrpcEndpoint.html#Virtufin_Api_Configuration_GrpcEndpoint_Host_
+  commentId: Overload:Virtufin.Api.Configuration.GrpcEndpoint.Host
+  isSpec: "True"
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint.Host
+  nameWithType: GrpcEndpoint.Host
+- uid: Virtufin.Api.Configuration.GrpcEndpoint.Port
+  name: Port
+  href: api/Virtufin.Api.Configuration.GrpcEndpoint.html#Virtufin_Api_Configuration_GrpcEndpoint_Port
+  commentId: P:Virtufin.Api.Configuration.GrpcEndpoint.Port
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint.Port
+  nameWithType: GrpcEndpoint.Port
+- uid: Virtufin.Api.Configuration.GrpcEndpoint.Port*
+  name: Port
+  href: api/Virtufin.Api.Configuration.GrpcEndpoint.html#Virtufin_Api_Configuration_GrpcEndpoint_Port_
+  commentId: Overload:Virtufin.Api.Configuration.GrpcEndpoint.Port
+  isSpec: "True"
+  fullName: Virtufin.Api.Configuration.GrpcEndpoint.Port
+  nameWithType: GrpcEndpoint.Port
 - uid: Virtufin.Api.Configuration.JobsConfig
   name: JobsConfig
   href: api/Virtufin.Api.Configuration.JobsConfig.html
@@ -1086,19 +1147,19 @@ references:
   fullName.vb: Virtufin.Api.Configuration.ServicesConfigurationLoader.New
   nameWithType: ServicesConfigurationLoader.ServicesConfigurationLoader
   nameWithType.vb: ServicesConfigurationLoader.New
-- uid: Virtufin.Api.Configuration.ServicesConfigurationLoader.Load
-  name: Load()
-  href: api/Virtufin.Api.Configuration.ServicesConfigurationLoader.html#Virtufin_Api_Configuration_ServicesConfigurationLoader_Load
-  commentId: M:Virtufin.Api.Configuration.ServicesConfigurationLoader.Load
-  fullName: Virtufin.Api.Configuration.ServicesConfigurationLoader.Load()
-  nameWithType: ServicesConfigurationLoader.Load()
-- uid: Virtufin.Api.Configuration.ServicesConfigurationLoader.Load*
-  name: Load
-  href: api/Virtufin.Api.Configuration.ServicesConfigurationLoader.html#Virtufin_Api_Configuration_ServicesConfigurationLoader_Load_
-  commentId: Overload:Virtufin.Api.Configuration.ServicesConfigurationLoader.Load
+- uid: Virtufin.Api.Configuration.ServicesConfigurationLoader.LoadAsync
+  name: LoadAsync()
+  href: api/Virtufin.Api.Configuration.ServicesConfigurationLoader.html#Virtufin_Api_Configuration_ServicesConfigurationLoader_LoadAsync
+  commentId: M:Virtufin.Api.Configuration.ServicesConfigurationLoader.LoadAsync
+  fullName: Virtufin.Api.Configuration.ServicesConfigurationLoader.LoadAsync()
+  nameWithType: ServicesConfigurationLoader.LoadAsync()
+- uid: Virtufin.Api.Configuration.ServicesConfigurationLoader.LoadAsync*
+  name: LoadAsync
+  href: api/Virtufin.Api.Configuration.ServicesConfigurationLoader.html#Virtufin_Api_Configuration_ServicesConfigurationLoader_LoadAsync_
+  commentId: Overload:Virtufin.Api.Configuration.ServicesConfigurationLoader.LoadAsync
   isSpec: "True"
-  fullName: Virtufin.Api.Configuration.ServicesConfigurationLoader.Load
-  nameWithType: ServicesConfigurationLoader.Load
+  fullName: Virtufin.Api.Configuration.ServicesConfigurationLoader.LoadAsync
+  nameWithType: ServicesConfigurationLoader.LoadAsync
 - uid: Virtufin.Api.Configuration.StateConfig
   name: StateConfig
   href: api/Virtufin.Api.Configuration.StateConfig.html
@@ -2015,22 +2076,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GrpcChannelPool.Dispose
   nameWithType: GrpcChannelPool.Dispose
-- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
-  name: GetChannel(string)
-  href: api/Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannel_System_String_
-  commentId: M:Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
-  name.vb: GetChannel(String)
-  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannel(string)
-  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.GetChannel(String)
-  nameWithType: GrpcChannelPool.GetChannel(string)
-  nameWithType.vb: GrpcChannelPool.GetChannel(String)
-- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannel*
-  name: GetChannel
-  href: api/Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannel_
-  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.GetChannel
+- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(System.String)
+  name: GetChannelAsync(string)
+  href: api/Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannelAsync_System_String_
+  commentId: M:Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(System.String)
+  name.vb: GetChannelAsync(String)
+  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(string)
+  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(String)
+  nameWithType: GrpcChannelPool.GetChannelAsync(string)
+  nameWithType.vb: GrpcChannelPool.GetChannelAsync(String)
+- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync*
+  name: GetChannelAsync
+  href: api/Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannelAsync_
+  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync
   isSpec: "True"
-  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannel
-  nameWithType: GrpcChannelPool.GetChannel
+  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync
+  nameWithType: GrpcChannelPool.GetChannelAsync
 - uid: Virtufin.Api.Services.GrpcReflectionService
   name: GrpcReflectionService
   href: api/Virtufin.Api.Services.GrpcReflectionService.html
@@ -3010,12 +3071,42 @@ references:
   commentId: T:Virtufin.Api.Services.TimeoutConstants
   fullName: Virtufin.Api.Services.TimeoutConstants
   nameWithType: TimeoutConstants
+- uid: Virtufin.Api.Services.TimeoutConstants.GrpcGatewayTimeoutSeconds
+  name: GrpcGatewayTimeoutSeconds
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_GrpcGatewayTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.GrpcGatewayTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.GrpcGatewayTimeoutSeconds
+  nameWithType: TimeoutConstants.GrpcGatewayTimeoutSeconds
+- uid: Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+  name: GrpcKeepAlivePingDelaySeconds
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_GrpcKeepAlivePingDelaySeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+  nameWithType: TimeoutConstants.GrpcKeepAlivePingDelaySeconds
+- uid: Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+  name: GrpcKeepAlivePingTimeoutSeconds
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_GrpcKeepAlivePingTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+  nameWithType: TimeoutConstants.GrpcKeepAlivePingTimeoutSeconds
+- uid: Virtufin.Api.Services.TimeoutConstants.GrpcReflectionCacheTtlMinutes
+  name: GrpcReflectionCacheTtlMinutes
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_GrpcReflectionCacheTtlMinutes
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.GrpcReflectionCacheTtlMinutes
+  fullName: Virtufin.Api.Services.TimeoutConstants.GrpcReflectionCacheTtlMinutes
+  nameWithType: TimeoutConstants.GrpcReflectionCacheTtlMinutes
 - uid: Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
   name: MessageHandlingTimeoutSeconds
   href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_MessageHandlingTimeoutSeconds
   commentId: F:Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
   fullName: Virtufin.Api.Services.TimeoutConstants.MessageHandlingTimeoutSeconds
   nameWithType: TimeoutConstants.MessageHandlingTimeoutSeconds
+- uid: Virtufin.Api.Services.TimeoutConstants.ReflectionProbeTimeoutSeconds
+  name: ReflectionProbeTimeoutSeconds
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_ReflectionProbeTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.ReflectionProbeTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.ReflectionProbeTimeoutSeconds
+  nameWithType: TimeoutConstants.ReflectionProbeTimeoutSeconds
 - uid: Virtufin.Api.Services.TimeoutConstants.SendEventTimeoutSeconds
   name: SendEventTimeoutSeconds
   href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_SendEventTimeoutSeconds
@@ -3028,3 +3119,9 @@ references:
   commentId: F:Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
   fullName: Virtufin.Api.Services.TimeoutConstants.SubscriptionIdleTimeoutMinutes
   nameWithType: TimeoutConstants.SubscriptionIdleTimeoutMinutes
+- uid: Virtufin.Api.Services.TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds
+  name: SubscriptionWriterDrainTimeoutSeconds
+  href: api/Virtufin.Api.Services.TimeoutConstants.html#Virtufin_Api_Services_TimeoutConstants_SubscriptionWriterDrainTimeoutSeconds
+  commentId: F:Virtufin.Api.Services.TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds
+  fullName: Virtufin.Api.Services.TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds
+  nameWithType: TimeoutConstants.SubscriptionWriterDrainTimeoutSeconds

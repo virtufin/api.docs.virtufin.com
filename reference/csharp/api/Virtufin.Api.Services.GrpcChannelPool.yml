@@ -9,7 +9,7 @@ items:
   - Virtufin.Api.Services.GrpcChannelPool.ChannelCount
   - Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
   - Virtufin.Api.Services.GrpcChannelPool.Dispose
-  - Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
+  - Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(System.String)
   langs:
   - csharp
   - vb
@@ -61,7 +61,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -95,7 +95,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ChannelCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -124,7 +124,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ConfiguredServiceCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -135,40 +135,40 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property ConfiguredServiceCount As Integer
   overload: Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount*
-- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
-  commentId: M:Virtufin.Api.Services.GrpcChannelPool.GetChannel(System.String)
-  id: GetChannel(System.String)
+- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(System.String)
+  commentId: M:Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(System.String)
+  id: GetChannelAsync(System.String)
   parent: Virtufin.Api.Services.GrpcChannelPool
   langs:
   - csharp
   - vb
-  name: GetChannel(string)
-  nameWithType: GrpcChannelPool.GetChannel(string)
-  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannel(string)
+  name: GetChannelAsync(string)
+  nameWithType: GrpcChannelPool.GetChannelAsync(string)
+  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(string)
   type: Method
   source:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GetChannel
+    id: GetChannelAsync
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public GrpcChannel GetChannel(string serviceName)
+    content: public Task<GrpcChannel> GetChannelAsync(string serviceName)
     parameters:
     - id: serviceName
       type: System.String
     return:
-      type: Grpc.Net.Client.GrpcChannel
-    content.vb: Public Function GetChannel(serviceName As String) As GrpcChannel
-  overload: Virtufin.Api.Services.GrpcChannelPool.GetChannel*
-  nameWithType.vb: GrpcChannelPool.GetChannel(String)
-  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.GetChannel(String)
-  name.vb: GetChannel(String)
+      type: System.Threading.Tasks.Task{Grpc.Net.Client.GrpcChannel}
+    content.vb: Public Function GetChannelAsync(serviceName As String) As Task(Of GrpcChannel)
+  overload: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync*
+  nameWithType.vb: GrpcChannelPool.GetChannelAsync(String)
+  fullName.vb: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(String)
+  name.vb: GetChannelAsync(String)
 - uid: Virtufin.Api.Services.GrpcChannelPool.Dispose
   commentId: M:Virtufin.Api.Services.GrpcChannelPool.Dispose
   id: Dispose
@@ -187,7 +187,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 28
+    startLine: 31
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -642,12 +642,12 @@ references:
   name: ConfiguredServiceCount
   nameWithType: GrpcChannelPool.ConfiguredServiceCount
   fullName: Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount
-- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannel*
-  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.GetChannel
-  href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannel_System_String_
-  name: GetChannel
-  nameWithType: GrpcChannelPool.GetChannel
-  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannel
+- uid: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync
+  href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_GetChannelAsync_System_String_
+  name: GetChannelAsync
+  nameWithType: GrpcChannelPool.GetChannelAsync
+  fullName: Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -659,44 +659,106 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Grpc.Net.Client.GrpcChannel
-  commentId: T:Grpc.Net.Client.GrpcChannel
-  parent: Grpc.Net.Client
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Net.Client/GrpcChannel.cs
-  name: GrpcChannel
-  nameWithType: GrpcChannel
-  fullName: Grpc.Net.Client.GrpcChannel
-- uid: Grpc.Net.Client
-  commentId: N:Grpc.Net.Client
-  isExternal: true
-  name: Grpc.Net.Client
-  nameWithType: Grpc.Net.Client
-  fullName: Grpc.Net.Client
+- uid: System.Threading.Tasks.Task{Grpc.Net.Client.GrpcChannel}
+  commentId: T:System.Threading.Tasks.Task{Grpc.Net.Client.GrpcChannel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GrpcChannel>
+  nameWithType: Task<GrpcChannel>
+  fullName: System.Threading.Tasks.Task<Grpc.Net.Client.GrpcChannel>
+  nameWithType.vb: Task(Of GrpcChannel)
+  fullName.vb: System.Threading.Tasks.Task(Of Grpc.Net.Client.GrpcChannel)
+  name.vb: Task(Of GrpcChannel)
   spec.csharp:
-  - uid: Grpc
-    name: Grpc
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
     isExternal: true
-  - name: .
-  - uid: Grpc.Net
-    name: Net
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Grpc.Net.Client.GrpcChannel
+    name: GrpcChannel
     isExternal: true
-  - name: .
-  - uid: Grpc.Net.Client
-    name: Client
-    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Net.Client/GrpcChannel.cs
+  - name: '>'
   spec.vb:
-  - uid: Grpc
-    name: Grpc
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Grpc.Net.Client.GrpcChannel
+    name: GrpcChannel
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Net.Client/GrpcChannel.cs
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Grpc.Net
-    name: Net
+  - uid: System.Threading
+    name: Threading
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Grpc.Net.Client
-    name: Client
+  - uid: System.Threading.Tasks
+    name: Tasks
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: Virtufin.Api.Services.GrpcChannelPool.Dispose*
   commentId: Overload:Virtufin.Api.Services.GrpcChannelPool.Dispose
   href: Virtufin.Api.Services.GrpcChannelPool.html#Virtufin_Api_Services_GrpcChannelPool_Dispose

@@ -46,6 +46,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Client.IAsyncStreamEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Client.IAsyncStreamEventHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Client.IAsyncStreamEventHandler",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.IAsyncStreamEventHandler.yml\" sourcestartlinenumber=\"1\">Async callback interface for receiving stream events. Handlers that\nimplement this interface are awaited by <xref href=\"Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler%2cSystem.Collections.Generic.IEnumerable%7bSystem.String%7d%2cSystem.Collections.Generic.IEnumerable%7bSystem.String%7d%2cSystem.Collections.Generic.IEnumerable%7bSystem.String%7d%2cSystem.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref>,\npreventing slow handlers from causing gRPC stream backpressure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Client.IStreamEventHandler.yml",
       "output": {
         ".html": {
@@ -140,6 +154,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Configuration.GrpcConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Configuration.GrpcEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Configuration.GrpcEndpoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Configuration.GrpcEndpoint",
       "Summary": null
     },
     {

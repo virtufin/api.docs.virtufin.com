@@ -26,6 +26,9 @@ items:
   - uid: Virtufin.Api.Client.GatewayClient
     name: GatewayClient
     type: Class
+  - uid: Virtufin.Api.Client.IAsyncStreamEventHandler
+    name: IAsyncStreamEventHandler
+    type: Interface
   - uid: Virtufin.Api.Client.IStreamEventHandler
     name: IStreamEventHandler
     type: Interface
@@ -47,6 +50,9 @@ items:
     type: Class
   - uid: Virtufin.Api.Configuration.GrpcConfig
     name: GrpcConfig
+    type: Class
+  - uid: Virtufin.Api.Configuration.GrpcEndpoint
+    name: GrpcEndpoint
     type: Class
   - uid: Virtufin.Api.Configuration.JobsConfig
     name: JobsConfig

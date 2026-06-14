@@ -1,0 +1,457 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler
+  commentId: T:Virtufin.Api.Client.IAsyncStreamEventHandler
+  id: IAsyncStreamEventHandler
+  parent: Virtufin.Api.Client
+  children:
+  - Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IAsyncStreamEventHandler
+  nameWithType: IAsyncStreamEventHandler
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler
+  type: Interface
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/ApiClient.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: IAsyncStreamEventHandler
+    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
+    startLine: 95
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: >-
+    Async callback interface for receiving stream events. Handlers that
+
+    implement this interface are awaited by <xref href="Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler%2cSystem.Collections.Generic.IEnumerable%7bSystem.String%7d%2cSystem.Collections.Generic.IEnumerable%7bSystem.String%7d%2cSystem.Collections.Generic.IEnumerable%7bSystem.String%7d%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>,
+
+    preventing slow handlers from causing gRPC stream backpressure.
+  example: []
+  syntax:
+    content: 'public interface IAsyncStreamEventHandler : IStreamEventHandler'
+    content.vb: Public Interface IAsyncStreamEventHandler Inherits IStreamEventHandler
+  inheritedMembers:
+  - Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  id: OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Client.IAsyncStreamEventHandler
+  langs:
+  - csharp
+  - vb
+  name: OnEventAsync(TopicEventRequest, CancellationToken)
+  nameWithType: IAsyncStreamEventHandler.OnEventAsync(TopicEventRequest, CancellationToken)
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/ApiClient.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: OnEventAsync
+    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
+    startLine: 102
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Called when a regular event is received. Awaited by the stream loop.
+  example: []
+  syntax:
+    content: Task OnEventAsync(TopicEventRequest e, CancellationToken cancellationToken = default)
+    parameters:
+    - id: e
+      type: Virtufin.Api.Protos.TopicEventRequest
+      description: The topic event request containing event data.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the stream.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function OnEventAsync(e As TopicEventRequest, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync*
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception,System.Threading.CancellationToken)
+  id: OnErrorAsync(System.Exception,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Client.IAsyncStreamEventHandler
+  langs:
+  - csharp
+  - vb
+  name: OnErrorAsync(Exception, CancellationToken)
+  nameWithType: IAsyncStreamEventHandler.OnErrorAsync(Exception, CancellationToken)
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/ApiClient.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: OnErrorAsync
+    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
+    startLine: 109
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Called when an error occurs in the event stream. Awaited by the stream loop.
+  example: []
+  syntax:
+    content: Task OnErrorAsync(Exception ex, CancellationToken cancellationToken = default)
+    parameters:
+    - id: ex
+      type: System.Exception
+      description: The exception that occurred.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token for the stream.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function OnErrorAsync(ex As Exception, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync*
+references:
+- uid: Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  isExternal: true
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SubscribeAsync_Virtufin_Api_Client_IStreamEventHandler_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  name: SubscribeAsync(IStreamEventHandler, IEnumerable<string>, IEnumerable<string>, IEnumerable<string>, CancellationToken)
+  nameWithType: GatewayClient.SubscribeAsync(IStreamEventHandler, IEnumerable<string>, IEnumerable<string>, IEnumerable<string>, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler, System.Collections.Generic.IEnumerable<string>, System.Collections.Generic.IEnumerable<string>, System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  nameWithType.vb: GatewayClient.SubscribeAsync(IStreamEventHandler, IEnumerable(Of String), IEnumerable(Of String), IEnumerable(Of String), CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler, System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  name.vb: SubscribeAsync(IStreamEventHandler, IEnumerable(Of String), IEnumerable(Of String), IEnumerable(Of String), CancellationToken)
+  spec.csharp:
+  - uid: Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+    name: SubscribeAsync
+    href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SubscribeAsync_Virtufin_Api_Client_IStreamEventHandler_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  - name: (
+  - uid: Virtufin.Api.Client.IStreamEventHandler
+    name: IStreamEventHandler
+    href: Virtufin.Api.Client.IStreamEventHandler.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+    name: SubscribeAsync
+    href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SubscribeAsync_Virtufin_Api_Client_IStreamEventHandler_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  - name: (
+  - uid: Virtufin.Api.Client.IStreamEventHandler
+    name: IStreamEventHandler
+    href: Virtufin.Api.Client.IStreamEventHandler.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Virtufin.Api.Client
+  commentId: N:Virtufin.Api.Client
+  href: Virtufin.html
+  name: Virtufin.Api.Client
+  nameWithType: Virtufin.Api.Client
+  fullName: Virtufin.Api.Client
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
+- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  parent: Virtufin.Api.Client.IStreamEventHandler
+  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+  name: OnEvent(TopicEventRequest)
+  nameWithType: IStreamEventHandler.OnEvent(TopicEventRequest)
+  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  spec.csharp:
+  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+    name: OnEvent
+    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+  - name: (
+  - uid: Virtufin.Api.Protos.TopicEventRequest
+    name: TopicEventRequest
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+    name: OnEvent
+    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+  - name: (
+  - uid: Virtufin.Api.Protos.TopicEventRequest
+    name: TopicEventRequest
+  - name: )
+- uid: Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
+  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
+  parent: Virtufin.Api.Client.IStreamEventHandler
+  isExternal: true
+  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnError_System_Exception_
+  name: OnError(Exception)
+  nameWithType: IStreamEventHandler.OnError(Exception)
+  fullName: Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
+  spec.csharp:
+  - uid: Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
+    name: OnError
+    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
+    name: OnError
+    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnError_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Virtufin.Api.Client.IStreamEventHandler
+  commentId: T:Virtufin.Api.Client.IStreamEventHandler
+  parent: Virtufin.Api.Client
+  href: Virtufin.Api.Client.IStreamEventHandler.html
+  name: IStreamEventHandler
+  nameWithType: IStreamEventHandler
+  fullName: Virtufin.Api.Client.IStreamEventHandler
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync*
+  commentId: Overload:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync
+  href: Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnEventAsync_Virtufin_Api_Protos_TopicEventRequest_System_Threading_CancellationToken_
+  name: OnEventAsync
+  nameWithType: IAsyncStreamEventHandler.OnEventAsync
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync
+- uid: Virtufin.Api.Protos.TopicEventRequest
+  commentId: T:Virtufin.Api.Protos.TopicEventRequest
+  parent: Virtufin.Api.Protos
+  name: TopicEventRequest
+  nameWithType: TopicEventRequest
+  fullName: Virtufin.Api.Protos.TopicEventRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Virtufin.Api.Protos
+  commentId: N:Virtufin.Api.Protos
+  name: Virtufin.Api.Protos
+  nameWithType: Virtufin.Api.Protos
+  fullName: Virtufin.Api.Protos
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+  - name: .
+  - uid: Virtufin.Api.Protos
+    name: Protos
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync*
+  commentId: Overload:Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync
+  href: Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnErrorAsync_System_Exception_System_Threading_CancellationToken_
+  name: OnErrorAsync
+  nameWithType: IAsyncStreamEventHandler.OnErrorAsync
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
