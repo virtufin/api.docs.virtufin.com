@@ -2365,15 +2365,15 @@ references:
   commentId: T:Virtufin.Api.Services.PubsubService
   fullName: Virtufin.Api.Services.PubsubService
   nameWithType: PubsubService
-- uid: Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
-  name: PubsubService(DaprClient, DaprPublishSubscribeClient, PubsubSubscriptionManager, ILogger<PubsubService>)
-  href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService__ctor_Dapr_Client_DaprClient_Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_Virtufin_Api_Services_PubsubSubscriptionManager_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_PubsubService__
-  commentId: M:Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
-  name.vb: New(DaprClient, DaprPublishSubscribeClient, PubsubSubscriptionManager, ILogger(Of PubsubService))
-  fullName: Virtufin.Api.Services.PubsubService.PubsubService(Dapr.Client.DaprClient, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.PubsubService>)
-  fullName.vb: Virtufin.Api.Services.PubsubService.New(Dapr.Client.DaprClient, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.PubsubService))
-  nameWithType: PubsubService.PubsubService(DaprClient, DaprPublishSubscribeClient, PubsubSubscriptionManager, ILogger<PubsubService>)
-  nameWithType.vb: PubsubService.New(DaprClient, DaprPublishSubscribeClient, PubsubSubscriptionManager, ILogger(Of PubsubService))
+- uid: Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,System.IServiceProvider,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
+  name: PubsubService(DaprClient, IServiceProvider, PubsubSubscriptionManager, ILogger<PubsubService>)
+  href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService__ctor_Dapr_Client_DaprClient_System_IServiceProvider_Virtufin_Api_Services_PubsubSubscriptionManager_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_PubsubService__
+  commentId: M:Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,System.IServiceProvider,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
+  name.vb: New(DaprClient, IServiceProvider, PubsubSubscriptionManager, ILogger(Of PubsubService))
+  fullName: Virtufin.Api.Services.PubsubService.PubsubService(Dapr.Client.DaprClient, System.IServiceProvider, Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.PubsubService>)
+  fullName.vb: Virtufin.Api.Services.PubsubService.New(Dapr.Client.DaprClient, System.IServiceProvider, Virtufin.Api.Services.PubsubSubscriptionManager, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.PubsubService))
+  nameWithType: PubsubService.PubsubService(DaprClient, IServiceProvider, PubsubSubscriptionManager, ILogger<PubsubService>)
+  nameWithType.vb: PubsubService.New(DaprClient, IServiceProvider, PubsubSubscriptionManager, ILogger(Of PubsubService))
 - uid: Virtufin.Api.Services.PubsubService.#ctor*
   name: PubsubService
   href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService__ctor_
