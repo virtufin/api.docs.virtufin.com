@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/e3cdcf760b352cf74eabaa8868765cdc1a828194" target="_blank" rel="noopener" class="commit-badge" title="View commit e3cdcf7">
+            <a href="{git_repo_url}/commit/4c3909b8c27811576caada1a8453cfb4238ad9de" target="_blank" rel="noopener" class="commit-badge" title="View commit 4c3909b">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e3cdcf7</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4c3909b</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -251,6 +251,44 @@ Supports optimistic concurrency via ETag — throws Aborted on mismatch.</p>
 
 
 
+  <a id="Virtufin_Api_Services_StateService_DeleteSystemState_" data-uid="Virtufin.Api.Services.StateService.DeleteSystemState*"></a>
+
+  <h3 id="Virtufin_Api_Services_StateService_DeleteSystemState_Virtufin_Api_Protos_DeleteSystemStateRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.StateService.DeleteSystemState(Virtufin.Api.Protos.DeleteSystemStateRequest,Grpc.Core.ServerCallContext)">
+  DeleteSystemState(DeleteSystemStateRequest, ServerCallContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;DeleteStateResponse&gt; DeleteSystemState(DeleteSystemStateRequest request, ServerCallContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">DeleteSystemStateRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">DeleteStateResponse</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Services_StateService_GetAllState_" data-uid="Virtufin.Api.Services.StateService.GetAllState*"></a>
 
   <h3 id="Virtufin_Api_Services_StateService_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)">
@@ -282,6 +320,44 @@ Only returns keys that have been registered via RegisterKeys.</p>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">GetAllStateResponse</span>&gt;</dt>
     <dd><p>A dictionary of all state key-value pairs for the service.</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_StateService_GetAllSystemState_" data-uid="Virtufin.Api.Services.StateService.GetAllSystemState*"></a>
+
+  <h3 id="Virtufin_Api_Services_StateService_GetAllSystemState_Virtufin_Api_Protos_GetAllSystemStateRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.StateService.GetAllSystemState(Virtufin.Api.Protos.GetAllSystemStateRequest,Grpc.Core.ServerCallContext)">
+  GetAllSystemState(GetAllSystemStateRequest, ServerCallContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetAllStateResponse&gt; GetAllSystemState(GetAllSystemStateRequest request, ServerCallContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">GetAllSystemStateRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">GetAllStateResponse</span>&gt;</dt>
+    <dd></dd>
   </dl>
 
 
@@ -342,6 +418,44 @@ Only returns keys that have been registered via RegisterKeys.</p>
 
 
 
+  <a id="Virtufin_Api_Services_StateService_GetSystemState_" data-uid="Virtufin.Api.Services.StateService.GetSystemState*"></a>
+
+  <h3 id="Virtufin_Api_Services_StateService_GetSystemState_Virtufin_Api_Protos_GetSystemStateRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.StateService.GetSystemState(Virtufin.Api.Protos.GetSystemStateRequest,Grpc.Core.ServerCallContext)">
+  GetSystemState(GetSystemStateRequest, ServerCallContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetStateResponse&gt; GetSystemState(GetSystemStateRequest request, ServerCallContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">GetSystemStateRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">GetStateResponse</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Services_StateService_RegisterKeys_" data-uid="Virtufin.Api.Services.StateService.RegisterKeys*"></a>
 
   <h3 id="Virtufin_Api_Services_StateService_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)">
@@ -373,6 +487,44 @@ Services should call this on startup to re-register their known keys.</p>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">RegisterKeysResponse</span>&gt;</dt>
     <dd><p>The register keys response with success status.</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_StateService_RegisterSystemKeys_" data-uid="Virtufin.Api.Services.StateService.RegisterSystemKeys*"></a>
+
+  <h3 id="Virtufin_Api_Services_StateService_RegisterSystemKeys_Virtufin_Api_Protos_RegisterSystemKeysRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.StateService.RegisterSystemKeys(Virtufin.Api.Protos.RegisterSystemKeysRequest,Grpc.Core.ServerCallContext)">
+  RegisterSystemKeys(RegisterSystemKeysRequest, ServerCallContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;RegisterKeysResponse&gt; RegisterSystemKeys(RegisterSystemKeysRequest request, ServerCallContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">RegisterSystemKeysRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">RegisterKeysResponse</span>&gt;</dt>
+    <dd></dd>
   </dl>
 
 
@@ -431,6 +583,44 @@ Uses optimistic concurrency when an ETag is provided.</p>
     <dd><p>StatusCode.Aborted when ETag mismatch occurs.</p>
 </dd>
   </dl>
+
+
+
+  <a id="Virtufin_Api_Services_StateService_SaveSystemState_" data-uid="Virtufin.Api.Services.StateService.SaveSystemState*"></a>
+
+  <h3 id="Virtufin_Api_Services_StateService_SaveSystemState_Virtufin_Api_Protos_SaveSystemStateRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.StateService.SaveSystemState(Virtufin.Api.Protos.SaveSystemStateRequest,Grpc.Core.ServerCallContext)">
+  SaveSystemState(SaveSystemStateRequest, ServerCallContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;SaveStateResponse&gt; SaveSystemState(SaveSystemStateRequest request, ServerCallContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">SaveSystemStateRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">SaveStateResponse</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
 
 
 

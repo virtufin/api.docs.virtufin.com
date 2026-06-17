@@ -5,8 +5,12 @@ items:
   id: PortConstants
   parent: Virtufin.Api.Configuration
   children:
+  - Virtufin.Api.Configuration.PortConstants.ApiGrpcPortKey
+  - Virtufin.Api.Configuration.PortConstants.ApiHostKey
   - Virtufin.Api.Configuration.PortConstants.DaprGrpcPortKey
   - Virtufin.Api.Configuration.PortConstants.DaprHttpPortKey
+  - Virtufin.Api.Configuration.PortConstants.DefaultApiGrpcPort
+  - Virtufin.Api.Configuration.PortConstants.DefaultApiHost
   - Virtufin.Api.Configuration.PortConstants.DefaultDaprGrpcPort
   - Virtufin.Api.Configuration.PortConstants.DefaultDaprHttpPort
   - Virtufin.Api.Configuration.PortConstants.DefaultGrpcPort
@@ -260,6 +264,114 @@ items:
     return:
       type: System.String
     content.vb: Public Const DaprGrpcPortKey As String = "DaprGrpcPort"
+- uid: Virtufin.Api.Configuration.PortConstants.DefaultApiHost
+  commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultApiHost
+  id: DefaultApiHost
+  parent: Virtufin.Api.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DefaultApiHost
+  nameWithType: PortConstants.DefaultApiHost
+  fullName: Virtufin.Api.Configuration.PortConstants.DefaultApiHost
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DefaultApiHost
+    path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public const string DefaultApiHost = "localhost"
+    return:
+      type: System.String
+    content.vb: Public Const DefaultApiHost As String = "localhost"
+- uid: Virtufin.Api.Configuration.PortConstants.DefaultApiGrpcPort
+  commentId: F:Virtufin.Api.Configuration.PortConstants.DefaultApiGrpcPort
+  id: DefaultApiGrpcPort
+  parent: Virtufin.Api.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: DefaultApiGrpcPort
+  nameWithType: PortConstants.DefaultApiGrpcPort
+  fullName: Virtufin.Api.Configuration.PortConstants.DefaultApiGrpcPort
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DefaultApiGrpcPort
+    path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public const int DefaultApiGrpcPort = 5002
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultApiGrpcPort As Integer = 5002
+- uid: Virtufin.Api.Configuration.PortConstants.ApiHostKey
+  commentId: F:Virtufin.Api.Configuration.PortConstants.ApiHostKey
+  id: ApiHostKey
+  parent: Virtufin.Api.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: ApiHostKey
+  nameWithType: PortConstants.ApiHostKey
+  fullName: Virtufin.Api.Configuration.PortConstants.ApiHostKey
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ApiHostKey
+    path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public const string ApiHostKey = "VIRTUFIN_API_HOST"
+    return:
+      type: System.String
+    content.vb: Public Const ApiHostKey As String = "VIRTUFIN_API_HOST"
+- uid: Virtufin.Api.Configuration.PortConstants.ApiGrpcPortKey
+  commentId: F:Virtufin.Api.Configuration.PortConstants.ApiGrpcPortKey
+  id: ApiGrpcPortKey
+  parent: Virtufin.Api.Configuration.PortConstants
+  langs:
+  - csharp
+  - vb
+  name: ApiGrpcPortKey
+  nameWithType: PortConstants.ApiGrpcPortKey
+  fullName: Virtufin.Api.Configuration.PortConstants.ApiGrpcPortKey
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/PortConstants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ApiGrpcPortKey
+    path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public const string ApiGrpcPortKey = "VIRTUFIN_API_GRPC_PORT"
+    return:
+      type: System.String
+    content.vb: Public Const ApiGrpcPortKey As String = "VIRTUFIN_API_GRPC_PORT"
 references:
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration

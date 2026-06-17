@@ -22,6 +22,7 @@ items:
   - Virtufin.Api.Services.ServiceMethodInfo
   - Virtufin.Api.Services.StateActionConstants
   - Virtufin.Api.Services.StateService
+  - Virtufin.Api.Services.StateServices
   - Virtufin.Api.Services.StatusStrings
   - Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
   - Virtufin.Api.Services.SubscriptionManagerBase`2
@@ -54,6 +55,12 @@ references:
   name: PubSubTopics
   nameWithType: PubSubTopics
   fullName: Virtufin.Api.Services.PubSubTopics
+- uid: Virtufin.Api.Services.StateServices
+  commentId: T:Virtufin.Api.Services.StateServices
+  href: Virtufin.Api.Services.StateServices.html
+  name: StateServices
+  nameWithType: StateServices
+  fullName: Virtufin.Api.Services.StateServices
 - uid: Virtufin.Api.Services.StatusStrings
   commentId: T:Virtufin.Api.Services.StatusStrings
   href: Virtufin.Api.Services.StatusStrings.html

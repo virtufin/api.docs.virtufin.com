@@ -10,13 +10,9 @@
       
       
       
-        <link rel="canonical" href="https://api.doc.virtufin.com/security/">
+        <link rel="canonical" href="https://api.doc.virtufin.com/system-rpcs/">
       
       
-        <link rel="prev" href="../deployment/">
-      
-      
-        <link rel="next" href="../troubleshooting/">
       
       
         
@@ -27,7 +23,7 @@
     
     
       
-        <title>Security - Virtufin API Documentation</title>
+        <title>System RPCs - Virtufin API Documentation</title>
       
     
     
@@ -80,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#security" class="md-skip">
+        <a href="#system-rpcs" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Security
+              System RPCs
             
           </span>
         </div>
@@ -332,12 +328,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../development/" class="md-tabs__link">
           
   
@@ -925,31 +919,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -967,7 +958,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1038,37 +1029,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
         
   
   
@@ -1084,120 +1048,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Authentication
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Authentication">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#grpc-and-rest-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gRPC and REST Endpoints
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#state-store-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        State Store Security
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-tracking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Tracking
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dapr-component-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dapr Component Security
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration &amp; Secrets
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#audit-logging" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Audit &amp; Logging
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reporting-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reporting Issues
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1265,22 +1115,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#authentication" class="md-nav__link">
+  <a href="#pubsub-system-variants" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Authentication
+        Pubsub system variants
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Authentication">
+    <nav class="md-nav" aria-label="Pubsub system variants">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#grpc-and-rest-endpoints" class="md-nav__link">
+  <a href="#pubsubpublishsystemeventpublishsystemeventrequest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        gRPC and REST Endpoints
+        Pubsub.PublishSystemEvent(PublishSystemEventRequest)
       
     </span>
   </a>
@@ -1288,10 +1138,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#state-store-security" class="md-nav__link">
+  <a href="#pubsubsubscribesystemeventspubsubsubscribesystemrequest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        State Store Security
+        Pubsub.SubscribeSystemEvents(PubsubSubscribeSystemRequest)
       
     </span>
   </a>
@@ -1299,10 +1149,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-tracking" class="md-nav__link">
+  <a href="#event-taxonomy-current" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Tracking
+        Event taxonomy (current)
       
     </span>
   </a>
@@ -1315,10 +1165,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dapr-component-security" class="md-nav__link">
+  <a href="#state-system-variants" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dapr Component Security
+        State system variants
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="State system variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statesavesystemstatesavesystemstaterequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State.SaveSystemState(SaveSystemStateRequest)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stategetsystemstategetsystemstaterequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State.GetSystemState(GetSystemStateRequest)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stategetallsystemstategetallsystemstaterequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State.GetAllSystemState(GetAllSystemStateRequest)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateregistersystemkeysregistersystemkeysrequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State.RegisterSystemKeys(RegisterSystemKeysRequest)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statedeletesystemstatedeletesystemstaterequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State.DeleteSystemState(DeleteSystemStateRequest)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rationale-why-system-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rationale: why system variants?
       
     </span>
   </a>
@@ -1326,32 +1248,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-secrets" class="md-nav__link">
+  <a href="#see-also" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuration &amp; Secrets
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#audit-logging" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Audit &amp; Logging
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reporting-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reporting Issues
+        See also
       
     </span>
   </a>
@@ -1375,67 +1275,167 @@
 
 
 
-<h1 id="security">Security</h1>
-<h2 id="authentication">Authentication</h2>
-<p>The API Gateway is the entry point for all external client access. It supports Dapr's service-to-service mTLS for backend communication with WorkManager and WebSocketManager.</p>
-<h3 id="grpc-and-rest-endpoints">gRPC and REST Endpoints</h3>
-<p>All endpoints are currently accessible without authentication. For production deployments, configure JWT bearer token validation at this layer:</p>
-<ol>
-<li>Add JWT authentication middleware (e.g., Microsoft.AspNetCore.Authentication.JwtBearer)</li>
-<li>Configure a trusted identity provider (Keycloak, Azure AD, Auth0)</li>
-<li>Apply role-based authorization policies on endpoints</li>
-</ol>
-<h3 id="state-store-security">State Store Security</h3>
-<p>The state store supports <strong>optimistic concurrency</strong> via ETags:</p>
-<ul>
-<li><strong>No ETag</strong>: Last-write-wins semantics</li>
-<li><strong>Matching ETag</strong>: Write succeeds</li>
-<li><strong>Mismatched ETag</strong>: Write fails with <code>StatusCode.Aborted</code>, protecting against lost updates</li>
-</ul>
-<p>ETag conflict detection is implemented for both <code>SaveState</code> and <code>DeleteState</code> operations. The Dapr state store's native concurrency mode (<code>ConcurrencyMode.FirstWrite</code>) provides an additional layer of atomicity.</p>
-<h3 id="key-tracking">Key Tracking</h3>
-<p>State keys are registered automatically on first use via <code>SaveState</code> or <code>GetState</code>. Only registered keys are returned by <code>GetAllState</code>. Services should call <code>RegisterKeys</code> on startup to re-register their known keys after a restart.</p>
-<h2 id="dapr-component-security">Dapr Component Security</h2>
-<p>The API Gateway relies on Dapr for state storage and pub/sub messaging. Ensure Dapr components are configured with:</p>
-<ul>
-<li><strong>State store</strong>: Authentication enabled (Redis password for Valkey)</li>
-<li><strong>Pub/sub</strong>: Authentication enabled on the message broker</li>
-<li><strong>mTLS</strong>: Enabled in Dapr configuration (default since Dapr 1.0)</li>
-</ul>
-<h2 id="configuration-secrets">Configuration &amp; Secrets</h2>
-<p>The API Gateway reads its configuration from the standard .NET configuration sources (in order: <code>appsettings.json</code>, environment variables, command-line). The following keys control runtime behavior and are the only ones that carry security-sensitive values:</p>
+<h1 id="system-rpcs">System RPCs</h1>
+<p>The virtufin-api exposes a set of <code>*System*</code> RPC variants that are
+special-purpose, scope-narrowed entry points used by the platform's
+own services (WebSocketManager, WorkManager) for cross-service
+infrastructure data. The non-system variants remain the right choice
+for per-service private data.</p>
+<h2 id="pubsub-system-variants">Pubsub system variants</h2>
+<h3 id="pubsubpublishsystemeventpublishsystemeventrequest"><code>Pubsub.PublishSystemEvent(PublishSystemEventRequest)</code></h3>
+<p>Publishes a CloudEvents v1.0 envelope to the fixed <code>system-events</code>
+topic. The <code>topic</code> field is intentionally absent from the request:
+clients cannot publish user-data events via this RPC.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">PublishSystemEventRequest</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">bytes</span><span class="w"> </span><span class="na">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">  </span><span class="n">map</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="p">&gt;</span><span class="w"> </span><span class="na">metadata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="c1">// CloudEvents attributes, ce-* prefixed</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The metadata map SHOULD carry the standard CloudEvents v1.0 attributes
+(<code>ce-id</code>, <code>ce-source</code>, <code>ce-type</code>, <code>ce-time</code>, <code>ce-specversion</code>,
+<code>ce-datacontenttype</code>). The API uses these attributes as the published
+CloudEvent's envelope. The API fills in defaults for any missing
+attribute:</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
+<th>Missing attribute</th>
 <th>Default</th>
-<th>Security role</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>Cors:AllowedOrigins</code></td>
-<td><code>[]</code></td>
-<td>Restricts which browser origins can call the REST endpoints. Always set explicitly in production.</td>
+<td><code>ce-id</code></td>
+<td>Fresh GUID</td>
 </tr>
 <tr>
-<td><code>ServicesConfigPath</code></td>
-<td><code>config/services.json</code></td>
-<td>Path to the backend services configuration. Treat as security-sensitive — only point at files you control.</td>
+<td><code>ce-source</code></td>
+<td><code>urn:virtufin.api</code></td>
 </tr>
 <tr>
-<td><code>Logging:LogLevel:Default</code></td>
-<td><code>Information</code></td>
-<td>Set to <code>Warning</code> or higher in production to avoid leaking sensitive request data into logs.</td>
+<td><code>ce-type</code></td>
+<td><code>com.virtufin.system.event</code></td>
+</tr>
+<tr>
+<td><code>ce-datacontenttype</code></td>
+<td><code>application/json</code></td>
+</tr>
+<tr>
+<td><code>ce-specversion</code></td>
+<td><code>1.0</code></td>
 </tr>
 </tbody>
 </table>
-<p>Backend Dapr component values (Redis password, broker credentials) are mounted at runtime via Dapr's secret management component (<code>secretstores/kubernetes</code>) — never commit them to source control. Dapr resolves them by key (e.g., <code>stateStore.password</code>) and the application reads them via <code>DaprClient.GetSecretAsync</code>.</p>
-<h2 id="audit-logging">Audit &amp; Logging</h2>
-<p>The API Gateway emits structured logs for every state-mutating operation (<code>Invoke</code>, <code>ListServices</code>, <code>ListMethods</code>, <code>Subscribe</code>, <code>SaveState</code>, <code>DeleteState</code>, <code>PublishEvent</code>, <code>RegisterKeys</code>) and every Dapr bridge subscription lifecycle event. Each log record includes the request ID, caller identity (if available from the gRPC metadata), and a correlation ID derived from the incoming gRPC request.</p>
-<p>Fire-and-forget logging calls (heartbeat writes, sweep events) are wrapped in try/catch and downgrade to <code>LogLevel.Warning</code> if the underlying stream write fails — this prevents observability failures from cascading into service failures.</p>
-<h2 id="reporting-issues">Reporting Issues</h2>
-<p>Report security concerns to the Virtufin security team.</p>
+<p>The payload <code>data</code> carries the event-specific body (a JSON-encoded
+object whose shape depends on the publisher's <code>ce-type</code>).</p>
+<h3 id="pubsubsubscribesystemeventspubsubsubscribesystemrequest"><code>Pubsub.SubscribeSystemEvents(PubsubSubscribeSystemRequest)</code></h3>
+<p>Server-streaming RPC. The client receives every event published to the
+<code>system-events</code> topic. Each event is delivered as a
+<code>PubsubSubscribeResponse</code> whose <code>topic</code> is <code>system-events</code> and whose
+<code>metadata</code> carries the CloudEvents attributes that the publisher set
+on <code>PublishSystemEvent</code>.</p>
+<blockquote>
+<p><strong>Note:</strong> server-side type filtering is not yet supported. Subscribers
+receive every event. Filter client-side by <code>metadata["ce-type"]</code> and
+<code>metadata["ce-source"]</code>.</p>
+</blockquote>
+<h3 id="event-taxonomy-current">Event taxonomy (current)</h3>
+<table>
+<thead>
+<tr>
+<th><code>ce-source</code></th>
+<th><code>ce-type</code></th>
+<th>Payload (data)</th>
+<th>Publisher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>urn:com.virtufin.websocketmanager</code></td>
+<td><code>com.virtufin.websocketmanager.connection.connected</code></td>
+<td><code>{connection_id, url, instance_id}</code></td>
+<td>WSM</td>
+</tr>
+<tr>
+<td><code>urn:com.virtufin.websocketmanager</code></td>
+<td><code>com.virtufin.websocketmanager.connection.disconnected</code></td>
+<td><code>{connection_id, url, instance_id, reason}</code></td>
+<td>WSM</td>
+</tr>
+<tr>
+<td><code>urn:com.virtufin.websocketmanager</code></td>
+<td><code>com.virtufin.websocketmanager.connection.reconnecting</code></td>
+<td><code>{connection_id, url, instance_id, attempt}</code></td>
+<td>WSM</td>
+</tr>
+<tr>
+<td><code>urn:com.virtufin.websocketmanager</code></td>
+<td><code>com.virtufin.websocketmanager.connection.error</code></td>
+<td><code>{connection_id, url, instance_id, error_type, error_message}</code></td>
+<td>WSM</td>
+</tr>
+<tr>
+<td><code>urn:com.virtufin.workmanager</code></td>
+<td><code>com.virtufin.workmanager.worker.created</code></td>
+<td><code>{worker_id, group, topic}</code></td>
+<td>WorkManager</td>
+</tr>
+<tr>
+<td><code>urn:com.virtufin.workmanager</code></td>
+<td><code>com.virtufin.workmanager.worker.started</code></td>
+<td><code>{worker_id, group, topic}</code></td>
+<td>WorkManager</td>
+</tr>
+<tr>
+<td><code>urn:com.virtufin.workmanager</code></td>
+<td><code>com.virtufin.workmanager.worker.stopped</code></td>
+<td><code>{worker_id, group, topic}</code></td>
+<td>WorkManager</td>
+</tr>
+<tr>
+<td><code>urn:com.virtufin.workmanager</code></td>
+<td><code>com.virtufin.workmanager.worker.error</code></td>
+<td><code>{worker_id, group, topic, error_type, error_message}</code></td>
+<td>WorkManager</td>
+</tr>
+</tbody>
+</table>
+<h2 id="state-system-variants">State system variants</h2>
+<p>The state system variants operate against the configured
+<code>StateServices.System</code> service entry (<code>services.json</code> → <code>name: "system"</code>,
+which maps to a Dapr state store). Callers never need to know which
+Dapr state store backs the system service; the API's
+<code>ServicesConfiguration</code> provides the mapping.</p>
+<h3 id="statesavesystemstatesavesystemstaterequest"><code>State.SaveSystemState(SaveSystemStateRequest)</code></h3>
+<p>Saves a key/value pair under the system service. Fires a
+<code>state-changes</code> event identical in shape to <code>State.SaveState</code>.</p>
+<h3 id="stategetsystemstategetsystemstaterequest"><code>State.GetSystemState(GetSystemStateRequest)</code></h3>
+<p>Reads a single key. Throws <code>NOT_FOUND</code> if the key is absent.</p>
+<h3 id="stategetallsystemstategetallsystemstaterequest"><code>State.GetAllSystemState(GetAllSystemStateRequest)</code></h3>
+<p>Returns all registered keys for the system service. Same semantics as
+<code>State.GetAllState</code>.</p>
+<h3 id="stateregistersystemkeysregistersystemkeysrequest"><code>State.RegisterSystemKeys(RegisterSystemKeysRequest)</code></h3>
+<p>Registers keys for tracking by <code>GetAllSystemState</code>.</p>
+<h3 id="statedeletesystemstatedeletesystemstaterequest"><code>State.DeleteSystemState(DeleteSystemStateRequest)</code></h3>
+<p>Deletes a key. Fires a <code>state-changes</code> event.</p>
+<h2 id="rationale-why-system-variants">Rationale: why system variants?</h2>
+<p>The system variants exist because:</p>
+<ol>
+<li><strong>The <code>service</code> and <code>topic</code> namespaces are server-internal.</strong> Clients
+   should not have to know that "the system events topic is called
+   <code>system-events</code>" or that "the system state service is called
+   <code>system</code>". These names are implementation details of the API.</li>
+<li><strong>Type safety at the proto level.</strong> A caller that wants to publish
+   a system event calls <code>PublishSystemEvent</code>, not <code>PublishEvent(topic=...)</code>.
+   The intent is clear in code and in generated stubs.</li>
+<li><strong>Refactoring freedom.</strong> The API can change the underlying topic
+   name or state service name without breaking clients.</li>
+</ol>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../events/"><code>events.md</code></a> — pubsub event architecture</li>
+<li><a href="../services/"><code>services.md</code></a> — full gRPC service reference</li>
+</ul>
 
 
 

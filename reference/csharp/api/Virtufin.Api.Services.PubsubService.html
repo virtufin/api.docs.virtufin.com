@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/e3cdcf760b352cf74eabaa8868765cdc1a828194" target="_blank" rel="noopener" class="commit-badge" title="View commit e3cdcf7">
+            <a href="{git_repo_url}/commit/4c3909b8c27811576caada1a8453cfb4238ad9de" target="_blank" rel="noopener" class="commit-badge" title="View commit 4c3909b">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e3cdcf7</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4c3909b</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -237,6 +237,50 @@ Class PubsubService
 
 
 
+  <a id="Virtufin_Api_Services_PubsubService_PublishSystemEvent_" data-uid="Virtufin.Api.Services.PubsubService.PublishSystemEvent*"></a>
+
+  <h3 id="Virtufin_Api_Services_PubsubService_PublishSystemEvent_Virtufin_Api_Protos_PublishSystemEventRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.PubsubService.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)">
+  PublishSystemEvent(PublishSystemEventRequest, ServerCallContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>System variant of PublishEvent. The topic is fixed to
+<a class="xref" href="Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_SystemEvents">SystemEvents</a> and cannot be overridden
+by the client. The metadata SHOULD carry CloudEvents v1.0
+attributes (ce-id, ce-source, ce-type, ce-time, ce-specversion,
+ce-datacontenttype) so subscribers can filter and route events
+without parsing the data payload.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;PublishResponse&gt; PublishSystemEvent(PublishSystemEventRequest request, ServerCallContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">PublishSystemEventRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">PublishResponse</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Services_PubsubService_Subscribe_" data-uid="Virtufin.Api.Services.PubsubService.Subscribe*"></a>
 
   <h3 id="Virtufin_Api_Services_PubsubService_Subscribe_Virtufin_Api_Protos_PubsubSubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)">
@@ -257,6 +301,49 @@ Messages are enhanced with correlationid from CloudEvent data and extensions.</p
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>request</code> <span class="xref">PubsubSubscribeRequest</span></dt>
+    <dd></dd>
+    <dt><code>responseStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs">IServerStreamWriter</a>&lt;<span class="xref">PubsubSubscribeResponse</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_PubsubService_SubscribeSystemEvents_" data-uid="Virtufin.Api.Services.PubsubService.SubscribeSystemEvents*"></a>
+
+  <h3 id="Virtufin_Api_Services_PubsubService_SubscribeSystemEvents_Virtufin_Api_Protos_PubsubSubscribeSystemRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)">
+  SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter&lt;PubsubSubscribeResponse&gt;, ServerCallContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>System variant of Subscribe. The topic is fixed to
+<a class="xref" href="Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_SystemEvents">SystemEvents</a>. Subscribers receive
+every system event published via PublishSystemEvent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task SubscribeSystemEvents(PubsubSubscribeSystemRequest request, IServerStreamWriter&lt;PubsubSubscribeResponse&gt; responseStream, ServerCallContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">PubsubSubscribeSystemRequest</span></dt>
     <dd></dd>
     <dt><code>responseStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs">IServerStreamWriter</a>&lt;<span class="xref">PubsubSubscribeResponse</span>&gt;</dt>
     <dd></dd>

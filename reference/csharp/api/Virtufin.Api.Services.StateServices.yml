@@ -1,32 +1,43 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.DateTimeFormatConstants
-  commentId: T:Virtufin.Api.Services.DateTimeFormatConstants
-  id: DateTimeFormatConstants
+- uid: Virtufin.Api.Services.StateServices
+  commentId: T:Virtufin.Api.Services.StateServices
+  id: StateServices
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
+  - Virtufin.Api.Services.StateServices.System
   langs:
   - csharp
   - vb
-  name: DateTimeFormatConstants
-  nameWithType: DateTimeFormatConstants
-  fullName: Virtufin.Api.Services.DateTimeFormatConstants
+  name: StateServices
+  nameWithType: StateServices
+  fullName: Virtufin.Api.Services.StateServices
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: DateTimeFormatConstants
+    id: StateServices
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 56
+    startLine: 22
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Logical service names used by the system-state RPC variants. These
+
+    values are the contract between the API and its clients: clients
+
+    never need to know which Dapr state store backs the "system"
+
+    service, only that writes go to whatever the API's
+
+    <code>ServicesConfiguration</code> maps <code>System</code> to.
+  example: []
   syntax:
-    content: public static class DateTimeFormatConstants
-    content.vb: Public Module DateTimeFormatConstants
+    content: public static class StateServices
+    content.vb: Public Module StateServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,33 +48,33 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
-  commentId: F:Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
-  id: Iso8601
-  parent: Virtufin.Api.Services.DateTimeFormatConstants
+- uid: Virtufin.Api.Services.StateServices.System
+  commentId: F:Virtufin.Api.Services.StateServices.System
+  id: System
+  parent: Virtufin.Api.Services.StateServices
   langs:
   - csharp
   - vb
-  name: Iso8601
-  nameWithType: DateTimeFormatConstants.Iso8601
-  fullName: Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
+  name: System
+  nameWithType: StateServices.System
+  fullName: Virtufin.Api.Services.StateServices.System
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Iso8601
+    id: System
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 58
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string Iso8601 = "O"
+    content: public const string System = "system"
     return:
       type: System.String
-    content.vb: Public Const Iso8601 As String = "O"
+    content.vb: Public Const System As String = "system"
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
