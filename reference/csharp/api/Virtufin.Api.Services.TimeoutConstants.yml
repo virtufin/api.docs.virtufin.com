@@ -28,7 +28,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TimeoutConstants
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 43
+    startLine: 57
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -63,7 +63,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SendEventTimeoutSeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 45
+    startLine: 59
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -90,7 +90,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: MessageHandlingTimeoutSeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 46
+    startLine: 60
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -117,7 +117,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscriptionIdleTimeoutMinutes
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 47
+    startLine: 61
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -144,7 +144,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcGatewayTimeoutSeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 48
+    startLine: 62
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -171,7 +171,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcKeepAlivePingDelaySeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 49
+    startLine: 63
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -198,7 +198,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcKeepAlivePingTimeoutSeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 50
+    startLine: 64
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -225,7 +225,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ReflectionProbeTimeoutSeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 51
+    startLine: 65
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -252,7 +252,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcReflectionCacheTtlMinutes
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 52
+    startLine: 66
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -279,7 +279,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscriptionWriterDrainTimeoutSeconds
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 53
+    startLine: 67
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

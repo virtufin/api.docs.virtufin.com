@@ -32,6 +32,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Client.ApiEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Client.ApiEndpoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Client.ApiEndpoint",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.ApiEndpoint.yml\" sourcestartlinenumber=\"1\">Configuration constants for the virtufin-api gRPC endpoint that\nother services call. The endpoint is configured via env vars\n(<xref href=\"Virtufin.Api.Client.ApiEndpoint.HostEnvVar\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Virtufin.Api.Client.ApiEndpoint.PortEnvVar\" data-throw-if-not-resolved=\"false\"></xref>) with\ndefaults suitable for local development.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Client.CloudEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Client.CloudEvents.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Client.CloudEvents",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.CloudEvents.yml\" sourcestartlinenumber=\"1\">Constants for CloudEvents v1.0 metadata keys and standard values.\nUsed by services that publish system events via the virtufin-api\n(PublishSystemEvent). All values are spelled per the CloudEvents\nv1.0 spec (<a href=\"https://github.com/cloudevents/spec/blob/v1.0/spec.md\" sourcefile=\"api/Virtufin.Api.Client.CloudEvents.yml\" sourcestartlinenumber=\"4\">https://github.com/cloudevents/spec/blob/v1.0/spec.md</a>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Client.GatewayClient.yml",
       "output": {
         ".html": {
@@ -449,6 +477,20 @@
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.DateTimeFormatConstants",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.DefaultSystemEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.DefaultSystemEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.DefaultSystemEvent",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.DefaultSystemEvent.yml\" sourcestartlinenumber=\"1\">Default values for the CloudEvents v1.0 envelope that the API\napplies when a <code>PublishSystemEvent</code> call omits the\n<code>ce-source</code> or <code>ce-type</code> metadata. Most callers\n(WebSocketManager, WorkManager) provide their own source URN\nand event type; these defaults exist so the API still produces a\nwell-formed CloudEvent when callers don't.</p>\n"
     },
     {
       "type": "ManagedReference",

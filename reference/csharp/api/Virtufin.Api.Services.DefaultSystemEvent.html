@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class PubSubTopics | Virtufin API - C# Reference </title>
+      <title>Class DefaultSystemEvent | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class PubSubTopics | Virtufin API - C# Reference ">
+      <meta name="title" content="Class DefaultSystemEvent | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Default values for the CloudEvents v1.0 envelope that the API applies when a PublishSystemEvent call omits the ce-source or ce-type metadata. Most callers (WebSocketManager, WorkManager) provide their own source URN and event type; these defaults exist so the API still produces a well-formed CloudEvent when callers don&#39;t.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.PubSubTopics">
+        <article data-uid="Virtufin.Api.Services.DefaultSystemEvent">
 
 
 
-  <h1 id="Virtufin_Api_Services_PubSubTopics" data-uid="Virtufin.Api.Services.PubSubTopics" class="text-break">
-Class PubSubTopics  
+  <h1 id="Virtufin_Api_Services_DefaultSystemEvent" data-uid="Virtufin.Api.Services.DefaultSystemEvent" class="text-break">
+Class DefaultSystemEvent  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,11 +101,17 @@ Class PubSubTopics
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Default values for the CloudEvents v1.0 envelope that the API
+applies when a <code>PublishSystemEvent</code> call omits the
+<code>ce-source</code> or <code>ce-type</code> metadata. Most callers
+(WebSocketManager, WorkManager) provide their own source URN
+and event type; these defaults exist so the API still produces a
+well-formed CloudEvent when callers don't.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class PubSubTopics</code></pre>
+    <pre><code class="lang-csharp hljs">public static class DefaultSystemEvent</code></pre>
   </div>
 
 
@@ -115,7 +121,7 @@ Class PubSubTopics
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">PubSubTopics</span></div>
+      <div><span class="xref">DefaultSystemEvent</span></div>
     </dd>
   </dl>
 
@@ -157,8 +163,8 @@ Class PubSubTopics
 
 
 
-  <h3 id="Virtufin_Api_Services_PubSubTopics_StateChanges" data-uid="Virtufin.Api.Services.PubSubTopics.StateChanges">
-  StateChanges
+  <h3 id="Virtufin_Api_Services_DefaultSystemEvent_Source" data-uid="Virtufin.Api.Services.DefaultSystemEvent.Source">
+  Source
   
   </h3>
 
@@ -166,7 +172,7 @@ Class PubSubTopics
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StateChanges = &quot;state-changes&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Source = &quot;urn:virtufin.api&quot;</code></pre>
   </div>
 
 
@@ -187,8 +193,8 @@ Class PubSubTopics
 
 
 
-  <h3 id="Virtufin_Api_Services_PubSubTopics_SubscriptionKeyPrefix" data-uid="Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix">
-  SubscriptionKeyPrefix
+  <h3 id="Virtufin_Api_Services_DefaultSystemEvent_Type" data-uid="Virtufin.Api.Services.DefaultSystemEvent.Type">
+  Type
   
   </h3>
 
@@ -196,37 +202,7 @@ Class PubSubTopics
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SubscriptionKeyPrefix = &quot;pubsub/&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Virtufin_Api_Services_PubSubTopics_SystemEvents" data-uid="Virtufin.Api.Services.PubSubTopics.SystemEvents">
-  SystemEvents
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SystemEvents = &quot;system-events&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Type = &quot;com.virtufin.system.event&quot;</code></pre>
   </div>
 
 

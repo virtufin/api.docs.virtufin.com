@@ -1,36 +1,46 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes
-  commentId: T:Virtufin.Api.Services.GrpcCallStatusCodes
-  id: GrpcCallStatusCodes
+- uid: Virtufin.Api.Services.DefaultSystemEvent
+  commentId: T:Virtufin.Api.Services.DefaultSystemEvent
+  id: DefaultSystemEvent
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  - Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  - Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  - Virtufin.Api.Services.DefaultSystemEvent.Source
+  - Virtufin.Api.Services.DefaultSystemEvent.Type
   langs:
   - csharp
   - vb
-  name: GrpcCallStatusCodes
-  nameWithType: GrpcCallStatusCodes
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes
+  name: DefaultSystemEvent
+  nameWithType: DefaultSystemEvent
+  fullName: Virtufin.Api.Services.DefaultSystemEvent
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GrpcCallStatusCodes
+    id: DefaultSystemEvent
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 48
+    startLine: 35
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
+  summary: >-
+    Default values for the CloudEvents v1.0 envelope that the API
+
+    applies when a <code>PublishSystemEvent</code> call omits the
+
+    <code>ce-source</code> or <code>ce-type</code> metadata. Most callers
+
+    (WebSocketManager, WorkManager) provide their own source URN
+
+    and event type; these defaults exist so the API still produces a
+
+    well-formed CloudEvent when callers don't.
+  example: []
   syntax:
-    content: public static class GrpcCallStatusCodes
-    content.vb: Public Module GrpcCallStatusCodes
+    content: public static class DefaultSystemEvent
+    content.vb: Public Module DefaultSystemEvent
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,141 +51,60 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  id: Unknown
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+- uid: Virtufin.Api.Services.DefaultSystemEvent.Source
+  commentId: F:Virtufin.Api.Services.DefaultSystemEvent.Source
+  id: Source
+  parent: Virtufin.Api.Services.DefaultSystemEvent
   langs:
   - csharp
   - vb
-  name: Unknown
-  nameWithType: GrpcCallStatusCodes.Unknown
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  name: Source
+  nameWithType: DefaultSystemEvent.Source
+  fullName: Virtufin.Api.Services.DefaultSystemEvent.Source
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Unknown
+    id: Source
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 50
+    startLine: 37
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string Unknown = "UNKNOWN"
+    content: public const string Source = "urn:virtufin.api"
     return:
       type: System.String
-    content.vb: Public Const Unknown As String = "UNKNOWN"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  id: NotFound
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+    content.vb: Public Const Source As String = "urn:virtufin.api"
+- uid: Virtufin.Api.Services.DefaultSystemEvent.Type
+  commentId: F:Virtufin.Api.Services.DefaultSystemEvent.Type
+  id: Type
+  parent: Virtufin.Api.Services.DefaultSystemEvent
   langs:
   - csharp
   - vb
-  name: NotFound
-  nameWithType: GrpcCallStatusCodes.NotFound
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  name: Type
+  nameWithType: DefaultSystemEvent.Type
+  fullName: Virtufin.Api.Services.DefaultSystemEvent.Type
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: NotFound
+    id: Type
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 51
+    startLine: 38
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string NotFound = "NOT_FOUND"
+    content: public const string Type = "com.virtufin.system.event"
     return:
       type: System.String
-    content.vb: Public Const NotFound As String = "NOT_FOUND"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
-  id: Unsupported
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
-  langs:
-  - csharp
-  - vb
-  name: Unsupported
-  nameWithType: GrpcCallStatusCodes.Unsupported
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Unsupported
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 52
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string Unsupported = "UNSUPPORTED"
-    return:
-      type: System.String
-    content.vb: Public Const Unsupported As String = "UNSUPPORTED"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  id: Internal
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
-  langs:
-  - csharp
-  - vb
-  name: Internal
-  nameWithType: GrpcCallStatusCodes.Internal
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Internal
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 53
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string Internal = "INTERNAL"
-    return:
-      type: System.String
-    content.vb: Public Const Internal As String = "INTERNAL"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  id: InvalidRequest
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
-  langs:
-  - csharp
-  - vb
-  name: InvalidRequest
-  nameWithType: GrpcCallStatusCodes.InvalidRequest
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: InvalidRequest
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 54
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string InvalidRequest = "INVALID_REQUEST"
-    return:
-      type: System.String
-    content.vb: Public Const InvalidRequest As String = "INVALID_REQUEST"
+    content.vb: Public Const Type As String = "com.virtufin.system.event"
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services

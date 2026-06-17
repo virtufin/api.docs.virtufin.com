@@ -25,7 +25,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubService
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -63,7 +63,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -101,7 +101,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEvent
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -136,7 +136,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishSystemEvent
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 108
+    startLine: 109
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -183,7 +183,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 193
+    startLine: 194
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -229,7 +229,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 289
+    startLine: 290
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -264,7 +264,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeSystemEvents
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 326
+    startLine: 327
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

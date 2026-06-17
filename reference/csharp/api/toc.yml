@@ -23,6 +23,12 @@ items:
   - uid: Virtufin.Api.Client.ApiClient
     name: ApiClient
     type: Class
+  - uid: Virtufin.Api.Client.ApiEndpoint
+    name: ApiEndpoint
+    type: Class
+  - uid: Virtufin.Api.Client.CloudEvents
+    name: CloudEvents
+    type: Class
   - uid: Virtufin.Api.Client.GatewayClient
     name: GatewayClient
     type: Class
@@ -106,6 +112,9 @@ items:
     type: Class
   - uid: Virtufin.Api.Services.DateTimeFormatConstants
     name: DateTimeFormatConstants
+    type: Class
+  - uid: Virtufin.Api.Services.DefaultSystemEvent
+    name: DefaultSystemEvent
     type: Class
   - uid: Virtufin.Api.Services.FieldSchema
     name: FieldSchema

@@ -5,6 +5,8 @@ items:
   id: Virtufin.Api.Client
   children:
   - Virtufin.Api.Client.ApiClient
+  - Virtufin.Api.Client.ApiEndpoint
+  - Virtufin.Api.Client.CloudEvents
   - Virtufin.Api.Client.GatewayClient
   - Virtufin.Api.Client.IAsyncStreamEventHandler
   - Virtufin.Api.Client.IStreamEventHandler
@@ -66,6 +68,18 @@ references:
   name: PortConstants
   nameWithType: PortConstants
   fullName: Virtufin.Api.Client.PortConstants
+- uid: Virtufin.Api.Client.CloudEvents
+  commentId: T:Virtufin.Api.Client.CloudEvents
+  href: Virtufin.Api.Client.CloudEvents.html
+  name: CloudEvents
+  nameWithType: CloudEvents
+  fullName: Virtufin.Api.Client.CloudEvents
+- uid: Virtufin.Api.Client.ApiEndpoint
+  commentId: T:Virtufin.Api.Client.ApiEndpoint
+  href: Virtufin.Api.Client.ApiEndpoint.html
+  name: ApiEndpoint
+  nameWithType: ApiEndpoint
+  fullName: Virtufin.Api.Client.ApiEndpoint
 - uid: Virtufin.Api.Client
   commentId: N:Virtufin.Api.Client
   href: Virtufin.html

@@ -1,36 +1,45 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes
-  commentId: T:Virtufin.Api.Services.GrpcCallStatusCodes
-  id: GrpcCallStatusCodes
-  parent: Virtufin.Api.Services
+- uid: Virtufin.Api.Client.ApiEndpoint
+  commentId: T:Virtufin.Api.Client.ApiEndpoint
+  id: ApiEndpoint
+  parent: Virtufin.Api.Client
   children:
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  - Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  - Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  - Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
+  - Virtufin.Api.Client.ApiEndpoint.DefaultHost
+  - Virtufin.Api.Client.ApiEndpoint.DefaultPort
+  - Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  - Virtufin.Api.Client.ApiEndpoint.PortEnvVar
   langs:
   - csharp
   - vb
-  name: GrpcCallStatusCodes
-  nameWithType: GrpcCallStatusCodes
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes
+  name: ApiEndpoint
+  nameWithType: ApiEndpoint
+  fullName: Virtufin.Api.Client.ApiEndpoint
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GrpcCallStatusCodes
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 48
+    id: ApiEndpoint
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 33
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: >-
+    Configuration constants for the virtufin-api gRPC endpoint that
+
+    other services call. The endpoint is configured via env vars
+
+    (<xref href="Virtufin.Api.Client.ApiEndpoint.HostEnvVar" data-throw-if-not-resolved="false"></xref> and <xref href="Virtufin.Api.Client.ApiEndpoint.PortEnvVar" data-throw-if-not-resolved="false"></xref>) with
+
+    defaults suitable for local development.
+  example: []
   syntax:
-    content: public static class GrpcCallStatusCodes
-    content.vb: Public Module GrpcCallStatusCodes
+    content: public static class ApiEndpoint
+    content.vb: Public Module ApiEndpoint
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,148 +50,184 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  id: Unknown
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+- uid: Virtufin.Api.Client.ApiEndpoint.DefaultHost
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.DefaultHost
+  id: DefaultHost
+  parent: Virtufin.Api.Client.ApiEndpoint
   langs:
   - csharp
   - vb
-  name: Unknown
-  nameWithType: GrpcCallStatusCodes.Unknown
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  name: DefaultHost
+  nameWithType: ApiEndpoint.DefaultHost
+  fullName: Virtufin.Api.Client.ApiEndpoint.DefaultHost
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Unknown
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 50
+    id: DefaultHost
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 36
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Default API host (loopback for local dev).
+  example: []
   syntax:
-    content: public const string Unknown = "UNKNOWN"
+    content: public const string DefaultHost = "localhost"
     return:
       type: System.String
-    content.vb: Public Const Unknown As String = "UNKNOWN"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  id: NotFound
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+    content.vb: Public Const DefaultHost As String = "localhost"
+- uid: Virtufin.Api.Client.ApiEndpoint.DefaultPort
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.DefaultPort
+  id: DefaultPort
+  parent: Virtufin.Api.Client.ApiEndpoint
   langs:
   - csharp
   - vb
-  name: NotFound
-  nameWithType: GrpcCallStatusCodes.NotFound
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  name: DefaultPort
+  nameWithType: ApiEndpoint.DefaultPort
+  fullName: Virtufin.Api.Client.ApiEndpoint.DefaultPort
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: NotFound
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 51
+    id: DefaultPort
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 39
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Default API gRPC port. Matches the API's PortConstants.DefaultGrpcPort.
+  example: []
   syntax:
-    content: public const string NotFound = "NOT_FOUND"
+    content: public const int DefaultPort = 5002
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultPort As Integer = 5002
+- uid: Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  id: HostEnvVar
+  parent: Virtufin.Api.Client.ApiEndpoint
+  langs:
+  - csharp
+  - vb
+  name: HostEnvVar
+  nameWithType: ApiEndpoint.HostEnvVar
+  fullName: Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: HostEnvVar
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 42
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Environment variable that overrides the API host.
+  example: []
+  syntax:
+    content: public const string HostEnvVar = "VIRTUFIN_API_HOST"
     return:
       type: System.String
-    content.vb: Public Const NotFound As String = "NOT_FOUND"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
-  id: Unsupported
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+    content.vb: Public Const HostEnvVar As String = "VIRTUFIN_API_HOST"
+- uid: Virtufin.Api.Client.ApiEndpoint.PortEnvVar
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.PortEnvVar
+  id: PortEnvVar
+  parent: Virtufin.Api.Client.ApiEndpoint
   langs:
   - csharp
   - vb
-  name: Unsupported
-  nameWithType: GrpcCallStatusCodes.Unsupported
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  name: PortEnvVar
+  nameWithType: ApiEndpoint.PortEnvVar
+  fullName: Virtufin.Api.Client.ApiEndpoint.PortEnvVar
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Unsupported
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    id: PortEnvVar
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 45
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Environment variable that overrides the API gRPC port.
+  example: []
+  syntax:
+    content: public const string PortEnvVar = "VIRTUFIN_API_GRPC_PORT"
+    return:
+      type: System.String
+    content.vb: Public Const PortEnvVar As String = "VIRTUFIN_API_GRPC_PORT"
+- uid: Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
+  commentId: M:Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
+  id: BuildAddress(System.String,System.Int32)
+  parent: Virtufin.Api.Client.ApiEndpoint
+  langs:
+  - csharp
+  - vb
+  name: BuildAddress(string, int)
+  nameWithType: ApiEndpoint.BuildAddress(string, int)
+  fullName: Virtufin.Api.Client.ApiEndpoint.BuildAddress(string, int)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: BuildAddress
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 52
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: >-
+    Build the gRPC channel address from a host and port. Returns
+
+    <code>http://{host}:{port}</code> (plaintext; mTLS is handled at the
+
+    channel/CallCredentials layer if needed).
+  example: []
   syntax:
-    content: public const string Unsupported = "UNSUPPORTED"
+    content: public static string BuildAddress(string host, int port)
+    parameters:
+    - id: host
+      type: System.String
+    - id: port
+      type: System.Int32
     return:
       type: System.String
-    content.vb: Public Const Unsupported As String = "UNSUPPORTED"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  id: Internal
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
-  langs:
-  - csharp
-  - vb
-  name: Internal
-  nameWithType: GrpcCallStatusCodes.Internal
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Internal
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 53
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string Internal = "INTERNAL"
-    return:
-      type: System.String
-    content.vb: Public Const Internal As String = "INTERNAL"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  id: InvalidRequest
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
-  langs:
-  - csharp
-  - vb
-  name: InvalidRequest
-  nameWithType: GrpcCallStatusCodes.InvalidRequest
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: InvalidRequest
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 54
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string InvalidRequest = "INVALID_REQUEST"
-    return:
-      type: System.String
-    content.vb: Public Const InvalidRequest As String = "INVALID_REQUEST"
+    content.vb: Public Shared Function BuildAddress(host As String, port As Integer) As String
+  overload: Virtufin.Api.Client.ApiEndpoint.BuildAddress*
+  nameWithType.vb: ApiEndpoint.BuildAddress(String, Integer)
+  fullName.vb: Virtufin.Api.Client.ApiEndpoint.BuildAddress(String, Integer)
+  name.vb: BuildAddress(String, Integer)
 references:
-- uid: Virtufin.Api.Services
-  commentId: N:Virtufin.Api.Services
+- uid: Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  href: Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_HostEnvVar
+  name: HostEnvVar
+  nameWithType: ApiEndpoint.HostEnvVar
+  fullName: Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+- uid: Virtufin.Api.Client.ApiEndpoint.PortEnvVar
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.PortEnvVar
+  href: Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_PortEnvVar
+  name: PortEnvVar
+  nameWithType: ApiEndpoint.PortEnvVar
+  fullName: Virtufin.Api.Client.ApiEndpoint.PortEnvVar
+- uid: Virtufin.Api.Client
+  commentId: N:Virtufin.Api.Client
   href: Virtufin.html
-  name: Virtufin.Api.Services
-  nameWithType: Virtufin.Api.Services
-  fullName: Virtufin.Api.Services
+  name: Virtufin.Api.Client
+  nameWithType: Virtufin.Api.Client
+  fullName: Virtufin.Api.Client
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
@@ -192,9 +237,9 @@ references:
     name: Api
     href: Virtufin.Api.html
   - name: .
-  - uid: Virtufin.Api.Services
-    name: Services
-    href: Virtufin.Api.Services.html
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
@@ -204,9 +249,9 @@ references:
     name: Api
     href: Virtufin.Api.html
   - name: .
-  - uid: Virtufin.Api.Services
-    name: Services
-    href: Virtufin.Api.Services.html
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -455,3 +500,20 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Api.Client.ApiEndpoint.BuildAddress*
+  commentId: Overload:Virtufin.Api.Client.ApiEndpoint.BuildAddress
+  href: Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_BuildAddress_System_String_System_Int32_
+  name: BuildAddress
+  nameWithType: ApiEndpoint.BuildAddress
+  fullName: Virtufin.Api.Client.ApiEndpoint.BuildAddress

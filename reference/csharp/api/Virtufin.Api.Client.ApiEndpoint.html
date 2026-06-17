@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class PubSubTopics | Virtufin API - C# Reference </title>
+      <title>Class ApiEndpoint | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class PubSubTopics | Virtufin API - C# Reference ">
+      <meta name="title" content="Class ApiEndpoint | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Configuration constants for the virtufin-api gRPC endpoint that other services call. The endpoint is configured via env vars ( and ) with defaults suitable for local development.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,24 +88,28 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.PubSubTopics">
+        <article data-uid="Virtufin.Api.Client.ApiEndpoint">
 
 
 
-  <h1 id="Virtufin_Api_Services_PubSubTopics" data-uid="Virtufin.Api.Services.PubSubTopics" class="text-break">
-Class PubSubTopics  
+  <h1 id="Virtufin_Api_Client_ApiEndpoint" data-uid="Virtufin.Api.Client.ApiEndpoint" class="text-break">
+Class ApiEndpoint  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Services.html">Services</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Client.html">Client</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Api.Client.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Configuration constants for the virtufin-api gRPC endpoint that
+other services call. The endpoint is configured via env vars
+(<a class="xref" href="Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_HostEnvVar">HostEnvVar</a> and <a class="xref" href="Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_PortEnvVar">PortEnvVar</a>) with
+defaults suitable for local development.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class PubSubTopics</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ApiEndpoint</code></pre>
   </div>
 
 
@@ -115,7 +119,7 @@ Class PubSubTopics
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">PubSubTopics</span></div>
+      <div><span class="xref">ApiEndpoint</span></div>
     </dd>
   </dl>
 
@@ -157,16 +161,17 @@ Class PubSubTopics
 
 
 
-  <h3 id="Virtufin_Api_Services_PubSubTopics_StateChanges" data-uid="Virtufin.Api.Services.PubSubTopics.StateChanges">
-  StateChanges
+  <h3 id="Virtufin_Api_Client_ApiEndpoint_DefaultHost" data-uid="Virtufin.Api.Client.ApiEndpoint.DefaultHost">
+  DefaultHost
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default API host (loopback for local dev).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string StateChanges = &quot;state-changes&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string DefaultHost = &quot;localhost&quot;</code></pre>
   </div>
 
 
@@ -187,16 +192,48 @@ Class PubSubTopics
 
 
 
-  <h3 id="Virtufin_Api_Services_PubSubTopics_SubscriptionKeyPrefix" data-uid="Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix">
-  SubscriptionKeyPrefix
+  <h3 id="Virtufin_Api_Client_ApiEndpoint_DefaultPort" data-uid="Virtufin.Api.Client.ApiEndpoint.DefaultPort">
+  DefaultPort
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default API gRPC port. Matches the API's PortConstants.DefaultGrpcPort.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SubscriptionKeyPrefix = &quot;pubsub/&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const int DefaultPort = 5002</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Virtufin_Api_Client_ApiEndpoint_HostEnvVar" data-uid="Virtufin.Api.Client.ApiEndpoint.HostEnvVar">
+  HostEnvVar
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Environment variable that overrides the API host.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HostEnvVar = &quot;VIRTUFIN_API_HOST&quot;</code></pre>
   </div>
 
 
@@ -217,16 +254,17 @@ Class PubSubTopics
 
 
 
-  <h3 id="Virtufin_Api_Services_PubSubTopics_SystemEvents" data-uid="Virtufin.Api.Services.PubSubTopics.SystemEvents">
-  SystemEvents
+  <h3 id="Virtufin_Api_Client_ApiEndpoint_PortEnvVar" data-uid="Virtufin.Api.Client.ApiEndpoint.PortEnvVar">
+  PortEnvVar
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Environment variable that overrides the API gRPC port.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SystemEvents = &quot;system-events&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string PortEnvVar = &quot;VIRTUFIN_API_GRPC_PORT&quot;</code></pre>
   </div>
 
 
@@ -237,6 +275,51 @@ Class PubSubTopics
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Api_Client_ApiEndpoint_BuildAddress_" data-uid="Virtufin.Api.Client.ApiEndpoint.BuildAddress*"></a>
+
+  <h3 id="Virtufin_Api_Client_ApiEndpoint_BuildAddress_System_String_System_Int32_" data-uid="Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)">
+  BuildAddress(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Build the gRPC channel address from a host and port. Returns
+<code>http://{host}:{port}</code> (plaintext; mTLS is handled at the
+channel/CallCredentials layer if needed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildAddress(string host, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>host</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
 
 
 

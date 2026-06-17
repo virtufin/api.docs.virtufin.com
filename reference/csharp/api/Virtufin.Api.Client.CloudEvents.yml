@@ -1,36 +1,49 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes
-  commentId: T:Virtufin.Api.Services.GrpcCallStatusCodes
-  id: GrpcCallStatusCodes
-  parent: Virtufin.Api.Services
+- uid: Virtufin.Api.Client.CloudEvents
+  commentId: T:Virtufin.Api.Client.CloudEvents
+  id: CloudEvents
+  parent: Virtufin.Api.Client
   children:
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  - Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  - Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  - Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  - Virtufin.Api.Client.CloudEvents.DataContentType
+  - Virtufin.Api.Client.CloudEvents.DataContentTypeJson
+  - Virtufin.Api.Client.CloudEvents.Id
+  - Virtufin.Api.Client.CloudEvents.Prefix
+  - Virtufin.Api.Client.CloudEvents.Source
+  - Virtufin.Api.Client.CloudEvents.SpecVersion
+  - Virtufin.Api.Client.CloudEvents.SpecVersionValue
+  - Virtufin.Api.Client.CloudEvents.Time
+  - Virtufin.Api.Client.CloudEvents.Type
   langs:
   - csharp
   - vb
-  name: GrpcCallStatusCodes
-  nameWithType: GrpcCallStatusCodes
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes
+  name: CloudEvents
+  nameWithType: CloudEvents
+  fullName: Virtufin.Api.Client.CloudEvents
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GrpcCallStatusCodes
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 48
+    id: CloudEvents
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 8
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: >-
+    Constants for CloudEvents v1.0 metadata keys and standard values.
+
+    Used by services that publish system events via the virtufin-api
+
+    (PublishSystemEvent). All values are spelled per the CloudEvents
+
+    v1.0 spec (https://github.com/cloudevents/spec/blob/v1.0/spec.md).
+  example: []
   syntax:
-    content: public static class GrpcCallStatusCodes
-    content.vb: Public Module GrpcCallStatusCodes
+    content: public static class CloudEvents
+    content.vb: Public Module CloudEvents
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,148 +54,262 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
-  id: Unknown
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+- uid: Virtufin.Api.Client.CloudEvents.Prefix
+  commentId: F:Virtufin.Api.Client.CloudEvents.Prefix
+  id: Prefix
+  parent: Virtufin.Api.Client.CloudEvents
   langs:
   - csharp
   - vb
-  name: Unknown
-  nameWithType: GrpcCallStatusCodes.Unknown
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
+  name: Prefix
+  nameWithType: CloudEvents.Prefix
+  fullName: Virtufin.Api.Client.CloudEvents.Prefix
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Unknown
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 50
+    id: Prefix
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 11
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Common prefix for all CloudEvents v1.0 attribute keys.
+  example: []
   syntax:
-    content: public const string Unknown = "UNKNOWN"
+    content: public const string Prefix = "ce-"
     return:
       type: System.String
-    content.vb: Public Const Unknown As String = "UNKNOWN"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
-  id: NotFound
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+    content.vb: Public Const Prefix As String = "ce-"
+- uid: Virtufin.Api.Client.CloudEvents.Id
+  commentId: F:Virtufin.Api.Client.CloudEvents.Id
+  id: Id
+  parent: Virtufin.Api.Client.CloudEvents
   langs:
   - csharp
   - vb
-  name: NotFound
-  nameWithType: GrpcCallStatusCodes.NotFound
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  name: Id
+  nameWithType: CloudEvents.Id
+  fullName: Virtufin.Api.Client.CloudEvents.Id
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: NotFound
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 51
+    id: Id
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 13
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
   syntax:
-    content: public const string NotFound = "NOT_FOUND"
+    content: public const string Id = "ce-id"
     return:
       type: System.String
-    content.vb: Public Const NotFound As String = "NOT_FOUND"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
-  id: Unsupported
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+    content.vb: Public Const Id As String = "ce-id"
+- uid: Virtufin.Api.Client.CloudEvents.Source
+  commentId: F:Virtufin.Api.Client.CloudEvents.Source
+  id: Source
+  parent: Virtufin.Api.Client.CloudEvents
   langs:
   - csharp
   - vb
-  name: Unsupported
-  nameWithType: GrpcCallStatusCodes.Unsupported
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
+  name: Source
+  nameWithType: CloudEvents.Source
+  fullName: Virtufin.Api.Client.CloudEvents.Source
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Unsupported
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 52
+    id: Source
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 14
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
   syntax:
-    content: public const string Unsupported = "UNSUPPORTED"
+    content: public const string Source = "ce-source"
     return:
       type: System.String
-    content.vb: Public Const Unsupported As String = "UNSUPPORTED"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Internal
-  id: Internal
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+    content.vb: Public Const Source As String = "ce-source"
+- uid: Virtufin.Api.Client.CloudEvents.Type
+  commentId: F:Virtufin.Api.Client.CloudEvents.Type
+  id: Type
+  parent: Virtufin.Api.Client.CloudEvents
   langs:
   - csharp
   - vb
-  name: Internal
-  nameWithType: GrpcCallStatusCodes.Internal
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Internal
+  name: Type
+  nameWithType: CloudEvents.Type
+  fullName: Virtufin.Api.Client.CloudEvents.Type
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Internal
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 53
+    id: Type
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 15
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
   syntax:
-    content: public const string Internal = "INTERNAL"
+    content: public const string Type = "ce-type"
     return:
       type: System.String
-    content.vb: Public Const Internal As String = "INTERNAL"
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
-  id: InvalidRequest
-  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+    content.vb: Public Const Type As String = "ce-type"
+- uid: Virtufin.Api.Client.CloudEvents.Time
+  commentId: F:Virtufin.Api.Client.CloudEvents.Time
+  id: Time
+  parent: Virtufin.Api.Client.CloudEvents
   langs:
   - csharp
   - vb
-  name: InvalidRequest
-  nameWithType: GrpcCallStatusCodes.InvalidRequest
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
+  name: Time
+  nameWithType: CloudEvents.Time
+  fullName: Virtufin.Api.Client.CloudEvents.Time
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Services/Constants.cs
+      path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: InvalidRequest
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 54
+    id: Time
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 16
   assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
   syntax:
-    content: public const string InvalidRequest = "INVALID_REQUEST"
+    content: public const string Time = "ce-time"
     return:
       type: System.String
-    content.vb: Public Const InvalidRequest As String = "INVALID_REQUEST"
+    content.vb: Public Const Time As String = "ce-time"
+- uid: Virtufin.Api.Client.CloudEvents.SpecVersion
+  commentId: F:Virtufin.Api.Client.CloudEvents.SpecVersion
+  id: SpecVersion
+  parent: Virtufin.Api.Client.CloudEvents
+  langs:
+  - csharp
+  - vb
+  name: SpecVersion
+  nameWithType: CloudEvents.SpecVersion
+  fullName: Virtufin.Api.Client.CloudEvents.SpecVersion
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: SpecVersion
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 17
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  syntax:
+    content: public const string SpecVersion = "ce-specversion"
+    return:
+      type: System.String
+    content.vb: Public Const SpecVersion As String = "ce-specversion"
+- uid: Virtufin.Api.Client.CloudEvents.DataContentType
+  commentId: F:Virtufin.Api.Client.CloudEvents.DataContentType
+  id: DataContentType
+  parent: Virtufin.Api.Client.CloudEvents
+  langs:
+  - csharp
+  - vb
+  name: DataContentType
+  nameWithType: CloudEvents.DataContentType
+  fullName: Virtufin.Api.Client.CloudEvents.DataContentType
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DataContentType
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 18
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  syntax:
+    content: public const string DataContentType = "ce-datacontenttype"
+    return:
+      type: System.String
+    content.vb: Public Const DataContentType As String = "ce-datacontenttype"
+- uid: Virtufin.Api.Client.CloudEvents.SpecVersionValue
+  commentId: F:Virtufin.Api.Client.CloudEvents.SpecVersionValue
+  id: SpecVersionValue
+  parent: Virtufin.Api.Client.CloudEvents
+  langs:
+  - csharp
+  - vb
+  name: SpecVersionValue
+  nameWithType: CloudEvents.SpecVersionValue
+  fullName: Virtufin.Api.Client.CloudEvents.SpecVersionValue
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: SpecVersionValue
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 21
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: The CloudEvents spec version this codebase targets.
+  example: []
+  syntax:
+    content: public const string SpecVersionValue = "1.0"
+    return:
+      type: System.String
+    content.vb: Public Const SpecVersionValue As String = "1.0"
+- uid: Virtufin.Api.Client.CloudEvents.DataContentTypeJson
+  commentId: F:Virtufin.Api.Client.CloudEvents.DataContentTypeJson
+  id: DataContentTypeJson
+  parent: Virtufin.Api.Client.CloudEvents
+  langs:
+  - csharp
+  - vb
+  name: DataContentTypeJson
+  nameWithType: CloudEvents.DataContentTypeJson
+  fullName: Virtufin.Api.Client.CloudEvents.DataContentTypeJson
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DataContentTypeJson
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 24
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: The default data content type for system-event payloads.
+  example: []
+  syntax:
+    content: public const string DataContentTypeJson = "application/json"
+    return:
+      type: System.String
+    content.vb: Public Const DataContentTypeJson As String = "application/json"
 references:
-- uid: Virtufin.Api.Services
-  commentId: N:Virtufin.Api.Services
+- uid: Virtufin.Api.Client
+  commentId: N:Virtufin.Api.Client
   href: Virtufin.html
-  name: Virtufin.Api.Services
-  nameWithType: Virtufin.Api.Services
-  fullName: Virtufin.Api.Services
+  name: Virtufin.Api.Client
+  nameWithType: Virtufin.Api.Client
+  fullName: Virtufin.Api.Client
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
@@ -192,9 +319,9 @@ references:
     name: Api
     href: Virtufin.Api.html
   - name: .
-  - uid: Virtufin.Api.Services
-    name: Services
-    href: Virtufin.Api.Services.html
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
@@ -204,9 +331,9 @@ references:
     name: Api
     href: Virtufin.Api.html
   - name: .
-  - uid: Virtufin.Api.Services
-    name: Services
-    href: Virtufin.Api.Services.html
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System

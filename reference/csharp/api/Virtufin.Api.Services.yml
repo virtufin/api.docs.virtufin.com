@@ -7,6 +7,7 @@ items:
   - Virtufin.Api.Services.ConfigService
   - Virtufin.Api.Services.DaprConstants
   - Virtufin.Api.Services.DateTimeFormatConstants
+  - Virtufin.Api.Services.DefaultSystemEvent
   - Virtufin.Api.Services.FieldSchema
   - Virtufin.Api.Services.GatewayService
   - Virtufin.Api.Services.GrpcCallResult
@@ -61,6 +62,12 @@ references:
   name: StateServices
   nameWithType: StateServices
   fullName: Virtufin.Api.Services.StateServices
+- uid: Virtufin.Api.Services.DefaultSystemEvent
+  commentId: T:Virtufin.Api.Services.DefaultSystemEvent
+  href: Virtufin.Api.Services.DefaultSystemEvent.html
+  name: DefaultSystemEvent
+  nameWithType: DefaultSystemEvent
+  fullName: Virtufin.Api.Services.DefaultSystemEvent
 - uid: Virtufin.Api.Services.StatusStrings
   commentId: T:Virtufin.Api.Services.StatusStrings
   href: Virtufin.Api.Services.StatusStrings.html

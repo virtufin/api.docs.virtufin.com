@@ -186,6 +186,112 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.ApiClient.ListServicesAsync
   nameWithType: ApiClient.ListServicesAsync
+- uid: Virtufin.Api.Client.ApiEndpoint
+  name: ApiEndpoint
+  href: api/Virtufin.Api.Client.ApiEndpoint.html
+  commentId: T:Virtufin.Api.Client.ApiEndpoint
+  fullName: Virtufin.Api.Client.ApiEndpoint
+  nameWithType: ApiEndpoint
+- uid: Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
+  name: BuildAddress(string, int)
+  href: api/Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_BuildAddress_System_String_System_Int32_
+  commentId: M:Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
+  name.vb: BuildAddress(String, Integer)
+  fullName: Virtufin.Api.Client.ApiEndpoint.BuildAddress(string, int)
+  fullName.vb: Virtufin.Api.Client.ApiEndpoint.BuildAddress(String, Integer)
+  nameWithType: ApiEndpoint.BuildAddress(string, int)
+  nameWithType.vb: ApiEndpoint.BuildAddress(String, Integer)
+- uid: Virtufin.Api.Client.ApiEndpoint.BuildAddress*
+  name: BuildAddress
+  href: api/Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_BuildAddress_
+  commentId: Overload:Virtufin.Api.Client.ApiEndpoint.BuildAddress
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.ApiEndpoint.BuildAddress
+  nameWithType: ApiEndpoint.BuildAddress
+- uid: Virtufin.Api.Client.ApiEndpoint.DefaultHost
+  name: DefaultHost
+  href: api/Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_DefaultHost
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.DefaultHost
+  fullName: Virtufin.Api.Client.ApiEndpoint.DefaultHost
+  nameWithType: ApiEndpoint.DefaultHost
+- uid: Virtufin.Api.Client.ApiEndpoint.DefaultPort
+  name: DefaultPort
+  href: api/Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_DefaultPort
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.DefaultPort
+  fullName: Virtufin.Api.Client.ApiEndpoint.DefaultPort
+  nameWithType: ApiEndpoint.DefaultPort
+- uid: Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  name: HostEnvVar
+  href: api/Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_HostEnvVar
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  fullName: Virtufin.Api.Client.ApiEndpoint.HostEnvVar
+  nameWithType: ApiEndpoint.HostEnvVar
+- uid: Virtufin.Api.Client.ApiEndpoint.PortEnvVar
+  name: PortEnvVar
+  href: api/Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_PortEnvVar
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.PortEnvVar
+  fullName: Virtufin.Api.Client.ApiEndpoint.PortEnvVar
+  nameWithType: ApiEndpoint.PortEnvVar
+- uid: Virtufin.Api.Client.CloudEvents
+  name: CloudEvents
+  href: api/Virtufin.Api.Client.CloudEvents.html
+  commentId: T:Virtufin.Api.Client.CloudEvents
+  fullName: Virtufin.Api.Client.CloudEvents
+  nameWithType: CloudEvents
+- uid: Virtufin.Api.Client.CloudEvents.DataContentType
+  name: DataContentType
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_DataContentType
+  commentId: F:Virtufin.Api.Client.CloudEvents.DataContentType
+  fullName: Virtufin.Api.Client.CloudEvents.DataContentType
+  nameWithType: CloudEvents.DataContentType
+- uid: Virtufin.Api.Client.CloudEvents.DataContentTypeJson
+  name: DataContentTypeJson
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_DataContentTypeJson
+  commentId: F:Virtufin.Api.Client.CloudEvents.DataContentTypeJson
+  fullName: Virtufin.Api.Client.CloudEvents.DataContentTypeJson
+  nameWithType: CloudEvents.DataContentTypeJson
+- uid: Virtufin.Api.Client.CloudEvents.Id
+  name: Id
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_Id
+  commentId: F:Virtufin.Api.Client.CloudEvents.Id
+  fullName: Virtufin.Api.Client.CloudEvents.Id
+  nameWithType: CloudEvents.Id
+- uid: Virtufin.Api.Client.CloudEvents.Prefix
+  name: Prefix
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_Prefix
+  commentId: F:Virtufin.Api.Client.CloudEvents.Prefix
+  fullName: Virtufin.Api.Client.CloudEvents.Prefix
+  nameWithType: CloudEvents.Prefix
+- uid: Virtufin.Api.Client.CloudEvents.Source
+  name: Source
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_Source
+  commentId: F:Virtufin.Api.Client.CloudEvents.Source
+  fullName: Virtufin.Api.Client.CloudEvents.Source
+  nameWithType: CloudEvents.Source
+- uid: Virtufin.Api.Client.CloudEvents.SpecVersion
+  name: SpecVersion
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_SpecVersion
+  commentId: F:Virtufin.Api.Client.CloudEvents.SpecVersion
+  fullName: Virtufin.Api.Client.CloudEvents.SpecVersion
+  nameWithType: CloudEvents.SpecVersion
+- uid: Virtufin.Api.Client.CloudEvents.SpecVersionValue
+  name: SpecVersionValue
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_SpecVersionValue
+  commentId: F:Virtufin.Api.Client.CloudEvents.SpecVersionValue
+  fullName: Virtufin.Api.Client.CloudEvents.SpecVersionValue
+  nameWithType: CloudEvents.SpecVersionValue
+- uid: Virtufin.Api.Client.CloudEvents.Time
+  name: Time
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_Time
+  commentId: F:Virtufin.Api.Client.CloudEvents.Time
+  fullName: Virtufin.Api.Client.CloudEvents.Time
+  nameWithType: CloudEvents.Time
+- uid: Virtufin.Api.Client.CloudEvents.Type
+  name: Type
+  href: api/Virtufin.Api.Client.CloudEvents.html#Virtufin_Api_Client_CloudEvents_Type
+  commentId: F:Virtufin.Api.Client.CloudEvents.Type
+  fullName: Virtufin.Api.Client.CloudEvents.Type
+  nameWithType: CloudEvents.Type
 - uid: Virtufin.Api.Client.GatewayClient
   name: GatewayClient
   href: api/Virtufin.Api.Client.GatewayClient.html
@@ -1726,6 +1832,24 @@ references:
   commentId: F:Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
   fullName: Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
   nameWithType: DateTimeFormatConstants.Iso8601
+- uid: Virtufin.Api.Services.DefaultSystemEvent
+  name: DefaultSystemEvent
+  href: api/Virtufin.Api.Services.DefaultSystemEvent.html
+  commentId: T:Virtufin.Api.Services.DefaultSystemEvent
+  fullName: Virtufin.Api.Services.DefaultSystemEvent
+  nameWithType: DefaultSystemEvent
+- uid: Virtufin.Api.Services.DefaultSystemEvent.Source
+  name: Source
+  href: api/Virtufin.Api.Services.DefaultSystemEvent.html#Virtufin_Api_Services_DefaultSystemEvent_Source
+  commentId: F:Virtufin.Api.Services.DefaultSystemEvent.Source
+  fullName: Virtufin.Api.Services.DefaultSystemEvent.Source
+  nameWithType: DefaultSystemEvent.Source
+- uid: Virtufin.Api.Services.DefaultSystemEvent.Type
+  name: Type
+  href: api/Virtufin.Api.Services.DefaultSystemEvent.html#Virtufin_Api_Services_DefaultSystemEvent_Type
+  commentId: F:Virtufin.Api.Services.DefaultSystemEvent.Type
+  fullName: Virtufin.Api.Services.DefaultSystemEvent.Type
+  nameWithType: DefaultSystemEvent.Type
 - uid: Virtufin.Api.Services.FieldSchema
   name: FieldSchema
   href: api/Virtufin.Api.Services.FieldSchema.html
