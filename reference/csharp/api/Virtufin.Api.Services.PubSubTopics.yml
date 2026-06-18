@@ -61,10 +61,10 @@ items:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string StateChanges = "state-changes"
+    content: public const string StateChanges = "state.changes"
     return:
       type: System.String
-    content.vb: Public Const StateChanges As String = "state-changes"
+    content.vb: Public Const StateChanges As String = "state.changes"
 - uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   id: SubscriptionKeyPrefix
