@@ -24,7 +24,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcCallStatusCodes
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 48
+    startLine: 21
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -59,7 +59,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unknown
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 50
+    startLine: 23
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -86,7 +86,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: NotFound
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 51
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -113,7 +113,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsupported
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 52
+    startLine: 25
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -140,7 +140,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Internal
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 53
+    startLine: 26
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -167,7 +167,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvalidRequest
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 54
+    startLine: 27
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

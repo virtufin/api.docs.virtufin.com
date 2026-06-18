@@ -1832,24 +1832,6 @@ references:
   commentId: F:Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
   fullName: Virtufin.Api.Services.DateTimeFormatConstants.Iso8601
   nameWithType: DateTimeFormatConstants.Iso8601
-- uid: Virtufin.Api.Services.DefaultSystemEvent
-  name: DefaultSystemEvent
-  href: api/Virtufin.Api.Services.DefaultSystemEvent.html
-  commentId: T:Virtufin.Api.Services.DefaultSystemEvent
-  fullName: Virtufin.Api.Services.DefaultSystemEvent
-  nameWithType: DefaultSystemEvent
-- uid: Virtufin.Api.Services.DefaultSystemEvent.Source
-  name: Source
-  href: api/Virtufin.Api.Services.DefaultSystemEvent.html#Virtufin_Api_Services_DefaultSystemEvent_Source
-  commentId: F:Virtufin.Api.Services.DefaultSystemEvent.Source
-  fullName: Virtufin.Api.Services.DefaultSystemEvent.Source
-  nameWithType: DefaultSystemEvent.Source
-- uid: Virtufin.Api.Services.DefaultSystemEvent.Type
-  name: Type
-  href: api/Virtufin.Api.Services.DefaultSystemEvent.html#Virtufin_Api_Services_DefaultSystemEvent_Type
-  commentId: F:Virtufin.Api.Services.DefaultSystemEvent.Type
-  fullName: Virtufin.Api.Services.DefaultSystemEvent.Type
-  nameWithType: DefaultSystemEvent.Type
 - uid: Virtufin.Api.Services.FieldSchema
   name: FieldSchema
   href: api/Virtufin.Api.Services.FieldSchema.html
@@ -2501,12 +2483,6 @@ references:
   commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   fullName: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   nameWithType: PubSubTopics.SubscriptionKeyPrefix
-- uid: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  name: SystemEvents
-  href: api/Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_SystemEvents
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SystemEvents
-  fullName: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  nameWithType: PubSubTopics.SystemEvents
 - uid: Virtufin.Api.Services.PubsubService
   name: PubsubService
   href: api/Virtufin.Api.Services.PubsubService.html
@@ -2545,19 +2521,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubService.PublishEvent
   nameWithType: PubsubService.PublishEvent
-- uid: Virtufin.Api.Services.PubsubService.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-  name: PublishSystemEvent(PublishSystemEventRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_PublishSystemEvent_Virtufin_Api_Protos_PublishSystemEventRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.PubsubService.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.PubsubService.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest, Grpc.Core.ServerCallContext)
-  nameWithType: PubsubService.PublishSystemEvent(PublishSystemEventRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.PubsubService.PublishSystemEvent*
-  name: PublishSystemEvent
-  href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_PublishSystemEvent_
-  commentId: Overload:Virtufin.Api.Services.PubsubService.PublishSystemEvent
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.PubsubService.PublishSystemEvent
-  nameWithType: PubsubService.PublishSystemEvent
 - uid: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
   name: Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
   href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_Subscribe_Virtufin_Api_Protos_PubsubSubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
@@ -2574,22 +2537,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubService.Subscribe
   nameWithType: PubsubService.Subscribe
-- uid: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  name: SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_SubscribeSystemEvents_Virtufin_Api_Protos_PubsubSubscribeSystemRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  name.vb: SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
-  fullName: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, Grpc.Core.ServerCallContext)
-  fullName.vb: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse), Grpc.Core.ServerCallContext)
-  nameWithType: PubsubService.SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  nameWithType.vb: PubsubService.SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
-- uid: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents*
-  name: SubscribeSystemEvents
-  href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_SubscribeSystemEvents_
-  commentId: Overload:Virtufin.Api.Services.PubsubService.SubscribeSystemEvents
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents
-  nameWithType: PubsubService.SubscribeSystemEvents
 - uid: Virtufin.Api.Services.PubsubService.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
   name: Unsubscribe(UnsubscribeRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_Unsubscribe_Virtufin_Api_Protos_UnsubscribeRequest_Grpc_Core_ServerCallContext_
@@ -2945,19 +2892,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.DeleteState
   nameWithType: StateService.DeleteState
-- uid: Virtufin.Api.Services.StateService.DeleteSystemState(Virtufin.Api.Protos.DeleteSystemStateRequest,Grpc.Core.ServerCallContext)
-  name: DeleteSystemState(DeleteSystemStateRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_DeleteSystemState_Virtufin_Api_Protos_DeleteSystemStateRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.StateService.DeleteSystemState(Virtufin.Api.Protos.DeleteSystemStateRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.DeleteSystemState(Virtufin.Api.Protos.DeleteSystemStateRequest, Grpc.Core.ServerCallContext)
-  nameWithType: StateService.DeleteSystemState(DeleteSystemStateRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.StateService.DeleteSystemState*
-  name: DeleteSystemState
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_DeleteSystemState_
-  commentId: Overload:Virtufin.Api.Services.StateService.DeleteSystemState
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.StateService.DeleteSystemState
-  nameWithType: StateService.DeleteSystemState
 - uid: Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
   name: GetAllState(GetAllStateRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_ServerCallContext_
@@ -2971,19 +2905,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.GetAllState
   nameWithType: StateService.GetAllState
-- uid: Virtufin.Api.Services.StateService.GetAllSystemState(Virtufin.Api.Protos.GetAllSystemStateRequest,Grpc.Core.ServerCallContext)
-  name: GetAllSystemState(GetAllSystemStateRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetAllSystemState_Virtufin_Api_Protos_GetAllSystemStateRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.StateService.GetAllSystemState(Virtufin.Api.Protos.GetAllSystemStateRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.GetAllSystemState(Virtufin.Api.Protos.GetAllSystemStateRequest, Grpc.Core.ServerCallContext)
-  nameWithType: StateService.GetAllSystemState(GetAllSystemStateRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.StateService.GetAllSystemState*
-  name: GetAllSystemState
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetAllSystemState_
-  commentId: Overload:Virtufin.Api.Services.StateService.GetAllSystemState
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.StateService.GetAllSystemState
-  nameWithType: StateService.GetAllSystemState
 - uid: Virtufin.Api.Services.StateService.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   name: GetState(GetStateRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_ServerCallContext_
@@ -2997,19 +2918,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.GetState
   nameWithType: StateService.GetState
-- uid: Virtufin.Api.Services.StateService.GetSystemState(Virtufin.Api.Protos.GetSystemStateRequest,Grpc.Core.ServerCallContext)
-  name: GetSystemState(GetSystemStateRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetSystemState_Virtufin_Api_Protos_GetSystemStateRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.StateService.GetSystemState(Virtufin.Api.Protos.GetSystemStateRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.GetSystemState(Virtufin.Api.Protos.GetSystemStateRequest, Grpc.Core.ServerCallContext)
-  nameWithType: StateService.GetSystemState(GetSystemStateRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.StateService.GetSystemState*
-  name: GetSystemState
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetSystemState_
-  commentId: Overload:Virtufin.Api.Services.StateService.GetSystemState
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.StateService.GetSystemState
-  nameWithType: StateService.GetSystemState
 - uid: Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
   name: RegisterKeys(RegisterKeysRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_ServerCallContext_
@@ -3023,19 +2931,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.RegisterKeys
   nameWithType: StateService.RegisterKeys
-- uid: Virtufin.Api.Services.StateService.RegisterSystemKeys(Virtufin.Api.Protos.RegisterSystemKeysRequest,Grpc.Core.ServerCallContext)
-  name: RegisterSystemKeys(RegisterSystemKeysRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_RegisterSystemKeys_Virtufin_Api_Protos_RegisterSystemKeysRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.StateService.RegisterSystemKeys(Virtufin.Api.Protos.RegisterSystemKeysRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.RegisterSystemKeys(Virtufin.Api.Protos.RegisterSystemKeysRequest, Grpc.Core.ServerCallContext)
-  nameWithType: StateService.RegisterSystemKeys(RegisterSystemKeysRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.StateService.RegisterSystemKeys*
-  name: RegisterSystemKeys
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_RegisterSystemKeys_
-  commentId: Overload:Virtufin.Api.Services.StateService.RegisterSystemKeys
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.StateService.RegisterSystemKeys
-  nameWithType: StateService.RegisterSystemKeys
 - uid: Virtufin.Api.Services.StateService.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   name: SaveState(SaveStateRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_ServerCallContext_
@@ -3049,31 +2944,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.SaveState
   nameWithType: StateService.SaveState
-- uid: Virtufin.Api.Services.StateService.SaveSystemState(Virtufin.Api.Protos.SaveSystemStateRequest,Grpc.Core.ServerCallContext)
-  name: SaveSystemState(SaveSystemStateRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_SaveSystemState_Virtufin_Api_Protos_SaveSystemStateRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.StateService.SaveSystemState(Virtufin.Api.Protos.SaveSystemStateRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.SaveSystemState(Virtufin.Api.Protos.SaveSystemStateRequest, Grpc.Core.ServerCallContext)
-  nameWithType: StateService.SaveSystemState(SaveSystemStateRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.StateService.SaveSystemState*
-  name: SaveSystemState
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_SaveSystemState_
-  commentId: Overload:Virtufin.Api.Services.StateService.SaveSystemState
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.StateService.SaveSystemState
-  nameWithType: StateService.SaveSystemState
-- uid: Virtufin.Api.Services.StateServices
-  name: StateServices
-  href: api/Virtufin.Api.Services.StateServices.html
-  commentId: T:Virtufin.Api.Services.StateServices
-  fullName: Virtufin.Api.Services.StateServices
-  nameWithType: StateServices
-- uid: Virtufin.Api.Services.StateServices.System
-  name: System
-  href: api/Virtufin.Api.Services.StateServices.html#Virtufin_Api_Services_StateServices_System
-  commentId: F:Virtufin.Api.Services.StateServices.System
-  fullName: Virtufin.Api.Services.StateServices.System
-  nameWithType: StateServices.System
 - uid: Virtufin.Api.Services.StatusStrings
   name: StatusStrings
   href: api/Virtufin.Api.Services.StatusStrings.html

@@ -28,18 +28,22 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: CloudEvents
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 8
+    startLine: 10
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: >-
     Constants for CloudEvents v1.0 metadata keys and standard values.
 
-    Used by services that publish system events via the virtufin-api
+    Used by services that publish lifecycle events to the virtufin-api
 
-    (PublishSystemEvent). All values are spelled per the CloudEvents
+    via <code>Pubsub.PublishEvent</code> with the per-service topic name from
 
-    v1.0 spec (https://github.com/cloudevents/spec/blob/v1.0/spec.md).
+    the publishing service's <code>Configuration/Topics.cs</code>. All values
+
+    are spelled per the CloudEvents v1.0 spec
+
+    (https://github.com/cloudevents/spec/blob/v1.0/spec.md).
   example: []
   syntax:
     content: public static class CloudEvents
@@ -72,7 +76,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Prefix
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -101,7 +105,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Id
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -128,7 +132,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Source
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 14
+    startLine: 16
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -155,7 +159,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Type
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -182,7 +186,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Time
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 16
+    startLine: 18
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -209,7 +213,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SpecVersion
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -236,7 +240,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DataContentType
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -263,7 +267,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SpecVersionValue
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -292,7 +296,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DataContentTypeJson
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client

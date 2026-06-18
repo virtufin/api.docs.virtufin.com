@@ -24,7 +24,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ApiEndpoint
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -68,7 +68,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultHost
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 36
+    startLine: 38
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -97,7 +97,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultPort
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -126,7 +126,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: HostEnvVar
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 42
+    startLine: 44
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -155,7 +155,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PortEnvVar
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 45
+    startLine: 47
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -184,7 +184,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: BuildAddress
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 52
+    startLine: 54
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client

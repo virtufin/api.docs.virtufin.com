@@ -20,7 +20,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DateTimeFormatConstants
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 70
+    startLine: 43
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -55,7 +55,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Iso8601
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 72
+    startLine: 45
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

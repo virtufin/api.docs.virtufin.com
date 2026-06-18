@@ -22,7 +22,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StatusStrings
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 41
+    startLine: 14
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -57,7 +57,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Ok
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 43
+    startLine: 16
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -84,7 +84,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Error
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 44
+    startLine: 17
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -111,7 +111,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Conflict
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 45
+    startLine: 18
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

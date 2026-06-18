@@ -113,9 +113,6 @@ items:
   - uid: Virtufin.Api.Services.DateTimeFormatConstants
     name: DateTimeFormatConstants
     type: Class
-  - uid: Virtufin.Api.Services.DefaultSystemEvent
-    name: DefaultSystemEvent
-    type: Class
   - uid: Virtufin.Api.Services.FieldSchema
     name: FieldSchema
     type: Class
@@ -160,9 +157,6 @@ items:
     type: Class
   - uid: Virtufin.Api.Services.StateService
     name: StateService
-    type: Class
-  - uid: Virtufin.Api.Services.StateServices
-    name: StateServices
     type: Class
   - uid: Virtufin.Api.Services.StatusStrings
     name: StatusStrings

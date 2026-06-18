@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/dcf623836179bb47fac4a83b237f0afddd6bfdab"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/d0b909dd337d2b784a6eb6c798c5622a3f16ca92"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit dcf6238">
+       title="View commit d0b909d">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">dcf6238</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d0b909d</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/dcf623836179bb47fac4a83b237f0afddd6bfdab"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/d0b909dd337d2b784a6eb6c798c5622a3f16ca92"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit dcf6238">
+       title="View commit d0b909d">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">dcf6238</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d0b909d</text>
       </svg>
     </a>
 </div>
@@ -822,10 +822,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#subscribe-system-events-via-topic" class="md-nav__link">
+  <a href="#subscribe-per-service-topics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Subscribe (System Events via topic)
+        Subscribe (per-service topics)
       
     </span>
   </a>
@@ -1822,10 +1822,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#subscribe-system-events-via-topic" class="md-nav__link">
+  <a href="#subscribe-per-service-topics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Subscribe (System Events via topic)
+        Subscribe (per-service topics)
       
     </span>
   </a>
@@ -2376,13 +2376,13 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
 - Waits indefinitely (uses <code>Task.Delay(Infinite)</code>)
 - Cleans up subscription on cancellation
 - Unsubscribes using scope built from request filters</p>
-<h3 id="subscribe-system-events-via-topic">Subscribe (System Events via topic)</h3>
+<h3 id="subscribe-per-service-topics">Subscribe (per-service topics)</h3>
 <blockquote>
-<p><strong>Note:</strong> The <code>WatchSystemEvents</code> RPC was removed. System events (connection status, errors, heartbeats) are now delivered through the regular <code>Subscribe</code> RPC using the <code>system-events</code> topic. Subscribe to topic <code>system-events</code> to receive system-level event notifications.</p>
+<p><strong>Note:</strong> The <code>WatchSystemEvents</code> RPC was removed. All events (including per-service lifecycle events) are delivered through the regular <code>Subscribe</code> RPC. Subscribe to the appropriate per-service topic (e.g. <code>websocketmanager.connectionstatus</code>, <code>workmanager.workerstatus</code>) to receive those events.</p>
 </blockquote>
 <p><strong>Behavior:</strong>
-- Creates a subscription for system events
-- Broadcasts connection status changes
+- Creates a subscription for the given topic
+- Broadcasts events on that topic
 - Cleans up on client disconnect</p>
 <hr />
 <h2 id="grpcreflectionservice">GrpcReflectionService</h2>
@@ -2792,7 +2792,7 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-17T23:54:53Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-18T06:13:07Z</span>
 </div>
 
     </div>

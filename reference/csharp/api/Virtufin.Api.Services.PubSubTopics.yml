@@ -7,7 +7,6 @@ items:
   children:
   - Virtufin.Api.Services.PubSubTopics.StateChanges
   - Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
-  - Virtufin.Api.Services.PubSubTopics.SystemEvents
   langs:
   - csharp
   - vb
@@ -66,33 +65,6 @@ items:
     return:
       type: System.String
     content.vb: Public Const StateChanges As String = "state-changes"
-- uid: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SystemEvents
-  id: SystemEvents
-  parent: Virtufin.Api.Services.PubSubTopics
-  langs:
-  - csharp
-  - vb
-  name: SystemEvents
-  nameWithType: PubSubTopics.SystemEvents
-  fullName: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  type: Field
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/Constants.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SystemEvents
-    path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 11
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public const string SystemEvents = "system-events"
-    return:
-      type: System.String
-    content.vb: Public Const SystemEvents As String = "system-events"
 - uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   id: SubscriptionKeyPrefix
@@ -111,7 +83,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscriptionKeyPrefix
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

@@ -136,7 +136,7 @@ virtufin-api/
 ## Features
 
 - **gRPC Gateway**: Dynamic service discovery and invocation
-- **Event Streaming**: Server-side streaming via `Subscribe` and `WatchSystemEvents`
+- **Event Streaming**: Server-side streaming via `Subscribe` against per-service topics (`websocketmanager.connectionstatus`, `workmanager.workerstatus`)
 - **State Management**: `SaveStateAsync` broadcasts events to all subscribers
 - **Dapr Integration**: Pub/sub, state store, and service invocation
 - **Client Libraries**: C# and Python with async support

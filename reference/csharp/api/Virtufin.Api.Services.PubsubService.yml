@@ -7,9 +7,7 @@ items:
   children:
   - Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,System.IServiceProvider,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
   - Virtufin.Api.Services.PubsubService.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.PubsubService.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.PubsubService.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
   langs:
   - csharp
@@ -118,53 +116,6 @@ items:
     content.vb: Public Overrides Function PublishEvent(request As PublishRequest, context As ServerCallContext) As Task(Of PublishResponse)
   overridden: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.PubsubService.PublishEvent*
-- uid: Virtufin.Api.Services.PubsubService.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.PubsubService.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-  id: PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Services.PubsubService
-  langs:
-  - csharp
-  - vb
-  name: PublishSystemEvent(PublishSystemEventRequest, ServerCallContext)
-  nameWithType: PubsubService.PublishSystemEvent(PublishSystemEventRequest, ServerCallContext)
-  fullName: Virtufin.Api.Services.PubsubService.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest, Grpc.Core.ServerCallContext)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: PublishSystemEvent
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 109
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  summary: >-
-    System variant of PublishEvent. The topic is fixed to
-
-    <xref href="Virtufin.Api.Services.PubSubTopics.SystemEvents" data-throw-if-not-resolved="false"></xref> and cannot be overridden
-
-    by the client. The metadata SHOULD carry CloudEvents v1.0
-
-    attributes (ce-id, ce-source, ce-type, ce-time, ce-specversion,
-
-    ce-datacontenttype) so subscribers can filter and route events
-
-    without parsing the data payload.
-  example: []
-  syntax:
-    content: public override Task<PublishResponse> PublishSystemEvent(PublishSystemEventRequest request, ServerCallContext context)
-    parameters:
-    - id: request
-      type: Virtufin.Api.Protos.PublishSystemEventRequest
-    - id: context
-      type: Grpc.Core.ServerCallContext
-    return:
-      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.PublishResponse}
-    content.vb: Public Overrides Function PublishSystemEvent(request As PublishSystemEventRequest, context As ServerCallContext) As Task(Of PublishResponse)
-  overridden: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.PubsubService.PublishSystemEvent*
 - uid: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
   id: Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
@@ -183,7 +134,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 194
+    startLine: 106
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -229,7 +180,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 290
+    startLine: 202
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -246,52 +197,6 @@ items:
     content.vb: Public Overrides Function Unsubscribe(request As UnsubscribeRequest, context As ServerCallContext) As Task(Of UnsubscribeResponse)
   overridden: Virtufin.Api.Protos.Pubsub.PubsubBase.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.PubsubService.Unsubscribe*
-- uid: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  id: SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Services.PubsubService
-  langs:
-  - csharp
-  - vb
-  name: SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  nameWithType: PubsubService.SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  fullName: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, Grpc.Core.ServerCallContext)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SubscribeSystemEvents
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 327
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  summary: >-
-    System variant of Subscribe. The topic is fixed to
-
-    <xref href="Virtufin.Api.Services.PubSubTopics.SystemEvents" data-throw-if-not-resolved="false"></xref>. Subscribers receive
-
-    every system event published via PublishSystemEvent.
-  example: []
-  syntax:
-    content: public override Task SubscribeSystemEvents(PubsubSubscribeSystemRequest request, IServerStreamWriter<PubsubSubscribeResponse> responseStream, ServerCallContext context)
-    parameters:
-    - id: request
-      type: Virtufin.Api.Protos.PubsubSubscribeSystemRequest
-    - id: responseStream
-      type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-    - id: context
-      type: Grpc.Core.ServerCallContext
-    return:
-      type: System.Threading.Tasks.Task
-    content.vb: Public Overrides Function SubscribeSystemEvents(request As PubsubSubscribeSystemRequest, responseStream As IServerStreamWriter(Of PubsubSubscribeResponse), context As ServerCallContext) As Task
-  overridden: Virtufin.Api.Protos.Pubsub.PubsubBase.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents*
-  nameWithType.vb: PubsubService.SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
-  fullName.vb: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse), Grpc.Core.ServerCallContext)
-  name.vb: SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -924,58 +829,6 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: Virtufin.Api.Services.PubSubTopics.SystemEvents
-  commentId: F:Virtufin.Api.Services.PubSubTopics.SystemEvents
-  href: Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_SystemEvents
-  name: SystemEvents
-  nameWithType: PubSubTopics.SystemEvents
-  fullName: Virtufin.Api.Services.PubSubTopics.SystemEvents
-- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Pubsub.PubsubBase
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  name: PublishSystemEvent(PublishSystemEventRequest, ServerCallContext)
-  nameWithType: Pubsub.PubsubBase.PublishSystemEvent(PublishSystemEventRequest, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest, Grpc.Core.ServerCallContext)
-  spec.csharp:
-  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-    name: PublishSystemEvent
-  - name: (
-  - uid: Virtufin.Api.Protos.PublishSystemEventRequest
-    name: PublishSystemEventRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-  spec.vb:
-  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishSystemEvent(Virtufin.Api.Protos.PublishSystemEventRequest,Grpc.Core.ServerCallContext)
-    name: PublishSystemEvent
-  - name: (
-  - uid: Virtufin.Api.Protos.PublishSystemEventRequest
-    name: PublishSystemEventRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-- uid: Virtufin.Api.Services.PubsubService.PublishSystemEvent*
-  commentId: Overload:Virtufin.Api.Services.PubsubService.PublishSystemEvent
-  href: Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_PublishSystemEvent_Virtufin_Api_Protos_PublishSystemEventRequest_Grpc_Core_ServerCallContext_
-  name: PublishSystemEvent
-  nameWithType: PubsubService.PublishSystemEvent
-  fullName: Virtufin.Api.Services.PubsubService.PublishSystemEvent
-- uid: Virtufin.Api.Protos.PublishSystemEventRequest
-  commentId: T:Virtufin.Api.Protos.PublishSystemEventRequest
-  parent: Virtufin.Api.Protos
-  name: PublishSystemEventRequest
-  nameWithType: PublishSystemEventRequest
-  fullName: Virtufin.Api.Protos.PublishSystemEventRequest
 - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Pubsub.PubsubBase
@@ -1191,74 +1044,3 @@ references:
   - uid: Virtufin.Api.Protos.UnsubscribeResponse
     name: UnsubscribeResponse
   - name: )
-- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Pubsub.PubsubBase
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  nameWithType: Pubsub.PubsubBase.SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, Grpc.Core.ServerCallContext)
-  nameWithType.vb: Pubsub.PubsubBase.SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
-  fullName.vb: Virtufin.Api.Protos.Pubsub.PubsubBase.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse), Grpc.Core.ServerCallContext)
-  name.vb: SubscribeSystemEvents(PubsubSubscribeSystemRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
-  spec.csharp:
-  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-    name: SubscribeSystemEvents
-  - name: (
-  - uid: Virtufin.Api.Protos.PubsubSubscribeSystemRequest
-    name: PubsubSubscribeSystemRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: <
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
-  - name: '>'
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-  spec.vb:
-  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.SubscribeSystemEvents(Virtufin.Api.Protos.PubsubSubscribeSystemRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-    name: SubscribeSystemEvents
-  - name: (
-  - uid: Virtufin.Api.Protos.PubsubSubscribeSystemRequest
-    name: PubsubSubscribeSystemRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
-  - name: )
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-- uid: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents*
-  commentId: Overload:Virtufin.Api.Services.PubsubService.SubscribeSystemEvents
-  href: Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_SubscribeSystemEvents_Virtufin_Api_Protos_PubsubSubscribeSystemRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
-  name: SubscribeSystemEvents
-  nameWithType: PubsubService.SubscribeSystemEvents
-  fullName: Virtufin.Api.Services.PubsubService.SubscribeSystemEvents
-- uid: Virtufin.Api.Protos.PubsubSubscribeSystemRequest
-  commentId: T:Virtufin.Api.Protos.PubsubSubscribeSystemRequest
-  parent: Virtufin.Api.Protos
-  name: PubsubSubscribeSystemRequest
-  nameWithType: PubsubSubscribeSystemRequest
-  fullName: Virtufin.Api.Protos.PubsubSubscribeSystemRequest

@@ -56,7 +56,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Client.CloudEvents",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.CloudEvents.yml\" sourcestartlinenumber=\"1\">Constants for CloudEvents v1.0 metadata keys and standard values.\nUsed by services that publish system events via the virtufin-api\n(PublishSystemEvent). All values are spelled per the CloudEvents\nv1.0 spec (<a href=\"https://github.com/cloudevents/spec/blob/v1.0/spec.md\" sourcefile=\"api/Virtufin.Api.Client.CloudEvents.yml\" sourcestartlinenumber=\"4\">https://github.com/cloudevents/spec/blob/v1.0/spec.md</a>).</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Client.CloudEvents.yml\" sourcestartlinenumber=\"1\">Constants for CloudEvents v1.0 metadata keys and standard values.\nUsed by services that publish lifecycle events to the virtufin-api\nvia <code>Pubsub.PublishEvent</code> with the per-service topic name from\nthe publishing service's <code>Configuration/Topics.cs</code>. All values\nare spelled per the CloudEvents v1.0 spec\n(<a href=\"https://github.com/cloudevents/spec/blob/v1.0/spec.md\" sourcefile=\"api/Virtufin.Api.Client.CloudEvents.yml\" sourcestartlinenumber=\"6\">https://github.com/cloudevents/spec/blob/v1.0/spec.md</a>).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -480,20 +480,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Api.Services.DefaultSystemEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Api.Services.DefaultSystemEvent.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Api.Services.DefaultSystemEvent",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.DefaultSystemEvent.yml\" sourcestartlinenumber=\"1\">Default values for the CloudEvents v1.0 envelope that the API\napplies when a <code>PublishSystemEvent</code> call omits the\n<code>ce-source</code> or <code>ce-type</code> metadata. Most callers\n(WebSocketManager, WorkManager) provide their own source URN\nand event type; these defaults exist so the API still produces a\nwell-formed CloudEvent when callers don't.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Services.FieldSchema.yml",
       "output": {
         ".html": {
@@ -701,20 +687,6 @@
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.StateService",
       "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.StateService.yml\" sourcestartlinenumber=\"1\">Implementation of the gRPC State service.\nProvides state management operations with Dapr backend and pub/sub notifications.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Api.Services.StateServices.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Api.Services.StateServices.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Api.Services.StateServices",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.StateServices.yml\" sourcestartlinenumber=\"1\">Logical service names used by the system-state RPC variants. These\nvalues are the contract between the API and its clients: clients\nnever need to know which Dapr state store backs the &quot;system&quot;\nservice, only that writes go to whatever the API's\n<code>ServicesConfiguration</code> maps <code>System</code> to.</p>\n"
     },
     {
       "type": "ManagedReference",

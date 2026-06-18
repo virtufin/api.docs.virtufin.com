@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StateActionConstants
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 75
+    startLine: 48
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -56,7 +56,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Save
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 77
+    startLine: 50
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -83,7 +83,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Delete
     path: ../../../src/Virtufin.Api/Services/Constants.cs
-    startLine: 78
+    startLine: 51
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
