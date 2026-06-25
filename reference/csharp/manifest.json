@@ -326,6 +326,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.DeleteStateEventPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.DeleteStateEventPayload.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.DeleteStateEventPayload",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.GrpcCallRequest.yml",
       "output": {
         ".html": {
@@ -434,6 +448,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.MethodInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.SaveStateEventPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.SaveStateEventPayload.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.SaveStateEventPayload",
       "Summary": null
     },
     {

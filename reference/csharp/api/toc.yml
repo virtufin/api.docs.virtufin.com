@@ -7,6 +7,9 @@ items:
   - uid: Virtufin.Api.ApiConstants
     name: ApiConstants
     type: Class
+  - uid: Virtufin.Api.DeleteStateEventPayload
+    name: DeleteStateEventPayload
+    type: Class
   - uid: Virtufin.Api.GrpcCallRequest
     name: GrpcCallRequest
     type: Class
@@ -15,6 +18,9 @@ items:
     type: Class
   - uid: Virtufin.Api.MethodInfo
     name: MethodInfo
+    type: Class
+  - uid: Virtufin.Api.SaveStateEventPayload
+    name: SaveStateEventPayload
     type: Class
 - uid: Virtufin.Api.Client
   name: Virtufin.Api.Client

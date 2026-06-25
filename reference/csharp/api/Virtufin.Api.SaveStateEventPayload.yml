@@ -1,39 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.MethodSchema
-  commentId: T:Virtufin.Api.Services.MethodSchema
-  id: MethodSchema
-  parent: Virtufin.Api.Services
+- uid: Virtufin.Api.SaveStateEventPayload
+  commentId: T:Virtufin.Api.SaveStateEventPayload
+  id: SaveStateEventPayload
+  parent: Virtufin.Api
   children:
-  - Virtufin.Api.Services.MethodSchema.Fields
-  - Virtufin.Api.Services.MethodSchema.InputTypeName
-  - Virtufin.Api.Services.MethodSchema.OutputTypeName
-  - Virtufin.Api.Services.MethodSchema.SchemaType
+  - Virtufin.Api.SaveStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
+  - Virtufin.Api.SaveStateEventPayload.Action
+  - Virtufin.Api.SaveStateEventPayload.Key
+  - Virtufin.Api.SaveStateEventPayload.Service
+  - Virtufin.Api.SaveStateEventPayload.Value
   langs:
   - csharp
   - vb
-  name: MethodSchema
-  nameWithType: MethodSchema
-  fullName: Virtufin.Api.Services.MethodSchema
+  name: SaveStateEventPayload
+  nameWithType: SaveStateEventPayload
+  fullName: Virtufin.Api.SaveStateEventPayload
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/GrpcModels.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: MethodSchema
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1174
+    id: SaveStateEventPayload
+    path: ../../../src/Virtufin.Api/GrpcModels.cs
+    startLine: 30
   assemblies:
   - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  summary: Describes the schema of a gRPC method's input or output type.
-  example: []
+  namespace: Virtufin.Api
   syntax:
-    content: public class MethodSchema
-    content.vb: Public Class MethodSchema
+    content: 'public record SaveStateEventPayload : IEquatable<SaveStateEventPayload>'
+    content.vb: Public Class SaveStateEventPayload Implements IEquatable(Of SaveStateEventPayload)
   inheritance:
   - System.Object
+  implements:
+  - System.IEquatable{Virtufin.Api.SaveStateEventPayload}
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -42,129 +43,167 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.MethodSchema.InputTypeName
-  commentId: P:Virtufin.Api.Services.MethodSchema.InputTypeName
-  id: InputTypeName
-  parent: Virtufin.Api.Services.MethodSchema
+- uid: Virtufin.Api.SaveStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
+  commentId: M:Virtufin.Api.SaveStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
+  id: '#ctor(System.String,System.String,System.String,System.Object)'
+  parent: Virtufin.Api.SaveStateEventPayload
   langs:
   - csharp
   - vb
-  name: InputTypeName
-  nameWithType: MethodSchema.InputTypeName
-  fullName: Virtufin.Api.Services.MethodSchema.InputTypeName
+  name: SaveStateEventPayload(string, string, string, object?)
+  nameWithType: SaveStateEventPayload.SaveStateEventPayload(string, string, string, object?)
+  fullName: Virtufin.Api.SaveStateEventPayload.SaveStateEventPayload(string, string, string, object?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/GrpcModels.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: .ctor
+    path: ../../../src/Virtufin.Api/GrpcModels.cs
+    startLine: 30
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api
+  syntax:
+    content: public SaveStateEventPayload(string Service, string Key, string Action, object? Value)
+    parameters:
+    - id: Service
+      type: System.String
+    - id: Key
+      type: System.String
+    - id: Action
+      type: System.String
+    - id: Value
+      type: System.Object
+    content.vb: Public Sub New(Service As String, Key As String, Action As String, Value As Object)
+  overload: Virtufin.Api.SaveStateEventPayload.#ctor*
+  nameWithType.vb: SaveStateEventPayload.New(String, String, String, Object)
+  fullName.vb: Virtufin.Api.SaveStateEventPayload.New(String, String, String, Object)
+  name.vb: New(String, String, String, Object)
+- uid: Virtufin.Api.SaveStateEventPayload.Service
+  commentId: P:Virtufin.Api.SaveStateEventPayload.Service
+  id: Service
+  parent: Virtufin.Api.SaveStateEventPayload
+  langs:
+  - csharp
+  - vb
+  name: Service
+  nameWithType: SaveStateEventPayload.Service
+  fullName: Virtufin.Api.SaveStateEventPayload.Service
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/GrpcModels.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: InputTypeName
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1176
+    id: Service
+    path: ../../../src/Virtufin.Api/GrpcModels.cs
+    startLine: 30
   assemblies:
   - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  namespace: Virtufin.Api
   syntax:
-    content: public string InputTypeName { get; set; }
+    content: public string Service { get; init; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property InputTypeName As String
-  overload: Virtufin.Api.Services.MethodSchema.InputTypeName*
-- uid: Virtufin.Api.Services.MethodSchema.OutputTypeName
-  commentId: P:Virtufin.Api.Services.MethodSchema.OutputTypeName
-  id: OutputTypeName
-  parent: Virtufin.Api.Services.MethodSchema
+    content.vb: Public Property Service As String
+  overload: Virtufin.Api.SaveStateEventPayload.Service*
+- uid: Virtufin.Api.SaveStateEventPayload.Key
+  commentId: P:Virtufin.Api.SaveStateEventPayload.Key
+  id: Key
+  parent: Virtufin.Api.SaveStateEventPayload
   langs:
   - csharp
   - vb
-  name: OutputTypeName
-  nameWithType: MethodSchema.OutputTypeName
-  fullName: Virtufin.Api.Services.MethodSchema.OutputTypeName
+  name: Key
+  nameWithType: SaveStateEventPayload.Key
+  fullName: Virtufin.Api.SaveStateEventPayload.Key
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/GrpcModels.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: OutputTypeName
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1177
+    id: Key
+    path: ../../../src/Virtufin.Api/GrpcModels.cs
+    startLine: 30
   assemblies:
   - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  namespace: Virtufin.Api
   syntax:
-    content: public string OutputTypeName { get; set; }
+    content: public string Key { get; init; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property OutputTypeName As String
-  overload: Virtufin.Api.Services.MethodSchema.OutputTypeName*
-- uid: Virtufin.Api.Services.MethodSchema.SchemaType
-  commentId: P:Virtufin.Api.Services.MethodSchema.SchemaType
-  id: SchemaType
-  parent: Virtufin.Api.Services.MethodSchema
+    content.vb: Public Property Key As String
+  overload: Virtufin.Api.SaveStateEventPayload.Key*
+- uid: Virtufin.Api.SaveStateEventPayload.Action
+  commentId: P:Virtufin.Api.SaveStateEventPayload.Action
+  id: Action
+  parent: Virtufin.Api.SaveStateEventPayload
   langs:
   - csharp
   - vb
-  name: SchemaType
-  nameWithType: MethodSchema.SchemaType
-  fullName: Virtufin.Api.Services.MethodSchema.SchemaType
+  name: Action
+  nameWithType: SaveStateEventPayload.Action
+  fullName: Virtufin.Api.SaveStateEventPayload.Action
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/GrpcModels.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: SchemaType
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1178
+    id: Action
+    path: ../../../src/Virtufin.Api/GrpcModels.cs
+    startLine: 30
   assemblies:
   - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  namespace: Virtufin.Api
   syntax:
-    content: public string SchemaType { get; set; }
+    content: public string Action { get; init; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property SchemaType As String
-  overload: Virtufin.Api.Services.MethodSchema.SchemaType*
-- uid: Virtufin.Api.Services.MethodSchema.Fields
-  commentId: P:Virtufin.Api.Services.MethodSchema.Fields
-  id: Fields
-  parent: Virtufin.Api.Services.MethodSchema
+    content.vb: Public Property Action As String
+  overload: Virtufin.Api.SaveStateEventPayload.Action*
+- uid: Virtufin.Api.SaveStateEventPayload.Value
+  commentId: P:Virtufin.Api.SaveStateEventPayload.Value
+  id: Value
+  parent: Virtufin.Api.SaveStateEventPayload
   langs:
   - csharp
   - vb
-  name: Fields
-  nameWithType: MethodSchema.Fields
-  fullName: Virtufin.Api.Services.MethodSchema.Fields
+  name: Value
+  nameWithType: SaveStateEventPayload.Value
+  fullName: Virtufin.Api.SaveStateEventPayload.Value
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/GrpcModels.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Fields
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1179
+    id: Value
+    path: ../../../src/Virtufin.Api/GrpcModels.cs
+    startLine: 30
   assemblies:
   - Virtufin.Api
-  namespace: Virtufin.Api.Services
+  namespace: Virtufin.Api
   syntax:
-    content: public List<FieldSchema> Fields { get; set; }
+    content: public object? Value { get; init; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{Virtufin.Api.Services.FieldSchema}
-    content.vb: Public Property Fields As List(Of FieldSchema)
-  overload: Virtufin.Api.Services.MethodSchema.Fields*
+      type: System.Object
+    content.vb: Public Property Value As Object
+  overload: Virtufin.Api.SaveStateEventPayload.Value*
 references:
-- uid: Virtufin.Api.Services
-  commentId: N:Virtufin.Api.Services
+- uid: Virtufin.Api
+  commentId: N:Virtufin.Api
   href: Virtufin.html
-  name: Virtufin.Api.Services
-  nameWithType: Virtufin.Api.Services
-  fullName: Virtufin.Api.Services
+  name: Virtufin.Api
+  nameWithType: Virtufin.Api
+  fullName: Virtufin.Api
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
@@ -173,10 +212,6 @@ references:
   - uid: Virtufin.Api
     name: Api
     href: Virtufin.Api.html
-  - name: .
-  - uid: Virtufin.Api.Services
-    name: Services
-    href: Virtufin.Api.Services.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
@@ -185,10 +220,6 @@ references:
   - uid: Virtufin.Api
     name: Api
     href: Virtufin.Api.html
-  - name: .
-  - uid: Virtufin.Api.Services
-    name: Services
-    href: Virtufin.Api.Services.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -200,6 +231,39 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: System.IEquatable{Virtufin.Api.SaveStateEventPayload}
+  commentId: T:System.IEquatable{Virtufin.Api.SaveStateEventPayload}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SaveStateEventPayload>
+  nameWithType: IEquatable<SaveStateEventPayload>
+  fullName: System.IEquatable<Virtufin.Api.SaveStateEventPayload>
+  nameWithType.vb: IEquatable(Of SaveStateEventPayload)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.SaveStateEventPayload)
+  name.vb: IEquatable(Of SaveStateEventPayload)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Api.SaveStateEventPayload
+    name: SaveStateEventPayload
+    href: Virtufin.Api.SaveStateEventPayload.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.SaveStateEventPayload
+    name: SaveStateEventPayload
+    href: Virtufin.Api.SaveStateEventPayload.html
+  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -426,12 +490,43 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Virtufin.Api.Services.MethodSchema.InputTypeName*
-  commentId: Overload:Virtufin.Api.Services.MethodSchema.InputTypeName
-  href: Virtufin.Api.Services.MethodSchema.html#Virtufin_Api_Services_MethodSchema_InputTypeName
-  name: InputTypeName
-  nameWithType: MethodSchema.InputTypeName
-  fullName: Virtufin.Api.Services.MethodSchema.InputTypeName
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.SaveStateEventPayload.#ctor*
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.#ctor
+  href: Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload__ctor_System_String_System_String_System_String_System_Object_
+  name: SaveStateEventPayload
+  nameWithType: SaveStateEventPayload.SaveStateEventPayload
+  fullName: Virtufin.Api.SaveStateEventPayload.SaveStateEventPayload
+  nameWithType.vb: SaveStateEventPayload.New
+  fullName.vb: Virtufin.Api.SaveStateEventPayload.New
+  name.vb: New
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -443,119 +538,27 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Virtufin.Api.Services.MethodSchema.OutputTypeName*
-  commentId: Overload:Virtufin.Api.Services.MethodSchema.OutputTypeName
-  href: Virtufin.Api.Services.MethodSchema.html#Virtufin_Api_Services_MethodSchema_OutputTypeName
-  name: OutputTypeName
-  nameWithType: MethodSchema.OutputTypeName
-  fullName: Virtufin.Api.Services.MethodSchema.OutputTypeName
-- uid: Virtufin.Api.Services.MethodSchema.SchemaType*
-  commentId: Overload:Virtufin.Api.Services.MethodSchema.SchemaType
-  href: Virtufin.Api.Services.MethodSchema.html#Virtufin_Api_Services_MethodSchema_SchemaType
-  name: SchemaType
-  nameWithType: MethodSchema.SchemaType
-  fullName: Virtufin.Api.Services.MethodSchema.SchemaType
-- uid: Virtufin.Api.Services.MethodSchema.Fields*
-  commentId: Overload:Virtufin.Api.Services.MethodSchema.Fields
-  href: Virtufin.Api.Services.MethodSchema.html#Virtufin_Api_Services_MethodSchema_Fields
-  name: Fields
-  nameWithType: MethodSchema.Fields
-  fullName: Virtufin.Api.Services.MethodSchema.Fields
-- uid: System.Collections.Generic.List{Virtufin.Api.Services.FieldSchema}
-  commentId: T:System.Collections.Generic.List{Virtufin.Api.Services.FieldSchema}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<FieldSchema>
-  nameWithType: List<FieldSchema>
-  fullName: System.Collections.Generic.List<Virtufin.Api.Services.FieldSchema>
-  nameWithType.vb: List(Of FieldSchema)
-  fullName.vb: System.Collections.Generic.List(Of Virtufin.Api.Services.FieldSchema)
-  name.vb: List(Of FieldSchema)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - uid: Virtufin.Api.Services.FieldSchema
-    name: FieldSchema
-    href: Virtufin.Api.Services.FieldSchema.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Api.Services.FieldSchema
-    name: FieldSchema
-    href: Virtufin.Api.Services.FieldSchema.html
-  - name: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.Api.SaveStateEventPayload.Service*
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.Service
+  href: Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Service
+  name: Service
+  nameWithType: SaveStateEventPayload.Service
+  fullName: Virtufin.Api.SaveStateEventPayload.Service
+- uid: Virtufin.Api.SaveStateEventPayload.Key*
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.Key
+  href: Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Key
+  name: Key
+  nameWithType: SaveStateEventPayload.Key
+  fullName: Virtufin.Api.SaveStateEventPayload.Key
+- uid: Virtufin.Api.SaveStateEventPayload.Action*
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.Action
+  href: Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Action
+  name: Action
+  nameWithType: SaveStateEventPayload.Action
+  fullName: Virtufin.Api.SaveStateEventPayload.Action
+- uid: Virtufin.Api.SaveStateEventPayload.Value*
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.Value
+  href: Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Value
+  name: Value
+  nameWithType: SaveStateEventPayload.Value
+  fullName: Virtufin.Api.SaveStateEventPayload.Value

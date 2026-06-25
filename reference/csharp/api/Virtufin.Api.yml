@@ -5,9 +5,11 @@ items:
   id: Virtufin.Api
   children:
   - Virtufin.Api.ApiConstants
+  - Virtufin.Api.DeleteStateEventPayload
   - Virtufin.Api.GrpcCallRequest
   - Virtufin.Api.GrpcCallResponse
   - Virtufin.Api.MethodInfo
+  - Virtufin.Api.SaveStateEventPayload
   langs:
   - csharp
   - vb
@@ -36,6 +38,18 @@ references:
   name: MethodInfo
   nameWithType: MethodInfo
   fullName: Virtufin.Api.MethodInfo
+- uid: Virtufin.Api.SaveStateEventPayload
+  commentId: T:Virtufin.Api.SaveStateEventPayload
+  href: Virtufin.Api.SaveStateEventPayload.html
+  name: SaveStateEventPayload
+  nameWithType: SaveStateEventPayload
+  fullName: Virtufin.Api.SaveStateEventPayload
+- uid: Virtufin.Api.DeleteStateEventPayload
+  commentId: T:Virtufin.Api.DeleteStateEventPayload
+  href: Virtufin.Api.DeleteStateEventPayload.html
+  name: DeleteStateEventPayload
+  nameWithType: DeleteStateEventPayload
+  fullName: Virtufin.Api.DeleteStateEventPayload
 - uid: Virtufin.Api.ApiConstants
   commentId: T:Virtufin.Api.ApiConstants
   href: Virtufin.Api.ApiConstants.html

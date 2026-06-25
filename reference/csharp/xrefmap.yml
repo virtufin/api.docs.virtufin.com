@@ -1328,6 +1328,83 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Configuration.StateConfig.StoreName
   nameWithType: StateConfig.StoreName
+- uid: Virtufin.Api.DeleteStateEventPayload
+  name: DeleteStateEventPayload
+  href: api/Virtufin.Api.DeleteStateEventPayload.html
+  commentId: T:Virtufin.Api.DeleteStateEventPayload
+  fullName: Virtufin.Api.DeleteStateEventPayload
+  nameWithType: DeleteStateEventPayload
+- uid: Virtufin.Api.DeleteStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
+  name: DeleteStateEventPayload(string, string, string, object?)
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload__ctor_System_String_System_String_System_String_System_Object_
+  commentId: M:Virtufin.Api.DeleteStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
+  name.vb: New(String, String, String, Object)
+  fullName: Virtufin.Api.DeleteStateEventPayload.DeleteStateEventPayload(string, string, string, object?)
+  fullName.vb: Virtufin.Api.DeleteStateEventPayload.New(String, String, String, Object)
+  nameWithType: DeleteStateEventPayload.DeleteStateEventPayload(string, string, string, object?)
+  nameWithType.vb: DeleteStateEventPayload.New(String, String, String, Object)
+- uid: Virtufin.Api.DeleteStateEventPayload.#ctor*
+  name: DeleteStateEventPayload
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload__ctor_
+  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.DeleteStateEventPayload.DeleteStateEventPayload
+  fullName.vb: Virtufin.Api.DeleteStateEventPayload.New
+  nameWithType: DeleteStateEventPayload.DeleteStateEventPayload
+  nameWithType.vb: DeleteStateEventPayload.New
+- uid: Virtufin.Api.DeleteStateEventPayload.Action
+  name: Action
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Action
+  commentId: P:Virtufin.Api.DeleteStateEventPayload.Action
+  fullName: Virtufin.Api.DeleteStateEventPayload.Action
+  nameWithType: DeleteStateEventPayload.Action
+- uid: Virtufin.Api.DeleteStateEventPayload.Action*
+  name: Action
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Action_
+  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.Action
+  isSpec: "True"
+  fullName: Virtufin.Api.DeleteStateEventPayload.Action
+  nameWithType: DeleteStateEventPayload.Action
+- uid: Virtufin.Api.DeleteStateEventPayload.Key
+  name: Key
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Key
+  commentId: P:Virtufin.Api.DeleteStateEventPayload.Key
+  fullName: Virtufin.Api.DeleteStateEventPayload.Key
+  nameWithType: DeleteStateEventPayload.Key
+- uid: Virtufin.Api.DeleteStateEventPayload.Key*
+  name: Key
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Key_
+  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.Key
+  isSpec: "True"
+  fullName: Virtufin.Api.DeleteStateEventPayload.Key
+  nameWithType: DeleteStateEventPayload.Key
+- uid: Virtufin.Api.DeleteStateEventPayload.Service
+  name: Service
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Service
+  commentId: P:Virtufin.Api.DeleteStateEventPayload.Service
+  fullName: Virtufin.Api.DeleteStateEventPayload.Service
+  nameWithType: DeleteStateEventPayload.Service
+- uid: Virtufin.Api.DeleteStateEventPayload.Service*
+  name: Service
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Service_
+  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.Service
+  isSpec: "True"
+  fullName: Virtufin.Api.DeleteStateEventPayload.Service
+  nameWithType: DeleteStateEventPayload.Service
+- uid: Virtufin.Api.DeleteStateEventPayload.Value
+  name: Value
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Value
+  commentId: P:Virtufin.Api.DeleteStateEventPayload.Value
+  fullName: Virtufin.Api.DeleteStateEventPayload.Value
+  nameWithType: DeleteStateEventPayload.Value
+- uid: Virtufin.Api.DeleteStateEventPayload.Value*
+  name: Value
+  href: api/Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Value_
+  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.Value
+  isSpec: "True"
+  fullName: Virtufin.Api.DeleteStateEventPayload.Value
+  nameWithType: DeleteStateEventPayload.Value
 - uid: Virtufin.Api.GrpcCallRequest
   name: GrpcCallRequest
   href: api/Virtufin.Api.GrpcCallRequest.html
@@ -1745,6 +1822,83 @@ references:
 - uid: Virtufin.Api.Reference
   name: C# API Reference
   href: index.html
+- uid: Virtufin.Api.SaveStateEventPayload
+  name: SaveStateEventPayload
+  href: api/Virtufin.Api.SaveStateEventPayload.html
+  commentId: T:Virtufin.Api.SaveStateEventPayload
+  fullName: Virtufin.Api.SaveStateEventPayload
+  nameWithType: SaveStateEventPayload
+- uid: Virtufin.Api.SaveStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
+  name: SaveStateEventPayload(string, string, string, object?)
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload__ctor_System_String_System_String_System_String_System_Object_
+  commentId: M:Virtufin.Api.SaveStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
+  name.vb: New(String, String, String, Object)
+  fullName: Virtufin.Api.SaveStateEventPayload.SaveStateEventPayload(string, string, string, object?)
+  fullName.vb: Virtufin.Api.SaveStateEventPayload.New(String, String, String, Object)
+  nameWithType: SaveStateEventPayload.SaveStateEventPayload(string, string, string, object?)
+  nameWithType.vb: SaveStateEventPayload.New(String, String, String, Object)
+- uid: Virtufin.Api.SaveStateEventPayload.#ctor*
+  name: SaveStateEventPayload
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload__ctor_
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.SaveStateEventPayload.SaveStateEventPayload
+  fullName.vb: Virtufin.Api.SaveStateEventPayload.New
+  nameWithType: SaveStateEventPayload.SaveStateEventPayload
+  nameWithType.vb: SaveStateEventPayload.New
+- uid: Virtufin.Api.SaveStateEventPayload.Action
+  name: Action
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Action
+  commentId: P:Virtufin.Api.SaveStateEventPayload.Action
+  fullName: Virtufin.Api.SaveStateEventPayload.Action
+  nameWithType: SaveStateEventPayload.Action
+- uid: Virtufin.Api.SaveStateEventPayload.Action*
+  name: Action
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Action_
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.Action
+  isSpec: "True"
+  fullName: Virtufin.Api.SaveStateEventPayload.Action
+  nameWithType: SaveStateEventPayload.Action
+- uid: Virtufin.Api.SaveStateEventPayload.Key
+  name: Key
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Key
+  commentId: P:Virtufin.Api.SaveStateEventPayload.Key
+  fullName: Virtufin.Api.SaveStateEventPayload.Key
+  nameWithType: SaveStateEventPayload.Key
+- uid: Virtufin.Api.SaveStateEventPayload.Key*
+  name: Key
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Key_
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.Key
+  isSpec: "True"
+  fullName: Virtufin.Api.SaveStateEventPayload.Key
+  nameWithType: SaveStateEventPayload.Key
+- uid: Virtufin.Api.SaveStateEventPayload.Service
+  name: Service
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Service
+  commentId: P:Virtufin.Api.SaveStateEventPayload.Service
+  fullName: Virtufin.Api.SaveStateEventPayload.Service
+  nameWithType: SaveStateEventPayload.Service
+- uid: Virtufin.Api.SaveStateEventPayload.Service*
+  name: Service
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Service_
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.Service
+  isSpec: "True"
+  fullName: Virtufin.Api.SaveStateEventPayload.Service
+  nameWithType: SaveStateEventPayload.Service
+- uid: Virtufin.Api.SaveStateEventPayload.Value
+  name: Value
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Value
+  commentId: P:Virtufin.Api.SaveStateEventPayload.Value
+  fullName: Virtufin.Api.SaveStateEventPayload.Value
+  nameWithType: SaveStateEventPayload.Value
+- uid: Virtufin.Api.SaveStateEventPayload.Value*
+  name: Value
+  href: api/Virtufin.Api.SaveStateEventPayload.html#Virtufin_Api_SaveStateEventPayload_Value_
+  commentId: Overload:Virtufin.Api.SaveStateEventPayload.Value
+  isSpec: "True"
+  fullName: Virtufin.Api.SaveStateEventPayload.Value
+  nameWithType: SaveStateEventPayload.Value
 - uid: Virtufin.Api.Services
   name: Virtufin.Api.Services
   href: api/Virtufin.Api.Services.html
