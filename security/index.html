@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/5edfb479c8caf88e8031d10a74890e5ce9a69734"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/ef9b824f798479165029b6d7779298b09413e251"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 5edfb47">
+       title="View commit ef9b824">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5edfb47</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ef9b824</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/5edfb479c8caf88e8031d10a74890e5ce9a69734"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/ef9b824f798479165029b6d7779298b09413e251"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 5edfb47">
+       title="View commit ef9b824">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">5edfb47</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ef9b824</text>
       </svg>
     </a>
 </div>
@@ -1173,6 +1173,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#resiliency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resiliency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#audit-logging" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1337,6 +1348,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#resiliency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resiliency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#audit-logging" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1431,6 +1453,22 @@
 </tbody>
 </table>
 <p>Backend Dapr component values (Redis password, broker credentials) are mounted at runtime via Dapr's secret management component (<code>secretstores/kubernetes</code>) — never commit them to source control. Dapr resolves them by key (e.g., <code>stateStore.password</code>) and the application reads them via <code>DaprClient.GetSecretAsync</code>.</p>
+<h2 id="resiliency">Resiliency</h2>
+<p>Every Dapr SDK call made by the API — including the <code>Gateway.Invoke</code>
+and <code>Gateway.InvokeJson</code> gRPC calls that proxy to downstream services
+(WebSocketManager, WorkManager) — is wrapped in a Polly pipeline:
+retry with exponential backoff, then circuit breaker.</p>
+<p>The pipeline prevents a failing downstream from blocking the gateway:
+a 50% failure rate trips the circuit (configurable via
+<code>DAPR_CIRCUIT_BREAKER_THRESHOLD</code>), the circuit stays open for
+<code>DAPR_CIRCUIT_BREAKER_DURATION_SECONDS</code>, then transitions to
+half-open to test recovery. The circuit state is exposed at
+<code>/health</code> (tag <code>dapr</code>); when the circuit is open, the health check
+reports <code>Unhealthy</code> and the Kubernetes orchestrator will not route
+traffic to this pod.</p>
+<p>Both sides (API + WorkManager) ship matching env vars so the policy
+behaves symmetrically across the stack — see
+<a href="configuration/#dapr-resiliency">Configuration: Dapr Resiliency</a>.</p>
 <h2 id="audit-logging">Audit &amp; Logging</h2>
 <p>The API Gateway emits structured logs for every state-mutating operation (<code>Invoke</code>, <code>ListServices</code>, <code>ListMethods</code>, <code>Subscribe</code>, <code>SaveState</code>, <code>DeleteState</code>, <code>PublishEvent</code>, <code>RegisterKeys</code>) and every Dapr bridge subscription lifecycle event. Each log record includes the request ID, caller identity (if available from the gRPC metadata), and a correlation ID derived from the incoming gRPC request.</p>
 <p>Fire-and-forget logging calls (heartbeat writes, sweep events) are wrapped in try/catch and downgrade to <code>LogLevel.Warning</code> if the underlying stream write fails — this prevents observability failures from cascading into service failures.</p>
@@ -1467,7 +1505,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-06-25T07:41:03Z</span>
+  <span style="display:table-cell;text-align:right">2026-06-26T21:51:19Z</span>
 </div>
 
     </div>

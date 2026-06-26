@@ -1,0 +1,947 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions
+  commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
+  id: DaprResilienceOptions
+  parent: Virtufin.Api.Configuration
+  children:
+  - Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  - Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  - Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  - Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  - Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  - Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  - Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  - Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  - Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  - Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  - Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  - Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  - Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  langs:
+  - csharp
+  - vb
+  name: DaprResilienceOptions
+  nameWithType: DaprResilienceOptions
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DaprResilienceOptions
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: >-
+    Tunable knobs for <xref href="Virtufin.Api.HealthChecks.DaprResiliencePipeline" data-throw-if-not-resolved="false"></xref>:
+
+    the Polly-based retry + circuit breaker wrapping Dapr SDK calls and
+
+    gateway gRPC invocations from the API Gateway.
+  example: []
+  syntax:
+    content: 'public sealed record DaprResilienceOptions : IEquatable<DaprResilienceOptions>'
+    content.vb: Public NotInheritable Class DaprResilienceOptions Implements IEquatable(Of DaprResilienceOptions)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Virtufin.Api.Configuration.DaprResilienceOptions}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  id: RetryAttemptsEnvVar
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: RetryAttemptsEnvVar
+  nameWithType: DaprResilienceOptions.RetryAttemptsEnvVar
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: RetryAttemptsEnvVar
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 10
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: Env var for <xref href="Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string RetryAttemptsEnvVar = "DAPR_RETRY_ATTEMPTS"
+    return:
+      type: System.String
+    content.vb: Public Const RetryAttemptsEnvVar As String = "DAPR_RETRY_ATTEMPTS"
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  id: RetryBaseDelayMsEnvVar
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: RetryBaseDelayMsEnvVar
+  nameWithType: DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: RetryBaseDelayMsEnvVar
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 13
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: Env var for <xref href="Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string RetryBaseDelayMsEnvVar = "DAPR_RETRY_BASE_DELAY_MS"
+    return:
+      type: System.String
+    content.vb: Public Const RetryBaseDelayMsEnvVar As String = "DAPR_RETRY_BASE_DELAY_MS"
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  id: CircuitBreakerMinimumThroughputEnvVar
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: CircuitBreakerMinimumThroughputEnvVar
+  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: CircuitBreakerMinimumThroughputEnvVar
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 16
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: Env var for <xref href="Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string CircuitBreakerMinimumThroughputEnvVar = "DAPR_CIRCUIT_BREAKER_THRESHOLD"
+    return:
+      type: System.String
+    content.vb: Public Const CircuitBreakerMinimumThroughputEnvVar As String = "DAPR_CIRCUIT_BREAKER_THRESHOLD"
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  id: CircuitBreakerBreakDurationSecondsEnvVar
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: CircuitBreakerBreakDurationSecondsEnvVar
+  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: CircuitBreakerBreakDurationSecondsEnvVar
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 19
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: Env var for <xref href="Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string CircuitBreakerBreakDurationSecondsEnvVar = "DAPR_CIRCUIT_BREAKER_DURATION_SECONDS"
+    return:
+      type: System.String
+    content.vb: Public Const CircuitBreakerBreakDurationSecondsEnvVar As String = "DAPR_CIRCUIT_BREAKER_DURATION_SECONDS"
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  id: DefaultRetryAttempts
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultRetryAttempts
+  nameWithType: DaprResilienceOptions.DefaultRetryAttempts
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DefaultRetryAttempts
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: Default retry attempts (matches the original hardcoded constant).
+  example: []
+  syntax:
+    content: public const int DefaultRetryAttempts = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultRetryAttempts As Integer = 3
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  id: DefaultRetryBaseDelayMs
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultRetryBaseDelayMs
+  nameWithType: DaprResilienceOptions.DefaultRetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DefaultRetryBaseDelayMs
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 25
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: Default retry base delay in ms.
+  example: []
+  syntax:
+    content: public const int DefaultRetryBaseDelayMs = 200
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultRetryBaseDelayMs As Integer = 200
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  id: DefaultCircuitBreakerMinimumThroughput
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultCircuitBreakerMinimumThroughput
+  nameWithType: DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DefaultCircuitBreakerMinimumThroughput
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: Default circuit-breaker minimum throughput.
+  example: []
+  syntax:
+    content: public const int DefaultCircuitBreakerMinimumThroughput = 5
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultCircuitBreakerMinimumThroughput As Integer = 5
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  id: DefaultCircuitBreakerBreakDurationSeconds
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultCircuitBreakerBreakDurationSeconds
+  nameWithType: DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DefaultCircuitBreakerBreakDurationSeconds
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 31
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  summary: Default circuit-breaker open duration in seconds.
+  example: []
+  syntax:
+    content: public const int DefaultCircuitBreakerBreakDurationSeconds = 30
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultCircuitBreakerBreakDurationSeconds As Integer = 30
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  id: RetryAttempts
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: RetryAttempts
+  nameWithType: DaprResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: RetryAttempts
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public int RetryAttempts { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RetryAttempts As Integer
+  overload: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts*
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  id: RetryBaseDelayMs
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: RetryBaseDelayMs
+  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: RetryBaseDelayMs
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 34
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public int RetryBaseDelayMs { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RetryBaseDelayMs As Integer
+  overload: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs*
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  id: CircuitBreakerMinimumThroughput
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: CircuitBreakerMinimumThroughput
+  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: CircuitBreakerMinimumThroughput
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 35
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public int CircuitBreakerMinimumThroughput { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CircuitBreakerMinimumThroughput As Integer
+  overload: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput*
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  id: CircuitBreakerBreakDurationSeconds
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: CircuitBreakerBreakDurationSeconds
+  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: CircuitBreakerBreakDurationSeconds
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public int CircuitBreakerBreakDurationSeconds { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CircuitBreakerBreakDurationSeconds As Integer
+  overload: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds*
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  commentId: M:Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  id: FromEnvironment(System.Func{System.String,System.String})
+  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  langs:
+  - csharp
+  - vb
+  name: FromEnvironment(Func<string, string?>)
+  nameWithType: DaprResilienceOptions.FromEnvironment(Func<string, string?>)
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func<string, string?>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: FromEnvironment
+    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    startLine: 38
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Configuration
+  syntax:
+    content: public static DaprResilienceOptions FromEnvironment(Func<string, string?> getEnvironment)
+    parameters:
+    - id: getEnvironment
+      type: System.Func{System.String,System.String}
+    return:
+      type: Virtufin.Api.Configuration.DaprResilienceOptions
+    content.vb: Public Shared Function FromEnvironment(getEnvironment As Func(Of String, String)) As DaprResilienceOptions
+  overload: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment*
+  nameWithType.vb: DaprResilienceOptions.FromEnvironment(Func(Of String, String))
+  fullName.vb: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func(Of String, String))
+  name.vb: FromEnvironment(Func(Of String, String))
+references:
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  parent: Virtufin.Api.HealthChecks
+  href: Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
+  name: DaprResiliencePipeline
+  nameWithType: DaprResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+- uid: Virtufin.Api.Configuration
+  commentId: N:Virtufin.Api.Configuration
+  href: Virtufin.html
+  name: Virtufin.Api.Configuration
+  nameWithType: Virtufin.Api.Configuration
+  fullName: Virtufin.Api.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Virtufin.Api.Configuration.DaprResilienceOptions}
+  commentId: T:System.IEquatable{Virtufin.Api.Configuration.DaprResilienceOptions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DaprResilienceOptions>
+  nameWithType: IEquatable<DaprResilienceOptions>
+  fullName: System.IEquatable<Virtufin.Api.Configuration.DaprResilienceOptions>
+  nameWithType.vb: IEquatable(Of DaprResilienceOptions)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Configuration.DaprResilienceOptions)
+  name.vb: IEquatable(Of DaprResilienceOptions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Api.Configuration.DaprResilienceOptions
+    name: DaprResilienceOptions
+    href: Virtufin.Api.Configuration.DaprResilienceOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Configuration.DaprResilienceOptions
+    name: DaprResilienceOptions
+    href: Virtufin.Api.Configuration.DaprResilienceOptions.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Virtufin.Api.HealthChecks
+  commentId: N:Virtufin.Api.HealthChecks
+  href: Virtufin.html
+  name: Virtufin.Api.HealthChecks
+  nameWithType: Virtufin.Api.HealthChecks
+  fullName: Virtufin.Api.HealthChecks
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.HealthChecks
+    name: HealthChecks
+    href: Virtufin.Api.HealthChecks.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.HealthChecks
+    name: HealthChecks
+    href: Virtufin.Api.HealthChecks.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttempts
+  name: RetryAttempts
+  nameWithType: DaprResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMs
+  name: RetryBaseDelayMs
+  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughput
+  name: CircuitBreakerMinimumThroughput
+  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSeconds
+  name: CircuitBreakerBreakDurationSeconds
+  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts*
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttempts
+  name: RetryAttempts
+  nameWithType: DaprResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs*
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMs
+  name: RetryBaseDelayMs
+  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput*
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughput
+  name: CircuitBreakerMinimumThroughput
+  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds*
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSeconds
+  name: CircuitBreakerBreakDurationSeconds
+  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment*
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_FromEnvironment_System_Func_System_String_System_String__
+  name: FromEnvironment
+  nameWithType: DaprResilienceOptions.FromEnvironment
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment
+- uid: System.Func{System.String,System.String}
+  commentId: T:System.Func{System.String,System.String}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, string>
+  nameWithType: Func<string, string>
+  fullName: System.Func<string, string>
+  nameWithType.vb: Func(Of String, String)
+  fullName.vb: System.Func(Of String, String)
+  name.vb: Func(Of String, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions
+  commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html
+  name: DaprResilienceOptions
+  nameWithType: DaprResilienceOptions
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )

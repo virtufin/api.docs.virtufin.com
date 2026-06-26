@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DaprCircuitBreakerHealthCheck
     path: ../../../src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
-    startLine: 87
+    startLine: 86
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks
@@ -59,7 +59,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
-    startLine: 91
+    startLine: 90
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks
@@ -91,7 +91,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: CheckHealthAsync
     path: ../../../src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
-    startLine: 96
+    startLine: 95
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks

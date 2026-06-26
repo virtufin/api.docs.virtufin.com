@@ -60,6 +60,9 @@ items:
   - uid: Virtufin.Api.Configuration.CronJobConfig
     name: CronJobConfig
     type: Class
+  - uid: Virtufin.Api.Configuration.DaprResilienceOptions
+    name: DaprResilienceOptions
+    type: Class
   - uid: Virtufin.Api.Configuration.GrpcConfig
     name: GrpcConfig
     type: Class

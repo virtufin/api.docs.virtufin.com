@@ -172,6 +172,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Configuration.DaprResilienceOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Configuration.DaprResilienceOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Configuration.DaprResilienceOptions",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Configuration.DaprResilienceOptions.yml\" sourcestartlinenumber=\"1\">Tunable knobs for <xref href=\"Virtufin.Api.HealthChecks.DaprResiliencePipeline\" data-throw-if-not-resolved=\"false\"></xref>:\nthe Polly-based retry + circuit breaker wrapping Dapr SDK calls and\ngateway gRPC invocations from the API Gateway.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Configuration.GrpcConfig.yml",
       "output": {
         ".html": {
@@ -406,7 +420,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.HealthChecks.DaprResiliencePipeline",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.yml\" sourcestartlinenumber=\"1\">Provides resilience policies for Dapr operations with retry and circuit breaker.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.yml\" sourcestartlinenumber=\"1\">Provides resilience policies for Dapr operations with retry and circuit breaker.\nConstants are configurable via <xref href=\"Virtufin.Api.Configuration.DaprResilienceOptions\" data-throw-if-not-resolved=\"false\"></xref> (env-var-driven).</p>\n"
     },
     {
       "type": "ManagedReference",

@@ -826,6 +826,128 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Configuration.CronJobConfig.Schedule
   nameWithType: CronJobConfig.Schedule
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions
+  name: DaprResilienceOptions
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html
+  commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions
+  nameWithType: DaprResilienceOptions
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  name: CircuitBreakerBreakDurationSeconds
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSeconds
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds*
+  name: CircuitBreakerBreakDurationSeconds
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSeconds_
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  isSpec: "True"
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  name: CircuitBreakerBreakDurationSecondsEnvVar
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSecondsEnvVar
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  name: CircuitBreakerMinimumThroughput
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughput
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput*
+  name: CircuitBreakerMinimumThroughput
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughput_
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  isSpec: "True"
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  name: CircuitBreakerMinimumThroughputEnvVar
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughputEnvVar
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  name: DefaultCircuitBreakerBreakDurationSeconds
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_DefaultCircuitBreakerBreakDurationSeconds
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  nameWithType: DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  name: DefaultCircuitBreakerMinimumThroughput
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_DefaultCircuitBreakerMinimumThroughput
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  nameWithType: DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  name: DefaultRetryAttempts
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_DefaultRetryAttempts
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  nameWithType: DaprResilienceOptions.DefaultRetryAttempts
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  name: DefaultRetryBaseDelayMs
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_DefaultRetryBaseDelayMs
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  nameWithType: DaprResilienceOptions.DefaultRetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  name: FromEnvironment(Func<string, string?>)
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_FromEnvironment_System_Func_System_String_System_String__
+  commentId: M:Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  name.vb: FromEnvironment(Func(Of String, String))
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func<string, string?>)
+  fullName.vb: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func(Of String, String))
+  nameWithType: DaprResilienceOptions.FromEnvironment(Func<string, string?>)
+  nameWithType.vb: DaprResilienceOptions.FromEnvironment(Func(Of String, String))
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment*
+  name: FromEnvironment
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_FromEnvironment_
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment
+  isSpec: "True"
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment
+  nameWithType: DaprResilienceOptions.FromEnvironment
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  name: RetryAttempts
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttempts
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  nameWithType: DaprResilienceOptions.RetryAttempts
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts*
+  name: RetryAttempts
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttempts_
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  isSpec: "True"
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  nameWithType: DaprResilienceOptions.RetryAttempts
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  name: RetryAttemptsEnvVar
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttemptsEnvVar
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  nameWithType: DaprResilienceOptions.RetryAttemptsEnvVar
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  name: RetryBaseDelayMs
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMs
+  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs*
+  name: RetryBaseDelayMs
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMs_
+  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  isSpec: "True"
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  name: RetryBaseDelayMsEnvVar
+  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMsEnvVar
+  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  nameWithType: DaprResilienceOptions.RetryBaseDelayMsEnvVar
 - uid: Virtufin.Api.Configuration.GrpcConfig
   name: GrpcConfig
   href: api/Virtufin.Api.Configuration.GrpcConfig.html
@@ -1647,15 +1769,15 @@ references:
   commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
   fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
   nameWithType: DaprResiliencePipeline
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline})
-  name: DaprResiliencePipeline(ILogger<DaprResiliencePipeline>)
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_HealthChecks_DaprResiliencePipeline__
-  commentId: M:Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline})
-  name.vb: New(ILogger(Of DaprResiliencePipeline))
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.DaprResiliencePipeline(Microsoft.Extensions.Logging.ILogger<Virtufin.Api.HealthChecks.DaprResiliencePipeline>)
-  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.HealthChecks.DaprResiliencePipeline))
-  nameWithType: DaprResiliencePipeline.DaprResiliencePipeline(ILogger<DaprResiliencePipeline>)
-  nameWithType.vb: DaprResiliencePipeline.New(ILogger(Of DaprResiliencePipeline))
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline},Virtufin.Api.Configuration.DaprResilienceOptions)
+  name: DaprResiliencePipeline(ILogger<DaprResiliencePipeline>, DaprResilienceOptions)
+  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_HealthChecks_DaprResiliencePipeline__Virtufin_Api_Configuration_DaprResilienceOptions_
+  commentId: M:Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline},Virtufin.Api.Configuration.DaprResilienceOptions)
+  name.vb: New(ILogger(Of DaprResiliencePipeline), DaprResilienceOptions)
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.DaprResiliencePipeline(Microsoft.Extensions.Logging.ILogger<Virtufin.Api.HealthChecks.DaprResiliencePipeline>, Virtufin.Api.Configuration.DaprResilienceOptions)
+  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.HealthChecks.DaprResiliencePipeline), Virtufin.Api.Configuration.DaprResilienceOptions)
+  nameWithType: DaprResiliencePipeline.DaprResiliencePipeline(ILogger<DaprResiliencePipeline>, DaprResilienceOptions)
+  nameWithType.vb: DaprResiliencePipeline.New(ILogger(Of DaprResiliencePipeline), DaprResilienceOptions)
 - uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor*
   name: DaprResiliencePipeline
   href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_
@@ -2089,15 +2211,15 @@ references:
   commentId: T:Virtufin.Api.Services.GatewayService
   fullName: Virtufin.Api.Services.GatewayService
   nameWithType: GatewayService
-- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
-  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient)
-  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_
-  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
-  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient)
-  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
-  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient)
-  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient)
-  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient)
+- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient, DaprResiliencePipeline)
+  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_Virtufin_Api_HealthChecks_DaprResiliencePipeline_
+  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient, DaprResiliencePipeline)
+  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient, DaprResiliencePipeline)
+  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient, DaprResiliencePipeline)
 - uid: Virtufin.Api.Services.GatewayService.#ctor*
   name: GatewayService
   href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_

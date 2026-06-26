@@ -5,6 +5,7 @@ items:
   id: Virtufin.Api.Configuration
   children:
   - Virtufin.Api.Configuration.CronJobConfig
+  - Virtufin.Api.Configuration.DaprResilienceOptions
   - Virtufin.Api.Configuration.GrpcConfig
   - Virtufin.Api.Configuration.GrpcEndpoint
   - Virtufin.Api.Configuration.JobsConfig
@@ -25,6 +26,13 @@ items:
   assemblies:
   - Virtufin.Api
 references:
+- uid: Virtufin.Api.Configuration.DaprResilienceOptions
+  commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.DaprResilienceOptions.html
+  name: DaprResilienceOptions
+  nameWithType: DaprResilienceOptions
+  fullName: Virtufin.Api.Configuration.DaprResilienceOptions
 - uid: Virtufin.Api.Configuration.ServicesConfigurationExtensions
   commentId: T:Virtufin.Api.Configuration.ServicesConfigurationExtensions
   parent: Virtufin.Api.Configuration
