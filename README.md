@@ -5,7 +5,7 @@
 [![PyPI](https://git.haenerconsulting.com/virtufin/virtufin-api/actions/workflows/pypi/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-api/packages/pypi/virtufin-api)
 [![npm](https://git.haenerconsulting.com/virtufin/virtufin-api/actions/workflows/npm/badge.svg?branch=master)](https://git.haenerconsulting.com/virtufin/virtufin-api/packages/npm/virtufin-api)
 
-📖 Documentation: [api.doc.virtufin.com](https://api.doc.virtufin.com)
+📖 Documentation: [api.docs.virtufin.com](https://api.docs.virtufin.com)
 
 High-performance gRPC API gateway with event streaming, service discovery, and Dapr integration.
 
@@ -120,7 +120,7 @@ virtufin-api/
 │   ├── python/                     # Python client tests
 │   ├── typescript/                 # TypeScript client tests
 │   └── Virtufin.Api.*.Tests/       # .NET integration and unit tests
-├── docs/                           # MkDocs documentation (api.doc.virtufin.com)
+├── docs/                           # MkDocs documentation (api.docs.virtufin.com)
 ├── scripts/                        # Helper scripts
 ├── deploy/                         # Deployment configs
 ├── versions.env                    # API_VERSION and LIBRARY_VERSION pin
