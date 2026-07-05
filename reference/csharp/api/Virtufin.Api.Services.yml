@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
-  id: Virtufin.Api.Services
+  id: Services
+  parent: Virtufin.Api
   children:
   - Virtufin.Api.Services.ConfigService
   - Virtufin.Api.Services.DaprConstants
@@ -48,48 +49,36 @@ references:
   name: DaprConstants
   nameWithType: DaprConstants
   fullName: Virtufin.Api.Services.DaprConstants
-- uid: Virtufin.Api.Services.PubSubTopics
-  commentId: T:Virtufin.Api.Services.PubSubTopics
-  href: Virtufin.Api.Services.PubSubTopics.html
-  name: PubSubTopics
-  nameWithType: PubSubTopics
-  fullName: Virtufin.Api.Services.PubSubTopics
-- uid: Virtufin.Api.Services.StatusStrings
-  commentId: T:Virtufin.Api.Services.StatusStrings
-  href: Virtufin.Api.Services.StatusStrings.html
-  name: StatusStrings
-  nameWithType: StatusStrings
-  fullName: Virtufin.Api.Services.StatusStrings
-- uid: Virtufin.Api.Services.GrpcCallStatusCodes
-  commentId: T:Virtufin.Api.Services.GrpcCallStatusCodes
-  href: Virtufin.Api.Services.GrpcCallStatusCodes.html
-  name: GrpcCallStatusCodes
-  nameWithType: GrpcCallStatusCodes
-  fullName: Virtufin.Api.Services.GrpcCallStatusCodes
-- uid: Virtufin.Api.Services.TimeoutConstants
-  commentId: T:Virtufin.Api.Services.TimeoutConstants
-  href: Virtufin.Api.Services.TimeoutConstants.html
-  name: TimeoutConstants
-  nameWithType: TimeoutConstants
-  fullName: Virtufin.Api.Services.TimeoutConstants
 - uid: Virtufin.Api.Services.DateTimeFormatConstants
   commentId: T:Virtufin.Api.Services.DateTimeFormatConstants
   href: Virtufin.Api.Services.DateTimeFormatConstants.html
   name: DateTimeFormatConstants
   nameWithType: DateTimeFormatConstants
   fullName: Virtufin.Api.Services.DateTimeFormatConstants
-- uid: Virtufin.Api.Services.StateActionConstants
-  commentId: T:Virtufin.Api.Services.StateActionConstants
-  href: Virtufin.Api.Services.StateActionConstants.html
-  name: StateActionConstants
-  nameWithType: StateActionConstants
-  fullName: Virtufin.Api.Services.StateActionConstants
+- uid: Virtufin.Api.Services.FieldSchema
+  commentId: T:Virtufin.Api.Services.FieldSchema
+  href: Virtufin.Api.Services.FieldSchema.html
+  name: FieldSchema
+  nameWithType: FieldSchema
+  fullName: Virtufin.Api.Services.FieldSchema
 - uid: Virtufin.Api.Services.GatewayService
   commentId: T:Virtufin.Api.Services.GatewayService
   href: Virtufin.Api.Services.GatewayService.html
   name: GatewayService
   nameWithType: GatewayService
   fullName: Virtufin.Api.Services.GatewayService
+- uid: Virtufin.Api.Services.GrpcCallResult
+  commentId: T:Virtufin.Api.Services.GrpcCallResult
+  href: Virtufin.Api.Services.GrpcCallResult.html
+  name: GrpcCallResult
+  nameWithType: GrpcCallResult
+  fullName: Virtufin.Api.Services.GrpcCallResult
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes
+  commentId: T:Virtufin.Api.Services.GrpcCallStatusCodes
+  href: Virtufin.Api.Services.GrpcCallStatusCodes.html
+  name: GrpcCallStatusCodes
+  nameWithType: GrpcCallStatusCodes
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes
 - uid: Virtufin.Api.Services.GrpcChannelPool
   commentId: T:Virtufin.Api.Services.GrpcChannelPool
   parent: Virtufin.Api.Services
@@ -104,36 +93,24 @@ references:
   name: GrpcReflectionService
   nameWithType: GrpcReflectionService
   fullName: Virtufin.Api.Services.GrpcReflectionService
-- uid: Virtufin.Api.Services.ServiceMethodInfo
-  commentId: T:Virtufin.Api.Services.ServiceMethodInfo
-  href: Virtufin.Api.Services.ServiceMethodInfo.html
-  name: ServiceMethodInfo
-  nameWithType: ServiceMethodInfo
-  fullName: Virtufin.Api.Services.ServiceMethodInfo
 - uid: Virtufin.Api.Services.MethodSchema
   commentId: T:Virtufin.Api.Services.MethodSchema
   href: Virtufin.Api.Services.MethodSchema.html
   name: MethodSchema
   nameWithType: MethodSchema
   fullName: Virtufin.Api.Services.MethodSchema
-- uid: Virtufin.Api.Services.FieldSchema
-  commentId: T:Virtufin.Api.Services.FieldSchema
-  href: Virtufin.Api.Services.FieldSchema.html
-  name: FieldSchema
-  nameWithType: FieldSchema
-  fullName: Virtufin.Api.Services.FieldSchema
 - uid: Virtufin.Api.Services.OneofCaseSchema
   commentId: T:Virtufin.Api.Services.OneofCaseSchema
   href: Virtufin.Api.Services.OneofCaseSchema.html
   name: OneofCaseSchema
   nameWithType: OneofCaseSchema
   fullName: Virtufin.Api.Services.OneofCaseSchema
-- uid: Virtufin.Api.Services.GrpcCallResult
-  commentId: T:Virtufin.Api.Services.GrpcCallResult
-  href: Virtufin.Api.Services.GrpcCallResult.html
-  name: GrpcCallResult
-  nameWithType: GrpcCallResult
-  fullName: Virtufin.Api.Services.GrpcCallResult
+- uid: Virtufin.Api.Services.PubSubTopics
+  commentId: T:Virtufin.Api.Services.PubSubTopics
+  href: Virtufin.Api.Services.PubSubTopics.html
+  name: PubSubTopics
+  nameWithType: PubSubTopics
+  fullName: Virtufin.Api.Services.PubSubTopics
 - uid: Virtufin.Api.Services.PubsubService
   commentId: T:Virtufin.Api.Services.PubsubService
   href: Virtufin.Api.Services.PubsubService.html
@@ -154,12 +131,30 @@ references:
   name: PubsubSubscriptionManager
   nameWithType: PubsubSubscriptionManager
   fullName: Virtufin.Api.Services.PubsubSubscriptionManager
+- uid: Virtufin.Api.Services.ServiceMethodInfo
+  commentId: T:Virtufin.Api.Services.ServiceMethodInfo
+  href: Virtufin.Api.Services.ServiceMethodInfo.html
+  name: ServiceMethodInfo
+  nameWithType: ServiceMethodInfo
+  fullName: Virtufin.Api.Services.ServiceMethodInfo
+- uid: Virtufin.Api.Services.StateActionConstants
+  commentId: T:Virtufin.Api.Services.StateActionConstants
+  href: Virtufin.Api.Services.StateActionConstants.html
+  name: StateActionConstants
+  nameWithType: StateActionConstants
+  fullName: Virtufin.Api.Services.StateActionConstants
 - uid: Virtufin.Api.Services.StateService
   commentId: T:Virtufin.Api.Services.StateService
   href: Virtufin.Api.Services.StateService.html
   name: StateService
   nameWithType: StateService
   fullName: Virtufin.Api.Services.StateService
+- uid: Virtufin.Api.Services.StatusStrings
+  commentId: T:Virtufin.Api.Services.StatusStrings
+  href: Virtufin.Api.Services.StatusStrings.html
+  name: StatusStrings
+  nameWithType: StatusStrings
+  fullName: Virtufin.Api.Services.StatusStrings
 - uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
   commentId: T:Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
   href: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html
@@ -197,6 +192,12 @@ references:
   - name: " "
   - name: TSubscription
   - name: )
+- uid: Virtufin.Api.Services.TimeoutConstants
+  commentId: T:Virtufin.Api.Services.TimeoutConstants
+  href: Virtufin.Api.Services.TimeoutConstants.html
+  name: TimeoutConstants
+  nameWithType: TimeoutConstants
+  fullName: Virtufin.Api.Services.TimeoutConstants
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
   href: Virtufin.html

@@ -4,6 +4,163 @@ items:
   name: Virtufin.Api
   type: Namespace
   items:
+  - uid: Virtufin.Api.Client
+    name: Client
+    type: Namespace
+    items:
+    - uid: Virtufin.Api.Client.ApiClient
+      name: ApiClient
+      type: Class
+    - uid: Virtufin.Api.Client.ApiEndpoint
+      name: ApiEndpoint
+      type: Class
+    - uid: Virtufin.Api.Client.CloudEvents
+      name: CloudEvents
+      type: Class
+    - uid: Virtufin.Api.Client.GatewayClient
+      name: GatewayClient
+      type: Class
+    - uid: Virtufin.Api.Client.IAsyncStreamEventHandler
+      name: IAsyncStreamEventHandler
+      type: Interface
+    - uid: Virtufin.Api.Client.IStreamEventHandler
+      name: IStreamEventHandler
+      type: Interface
+    - uid: Virtufin.Api.Client.PortConstants
+      name: PortConstants
+      type: Class
+    - uid: Virtufin.Api.Client.ServiceClient
+      name: ServiceClient
+      type: Class
+    - uid: Virtufin.Api.Client.StreamEventHandler
+      name: StreamEventHandler
+      type: Class
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    type: Namespace
+    items:
+    - uid: Virtufin.Api.Configuration.CronJobConfig
+      name: CronJobConfig
+      type: Class
+    - uid: Virtufin.Api.Configuration.DaprResilienceOptions
+      name: DaprResilienceOptions
+      type: Class
+    - uid: Virtufin.Api.Configuration.GrpcConfig
+      name: GrpcConfig
+      type: Class
+    - uid: Virtufin.Api.Configuration.GrpcEndpoint
+      name: GrpcEndpoint
+      type: Class
+    - uid: Virtufin.Api.Configuration.JobsConfig
+      name: JobsConfig
+      type: Class
+    - uid: Virtufin.Api.Configuration.PortConstants
+      name: PortConstants
+      type: Class
+    - uid: Virtufin.Api.Configuration.PubsubConfig
+      name: PubsubConfig
+      type: Class
+    - uid: Virtufin.Api.Configuration.ServiceConfig
+      name: ServiceConfig
+      type: Class
+    - uid: Virtufin.Api.Configuration.ServicesConfiguration
+      name: ServicesConfiguration
+      type: Class
+    - uid: Virtufin.Api.Configuration.ServicesConfigurationExtensions
+      name: ServicesConfigurationExtensions
+      type: Class
+    - uid: Virtufin.Api.Configuration.ServicesConfigurationLoader
+      name: ServicesConfigurationLoader
+      type: Class
+    - uid: Virtufin.Api.Configuration.StateConfig
+      name: StateConfig
+      type: Class
+  - uid: Virtufin.Api.HealthChecks
+    name: HealthChecks
+    type: Namespace
+    items:
+    - uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+      name: DaprCircuitBreakerHealthCheck
+      type: Class
+    - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
+      name: DaprHealthCheck
+      type: Class
+    - uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+      name: DaprResiliencePipeline
+      type: Class
+    - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+      name: GrpcChannelPoolHealthCheck
+      type: Class
+  - uid: Virtufin.Api.Services
+    name: Services
+    type: Namespace
+    items:
+    - uid: Virtufin.Api.Services.ConfigService
+      name: ConfigService
+      type: Class
+    - uid: Virtufin.Api.Services.DaprConstants
+      name: DaprConstants
+      type: Class
+    - uid: Virtufin.Api.Services.DateTimeFormatConstants
+      name: DateTimeFormatConstants
+      type: Class
+    - uid: Virtufin.Api.Services.FieldSchema
+      name: FieldSchema
+      type: Class
+    - uid: Virtufin.Api.Services.GatewayService
+      name: GatewayService
+      type: Class
+    - uid: Virtufin.Api.Services.GrpcCallResult
+      name: GrpcCallResult
+      type: Class
+    - uid: Virtufin.Api.Services.GrpcCallStatusCodes
+      name: GrpcCallStatusCodes
+      type: Class
+    - uid: Virtufin.Api.Services.GrpcChannelPool
+      name: GrpcChannelPool
+      type: Class
+    - uid: Virtufin.Api.Services.GrpcReflectionService
+      name: GrpcReflectionService
+      type: Class
+    - uid: Virtufin.Api.Services.MethodSchema
+      name: MethodSchema
+      type: Class
+    - uid: Virtufin.Api.Services.OneofCaseSchema
+      name: OneofCaseSchema
+      type: Class
+    - uid: Virtufin.Api.Services.PubSubTopics
+      name: PubSubTopics
+      type: Class
+    - uid: Virtufin.Api.Services.PubsubService
+      name: PubsubService
+      type: Class
+    - uid: Virtufin.Api.Services.PubsubSubscription
+      name: PubsubSubscription
+      type: Class
+    - uid: Virtufin.Api.Services.PubsubSubscriptionManager
+      name: PubsubSubscriptionManager
+      type: Class
+    - uid: Virtufin.Api.Services.ServiceMethodInfo
+      name: ServiceMethodInfo
+      type: Class
+    - uid: Virtufin.Api.Services.StateActionConstants
+      name: StateActionConstants
+      type: Class
+    - uid: Virtufin.Api.Services.StateService
+      name: StateService
+      type: Class
+    - uid: Virtufin.Api.Services.StatusStrings
+      name: StatusStrings
+      type: Class
+    - uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
+      name: SubscriptionHealthSweeperHostedService
+      type: Class
+    - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
+      name: SubscriptionManagerBase<TEvent, TSubscription>
+      type: Class
+    - uid: Virtufin.Api.Services.TimeoutConstants
+      name: TimeoutConstants
+      type: Class
   - uid: Virtufin.Api.ApiConstants
     name: ApiConstants
     type: Class
@@ -21,162 +178,5 @@ items:
     type: Class
   - uid: Virtufin.Api.SaveStateEventPayload
     name: SaveStateEventPayload
-    type: Class
-- uid: Virtufin.Api.Client
-  name: Virtufin.Api.Client
-  type: Namespace
-  items:
-  - uid: Virtufin.Api.Client.ApiClient
-    name: ApiClient
-    type: Class
-  - uid: Virtufin.Api.Client.ApiEndpoint
-    name: ApiEndpoint
-    type: Class
-  - uid: Virtufin.Api.Client.CloudEvents
-    name: CloudEvents
-    type: Class
-  - uid: Virtufin.Api.Client.GatewayClient
-    name: GatewayClient
-    type: Class
-  - uid: Virtufin.Api.Client.IAsyncStreamEventHandler
-    name: IAsyncStreamEventHandler
-    type: Interface
-  - uid: Virtufin.Api.Client.IStreamEventHandler
-    name: IStreamEventHandler
-    type: Interface
-  - uid: Virtufin.Api.Client.PortConstants
-    name: PortConstants
-    type: Class
-  - uid: Virtufin.Api.Client.ServiceClient
-    name: ServiceClient
-    type: Class
-  - uid: Virtufin.Api.Client.StreamEventHandler
-    name: StreamEventHandler
-    type: Class
-- uid: Virtufin.Api.Configuration
-  name: Virtufin.Api.Configuration
-  type: Namespace
-  items:
-  - uid: Virtufin.Api.Configuration.CronJobConfig
-    name: CronJobConfig
-    type: Class
-  - uid: Virtufin.Api.Configuration.DaprResilienceOptions
-    name: DaprResilienceOptions
-    type: Class
-  - uid: Virtufin.Api.Configuration.GrpcConfig
-    name: GrpcConfig
-    type: Class
-  - uid: Virtufin.Api.Configuration.GrpcEndpoint
-    name: GrpcEndpoint
-    type: Class
-  - uid: Virtufin.Api.Configuration.JobsConfig
-    name: JobsConfig
-    type: Class
-  - uid: Virtufin.Api.Configuration.PortConstants
-    name: PortConstants
-    type: Class
-  - uid: Virtufin.Api.Configuration.PubsubConfig
-    name: PubsubConfig
-    type: Class
-  - uid: Virtufin.Api.Configuration.ServiceConfig
-    name: ServiceConfig
-    type: Class
-  - uid: Virtufin.Api.Configuration.ServicesConfiguration
-    name: ServicesConfiguration
-    type: Class
-  - uid: Virtufin.Api.Configuration.ServicesConfigurationExtensions
-    name: ServicesConfigurationExtensions
-    type: Class
-  - uid: Virtufin.Api.Configuration.ServicesConfigurationLoader
-    name: ServicesConfigurationLoader
-    type: Class
-  - uid: Virtufin.Api.Configuration.StateConfig
-    name: StateConfig
-    type: Class
-- uid: Virtufin.Api.HealthChecks
-  name: Virtufin.Api.HealthChecks
-  type: Namespace
-  items:
-  - uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-    name: DaprCircuitBreakerHealthCheck
-    type: Class
-  - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
-    name: DaprHealthCheck
-    type: Class
-  - uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-    name: DaprResiliencePipeline
-    type: Class
-  - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
-    name: GrpcChannelPoolHealthCheck
-    type: Class
-- uid: Virtufin.Api.Services
-  name: Virtufin.Api.Services
-  type: Namespace
-  items:
-  - uid: Virtufin.Api.Services.ConfigService
-    name: ConfigService
-    type: Class
-  - uid: Virtufin.Api.Services.DaprConstants
-    name: DaprConstants
-    type: Class
-  - uid: Virtufin.Api.Services.DateTimeFormatConstants
-    name: DateTimeFormatConstants
-    type: Class
-  - uid: Virtufin.Api.Services.FieldSchema
-    name: FieldSchema
-    type: Class
-  - uid: Virtufin.Api.Services.GatewayService
-    name: GatewayService
-    type: Class
-  - uid: Virtufin.Api.Services.GrpcCallResult
-    name: GrpcCallResult
-    type: Class
-  - uid: Virtufin.Api.Services.GrpcCallStatusCodes
-    name: GrpcCallStatusCodes
-    type: Class
-  - uid: Virtufin.Api.Services.GrpcChannelPool
-    name: GrpcChannelPool
-    type: Class
-  - uid: Virtufin.Api.Services.GrpcReflectionService
-    name: GrpcReflectionService
-    type: Class
-  - uid: Virtufin.Api.Services.MethodSchema
-    name: MethodSchema
-    type: Class
-  - uid: Virtufin.Api.Services.OneofCaseSchema
-    name: OneofCaseSchema
-    type: Class
-  - uid: Virtufin.Api.Services.PubSubTopics
-    name: PubSubTopics
-    type: Class
-  - uid: Virtufin.Api.Services.PubsubService
-    name: PubsubService
-    type: Class
-  - uid: Virtufin.Api.Services.PubsubSubscription
-    name: PubsubSubscription
-    type: Class
-  - uid: Virtufin.Api.Services.PubsubSubscriptionManager
-    name: PubsubSubscriptionManager
-    type: Class
-  - uid: Virtufin.Api.Services.ServiceMethodInfo
-    name: ServiceMethodInfo
-    type: Class
-  - uid: Virtufin.Api.Services.StateActionConstants
-    name: StateActionConstants
-    type: Class
-  - uid: Virtufin.Api.Services.StateService
-    name: StateService
-    type: Class
-  - uid: Virtufin.Api.Services.StatusStrings
-    name: StatusStrings
-    type: Class
-  - uid: Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
-    name: SubscriptionHealthSweeperHostedService
-    type: Class
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
-    name: SubscriptionManagerBase<TEvent, TSubscription>
-    type: Class
-  - uid: Virtufin.Api.Services.TimeoutConstants
-    name: TimeoutConstants
     type: Class
 memberLayout: SamePage

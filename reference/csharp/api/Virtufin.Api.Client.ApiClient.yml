@@ -30,7 +30,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ApiClient
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 606
+    startLine: 605
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -72,7 +72,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Host
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 615
+    startLine: 614
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -103,7 +103,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: HttpPort
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 620
+    startLine: 619
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -134,7 +134,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 627
+    startLine: 626
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -172,7 +172,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Gateway
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 639
+    startLine: 638
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -203,7 +203,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 645
+    startLine: 644
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -234,7 +234,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 652
+    startLine: 651
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -272,7 +272,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 661
+    startLine: 660
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -316,7 +316,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Close
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 667
+    startLine: 666
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -344,7 +344,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: CloseAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 675
+    startLine: 674
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -374,7 +374,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 683
+    startLine: 682
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -404,7 +404,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DisposeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 694
+    startLine: 693
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client

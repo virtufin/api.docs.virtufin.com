@@ -11,7 +11,8 @@
           "src": "/workspace/virtufin/virtufin-api/src"
         }
       ],
-      "dest": "api"
+      "dest": "api",
+      "namespaceLayout": "nested"
     }
   ],
   "build": {
@@ -29,8 +30,8 @@
       "_appFooter": "© 2026 Häner Consulting. All Rights Reserved.",
       "_disableContribution": true,
       "_disableAffix": true,
-      "gitCommitHash": "cea4fdd",
-      "gitCommitUrl": "{git_repo_url}/commit/cea4fdd0dc3488b20fd30c243242db365d803a0e",
+      "gitCommitHash": "5af50fc",
+      "gitCommitUrl": "{git_repo_url}/commit/5af50fce980635b2b0ef33268275726e2afd3814",
       "gitBranch": "master"
     }
   }

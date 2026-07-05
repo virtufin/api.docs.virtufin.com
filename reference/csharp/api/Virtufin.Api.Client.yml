@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Api.Client
   commentId: N:Virtufin.Api.Client
-  id: Virtufin.Api.Client
+  id: Client
+  parent: Virtufin.Api
   children:
   - Virtufin.Api.Client.ApiClient
   - Virtufin.Api.Client.ApiEndpoint
@@ -23,32 +24,24 @@ items:
   assemblies:
   - Virtufin.Api.Client
 references:
-- uid: Virtufin.Api.Client.ServiceClient
-  commentId: T:Virtufin.Api.Client.ServiceClient
-  parent: Virtufin.Api.Client
-  href: Virtufin.Api.Client.ServiceClient.html
-  name: ServiceClient
-  nameWithType: ServiceClient
-  fullName: Virtufin.Api.Client.ServiceClient
-- uid: Virtufin.Api.Client.IStreamEventHandler
-  commentId: T:Virtufin.Api.Client.IStreamEventHandler
-  parent: Virtufin.Api.Client
-  href: Virtufin.Api.Client.IStreamEventHandler.html
-  name: IStreamEventHandler
-  nameWithType: IStreamEventHandler
-  fullName: Virtufin.Api.Client.IStreamEventHandler
-- uid: Virtufin.Api.Client.IAsyncStreamEventHandler
-  commentId: T:Virtufin.Api.Client.IAsyncStreamEventHandler
-  href: Virtufin.Api.Client.IAsyncStreamEventHandler.html
-  name: IAsyncStreamEventHandler
-  nameWithType: IAsyncStreamEventHandler
-  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler
-- uid: Virtufin.Api.Client.StreamEventHandler
-  commentId: T:Virtufin.Api.Client.StreamEventHandler
-  href: Virtufin.Api.Client.StreamEventHandler.html
-  name: StreamEventHandler
-  nameWithType: StreamEventHandler
-  fullName: Virtufin.Api.Client.StreamEventHandler
+- uid: Virtufin.Api.Client.ApiClient
+  commentId: T:Virtufin.Api.Client.ApiClient
+  href: Virtufin.Api.Client.ApiClient.html
+  name: ApiClient
+  nameWithType: ApiClient
+  fullName: Virtufin.Api.Client.ApiClient
+- uid: Virtufin.Api.Client.ApiEndpoint
+  commentId: T:Virtufin.Api.Client.ApiEndpoint
+  href: Virtufin.Api.Client.ApiEndpoint.html
+  name: ApiEndpoint
+  nameWithType: ApiEndpoint
+  fullName: Virtufin.Api.Client.ApiEndpoint
+- uid: Virtufin.Api.Client.CloudEvents
+  commentId: T:Virtufin.Api.Client.CloudEvents
+  href: Virtufin.Api.Client.CloudEvents.html
+  name: CloudEvents
+  nameWithType: CloudEvents
+  fullName: Virtufin.Api.Client.CloudEvents
 - uid: Virtufin.Api.Client.GatewayClient
   commentId: T:Virtufin.Api.Client.GatewayClient
   parent: Virtufin.Api.Client
@@ -56,30 +49,38 @@ references:
   name: GatewayClient
   nameWithType: GatewayClient
   fullName: Virtufin.Api.Client.GatewayClient
-- uid: Virtufin.Api.Client.ApiClient
-  commentId: T:Virtufin.Api.Client.ApiClient
-  href: Virtufin.Api.Client.ApiClient.html
-  name: ApiClient
-  nameWithType: ApiClient
-  fullName: Virtufin.Api.Client.ApiClient
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler
+  commentId: T:Virtufin.Api.Client.IAsyncStreamEventHandler
+  href: Virtufin.Api.Client.IAsyncStreamEventHandler.html
+  name: IAsyncStreamEventHandler
+  nameWithType: IAsyncStreamEventHandler
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler
+- uid: Virtufin.Api.Client.IStreamEventHandler
+  commentId: T:Virtufin.Api.Client.IStreamEventHandler
+  parent: Virtufin.Api.Client
+  href: Virtufin.Api.Client.IStreamEventHandler.html
+  name: IStreamEventHandler
+  nameWithType: IStreamEventHandler
+  fullName: Virtufin.Api.Client.IStreamEventHandler
 - uid: Virtufin.Api.Client.PortConstants
   commentId: T:Virtufin.Api.Client.PortConstants
   href: Virtufin.Api.Client.PortConstants.html
   name: PortConstants
   nameWithType: PortConstants
   fullName: Virtufin.Api.Client.PortConstants
-- uid: Virtufin.Api.Client.CloudEvents
-  commentId: T:Virtufin.Api.Client.CloudEvents
-  href: Virtufin.Api.Client.CloudEvents.html
-  name: CloudEvents
-  nameWithType: CloudEvents
-  fullName: Virtufin.Api.Client.CloudEvents
-- uid: Virtufin.Api.Client.ApiEndpoint
-  commentId: T:Virtufin.Api.Client.ApiEndpoint
-  href: Virtufin.Api.Client.ApiEndpoint.html
-  name: ApiEndpoint
-  nameWithType: ApiEndpoint
-  fullName: Virtufin.Api.Client.ApiEndpoint
+- uid: Virtufin.Api.Client.ServiceClient
+  commentId: T:Virtufin.Api.Client.ServiceClient
+  parent: Virtufin.Api.Client
+  href: Virtufin.Api.Client.ServiceClient.html
+  name: ServiceClient
+  nameWithType: ServiceClient
+  fullName: Virtufin.Api.Client.ServiceClient
+- uid: Virtufin.Api.Client.StreamEventHandler
+  commentId: T:Virtufin.Api.Client.StreamEventHandler
+  href: Virtufin.Api.Client.StreamEventHandler.html
+  name: StreamEventHandler
+  nameWithType: StreamEventHandler
+  fullName: Virtufin.Api.Client.StreamEventHandler
 - uid: Virtufin.Api.Client
   commentId: N:Virtufin.Api.Client
   href: Virtufin.html

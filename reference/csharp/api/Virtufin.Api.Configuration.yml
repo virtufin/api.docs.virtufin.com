@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration
-  id: Virtufin.Api.Configuration
+  id: Configuration
+  parent: Virtufin.Api
   children:
   - Virtufin.Api.Configuration.CronJobConfig
   - Virtufin.Api.Configuration.DaprResilienceOptions
@@ -26,6 +27,12 @@ items:
   assemblies:
   - Virtufin.Api
 references:
+- uid: Virtufin.Api.Configuration.CronJobConfig
+  commentId: T:Virtufin.Api.Configuration.CronJobConfig
+  href: Virtufin.Api.Configuration.CronJobConfig.html
+  name: CronJobConfig
+  nameWithType: CronJobConfig
+  fullName: Virtufin.Api.Configuration.CronJobConfig
 - uid: Virtufin.Api.Configuration.DaprResilienceOptions
   commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
   parent: Virtufin.Api.Configuration
@@ -33,27 +40,6 @@ references:
   name: DaprResilienceOptions
   nameWithType: DaprResilienceOptions
   fullName: Virtufin.Api.Configuration.DaprResilienceOptions
-- uid: Virtufin.Api.Configuration.ServicesConfigurationExtensions
-  commentId: T:Virtufin.Api.Configuration.ServicesConfigurationExtensions
-  parent: Virtufin.Api.Configuration
-  href: Virtufin.Api.Configuration.ServicesConfigurationExtensions.html
-  name: ServicesConfigurationExtensions
-  nameWithType: ServicesConfigurationExtensions
-  fullName: Virtufin.Api.Configuration.ServicesConfigurationExtensions
-- uid: Virtufin.Api.Configuration.ServicesConfiguration
-  commentId: T:Virtufin.Api.Configuration.ServicesConfiguration
-  parent: Virtufin.Api.Configuration
-  href: Virtufin.Api.Configuration.ServicesConfiguration.html
-  name: ServicesConfiguration
-  nameWithType: ServicesConfiguration
-  fullName: Virtufin.Api.Configuration.ServicesConfiguration
-- uid: Virtufin.Api.Configuration.ServiceConfig
-  commentId: T:Virtufin.Api.Configuration.ServiceConfig
-  parent: Virtufin.Api.Configuration
-  href: Virtufin.Api.Configuration.ServiceConfig.html
-  name: ServiceConfig
-  nameWithType: ServiceConfig
-  fullName: Virtufin.Api.Configuration.ServiceConfig
 - uid: Virtufin.Api.Configuration.GrpcConfig
   commentId: T:Virtufin.Api.Configuration.GrpcConfig
   parent: Virtufin.Api.Configuration
@@ -67,20 +53,6 @@ references:
   name: GrpcEndpoint
   nameWithType: GrpcEndpoint
   fullName: Virtufin.Api.Configuration.GrpcEndpoint
-- uid: Virtufin.Api.Configuration.PubsubConfig
-  commentId: T:Virtufin.Api.Configuration.PubsubConfig
-  parent: Virtufin.Api.Configuration
-  href: Virtufin.Api.Configuration.PubsubConfig.html
-  name: PubsubConfig
-  nameWithType: PubsubConfig
-  fullName: Virtufin.Api.Configuration.PubsubConfig
-- uid: Virtufin.Api.Configuration.StateConfig
-  commentId: T:Virtufin.Api.Configuration.StateConfig
-  parent: Virtufin.Api.Configuration
-  href: Virtufin.Api.Configuration.StateConfig.html
-  name: StateConfig
-  nameWithType: StateConfig
-  fullName: Virtufin.Api.Configuration.StateConfig
 - uid: Virtufin.Api.Configuration.JobsConfig
   commentId: T:Virtufin.Api.Configuration.JobsConfig
   parent: Virtufin.Api.Configuration
@@ -88,24 +60,53 @@ references:
   name: JobsConfig
   nameWithType: JobsConfig
   fullName: Virtufin.Api.Configuration.JobsConfig
-- uid: Virtufin.Api.Configuration.CronJobConfig
-  commentId: T:Virtufin.Api.Configuration.CronJobConfig
-  href: Virtufin.Api.Configuration.CronJobConfig.html
-  name: CronJobConfig
-  nameWithType: CronJobConfig
-  fullName: Virtufin.Api.Configuration.CronJobConfig
 - uid: Virtufin.Api.Configuration.PortConstants
   commentId: T:Virtufin.Api.Configuration.PortConstants
   href: Virtufin.Api.Configuration.PortConstants.html
   name: PortConstants
   nameWithType: PortConstants
   fullName: Virtufin.Api.Configuration.PortConstants
+- uid: Virtufin.Api.Configuration.PubsubConfig
+  commentId: T:Virtufin.Api.Configuration.PubsubConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.PubsubConfig.html
+  name: PubsubConfig
+  nameWithType: PubsubConfig
+  fullName: Virtufin.Api.Configuration.PubsubConfig
+- uid: Virtufin.Api.Configuration.ServiceConfig
+  commentId: T:Virtufin.Api.Configuration.ServiceConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.ServiceConfig.html
+  name: ServiceConfig
+  nameWithType: ServiceConfig
+  fullName: Virtufin.Api.Configuration.ServiceConfig
+- uid: Virtufin.Api.Configuration.ServicesConfiguration
+  commentId: T:Virtufin.Api.Configuration.ServicesConfiguration
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.ServicesConfiguration.html
+  name: ServicesConfiguration
+  nameWithType: ServicesConfiguration
+  fullName: Virtufin.Api.Configuration.ServicesConfiguration
+- uid: Virtufin.Api.Configuration.ServicesConfigurationExtensions
+  commentId: T:Virtufin.Api.Configuration.ServicesConfigurationExtensions
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.ServicesConfigurationExtensions.html
+  name: ServicesConfigurationExtensions
+  nameWithType: ServicesConfigurationExtensions
+  fullName: Virtufin.Api.Configuration.ServicesConfigurationExtensions
 - uid: Virtufin.Api.Configuration.ServicesConfigurationLoader
   commentId: T:Virtufin.Api.Configuration.ServicesConfigurationLoader
   href: Virtufin.Api.Configuration.ServicesConfigurationLoader.html
   name: ServicesConfigurationLoader
   nameWithType: ServicesConfigurationLoader
   fullName: Virtufin.Api.Configuration.ServicesConfigurationLoader
+- uid: Virtufin.Api.Configuration.StateConfig
+  commentId: T:Virtufin.Api.Configuration.StateConfig
+  parent: Virtufin.Api.Configuration
+  href: Virtufin.Api.Configuration.StateConfig.html
+  name: StateConfig
+  nameWithType: StateConfig
+  fullName: Virtufin.Api.Configuration.StateConfig
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration
   href: Virtufin.html

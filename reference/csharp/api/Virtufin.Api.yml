@@ -5,11 +5,15 @@ items:
   id: Virtufin.Api
   children:
   - Virtufin.Api.ApiConstants
+  - Virtufin.Api.Client
+  - Virtufin.Api.Configuration
   - Virtufin.Api.DeleteStateEventPayload
   - Virtufin.Api.GrpcCallRequest
   - Virtufin.Api.GrpcCallResponse
+  - Virtufin.Api.HealthChecks
   - Virtufin.Api.MethodInfo
   - Virtufin.Api.SaveStateEventPayload
+  - Virtufin.Api.Services
   langs:
   - csharp
   - vb
@@ -20,6 +24,138 @@ items:
   assemblies:
   - Virtufin.Api
 references:
+- uid: Virtufin.Api.Client
+  commentId: N:Virtufin.Api.Client
+  href: Virtufin.html
+  name: Virtufin.Api.Client
+  nameWithType: Virtufin.Api.Client
+  fullName: Virtufin.Api.Client
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Client
+    name: Client
+    href: Virtufin.Api.Client.html
+- uid: Virtufin.Api.Configuration
+  commentId: N:Virtufin.Api.Configuration
+  href: Virtufin.html
+  name: Virtufin.Api.Configuration
+  nameWithType: Virtufin.Api.Configuration
+  fullName: Virtufin.Api.Configuration
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Configuration
+    name: Configuration
+    href: Virtufin.Api.Configuration.html
+- uid: Virtufin.Api.HealthChecks
+  commentId: N:Virtufin.Api.HealthChecks
+  href: Virtufin.html
+  name: Virtufin.Api.HealthChecks
+  nameWithType: Virtufin.Api.HealthChecks
+  fullName: Virtufin.Api.HealthChecks
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.HealthChecks
+    name: HealthChecks
+    href: Virtufin.Api.HealthChecks.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.HealthChecks
+    name: HealthChecks
+    href: Virtufin.Api.HealthChecks.html
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: Virtufin.Api.ApiConstants
+  commentId: T:Virtufin.Api.ApiConstants
+  href: Virtufin.Api.ApiConstants.html
+  name: ApiConstants
+  nameWithType: ApiConstants
+  fullName: Virtufin.Api.ApiConstants
+- uid: Virtufin.Api.DeleteStateEventPayload
+  commentId: T:Virtufin.Api.DeleteStateEventPayload
+  href: Virtufin.Api.DeleteStateEventPayload.html
+  name: DeleteStateEventPayload
+  nameWithType: DeleteStateEventPayload
+  fullName: Virtufin.Api.DeleteStateEventPayload
 - uid: Virtufin.Api.GrpcCallRequest
   commentId: T:Virtufin.Api.GrpcCallRequest
   href: Virtufin.Api.GrpcCallRequest.html
@@ -44,15 +180,3 @@ references:
   name: SaveStateEventPayload
   nameWithType: SaveStateEventPayload
   fullName: Virtufin.Api.SaveStateEventPayload
-- uid: Virtufin.Api.DeleteStateEventPayload
-  commentId: T:Virtufin.Api.DeleteStateEventPayload
-  href: Virtufin.Api.DeleteStateEventPayload.html
-  name: DeleteStateEventPayload
-  nameWithType: DeleteStateEventPayload
-  fullName: Virtufin.Api.DeleteStateEventPayload
-- uid: Virtufin.Api.ApiConstants
-  commentId: T:Virtufin.Api.ApiConstants
-  href: Virtufin.Api.ApiConstants.html
-  name: ApiConstants
-  nameWithType: ApiConstants
-  fullName: Virtufin.Api.ApiConstants

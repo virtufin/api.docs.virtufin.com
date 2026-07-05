@@ -2,7 +2,8 @@
 items:
 - uid: Virtufin.Api.HealthChecks
   commentId: N:Virtufin.Api.HealthChecks
-  id: Virtufin.Api.HealthChecks
+  id: HealthChecks
+  parent: Virtufin.Api
   children:
   - Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   - Virtufin.Api.HealthChecks.DaprHealthCheck
@@ -18,13 +19,6 @@ items:
   assemblies:
   - Virtufin.Api
 references:
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  parent: Virtufin.Api.HealthChecks
-  href: Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
-  name: DaprResiliencePipeline
-  nameWithType: DaprResiliencePipeline
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
 - uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   commentId: T:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   href: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html
@@ -37,6 +31,13 @@ references:
   name: DaprHealthCheck
   nameWithType: DaprHealthCheck
   fullName: Virtufin.Api.HealthChecks.DaprHealthCheck
+- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  parent: Virtufin.Api.HealthChecks
+  href: Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
+  name: DaprResiliencePipeline
+  nameWithType: DaprResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
 - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
   commentId: T:Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
   href: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.html
