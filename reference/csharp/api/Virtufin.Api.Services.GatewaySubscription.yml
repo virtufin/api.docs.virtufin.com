@@ -1,37 +1,35 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.PubsubSubscription
-  commentId: T:Virtufin.Api.Services.PubsubSubscription
-  id: PubsubSubscription
+- uid: Virtufin.Api.Services.GatewaySubscription
+  commentId: T:Virtufin.Api.Services.GatewaySubscription
+  id: GatewaySubscription
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  - Virtufin.Api.Services.PubsubSubscription.AddedAt
-  - Virtufin.Api.Services.PubsubSubscription.Topic
-  - Virtufin.Api.Services.PubsubSubscription.Writer
+  - Virtufin.Api.Services.GatewaySubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
+  - Virtufin.Api.Services.GatewaySubscription.AddedAt
+  - Virtufin.Api.Services.GatewaySubscription.Topic
+  - Virtufin.Api.Services.GatewaySubscription.Writer
   langs:
   - csharp
   - vb
-  name: PubsubSubscription
-  nameWithType: PubsubSubscription
-  fullName: Virtufin.Api.Services.PubsubSubscription
+  name: GatewaySubscription
+  nameWithType: GatewaySubscription
+  fullName: Virtufin.Api.Services.GatewaySubscription
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: PubsubSubscription
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 258
+    id: GatewaySubscription
+    path: ../../../src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
+    startLine: 116
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Represents an active subscription to a pub/sub topic.
-  example: []
   syntax:
-    content: public class PubsubSubscription
-    content.vb: Public Class PubsubSubscription
+    content: public class GatewaySubscription
+    content.vb: Public Class GatewaySubscription
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,54 +40,54 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.PubsubSubscription.Writer
-  commentId: P:Virtufin.Api.Services.PubsubSubscription.Writer
+- uid: Virtufin.Api.Services.GatewaySubscription.Writer
+  commentId: P:Virtufin.Api.Services.GatewaySubscription.Writer
   id: Writer
-  parent: Virtufin.Api.Services.PubsubSubscription
+  parent: Virtufin.Api.Services.GatewaySubscription
   langs:
   - csharp
   - vb
   name: Writer
-  nameWithType: PubsubSubscription.Writer
-  fullName: Virtufin.Api.Services.PubsubSubscription.Writer
+  nameWithType: GatewaySubscription.Writer
+  fullName: Virtufin.Api.Services.GatewaySubscription.Writer
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Writer
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 260
+    path: ../../../src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
+    startLine: 118
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public ChannelWriter<PubsubSubscribeResponse> Writer { get; }
+    content: public ChannelWriter<TopicEventRequest> Writer { get; }
     parameters: []
     return:
-      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-    content.vb: Public ReadOnly Property Writer As ChannelWriter(Of PubsubSubscribeResponse)
-  overload: Virtufin.Api.Services.PubsubSubscription.Writer*
-- uid: Virtufin.Api.Services.PubsubSubscription.Topic
-  commentId: P:Virtufin.Api.Services.PubsubSubscription.Topic
+      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest}
+    content.vb: Public ReadOnly Property Writer As ChannelWriter(Of TopicEventRequest)
+  overload: Virtufin.Api.Services.GatewaySubscription.Writer*
+- uid: Virtufin.Api.Services.GatewaySubscription.Topic
+  commentId: P:Virtufin.Api.Services.GatewaySubscription.Topic
   id: Topic
-  parent: Virtufin.Api.Services.PubsubSubscription
+  parent: Virtufin.Api.Services.GatewaySubscription
   langs:
   - csharp
   - vb
   name: Topic
-  nameWithType: PubsubSubscription.Topic
-  fullName: Virtufin.Api.Services.PubsubSubscription.Topic
+  nameWithType: GatewaySubscription.Topic
+  fullName: Virtufin.Api.Services.GatewaySubscription.Topic
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Topic
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 261
+    path: ../../../src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
+    startLine: 119
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -99,26 +97,26 @@ items:
     return:
       type: System.String
     content.vb: Public ReadOnly Property Topic As String
-  overload: Virtufin.Api.Services.PubsubSubscription.Topic*
-- uid: Virtufin.Api.Services.PubsubSubscription.AddedAt
-  commentId: P:Virtufin.Api.Services.PubsubSubscription.AddedAt
+  overload: Virtufin.Api.Services.GatewaySubscription.Topic*
+- uid: Virtufin.Api.Services.GatewaySubscription.AddedAt
+  commentId: P:Virtufin.Api.Services.GatewaySubscription.AddedAt
   id: AddedAt
-  parent: Virtufin.Api.Services.PubsubSubscription
+  parent: Virtufin.Api.Services.GatewaySubscription
   langs:
   - csharp
   - vb
   name: AddedAt
-  nameWithType: PubsubSubscription.AddedAt
-  fullName: Virtufin.Api.Services.PubsubSubscription.AddedAt
+  nameWithType: GatewaySubscription.AddedAt
+  fullName: Virtufin.Api.Services.GatewaySubscription.AddedAt
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: AddedAt
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 262
+    path: ../../../src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
+    startLine: 120
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -128,41 +126,41 @@ items:
     return:
       type: System.DateTime
     content.vb: Public ReadOnly Property AddedAt As Date
-  overload: Virtufin.Api.Services.PubsubSubscription.AddedAt*
-- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  id: '#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})'
-  parent: Virtufin.Api.Services.PubsubSubscription
+  overload: Virtufin.Api.Services.GatewaySubscription.AddedAt*
+- uid: Virtufin.Api.Services.GatewaySubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
+  commentId: M:Virtufin.Api.Services.GatewaySubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
+  id: '#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})'
+  parent: Virtufin.Api.Services.GatewaySubscription
   langs:
   - csharp
   - vb
-  name: PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
-  nameWithType: PubsubSubscription.PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
-  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
+  name: GatewaySubscription(string, ChannelWriter<TopicEventRequest>)
+  nameWithType: GatewaySubscription.GatewaySubscription(string, ChannelWriter<TopicEventRequest>)
+  fullName: Virtufin.Api.Services.GatewaySubscription.GatewaySubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.TopicEventRequest>)
   type: Constructor
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 264
+    path: ../../../src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
+    startLine: 122
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public PubsubSubscription(string topic, ChannelWriter<PubsubSubscribeResponse> writer)
+    content: public GatewaySubscription(string topic, ChannelWriter<TopicEventRequest> writer)
     parameters:
     - id: topic
       type: System.String
     - id: writer
-      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-    content.vb: Public Sub New(topic As String, writer As ChannelWriter(Of PubsubSubscribeResponse))
-  overload: Virtufin.Api.Services.PubsubSubscription.#ctor*
-  nameWithType.vb: PubsubSubscription.New(String, ChannelWriter(Of PubsubSubscribeResponse))
-  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
-  name.vb: New(String, ChannelWriter(Of PubsubSubscribeResponse))
+      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest}
+    content.vb: Public Sub New(topic As String, writer As ChannelWriter(Of TopicEventRequest))
+  overload: Virtufin.Api.Services.GatewaySubscription.#ctor*
+  nameWithType.vb: GatewaySubscription.New(String, ChannelWriter(Of TopicEventRequest))
+  fullName.vb: Virtufin.Api.Services.GatewaySubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.TopicEventRequest))
+  name.vb: New(String, ChannelWriter(Of TopicEventRequest))
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -431,31 +429,31 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Virtufin.Api.Services.PubsubSubscription.Writer*
-  commentId: Overload:Virtufin.Api.Services.PubsubSubscription.Writer
-  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription_Writer
+- uid: Virtufin.Api.Services.GatewaySubscription.Writer*
+  commentId: Overload:Virtufin.Api.Services.GatewaySubscription.Writer
+  href: Virtufin.Api.Services.GatewaySubscription.html#Virtufin_Api_Services_GatewaySubscription_Writer
   name: Writer
-  nameWithType: PubsubSubscription.Writer
-  fullName: Virtufin.Api.Services.PubsubSubscription.Writer
-- uid: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-  commentId: T:System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+  nameWithType: GatewaySubscription.Writer
+  fullName: Virtufin.Api.Services.GatewaySubscription.Writer
+- uid: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest}
+  commentId: T:System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest}
   parent: System.Threading.Channels
   definition: System.Threading.Channels.ChannelWriter`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
-  name: ChannelWriter<PubsubSubscribeResponse>
-  nameWithType: ChannelWriter<PubsubSubscribeResponse>
-  fullName: System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>
-  nameWithType.vb: ChannelWriter(Of PubsubSubscribeResponse)
-  fullName.vb: System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
-  name.vb: ChannelWriter(Of PubsubSubscribeResponse)
+  name: ChannelWriter<TopicEventRequest>
+  nameWithType: ChannelWriter<TopicEventRequest>
+  fullName: System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.TopicEventRequest>
+  nameWithType.vb: ChannelWriter(Of TopicEventRequest)
+  fullName.vb: System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.TopicEventRequest)
+  name.vb: ChannelWriter(Of TopicEventRequest)
   spec.csharp:
   - uid: System.Threading.Channels.ChannelWriter`1
     name: ChannelWriter
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
   - name: <
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.TopicEventRequest
+    name: TopicEventRequest
   - name: '>'
   spec.vb:
   - uid: System.Threading.Channels.ChannelWriter`1
@@ -465,8 +463,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.TopicEventRequest
+    name: TopicEventRequest
   - name: )
 - uid: System.Threading.Channels.ChannelWriter`1
   commentId: T:System.Threading.Channels.ChannelWriter`1
@@ -533,12 +531,12 @@ references:
     name: Channels
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.channels
-- uid: Virtufin.Api.Services.PubsubSubscription.Topic*
-  commentId: Overload:Virtufin.Api.Services.PubsubSubscription.Topic
-  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription_Topic
+- uid: Virtufin.Api.Services.GatewaySubscription.Topic*
+  commentId: Overload:Virtufin.Api.Services.GatewaySubscription.Topic
+  href: Virtufin.Api.Services.GatewaySubscription.html#Virtufin_Api_Services_GatewaySubscription_Topic
   name: Topic
-  nameWithType: PubsubSubscription.Topic
-  fullName: Virtufin.Api.Services.PubsubSubscription.Topic
+  nameWithType: GatewaySubscription.Topic
+  fullName: Virtufin.Api.Services.GatewaySubscription.Topic
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -550,12 +548,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Virtufin.Api.Services.PubsubSubscription.AddedAt*
-  commentId: Overload:Virtufin.Api.Services.PubsubSubscription.AddedAt
-  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription_AddedAt
+- uid: Virtufin.Api.Services.GatewaySubscription.AddedAt*
+  commentId: Overload:Virtufin.Api.Services.GatewaySubscription.AddedAt
+  href: Virtufin.Api.Services.GatewaySubscription.html#Virtufin_Api_Services_GatewaySubscription_AddedAt
   name: AddedAt
-  nameWithType: PubsubSubscription.AddedAt
-  fullName: Virtufin.Api.Services.PubsubSubscription.AddedAt
+  nameWithType: GatewaySubscription.AddedAt
+  fullName: Virtufin.Api.Services.GatewaySubscription.AddedAt
 - uid: System.DateTime
   commentId: T:System.DateTime
   parent: System
@@ -567,12 +565,12 @@ references:
   nameWithType.vb: Date
   fullName.vb: Date
   name.vb: Date
-- uid: Virtufin.Api.Services.PubsubSubscription.#ctor*
-  commentId: Overload:Virtufin.Api.Services.PubsubSubscription.#ctor
-  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
-  name: PubsubSubscription
-  nameWithType: PubsubSubscription.PubsubSubscription
-  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription
-  nameWithType.vb: PubsubSubscription.New
-  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New
+- uid: Virtufin.Api.Services.GatewaySubscription.#ctor*
+  commentId: Overload:Virtufin.Api.Services.GatewaySubscription.#ctor
+  href: Virtufin.Api.Services.GatewaySubscription.html#Virtufin_Api_Services_GatewaySubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_TopicEventRequest__
+  name: GatewaySubscription
+  nameWithType: GatewaySubscription.GatewaySubscription
+  fullName: Virtufin.Api.Services.GatewaySubscription.GatewaySubscription
+  nameWithType.vb: GatewaySubscription.New
+  fullName.vb: Virtufin.Api.Services.GatewaySubscription.New
   name.vb: New

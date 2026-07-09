@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GatewaySubscriptionManager | Virtufin API - C# Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GatewaySubscriptionManager | Virtufin API - C# Reference ">
+      
+      <meta name="description" content="In-process broadcast broker for the Gateway.Subscribe RPC. One broker per topic; multiple gRPC callers on the same topic all receive every message via .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Api">
+            Virtufin.Api
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/759542ebfa95378bb5e621aa291dd30b404ee6e5" target="_blank" rel="noopener" class="commit-badge" title="View commit 759542ebfa95378bb5e621aa291dd30b404ee6e5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">759542ebfa95378bb5e621aa291dd30b404ee6e5</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Api.Services.GatewaySubscriptionManager">
+
+
+
+  <h1 id="Virtufin_Api_Services_GatewaySubscriptionManager" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager" class="text-break">
+Class GatewaySubscriptionManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>In-process broadcast broker for the <code>Gateway.Subscribe</code> RPC.
+One broker per topic; multiple gRPC callers on the same topic all
+receive every message via <a class="xref" href="Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_BroadcastToTopicAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Byte___System_String_System_String_System_String_">BroadcastToTopicAsync(string, string, string, string, string, string, byte[], string, string, string)</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GatewaySubscriptionManager : SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html">SubscriptionManagerBase</a>&lt;<span class="xref">TopicEventRequest</span>, <a class="xref" href="Virtufin.Api.Services.GatewaySubscription.html">GatewaySubscription</a>&gt;</div>
+      <div><span class="xref">GatewaySubscriptionManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2__subscriptions">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;._subscriptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2__logger">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;._logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionKey__1_">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;.GetSubscriptionKey(GatewaySubscription)</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetIdleTimeout__1_">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;.GetIdleTimeout(GatewaySubscription)</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_SendEventAsync__1__0_System_Threading_CancellationToken_">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;.SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Subscribe__1_">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;.Subscribe(GatewaySubscription)</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Unsubscribe_System_String_System_String_">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;.Unsubscribe(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_BroadcastAsync_System_String__0_System_Threading_CancellationToken_">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;.BroadcastAsync(string, TopicEventRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionCount_System_String_">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;.GetSubscriptionCount(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetTotalSubscriptionCount">SubscriptionManagerBase&lt;TopicEventRequest, GatewaySubscription&gt;.GetTotalSubscriptionCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Virtufin_Api_Services_GatewaySubscriptionManager_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Per the Pub/Sub Topics spec §Subscription Implementation Pattern:
+one Dapr subscription per topic per API process (managed by
+<a class="xref" href="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html">TopicDaprSubscriptionRegistry</a>); this class fans out
+to multiple in-process gRPC callers. The caller-side envelope is
+<code>TopicEventRequest</code> (parsed CloudEvent v1.0 fields), in
+contrast to <a class="xref" href="Virtufin.Api.Services.PubsubSubscriptionManager.html">PubsubSubscriptionManager</a> which uses the
+flat pub/sub <code>PubsubSubscribeResponse</code> envelope.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_Api_Services_GatewaySubscriptionManager__ctor_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.#ctor*"></a>
+
+  <h3 id="Virtufin_Api_Services_GatewaySubscriptionManager__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewaySubscriptionManager__" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewaySubscriptionManager})">
+  GatewaySubscriptionManager(ILogger&lt;GatewaySubscriptionManager&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GatewaySubscriptionManager(ILogger&lt;GatewaySubscriptionManager&gt; logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.GatewaySubscriptionManager.html">GatewaySubscriptionManager</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Api_Services_GatewaySubscriptionManager_BroadcastToTopicAsync_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.BroadcastToTopicAsync*"></a>
+
+  <h3 id="Virtufin_Api_Services_GatewaySubscriptionManager_BroadcastToTopicAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Byte___System_String_System_String_System_String_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.BroadcastToTopicAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Byte[],System.String,System.String,System.String)">
+  BroadcastToTopicAsync(string, string, string, string, string, string, byte[], string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Broadcasts a parsed CloudEvent envelope to all in-process
+gRPC subscribers on the topic. The Dapr message handler in
+<code>GatewayService.Subscribe</code> calls this once per received
+Dapr message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BroadcastToTopicAsync(string topic, string id, string source, string type, string specVersion, string dataContentType, byte[] data, string pubsubTopic, string pubsubName, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>specVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>dataContentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>pubsubTopic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pubsubName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_GatewaySubscriptionManager_GetIdleTimeout_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.GetIdleTimeout*"></a>
+
+  <h3 id="Virtufin_Api_Services_GatewaySubscriptionManager_GetIdleTimeout_Virtufin_Api_Services_GatewaySubscription_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)">
+  GetIdleTimeout(GatewaySubscription)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the idle timeout for a subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override TimeSpan GetIdleTimeout(GatewaySubscription subscription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subscription</code> <a class="xref" href="Virtufin.Api.Services.GatewaySubscription.html">GatewaySubscription</a></dt>
+    <dd><p>The subscription to get the timeout for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><p>The idle timeout duration.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_GatewaySubscriptionManager_GetSubscriptionKey_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.GetSubscriptionKey*"></a>
+
+  <h3 id="Virtufin_Api_Services_GatewaySubscriptionManager_GetSubscriptionKey_Virtufin_Api_Services_GatewaySubscription_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)">
+  GetSubscriptionKey(GatewaySubscription)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the subscription key for a subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetSubscriptionKey(GatewaySubscription subscription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subscription</code> <a class="xref" href="Virtufin.Api.Services.GatewaySubscription.html">GatewaySubscription</a></dt>
+    <dd><p>The subscription to get the key for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The subscription key string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_GatewaySubscriptionManager_SendEventAsync_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync*"></a>
+
+  <h3 id="Virtufin_Api_Services_GatewaySubscriptionManager_SendEventAsync_Virtufin_Api_Services_GatewaySubscription_Virtufin_Api_Protos_TopicEventRequest_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)">
+  SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends an event to a subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task SendEventAsync(GatewaySubscription subscription, TopicEventRequest evt, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subscription</code> <a class="xref" href="Virtufin.Api.Services.GatewaySubscription.html">GatewaySubscription</a></dt>
+    <dd><p>The subscription to send to.</p>
+</dd>
+    <dt><code>evt</code> <span class="xref">TopicEventRequest</span></dt>
+    <dd><p>The event to send.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_GatewaySubscriptionManager_Subscribe_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe*"></a>
+
+  <h3 id="Virtufin_Api_Services_GatewaySubscriptionManager_Subscribe_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_TopicEventRequest__" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})">
+  Subscribe(string, ChannelWriter&lt;TopicEventRequest&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subscribes to a topic. Returns a unique subscription ID. Each
+ID is a fresh GUID; pass it back to <a class="xref" href="Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_UnsubscribeById_System_String_">UnsubscribeById(string)</a>
+when the gRPC call ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Subscribe(string topic, ChannelWriter&lt;TopicEventRequest&gt; writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1">ChannelWriter</a>&lt;<span class="xref">TopicEventRequest</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_GatewaySubscriptionManager_UnsubscribeById_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.UnsubscribeById*"></a>
+
+  <h3 id="Virtufin_Api_Services_GatewaySubscriptionManager_UnsubscribeById_System_String_" data-uid="Virtufin.Api.Services.GatewaySubscriptionManager.UnsubscribeById(System.String)">
+  UnsubscribeById(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a subscription by its ID. Iterates all topics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnsubscribeById(string subscriptionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subscriptionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

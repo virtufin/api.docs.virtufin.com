@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class MethodSchema | Virtufin API - C# Reference </title>
+      <title>Class TopicDaprSubscriptionRegistry.SubscriptionHandle | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class MethodSchema | Virtufin API - C# Reference ">
+      <meta name="title" content="Class TopicDaprSubscriptionRegistry.SubscriptionHandle | Virtufin API - C# Reference ">
       
-      <meta name="description" content="Describes the schema of a gRPC method&#39;s input or output type.">
+      <meta name="description" content="Per-caller handle. Disposing releases the caller&#39;s reference.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.MethodSchema">
+        <article data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle">
 
 
 
-  <h1 id="Virtufin_Api_Services_MethodSchema" data-uid="Virtufin.Api.Services.MethodSchema" class="text-break">
-Class MethodSchema  
+  <h1 id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry_SubscriptionHandle" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle" class="text-break">
+Class TopicDaprSubscriptionRegistry.SubscriptionHandle  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,12 +101,12 @@ Class MethodSchema
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Describes the schema of a gRPC method's input or output type.</p>
+  <div class="markdown summary"><p>Per-caller handle. Disposing releases the caller's reference.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MethodSchema</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class TopicDaprSubscriptionRegistry.SubscriptionHandle</code></pre>
   </div>
 
 
@@ -116,7 +116,7 @@ Class MethodSchema
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">MethodSchema</span></div>
+      <div><span class="xref">TopicDaprSubscriptionRegistry.SubscriptionHandle</span></div>
     </dd>
   </dl>
 
@@ -138,9 +138,6 @@ Class MethodSchema
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -153,14 +150,14 @@ Class MethodSchema
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="Virtufin_Api_Services_MethodSchema_Fields_" data-uid="Virtufin.Api.Services.MethodSchema.Fields*"></a>
+  <a id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry_SubscriptionHandle_DisposeAsync_" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.DisposeAsync*"></a>
 
-  <h3 id="Virtufin_Api_Services_MethodSchema_Fields" data-uid="Virtufin.Api.Services.MethodSchema.Fields">
-  Fields
+  <h3 id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry_SubscriptionHandle_DisposeAsync" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.DisposeAsync">
+  DisposeAsync()
   
   </h3>
 
@@ -168,111 +165,18 @@ Class MethodSchema
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;FieldSchema&gt; Fields { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
   </div>
 
 
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Virtufin.Api.Services.FieldSchema.html">FieldSchema</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
     <dd></dd>
   </dl>
 
 
 
-
-
-
-
-
-  <a id="Virtufin_Api_Services_MethodSchema_InputTypeName_" data-uid="Virtufin.Api.Services.MethodSchema.InputTypeName*"></a>
-
-  <h3 id="Virtufin_Api_Services_MethodSchema_InputTypeName" data-uid="Virtufin.Api.Services.MethodSchema.InputTypeName">
-  InputTypeName
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string InputTypeName { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_MethodSchema_OutputTypeName_" data-uid="Virtufin.Api.Services.MethodSchema.OutputTypeName*"></a>
-
-  <h3 id="Virtufin_Api_Services_MethodSchema_OutputTypeName" data-uid="Virtufin.Api.Services.MethodSchema.OutputTypeName">
-  OutputTypeName
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string OutputTypeName { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_MethodSchema_SchemaType_" data-uid="Virtufin.Api.Services.MethodSchema.SchemaType*"></a>
-
-  <h3 id="Virtufin_Api_Services_MethodSchema_SchemaType" data-uid="Virtufin.Api.Services.MethodSchema.SchemaType">
-  SchemaType
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SchemaType { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

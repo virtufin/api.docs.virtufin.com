@@ -628,7 +628,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishWithResultAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 442
+    startLine: 457
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -636,6 +636,31 @@ items:
     Publishes to a topic and waits for a correlated response on a reply topic.
 
     Implements the request-reply pattern over pub/sub using correlation IDs.
+  remarks: >-
+    Resource pressure: each call opens a short-lived (up to <code class="paramref">timeout</code>
+
+    or 30 s default) gRPC <code>Pubsub.Subscribe</code> stream on <code class="paramref">replyTopic</code>,
+
+    held until the correlated response arrives or the timeout/cancellation fires. The
+
+    server side keeps a matching Dapr subscription per topic per API process, so the
+
+    cost of <code>PublishWithResultAsync</code> is one short-lived in-process subscriber per
+
+    call (a few hundred bytes). The dead-subscription reaper
+
+    (<code>SubscriptionHealthSweeperHostedService</code>) cleans up subscribers that
+
+    don't respond to heartbeats within 60 s.
+
+
+    Under high call rates this can produce many transient gRPC streams. If you
+
+    need sustained request-reply traffic at high frequency, prefer a single
+
+    long-lived <code>Pubsub.Subscribe</code> stream and route responses yourself via
+
+    the <code>correlationid</code> metadata.
   example: []
   syntax:
     content: public Task<PubsubSubscribeResponse> PublishWithResultAsync(string topic, byte[] data, string replyTopic, TimeSpan? timeout = null, Dictionary<string, string>? metadata = null, string? correlationId = null, CancellationToken cancellationToken = default)
@@ -691,7 +716,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 514
+    startLine: 529
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -738,7 +763,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 537
+    startLine: 552
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -788,7 +813,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 595
+    startLine: 610
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client

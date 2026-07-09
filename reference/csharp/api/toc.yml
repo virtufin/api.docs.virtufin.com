@@ -110,6 +110,12 @@ items:
     - uid: Virtufin.Api.Services.GatewayService
       name: GatewayService
       type: Class
+    - uid: Virtufin.Api.Services.GatewaySubscription
+      name: GatewaySubscription
+      type: Class
+    - uid: Virtufin.Api.Services.GatewaySubscriptionManager
+      name: GatewaySubscriptionManager
+      type: Class
     - uid: Virtufin.Api.Services.GrpcCallResult
       name: GrpcCallResult
       type: Class
@@ -160,6 +166,12 @@ items:
       type: Class
     - uid: Virtufin.Api.Services.TimeoutConstants
       name: TimeoutConstants
+      type: Class
+    - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+      name: TopicDaprSubscriptionRegistry
+      type: Class
+    - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
+      name: TopicDaprSubscriptionRegistry.SubscriptionHandle
       type: Class
   - uid: Virtufin.Api.ApiConstants
     name: ApiConstants

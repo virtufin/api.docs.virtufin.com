@@ -5,7 +5,7 @@ items:
   id: GatewayService
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  - Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline,Virtufin.Api.Services.TopicDaprSubscriptionRegistry,Virtufin.Api.Services.GatewaySubscriptionManager)
   - Virtufin.Api.Services.GatewayService.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)
@@ -49,16 +49,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  id: '#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline)'
+- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline,Virtufin.Api.Services.TopicDaprSubscriptionRegistry,Virtufin.Api.Services.GatewaySubscriptionManager)
+  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline,Virtufin.Api.Services.TopicDaprSubscriptionRegistry,Virtufin.Api.Services.GatewaySubscriptionManager)
+  id: '#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline,Virtufin.Api.Services.TopicDaprSubscriptionRegistry,Virtufin.Api.Services.GatewaySubscriptionManager)'
   parent: Virtufin.Api.Services.GatewayService
   langs:
   - csharp
   - vb
-  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient, DaprResiliencePipeline)
-  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient, DaprResiliencePipeline)
-  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient, DaprResiliencePipeline, TopicDaprSubscriptionRegistry, GatewaySubscriptionManager)
+  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprPublishSubscribeClient, DaprResiliencePipeline, TopicDaprSubscriptionRegistry, GatewaySubscriptionManager)
+  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.HealthChecks.DaprResiliencePipeline, Virtufin.Api.Services.TopicDaprSubscriptionRegistry, Virtufin.Api.Services.GatewaySubscriptionManager)
   type: Constructor
   source:
     remote:
@@ -67,14 +67,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 32
+    startLine: 36
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   summary: Creates a new GatewayService instance.
   example: []
   syntax:
-    content: public GatewayService(GrpcReflectionService reflectionService, ServicesConfiguration config, ILogger<GatewayService> logger, DaprPublishSubscribeClient pubsubClient, DaprResiliencePipeline resilience)
+    content: public GatewayService(GrpcReflectionService reflectionService, ServicesConfiguration config, ILogger<GatewayService> logger, DaprPublishSubscribeClient pubsubClient, DaprResiliencePipeline resilience, TopicDaprSubscriptionRegistry registry, GatewaySubscriptionManager subscriptionManager)
     parameters:
     - id: reflectionService
       type: Virtufin.Api.Services.GrpcReflectionService
@@ -84,18 +84,24 @@ items:
       description: The services configuration containing registered services.
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService}
-      description: The logger for recording service operations.
+      description: The logger for recording service events.
     - id: pubsubClient
       type: Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient
       description: The Dapr pub/sub client for event streaming.
     - id: resilience
       type: Virtufin.Api.HealthChecks.DaprResiliencePipeline
       description: The Dapr resilience pipeline for wrapping gateway invocations.
-    content.vb: Public Sub New(reflectionService As GrpcReflectionService, config As ServicesConfiguration, logger As ILogger(Of GatewayService), pubsubClient As DaprPublishSubscribeClient, resilience As DaprResiliencePipeline)
+    - id: registry
+      type: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+      description: The per-topic Dapr subscription registry (shared with PubsubService).
+    - id: subscriptionManager
+      type: Virtufin.Api.Services.GatewaySubscriptionManager
+      description: The in-process fan-out broker for gateway subscribers.
+    content.vb: Public Sub New(reflectionService As GrpcReflectionService, config As ServicesConfiguration, logger As ILogger(Of GatewayService), pubsubClient As DaprPublishSubscribeClient, resilience As DaprResiliencePipeline, registry As TopicDaprSubscriptionRegistry, subscriptionManager As GatewaySubscriptionManager)
   overload: Virtufin.Api.Services.GatewayService.#ctor*
-  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient, DaprResiliencePipeline)
-  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient, DaprResiliencePipeline)
+  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient, DaprResiliencePipeline, TopicDaprSubscriptionRegistry, GatewaySubscriptionManager)
+  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient, Virtufin.Api.HealthChecks.DaprResiliencePipeline, Virtufin.Api.Services.TopicDaprSubscriptionRegistry, Virtufin.Api.Services.GatewaySubscriptionManager)
+  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprPublishSubscribeClient, DaprResiliencePipeline, TopicDaprSubscriptionRegistry, GatewaySubscriptionManager)
 - uid: Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   id: Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
@@ -114,7 +120,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Invoke
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 110
+    startLine: 118
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -153,7 +159,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeJson
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 158
+    startLine: 166
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -195,7 +201,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServices
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 205
+    startLine: 213
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -234,7 +240,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethods
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 229
+    startLine: 237
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -273,7 +279,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 269
+    startLine: 281
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -281,22 +287,33 @@ items:
     Subscribes to events from specified services and topics.
 
     Returns a stream of TopicEventRequest messages.
+
+
+    Per the Pub/Sub Topics spec §Subscription Implementation Pattern:
+
+    one Dapr subscription per topic per API process, with in-process
+
+    fan-out to every gRPC caller on the topic. Two callers on the
+
+    same topic share one Dapr subscription; the message is broadcast
+
+    to both. (Previously each gRPC call opened its own Dapr
+
+    subscription, which silently load-balanced messages across
+
+    callers instead of broadcasting.)
   example: []
   syntax:
     content: public override Task Subscribe(SubscribeRequest request, IServerStreamWriter<TopicEventRequest> responseStream, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.SubscribeRequest
-      description: The subscribe request containing service, topic, and event type filters.
     - id: responseStream
       type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest}
-      description: The stream writer for sending events to the client.
     - id: context
       type: Grpc.Core.ServerCallContext
-      description: The server call context.
     return:
       type: System.Threading.Tasks.Task
-      description: A task that completes when the subscription is cancelled.
     content.vb: Public Overrides Function Subscribe(request As SubscribeRequest, responseStream As IServerStreamWriter(Of TopicEventRequest), context As ServerCallContext) As Task
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.Subscribe*
@@ -321,7 +338,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodSchema
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 366
+    startLine: 370
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -653,7 +670,7 @@ references:
     name: Protos
 - uid: Virtufin.Api.Services.GatewayService.#ctor*
   commentId: Overload:Virtufin.Api.Services.GatewayService.#ctor
-  href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_Virtufin_Api_HealthChecks_DaprResiliencePipeline_
+  href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Dapr_Messaging_PublishSubscribe_DaprPublishSubscribeClient_Virtufin_Api_HealthChecks_DaprResiliencePipeline_Virtufin_Api_Services_TopicDaprSubscriptionRegistry_Virtufin_Api_Services_GatewaySubscriptionManager_
   name: GatewayService
   nameWithType: GatewayService.GatewayService
   fullName: Virtufin.Api.Services.GatewayService.GatewayService
@@ -721,6 +738,20 @@ references:
   name: DaprResiliencePipeline
   nameWithType: DaprResiliencePipeline
   fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  commentId: T:Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  name: TopicDaprSubscriptionRegistry
+  nameWithType: TopicDaprSubscriptionRegistry
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+- uid: Virtufin.Api.Services.GatewaySubscriptionManager
+  commentId: T:Virtufin.Api.Services.GatewaySubscriptionManager
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.GatewaySubscriptionManager.html
+  name: GatewaySubscriptionManager
+  nameWithType: GatewaySubscriptionManager
+  fullName: Virtufin.Api.Services.GatewaySubscriptionManager
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration
   href: Virtufin.html

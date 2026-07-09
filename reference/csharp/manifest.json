@@ -550,6 +550,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.GatewaySubscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.GatewaySubscription.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.GatewaySubscription",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.GatewaySubscriptionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.GatewaySubscriptionManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.GatewaySubscriptionManager",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.GatewaySubscriptionManager.yml\" sourcestartlinenumber=\"1\">In-process broadcast broker for the <code>Gateway.Subscribe</code> RPC.\nOne broker per topic; multiple gRPC callers on the same topic all\nreceive every message via <xref href=\"Virtufin.Api.Services.GatewaySubscriptionManager.BroadcastToTopicAsync(System.String%2cSystem.String%2cSystem.String%2cSystem.String%2cSystem.String%2cSystem.String%2cSystem.Byte%5b%5d%2cSystem.String%2cSystem.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Services.GrpcCallResult.yml",
       "output": {
         ".html": {
@@ -785,6 +813,34 @@
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.TimeoutConstants",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.yml\" sourcestartlinenumber=\"1\">Per-caller handle. Disposing releases the caller's reference.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.TopicDaprSubscriptionRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.TopicDaprSubscriptionRegistry",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.TopicDaprSubscriptionRegistry.yml\" sourcestartlinenumber=\"1\">Manages one Dapr pubsub subscription per topic per API process,\nwith a reference count of in-process gRPC callers sharing it.</p>\n<p sourcefile=\"api/Virtufin.Api.Services.TopicDaprSubscriptionRegistry.yml\" sourcestartlinenumber=\"4\">Per the Pub/Sub Topics spec §Subscription Implementation Pattern:\none Dapr subscription per topic per service process — NOT one per\ngRPC call. Per-call Dapr subscriptions would cause the same event\nto be load-balanced across callers instead of broadcast to each.</p>\n"
     },
     {
       "type": "ManagedReference",

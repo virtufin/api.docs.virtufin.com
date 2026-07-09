@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class GrpcChannelPool | Virtufin API - C# Reference </title>
+      <title>Class TopicDaprSubscriptionRegistry | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class GrpcChannelPool | Virtufin API - C# Reference ">
+      <meta name="title" content="Class TopicDaprSubscriptionRegistry | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="Manages one Dapr pubsub subscription per topic per API process, with a reference count of in-process gRPC callers sharing it. Per the Pub/Sub Topics spec &#167;Subscription Implementation Pattern: one Dapr subscription per topic per service process — NOT one per gRPC call. Per-call Dapr subscriptions would cause the same event to be load-balanced across callers instead of broadcast to each.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.GrpcChannelPool">
+        <article data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry">
 
 
 
-  <h1 id="Virtufin_Api_Services_GrpcChannelPool" data-uid="Virtufin.Api.Services.GrpcChannelPool" class="text-break">
-Class GrpcChannelPool  
+  <h1 id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry" class="text-break">
+Class TopicDaprSubscriptionRegistry  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,11 +101,17 @@ Class GrpcChannelPool
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Manages one Dapr pubsub subscription per topic per API process,
+with a reference count of in-process gRPC callers sharing it.</p>
+<p>Per the Pub/Sub Topics spec §Subscription Implementation Pattern:
+one Dapr subscription per topic per service process — NOT one per
+gRPC call. Per-call Dapr subscriptions would cause the same event
+to be load-balanced across callers instead of broadcast to each.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GrpcChannelPool : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class TopicDaprSubscriptionRegistry : IAsyncDisposable</code></pre>
   </div>
 
 
@@ -115,14 +121,14 @@ Class GrpcChannelPool
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">GrpcChannelPool</span></div>
+      <div><span class="xref">TopicDaprSubscriptionRegistry</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     </dd>
   </dl>
 
@@ -143,9 +149,6 @@ Class GrpcChannelPool
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -162,10 +165,10 @@ Class GrpcChannelPool
 </h2>
 
 
-  <a id="Virtufin_Api_Services_GrpcChannelPool__ctor_" data-uid="Virtufin.Api.Services.GrpcChannelPool.#ctor*"></a>
+  <a id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry__ctor_" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.#ctor*"></a>
 
-  <h3 id="Virtufin_Api_Services_GrpcChannelPool__ctor_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GrpcChannelPool__" data-uid="Virtufin.Api.Services.GrpcChannelPool.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcChannelPool})">
-  GrpcChannelPool(ServicesConfiguration, ILogger&lt;GrpcChannelPool&gt;)
+  <h3 id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry__ctor_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_TopicDaprSubscriptionRegistry__" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TopicDaprSubscriptionRegistry})">
+  TopicDaprSubscriptionRegistry(IServiceProvider, ILogger&lt;TopicDaprSubscriptionRegistry&gt;)
   
   </h3>
 
@@ -173,86 +176,20 @@ Class GrpcChannelPool
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GrpcChannelPool(ServicesConfiguration config, ILogger&lt;GrpcChannelPool&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public TopicDaprSubscriptionRegistry(IServiceProvider serviceProvider, ILogger&lt;TopicDaprSubscriptionRegistry&gt; logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>config</code> <a class="xref" href="Virtufin.Api.Configuration.ServicesConfiguration.html">ServicesConfiguration</a></dt>
+    <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
     <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.GrpcChannelPool.html">GrpcChannelPool</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="Virtufin_Api_Services_GrpcChannelPool_ChannelCount_" data-uid="Virtufin.Api.Services.GrpcChannelPool.ChannelCount*"></a>
-
-  <h3 id="Virtufin_Api_Services_GrpcChannelPool_ChannelCount" data-uid="Virtufin.Api.Services.GrpcChannelPool.ChannelCount">
-  ChannelCount
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ChannelCount { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html">TopicDaprSubscriptionRegistry</a>&gt;</dt>
     <dd></dd>
   </dl>
 
 
 
 
-
-
-
-
-  <a id="Virtufin_Api_Services_GrpcChannelPool_ConfiguredServiceCount_" data-uid="Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount*"></a>
-
-  <h3 id="Virtufin_Api_Services_GrpcChannelPool_ConfiguredServiceCount" data-uid="Virtufin.Api.Services.GrpcChannelPool.ConfiguredServiceCount">
-  ConfiguredServiceCount
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ConfiguredServiceCount { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -265,57 +202,74 @@ Class GrpcChannelPool
 </h2>
 
 
-  <a id="Virtufin_Api_Services_GrpcChannelPool_Dispose_" data-uid="Virtufin.Api.Services.GrpcChannelPool.Dispose*"></a>
+  <a id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry_AcquireAsync_" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync*"></a>
 
-  <h3 id="Virtufin_Api_Services_GrpcChannelPool_Dispose" data-uid="Virtufin.Api.Services.GrpcChannelPool.Dispose">
-  Dispose()
+  <h3 id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry_AcquireAsync_System_String_System_Func_Dapr_Messaging_PublishSubscribe_TopicMessage_System_Threading_CancellationToken_System_Threading_Tasks_Task_Dapr_Messaging_PublishSubscribe_TopicResponseAction___System_Action_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync(System.String,System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}},System.Action,System.Threading.CancellationToken)">
+  AcquireAsync(string, Func&lt;TopicMessage, CancellationToken, Task&lt;TopicResponseAction&gt;&gt;, Action, CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+  <div class="markdown level1 summary"><p>Returns a handle backed by either an existing Dapr subscription for
+the topic (refcount +1) or a freshly opened one. Disposing the handle
+releases the reference; when the last reference is released, the
+Dapr subscription is torn down.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_GrpcChannelPool_GetChannelAsync_" data-uid="Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync*"></a>
-
-  <h3 id="Virtufin_Api_Services_GrpcChannelPool_GetChannelAsync_System_String_" data-uid="Virtufin.Api.Services.GrpcChannelPool.GetChannelAsync(System.String)">
-  GetChannelAsync(string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;GrpcChannel&gt; GetChannelAsync(string serviceName)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TopicDaprSubscriptionRegistry.SubscriptionHandle&gt; AcquireAsync(string topic, Func&lt;TopicMessage, CancellationToken, Task&lt;TopicResponseAction&gt;&gt; onMessage, Action onActive, CancellationToken ct)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>serviceName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span class="xref">TopicMessage</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">TopicResponseAction</span>&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>onActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Net.Client/GrpcChannel.cs">GrpcChannel</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html">TopicDaprSubscriptionRegistry</a>.<a class="xref" href="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.html">SubscriptionHandle</a>&gt;</dt>
     <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry_DisposeAsync_" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync*"></a>
+
+  <h3 id="Virtufin_Api_Services_TopicDaprSubscriptionRegistry_DisposeAsync" data-uid="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync">
+  DisposeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or
+resetting unmanaged resources asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd><p>A task that represents the asynchronous dispose operation.</p>
+</dd>
   </dl>
 
 

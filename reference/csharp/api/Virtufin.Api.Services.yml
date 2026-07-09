@@ -10,6 +10,8 @@ items:
   - Virtufin.Api.Services.DateTimeFormatConstants
   - Virtufin.Api.Services.FieldSchema
   - Virtufin.Api.Services.GatewayService
+  - Virtufin.Api.Services.GatewaySubscription
+  - Virtufin.Api.Services.GatewaySubscriptionManager
   - Virtufin.Api.Services.GrpcCallResult
   - Virtufin.Api.Services.GrpcCallStatusCodes
   - Virtufin.Api.Services.GrpcChannelPool
@@ -27,6 +29,8 @@ items:
   - Virtufin.Api.Services.SubscriptionHealthSweeperHostedService
   - Virtufin.Api.Services.SubscriptionManagerBase`2
   - Virtufin.Api.Services.TimeoutConstants
+  - Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  - Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
   langs:
   - csharp
   - vb
@@ -67,6 +71,20 @@ references:
   name: GatewayService
   nameWithType: GatewayService
   fullName: Virtufin.Api.Services.GatewayService
+- uid: Virtufin.Api.Services.GatewaySubscription
+  commentId: T:Virtufin.Api.Services.GatewaySubscription
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.GatewaySubscription.html
+  name: GatewaySubscription
+  nameWithType: GatewaySubscription
+  fullName: Virtufin.Api.Services.GatewaySubscription
+- uid: Virtufin.Api.Services.GatewaySubscriptionManager
+  commentId: T:Virtufin.Api.Services.GatewaySubscriptionManager
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.GatewaySubscriptionManager.html
+  name: GatewaySubscriptionManager
+  nameWithType: GatewaySubscriptionManager
+  fullName: Virtufin.Api.Services.GatewaySubscriptionManager
 - uid: Virtufin.Api.Services.GrpcCallResult
   commentId: T:Virtufin.Api.Services.GrpcCallResult
   href: Virtufin.Api.Services.GrpcCallResult.html
@@ -198,6 +216,35 @@ references:
   name: TimeoutConstants
   nameWithType: TimeoutConstants
   fullName: Virtufin.Api.Services.TimeoutConstants
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  commentId: T:Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  name: TopicDaprSubscriptionRegistry
+  nameWithType: TopicDaprSubscriptionRegistry
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
+  commentId: T:Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
+  href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  name: TopicDaprSubscriptionRegistry.SubscriptionHandle
+  nameWithType: TopicDaprSubscriptionRegistry.SubscriptionHandle
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
+  spec.csharp:
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+    name: TopicDaprSubscriptionRegistry
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  - name: .
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
+    name: SubscriptionHandle
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.html
+  spec.vb:
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+    name: TopicDaprSubscriptionRegistry
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  - name: .
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
+    name: SubscriptionHandle
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.html
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
   href: Virtufin.html

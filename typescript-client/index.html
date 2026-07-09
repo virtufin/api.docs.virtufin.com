@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c04e9358066d324c672cef3fabfacd3331f778a0"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/759542ebfa95378bb5e621aa291dd30b404ee6e5"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit c04e935">
+       title="View commit 759542e">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c04e935</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">759542e</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c04e9358066d324c672cef3fabfacd3331f778a0"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/759542ebfa95378bb5e621aa291dd30b404ee6e5"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit c04e935">
+       title="View commit 759542e">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c04e935</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">759542e</text>
       </svg>
     </a>
 </div>
@@ -1868,6 +1868,8 @@
 <span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Data: </span><span class="si">${</span><span class="nx">decoder</span><span class="p">.</span><span class="nx">decode</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></p>
+<p><strong>Note on broadcast semantics:</strong> <code>Pubsub.Subscribe</code> is a per-API-process broadcast subscription — multiple in-process callers on the same topic all receive every message (per the <a href="https://git.haenerconsulting.com/virtufin/virtufin-openspec/src/branch/master/openspec/changes/pubsub-pattern-fixes/specs/pubsub-topics/spec.md">Pub/Sub Topics spec §Subscription Implementation Pattern</a>). <code>Gateway.Subscribe</code> is also broadcast within the same API process. If you need competing-consumer semantics, configure your Dapr component to use a consumer group (<code>pubsub.kafka</code> with a group, <code>pubsub.rabbitmq</code> with a queue).</p>
+<p><strong>Resource pressure:</strong> <code>publishWithResult</code> opens a short-lived gRPC <code>pubsub.subscribe</code> stream on the reply topic (up to the timeout, default 30 s). Under high call rates this produces many transient streams. For sustained high-frequency request-reply, prefer a single long-lived <code>pubsub.subscribe</code> and route responses yourself via <code>correlationid</code>.</p>
 <h4 id="resource-management">Resource Management</h4>
 <p>The client uses gRPC-web transport which manages connections automatically. No explicit close/dispose methods are required.</p>
 <h4 id="dynamic-dispatch">Dynamic Dispatch</h4>
@@ -2117,7 +2119,7 @@ equivalent of <code>DynamicObject</code> / <code>__getattr__</code> for runtime 
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-08T22:42:10Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-09T21:13:43Z</span>
 </div>
 
     </div>

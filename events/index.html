@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c04e9358066d324c672cef3fabfacd3331f778a0"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/759542ebfa95378bb5e621aa291dd30b404ee6e5"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit c04e935">
+       title="View commit 759542e">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c04e935</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">759542e</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c04e9358066d324c672cef3fabfacd3331f778a0"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/759542ebfa95378bb5e621aa291dd30b404ee6e5"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit c04e935">
+       title="View commit 759542e">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c04e935</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">759542e</text>
       </svg>
     </a>
 </div>
@@ -778,10 +778,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#streamevent-grpc" class="md-nav__link">
+  <a href="#topiceventrequest-grpc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        StreamEvent (gRPC)
+        TopicEventRequest (gRPC)
       
     </span>
   </a>
@@ -1555,10 +1555,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#streamevent-grpc" class="md-nav__link">
+  <a href="#topiceventrequest-grpc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        StreamEvent (gRPC)
+        TopicEventRequest (gRPC)
       
     </span>
   </a>
@@ -1935,24 +1935,26 @@
 </tbody>
 </table>
 <h2 id="event-types">Event Types</h2>
-<h3 id="streamevent-grpc">StreamEvent (gRPC)</h3>
-<p>Standard event message for business events:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">StreamEvent</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">timestamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">        </span><span class="c1">// ISO 8601 format</span>
-<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="kd">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">         </span><span class="c1">// Source service name</span>
-<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w">            </span><span class="c1">// Topic/channel name</span>
-<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">event_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w">       </span><span class="c1">// Event classification</span>
-<span class="w">  </span><span class="kt">bytes</span><span class="w"> </span><span class="na">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">              </span><span class="c1">// Event payload (binary)</span>
-<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">message_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w">       </span><span class="c1">// Unique message identifier</span>
-<span class="w">  </span><span class="n">map</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="p">&gt;</span><span class="w"> </span><span class="na">metadata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w"> </span><span class="c1">// Additional metadata</span>
+<h3 id="topiceventrequest-grpc">TopicEventRequest (gRPC)</h3>
+<p>Standard event message for business events, returned by <code>Gateway.Subscribe</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">message</span><span class="w"> </span><span class="nc">TopicEventRequest</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">                </span><span class="c1">// CloudEvent id</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">            </span><span class="c1">// CloudEvent source</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w">              </span><span class="c1">// CloudEvent type (ce-type)</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">spec_version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w">      </span><span class="c1">// CloudEvents spec version (e.g. &quot;1.0&quot;)</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">data_content_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// CloudEvent data content type</span>
+<span class="w">  </span><span class="kt">bytes</span><span class="w"> </span><span class="na">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w">               </span><span class="c1">// CloudEvent payload</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w">             </span><span class="c1">// Dapr topic the message was published on</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">pubsub_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w">       </span><span class="c1">// Dapr pubsub component name</span>
+<span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="na">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span><span class="w">              </span><span class="c1">// Dapr-internal subject path</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="per-service-topic-model">Per-service topic model</h3>
-<p>Each service owns its pubsub topic for lifecycle events. The topic name is defined in the service's own <code>Configuration/Topics.cs</code> (e.g. <code>websocketmanager.connectionstatus</code>, <code>workmanager.workerstatus</code>); <code>ce-type</code> discriminates events within the topic. The topic name is the public contract between the publisher and its consumers — see each service's <code>AGENTS.md</code> and <code>docs/v1/connection-lifecycle.md</code> (or equivalent) for the event taxonomy.</p>
+<p>Each service owns its pubsub topic for lifecycle events. The topic name is defined in the service's own <code>Configuration/Topics.cs</code> (e.g. <code>websocketmanager.lifecycle</code>, <code>workmanager.lifecycle</code>); <code>ce-type</code> discriminates events within the topic. The topic name is the public contract between the publisher and its consumers — see each service's <code>AGENTS.md</code> and <code>docs/v1/connection-lifecycle.md</code> (or equivalent) for the event taxonomy.</p>
 <hr />
 <h2 id="grpc-streaming">gRPC Streaming</h2>
 <h3 id="subscribe-method">Subscribe Method</h3>
-<div class="highlight"><pre><span></span><code><span class="k">rpc</span><span class="w"> </span><span class="n">Subscribe</span><span class="w"> </span><span class="p">(</span><span class="n">SubscribeRequest</span><span class="p">)</span><span class="w"> </span><span class="k">returns</span><span class="w"> </span><span class="p">(</span><span class="n">stream</span><span class="w"> </span><span class="n">StreamEvent</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="k">rpc</span><span class="w"> </span><span class="n">Subscribe</span><span class="w"> </span><span class="p">(</span><span class="n">SubscribeRequest</span><span class="p">)</span><span class="w"> </span><span class="k">returns</span><span class="w"> </span><span class="p">(</span><span class="n">stream</span><span class="w"> </span><span class="n">TopicEventRequest</span><span class="p">);</span>
 
 <span class="kd">message</span><span class="w"> </span><span class="nc">SubscribeRequest</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">services</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">    </span><span class="c1">// Filter by services</span>
@@ -1961,7 +1963,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <blockquote>
-<p><strong>Note:</strong> The <code>WatchSystemEvents</code> RPC was removed. All events (including per-service lifecycle events) are delivered through the regular <code>Subscribe</code> RPC. Subscribe to the appropriate per-service topic (e.g. <code>websocketmanager.connectionstatus</code>, <code>workmanager.workerstatus</code>) to receive those events.</p>
+<p><strong>Note:</strong> The <code>WatchSystemEvents</code> RPC was removed. All events (including per-service lifecycle events) are delivered through the regular <code>Subscribe</code> RPC. Subscribe to the appropriate per-service topic (e.g. <code>websocketmanager.lifecycle</code>, <code>workmanager.lifecycle</code>) to receive those events.</p>
 </blockquote>
 <h3 id="state-service-methods">State Service Methods</h3>
 <div class="highlight"><pre><span></span><code><span class="c1">// In Protos/state.proto</span>
@@ -2157,7 +2159,7 @@
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">// Subscribe</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">Subscribe</span><span class="p">(</span>
-<span class="w">        </span><span class="n">IServerStreamWriter</span><span class="o">&lt;</span><span class="n">StreamEvent</span><span class="o">&gt;</span><span class="w"> </span><span class="n">writer</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="n">IServerStreamWriter</span><span class="o">&lt;</span><span class="n">TopicEventRequest</span><span class="o">&gt;</span><span class="w"> </span><span class="n">writer</span><span class="p">,</span>
 <span class="w">        </span><span class="n">SubscribeRequest</span><span class="w"> </span><span class="n">request</span><span class="p">)</span>
 
 <span class="w">    </span><span class="c1">// Unsubscribe</span>
@@ -2183,7 +2185,7 @@
 <p>Broadcast when Dapr pub/sub subscriptions change state:</p>
 <div class="highlight"><pre><span></span><code><span class="k">await</span><span class="w"> </span><span class="nf">BroadcastConnectionStatusAsync</span><span class="p">(</span>
 <span class="w">    </span><span class="n">service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;workmanager&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">topic</span><span class="p">:</span><span class="w"> </span><span class="n">Topics</span><span class="p">.</span><span class="n">WorkerStatus</span><span class="p">,</span><span class="w">        </span><span class="c1">// &quot;workmanager.workerstatus&quot;</span>
+<span class="w">    </span><span class="n">topic</span><span class="p">:</span><span class="w"> </span><span class="n">Topics</span><span class="p">.</span><span class="n">Lifecycle</span><span class="p">,</span><span class="w">           </span><span class="c1">// &quot;workmanager.lifecycle&quot;</span>
 <span class="w">    </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;connected&quot;</span><span class="w">  </span><span class="c1">// or &quot;disconnected&quot;, &quot;failed&quot;</span>
 <span class="w">    </span><span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="w">          </span><span class="c1">// error message if failed</span>
 <span class="p">);</span>
@@ -2210,12 +2212,12 @@
 
     Client-&gt;&gt;State: SaveState(service, key, value)
     State-&gt;&gt;SubMgr: BroadcastStateChangeAsync()
-    SubMgr-&gt;&gt;SubMgr: Create StreamEvent
+    SubMgr-&gt;&gt;SubMgr: Create TopicEventRequest
     SubMgr-&gt;&gt;SubMgr: GetMatchingScopes()
     loop For each scope
         SubMgr-&gt;&gt;Subscribers: Write event to stream
     end
-    Subscribers--&gt;&gt;Client: StreamEvent received</code></pre>
+    Subscribers--&gt;&gt;Client: TopicEventRequest received</code></pre>
 <h3 id="example-2-dapr-pubsub-event">Example 2: Dapr Pub/Sub Event</h3>
 <pre class="mermaid"><code>sequenceDiagram
     participant Publisher
@@ -2228,7 +2230,7 @@
     Dapr-&gt;&gt;DaprMgr: TopicMessage
     DaprMgr-&gt;&gt;DaprMgr: Deserialize message
     DaprMgr-&gt;&gt;SubMgr: BroadcastToTopicAsync()
-    SubMgr-&gt;&gt;Client: StreamEvent via gRPC
+    SubMgr-&gt;&gt;Client: TopicEventRequest via gRPC
     DaprMgr--&gt;&gt;Dapr: TopicResponseAction.Success</code></pre>
 <h3 id="example-3-system-connection-event">Example 3: System Connection Event</h3>
 <pre class="mermaid"><code>sequenceDiagram
@@ -2237,7 +2239,7 @@
     participant Client
 
     Dapr-&gt;&gt;DaprMgr: Subscription connected
-    DaprMgr-&gt;&gt;Client: TopicEvent via Subscribe (topic: &lt;service&gt;.&lt;category&gt;, e.g. websocketmanager.connectionstatus)</code></pre>
+    DaprMgr-&gt;&gt;Client: TopicEventRequest via Subscribe (topic: &lt;service&gt;.&lt;category&gt;, e.g. websocketmanager.lifecycle)</code></pre>
 <hr />
 <h2 id="best-practices">Best Practices</h2>
 <h3 id="subscription-management">Subscription Management</h3>
@@ -2304,7 +2306,7 @@
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-08T22:42:10Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-09T21:13:43Z</span>
 </div>
 
     </div>

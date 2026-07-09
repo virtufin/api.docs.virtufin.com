@@ -50,6 +50,7 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
+  - Virtufin.Api.Services.GatewaySubscriptionManager
   - Virtufin.Api.Services.PubsubSubscriptionManager
   inheritedMembers:
   - System.Object.Equals(System.Object)

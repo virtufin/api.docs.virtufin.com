@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c04e9358066d324c672cef3fabfacd3331f778a0"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/759542ebfa95378bb5e621aa291dd30b404ee6e5"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit c04e935">
+       title="View commit 759542e">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c04e935</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">759542e</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c04e9358066d324c672cef3fabfacd3331f778a0"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/759542ebfa95378bb5e621aa291dd30b404ee6e5"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit c04e935">
+       title="View commit 759542e">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c04e935</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">759542e</text>
       </svg>
     </a>
 </div>
@@ -1123,6 +1123,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pubsubevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PubsubEvent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#example-pubsub" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1721,6 +1732,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pubsubevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PubsubEvent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#example-pubsub" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2062,18 +2084,18 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 - <code>metadata</code> — Optional dict of additional metadata
 - <code>correlation_id</code> — Optional correlation ID (auto-generated UUID if omitted)</p>
 <p><strong>Returns:</strong> The matching <code>PubsubEvent</code> with a <code>correlationid</code> matching the request.
-<strong>Raises:</strong> <code>TimeoutError</code> if no response arrives within the timeout.
-<div class="highlight"><pre><span></span><code>### PubsubEvent
-
-```python
-event.topic       # Topic name
-event.data        # Raw bytes
-event.data_as_text()    # Decode as UTF-8 string
-event.data_as_json()    # Decode as JSON object
-event.metadata    # Dict of metadata
-event.message_id  # Unique message ID
-event.timestamp   # ISO timestamp
-</code></pre></div></p>
+<strong>Raises:</strong> <code>TimeoutError</code> if no response arrives within the timeout.</p>
+<p><strong>Note on broadcast semantics:</strong> <code>Pubsub.Subscribe</code> is a per-API-process broadcast subscription — multiple in-process callers on the same topic all receive every message (per the <a href="https://git.haenerconsulting.com/virtufin/virtufin-openspec/src/branch/master/openspec/changes/pubsub-pattern-fixes/specs/pubsub-topics/spec.md">Pub/Sub Topics spec §Subscription Implementation Pattern</a>). If you want a single in-process handler to receive each message, use <code>pubsub.subscribe_async_with_handler</code> (it manages one subscription per topic). If you want multiple in-process handlers each receiving every message, just call <code>pubsub.subscribe_async(topic)</code> multiple times.</p>
+<p><strong>Resource pressure:</strong> <code>publish_with_result_async</code> opens a short-lived gRPC <code>Subscribe</code> stream on the reply topic (up to the timeout, default 30 s). Under high call rates this produces many transient streams. For sustained high-frequency request-reply, prefer a single long-lived <code>Subscribe</code> stream and route responses yourself via <code>correlationid</code>.</p>
+<h3 id="pubsubevent">PubsubEvent</h3>
+<div class="highlight"><pre><span></span><code><span class="n">event</span><span class="o">.</span><span class="n">topic</span>       <span class="c1"># Topic name</span>
+<span class="n">event</span><span class="o">.</span><span class="n">data</span>        <span class="c1"># Raw bytes</span>
+<span class="n">event</span><span class="o">.</span><span class="n">data_as_text</span><span class="p">()</span>    <span class="c1"># Decode as UTF-8 string</span>
+<span class="n">event</span><span class="o">.</span><span class="n">data_as_json</span><span class="p">()</span>    <span class="c1"># Decode as JSON object</span>
+<span class="n">event</span><span class="o">.</span><span class="n">metadata</span>    <span class="c1"># Dict of metadata</span>
+<span class="n">event</span><span class="o">.</span><span class="n">message_id</span>  <span class="c1"># Unique message ID</span>
+<span class="n">event</span><span class="o">.</span><span class="n">timestamp</span>   <span class="c1"># ISO timestamp</span>
+</code></pre></div>
 <h3 id="example-pubsub">Example: Pub/Sub</h3>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="n">topic</span> <span class="o">=</span> <span class="s2">&quot;my-topic&quot;</span>
@@ -2267,7 +2289,7 @@ must <code>await</code> the call.</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-08T22:42:10Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-09T21:13:43Z</span>
 </div>
 
     </div>

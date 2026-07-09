@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/c04e9358066d324c672cef3fabfacd3331f778a0" target="_blank" rel="noopener" class="commit-badge" title="View commit c04e9358066d324c672cef3fabfacd3331f778a0">
+            <a href="{git_repo_url}/commit/759542ebfa95378bb5e621aa291dd30b404ee6e5" target="_blank" rel="noopener" class="commit-badge" title="View commit 759542ebfa95378bb5e621aa291dd30b404ee6e5">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c04e9358066d324c672cef3fabfacd3331f778a0</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">759542ebfa95378bb5e621aa291dd30b404ee6e5</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -160,8 +160,8 @@ Class PubsubService
 
   <a id="Virtufin_Api_Services_PubsubService__ctor_" data-uid="Virtufin.Api.Services.PubsubService.#ctor*"></a>
 
-  <h3 id="Virtufin_Api_Services_PubsubService__ctor_Dapr_Client_DaprClient_System_IServiceProvider_Virtufin_Api_Services_PubsubSubscriptionManager_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_PubsubService__" data-uid="Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,System.IServiceProvider,Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})">
-  PubsubService(DaprClient, IServiceProvider, PubsubSubscriptionManager, ILogger&lt;PubsubService&gt;)
+  <h3 id="Virtufin_Api_Services_PubsubService__ctor_Dapr_Client_DaprClient_System_IServiceProvider_Virtufin_Api_Services_PubsubSubscriptionManager_Virtufin_Api_Services_TopicDaprSubscriptionRegistry_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_PubsubService__" data-uid="Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,System.IServiceProvider,Virtufin.Api.Services.PubsubSubscriptionManager,Virtufin.Api.Services.TopicDaprSubscriptionRegistry,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})">
+  PubsubService(DaprClient, IServiceProvider, PubsubSubscriptionManager, TopicDaprSubscriptionRegistry, ILogger&lt;PubsubService&gt;)
   
   </h3>
 
@@ -169,7 +169,7 @@ Class PubsubService
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PubsubService(DaprClient daprClient, IServiceProvider serviceProvider, PubsubSubscriptionManager subscriptionManager, ILogger&lt;PubsubService&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public PubsubService(DaprClient daprClient, IServiceProvider serviceProvider, PubsubSubscriptionManager subscriptionManager, TopicDaprSubscriptionRegistry registry, ILogger&lt;PubsubService&gt; logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -179,6 +179,8 @@ Class PubsubService
     <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
     <dd></dd>
     <dt><code>subscriptionManager</code> <a class="xref" href="Virtufin.Api.Services.PubsubSubscriptionManager.html">PubsubSubscriptionManager</a></dt>
+    <dd></dd>
+    <dt><code>registry</code> <a class="xref" href="Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html">TopicDaprSubscriptionRegistry</a></dt>
     <dd></dd>
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.PubsubService.html">PubsubService</a>&gt;</dt>
     <dd></dd>
@@ -244,9 +246,12 @@ Class PubsubService
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Handles a client subscribe request. Creates a Dapr subscription for the topic
-and streams received messages back to the client via gRPC server streaming.
-Messages are enhanced with correlationid from CloudEvent data and extensions.</p>
+  <div class="markdown level1 summary"><p>Handles a client subscribe request. Acquires a reference to the
+shared Dapr subscription for the topic (one per topic per API process,
+per the Pub/Sub Topics spec §Subscription Implementation Pattern),
+registers an in-process channel for the new caller, and streams
+received messages back via the channel. The shared Dapr subscription
+fans out to all in-process callers via PubsubSubscriptionManager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

@@ -1,0 +1,853 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  commentId: T:Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  id: TopicDaprSubscriptionRegistry
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.TopicDaprSubscriptionRegistry.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TopicDaprSubscriptionRegistry})
+  - Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync(System.String,System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}},System.Action,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync
+  langs:
+  - csharp
+  - vb
+  name: TopicDaprSubscriptionRegistry
+  nameWithType: TopicDaprSubscriptionRegistry
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: TopicDaprSubscriptionRegistry
+    path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
+    startLine: 14
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Manages one Dapr pubsub subscription per topic per API process,
+
+    with a reference count of in-process gRPC callers sharing it.
+
+
+    Per the Pub/Sub Topics spec §Subscription Implementation Pattern:
+
+    one Dapr subscription per topic per service process — NOT one per
+
+    gRPC call. Per-call Dapr subscriptions would cause the same event
+
+    to be load-balanced across callers instead of broadcast to each.
+  example: []
+  syntax:
+    content: 'public sealed class TopicDaprSubscriptionRegistry : IAsyncDisposable'
+    content.vb: Public NotInheritable Class TopicDaprSubscriptionRegistry Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TopicDaprSubscriptionRegistry})
+  commentId: M:Virtufin.Api.Services.TopicDaprSubscriptionRegistry.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TopicDaprSubscriptionRegistry})
+  id: '#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TopicDaprSubscriptionRegistry})'
+  parent: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  langs:
+  - csharp
+  - vb
+  name: TopicDaprSubscriptionRegistry(IServiceProvider, ILogger<TopicDaprSubscriptionRegistry>)
+  nameWithType: TopicDaprSubscriptionRegistry.TopicDaprSubscriptionRegistry(IServiceProvider, ILogger<TopicDaprSubscriptionRegistry>)
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.TopicDaprSubscriptionRegistry(System.IServiceProvider, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.TopicDaprSubscriptionRegistry>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: .ctor
+    path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
+    startLine: 22
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public TopicDaprSubscriptionRegistry(IServiceProvider serviceProvider, ILogger<TopicDaprSubscriptionRegistry> logger)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TopicDaprSubscriptionRegistry}
+    content.vb: Public Sub New(serviceProvider As IServiceProvider, logger As ILogger(Of TopicDaprSubscriptionRegistry))
+  overload: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.#ctor*
+  nameWithType.vb: TopicDaprSubscriptionRegistry.New(IServiceProvider, ILogger(Of TopicDaprSubscriptionRegistry))
+  fullName.vb: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.New(System.IServiceProvider, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.TopicDaprSubscriptionRegistry))
+  name.vb: New(IServiceProvider, ILogger(Of TopicDaprSubscriptionRegistry))
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync(System.String,System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}},System.Action,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync(System.String,System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}},System.Action,System.Threading.CancellationToken)
+  id: AcquireAsync(System.String,System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}},System.Action,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  langs:
+  - csharp
+  - vb
+  name: AcquireAsync(string, Func<TopicMessage, CancellationToken, Task<TopicResponseAction>>, Action, CancellationToken)
+  nameWithType: TopicDaprSubscriptionRegistry.AcquireAsync(string, Func<TopicMessage, CancellationToken, Task<TopicResponseAction>>, Action, CancellationToken)
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync(string, System.Func<Dapr.Messaging.PublishSubscribe.TopicMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task<Dapr.Messaging.PublishSubscribe.TopicResponseAction>>, System.Action, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: AcquireAsync
+    path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
+    startLine: 36
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Returns a handle backed by either an existing Dapr subscription for
+
+    the topic (refcount +1) or a freshly opened one. Disposing the handle
+
+    releases the reference; when the last reference is released, the
+
+    Dapr subscription is torn down.
+  example: []
+  syntax:
+    content: public Task<TopicDaprSubscriptionRegistry.SubscriptionHandle> AcquireAsync(string topic, Func<TopicMessage, CancellationToken, Task<TopicResponseAction>> onMessage, Action onActive, CancellationToken ct)
+    parameters:
+    - id: topic
+      type: System.String
+    - id: onMessage
+      type: System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}}
+    - id: onActive
+      type: System.Action
+    - id: ct
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle}
+    content.vb: Public Function AcquireAsync(topic As String, onMessage As Func(Of TopicMessage, CancellationToken, Task(Of TopicResponseAction)), onActive As Action, ct As CancellationToken) As Task(Of TopicDaprSubscriptionRegistry.SubscriptionHandle)
+  overload: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync*
+  nameWithType.vb: TopicDaprSubscriptionRegistry.AcquireAsync(String, Func(Of TopicMessage, CancellationToken, Task(Of TopicResponseAction)), Action, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync(String, System.Func(Of Dapr.Messaging.PublishSubscribe.TopicMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Dapr.Messaging.PublishSubscribe.TopicResponseAction)), System.Action, System.Threading.CancellationToken)
+  name.vb: AcquireAsync(String, Func(Of TopicMessage, CancellationToken, Task(Of TopicResponseAction)), Action, CancellationToken)
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync
+  commentId: M:Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync
+  id: DisposeAsync
+  parent: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: TopicDaprSubscriptionRegistry.DisposeAsync()
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DisposeAsync
+    path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
+    startLine: 178
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+      description: A task that represents the asynchronous dispose operation.
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+references:
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.#ctor*
+  commentId: Overload:Virtufin.Api.Services.TopicDaprSubscriptionRegistry.#ctor
+  href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html#Virtufin_Api_Services_TopicDaprSubscriptionRegistry__ctor_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_TopicDaprSubscriptionRegistry__
+  name: TopicDaprSubscriptionRegistry
+  nameWithType: TopicDaprSubscriptionRegistry.TopicDaprSubscriptionRegistry
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.TopicDaprSubscriptionRegistry
+  nameWithType.vb: TopicDaprSubscriptionRegistry.New
+  fullName.vb: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.New
+  name.vb: New
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TopicDaprSubscriptionRegistry}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TopicDaprSubscriptionRegistry}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TopicDaprSubscriptionRegistry>
+  nameWithType: ILogger<TopicDaprSubscriptionRegistry>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.TopicDaprSubscriptionRegistry>
+  nameWithType.vb: ILogger(Of TopicDaprSubscriptionRegistry)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.TopicDaprSubscriptionRegistry)
+  name.vb: ILogger(Of TopicDaprSubscriptionRegistry)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+    name: TopicDaprSubscriptionRegistry
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+    name: TopicDaprSubscriptionRegistry
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync*
+  commentId: Overload:Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync
+  href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html#Virtufin_Api_Services_TopicDaprSubscriptionRegistry_AcquireAsync_System_String_System_Func_Dapr_Messaging_PublishSubscribe_TopicMessage_System_Threading_CancellationToken_System_Threading_Tasks_Task_Dapr_Messaging_PublishSubscribe_TopicResponseAction___System_Action_System_Threading_CancellationToken_
+  name: AcquireAsync
+  nameWithType: TopicDaprSubscriptionRegistry.AcquireAsync
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}}
+  commentId: T:System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TopicMessage, CancellationToken, Task<TopicResponseAction>>
+  nameWithType: Func<TopicMessage, CancellationToken, Task<TopicResponseAction>>
+  fullName: System.Func<Dapr.Messaging.PublishSubscribe.TopicMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task<Dapr.Messaging.PublishSubscribe.TopicResponseAction>>
+  nameWithType.vb: Func(Of TopicMessage, CancellationToken, Task(Of TopicResponseAction))
+  fullName.vb: System.Func(Of Dapr.Messaging.PublishSubscribe.TopicMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Dapr.Messaging.PublishSubscribe.TopicResponseAction))
+  name.vb: Func(Of TopicMessage, CancellationToken, Task(Of TopicResponseAction))
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Dapr.Messaging.PublishSubscribe.TopicMessage
+    name: TopicMessage
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Dapr.Messaging.PublishSubscribe.TopicResponseAction
+    name: TopicResponseAction
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dapr.Messaging.PublishSubscribe.TopicMessage
+    name: TopicMessage
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dapr.Messaging.PublishSubscribe.TopicResponseAction
+    name: TopicResponseAction
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TopicDaprSubscriptionRegistry.SubscriptionHandle>
+  nameWithType: Task<TopicDaprSubscriptionRegistry.SubscriptionHandle>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle>
+  nameWithType.vb: Task(Of TopicDaprSubscriptionRegistry.SubscriptionHandle)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle)
+  name.vb: Task(Of TopicDaprSubscriptionRegistry.SubscriptionHandle)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+    name: TopicDaprSubscriptionRegistry
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  - name: .
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
+    name: SubscriptionHandle
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry
+    name: TopicDaprSubscriptionRegistry
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html
+  - name: .
+  - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
+    name: SubscriptionHandle
+    href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.html
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync*
+  commentId: Overload:Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync
+  href: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.html#Virtufin_Api_Services_TopicDaprSubscriptionRegistry_DisposeAsync
+  name: DisposeAsync
+  nameWithType: TopicDaprSubscriptionRegistry.DisposeAsync
+  fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
