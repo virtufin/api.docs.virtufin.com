@@ -155,7 +155,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DisposeAsync
     path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
-    startLine: 178
+    startLine: 195
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
