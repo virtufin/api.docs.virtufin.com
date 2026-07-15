@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/6845fe49fa15effbf19210b878467d60a3386cd6"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/bd750e1b58e8f7894f2db895ff0a6677e5aff3f7"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 6845fe4">
+       title="View commit bd750e1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">6845fe4</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">bd750e1</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/6845fe49fa15effbf19210b878467d60a3386cd6"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/bd750e1b58e8f7894f2db895ff0a6677e5aff3f7"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 6845fe4">
+       title="View commit bd750e1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">6845fe4</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">bd750e1</text>
       </svg>
     </a>
 </div>
@@ -755,10 +755,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-flow-diagrams" class="md-nav__link">
+  <a href="#system-architecture_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Flow Diagrams
+        System Architecture
       
     </span>
   </a>
@@ -864,24 +864,13 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#systemeventmanager" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SystemEventManager
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-flow-diagrams_1" class="md-nav__link">
+  <a href="#data-flow-diagrams" class="md-nav__link">
     <span class="md-ellipsis">
       
         Data Flow Diagrams
@@ -1481,10 +1470,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-flow-diagrams" class="md-nav__link">
+  <a href="#system-architecture_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Flow Diagrams
+        System Architecture
       
     </span>
   </a>
@@ -1590,24 +1579,13 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#systemeventmanager" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SystemEventManager
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-flow-diagrams_1" class="md-nav__link">
+  <a href="#data-flow-diagrams" class="md-nav__link">
     <span class="md-ellipsis">
       
         Data Flow Diagrams
@@ -1723,7 +1701,6 @@
         Kestrel[Kestrel Server]
         GatewaySvc[GatewayService]
         EventSubMgr[EventSubscriptionManager]
-        SystemEventMgr[SystemEventManager]
         StateSvc[StateService]
     end
 
@@ -1795,7 +1772,6 @@
         ConfigSvc[ConfigService gRPC]
         GrpcReflSvc[GrpcReflectionService gRPC]
         EventSubMgr[EventSubscriptionManager]
-        SystemEventMgr[SystemEventManager]
         StateSvc[StateService]
     end
 
@@ -1821,7 +1797,7 @@
     Infrastructure --&gt; Backend
     Infrastructure --&gt; Dapr</code></pre>
 <hr />
-<h3 id="data-flow-diagrams">Data Flow Diagrams</h3>
+<h3 id="system-architecture_1">System Architecture</h3>
 <pre class="mermaid"><code>flowchart TB
     subgraph Clients[Clients]
         CSharp[C# Client]
@@ -1841,7 +1817,6 @@
         ConfigSvc[ConfigService gRPC]
         GrpcReflSvc[GrpcReflectionService gRPC]
         EventSubMgr[EventSubscriptionManager]
-        SystemEventMgr[SystemEventManager]
         StateSvc[StateService]
     end
 
@@ -2162,14 +2137,8 @@ Subscriptions use hierarchical scopes for filtering:</p>
     SubMgr-&gt;&gt;SubMgr: Broadcast to gRPC clients
     DaprMgr--&gt;&gt;Dapr: TopicResponseAction.Success</code></pre>
 <hr />
-<h3 id="systemeventmanager">SystemEventManager</h3>
-<p><strong>Location:</strong> <code>Services/EventSubscriptionManager.cs</code> (same file)</p>
-<p>Manages system-level event subscriptions (connection status, errors).</p>
-<p><strong>Event Types:</strong>
-- <code>pubsub_subscription</code> - Pub/sub connection status changes
-- Connection/disconnection notifications</p>
 <hr />
-<h2 id="data-flow-diagrams_1">Data Flow Diagrams</h2>
+<h2 id="data-flow-diagrams">Data Flow Diagrams</h2>
 <h3 id="method-invocation-rest_1">Method Invocation (REST)</h3>
 <pre class="mermaid"><code>sequenceDiagram
     participant Client as curl
@@ -2209,7 +2178,6 @@ Subscriptions use hierarchical scopes for filtering:</p>
 <pre class="mermaid"><code>flowchart LR
     Dapr[Dapr Sidecar] --&gt;|Pub/Sub| DaprMgr[DaprStreamingSub Manager]
     DaprMgr --&gt;|event| EventSubMgr[EventSub Manager]
-    DaprMgr --&gt; Removed[(removed)]
     EventSubMgr --&gt; GrpcClient[gRPC Client Subscribe]</code></pre>
 <hr />
 <h2 id="configuration-architecture_1">Configuration Architecture</h2>
@@ -2276,7 +2244,7 @@ Subscriptions use hierarchical scopes for filtering:</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-15T08:05:07Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-15T09:30:41Z</span>
 </div>
 
     </div>
