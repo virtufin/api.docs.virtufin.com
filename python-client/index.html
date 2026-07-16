@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/bd750e1b58e8f7894f2db895ff0a6677e5aff3f7"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/b0f14eb334478acddcf21900bf6e141a1dc00cde"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit bd750e1">
+       title="View commit b0f14eb">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">bd750e1</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b0f14eb</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/bd750e1b58e8f7894f2db895ff0a6677e5aff3f7"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/b0f14eb334478acddcf21900bf6e141a1dc00cde"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit bd750e1">
+       title="View commit b0f14eb">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">bd750e1</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b0f14eb</text>
       </svg>
     </a>
 </div>
@@ -2086,7 +2086,7 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 <p><strong>Returns:</strong> The matching <code>PubsubEvent</code> with a <code>correlationid</code> matching the request.
 <strong>Raises:</strong> <code>TimeoutError</code> if no response arrives within the timeout.</p>
 <p><strong>Note on broadcast semantics:</strong> <code>Pubsub.Subscribe</code> is a per-API-process broadcast subscription — multiple in-process callers on the same topic all receive every message (per the <a href="https://git.haenerconsulting.com/virtufin/virtufin-openspec/src/branch/master/openspec/changes/pubsub-pattern-fixes/specs/pubsub-topics/spec.md">Pub/Sub Topics spec §Subscription Implementation Pattern</a>). If you want a single in-process handler to receive each message, use <code>pubsub.subscribe_async_with_handler</code> (it manages one subscription per topic). If you want multiple in-process handlers each receiving every message, just call <code>pubsub.subscribe_async(topic)</code> multiple times.</p>
-<p><strong>Resource pressure:</strong> <code>publish_with_result_async</code> opens a short-lived gRPC <code>Subscribe</code> stream on the reply topic (up to the timeout, default 30 s). Under high call rates this produces many transient streams. For sustained high-frequency request-reply, prefer a single long-lived <code>Subscribe</code> stream and route responses yourself via <code>correlationid</code>.</p>
+<p><strong>Resource usage:</strong> <code>publish_with_result_async</code> shares one persistent gRPC <code>Subscribe</code> stream per reply topic across all callers (started lazily on first use, reconnecting with backoff if it drops) and demuxes responses by <code>correlationid</code>. The underlying Dapr subscription is created once and stays warm; per-call cost is one pending future. Readers are cancelled by <code>ApiClient.close()</code> (or leaving the <code>async with</code> block).</p>
 <h3 id="pubsubevent">PubsubEvent</h3>
 <div class="highlight"><pre><span></span><code><span class="n">event</span><span class="o">.</span><span class="n">topic</span>       <span class="c1"># Topic name</span>
 <span class="n">event</span><span class="o">.</span><span class="n">data</span>        <span class="c1"># Raw bytes</span>
@@ -2289,7 +2289,7 @@ must <code>await</code> the call.</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-15T09:30:41Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-16T13:09:09Z</span>
 </div>
 
     </div>

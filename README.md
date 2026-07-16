@@ -122,7 +122,6 @@ virtufin-api/
 │   └── Virtufin.Api.*.Tests/       # .NET integration and unit tests
 ├── docs/                           # MkDocs documentation (api.docs.virtufin.com)
 ├── scripts/                        # Helper scripts
-├── deploy/                         # Deployment configs
 ├── versions.env                    # API_VERSION and LIBRARY_VERSION pin
 └── AGENTS.md                       # Agent documentation
 

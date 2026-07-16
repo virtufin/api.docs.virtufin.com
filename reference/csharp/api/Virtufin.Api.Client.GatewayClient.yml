@@ -111,7 +111,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 173
+    startLine: 192
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -146,7 +146,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TryGetMember
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 184
+    startLine: 203
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -185,7 +185,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 194
+    startLine: 213
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -216,7 +216,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 206
+    startLine: 225
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -254,7 +254,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 280
+    startLine: 299
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -314,7 +314,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 319
+    startLine: 338
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -367,7 +367,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 341
+    startLine: 360
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -414,7 +414,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 360
+    startLine: 379
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -458,7 +458,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetAllStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 373
+    startLine: 392
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -499,7 +499,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 388
+    startLine: 407
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -546,7 +546,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 411
+    startLine: 430
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -587,7 +587,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 423
+    startLine: 442
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -628,39 +628,18 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishWithResultAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 457
+    startLine: 561
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: >-
     Publishes to a topic and waits for a correlated response on a reply topic.
 
-    Implements the request-reply pattern over pub/sub using correlation IDs.
-  remarks: >-
-    Resource pressure: each call opens a short-lived (up to <code class="paramref">timeout</code>
+    Implements the request-reply pattern over pub/sub using correlation IDs,
 
-    or 30 s default) gRPC <code>Pubsub.Subscribe</code> stream on <code class="paramref">replyTopic</code>,
+    via the shared per-reply-topic reader started by <xref href="Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)" data-throw-if-not-resolved="false"></xref>
 
-    held until the correlated response arrives or the timeout/cancellation fires. The
-
-    server side keeps a matching Dapr subscription per topic per API process, so the
-
-    cost of <code>PublishWithResultAsync</code> is one short-lived in-process subscriber per
-
-    call (a few hundred bytes). The dead-subscription reaper
-
-    (<code>SubscriptionHealthSweeperHostedService</code>) cleans up subscribers that
-
-    don't respond to heartbeats within 60 s.
-
-
-    Under high call rates this can produce many transient gRPC streams. If you
-
-    need sustained request-reply traffic at high frequency, prefer a single
-
-    long-lived <code>Pubsub.Subscribe</code> stream and route responses yourself via
-
-    the <code>correlationid</code> metadata.
+    (see its remarks for why the stream is shared rather than per call).
   example: []
   syntax:
     content: public Task<PubsubSubscribeResponse> PublishWithResultAsync(string topic, byte[] data, string replyTopic, TimeSpan? timeout = null, Dictionary<string, string>? metadata = null, string? correlationId = null, CancellationToken cancellationToken = default)
@@ -716,7 +695,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 529
+    startLine: 622
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -763,7 +742,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 552
+    startLine: 645
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -813,7 +792,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 610
+    startLine: 703
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -2903,6 +2882,34 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.UnsubscribeResponse
     name: UnsubscribeResponse
+  - name: )
+- uid: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)
+  commentId: M:Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: EnsureReplyReader(string)
+  nameWithType: GatewayClient.EnsureReplyReader(string)
+  fullName: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(string)
+  nameWithType.vb: GatewayClient.EnsureReplyReader(String)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(String)
+  name.vb: EnsureReplyReader(String)
+  spec.csharp:
+  - uid: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)
+    name: EnsureReplyReader
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)
+    name: EnsureReplyReader
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.TimeoutException
   commentId: T:System.TimeoutException
