@@ -11,6 +11,9 @@ items:
     - uid: Virtufin.Api.Auth.ApiKeyAuthOptions
       name: ApiKeyAuthOptions
       type: Class
+    - uid: Virtufin.Api.Auth.ApiKeyHttpMiddleware
+      name: ApiKeyHttpMiddleware
+      type: Class
     - uid: Virtufin.Api.Auth.ApiKeyInterceptor
       name: ApiKeyInterceptor
       type: Class

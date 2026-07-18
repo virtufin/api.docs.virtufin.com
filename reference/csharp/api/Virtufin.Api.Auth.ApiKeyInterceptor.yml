@@ -27,7 +27,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ApiKeyInterceptor
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 13
+    startLine: 11
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -74,7 +74,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: HeaderName
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -103,7 +103,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UserStateKey
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -132,7 +132,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 26
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -166,7 +166,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Authenticate
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 38
+    startLine: 36
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -211,7 +211,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnaryServerHandler
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 81
+    startLine: 72
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -278,7 +278,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ServerStreamingServerHandler
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 90
+    startLine: 81
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -344,7 +344,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ClientStreamingServerHandler
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 100
+    startLine: 91
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -415,7 +415,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DuplexStreamingServerHandler
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 109
+    startLine: 100
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth

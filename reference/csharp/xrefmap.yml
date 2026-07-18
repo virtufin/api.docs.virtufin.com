@@ -76,6 +76,60 @@ references:
   commentId: F:Virtufin.Api.Auth.ApiKeyAuthOptions.KeysSectionName
   fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.KeysSectionName
   nameWithType: ApiKeyAuthOptions.KeysSectionName
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(System.String,System.String@)
+  name: TryAuthenticate(string?, out string?)
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_TryAuthenticate_System_String_System_String__
+  commentId: M:Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(System.String,System.String@)
+  name.vb: TryAuthenticate(String, String)
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(string?, out string?)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(String, String)
+  nameWithType: ApiKeyAuthOptions.TryAuthenticate(string?, out string?)
+  nameWithType.vb: ApiKeyAuthOptions.TryAuthenticate(String, String)
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate*
+  name: TryAuthenticate
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_TryAuthenticate_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate
+  nameWithType: ApiKeyAuthOptions.TryAuthenticate
+- uid: Virtufin.Api.Auth.ApiKeyHttpMiddleware
+  name: ApiKeyHttpMiddleware
+  href: api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.html
+  commentId: T:Virtufin.Api.Auth.ApiKeyHttpMiddleware
+  fullName: Virtufin.Api.Auth.ApiKeyHttpMiddleware
+  nameWithType: ApiKeyHttpMiddleware
+- uid: Virtufin.Api.Auth.ApiKeyHttpMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Auth.ApiKeyHttpMiddleware})
+  name: ApiKeyHttpMiddleware(RequestDelegate, ApiKeyAuthOptions, ILogger<ApiKeyHttpMiddleware>)
+  href: api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.html#Virtufin_Api_Auth_ApiKeyHttpMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_Virtufin_Api_Auth_ApiKeyAuthOptions_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Auth_ApiKeyHttpMiddleware__
+  commentId: M:Virtufin.Api.Auth.ApiKeyHttpMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Auth.ApiKeyHttpMiddleware})
+  name.vb: New(RequestDelegate, ApiKeyAuthOptions, ILogger(Of ApiKeyHttpMiddleware))
+  fullName: Virtufin.Api.Auth.ApiKeyHttpMiddleware.ApiKeyHttpMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, Virtufin.Api.Auth.ApiKeyAuthOptions, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Auth.ApiKeyHttpMiddleware>)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyHttpMiddleware.New(Microsoft.AspNetCore.Http.RequestDelegate, Virtufin.Api.Auth.ApiKeyAuthOptions, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Auth.ApiKeyHttpMiddleware))
+  nameWithType: ApiKeyHttpMiddleware.ApiKeyHttpMiddleware(RequestDelegate, ApiKeyAuthOptions, ILogger<ApiKeyHttpMiddleware>)
+  nameWithType.vb: ApiKeyHttpMiddleware.New(RequestDelegate, ApiKeyAuthOptions, ILogger(Of ApiKeyHttpMiddleware))
+- uid: Virtufin.Api.Auth.ApiKeyHttpMiddleware.#ctor*
+  name: ApiKeyHttpMiddleware
+  href: api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.html#Virtufin_Api_Auth_ApiKeyHttpMiddleware__ctor_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyHttpMiddleware.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Auth.ApiKeyHttpMiddleware.ApiKeyHttpMiddleware
+  fullName.vb: Virtufin.Api.Auth.ApiKeyHttpMiddleware.New
+  nameWithType: ApiKeyHttpMiddleware.ApiKeyHttpMiddleware
+  nameWithType.vb: ApiKeyHttpMiddleware.New
+- uid: Virtufin.Api.Auth.ApiKeyHttpMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: InvokeAsync(HttpContext)
+  href: api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.html#Virtufin_Api_Auth_ApiKeyHttpMiddleware_InvokeAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:Virtufin.Api.Auth.ApiKeyHttpMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: Virtufin.Api.Auth.ApiKeyHttpMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: ApiKeyHttpMiddleware.InvokeAsync(HttpContext)
+- uid: Virtufin.Api.Auth.ApiKeyHttpMiddleware.InvokeAsync*
+  name: InvokeAsync
+  href: api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.html#Virtufin_Api_Auth_ApiKeyHttpMiddleware_InvokeAsync_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyHttpMiddleware.InvokeAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyHttpMiddleware.InvokeAsync
+  nameWithType: ApiKeyHttpMiddleware.InvokeAsync
 - uid: Virtufin.Api.Auth.ApiKeyInterceptor
   name: ApiKeyInterceptor
   href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html

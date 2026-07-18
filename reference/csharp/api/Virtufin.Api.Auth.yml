@@ -6,6 +6,7 @@ items:
   parent: Virtufin.Api
   children:
   - Virtufin.Api.Auth.ApiKeyAuthOptions
+  - Virtufin.Api.Auth.ApiKeyHttpMiddleware
   - Virtufin.Api.Auth.ApiKeyInterceptor
   langs:
   - csharp
@@ -24,6 +25,12 @@ references:
   name: ApiKeyAuthOptions
   nameWithType: ApiKeyAuthOptions
   fullName: Virtufin.Api.Auth.ApiKeyAuthOptions
+- uid: Virtufin.Api.Auth.ApiKeyHttpMiddleware
+  commentId: T:Virtufin.Api.Auth.ApiKeyHttpMiddleware
+  href: Virtufin.Api.Auth.ApiKeyHttpMiddleware.html
+  name: ApiKeyHttpMiddleware
+  nameWithType: ApiKeyHttpMiddleware
+  fullName: Virtufin.Api.Auth.ApiKeyHttpMiddleware
 - uid: Virtufin.Api.Auth.ApiKeyInterceptor
   commentId: T:Virtufin.Api.Auth.ApiKeyInterceptor
   href: Virtufin.Api.Auth.ApiKeyInterceptor.html

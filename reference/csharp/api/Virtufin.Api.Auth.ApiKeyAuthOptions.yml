@@ -9,6 +9,7 @@ items:
   - Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration(Microsoft.Extensions.Configuration.IConfiguration)
   - Virtufin.Api.Auth.ApiKeyAuthOptions.Keys
   - Virtufin.Api.Auth.ApiKeyAuthOptions.KeysSectionName
+  - Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(System.String,System.String@)
   langs:
   - csharp
   - vb
@@ -23,7 +24,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ApiKeyAuthOptions
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -64,7 +65,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: KeysSectionName
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
-    startLine: 12
+    startLine: 14
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -93,7 +94,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Keys
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -124,7 +125,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Enabled
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -155,7 +156,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: FromConfiguration
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -170,6 +171,47 @@ items:
       type: Virtufin.Api.Auth.ApiKeyAuthOptions
     content.vb: Public Shared Function FromConfiguration(configuration As IConfiguration) As ApiKeyAuthOptions
   overload: Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration*
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(System.String,System.String@)
+  commentId: M:Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(System.String,System.String@)
+  id: TryAuthenticate(System.String,System.String@)
+  parent: Virtufin.Api.Auth.ApiKeyAuthOptions
+  langs:
+  - csharp
+  - vb
+  name: TryAuthenticate(string?, out string?)
+  nameWithType: ApiKeyAuthOptions.TryAuthenticate(string?, out string?)
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(string?, out string?)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: TryAuthenticate
+    path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
+    startLine: 33
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Auth
+  summary: >-
+    Constant-time match of a presented key against the configured keys.
+
+    Returns true and the caller name on success; false otherwise.
+  example: []
+  syntax:
+    content: public bool TryAuthenticate(string? presentedKey, out string? keyName)
+    parameters:
+    - id: presentedKey
+      type: System.String
+    - id: keyName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryAuthenticate(presentedKey As String, keyName As String) As Boolean
+  overload: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate*
+  nameWithType.vb: ApiKeyAuthOptions.TryAuthenticate(String, String)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate(String, String)
+  name.vb: TryAuthenticate(String, String)
 references:
 - uid: Virtufin.Api.Auth
   commentId: N:Virtufin.Api.Auth
@@ -624,3 +666,9 @@ references:
     name: Configuration
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate*
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate
+  href: Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_TryAuthenticate_System_String_System_String__
+  name: TryAuthenticate
+  nameWithType: ApiKeyAuthOptions.TryAuthenticate
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.TryAuthenticate

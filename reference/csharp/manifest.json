@@ -32,6 +32,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Auth.ApiKeyHttpMiddleware",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.yml\" sourcestartlinenumber=\"1\">Enforces <code>x-api-key</code> on the HTTP surface (the hand-written minimal-API\nendpoints such as <code>/v1/grpc/call</code>, the OpenAPI/Scalar docs, and\nJSON-transcoded gRPC). Native gRPC and gRPC-web calls carry their own\n<xref href=\"Virtufin.Api.Auth.ApiKeyInterceptor\" data-throw-if-not-resolved=\"false\"></xref> and are skipped here so they keep proper\ngRPC status codes. Health probes stay open.</p>\n<p sourcefile=\"api/Virtufin.Api.Auth.ApiKeyHttpMiddleware.yml\" sourcestartlinenumber=\"7\">Without this, exposing the gRPC port through an ingress would also expose\nthose HTTP endpoints — which bypass the gRPC interceptor entirely — with no\nauthentication. Active only when <xref href=\"Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Auth.ApiKeyInterceptor.yml",
       "output": {
         ".html": {
