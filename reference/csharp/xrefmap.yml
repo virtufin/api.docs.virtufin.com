@@ -19,6 +19,180 @@ references:
   commentId: F:Virtufin.Api.ApiConstants.Version
   fullName: Virtufin.Api.ApiConstants.Version
   nameWithType: ApiConstants.Version
+- uid: Virtufin.Api.Auth
+  name: Virtufin.Api.Auth
+  href: api/Virtufin.Api.Auth.html
+  commentId: N:Virtufin.Api.Auth
+  fullName: Virtufin.Api.Auth
+  nameWithType: Virtufin.Api.Auth
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions
+  name: ApiKeyAuthOptions
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html
+  commentId: T:Virtufin.Api.Auth.ApiKeyAuthOptions
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions
+  nameWithType: ApiKeyAuthOptions
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled
+  name: Enabled
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_Enabled
+  commentId: P:Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled
+  nameWithType: ApiKeyAuthOptions.Enabled
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled*
+  name: Enabled
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_Enabled_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled
+  nameWithType: ApiKeyAuthOptions.Enabled
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration(Microsoft.Extensions.Configuration.IConfiguration)
+  name: FromConfiguration(IConfiguration)
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_FromConfiguration_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration(Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration(Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ApiKeyAuthOptions.FromConfiguration(IConfiguration)
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration*
+  name: FromConfiguration
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_FromConfiguration_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration
+  nameWithType: ApiKeyAuthOptions.FromConfiguration
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.Keys
+  name: Keys
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_Keys
+  commentId: P:Virtufin.Api.Auth.ApiKeyAuthOptions.Keys
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.Keys
+  nameWithType: ApiKeyAuthOptions.Keys
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.Keys*
+  name: Keys
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_Keys_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyAuthOptions.Keys
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.Keys
+  nameWithType: ApiKeyAuthOptions.Keys
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions.KeysSectionName
+  name: KeysSectionName
+  href: api/Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_KeysSectionName
+  commentId: F:Virtufin.Api.Auth.ApiKeyAuthOptions.KeysSectionName
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.KeysSectionName
+  nameWithType: ApiKeyAuthOptions.KeysSectionName
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor
+  name: ApiKeyInterceptor
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html
+  commentId: T:Virtufin.Api.Auth.ApiKeyInterceptor
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor
+  nameWithType: ApiKeyInterceptor
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Auth.ApiKeyInterceptor})
+  name: ApiKeyInterceptor(ApiKeyAuthOptions, ILogger<ApiKeyInterceptor>)
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor__ctor_Virtufin_Api_Auth_ApiKeyAuthOptions_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Auth_ApiKeyInterceptor__
+  commentId: M:Virtufin.Api.Auth.ApiKeyInterceptor.#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Auth.ApiKeyInterceptor})
+  name.vb: New(ApiKeyAuthOptions, ILogger(Of ApiKeyInterceptor))
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.ApiKeyInterceptor(Virtufin.Api.Auth.ApiKeyAuthOptions, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Auth.ApiKeyInterceptor>)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyInterceptor.New(Virtufin.Api.Auth.ApiKeyAuthOptions, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Auth.ApiKeyInterceptor))
+  nameWithType: ApiKeyInterceptor.ApiKeyInterceptor(ApiKeyAuthOptions, ILogger<ApiKeyInterceptor>)
+  nameWithType.vb: ApiKeyInterceptor.New(ApiKeyAuthOptions, ILogger(Of ApiKeyInterceptor))
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.#ctor*
+  name: ApiKeyInterceptor
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor__ctor_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyInterceptor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.ApiKeyInterceptor
+  fullName.vb: Virtufin.Api.Auth.ApiKeyInterceptor.New
+  nameWithType: ApiKeyInterceptor.ApiKeyInterceptor
+  nameWithType.vb: ApiKeyInterceptor.New
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate(System.String,System.String)
+  name: Authenticate(string, string?)
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_Authenticate_System_String_System_String_
+  commentId: M:Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate(System.String,System.String)
+  name.vb: Authenticate(String, String)
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate(string, string?)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate(String, String)
+  nameWithType: ApiKeyInterceptor.Authenticate(string, string?)
+  nameWithType.vb: ApiKeyInterceptor.Authenticate(String, String)
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate*
+  name: Authenticate
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_Authenticate_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate
+  nameWithType: ApiKeyInterceptor.Authenticate
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler*
+  name: ClientStreamingServerHandler
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_ClientStreamingServerHandler_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler
+  nameWithType: ApiKeyInterceptor.ClientStreamingServerHandler
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler``2(Grpc.Core.IAsyncStreamReader{``0},Grpc.Core.ServerCallContext,Grpc.Core.ClientStreamingServerMethod{``0,``1})
+  name: ClientStreamingServerHandler<TRequest, TResponse>(IAsyncStreamReader<TRequest>, ServerCallContext, ClientStreamingServerMethod<TRequest, TResponse>)
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_ClientStreamingServerHandler__2_Grpc_Core_IAsyncStreamReader___0__Grpc_Core_ServerCallContext_Grpc_Core_ClientStreamingServerMethod___0___1__
+  commentId: M:Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler``2(Grpc.Core.IAsyncStreamReader{``0},Grpc.Core.ServerCallContext,Grpc.Core.ClientStreamingServerMethod{``0,``1})
+  name.vb: ClientStreamingServerHandler(Of TRequest, TResponse)(IAsyncStreamReader(Of TRequest), ServerCallContext, ClientStreamingServerMethod(Of TRequest, TResponse))
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler<TRequest, TResponse>(Grpc.Core.IAsyncStreamReader<TRequest>, Grpc.Core.ServerCallContext, Grpc.Core.ClientStreamingServerMethod<TRequest, TResponse>)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler(Of TRequest, TResponse)(Grpc.Core.IAsyncStreamReader(Of TRequest), Grpc.Core.ServerCallContext, Grpc.Core.ClientStreamingServerMethod(Of TRequest, TResponse))
+  nameWithType: ApiKeyInterceptor.ClientStreamingServerHandler<TRequest, TResponse>(IAsyncStreamReader<TRequest>, ServerCallContext, ClientStreamingServerMethod<TRequest, TResponse>)
+  nameWithType.vb: ApiKeyInterceptor.ClientStreamingServerHandler(Of TRequest, TResponse)(IAsyncStreamReader(Of TRequest), ServerCallContext, ClientStreamingServerMethod(Of TRequest, TResponse))
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler*
+  name: DuplexStreamingServerHandler
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_DuplexStreamingServerHandler_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler
+  nameWithType: ApiKeyInterceptor.DuplexStreamingServerHandler
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler``2(Grpc.Core.IAsyncStreamReader{``0},Grpc.Core.IServerStreamWriter{``1},Grpc.Core.ServerCallContext,Grpc.Core.DuplexStreamingServerMethod{``0,``1})
+  name: DuplexStreamingServerHandler<TRequest, TResponse>(IAsyncStreamReader<TRequest>, IServerStreamWriter<TResponse>, ServerCallContext, DuplexStreamingServerMethod<TRequest, TResponse>)
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_DuplexStreamingServerHandler__2_Grpc_Core_IAsyncStreamReader___0__Grpc_Core_IServerStreamWriter___1__Grpc_Core_ServerCallContext_Grpc_Core_DuplexStreamingServerMethod___0___1__
+  commentId: M:Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler``2(Grpc.Core.IAsyncStreamReader{``0},Grpc.Core.IServerStreamWriter{``1},Grpc.Core.ServerCallContext,Grpc.Core.DuplexStreamingServerMethod{``0,``1})
+  name.vb: DuplexStreamingServerHandler(Of TRequest, TResponse)(IAsyncStreamReader(Of TRequest), IServerStreamWriter(Of TResponse), ServerCallContext, DuplexStreamingServerMethod(Of TRequest, TResponse))
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler<TRequest, TResponse>(Grpc.Core.IAsyncStreamReader<TRequest>, Grpc.Core.IServerStreamWriter<TResponse>, Grpc.Core.ServerCallContext, Grpc.Core.DuplexStreamingServerMethod<TRequest, TResponse>)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler(Of TRequest, TResponse)(Grpc.Core.IAsyncStreamReader(Of TRequest), Grpc.Core.IServerStreamWriter(Of TResponse), Grpc.Core.ServerCallContext, Grpc.Core.DuplexStreamingServerMethod(Of TRequest, TResponse))
+  nameWithType: ApiKeyInterceptor.DuplexStreamingServerHandler<TRequest, TResponse>(IAsyncStreamReader<TRequest>, IServerStreamWriter<TResponse>, ServerCallContext, DuplexStreamingServerMethod<TRequest, TResponse>)
+  nameWithType.vb: ApiKeyInterceptor.DuplexStreamingServerHandler(Of TRequest, TResponse)(IAsyncStreamReader(Of TRequest), IServerStreamWriter(Of TResponse), ServerCallContext, DuplexStreamingServerMethod(Of TRequest, TResponse))
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.HeaderName
+  name: HeaderName
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_HeaderName
+  commentId: F:Virtufin.Api.Auth.ApiKeyInterceptor.HeaderName
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.HeaderName
+  nameWithType: ApiKeyInterceptor.HeaderName
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler*
+  name: ServerStreamingServerHandler
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_ServerStreamingServerHandler_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler
+  nameWithType: ApiKeyInterceptor.ServerStreamingServerHandler
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler``2(``0,Grpc.Core.IServerStreamWriter{``1},Grpc.Core.ServerCallContext,Grpc.Core.ServerStreamingServerMethod{``0,``1})
+  name: ServerStreamingServerHandler<TRequest, TResponse>(TRequest, IServerStreamWriter<TResponse>, ServerCallContext, ServerStreamingServerMethod<TRequest, TResponse>)
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_ServerStreamingServerHandler__2___0_Grpc_Core_IServerStreamWriter___1__Grpc_Core_ServerCallContext_Grpc_Core_ServerStreamingServerMethod___0___1__
+  commentId: M:Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler``2(``0,Grpc.Core.IServerStreamWriter{``1},Grpc.Core.ServerCallContext,Grpc.Core.ServerStreamingServerMethod{``0,``1})
+  name.vb: ServerStreamingServerHandler(Of TRequest, TResponse)(TRequest, IServerStreamWriter(Of TResponse), ServerCallContext, ServerStreamingServerMethod(Of TRequest, TResponse))
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler<TRequest, TResponse>(TRequest, Grpc.Core.IServerStreamWriter<TResponse>, Grpc.Core.ServerCallContext, Grpc.Core.ServerStreamingServerMethod<TRequest, TResponse>)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler(Of TRequest, TResponse)(TRequest, Grpc.Core.IServerStreamWriter(Of TResponse), Grpc.Core.ServerCallContext, Grpc.Core.ServerStreamingServerMethod(Of TRequest, TResponse))
+  nameWithType: ApiKeyInterceptor.ServerStreamingServerHandler<TRequest, TResponse>(TRequest, IServerStreamWriter<TResponse>, ServerCallContext, ServerStreamingServerMethod<TRequest, TResponse>)
+  nameWithType.vb: ApiKeyInterceptor.ServerStreamingServerHandler(Of TRequest, TResponse)(TRequest, IServerStreamWriter(Of TResponse), ServerCallContext, ServerStreamingServerMethod(Of TRequest, TResponse))
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler*
+  name: UnaryServerHandler
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_UnaryServerHandler_
+  commentId: Overload:Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler
+  isSpec: "True"
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler
+  nameWithType: ApiKeyInterceptor.UnaryServerHandler
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler``2(``0,Grpc.Core.ServerCallContext,Grpc.Core.UnaryServerMethod{``0,``1})
+  name: UnaryServerHandler<TRequest, TResponse>(TRequest, ServerCallContext, UnaryServerMethod<TRequest, TResponse>)
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_UnaryServerHandler__2___0_Grpc_Core_ServerCallContext_Grpc_Core_UnaryServerMethod___0___1__
+  commentId: M:Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler``2(``0,Grpc.Core.ServerCallContext,Grpc.Core.UnaryServerMethod{``0,``1})
+  name.vb: UnaryServerHandler(Of TRequest, TResponse)(TRequest, ServerCallContext, UnaryServerMethod(Of TRequest, TResponse))
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler<TRequest, TResponse>(TRequest, Grpc.Core.ServerCallContext, Grpc.Core.UnaryServerMethod<TRequest, TResponse>)
+  fullName.vb: Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler(Of TRequest, TResponse)(TRequest, Grpc.Core.ServerCallContext, Grpc.Core.UnaryServerMethod(Of TRequest, TResponse))
+  nameWithType: ApiKeyInterceptor.UnaryServerHandler<TRequest, TResponse>(TRequest, ServerCallContext, UnaryServerMethod<TRequest, TResponse>)
+  nameWithType.vb: ApiKeyInterceptor.UnaryServerHandler(Of TRequest, TResponse)(TRequest, ServerCallContext, UnaryServerMethod(Of TRequest, TResponse))
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.UserStateKey
+  name: UserStateKey
+  href: api/Virtufin.Api.Auth.ApiKeyInterceptor.html#Virtufin_Api_Auth_ApiKeyInterceptor_UserStateKey
+  commentId: F:Virtufin.Api.Auth.ApiKeyInterceptor.UserStateKey
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.UserStateKey
+  nameWithType: ApiKeyInterceptor.UserStateKey
 - uid: Virtufin.Api.Client
   name: Virtufin.Api.Client
   href: api/Virtufin.Api.Client.html

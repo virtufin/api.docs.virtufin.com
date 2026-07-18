@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class JobsConfig | Virtufin API - C# Reference </title>
+      <title>Class ApiKeyAuthOptions | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class JobsConfig | Virtufin API - C# Reference ">
+      <meta name="title" content="Class ApiKeyAuthOptions | Virtufin API - C# Reference ">
       
-      
+      <meta name="description" content="API-key authentication configuration for the gRPC surface. Keys are named so successful calls can be attributed to a caller in logs. When no keys are configured, authentication is disabled (local dev default).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,24 +88,27 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Configuration.JobsConfig">
+        <article data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions">
 
 
 
-  <h1 id="Virtufin_Api_Configuration_JobsConfig" data-uid="Virtufin.Api.Configuration.JobsConfig" class="text-break">
-Class JobsConfig  
+  <h1 id="Virtufin_Api_Auth_ApiKeyAuthOptions" data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions" class="text-break">
+Class ApiKeyAuthOptions  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Configuration.html">Configuration</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Auth.html">Auth</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>API-key authentication configuration for the gRPC surface.
+Keys are named so successful calls can be attributed to a caller in logs.
+When no keys are configured, authentication is disabled (local dev default).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class JobsConfig</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ApiKeyAuthOptions</code></pre>
   </div>
 
 
@@ -115,7 +118,7 @@ Class JobsConfig
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">JobsConfig</span></div>
+      <div><span class="xref">ApiKeyAuthOptions</span></div>
     </dd>
   </dl>
 
@@ -137,9 +140,6 @@ Class JobsConfig
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
@@ -152,27 +152,32 @@ Class JobsConfig
 
 
 
-  <h2 class="section" id="constructors">Constructors
+  <h2 class="section" id="fields">Fields
 </h2>
 
 
-  <a id="Virtufin_Api_Configuration_JobsConfig__ctor_" data-uid="Virtufin.Api.Configuration.JobsConfig.#ctor*"></a>
 
-  <h3 id="Virtufin_Api_Configuration_JobsConfig__ctor" data-uid="Virtufin.Api.Configuration.JobsConfig.#ctor">
-  JobsConfig()
+  <h3 id="Virtufin_Api_Auth_ApiKeyAuthOptions_KeysSectionName" data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions.KeysSectionName">
+  KeysSectionName
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Configuration section holding the key dictionary (<code>ApiAuth:Keys:&lt;name&gt;</code>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JobsConfig()</code></pre>
+    <pre><code class="lang-csharp hljs">public const string KeysSectionName = &quot;ApiAuth:Keys&quot;</code></pre>
   </div>
 
 
 
 
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -186,18 +191,19 @@ Class JobsConfig
 </h2>
 
 
-  <a id="Virtufin_Api_Configuration_JobsConfig_Crons_" data-uid="Virtufin.Api.Configuration.JobsConfig.Crons*"></a>
+  <a id="Virtufin_Api_Auth_ApiKeyAuthOptions_Enabled_" data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled*"></a>
 
-  <h3 id="Virtufin_Api_Configuration_JobsConfig_Crons" data-uid="Virtufin.Api.Configuration.JobsConfig.Crons">
-  Crons
+  <h3 id="Virtufin_Api_Auth_ApiKeyAuthOptions_Enabled" data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled">
+  Enabled
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Authentication is enforced only when at least one key is configured.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;CronJobConfig&gt; Crons { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Enabled { get; }</code></pre>
   </div>
 
 
@@ -206,9 +212,82 @@ Class JobsConfig
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Virtufin.Api.Configuration.CronJobConfig.html">CronJobConfig</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Auth_ApiKeyAuthOptions_Keys_" data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions.Keys*"></a>
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyAuthOptions_Keys" data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions.Keys">
+  Keys
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configured keys, keyed by caller name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; Keys { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Api_Auth_ApiKeyAuthOptions_FromConfiguration_" data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration*"></a>
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyAuthOptions_FromConfiguration_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Virtufin.Api.Auth.ApiKeyAuthOptions.FromConfiguration(Microsoft.Extensions.Configuration.IConfiguration)">
+  FromConfiguration(IConfiguration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Load keys from configuration (env vars bind as <code>ApiAuth__Keys__&lt;name&gt;</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ApiKeyAuthOptions FromConfiguration(IConfiguration configuration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Auth.ApiKeyAuthOptions.html">ApiKeyAuthOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
 
 
 

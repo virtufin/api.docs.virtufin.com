@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Auth
+  commentId: N:Virtufin.Api.Auth
+  id: Auth
+  parent: Virtufin.Api
+  children:
+  - Virtufin.Api.Auth.ApiKeyAuthOptions
+  - Virtufin.Api.Auth.ApiKeyInterceptor
+  langs:
+  - csharp
+  - vb
+  name: Virtufin.Api.Auth
+  nameWithType: Virtufin.Api.Auth
+  fullName: Virtufin.Api.Auth
+  type: Namespace
+  assemblies:
+  - Virtufin.Api
+references:
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions
+  commentId: T:Virtufin.Api.Auth.ApiKeyAuthOptions
+  parent: Virtufin.Api.Auth
+  href: Virtufin.Api.Auth.ApiKeyAuthOptions.html
+  name: ApiKeyAuthOptions
+  nameWithType: ApiKeyAuthOptions
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor
+  commentId: T:Virtufin.Api.Auth.ApiKeyInterceptor
+  href: Virtufin.Api.Auth.ApiKeyInterceptor.html
+  name: ApiKeyInterceptor
+  nameWithType: ApiKeyInterceptor
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor
+- uid: Virtufin.Api.Auth
+  commentId: N:Virtufin.Api.Auth
+  href: Virtufin.html
+  name: Virtufin.Api.Auth
+  nameWithType: Virtufin.Api.Auth
+  fullName: Virtufin.Api.Auth
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Auth
+    name: Auth
+    href: Virtufin.Api.Auth.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Auth
+    name: Auth
+    href: Virtufin.Api.Auth.html

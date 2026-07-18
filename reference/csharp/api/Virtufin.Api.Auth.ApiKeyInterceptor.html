@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ApiKeyInterceptor | Virtufin API - C# Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ApiKeyInterceptor | Virtufin API - C# Reference ">
+      
+      <meta name="description" content="Server interceptor enforcing x-api-key authentication on every gRPC call (including JSON-transcoded ones) when . Health-check methods stay open so probes and load balancers keep working.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Api">
+            Virtufin.Api
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/3b26f43e11a19ce08de25ec0d75adc908e389168" target="_blank" rel="noopener" class="commit-badge" title="View commit 3b26f43e11a19ce08de25ec0d75adc908e389168">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">3b26f43e11a19ce08de25ec0d75adc908e389168</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Api.Auth.ApiKeyInterceptor">
+
+
+
+  <h1 id="Virtufin_Api_Auth_ApiKeyInterceptor" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor" class="text-break">
+Class ApiKeyInterceptor  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Auth.html">Auth</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Server interceptor enforcing <code>x-api-key</code> authentication on every gRPC
+call (including JSON-transcoded ones) when <a class="xref" href="Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_Enabled">Enabled</a>.
+Health-check methods stay open so probes and load balancers keep working.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ApiKeyInterceptor : Interceptor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Interceptors/Interceptor.cs">Interceptor</a></div>
+      <div><span class="xref">ApiKeyInterceptor</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Interceptors/Interceptor.cs">Interceptor.BlockingUnaryCall&lt;TRequest, TResponse&gt;(TRequest, ClientInterceptorContext&lt;TRequest, TResponse&gt;, Interceptor.BlockingUnaryCallContinuation&lt;TRequest, TResponse&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Interceptors/Interceptor.cs">Interceptor.AsyncUnaryCall&lt;TRequest, TResponse&gt;(TRequest, ClientInterceptorContext&lt;TRequest, TResponse&gt;, Interceptor.AsyncUnaryCallContinuation&lt;TRequest, TResponse&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Interceptors/Interceptor.cs">Interceptor.AsyncServerStreamingCall&lt;TRequest, TResponse&gt;(TRequest, ClientInterceptorContext&lt;TRequest, TResponse&gt;, Interceptor.AsyncServerStreamingCallContinuation&lt;TRequest, TResponse&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Interceptors/Interceptor.cs">Interceptor.AsyncClientStreamingCall&lt;TRequest, TResponse&gt;(ClientInterceptorContext&lt;TRequest, TResponse&gt;, Interceptor.AsyncClientStreamingCallContinuation&lt;TRequest, TResponse&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/Interceptors/Interceptor.cs">Interceptor.AsyncDuplexStreamingCall&lt;TRequest, TResponse&gt;(ClientInterceptorContext&lt;TRequest, TResponse&gt;, Interceptor.AsyncDuplexStreamingCallContinuation&lt;TRequest, TResponse&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_Api_Auth_ApiKeyInterceptor__ctor_" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.#ctor*"></a>
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyInterceptor__ctor_Virtufin_Api_Auth_ApiKeyAuthOptions_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Auth_ApiKeyInterceptor__" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Auth.ApiKeyInterceptor})">
+  ApiKeyInterceptor(ApiKeyAuthOptions, ILogger&lt;ApiKeyInterceptor&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiKeyInterceptor(ApiKeyAuthOptions options, ILogger&lt;ApiKeyInterceptor&gt; logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Virtufin.Api.Auth.ApiKeyAuthOptions.html">ApiKeyAuthOptions</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Auth.ApiKeyInterceptor.html">ApiKeyInterceptor</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyInterceptor_HeaderName" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.HeaderName">
+  HeaderName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Request metadata header carrying the API key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HeaderName = &quot;x-api-key&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyInterceptor_UserStateKey" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.UserStateKey">
+  UserStateKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UserState entry holding the authenticated key name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string UserStateKey = &quot;ApiKeyName&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Api_Auth_ApiKeyInterceptor_Authenticate_" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate*"></a>
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyInterceptor_Authenticate_System_String_System_String_" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.Authenticate(System.String,System.String)">
+  Authenticate(string, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Core auth decision, separated from <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a> for testability.
+Returns the authenticated key name, or null when the call is allowed without a
+key (auth disabled or exempt method). Throws <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/RpcException.cs">RpcException</a>
+(Unauthenticated) when a required key is missing or invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Authenticate(string method, string? presentedKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>presentedKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Auth_ApiKeyInterceptor_ClientStreamingServerHandler_" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler*"></a>
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyInterceptor_ClientStreamingServerHandler__2_Grpc_Core_IAsyncStreamReader___0__Grpc_Core_ServerCallContext_Grpc_Core_ClientStreamingServerMethod___0___1__" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.ClientStreamingServerHandler``2(Grpc.Core.IAsyncStreamReader{``0},Grpc.Core.ServerCallContext,Grpc.Core.ClientStreamingServerMethod{``0,``1})">
+  ClientStreamingServerHandler&lt;TRequest, TResponse&gt;(IAsyncStreamReader&lt;TRequest&gt;, ServerCallContext, ClientStreamingServerMethod&lt;TRequest, TResponse&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Server-side handler for intercepting client streaming call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;TResponse&gt; ClientStreamingServerHandler&lt;TRequest, TResponse&gt;(IAsyncStreamReader&lt;TRequest&gt; requestStream, ServerCallContext context, ClientStreamingServerMethod&lt;TRequest, TResponse&gt; continuation) where TRequest : class where TResponse : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs">IAsyncStreamReader</a>&lt;TRequest&gt;</dt>
+    <dd><p>The request stream of the incoming invocation.</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd><p>An instance of <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a> representing
+the context of the invocation.</p>
+</dd>
+    <dt><code>continuation</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerMethods.cs">ClientStreamingServerMethod</a>&lt;TRequest, TResponse&gt;</dt>
+    <dd><p>A delegate that asynchronously proceeds with the invocation, calling
+the next interceptor in the chain, or the service request handler,
+in case of the last interceptor and return the response value of
+the RPC. The interceptor can choose to call it zero or more times
+at its discretion.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;</dt>
+    <dd><p>A future representing the response value of the RPC. The interceptor
+can simply return the return value from the continuation intact,
+or an arbitrary response value as it sees fit. The interceptor has
+the ability to wrap or substitute the request stream when calling
+the continuation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRequest</code></dt>
+    <dd><p>Request message type for this method.</p>
+</dd>
+    <dt><code>TResponse</code></dt>
+    <dd><p>Response message type for this method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Auth_ApiKeyInterceptor_DuplexStreamingServerHandler_" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler*"></a>
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyInterceptor_DuplexStreamingServerHandler__2_Grpc_Core_IAsyncStreamReader___0__Grpc_Core_IServerStreamWriter___1__Grpc_Core_ServerCallContext_Grpc_Core_DuplexStreamingServerMethod___0___1__" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.DuplexStreamingServerHandler``2(Grpc.Core.IAsyncStreamReader{``0},Grpc.Core.IServerStreamWriter{``1},Grpc.Core.ServerCallContext,Grpc.Core.DuplexStreamingServerMethod{``0,``1})">
+  DuplexStreamingServerHandler&lt;TRequest, TResponse&gt;(IAsyncStreamReader&lt;TRequest&gt;, IServerStreamWriter&lt;TResponse&gt;, ServerCallContext, DuplexStreamingServerMethod&lt;TRequest, TResponse&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Server-side handler for intercepting bidirectional streaming calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task DuplexStreamingServerHandler&lt;TRequest, TResponse&gt;(IAsyncStreamReader&lt;TRequest&gt; requestStream, IServerStreamWriter&lt;TResponse&gt; responseStream, ServerCallContext context, DuplexStreamingServerMethod&lt;TRequest, TResponse&gt; continuation) where TRequest : class where TResponse : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs">IAsyncStreamReader</a>&lt;TRequest&gt;</dt>
+    <dd><p>The request stream of the incoming invocation.</p>
+</dd>
+    <dt><code>responseStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs">IServerStreamWriter</a>&lt;TResponse&gt;</dt>
+    <dd><p>The response stream of the incoming invocation.</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd><p>An instance of <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a> representing
+the context of the invocation.</p>
+</dd>
+    <dt><code>continuation</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerMethods.cs">DuplexStreamingServerMethod</a>&lt;TRequest, TResponse&gt;</dt>
+    <dd><p>A delegate that asynchronously proceeds with the invocation, calling
+the next interceptor in the chain, or the service request handler,
+in case of the last interceptor and the interceptor can choose to
+call it zero or more times at its discretion. The interceptor has
+the ability to wrap or substitute the request and response streams
+when calling the continuation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRequest</code></dt>
+    <dd><p>Request message type for this method.</p>
+</dd>
+    <dt><code>TResponse</code></dt>
+    <dd><p>Response message type for this method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Auth_ApiKeyInterceptor_ServerStreamingServerHandler_" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler*"></a>
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyInterceptor_ServerStreamingServerHandler__2___0_Grpc_Core_IServerStreamWriter___1__Grpc_Core_ServerCallContext_Grpc_Core_ServerStreamingServerMethod___0___1__" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.ServerStreamingServerHandler``2(``0,Grpc.Core.IServerStreamWriter{``1},Grpc.Core.ServerCallContext,Grpc.Core.ServerStreamingServerMethod{``0,``1})">
+  ServerStreamingServerHandler&lt;TRequest, TResponse&gt;(TRequest, IServerStreamWriter&lt;TResponse&gt;, ServerCallContext, ServerStreamingServerMethod&lt;TRequest, TResponse&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Server-side handler for intercepting server streaming call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task ServerStreamingServerHandler&lt;TRequest, TResponse&gt;(TRequest request, IServerStreamWriter&lt;TResponse&gt; responseStream, ServerCallContext context, ServerStreamingServerMethod&lt;TRequest, TResponse&gt; continuation) where TRequest : class where TResponse : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">TRequest</span></dt>
+    <dd><p>The request value of the incoming invocation.</p>
+</dd>
+    <dt><code>responseStream</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs">IServerStreamWriter</a>&lt;TResponse&gt;</dt>
+    <dd><p>The response stream of the incoming invocation.</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd><p>An instance of <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a> representing
+the context of the invocation.</p>
+</dd>
+    <dt><code>continuation</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerMethods.cs">ServerStreamingServerMethod</a>&lt;TRequest, TResponse&gt;</dt>
+    <dd><p>A delegate that asynchronously proceeds with the invocation, calling
+the next interceptor in the chain, or the service request handler,
+in case of the last interceptor and the interceptor can choose to
+call it zero or more times at its discretion. The interceptor has
+the ability to wrap or substitute the request value and the response stream
+when calling the continuation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRequest</code></dt>
+    <dd><p>Request message type for this method.</p>
+</dd>
+    <dt><code>TResponse</code></dt>
+    <dd><p>Response message type for this method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Auth_ApiKeyInterceptor_UnaryServerHandler_" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler*"></a>
+
+  <h3 id="Virtufin_Api_Auth_ApiKeyInterceptor_UnaryServerHandler__2___0_Grpc_Core_ServerCallContext_Grpc_Core_UnaryServerMethod___0___1__" data-uid="Virtufin.Api.Auth.ApiKeyInterceptor.UnaryServerHandler``2(``0,Grpc.Core.ServerCallContext,Grpc.Core.UnaryServerMethod{``0,``1})">
+  UnaryServerHandler&lt;TRequest, TResponse&gt;(TRequest, ServerCallContext, UnaryServerMethod&lt;TRequest, TResponse&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Server-side handler for intercepting and incoming unary call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;TResponse&gt; UnaryServerHandler&lt;TRequest, TResponse&gt;(TRequest request, ServerCallContext context, UnaryServerMethod&lt;TRequest, TResponse&gt; continuation) where TRequest : class where TResponse : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">TRequest</span></dt>
+    <dd><p>The request value of the incoming invocation.</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd><p>An instance of <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a> representing
+the context of the invocation.</p>
+</dd>
+    <dt><code>continuation</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerMethods.cs">UnaryServerMethod</a>&lt;TRequest, TResponse&gt;</dt>
+    <dd><p>A delegate that asynchronously proceeds with the invocation, calling
+the next interceptor in the chain, or the service request handler,
+in case of the last interceptor and return the response value of
+the RPC. The interceptor can choose to call it zero or more times
+at its discretion.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;</dt>
+    <dd><p>A future representing the response value of the RPC. The interceptor
+can simply return the return value from the continuation intact,
+or an arbitrary response value as it sees fit.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRequest</code></dt>
+    <dd><p>Request message type for this method.</p>
+</dd>
+    <dt><code>TResponse</code></dt>
+    <dd><p>Response message type for this method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -5,6 +5,7 @@ items:
   id: Virtufin.Api
   children:
   - Virtufin.Api.ApiConstants
+  - Virtufin.Api.Auth
   - Virtufin.Api.Client
   - Virtufin.Api.Configuration
   - Virtufin.Api.DeleteStateEventPayload
@@ -24,6 +25,36 @@ items:
   assemblies:
   - Virtufin.Api
 references:
+- uid: Virtufin.Api.Auth
+  commentId: N:Virtufin.Api.Auth
+  href: Virtufin.html
+  name: Virtufin.Api.Auth
+  nameWithType: Virtufin.Api.Auth
+  fullName: Virtufin.Api.Auth
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Auth
+    name: Auth
+    href: Virtufin.Api.Auth.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Auth
+    name: Auth
+    href: Virtufin.Api.Auth.html
 - uid: Virtufin.Api.Client
   commentId: N:Virtufin.Api.Client
   href: Virtufin.html

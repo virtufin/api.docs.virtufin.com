@@ -18,6 +18,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Auth.ApiKeyAuthOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Auth.ApiKeyAuthOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Auth.ApiKeyAuthOptions",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Auth.ApiKeyAuthOptions.yml\" sourcestartlinenumber=\"1\">API-key authentication configuration for the gRPC surface.\nKeys are named so successful calls can be attributed to a caller in logs.\nWhen no keys are configured, authentication is disabled (local dev default).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Auth.ApiKeyInterceptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Auth.ApiKeyInterceptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Auth.ApiKeyInterceptor",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Auth.ApiKeyInterceptor.yml\" sourcestartlinenumber=\"1\">Server interceptor enforcing <code>x-api-key</code> authentication on every gRPC\ncall (including JSON-transcoded ones) when <xref href=\"Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled\" data-throw-if-not-resolved=\"false\"></xref>.\nHealth-check methods stay open so probes and load balancers keep working.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Auth.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Auth",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Client.ApiClient.yml",
       "output": {
         ".html": {

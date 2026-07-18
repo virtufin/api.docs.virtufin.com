@@ -4,6 +4,16 @@ items:
   name: Virtufin.Api
   type: Namespace
   items:
+  - uid: Virtufin.Api.Auth
+    name: Auth
+    type: Namespace
+    items:
+    - uid: Virtufin.Api.Auth.ApiKeyAuthOptions
+      name: ApiKeyAuthOptions
+      type: Class
+    - uid: Virtufin.Api.Auth.ApiKeyInterceptor
+      name: ApiKeyInterceptor
+      type: Class
   - uid: Virtufin.Api.Client
     name: Client
     type: Namespace
