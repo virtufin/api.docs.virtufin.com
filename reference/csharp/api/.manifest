@@ -259,6 +259,7 @@
   "Virtufin.Api.Services.GrpcCallStatusCodes.Internal": "Virtufin.Api.Services.GrpcCallStatusCodes.yml",
   "Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest": "Virtufin.Api.Services.GrpcCallStatusCodes.yml",
   "Virtufin.Api.Services.GrpcCallStatusCodes.NotFound": "Virtufin.Api.Services.GrpcCallStatusCodes.yml",
+  "Virtufin.Api.Services.GrpcCallStatusCodes.Unavailable": "Virtufin.Api.Services.GrpcCallStatusCodes.yml",
   "Virtufin.Api.Services.GrpcCallStatusCodes.Unknown": "Virtufin.Api.Services.GrpcCallStatusCodes.yml",
   "Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported": "Virtufin.Api.Services.GrpcCallStatusCodes.yml",
   "Virtufin.Api.Services.GrpcChannelPool": "Virtufin.Api.Services.GrpcChannelPool.yml",

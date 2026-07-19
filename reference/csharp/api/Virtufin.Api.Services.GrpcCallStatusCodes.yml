@@ -8,6 +8,7 @@ items:
   - Virtufin.Api.Services.GrpcCallStatusCodes.Internal
   - Virtufin.Api.Services.GrpcCallStatusCodes.InvalidRequest
   - Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
+  - Virtufin.Api.Services.GrpcCallStatusCodes.Unavailable
   - Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
   - Virtufin.Api.Services.GrpcCallStatusCodes.Unsupported
   langs:
@@ -176,6 +177,33 @@ items:
     return:
       type: System.String
     content.vb: Public Const InvalidRequest As String = "INVALID_REQUEST"
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unavailable
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unavailable
+  id: Unavailable
+  parent: Virtufin.Api.Services.GrpcCallStatusCodes
+  langs:
+  - csharp
+  - vb
+  name: Unavailable
+  nameWithType: GrpcCallStatusCodes.Unavailable
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unavailable
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/Constants.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: Unavailable
+    path: ../../../src/Virtufin.Api/Services/Constants.cs
+    startLine: 28
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public const string Unavailable = "UNAVAILABLE"
+    return:
+      type: System.String
+    content.vb: Public Const Unavailable As String = "UNAVAILABLE"
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services

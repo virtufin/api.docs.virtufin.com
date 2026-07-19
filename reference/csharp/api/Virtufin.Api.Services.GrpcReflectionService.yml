@@ -245,7 +245,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ExecuteCallAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 141
+    startLine: 151
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -295,7 +295,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetFileDescriptorProtosAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 198
+    startLine: 218
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -336,7 +336,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetOrderedFileDescriptorProtosAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 214
+    startLine: 234
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -384,7 +384,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetServiceFullNamesAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 227
+    startLine: 247
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -427,7 +427,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ContainsSymbolAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 241
+    startLine: 261
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -473,7 +473,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ContainsFileAsync
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 254
+    startLine: 274
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -516,7 +516,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvalidateCache
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 271
+    startLine: 291
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -554,7 +554,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvalidateAllCaches
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 282
+    startLine: 302
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

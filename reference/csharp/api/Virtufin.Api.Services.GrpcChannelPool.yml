@@ -187,7 +187,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
-    startLine: 32
+    startLine: 47
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

@@ -2978,6 +2978,12 @@ references:
   commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
   fullName: Virtufin.Api.Services.GrpcCallStatusCodes.NotFound
   nameWithType: GrpcCallStatusCodes.NotFound
+- uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unavailable
+  name: Unavailable
+  href: api/Virtufin.Api.Services.GrpcCallStatusCodes.html#Virtufin_Api_Services_GrpcCallStatusCodes_Unavailable
+  commentId: F:Virtufin.Api.Services.GrpcCallStatusCodes.Unavailable
+  fullName: Virtufin.Api.Services.GrpcCallStatusCodes.Unavailable
+  nameWithType: GrpcCallStatusCodes.Unavailable
 - uid: Virtufin.Api.Services.GrpcCallStatusCodes.Unknown
   name: Unknown
   href: api/Virtufin.Api.Services.GrpcCallStatusCodes.html#Virtufin_Api_Services_GrpcCallStatusCodes_Unknown
