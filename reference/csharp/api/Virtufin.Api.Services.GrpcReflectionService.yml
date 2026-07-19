@@ -6,11 +6,15 @@ items:
   parent: Virtufin.Api.Services
   children:
   - Virtufin.Api.Services.GrpcReflectionService.#ctor(Virtufin.Api.Services.GrpcChannelPool,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GrpcReflectionService},Microsoft.Extensions.Configuration.IConfiguration)
+  - Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(System.String,System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.GetMethodSchemaAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
   - Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)
   langs:
@@ -314,6 +318,186 @@ items:
   nameWithType.vb: GrpcReflectionService.GetFileDescriptorProtosAsync(String, CancellationToken)
   fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetFileDescriptorProtosAsync(String, System.Threading.CancellationToken)
   name.vb: GetFileDescriptorProtosAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  id: GetOrderedFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: GetOrderedFileDescriptorProtosAsync(string, CancellationToken)
+  nameWithType: GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(string, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: GetOrderedFileDescriptorProtosAsync
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 214
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Retrieves the file descriptor protos for a service in dependency order,
+
+    including the well-known transitive dependencies (descriptor.proto,
+
+    annotations.proto, http.proto) that backend reflection servers omit.
+
+    Suitable for feeding into a descriptor pool in returned order.
+  example: []
+  syntax:
+    content: public Task<List<ByteString>> GetOrderedFileDescriptorProtosAsync(string serviceName, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The name of the service.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Google.Protobuf.ByteString}}
+      description: List of ByteString containing the descriptor protos, dependencies first.
+    content.vb: Public Function GetOrderedFileDescriptorProtosAsync(serviceName As String, cancellationToken As CancellationToken = Nothing) As Task(Of List(Of ByteString))
+  overload: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync*
+  nameWithType.vb: GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(String, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(String, System.Threading.CancellationToken)
+  name.vb: GetOrderedFileDescriptorProtosAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(System.String,System.Threading.CancellationToken)
+  id: GetServiceFullNamesAsync(System.String,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceFullNamesAsync(string, CancellationToken)
+  nameWithType: GrpcReflectionService.GetServiceFullNamesAsync(string, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: GetServiceFullNamesAsync
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 227
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Returns the fully-qualified names of the gRPC services exposed by a backend
+
+    (e.g. "virtufin.WorkManager"), loading the reflection cache on demand.
+  example: []
+  syntax:
+    content: public Task<List<string>> GetServiceFullNamesAsync(string serviceName, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The name of the service as registered with the gateway.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+    content.vb: Public Function GetServiceFullNamesAsync(serviceName As String, cancellationToken As CancellationToken = Nothing) As Task(Of List(Of String))
+  overload: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync*
+  nameWithType.vb: GrpcReflectionService.GetServiceFullNamesAsync(String, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(String, System.Threading.CancellationToken)
+  name.vb: GetServiceFullNamesAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ContainsSymbolAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: ContainsSymbolAsync(string, string, CancellationToken)
+  nameWithType: GrpcReflectionService.ContainsSymbolAsync(string, string, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(string, string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ContainsSymbolAsync
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 241
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Returns true when the backend's descriptor set defines the given
+
+    fully-qualified symbol (service, message, or enum name).
+  example: []
+  syntax:
+    content: public Task<bool> ContainsSymbolAsync(string serviceName, string symbol, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The name of the service as registered with the gateway.
+    - id: symbol
+      type: System.String
+      description: The fully-qualified symbol to look up.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function ContainsSymbolAsync(serviceName As String, symbol As String, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync*
+  nameWithType.vb: GrpcReflectionService.ContainsSymbolAsync(String, String, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(String, String, System.Threading.CancellationToken)
+  name.vb: ContainsSymbolAsync(String, String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ContainsFileAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.GrpcReflectionService
+  langs:
+  - csharp
+  - vb
+  name: ContainsFileAsync(string, string, CancellationToken)
+  nameWithType: GrpcReflectionService.ContainsFileAsync(string, string, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(string, string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ContainsFileAsync
+    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
+    startLine: 254
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Returns true when the backend's descriptor set includes the given proto file name.
+  example: []
+  syntax:
+    content: public Task<bool> ContainsFileAsync(string serviceName, string fileName, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: The name of the service as registered with the gateway.
+    - id: fileName
+      type: System.String
+      description: The proto file name (e.g. "workmanager.proto").
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function ContainsFileAsync(serviceName As String, fileName As String, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync*
+  nameWithType.vb: GrpcReflectionService.ContainsFileAsync(String, String, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(String, String, System.Threading.CancellationToken)
+  name.vb: ContainsFileAsync(String, String, CancellationToken)
 - uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)
   commentId: M:Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)
   id: InvalidateCache(System.String)
@@ -332,7 +516,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvalidateCache
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 215
+    startLine: 271
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -370,7 +554,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvalidateAllCaches
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 226
+    startLine: 282
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -1243,6 +1427,114 @@ references:
     isExternal: true
   - name: )
   - name: )
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetOrderedFileDescriptorProtosAsync_System_String_System_Threading_CancellationToken_
+  name: GetOrderedFileDescriptorProtosAsync
+  nameWithType: GrpcReflectionService.GetOrderedFileDescriptorProtosAsync
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetServiceFullNamesAsync_System_String_System_Threading_CancellationToken_
+  name: GetServiceFullNamesAsync
+  nameWithType: GrpcReflectionService.GetServiceFullNamesAsync
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<string>>
+  nameWithType: Task<List<string>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<string>>
+  nameWithType.vb: Task(Of List(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of String))
+  name.vb: Task(Of List(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_ContainsSymbolAsync_System_String_System_String_System_Threading_CancellationToken_
+  name: ContainsSymbolAsync
+  nameWithType: GrpcReflectionService.ContainsSymbolAsync
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync*
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync
+  href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_ContainsFileAsync_System_String_System_String_System_Threading_CancellationToken_
+  name: ContainsFileAsync
+  nameWithType: GrpcReflectionService.ContainsFileAsync
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync
 - uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache*
   commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.InvalidateCache
   href: Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_InvalidateCache_System_String_

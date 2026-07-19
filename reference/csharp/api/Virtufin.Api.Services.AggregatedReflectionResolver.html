@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AggregatedReflectionResolver | Virtufin API - C# Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AggregatedReflectionResolver | Virtufin API - C# Reference ">
+      
+      <meta name="description" content="Resolves gRPC server reflection requests against two descriptor sources: the gateway&#39;s own compiled-in protos (Gateway/Config/State/Pubsub) and the backend descriptor caches maintained by . This is what lets clients reflect on backend services (virtufin.WorkManager, virtufin.WebSocketManager, ...) through the gateway, which does not compile their protos in. Besides fully-qualified symbols, the registered service name from services.json (e.g. &amp;quot;workmanager&amp;quot;) is accepted as a FileContainingSymbol alias for the backend&#39;s whole descriptor set.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="Virtufin.Api">
+            Virtufin.Api
+          </a>
+          <div class="git-info">
+            <a href="{git_repo_url}/commit/65ce338175e48908a6e3610d5e88c5135a342330" target="_blank" rel="noopener" class="commit-badge" title="View commit 65ce338175e48908a6e3610d5e88c5135a342330">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
+                <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">65ce338175e48908a6e3610d5e88c5135a342330</text>
+              </svg>
+            </a>
+          </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Virtufin.Api.Services.AggregatedReflectionResolver">
+
+
+
+  <h1 id="Virtufin_Api_Services_AggregatedReflectionResolver" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver" class="text-break">
+Class AggregatedReflectionResolver  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Resolves gRPC server reflection requests against two descriptor sources:
+the gateway's own compiled-in protos (Gateway/Config/State/Pubsub) and the
+backend descriptor caches maintained by <a class="xref" href="Virtufin.Api.Services.GrpcReflectionService.html">GrpcReflectionService</a>.
+This is what lets clients reflect on backend services (virtufin.WorkManager,
+virtufin.WebSocketManager, ...) through the gateway, which does not compile
+their protos in. Besides fully-qualified symbols, the registered service
+name from services.json (e.g. &quot;workmanager&quot;) is accepted as a
+FileContainingSymbol alias for the backend's whole descriptor set.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AggregatedReflectionResolver</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AggregatedReflectionResolver</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_Api_Services_AggregatedReflectionResolver__ctor_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.#ctor*"></a>
+
+  <h3 id="Virtufin_Api_Services_AggregatedReflectionResolver__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_AggregatedReflectionResolver__" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.AggregatedReflectionResolver})">
+  AggregatedReflectionResolver(GrpcReflectionService, ServicesConfiguration, ILogger&lt;AggregatedReflectionResolver&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregatedReflectionResolver(GrpcReflectionService reflectionService, ServicesConfiguration servicesConfiguration, ILogger&lt;AggregatedReflectionResolver&gt; logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reflectionService</code> <a class="xref" href="Virtufin.Api.Services.GrpcReflectionService.html">GrpcReflectionService</a></dt>
+    <dd></dd>
+    <dt><code>servicesConfiguration</code> <a class="xref" href="Virtufin.Api.Configuration.ServicesConfiguration.html">ServicesConfiguration</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.AggregatedReflectionResolver.html">AggregatedReflectionResolver</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Api_Services_AggregatedReflectionResolver_FileByFilenameAsync_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync*"></a>
+
+  <h3 id="Virtufin_Api_Services_AggregatedReflectionResolver_FileByFilenameAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync(System.String,System.Threading.CancellationToken)">
+  FileByFilenameAsync(string, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves a FileByFilename request against own and backend descriptor sets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ReflectionAnswer&gt; FileByFilenameAsync(string fileName, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Services.ReflectionAnswer.html">ReflectionAnswer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_AggregatedReflectionResolver_FileContainingSymbolAsync_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync*"></a>
+
+  <h3 id="Virtufin_Api_Services_AggregatedReflectionResolver_FileContainingSymbolAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync(System.String,System.Threading.CancellationToken)">
+  FileContainingSymbolAsync(string, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves a FileContainingSymbol request: own descriptors first, then the
+registered-service-name alias, then a symbol search across backends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ReflectionAnswer&gt; FileContainingSymbolAsync(string symbol, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Services.ReflectionAnswer.html">ReflectionAnswer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_AggregatedReflectionResolver_ListServicesAsync_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.ListServicesAsync*"></a>
+
+  <h3 id="Virtufin_Api_Services_AggregatedReflectionResolver_ListServicesAsync_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.ListServicesAsync(System.Threading.CancellationToken)">
+  ListServicesAsync(CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Full names of all reflectable services: the gateway's own plus every
+reachable backend's. Unreachable backends are skipped (best effort).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ReflectionAnswer&gt; ListServicesAsync(CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Virtufin.Api.Services.ReflectionAnswer.html">ReflectionAnswer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Virtufin_Api_Services_AggregatedReflectionResolver_Unimplemented_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented*"></a>
+
+  <h3 id="Virtufin_Api_Services_AggregatedReflectionResolver_Unimplemented_System_String_" data-uid="Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented(System.String)">
+  Unimplemented(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReflectionAnswer Unimplemented(string what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Virtufin.Api.Services.ReflectionAnswer.html">ReflectionAnswer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2026 Häner Consulting. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

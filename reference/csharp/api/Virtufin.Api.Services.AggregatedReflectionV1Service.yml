@@ -1,0 +1,737 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service
+  commentId: T:Virtufin.Api.Services.AggregatedReflectionV1Service
+  id: AggregatedReflectionV1Service
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor(Virtufin.Api.Services.AggregatedReflectionResolver)
+  - Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  langs:
+  - csharp
+  - vb
+  name: AggregatedReflectionV1Service
+  nameWithType: AggregatedReflectionV1Service
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: AggregatedReflectionV1Service
+    path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
+    startLine: 310
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    grpc.reflection.v1.ServerReflection endpoint backed by
+
+    <xref href="Virtufin.Api.Services.AggregatedReflectionResolver" data-throw-if-not-resolved="false"></xref>. Modern tooling (grpcurl) and the
+
+    gateway's own backend-facing client speak this version.
+  example: []
+  syntax:
+    content: 'public sealed class AggregatedReflectionV1Service : ServerReflection.ServerReflectionBase'
+    content.vb: Public NotInheritable Class AggregatedReflectionV1Service Inherits ServerReflection.ServerReflectionBase
+  inheritance:
+  - System.Object
+  - Grpc.Reflection.V1.ServerReflection.ServerReflectionBase
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor(Virtufin.Api.Services.AggregatedReflectionResolver)
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor(Virtufin.Api.Services.AggregatedReflectionResolver)
+  id: '#ctor(Virtufin.Api.Services.AggregatedReflectionResolver)'
+  parent: Virtufin.Api.Services.AggregatedReflectionV1Service
+  langs:
+  - csharp
+  - vb
+  name: AggregatedReflectionV1Service(AggregatedReflectionResolver)
+  nameWithType: AggregatedReflectionV1Service.AggregatedReflectionV1Service(AggregatedReflectionResolver)
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.AggregatedReflectionV1Service(Virtufin.Api.Services.AggregatedReflectionResolver)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: .ctor
+    path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
+    startLine: 314
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public AggregatedReflectionV1Service(AggregatedReflectionResolver resolver)
+    parameters:
+    - id: resolver
+      type: Virtufin.Api.Services.AggregatedReflectionResolver
+    content.vb: Public Sub New(resolver As AggregatedReflectionResolver)
+  overload: Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor*
+  nameWithType.vb: AggregatedReflectionV1Service.New(AggregatedReflectionResolver)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionV1Service.New(Virtufin.Api.Services.AggregatedReflectionResolver)
+  name.vb: New(AggregatedReflectionResolver)
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  id: ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Services.AggregatedReflectionV1Service
+  langs:
+  - csharp
+  - vb
+  name: ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest>, IServerStreamWriter<ServerReflectionResponse>, ServerCallContext)
+  nameWithType: AggregatedReflectionV1Service.ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest>, IServerStreamWriter<ServerReflectionResponse>, ServerCallContext)
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader<Grpc.Reflection.V1.ServerReflectionRequest>, Grpc.Core.IServerStreamWriter<Grpc.Reflection.V1.ServerReflectionResponse>, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ServerReflectionInfo
+    path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
+    startLine: 319
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    The reflection service is structured as a bidirectional stream, ensuring
+
+    all related requests go to a single server.
+  example: []
+  syntax:
+    content: public override Task ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest> requestStream, IServerStreamWriter<ServerReflectionResponse> responseStream, ServerCallContext context)
+    parameters:
+    - id: requestStream
+      type: Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest}
+      description: Used for reading requests from the client.
+    - id: responseStream
+      type: Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse}
+      description: Used for sending responses back to the client.
+    - id: context
+      type: Grpc.Core.ServerCallContext
+      description: The context of the server-side call handler being invoked.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task indicating completion of the handler.
+    content.vb: Public Overrides Function ServerReflectionInfo(requestStream As IAsyncStreamReader(Of ServerReflectionRequest), responseStream As IServerStreamWriter(Of ServerReflectionResponse), context As ServerCallContext) As Task
+  overridden: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo*
+  nameWithType.vb: AggregatedReflectionV1Service.ServerReflectionInfo(IAsyncStreamReader(Of ServerReflectionRequest), IServerStreamWriter(Of ServerReflectionResponse), ServerCallContext)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader(Of Grpc.Reflection.V1.ServerReflectionRequest), Grpc.Core.IServerStreamWriter(Of Grpc.Reflection.V1.ServerReflectionResponse), Grpc.Core.ServerCallContext)
+  name.vb: ServerReflectionInfo(IAsyncStreamReader(Of ServerReflectionRequest), IServerStreamWriter(Of ServerReflectionResponse), ServerCallContext)
+references:
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver
+  commentId: T:Virtufin.Api.Services.AggregatedReflectionResolver
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.AggregatedReflectionResolver.html
+  name: AggregatedReflectionResolver
+  nameWithType: AggregatedReflectionResolver
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase
+  commentId: T:Grpc.Reflection.V1.ServerReflection.ServerReflectionBase
+  parent: Grpc.Reflection.V1
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/ReflectionGrpc.cs
+  name: ServerReflection.ServerReflectionBase
+  nameWithType: ServerReflection.ServerReflectionBase
+  fullName: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase
+  spec.csharp:
+  - uid: Grpc.Reflection.V1.ServerReflection
+    name: ServerReflection
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/ReflectionGrpc.cs
+  - name: .
+  - uid: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase
+    name: ServerReflectionBase
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/ReflectionGrpc.cs
+  spec.vb:
+  - uid: Grpc.Reflection.V1.ServerReflection
+    name: ServerReflection
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/ReflectionGrpc.cs
+  - name: .
+  - uid: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase
+    name: ServerReflectionBase
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/ReflectionGrpc.cs
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Grpc.Reflection.V1
+  commentId: N:Grpc.Reflection.V1
+  isExternal: true
+  name: Grpc.Reflection.V1
+  nameWithType: Grpc.Reflection.V1
+  fullName: Grpc.Reflection.V1
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Reflection
+    name: Reflection
+    isExternal: true
+  - name: .
+  - uid: Grpc.Reflection.V1
+    name: V1
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Reflection
+    name: Reflection
+    isExternal: true
+  - name: .
+  - uid: Grpc.Reflection.V1
+    name: V1
+    isExternal: true
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor*
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor
+  href: Virtufin.Api.Services.AggregatedReflectionV1Service.html#Virtufin_Api_Services_AggregatedReflectionV1Service__ctor_Virtufin_Api_Services_AggregatedReflectionResolver_
+  name: AggregatedReflectionV1Service
+  nameWithType: AggregatedReflectionV1Service.AggregatedReflectionV1Service
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.AggregatedReflectionV1Service
+  nameWithType.vb: AggregatedReflectionV1Service.New
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionV1Service.New
+  name.vb: New
+- uid: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  commentId: M:Grpc.Reflection.V1.ServerReflection.ServerReflectionBase.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  parent: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/ReflectionGrpc.cs
+  name: ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest>, IServerStreamWriter<ServerReflectionResponse>, ServerCallContext)
+  nameWithType: ServerReflection.ServerReflectionBase.ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest>, IServerStreamWriter<ServerReflectionResponse>, ServerCallContext)
+  fullName: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader<Grpc.Reflection.V1.ServerReflectionRequest>, Grpc.Core.IServerStreamWriter<Grpc.Reflection.V1.ServerReflectionResponse>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: ServerReflection.ServerReflectionBase.ServerReflectionInfo(IAsyncStreamReader(Of ServerReflectionRequest), IServerStreamWriter(Of ServerReflectionResponse), ServerCallContext)
+  fullName.vb: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader(Of Grpc.Reflection.V1.ServerReflectionRequest), Grpc.Core.IServerStreamWriter(Of Grpc.Reflection.V1.ServerReflectionResponse), Grpc.Core.ServerCallContext)
+  name.vb: ServerReflectionInfo(IAsyncStreamReader(Of ServerReflectionRequest), IServerStreamWriter(Of ServerReflectionResponse), ServerCallContext)
+  spec.csharp:
+  - uid: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+    name: ServerReflectionInfo
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/ReflectionGrpc.cs
+  - name: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs
+  - name: <
+  - uid: Grpc.Reflection.V1.ServerReflectionRequest
+    name: ServerReflectionRequest
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/Reflection.cs
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: <
+  - uid: Grpc.Reflection.V1.ServerReflectionResponse
+    name: ServerReflectionResponse
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/Reflection.cs
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Grpc.Reflection.V1.ServerReflection.ServerReflectionBase.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+    name: ServerReflectionInfo
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/ReflectionGrpc.cs
+  - name: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Grpc.Reflection.V1.ServerReflectionRequest
+    name: ServerReflectionRequest
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/Reflection.cs
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Grpc.Reflection.V1.ServerReflectionResponse
+    name: ServerReflectionResponse
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/Reflection.cs
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo*
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo
+  href: Virtufin.Api.Services.AggregatedReflectionV1Service.html#Virtufin_Api_Services_AggregatedReflectionV1Service_ServerReflectionInfo_Grpc_Core_IAsyncStreamReader_Grpc_Reflection_V1_ServerReflectionRequest__Grpc_Core_IServerStreamWriter_Grpc_Reflection_V1_ServerReflectionResponse__Grpc_Core_ServerCallContext_
+  name: ServerReflectionInfo
+  nameWithType: AggregatedReflectionV1Service.ServerReflectionInfo
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo
+- uid: Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest}
+  commentId: T:Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest}
+  parent: Grpc.Core
+  definition: Grpc.Core.IAsyncStreamReader`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs
+  name: IAsyncStreamReader<ServerReflectionRequest>
+  nameWithType: IAsyncStreamReader<ServerReflectionRequest>
+  fullName: Grpc.Core.IAsyncStreamReader<Grpc.Reflection.V1.ServerReflectionRequest>
+  nameWithType.vb: IAsyncStreamReader(Of ServerReflectionRequest)
+  fullName.vb: Grpc.Core.IAsyncStreamReader(Of Grpc.Reflection.V1.ServerReflectionRequest)
+  name.vb: IAsyncStreamReader(Of ServerReflectionRequest)
+  spec.csharp:
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs
+  - name: <
+  - uid: Grpc.Reflection.V1.ServerReflectionRequest
+    name: ServerReflectionRequest
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/Reflection.cs
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Grpc.Reflection.V1.ServerReflectionRequest
+    name: ServerReflectionRequest
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/Reflection.cs
+  - name: )
+- uid: Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse}
+  commentId: T:Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse}
+  parent: Grpc.Core
+  definition: Grpc.Core.IServerStreamWriter`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  name: IServerStreamWriter<ServerReflectionResponse>
+  nameWithType: IServerStreamWriter<ServerReflectionResponse>
+  fullName: Grpc.Core.IServerStreamWriter<Grpc.Reflection.V1.ServerReflectionResponse>
+  nameWithType.vb: IServerStreamWriter(Of ServerReflectionResponse)
+  fullName.vb: Grpc.Core.IServerStreamWriter(Of Grpc.Reflection.V1.ServerReflectionResponse)
+  name.vb: IServerStreamWriter(Of ServerReflectionResponse)
+  spec.csharp:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: <
+  - uid: Grpc.Reflection.V1.ServerReflectionResponse
+    name: ServerReflectionResponse
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/Reflection.cs
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Grpc.Reflection.V1.ServerReflectionResponse
+    name: ServerReflectionResponse
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Reflection/obj/Release/netstandard2.0/grpc/reflection/v1/Reflection.cs
+  - name: )
+- uid: Grpc.Core.ServerCallContext
+  commentId: T:Grpc.Core.ServerCallContext
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: ServerCallContext
+  nameWithType: ServerCallContext
+  fullName: Grpc.Core.ServerCallContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Grpc.Core.IAsyncStreamReader`1
+  commentId: T:Grpc.Core.IAsyncStreamReader`1
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs
+  name: IAsyncStreamReader<T>
+  nameWithType: IAsyncStreamReader<T>
+  fullName: Grpc.Core.IAsyncStreamReader<T>
+  nameWithType.vb: IAsyncStreamReader(Of T)
+  fullName.vb: Grpc.Core.IAsyncStreamReader(Of T)
+  name.vb: IAsyncStreamReader(Of T)
+  spec.csharp:
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IAsyncStreamReader.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Grpc.Core
+  commentId: N:Grpc.Core
+  isExternal: true
+  name: Grpc.Core
+  nameWithType: Grpc.Core
+  fullName: Grpc.Core
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+- uid: Grpc.Core.IServerStreamWriter`1
+  commentId: T:Grpc.Core.IServerStreamWriter`1
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  name: IServerStreamWriter<T>
+  nameWithType: IServerStreamWriter<T>
+  fullName: Grpc.Core.IServerStreamWriter<T>
+  nameWithType.vb: IServerStreamWriter(Of T)
+  fullName.vb: Grpc.Core.IServerStreamWriter(Of T)
+  name.vb: IServerStreamWriter(Of T)
+  spec.csharp:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -5,6 +5,9 @@ items:
   id: Services
   parent: Virtufin.Api
   children:
+  - Virtufin.Api.Services.AggregatedReflectionResolver
+  - Virtufin.Api.Services.AggregatedReflectionService
+  - Virtufin.Api.Services.AggregatedReflectionV1Service
   - Virtufin.Api.Services.ConfigService
   - Virtufin.Api.Services.DaprConstants
   - Virtufin.Api.Services.DateTimeFormatConstants
@@ -22,6 +25,7 @@ items:
   - Virtufin.Api.Services.PubsubService
   - Virtufin.Api.Services.PubsubSubscription
   - Virtufin.Api.Services.PubsubSubscriptionManager
+  - Virtufin.Api.Services.ReflectionAnswer
   - Virtufin.Api.Services.ServiceMethodInfo
   - Virtufin.Api.Services.StateActionConstants
   - Virtufin.Api.Services.StateService
@@ -41,6 +45,25 @@ items:
   assemblies:
   - Virtufin.Api
 references:
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver
+  commentId: T:Virtufin.Api.Services.AggregatedReflectionResolver
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.AggregatedReflectionResolver.html
+  name: AggregatedReflectionResolver
+  nameWithType: AggregatedReflectionResolver
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver
+- uid: Virtufin.Api.Services.AggregatedReflectionService
+  commentId: T:Virtufin.Api.Services.AggregatedReflectionService
+  href: Virtufin.Api.Services.AggregatedReflectionService.html
+  name: AggregatedReflectionService
+  nameWithType: AggregatedReflectionService
+  fullName: Virtufin.Api.Services.AggregatedReflectionService
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service
+  commentId: T:Virtufin.Api.Services.AggregatedReflectionV1Service
+  href: Virtufin.Api.Services.AggregatedReflectionV1Service.html
+  name: AggregatedReflectionV1Service
+  nameWithType: AggregatedReflectionV1Service
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service
 - uid: Virtufin.Api.Services.ConfigService
   commentId: T:Virtufin.Api.Services.ConfigService
   href: Virtufin.Api.Services.ConfigService.html
@@ -149,6 +172,13 @@ references:
   name: PubsubSubscriptionManager
   nameWithType: PubsubSubscriptionManager
   fullName: Virtufin.Api.Services.PubsubSubscriptionManager
+- uid: Virtufin.Api.Services.ReflectionAnswer
+  commentId: T:Virtufin.Api.Services.ReflectionAnswer
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.ReflectionAnswer.html
+  name: ReflectionAnswer
+  nameWithType: ReflectionAnswer
+  fullName: Virtufin.Api.Services.ReflectionAnswer
 - uid: Virtufin.Api.Services.ServiceMethodInfo
   commentId: T:Virtufin.Api.Services.ServiceMethodInfo
   href: Virtufin.Api.Services.ServiceMethodInfo.html

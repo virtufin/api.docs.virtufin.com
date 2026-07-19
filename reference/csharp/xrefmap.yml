@@ -2255,6 +2255,174 @@ references:
   commentId: N:Virtufin.Api.Services
   fullName: Virtufin.Api.Services
   nameWithType: Virtufin.Api.Services
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver
+  name: AggregatedReflectionResolver
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html
+  commentId: T:Virtufin.Api.Services.AggregatedReflectionResolver
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver
+  nameWithType: AggregatedReflectionResolver
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.AggregatedReflectionResolver})
+  name: AggregatedReflectionResolver(GrpcReflectionService, ServicesConfiguration, ILogger<AggregatedReflectionResolver>)
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_AggregatedReflectionResolver__
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionResolver.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.AggregatedReflectionResolver})
+  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of AggregatedReflectionResolver))
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.AggregatedReflectionResolver(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.AggregatedReflectionResolver>)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionResolver.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.AggregatedReflectionResolver))
+  nameWithType: AggregatedReflectionResolver.AggregatedReflectionResolver(GrpcReflectionService, ServicesConfiguration, ILogger<AggregatedReflectionResolver>)
+  nameWithType.vb: AggregatedReflectionResolver.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of AggregatedReflectionResolver))
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.#ctor*
+  name: AggregatedReflectionResolver
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver__ctor_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.AggregatedReflectionResolver
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionResolver.New
+  nameWithType: AggregatedReflectionResolver.AggregatedReflectionResolver
+  nameWithType.vb: AggregatedReflectionResolver.New
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync(System.String,System.Threading.CancellationToken)
+  name: FileByFilenameAsync(string, CancellationToken)
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver_FileByFilenameAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync(System.String,System.Threading.CancellationToken)
+  name.vb: FileByFilenameAsync(String, CancellationToken)
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync(String, System.Threading.CancellationToken)
+  nameWithType: AggregatedReflectionResolver.FileByFilenameAsync(string, CancellationToken)
+  nameWithType.vb: AggregatedReflectionResolver.FileByFilenameAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync*
+  name: FileByFilenameAsync
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver_FileByFilenameAsync_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.FileByFilenameAsync
+  nameWithType: AggregatedReflectionResolver.FileByFilenameAsync
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync(System.String,System.Threading.CancellationToken)
+  name: FileContainingSymbolAsync(string, CancellationToken)
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver_FileContainingSymbolAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync(System.String,System.Threading.CancellationToken)
+  name.vb: FileContainingSymbolAsync(String, CancellationToken)
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync(String, System.Threading.CancellationToken)
+  nameWithType: AggregatedReflectionResolver.FileContainingSymbolAsync(string, CancellationToken)
+  nameWithType.vb: AggregatedReflectionResolver.FileContainingSymbolAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync*
+  name: FileContainingSymbolAsync
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver_FileContainingSymbolAsync_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.FileContainingSymbolAsync
+  nameWithType: AggregatedReflectionResolver.FileContainingSymbolAsync
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.ListServicesAsync(System.Threading.CancellationToken)
+  name: ListServicesAsync(CancellationToken)
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver_ListServicesAsync_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionResolver.ListServicesAsync(System.Threading.CancellationToken)
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.ListServicesAsync(System.Threading.CancellationToken)
+  nameWithType: AggregatedReflectionResolver.ListServicesAsync(CancellationToken)
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.ListServicesAsync*
+  name: ListServicesAsync
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver_ListServicesAsync_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionResolver.ListServicesAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.ListServicesAsync
+  nameWithType: AggregatedReflectionResolver.ListServicesAsync
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented(System.String)
+  name: Unimplemented(string)
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver_Unimplemented_System_String_
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented(System.String)
+  name.vb: Unimplemented(String)
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented(string)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented(String)
+  nameWithType: AggregatedReflectionResolver.Unimplemented(string)
+  nameWithType.vb: AggregatedReflectionResolver.Unimplemented(String)
+- uid: Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented*
+  name: Unimplemented
+  href: api/Virtufin.Api.Services.AggregatedReflectionResolver.html#Virtufin_Api_Services_AggregatedReflectionResolver_Unimplemented_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.AggregatedReflectionResolver.Unimplemented
+  nameWithType: AggregatedReflectionResolver.Unimplemented
+- uid: Virtufin.Api.Services.AggregatedReflectionService
+  name: AggregatedReflectionService
+  href: api/Virtufin.Api.Services.AggregatedReflectionService.html
+  commentId: T:Virtufin.Api.Services.AggregatedReflectionService
+  fullName: Virtufin.Api.Services.AggregatedReflectionService
+  nameWithType: AggregatedReflectionService
+- uid: Virtufin.Api.Services.AggregatedReflectionService.#ctor(Virtufin.Api.Services.AggregatedReflectionResolver)
+  name: AggregatedReflectionService(AggregatedReflectionResolver)
+  href: api/Virtufin.Api.Services.AggregatedReflectionService.html#Virtufin_Api_Services_AggregatedReflectionService__ctor_Virtufin_Api_Services_AggregatedReflectionResolver_
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionService.#ctor(Virtufin.Api.Services.AggregatedReflectionResolver)
+  name.vb: New(AggregatedReflectionResolver)
+  fullName: Virtufin.Api.Services.AggregatedReflectionService.AggregatedReflectionService(Virtufin.Api.Services.AggregatedReflectionResolver)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionService.New(Virtufin.Api.Services.AggregatedReflectionResolver)
+  nameWithType: AggregatedReflectionService.AggregatedReflectionService(AggregatedReflectionResolver)
+  nameWithType.vb: AggregatedReflectionService.New(AggregatedReflectionResolver)
+- uid: Virtufin.Api.Services.AggregatedReflectionService.#ctor*
+  name: AggregatedReflectionService
+  href: api/Virtufin.Api.Services.AggregatedReflectionService.html#Virtufin_Api_Services_AggregatedReflectionService__ctor_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Services.AggregatedReflectionService.AggregatedReflectionService
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionService.New
+  nameWithType: AggregatedReflectionService.AggregatedReflectionService
+  nameWithType.vb: AggregatedReflectionService.New
+- uid: Virtufin.Api.Services.AggregatedReflectionService.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1Alpha.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1Alpha.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  name: ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest>, IServerStreamWriter<ServerReflectionResponse>, ServerCallContext)
+  href: api/Virtufin.Api.Services.AggregatedReflectionService.html#Virtufin_Api_Services_AggregatedReflectionService_ServerReflectionInfo_Grpc_Core_IAsyncStreamReader_Grpc_Reflection_V1Alpha_ServerReflectionRequest__Grpc_Core_IServerStreamWriter_Grpc_Reflection_V1Alpha_ServerReflectionResponse__Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionService.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1Alpha.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1Alpha.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  name.vb: ServerReflectionInfo(IAsyncStreamReader(Of ServerReflectionRequest), IServerStreamWriter(Of ServerReflectionResponse), ServerCallContext)
+  fullName: Virtufin.Api.Services.AggregatedReflectionService.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader<Grpc.Reflection.V1Alpha.ServerReflectionRequest>, Grpc.Core.IServerStreamWriter<Grpc.Reflection.V1Alpha.ServerReflectionResponse>, Grpc.Core.ServerCallContext)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionService.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader(Of Grpc.Reflection.V1Alpha.ServerReflectionRequest), Grpc.Core.IServerStreamWriter(Of Grpc.Reflection.V1Alpha.ServerReflectionResponse), Grpc.Core.ServerCallContext)
+  nameWithType: AggregatedReflectionService.ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest>, IServerStreamWriter<ServerReflectionResponse>, ServerCallContext)
+  nameWithType.vb: AggregatedReflectionService.ServerReflectionInfo(IAsyncStreamReader(Of ServerReflectionRequest), IServerStreamWriter(Of ServerReflectionResponse), ServerCallContext)
+- uid: Virtufin.Api.Services.AggregatedReflectionService.ServerReflectionInfo*
+  name: ServerReflectionInfo
+  href: api/Virtufin.Api.Services.AggregatedReflectionService.html#Virtufin_Api_Services_AggregatedReflectionService_ServerReflectionInfo_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionService.ServerReflectionInfo
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.AggregatedReflectionService.ServerReflectionInfo
+  nameWithType: AggregatedReflectionService.ServerReflectionInfo
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service
+  name: AggregatedReflectionV1Service
+  href: api/Virtufin.Api.Services.AggregatedReflectionV1Service.html
+  commentId: T:Virtufin.Api.Services.AggregatedReflectionV1Service
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service
+  nameWithType: AggregatedReflectionV1Service
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor(Virtufin.Api.Services.AggregatedReflectionResolver)
+  name: AggregatedReflectionV1Service(AggregatedReflectionResolver)
+  href: api/Virtufin.Api.Services.AggregatedReflectionV1Service.html#Virtufin_Api_Services_AggregatedReflectionV1Service__ctor_Virtufin_Api_Services_AggregatedReflectionResolver_
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor(Virtufin.Api.Services.AggregatedReflectionResolver)
+  name.vb: New(AggregatedReflectionResolver)
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.AggregatedReflectionV1Service(Virtufin.Api.Services.AggregatedReflectionResolver)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionV1Service.New(Virtufin.Api.Services.AggregatedReflectionResolver)
+  nameWithType: AggregatedReflectionV1Service.AggregatedReflectionV1Service(AggregatedReflectionResolver)
+  nameWithType.vb: AggregatedReflectionV1Service.New(AggregatedReflectionResolver)
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor*
+  name: AggregatedReflectionV1Service
+  href: api/Virtufin.Api.Services.AggregatedReflectionV1Service.html#Virtufin_Api_Services_AggregatedReflectionV1Service__ctor_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionV1Service.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.AggregatedReflectionV1Service
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionV1Service.New
+  nameWithType: AggregatedReflectionV1Service.AggregatedReflectionV1Service
+  nameWithType.vb: AggregatedReflectionV1Service.New
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  name: ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest>, IServerStreamWriter<ServerReflectionResponse>, ServerCallContext)
+  href: api/Virtufin.Api.Services.AggregatedReflectionV1Service.html#Virtufin_Api_Services_AggregatedReflectionV1Service_ServerReflectionInfo_Grpc_Core_IAsyncStreamReader_Grpc_Reflection_V1_ServerReflectionRequest__Grpc_Core_IServerStreamWriter_Grpc_Reflection_V1_ServerReflectionResponse__Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader{Grpc.Reflection.V1.ServerReflectionRequest},Grpc.Core.IServerStreamWriter{Grpc.Reflection.V1.ServerReflectionResponse},Grpc.Core.ServerCallContext)
+  name.vb: ServerReflectionInfo(IAsyncStreamReader(Of ServerReflectionRequest), IServerStreamWriter(Of ServerReflectionResponse), ServerCallContext)
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader<Grpc.Reflection.V1.ServerReflectionRequest>, Grpc.Core.IServerStreamWriter<Grpc.Reflection.V1.ServerReflectionResponse>, Grpc.Core.ServerCallContext)
+  fullName.vb: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo(Grpc.Core.IAsyncStreamReader(Of Grpc.Reflection.V1.ServerReflectionRequest), Grpc.Core.IServerStreamWriter(Of Grpc.Reflection.V1.ServerReflectionResponse), Grpc.Core.ServerCallContext)
+  nameWithType: AggregatedReflectionV1Service.ServerReflectionInfo(IAsyncStreamReader<ServerReflectionRequest>, IServerStreamWriter<ServerReflectionResponse>, ServerCallContext)
+  nameWithType.vb: AggregatedReflectionV1Service.ServerReflectionInfo(IAsyncStreamReader(Of ServerReflectionRequest), IServerStreamWriter(Of ServerReflectionResponse), ServerCallContext)
+- uid: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo*
+  name: ServerReflectionInfo
+  href: api/Virtufin.Api.Services.AggregatedReflectionV1Service.html#Virtufin_Api_Services_AggregatedReflectionV1Service_ServerReflectionInfo_
+  commentId: Overload:Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo
+  nameWithType: AggregatedReflectionV1Service.ServerReflectionInfo
 - uid: Virtufin.Api.Services.ConfigService
   name: ConfigService
   href: api/Virtufin.Api.Services.ConfigService.html
@@ -2927,6 +3095,38 @@ references:
   fullName.vb: Virtufin.Api.Services.GrpcReflectionService.New
   nameWithType: GrpcReflectionService.GrpcReflectionService
   nameWithType.vb: GrpcReflectionService.New
+- uid: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(System.String,System.String,System.Threading.CancellationToken)
+  name: ContainsFileAsync(string, string, CancellationToken)
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_ContainsFileAsync_System_String_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(System.String,System.String,System.Threading.CancellationToken)
+  name.vb: ContainsFileAsync(String, String, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(string, string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync(String, String, System.Threading.CancellationToken)
+  nameWithType: GrpcReflectionService.ContainsFileAsync(string, string, CancellationToken)
+  nameWithType.vb: GrpcReflectionService.ContainsFileAsync(String, String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync*
+  name: ContainsFileAsync
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_ContainsFileAsync_
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ContainsFileAsync
+  nameWithType: GrpcReflectionService.ContainsFileAsync
+- uid: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(System.String,System.String,System.Threading.CancellationToken)
+  name: ContainsSymbolAsync(string, string, CancellationToken)
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_ContainsSymbolAsync_System_String_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(System.String,System.String,System.Threading.CancellationToken)
+  name.vb: ContainsSymbolAsync(String, String, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(string, string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync(String, String, System.Threading.CancellationToken)
+  nameWithType: GrpcReflectionService.ContainsSymbolAsync(string, string, CancellationToken)
+  nameWithType.vb: GrpcReflectionService.ContainsSymbolAsync(String, String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync*
+  name: ContainsSymbolAsync
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_ContainsSymbolAsync_
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.GrpcReflectionService.ContainsSymbolAsync
+  nameWithType: GrpcReflectionService.ContainsSymbolAsync
 - uid: Virtufin.Api.Services.GrpcReflectionService.ExecuteCallAsync(System.String,System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   name: ExecuteCallAsync(string, string, byte[], Dictionary<string, string>?, CancellationToken)
   href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_ExecuteCallAsync_System_String_System_String_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_
@@ -3000,6 +3200,38 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GrpcReflectionService.GetMethodsAsync
   nameWithType: GrpcReflectionService.GetMethodsAsync
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  name: GetOrderedFileDescriptorProtosAsync(string, CancellationToken)
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetOrderedFileDescriptorProtosAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(System.String,System.Threading.CancellationToken)
+  name.vb: GetOrderedFileDescriptorProtosAsync(String, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(String, System.Threading.CancellationToken)
+  nameWithType: GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(string, CancellationToken)
+  nameWithType.vb: GrpcReflectionService.GetOrderedFileDescriptorProtosAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync*
+  name: GetOrderedFileDescriptorProtosAsync
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetOrderedFileDescriptorProtosAsync_
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetOrderedFileDescriptorProtosAsync
+  nameWithType: GrpcReflectionService.GetOrderedFileDescriptorProtosAsync
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(System.String,System.Threading.CancellationToken)
+  name: GetServiceFullNamesAsync(string, CancellationToken)
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetServiceFullNamesAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(System.String,System.Threading.CancellationToken)
+  name.vb: GetServiceFullNamesAsync(String, CancellationToken)
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(String, System.Threading.CancellationToken)
+  nameWithType: GrpcReflectionService.GetServiceFullNamesAsync(string, CancellationToken)
+  nameWithType.vb: GrpcReflectionService.GetServiceFullNamesAsync(String, CancellationToken)
+- uid: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync*
+  name: GetServiceFullNamesAsync
+  href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_GetServiceFullNamesAsync_
+  commentId: Overload:Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync
+  nameWithType: GrpcReflectionService.GetServiceFullNamesAsync
 - uid: Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches
   name: InvalidateAllCaches()
   href: api/Virtufin.Api.Services.GrpcReflectionService.html#Virtufin_Api_Services_GrpcReflectionService_InvalidateAllCaches
@@ -3419,6 +3651,64 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubSubscriptionManager.UnsubscribeById
   nameWithType: PubsubSubscriptionManager.UnsubscribeById
+- uid: Virtufin.Api.Services.ReflectionAnswer
+  name: ReflectionAnswer
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html
+  commentId: T:Virtufin.Api.Services.ReflectionAnswer
+  fullName: Virtufin.Api.Services.ReflectionAnswer
+  nameWithType: ReflectionAnswer
+- uid: Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  name: ErrorCode
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ErrorCode
+  commentId: P:Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  nameWithType: ReflectionAnswer.ErrorCode
+- uid: Virtufin.Api.Services.ReflectionAnswer.ErrorCode*
+  name: ErrorCode
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ErrorCode_
+  commentId: Overload:Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  nameWithType: ReflectionAnswer.ErrorCode
+- uid: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  name: ErrorMessage
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ErrorMessage
+  commentId: P:Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  nameWithType: ReflectionAnswer.ErrorMessage
+- uid: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage*
+  name: ErrorMessage
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ErrorMessage_
+  commentId: Overload:Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  nameWithType: ReflectionAnswer.ErrorMessage
+- uid: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  name: FileDescriptorProtos
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_FileDescriptorProtos
+  commentId: P:Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  fullName: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  nameWithType: ReflectionAnswer.FileDescriptorProtos
+- uid: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos*
+  name: FileDescriptorProtos
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_FileDescriptorProtos_
+  commentId: Overload:Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  nameWithType: ReflectionAnswer.FileDescriptorProtos
+- uid: Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+  name: ServiceNames
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ServiceNames
+  commentId: P:Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+  nameWithType: ReflectionAnswer.ServiceNames
+- uid: Virtufin.Api.Services.ReflectionAnswer.ServiceNames*
+  name: ServiceNames
+  href: api/Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ServiceNames_
+  commentId: Overload:Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+  nameWithType: ReflectionAnswer.ServiceNames
 - uid: Virtufin.Api.Services.ServiceMethodInfo
   name: ServiceMethodInfo
   href: api/Virtufin.Api.Services.ServiceMethodInfo.html

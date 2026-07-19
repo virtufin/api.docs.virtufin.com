@@ -536,6 +536,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.AggregatedReflectionResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.AggregatedReflectionResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.AggregatedReflectionResolver",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.AggregatedReflectionResolver.yml\" sourcestartlinenumber=\"1\">Resolves gRPC server reflection requests against two descriptor sources:\nthe gateway's own compiled-in protos (Gateway/Config/State/Pubsub) and the\nbackend descriptor caches maintained by <xref href=\"Virtufin.Api.Services.GrpcReflectionService\" data-throw-if-not-resolved=\"false\"></xref>.\nThis is what lets clients reflect on backend services (virtufin.WorkManager,\nvirtufin.WebSocketManager, ...) through the gateway, which does not compile\ntheir protos in. Besides fully-qualified symbols, the registered service\nname from services.json (e.g. &quot;workmanager&quot;) is accepted as a\nFileContainingSymbol alias for the backend's whole descriptor set.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.AggregatedReflectionService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.AggregatedReflectionService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.AggregatedReflectionService",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.AggregatedReflectionService.yml\" sourcestartlinenumber=\"1\">grpc.reflection.v1alpha.ServerReflection endpoint backed by\n<xref href=\"Virtufin.Api.Services.AggregatedReflectionResolver\" data-throw-if-not-resolved=\"false\"></xref>. The Python client and the TUI\nspeak this version.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.AggregatedReflectionV1Service.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.AggregatedReflectionV1Service.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.AggregatedReflectionV1Service",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.AggregatedReflectionV1Service.yml\" sourcestartlinenumber=\"1\">grpc.reflection.v1.ServerReflection endpoint backed by\n<xref href=\"Virtufin.Api.Services.AggregatedReflectionResolver\" data-throw-if-not-resolved=\"false\"></xref>. Modern tooling (grpcurl) and the\ngateway's own backend-facing client speak this version.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Services.ConfigService.yml",
       "output": {
         ".html": {
@@ -771,6 +813,20 @@
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.PubsubSubscriptionManager",
       "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.PubsubSubscriptionManager.yml\" sourcestartlinenumber=\"1\">Manages pub/sub subscriptions and broadcasts messages to subscribers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.ReflectionAnswer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.ReflectionAnswer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.ReflectionAnswer",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.ReflectionAnswer.yml\" sourcestartlinenumber=\"1\">Protocol-neutral result of a reflection lookup; adapted into the\nv1alpha/v1 response messages by the two service endpoints below.\nExactly one of ServiceNames, FileDescriptorProtos, or ErrorMessage is set.</p>\n"
     },
     {
       "type": "ManagedReference",

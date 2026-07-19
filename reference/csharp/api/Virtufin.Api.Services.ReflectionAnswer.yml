@@ -1,253 +1,169 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.FieldSchema
-  commentId: T:Virtufin.Api.Services.FieldSchema
-  id: FieldSchema
+- uid: Virtufin.Api.Services.ReflectionAnswer
+  commentId: T:Virtufin.Api.Services.ReflectionAnswer
+  id: ReflectionAnswer
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.FieldSchema.IsOptional
-  - Virtufin.Api.Services.FieldSchema.IsRepeated
-  - Virtufin.Api.Services.FieldSchema.Name
-  - Virtufin.Api.Services.FieldSchema.OneofCases
-  - Virtufin.Api.Services.FieldSchema.OneofGroup
-  - Virtufin.Api.Services.FieldSchema.Type
-  - Virtufin.Api.Services.FieldSchema.TypeName
+  - Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  - Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  - Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  - Virtufin.Api.Services.ReflectionAnswer.ServiceNames
   langs:
   - csharp
   - vb
-  name: FieldSchema
-  nameWithType: FieldSchema
-  fullName: Virtufin.Api.Services.FieldSchema
+  name: ReflectionAnswer
+  nameWithType: ReflectionAnswer
+  fullName: Virtufin.Api.Services.ReflectionAnswer
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: FieldSchema
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1267
+    id: ReflectionAnswer
+    path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
+    startLine: 232
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Describes a single field within a message schema.
+  summary: >-
+    Protocol-neutral result of a reflection lookup; adapted into the
+
+    v1alpha/v1 response messages by the two service endpoints below.
+
+    Exactly one of ServiceNames, FileDescriptorProtos, or ErrorMessage is set.
   example: []
   syntax:
-    content: public class FieldSchema
-    content.vb: Public Class FieldSchema
+    content: 'public sealed record ReflectionAnswer : IEquatable<ReflectionAnswer>'
+    content.vb: Public NotInheritable Class ReflectionAnswer Implements IEquatable(Of ReflectionAnswer)
   inheritance:
   - System.Object
+  implements:
+  - System.IEquatable{Virtufin.Api.Services.ReflectionAnswer}
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
-  - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.FieldSchema.Name
-  commentId: P:Virtufin.Api.Services.FieldSchema.Name
-  id: Name
-  parent: Virtufin.Api.Services.FieldSchema
+- uid: Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+  commentId: P:Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+  id: ServiceNames
+  parent: Virtufin.Api.Services.ReflectionAnswer
   langs:
   - csharp
   - vb
-  name: Name
-  nameWithType: FieldSchema.Name
-  fullName: Virtufin.Api.Services.FieldSchema.Name
+  name: ServiceNames
+  nameWithType: ReflectionAnswer.ServiceNames
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ServiceNames
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
+      path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Name
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1269
+    id: ServiceNames
+    path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
+    startLine: 234
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public string Name { get; set; }
+    content: public List<string>? ServiceNames { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property ServiceNames As List(Of String)
+  overload: Virtufin.Api.Services.ReflectionAnswer.ServiceNames*
+- uid: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  commentId: P:Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  id: FileDescriptorProtos
+  parent: Virtufin.Api.Services.ReflectionAnswer
+  langs:
+  - csharp
+  - vb
+  name: FileDescriptorProtos
+  nameWithType: ReflectionAnswer.FileDescriptorProtos
+  fullName: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: FileDescriptorProtos
+    path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
+    startLine: 235
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public List<ByteString>? FileDescriptorProtos { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Google.Protobuf.ByteString}
+    content.vb: Public Property FileDescriptorProtos As List(Of ByteString)
+  overload: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos*
+- uid: Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  commentId: P:Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  id: ErrorCode
+  parent: Virtufin.Api.Services.ReflectionAnswer
+  langs:
+  - csharp
+  - vb
+  name: ErrorCode
+  nameWithType: ReflectionAnswer.ErrorCode
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ErrorCode
+    path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
+    startLine: 236
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public StatusCode ErrorCode { get; init; }
+    parameters: []
+    return:
+      type: Grpc.Core.StatusCode
+    content.vb: Public Property ErrorCode As StatusCode
+  overload: Virtufin.Api.Services.ReflectionAnswer.ErrorCode*
+- uid: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  commentId: P:Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  id: ErrorMessage
+  parent: Virtufin.Api.Services.ReflectionAnswer
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: ReflectionAnswer.ErrorMessage
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  type: Property
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ErrorMessage
+    path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
+    startLine: 237
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public string? ErrorMessage { get; init; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property Name As String
-  overload: Virtufin.Api.Services.FieldSchema.Name*
-- uid: Virtufin.Api.Services.FieldSchema.Type
-  commentId: P:Virtufin.Api.Services.FieldSchema.Type
-  id: Type
-  parent: Virtufin.Api.Services.FieldSchema
-  langs:
-  - csharp
-  - vb
-  name: Type
-  nameWithType: FieldSchema.Type
-  fullName: Virtufin.Api.Services.FieldSchema.Type
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Type
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1270
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public string Type { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Type As String
-  overload: Virtufin.Api.Services.FieldSchema.Type*
-- uid: Virtufin.Api.Services.FieldSchema.TypeName
-  commentId: P:Virtufin.Api.Services.FieldSchema.TypeName
-  id: TypeName
-  parent: Virtufin.Api.Services.FieldSchema
-  langs:
-  - csharp
-  - vb
-  name: TypeName
-  nameWithType: FieldSchema.TypeName
-  fullName: Virtufin.Api.Services.FieldSchema.TypeName
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: TypeName
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1271
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public string TypeName { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property TypeName As String
-  overload: Virtufin.Api.Services.FieldSchema.TypeName*
-- uid: Virtufin.Api.Services.FieldSchema.IsRepeated
-  commentId: P:Virtufin.Api.Services.FieldSchema.IsRepeated
-  id: IsRepeated
-  parent: Virtufin.Api.Services.FieldSchema
-  langs:
-  - csharp
-  - vb
-  name: IsRepeated
-  nameWithType: FieldSchema.IsRepeated
-  fullName: Virtufin.Api.Services.FieldSchema.IsRepeated
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: IsRepeated
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1272
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public bool IsRepeated { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property IsRepeated As Boolean
-  overload: Virtufin.Api.Services.FieldSchema.IsRepeated*
-- uid: Virtufin.Api.Services.FieldSchema.IsOptional
-  commentId: P:Virtufin.Api.Services.FieldSchema.IsOptional
-  id: IsOptional
-  parent: Virtufin.Api.Services.FieldSchema
-  langs:
-  - csharp
-  - vb
-  name: IsOptional
-  nameWithType: FieldSchema.IsOptional
-  fullName: Virtufin.Api.Services.FieldSchema.IsOptional
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: IsOptional
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1273
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public bool IsOptional { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property IsOptional As Boolean
-  overload: Virtufin.Api.Services.FieldSchema.IsOptional*
-- uid: Virtufin.Api.Services.FieldSchema.OneofGroup
-  commentId: P:Virtufin.Api.Services.FieldSchema.OneofGroup
-  id: OneofGroup
-  parent: Virtufin.Api.Services.FieldSchema
-  langs:
-  - csharp
-  - vb
-  name: OneofGroup
-  nameWithType: FieldSchema.OneofGroup
-  fullName: Virtufin.Api.Services.FieldSchema.OneofGroup
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: OneofGroup
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1274
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public string? OneofGroup { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property OneofGroup As String
-  overload: Virtufin.Api.Services.FieldSchema.OneofGroup*
-- uid: Virtufin.Api.Services.FieldSchema.OneofCases
-  commentId: P:Virtufin.Api.Services.FieldSchema.OneofCases
-  id: OneofCases
-  parent: Virtufin.Api.Services.FieldSchema
-  langs:
-  - csharp
-  - vb
-  name: OneofCases
-  nameWithType: FieldSchema.OneofCases
-  fullName: Virtufin.Api.Services.FieldSchema.OneofCases
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GrpcReflectionService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: OneofCases
-    path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1275
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  syntax:
-    content: public List<OneofCaseSchema>? OneofCases { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.List{Virtufin.Api.Services.OneofCaseSchema}
-    content.vb: Public Property OneofCases As List(Of OneofCaseSchema)
-  overload: Virtufin.Api.Services.FieldSchema.OneofCases*
+    content.vb: Public Property ErrorMessage As String
+  overload: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage*
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -290,6 +206,39 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: System.IEquatable{Virtufin.Api.Services.ReflectionAnswer}
+  commentId: T:System.IEquatable{Virtufin.Api.Services.ReflectionAnswer}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ReflectionAnswer>
+  nameWithType: IEquatable<ReflectionAnswer>
+  fullName: System.IEquatable<Virtufin.Api.Services.ReflectionAnswer>
+  nameWithType.vb: IEquatable(Of ReflectionAnswer)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Services.ReflectionAnswer)
+  name.vb: IEquatable(Of ReflectionAnswer)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Virtufin.Api.Services.ReflectionAnswer
+    name: ReflectionAnswer
+    href: Virtufin.Api.Services.ReflectionAnswer.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.ReflectionAnswer
+    name: ReflectionAnswer
+    href: Virtufin.Api.Services.ReflectionAnswer.html
+  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -416,30 +365,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -516,90 +441,61 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Virtufin.Api.Services.FieldSchema.Name*
-  commentId: Overload:Virtufin.Api.Services.FieldSchema.Name
-  href: Virtufin.Api.Services.FieldSchema.html#Virtufin_Api_Services_FieldSchema_Name
-  name: Name
-  nameWithType: FieldSchema.Name
-  fullName: Virtufin.Api.Services.FieldSchema.Name
-- uid: System.String
-  commentId: T:System.String
-  parent: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Virtufin.Api.Services.FieldSchema.Type*
-  commentId: Overload:Virtufin.Api.Services.FieldSchema.Type
-  href: Virtufin.Api.Services.FieldSchema.html#Virtufin_Api_Services_FieldSchema_Type
-  name: Type
-  nameWithType: FieldSchema.Type
-  fullName: Virtufin.Api.Services.FieldSchema.Type
-- uid: Virtufin.Api.Services.FieldSchema.TypeName*
-  commentId: Overload:Virtufin.Api.Services.FieldSchema.TypeName
-  href: Virtufin.Api.Services.FieldSchema.html#Virtufin_Api_Services_FieldSchema_TypeName
-  name: TypeName
-  nameWithType: FieldSchema.TypeName
-  fullName: Virtufin.Api.Services.FieldSchema.TypeName
-- uid: Virtufin.Api.Services.FieldSchema.IsRepeated*
-  commentId: Overload:Virtufin.Api.Services.FieldSchema.IsRepeated
-  href: Virtufin.Api.Services.FieldSchema.html#Virtufin_Api_Services_FieldSchema_IsRepeated
-  name: IsRepeated
-  nameWithType: FieldSchema.IsRepeated
-  fullName: Virtufin.Api.Services.FieldSchema.IsRepeated
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: Virtufin.Api.Services.FieldSchema.IsOptional*
-  commentId: Overload:Virtufin.Api.Services.FieldSchema.IsOptional
-  href: Virtufin.Api.Services.FieldSchema.html#Virtufin_Api_Services_FieldSchema_IsOptional
-  name: IsOptional
-  nameWithType: FieldSchema.IsOptional
-  fullName: Virtufin.Api.Services.FieldSchema.IsOptional
-- uid: Virtufin.Api.Services.FieldSchema.OneofGroup*
-  commentId: Overload:Virtufin.Api.Services.FieldSchema.OneofGroup
-  href: Virtufin.Api.Services.FieldSchema.html#Virtufin_Api_Services_FieldSchema_OneofGroup
-  name: OneofGroup
-  nameWithType: FieldSchema.OneofGroup
-  fullName: Virtufin.Api.Services.FieldSchema.OneofGroup
-- uid: Virtufin.Api.Services.FieldSchema.OneofCases*
-  commentId: Overload:Virtufin.Api.Services.FieldSchema.OneofCases
-  href: Virtufin.Api.Services.FieldSchema.html#Virtufin_Api_Services_FieldSchema_OneofCases
-  name: OneofCases
-  nameWithType: FieldSchema.OneofCases
-  fullName: Virtufin.Api.Services.FieldSchema.OneofCases
-- uid: System.Collections.Generic.List{Virtufin.Api.Services.OneofCaseSchema}
-  commentId: T:System.Collections.Generic.List{Virtufin.Api.Services.OneofCaseSchema}
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Services.ReflectionAnswer.ServiceNames*
+  commentId: Overload:Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+  href: Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ServiceNames
+  name: ServiceNames
+  nameWithType: ReflectionAnswer.ServiceNames
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ServiceNames
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<OneofCaseSchema>
-  nameWithType: List<OneofCaseSchema>
-  fullName: System.Collections.Generic.List<Virtufin.Api.Services.OneofCaseSchema>
-  nameWithType.vb: List(Of OneofCaseSchema)
-  fullName.vb: System.Collections.Generic.List(Of Virtufin.Api.Services.OneofCaseSchema)
-  name.vb: List(Of OneofCaseSchema)
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: Virtufin.Api.Services.OneofCaseSchema
-    name: OneofCaseSchema
-    href: Virtufin.Api.Services.OneofCaseSchema.html
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -609,9 +505,10 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Services.OneofCaseSchema
-    name: OneofCaseSchema
-    href: Virtufin.Api.Services.OneofCaseSchema.html
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
@@ -678,3 +575,95 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos*
+  commentId: Overload:Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+  href: Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_FileDescriptorProtos
+  name: FileDescriptorProtos
+  nameWithType: ReflectionAnswer.FileDescriptorProtos
+  fullName: Virtufin.Api.Services.ReflectionAnswer.FileDescriptorProtos
+- uid: System.Collections.Generic.List{Google.Protobuf.ByteString}
+  commentId: T:System.Collections.Generic.List{Google.Protobuf.ByteString}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ByteString>
+  nameWithType: List<ByteString>
+  fullName: System.Collections.Generic.List<Google.Protobuf.ByteString>
+  nameWithType.vb: List(Of ByteString)
+  fullName.vb: System.Collections.Generic.List(Of Google.Protobuf.ByteString)
+  name.vb: List(Of ByteString)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Google.Protobuf.ByteString
+    name: ByteString
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Google.Protobuf.ByteString
+    name: ByteString
+    isExternal: true
+  - name: )
+- uid: Virtufin.Api.Services.ReflectionAnswer.ErrorCode*
+  commentId: Overload:Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+  href: Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ErrorCode
+  name: ErrorCode
+  nameWithType: ReflectionAnswer.ErrorCode
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ErrorCode
+- uid: Grpc.Core.StatusCode
+  commentId: T:Grpc.Core.StatusCode
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/StatusCode.cs
+  name: StatusCode
+  nameWithType: StatusCode
+  fullName: Grpc.Core.StatusCode
+- uid: Grpc.Core
+  commentId: N:Grpc.Core
+  isExternal: true
+  name: Grpc.Core
+  nameWithType: Grpc.Core
+  fullName: Grpc.Core
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+- uid: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage*
+  commentId: Overload:Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+  href: Virtufin.Api.Services.ReflectionAnswer.html#Virtufin_Api_Services_ReflectionAnswer_ErrorMessage
+  name: ErrorMessage
+  nameWithType: ReflectionAnswer.ErrorMessage
+  fullName: Virtufin.Api.Services.ReflectionAnswer.ErrorMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
