@@ -276,6 +276,7 @@
   "Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})": "Virtufin.Api.Services.JobsService.yml",
   "Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.JobsService.yml",
   "Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.JobsService.yml",
+  "Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.JobsService.yml",
   "Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.JobsService.yml",
   "Virtufin.Api.Services.MethodSchema": "Virtufin.Api.Services.MethodSchema.yml",
   "Virtufin.Api.Services.MethodSchema.Fields": "Virtufin.Api.Services.MethodSchema.yml",

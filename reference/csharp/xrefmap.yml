@@ -3203,6 +3203,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.JobsService.GetJob
   nameWithType: JobsService.GetJob
+- uid: Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+  name: ListJobs(ListJobsRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ListJobs_Virtufin_Api_Protos_ListJobsRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest, Grpc.Core.ServerCallContext)
+  nameWithType: JobsService.ListJobs(ListJobsRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.JobsService.ListJobs*
+  name: ListJobs
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ListJobs_
+  commentId: Overload:Virtufin.Api.Services.JobsService.ListJobs
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.JobsService.ListJobs
+  nameWithType: JobsService.ListJobs
 - uid: Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
   name: ScheduleJob(ScheduleJobRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ScheduleJob_Virtufin_Api_Protos_ScheduleJobRequest_Grpc_Core_ServerCallContext_

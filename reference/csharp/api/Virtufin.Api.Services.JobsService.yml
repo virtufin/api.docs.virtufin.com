@@ -8,6 +8,7 @@ items:
   - Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})
   - Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
   langs:
   - csharp
@@ -165,7 +166,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteJob
     path: ../../../src/Virtufin.Api/Services/JobsService.cs
-    startLine: 153
+    startLine: 131
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -182,6 +183,41 @@ items:
     content.vb: Public Overrides Function DeleteJob(request As DeleteJobRequest, context As ServerCallContext) As Task(Of DeleteJobResponse)
   overridden: Virtufin.Api.Protos.Jobs.JobsBase.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.JobsService.DeleteJob*
+- uid: Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+  id: ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Services.JobsService
+  langs:
+  - csharp
+  - vb
+  name: ListJobs(ListJobsRequest, ServerCallContext)
+  nameWithType: JobsService.ListJobs(ListJobsRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/JobsService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ListJobs
+    path: ../../../src/Virtufin.Api/Services/JobsService.cs
+    startLine: 185
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  example: []
+  syntax:
+    content: public override Task<ListJobsResponse> ListJobs(ListJobsRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.ListJobsRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListJobsResponse}
+    content.vb: Public Overrides Function ListJobs(request As ListJobsRequest, context As ServerCallContext) As Task(Of ListJobsResponse)
+  overridden: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.JobsService.ListJobs*
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -975,4 +1011,81 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.DeleteJobResponse
     name: DeleteJobResponse
+  - name: )
+- uid: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Jobs.JobsBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: ListJobs(ListJobsRequest, ServerCallContext)
+  nameWithType: Jobs.JobsBase.ListJobs(ListJobsRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+    name: ListJobs
+  - name: (
+  - uid: Virtufin.Api.Protos.ListJobsRequest
+    name: ListJobsRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
+    name: ListJobs
+  - name: (
+  - uid: Virtufin.Api.Protos.ListJobsRequest
+    name: ListJobsRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.Api.Services.JobsService.ListJobs*
+  commentId: Overload:Virtufin.Api.Services.JobsService.ListJobs
+  href: Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ListJobs_Virtufin_Api_Protos_ListJobsRequest_Grpc_Core_ServerCallContext_
+  name: ListJobs
+  nameWithType: JobsService.ListJobs
+  fullName: Virtufin.Api.Services.JobsService.ListJobs
+- uid: Virtufin.Api.Protos.ListJobsRequest
+  commentId: T:Virtufin.Api.Protos.ListJobsRequest
+  parent: Virtufin.Api.Protos
+  name: ListJobsRequest
+  nameWithType: ListJobsRequest
+  fullName: Virtufin.Api.Protos.ListJobsRequest
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListJobsResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.ListJobsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ListJobsResponse>
+  nameWithType: Task<ListJobsResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.ListJobsResponse>
+  nameWithType.vb: Task(Of ListJobsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.ListJobsResponse)
+  name.vb: Task(Of ListJobsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Protos.ListJobsResponse
+    name: ListJobsResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.ListJobsResponse
+    name: ListJobsResponse
   - name: )
