@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcEndpoint
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 39
+    startLine: 38
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -56,7 +56,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Host
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 41
+    startLine: 40
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -85,7 +85,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Port
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 42
+    startLine: 41
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration

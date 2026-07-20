@@ -990,70 +990,6 @@ references:
   commentId: N:Virtufin.Api.Configuration
   fullName: Virtufin.Api.Configuration
   nameWithType: Virtufin.Api.Configuration
-- uid: Virtufin.Api.Configuration.CronJobConfig
-  name: CronJobConfig
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html
-  commentId: T:Virtufin.Api.Configuration.CronJobConfig
-  fullName: Virtufin.Api.Configuration.CronJobConfig
-  nameWithType: CronJobConfig
-- uid: Virtufin.Api.Configuration.CronJobConfig.#ctor
-  name: CronJobConfig()
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig__ctor
-  commentId: M:Virtufin.Api.Configuration.CronJobConfig.#ctor
-  name.vb: New()
-  fullName: Virtufin.Api.Configuration.CronJobConfig.CronJobConfig()
-  fullName.vb: Virtufin.Api.Configuration.CronJobConfig.New()
-  nameWithType: CronJobConfig.CronJobConfig()
-  nameWithType.vb: CronJobConfig.New()
-- uid: Virtufin.Api.Configuration.CronJobConfig.#ctor*
-  name: CronJobConfig
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig__ctor_
-  commentId: Overload:Virtufin.Api.Configuration.CronJobConfig.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Api.Configuration.CronJobConfig.CronJobConfig
-  fullName.vb: Virtufin.Api.Configuration.CronJobConfig.New
-  nameWithType: CronJobConfig.CronJobConfig
-  nameWithType.vb: CronJobConfig.New
-- uid: Virtufin.Api.Configuration.CronJobConfig.Endpoint
-  name: Endpoint
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig_Endpoint
-  commentId: P:Virtufin.Api.Configuration.CronJobConfig.Endpoint
-  fullName: Virtufin.Api.Configuration.CronJobConfig.Endpoint
-  nameWithType: CronJobConfig.Endpoint
-- uid: Virtufin.Api.Configuration.CronJobConfig.Endpoint*
-  name: Endpoint
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig_Endpoint_
-  commentId: Overload:Virtufin.Api.Configuration.CronJobConfig.Endpoint
-  isSpec: "True"
-  fullName: Virtufin.Api.Configuration.CronJobConfig.Endpoint
-  nameWithType: CronJobConfig.Endpoint
-- uid: Virtufin.Api.Configuration.CronJobConfig.Name
-  name: Name
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig_Name
-  commentId: P:Virtufin.Api.Configuration.CronJobConfig.Name
-  fullName: Virtufin.Api.Configuration.CronJobConfig.Name
-  nameWithType: CronJobConfig.Name
-- uid: Virtufin.Api.Configuration.CronJobConfig.Name*
-  name: Name
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig_Name_
-  commentId: Overload:Virtufin.Api.Configuration.CronJobConfig.Name
-  isSpec: "True"
-  fullName: Virtufin.Api.Configuration.CronJobConfig.Name
-  nameWithType: CronJobConfig.Name
-- uid: Virtufin.Api.Configuration.CronJobConfig.Schedule
-  name: Schedule
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig_Schedule
-  commentId: P:Virtufin.Api.Configuration.CronJobConfig.Schedule
-  fullName: Virtufin.Api.Configuration.CronJobConfig.Schedule
-  nameWithType: CronJobConfig.Schedule
-- uid: Virtufin.Api.Configuration.CronJobConfig.Schedule*
-  name: Schedule
-  href: api/Virtufin.Api.Configuration.CronJobConfig.html#Virtufin_Api_Configuration_CronJobConfig_Schedule_
-  commentId: Overload:Virtufin.Api.Configuration.CronJobConfig.Schedule
-  isSpec: "True"
-  fullName: Virtufin.Api.Configuration.CronJobConfig.Schedule
-  nameWithType: CronJobConfig.Schedule
 - uid: Virtufin.Api.Configuration.DaprResilienceOptions
   name: DaprResilienceOptions
   href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html
@@ -1272,44 +1208,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Configuration.GrpcEndpoint.Port
   nameWithType: GrpcEndpoint.Port
-- uid: Virtufin.Api.Configuration.JobsConfig
-  name: JobsConfig
-  href: api/Virtufin.Api.Configuration.JobsConfig.html
-  commentId: T:Virtufin.Api.Configuration.JobsConfig
-  fullName: Virtufin.Api.Configuration.JobsConfig
-  nameWithType: JobsConfig
-- uid: Virtufin.Api.Configuration.JobsConfig.#ctor
-  name: JobsConfig()
-  href: api/Virtufin.Api.Configuration.JobsConfig.html#Virtufin_Api_Configuration_JobsConfig__ctor
-  commentId: M:Virtufin.Api.Configuration.JobsConfig.#ctor
-  name.vb: New()
-  fullName: Virtufin.Api.Configuration.JobsConfig.JobsConfig()
-  fullName.vb: Virtufin.Api.Configuration.JobsConfig.New()
-  nameWithType: JobsConfig.JobsConfig()
-  nameWithType.vb: JobsConfig.New()
-- uid: Virtufin.Api.Configuration.JobsConfig.#ctor*
-  name: JobsConfig
-  href: api/Virtufin.Api.Configuration.JobsConfig.html#Virtufin_Api_Configuration_JobsConfig__ctor_
-  commentId: Overload:Virtufin.Api.Configuration.JobsConfig.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Api.Configuration.JobsConfig.JobsConfig
-  fullName.vb: Virtufin.Api.Configuration.JobsConfig.New
-  nameWithType: JobsConfig.JobsConfig
-  nameWithType.vb: JobsConfig.New
-- uid: Virtufin.Api.Configuration.JobsConfig.Crons
-  name: Crons
-  href: api/Virtufin.Api.Configuration.JobsConfig.html#Virtufin_Api_Configuration_JobsConfig_Crons
-  commentId: P:Virtufin.Api.Configuration.JobsConfig.Crons
-  fullName: Virtufin.Api.Configuration.JobsConfig.Crons
-  nameWithType: JobsConfig.Crons
-- uid: Virtufin.Api.Configuration.JobsConfig.Crons*
-  name: Crons
-  href: api/Virtufin.Api.Configuration.JobsConfig.html#Virtufin_Api_Configuration_JobsConfig_Crons_
-  commentId: Overload:Virtufin.Api.Configuration.JobsConfig.Crons
-  isSpec: "True"
-  fullName: Virtufin.Api.Configuration.JobsConfig.Crons
-  nameWithType: JobsConfig.Crons
 - uid: Virtufin.Api.Configuration.PortConstants
   name: PortConstants
   href: api/Virtufin.Api.Configuration.PortConstants.html
@@ -1477,19 +1375,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Configuration.ServiceConfig.Grpc
   nameWithType: ServiceConfig.Grpc
-- uid: Virtufin.Api.Configuration.ServiceConfig.Jobs
-  name: Jobs
-  href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Jobs
-  commentId: P:Virtufin.Api.Configuration.ServiceConfig.Jobs
-  fullName: Virtufin.Api.Configuration.ServiceConfig.Jobs
-  nameWithType: ServiceConfig.Jobs
-- uid: Virtufin.Api.Configuration.ServiceConfig.Jobs*
-  name: Jobs
-  href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Jobs_
-  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Jobs
-  isSpec: "True"
-  fullName: Virtufin.Api.Configuration.ServiceConfig.Jobs
-  nameWithType: ServiceConfig.Jobs
 - uid: Virtufin.Api.Configuration.ServiceConfig.Name
   name: Name
   href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Name
@@ -3267,6 +3152,70 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache
   nameWithType: GrpcReflectionService.InvalidateCache
+- uid: Virtufin.Api.Services.JobsService
+  name: JobsService
+  href: api/Virtufin.Api.Services.JobsService.html
+  commentId: T:Virtufin.Api.Services.JobsService
+  fullName: Virtufin.Api.Services.JobsService
+  nameWithType: JobsService
+- uid: Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})
+  name: JobsService(IConfiguration, PubsubService, ILogger<JobsService>)
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService__ctor_Microsoft_Extensions_Configuration_IConfiguration_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_JobsService__
+  commentId: M:Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})
+  name.vb: New(IConfiguration, PubsubService, ILogger(Of JobsService))
+  fullName: Virtufin.Api.Services.JobsService.JobsService(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.JobsService>)
+  fullName.vb: Virtufin.Api.Services.JobsService.New(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.JobsService))
+  nameWithType: JobsService.JobsService(IConfiguration, PubsubService, ILogger<JobsService>)
+  nameWithType.vb: JobsService.New(IConfiguration, PubsubService, ILogger(Of JobsService))
+- uid: Virtufin.Api.Services.JobsService.#ctor*
+  name: JobsService
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService__ctor_
+  commentId: Overload:Virtufin.Api.Services.JobsService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Services.JobsService.JobsService
+  fullName.vb: Virtufin.Api.Services.JobsService.New
+  nameWithType: JobsService.JobsService
+  nameWithType.vb: JobsService.New
+- uid: Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
+  name: DeleteJob(DeleteJobRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_DeleteJob_Virtufin_Api_Protos_DeleteJobRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest, Grpc.Core.ServerCallContext)
+  nameWithType: JobsService.DeleteJob(DeleteJobRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.JobsService.DeleteJob*
+  name: DeleteJob
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_DeleteJob_
+  commentId: Overload:Virtufin.Api.Services.JobsService.DeleteJob
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.JobsService.DeleteJob
+  nameWithType: JobsService.DeleteJob
+- uid: Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
+  name: GetJob(GetJobRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_GetJob_Virtufin_Api_Protos_GetJobRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest, Grpc.Core.ServerCallContext)
+  nameWithType: JobsService.GetJob(GetJobRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.JobsService.GetJob*
+  name: GetJob
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_GetJob_
+  commentId: Overload:Virtufin.Api.Services.JobsService.GetJob
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.JobsService.GetJob
+  nameWithType: JobsService.GetJob
+- uid: Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
+  name: ScheduleJob(ScheduleJobRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ScheduleJob_Virtufin_Api_Protos_ScheduleJobRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest, Grpc.Core.ServerCallContext)
+  nameWithType: JobsService.ScheduleJob(ScheduleJobRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.JobsService.ScheduleJob*
+  name: ScheduleJob
+  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ScheduleJob_
+  commentId: Overload:Virtufin.Api.Services.JobsService.ScheduleJob
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.JobsService.ScheduleJob
+  nameWithType: JobsService.ScheduleJob
 - uid: Virtufin.Api.Services.MethodSchema
   name: MethodSchema
   href: api/Virtufin.Api.Services.MethodSchema.html

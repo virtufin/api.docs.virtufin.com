@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class CronJobConfig | Virtufin API - C# Reference </title>
+      <title>Class JobsService | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class CronJobConfig | Virtufin API - C# Reference ">
+      <meta name="title" content="Class JobsService | Virtufin API - C# Reference ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/469369b8b94cb10c93a9003ab2ed3d148ebf1d13" target="_blank" rel="noopener" class="commit-badge" title="View commit 469369b8b94cb10c93a9003ab2ed3d148ebf1d13">
+            <a href="{git_repo_url}/commit/b3a09cc98ff20567a51aea43e9d02f40c48edef8" target="_blank" rel="noopener" class="commit-badge" title="View commit b3a09cc98ff20567a51aea43e9d02f40c48edef8">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">469369b8b94cb10c93a9003ab2ed3d148ebf1d13</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b3a09cc98ff20567a51aea43e9d02f40c48edef8</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,16 +88,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Configuration.CronJobConfig">
+        <article data-uid="Virtufin.Api.Services.JobsService">
 
 
 
-  <h1 id="Virtufin_Api_Configuration_CronJobConfig" data-uid="Virtufin.Api.Configuration.CronJobConfig" class="text-break">
-Class CronJobConfig  
+  <h1 id="Virtufin_Api_Services_JobsService" data-uid="Virtufin.Api.Services.JobsService" class="text-break">
+Class JobsService  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Configuration.html">Configuration</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Services.html">Services</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
@@ -105,7 +105,7 @@ Class CronJobConfig
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CronJobConfig</code></pre>
+    <pre><code class="lang-csharp hljs">public class JobsService : Jobs.JobsBase</code></pre>
   </div>
 
 
@@ -115,7 +115,8 @@ Class CronJobConfig
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">CronJobConfig</span></div>
+      <div><span class="xref">Jobs</span>.<span class="xref">JobsBase</span></div>
+      <div><span class="xref">JobsService</span></div>
     </dd>
   </dl>
 
@@ -156,10 +157,10 @@ Class CronJobConfig
 </h2>
 
 
-  <a id="Virtufin_Api_Configuration_CronJobConfig__ctor_" data-uid="Virtufin.Api.Configuration.CronJobConfig.#ctor*"></a>
+  <a id="Virtufin_Api_Services_JobsService__ctor_" data-uid="Virtufin.Api.Services.JobsService.#ctor*"></a>
 
-  <h3 id="Virtufin_Api_Configuration_CronJobConfig__ctor" data-uid="Virtufin.Api.Configuration.CronJobConfig.#ctor">
-  CronJobConfig()
+  <h3 id="Virtufin_Api_Services_JobsService__ctor_Microsoft_Extensions_Configuration_IConfiguration_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_JobsService__" data-uid="Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})">
+  JobsService(IConfiguration, PubsubService, ILogger&lt;JobsService&gt;)
   
   </h3>
 
@@ -167,9 +168,18 @@ Class CronJobConfig
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CronJobConfig()</code></pre>
+    <pre><code class="lang-csharp hljs">public JobsService(IConfiguration configuration, PubsubService pubsubService, ILogger&lt;JobsService&gt; logger)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
+    <dd></dd>
+    <dt><code>pubsubService</code> <a class="xref" href="Virtufin.Api.Services.PubsubService.html">PubsubService</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.JobsService.html">JobsService</a>&gt;</dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -182,14 +192,14 @@ Class CronJobConfig
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="Virtufin_Api_Configuration_CronJobConfig_Endpoint_" data-uid="Virtufin.Api.Configuration.CronJobConfig.Endpoint*"></a>
+  <a id="Virtufin_Api_Services_JobsService_DeleteJob_" data-uid="Virtufin.Api.Services.JobsService.DeleteJob*"></a>
 
-  <h3 id="Virtufin_Api_Configuration_CronJobConfig_Endpoint" data-uid="Virtufin.Api.Configuration.CronJobConfig.Endpoint">
-  Endpoint
+  <h3 id="Virtufin_Api_Services_JobsService_DeleteJob_Virtufin_Api_Protos_DeleteJobRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)">
+  DeleteJob(DeleteJobRequest, ServerCallContext)
   
   </h3>
 
@@ -197,16 +207,20 @@ Class CronJobConfig
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Endpoint { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;DeleteJobResponse&gt; DeleteJob(DeleteJobRequest request, ServerCallContext context)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>request</code> <span class="xref">DeleteJobRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">DeleteJobResponse</span>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -217,10 +231,13 @@ Class CronJobConfig
 
 
 
-  <a id="Virtufin_Api_Configuration_CronJobConfig_Name_" data-uid="Virtufin.Api.Configuration.CronJobConfig.Name*"></a>
 
-  <h3 id="Virtufin_Api_Configuration_CronJobConfig_Name" data-uid="Virtufin.Api.Configuration.CronJobConfig.Name">
-  Name
+
+
+  <a id="Virtufin_Api_Services_JobsService_GetJob_" data-uid="Virtufin.Api.Services.JobsService.GetJob*"></a>
+
+  <h3 id="Virtufin_Api_Services_JobsService_GetJob_Virtufin_Api_Protos_GetJobRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)">
+  GetJob(GetJobRequest, ServerCallContext)
   
   </h3>
 
@@ -228,16 +245,20 @@ Class CronJobConfig
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;GetJobResponse&gt; GetJob(GetJobRequest request, ServerCallContext context)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>request</code> <span class="xref">GetJobRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">GetJobResponse</span>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -248,10 +269,13 @@ Class CronJobConfig
 
 
 
-  <a id="Virtufin_Api_Configuration_CronJobConfig_Schedule_" data-uid="Virtufin.Api.Configuration.CronJobConfig.Schedule*"></a>
 
-  <h3 id="Virtufin_Api_Configuration_CronJobConfig_Schedule" data-uid="Virtufin.Api.Configuration.CronJobConfig.Schedule">
-  Schedule
+
+
+  <a id="Virtufin_Api_Services_JobsService_ScheduleJob_" data-uid="Virtufin.Api.Services.JobsService.ScheduleJob*"></a>
+
+  <h3 id="Virtufin_Api_Services_JobsService_ScheduleJob_Virtufin_Api_Protos_ScheduleJobRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)">
+  ScheduleJob(ScheduleJobRequest, ServerCallContext)
   
   </h3>
 
@@ -259,18 +283,25 @@ Class CronJobConfig
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Schedule { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;ScheduleJobResponse&gt; ScheduleJob(ScheduleJobRequest request, ServerCallContext context)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>request</code> <span class="xref">ScheduleJobRequest</span></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
     <dd></dd>
   </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">ScheduleJobResponse</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
 
 
 

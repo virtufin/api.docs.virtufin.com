@@ -19,6 +19,7 @@ items:
   - Virtufin.Api.Services.GrpcCallStatusCodes
   - Virtufin.Api.Services.GrpcChannelPool
   - Virtufin.Api.Services.GrpcReflectionService
+  - Virtufin.Api.Services.JobsService
   - Virtufin.Api.Services.MethodSchema
   - Virtufin.Api.Services.OneofCaseSchema
   - Virtufin.Api.Services.PubSubTopics
@@ -134,6 +135,12 @@ references:
   name: GrpcReflectionService
   nameWithType: GrpcReflectionService
   fullName: Virtufin.Api.Services.GrpcReflectionService
+- uid: Virtufin.Api.Services.JobsService
+  commentId: T:Virtufin.Api.Services.JobsService
+  href: Virtufin.Api.Services.JobsService.html
+  name: JobsService
+  nameWithType: JobsService
+  fullName: Virtufin.Api.Services.JobsService
 - uid: Virtufin.Api.Services.MethodSchema
   commentId: T:Virtufin.Api.Services.MethodSchema
   href: Virtufin.Api.Services.MethodSchema.html
@@ -154,6 +161,7 @@ references:
   fullName: Virtufin.Api.Services.PubSubTopics
 - uid: Virtufin.Api.Services.PubsubService
   commentId: T:Virtufin.Api.Services.PubsubService
+  parent: Virtufin.Api.Services
   href: Virtufin.Api.Services.PubsubService.html
   name: PubsubService
   nameWithType: PubsubService

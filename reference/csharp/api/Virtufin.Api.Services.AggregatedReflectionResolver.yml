@@ -76,7 +76,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -112,7 +112,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -148,7 +148,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: FileContainingSymbolAsync
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
-    startLine: 72
+    startLine: 73
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -189,7 +189,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: FileByFilenameAsync
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
-    startLine: 107
+    startLine: 108
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -227,7 +227,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unimplemented
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
-    startLine: 133
+    startLine: 134
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

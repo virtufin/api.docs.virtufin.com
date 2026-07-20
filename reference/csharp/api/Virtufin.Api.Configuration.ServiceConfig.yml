@@ -8,7 +8,6 @@ items:
   - Virtufin.Api.Configuration.ServiceConfig.#ctor
   - Virtufin.Api.Configuration.ServiceConfig.DaprAppId
   - Virtufin.Api.Configuration.ServiceConfig.Grpc
-  - Virtufin.Api.Configuration.ServiceConfig.Jobs
   - Virtufin.Api.Configuration.ServiceConfig.Name
   - Virtufin.Api.Configuration.ServiceConfig.Protocol
   - Virtufin.Api.Configuration.ServiceConfig.Pubsub
@@ -247,35 +246,6 @@ items:
       type: Virtufin.Api.Configuration.StateConfig
     content.vb: Public Property State As StateConfig
   overload: Virtufin.Api.Configuration.ServiceConfig.State*
-- uid: Virtufin.Api.Configuration.ServiceConfig.Jobs
-  commentId: P:Virtufin.Api.Configuration.ServiceConfig.Jobs
-  id: Jobs
-  parent: Virtufin.Api.Configuration.ServiceConfig
-  langs:
-  - csharp
-  - vb
-  name: Jobs
-  nameWithType: ServiceConfig.Jobs
-  fullName: Virtufin.Api.Configuration.ServiceConfig.Jobs
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Configuration/Models.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Jobs
-    path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 28
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Configuration
-  syntax:
-    content: public JobsConfig Jobs { get; set; }
-    parameters: []
-    return:
-      type: Virtufin.Api.Configuration.JobsConfig
-    content.vb: Public Property Jobs As JobsConfig
-  overload: Virtufin.Api.Configuration.ServiceConfig.Jobs*
 references:
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration
@@ -621,16 +591,3 @@ references:
   name: StateConfig
   nameWithType: StateConfig
   fullName: Virtufin.Api.Configuration.StateConfig
-- uid: Virtufin.Api.Configuration.ServiceConfig.Jobs*
-  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Jobs
-  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Jobs
-  name: Jobs
-  nameWithType: ServiceConfig.Jobs
-  fullName: Virtufin.Api.Configuration.ServiceConfig.Jobs
-- uid: Virtufin.Api.Configuration.JobsConfig
-  commentId: T:Virtufin.Api.Configuration.JobsConfig
-  parent: Virtufin.Api.Configuration
-  href: Virtufin.Api.Configuration.JobsConfig.html
-  name: JobsConfig
-  nameWithType: JobsConfig
-  fullName: Virtufin.Api.Configuration.JobsConfig

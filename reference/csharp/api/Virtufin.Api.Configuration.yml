@@ -5,11 +5,9 @@ items:
   id: Configuration
   parent: Virtufin.Api
   children:
-  - Virtufin.Api.Configuration.CronJobConfig
   - Virtufin.Api.Configuration.DaprResilienceOptions
   - Virtufin.Api.Configuration.GrpcConfig
   - Virtufin.Api.Configuration.GrpcEndpoint
-  - Virtufin.Api.Configuration.JobsConfig
   - Virtufin.Api.Configuration.PortConstants
   - Virtufin.Api.Configuration.PubsubConfig
   - Virtufin.Api.Configuration.ServiceConfig
@@ -27,12 +25,6 @@ items:
   assemblies:
   - Virtufin.Api
 references:
-- uid: Virtufin.Api.Configuration.CronJobConfig
-  commentId: T:Virtufin.Api.Configuration.CronJobConfig
-  href: Virtufin.Api.Configuration.CronJobConfig.html
-  name: CronJobConfig
-  nameWithType: CronJobConfig
-  fullName: Virtufin.Api.Configuration.CronJobConfig
 - uid: Virtufin.Api.Configuration.DaprResilienceOptions
   commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
   parent: Virtufin.Api.Configuration
@@ -53,13 +45,6 @@ references:
   name: GrpcEndpoint
   nameWithType: GrpcEndpoint
   fullName: Virtufin.Api.Configuration.GrpcEndpoint
-- uid: Virtufin.Api.Configuration.JobsConfig
-  commentId: T:Virtufin.Api.Configuration.JobsConfig
-  parent: Virtufin.Api.Configuration
-  href: Virtufin.Api.Configuration.JobsConfig.html
-  name: JobsConfig
-  nameWithType: JobsConfig
-  fullName: Virtufin.Api.Configuration.JobsConfig
 - uid: Virtufin.Api.Configuration.PortConstants
   commentId: T:Virtufin.Api.Configuration.PortConstants
   href: Virtufin.Api.Configuration.PortConstants.html
