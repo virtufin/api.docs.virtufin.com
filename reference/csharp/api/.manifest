@@ -272,12 +272,6 @@
   "Virtufin.Api.Services.GrpcReflectionService.GetServiceFullNamesAsync(System.String,System.Threading.CancellationToken)": "Virtufin.Api.Services.GrpcReflectionService.yml",
   "Virtufin.Api.Services.GrpcReflectionService.InvalidateAllCaches": "Virtufin.Api.Services.GrpcReflectionService.yml",
   "Virtufin.Api.Services.GrpcReflectionService.InvalidateCache(System.String)": "Virtufin.Api.Services.GrpcReflectionService.yml",
-  "Virtufin.Api.Services.JobsService": "Virtufin.Api.Services.JobsService.yml",
-  "Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})": "Virtufin.Api.Services.JobsService.yml",
-  "Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.JobsService.yml",
-  "Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.JobsService.yml",
-  "Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.JobsService.yml",
-  "Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.JobsService.yml",
   "Virtufin.Api.Services.MethodSchema": "Virtufin.Api.Services.MethodSchema.yml",
   "Virtufin.Api.Services.MethodSchema.Fields": "Virtufin.Api.Services.MethodSchema.yml",
   "Virtufin.Api.Services.MethodSchema.InputTypeName": "Virtufin.Api.Services.MethodSchema.yml",
@@ -367,5 +361,11 @@
   "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.AcquireAsync(System.String,System.Func{Dapr.Messaging.PublishSubscribe.TopicMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{Dapr.Messaging.PublishSubscribe.TopicResponseAction}},System.Action,System.Threading.CancellationToken)": "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.yml",
   "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.DisposeAsync": "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.yml",
   "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle": "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.yml",
-  "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.DisposeAsync": "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.yml"
+  "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.DisposeAsync": "Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.yml",
+  "Virtufin.Api.Services.TriggerService": "Virtufin.Api.Services.TriggerService.yml",
+  "Virtufin.Api.Services.TriggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService})": "Virtufin.Api.Services.TriggerService.yml",
+  "Virtufin.Api.Services.TriggerService.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.TriggerService.yml",
+  "Virtufin.Api.Services.TriggerService.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.TriggerService.yml",
+  "Virtufin.Api.Services.TriggerService.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.TriggerService.yml",
+  "Virtufin.Api.Services.TriggerService.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.TriggerService.yml"
 }

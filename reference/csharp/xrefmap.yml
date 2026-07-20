@@ -3152,83 +3152,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GrpcReflectionService.InvalidateCache
   nameWithType: GrpcReflectionService.InvalidateCache
-- uid: Virtufin.Api.Services.JobsService
-  name: JobsService
-  href: api/Virtufin.Api.Services.JobsService.html
-  commentId: T:Virtufin.Api.Services.JobsService
-  fullName: Virtufin.Api.Services.JobsService
-  nameWithType: JobsService
-- uid: Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})
-  name: JobsService(IConfiguration, PubsubService, ILogger<JobsService>)
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService__ctor_Microsoft_Extensions_Configuration_IConfiguration_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_JobsService__
-  commentId: M:Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})
-  name.vb: New(IConfiguration, PubsubService, ILogger(Of JobsService))
-  fullName: Virtufin.Api.Services.JobsService.JobsService(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.JobsService>)
-  fullName.vb: Virtufin.Api.Services.JobsService.New(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.JobsService))
-  nameWithType: JobsService.JobsService(IConfiguration, PubsubService, ILogger<JobsService>)
-  nameWithType.vb: JobsService.New(IConfiguration, PubsubService, ILogger(Of JobsService))
-- uid: Virtufin.Api.Services.JobsService.#ctor*
-  name: JobsService
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService__ctor_
-  commentId: Overload:Virtufin.Api.Services.JobsService.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Api.Services.JobsService.JobsService
-  fullName.vb: Virtufin.Api.Services.JobsService.New
-  nameWithType: JobsService.JobsService
-  nameWithType.vb: JobsService.New
-- uid: Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  name: DeleteJob(DeleteJobRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_DeleteJob_Virtufin_Api_Protos_DeleteJobRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest, Grpc.Core.ServerCallContext)
-  nameWithType: JobsService.DeleteJob(DeleteJobRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.JobsService.DeleteJob*
-  name: DeleteJob
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_DeleteJob_
-  commentId: Overload:Virtufin.Api.Services.JobsService.DeleteJob
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.JobsService.DeleteJob
-  nameWithType: JobsService.DeleteJob
-- uid: Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  name: GetJob(GetJobRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_GetJob_Virtufin_Api_Protos_GetJobRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest, Grpc.Core.ServerCallContext)
-  nameWithType: JobsService.GetJob(GetJobRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.JobsService.GetJob*
-  name: GetJob
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_GetJob_
-  commentId: Overload:Virtufin.Api.Services.JobsService.GetJob
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.JobsService.GetJob
-  nameWithType: JobsService.GetJob
-- uid: Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  name: ListJobs(ListJobsRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ListJobs_Virtufin_Api_Protos_ListJobsRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest, Grpc.Core.ServerCallContext)
-  nameWithType: JobsService.ListJobs(ListJobsRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.JobsService.ListJobs*
-  name: ListJobs
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ListJobs_
-  commentId: Overload:Virtufin.Api.Services.JobsService.ListJobs
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.JobsService.ListJobs
-  nameWithType: JobsService.ListJobs
-- uid: Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-  name: ScheduleJob(ScheduleJobRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ScheduleJob_Virtufin_Api_Protos_ScheduleJobRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest, Grpc.Core.ServerCallContext)
-  nameWithType: JobsService.ScheduleJob(ScheduleJobRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.JobsService.ScheduleJob*
-  name: ScheduleJob
-  href: api/Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ScheduleJob_
-  commentId: Overload:Virtufin.Api.Services.JobsService.ScheduleJob
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.JobsService.ScheduleJob
-  nameWithType: JobsService.ScheduleJob
 - uid: Virtufin.Api.Services.MethodSchema
   name: MethodSchema
   href: api/Virtufin.Api.Services.MethodSchema.html
@@ -4260,3 +4183,80 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle.DisposeAsync
   nameWithType: TopicDaprSubscriptionRegistry.SubscriptionHandle.DisposeAsync
+- uid: Virtufin.Api.Services.TriggerService
+  name: TriggerService
+  href: api/Virtufin.Api.Services.TriggerService.html
+  commentId: T:Virtufin.Api.Services.TriggerService
+  fullName: Virtufin.Api.Services.TriggerService
+  nameWithType: TriggerService
+- uid: Virtufin.Api.Services.TriggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService})
+  name: TriggerService(IConfiguration, PubsubService, ILogger<TriggerService>)
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService__ctor_Microsoft_Extensions_Configuration_IConfiguration_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_TriggerService__
+  commentId: M:Virtufin.Api.Services.TriggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService})
+  name.vb: New(IConfiguration, PubsubService, ILogger(Of TriggerService))
+  fullName: Virtufin.Api.Services.TriggerService.TriggerService(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.TriggerService>)
+  fullName.vb: Virtufin.Api.Services.TriggerService.New(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.TriggerService))
+  nameWithType: TriggerService.TriggerService(IConfiguration, PubsubService, ILogger<TriggerService>)
+  nameWithType.vb: TriggerService.New(IConfiguration, PubsubService, ILogger(Of TriggerService))
+- uid: Virtufin.Api.Services.TriggerService.#ctor*
+  name: TriggerService
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService__ctor_
+  commentId: Overload:Virtufin.Api.Services.TriggerService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Services.TriggerService.TriggerService
+  fullName.vb: Virtufin.Api.Services.TriggerService.New
+  nameWithType: TriggerService.TriggerService
+  nameWithType.vb: TriggerService.New
+- uid: Virtufin.Api.Services.TriggerService.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  name: DeleteTrigger(DeleteTriggerRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_DeleteTrigger_Virtufin_Api_Protos_DeleteTriggerRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.TriggerService.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.TriggerService.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest, Grpc.Core.ServerCallContext)
+  nameWithType: TriggerService.DeleteTrigger(DeleteTriggerRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.TriggerService.DeleteTrigger*
+  name: DeleteTrigger
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_DeleteTrigger_
+  commentId: Overload:Virtufin.Api.Services.TriggerService.DeleteTrigger
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.TriggerService.DeleteTrigger
+  nameWithType: TriggerService.DeleteTrigger
+- uid: Virtufin.Api.Services.TriggerService.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  name: GetTrigger(GetTriggerRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_GetTrigger_Virtufin_Api_Protos_GetTriggerRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.TriggerService.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.TriggerService.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest, Grpc.Core.ServerCallContext)
+  nameWithType: TriggerService.GetTrigger(GetTriggerRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.TriggerService.GetTrigger*
+  name: GetTrigger
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_GetTrigger_
+  commentId: Overload:Virtufin.Api.Services.TriggerService.GetTrigger
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.TriggerService.GetTrigger
+  nameWithType: TriggerService.GetTrigger
+- uid: Virtufin.Api.Services.TriggerService.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  name: ListTriggers(ListTriggersRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_ListTriggers_Virtufin_Api_Protos_ListTriggersRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.TriggerService.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.TriggerService.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest, Grpc.Core.ServerCallContext)
+  nameWithType: TriggerService.ListTriggers(ListTriggersRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.TriggerService.ListTriggers*
+  name: ListTriggers
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_ListTriggers_
+  commentId: Overload:Virtufin.Api.Services.TriggerService.ListTriggers
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.TriggerService.ListTriggers
+  nameWithType: TriggerService.ListTriggers
+- uid: Virtufin.Api.Services.TriggerService.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+  name: ScheduleTrigger(ScheduleTriggerRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_ScheduleTrigger_Virtufin_Api_Protos_ScheduleTriggerRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.TriggerService.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.TriggerService.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest, Grpc.Core.ServerCallContext)
+  nameWithType: TriggerService.ScheduleTrigger(ScheduleTriggerRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.TriggerService.ScheduleTrigger*
+  name: ScheduleTrigger
+  href: api/Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_ScheduleTrigger_
+  commentId: Overload:Virtufin.Api.Services.TriggerService.ScheduleTrigger
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.TriggerService.ScheduleTrigger
+  nameWithType: TriggerService.ScheduleTrigger

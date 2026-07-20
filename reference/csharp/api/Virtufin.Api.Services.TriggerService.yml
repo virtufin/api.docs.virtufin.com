@@ -1,39 +1,39 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.JobsService
-  commentId: T:Virtufin.Api.Services.JobsService
-  id: JobsService
+- uid: Virtufin.Api.Services.TriggerService
+  commentId: T:Virtufin.Api.Services.TriggerService
+  id: TriggerService
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})
-  - Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Services.TriggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService})
+  - Virtufin.Api.Services.TriggerService.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Services.TriggerService.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Services.TriggerService.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Services.TriggerService.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
   langs:
   - csharp
   - vb
-  name: JobsService
-  nameWithType: JobsService
-  fullName: Virtufin.Api.Services.JobsService
+  name: TriggerService
+  nameWithType: TriggerService
+  fullName: Virtufin.Api.Services.TriggerService
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/JobsService.cs
+      path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: JobsService
-    path: ../../../src/Virtufin.Api/Services/JobsService.cs
+    id: TriggerService
+    path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 11
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: 'public class JobsService : Jobs.JobsBase'
-    content.vb: Public Class JobsService Inherits Jobs.JobsBase
+    content: 'public class TriggerService : Trigger.TriggerBase'
+    content.vb: Public Class TriggerService Inherits Trigger.TriggerBase
   inheritance:
   - System.Object
-  - Virtufin.Api.Protos.Jobs.JobsBase
+  - Virtufin.Api.Protos.Trigger.TriggerBase
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -42,182 +42,182 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})
-  commentId: M:Virtufin.Api.Services.JobsService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})
-  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService})'
-  parent: Virtufin.Api.Services.JobsService
+- uid: Virtufin.Api.Services.TriggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService})
+  commentId: M:Virtufin.Api.Services.TriggerService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService})
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration,Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService})'
+  parent: Virtufin.Api.Services.TriggerService
   langs:
   - csharp
   - vb
-  name: JobsService(IConfiguration, PubsubService, ILogger<JobsService>)
-  nameWithType: JobsService.JobsService(IConfiguration, PubsubService, ILogger<JobsService>)
-  fullName: Virtufin.Api.Services.JobsService.JobsService(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.JobsService>)
+  name: TriggerService(IConfiguration, PubsubService, ILogger<TriggerService>)
+  nameWithType: TriggerService.TriggerService(IConfiguration, PubsubService, ILogger<TriggerService>)
+  fullName: Virtufin.Api.Services.TriggerService.TriggerService(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.TriggerService>)
   type: Constructor
   source:
     remote:
-      path: src/Virtufin.Api/Services/JobsService.cs
+      path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
-    path: ../../../src/Virtufin.Api/Services/JobsService.cs
+    path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public JobsService(IConfiguration configuration, PubsubService pubsubService, ILogger<JobsService> logger)
+    content: public TriggerService(IConfiguration configuration, PubsubService pubsubService, ILogger<TriggerService> logger)
     parameters:
     - id: configuration
       type: Microsoft.Extensions.Configuration.IConfiguration
     - id: pubsubService
       type: Virtufin.Api.Services.PubsubService
     - id: logger
-      type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService}
-    content.vb: Public Sub New(configuration As IConfiguration, pubsubService As PubsubService, logger As ILogger(Of JobsService))
-  overload: Virtufin.Api.Services.JobsService.#ctor*
-  nameWithType.vb: JobsService.New(IConfiguration, PubsubService, ILogger(Of JobsService))
-  fullName.vb: Virtufin.Api.Services.JobsService.New(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.JobsService))
-  name.vb: New(IConfiguration, PubsubService, ILogger(Of JobsService))
-- uid: Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-  id: ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Services.JobsService
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService}
+    content.vb: Public Sub New(configuration As IConfiguration, pubsubService As PubsubService, logger As ILogger(Of TriggerService))
+  overload: Virtufin.Api.Services.TriggerService.#ctor*
+  nameWithType.vb: TriggerService.New(IConfiguration, PubsubService, ILogger(Of TriggerService))
+  fullName.vb: Virtufin.Api.Services.TriggerService.New(Microsoft.Extensions.Configuration.IConfiguration, Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.TriggerService))
+  name.vb: New(IConfiguration, PubsubService, ILogger(Of TriggerService))
+- uid: Virtufin.Api.Services.TriggerService.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.TriggerService.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+  id: ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Services.TriggerService
   langs:
   - csharp
   - vb
-  name: ScheduleJob(ScheduleJobRequest, ServerCallContext)
-  nameWithType: JobsService.ScheduleJob(ScheduleJobRequest, ServerCallContext)
-  fullName: Virtufin.Api.Services.JobsService.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest, Grpc.Core.ServerCallContext)
+  name: ScheduleTrigger(ScheduleTriggerRequest, ServerCallContext)
+  nameWithType: TriggerService.ScheduleTrigger(ScheduleTriggerRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.TriggerService.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest, Grpc.Core.ServerCallContext)
   type: Method
   source:
     remote:
-      path: src/Virtufin.Api/Services/JobsService.cs
+      path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: ScheduleJob
-    path: ../../../src/Virtufin.Api/Services/JobsService.cs
+    id: ScheduleTrigger
+    path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 29
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   example: []
   syntax:
-    content: public override Task<ScheduleJobResponse> ScheduleJob(ScheduleJobRequest request, ServerCallContext context)
+    content: public override Task<ScheduleTriggerResponse> ScheduleTrigger(ScheduleTriggerRequest request, ServerCallContext context)
     parameters:
     - id: request
-      type: Virtufin.Api.Protos.ScheduleJobRequest
+      type: Virtufin.Api.Protos.ScheduleTriggerRequest
     - id: context
       type: Grpc.Core.ServerCallContext
     return:
-      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.ScheduleJobResponse}
-    content.vb: Public Overrides Function ScheduleJob(request As ScheduleJobRequest, context As ServerCallContext) As Task(Of ScheduleJobResponse)
-  overridden: Virtufin.Api.Protos.Jobs.JobsBase.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.JobsService.ScheduleJob*
-- uid: Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  id: GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Services.JobsService
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.ScheduleTriggerResponse}
+    content.vb: Public Overrides Function ScheduleTrigger(request As ScheduleTriggerRequest, context As ServerCallContext) As Task(Of ScheduleTriggerResponse)
+  overridden: Virtufin.Api.Protos.Trigger.TriggerBase.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.TriggerService.ScheduleTrigger*
+- uid: Virtufin.Api.Services.TriggerService.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.TriggerService.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  id: GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Services.TriggerService
   langs:
   - csharp
   - vb
-  name: GetJob(GetJobRequest, ServerCallContext)
-  nameWithType: JobsService.GetJob(GetJobRequest, ServerCallContext)
-  fullName: Virtufin.Api.Services.JobsService.GetJob(Virtufin.Api.Protos.GetJobRequest, Grpc.Core.ServerCallContext)
+  name: GetTrigger(GetTriggerRequest, ServerCallContext)
+  nameWithType: TriggerService.GetTrigger(GetTriggerRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.TriggerService.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest, Grpc.Core.ServerCallContext)
   type: Method
   source:
     remote:
-      path: src/Virtufin.Api/Services/JobsService.cs
+      path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GetJob
-    path: ../../../src/Virtufin.Api/Services/JobsService.cs
+    id: GetTrigger
+    path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 80
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   example: []
   syntax:
-    content: public override Task<GetJobResponse> GetJob(GetJobRequest request, ServerCallContext context)
+    content: public override Task<GetTriggerResponse> GetTrigger(GetTriggerRequest request, ServerCallContext context)
     parameters:
     - id: request
-      type: Virtufin.Api.Protos.GetJobRequest
+      type: Virtufin.Api.Protos.GetTriggerRequest
     - id: context
       type: Grpc.Core.ServerCallContext
     return:
-      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetJobResponse}
-    content.vb: Public Overrides Function GetJob(request As GetJobRequest, context As ServerCallContext) As Task(Of GetJobResponse)
-  overridden: Virtufin.Api.Protos.Jobs.JobsBase.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.JobsService.GetJob*
-- uid: Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  id: DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Services.JobsService
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetTriggerResponse}
+    content.vb: Public Overrides Function GetTrigger(request As GetTriggerRequest, context As ServerCallContext) As Task(Of GetTriggerResponse)
+  overridden: Virtufin.Api.Protos.Trigger.TriggerBase.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.TriggerService.GetTrigger*
+- uid: Virtufin.Api.Services.TriggerService.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.TriggerService.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  id: DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Services.TriggerService
   langs:
   - csharp
   - vb
-  name: DeleteJob(DeleteJobRequest, ServerCallContext)
-  nameWithType: JobsService.DeleteJob(DeleteJobRequest, ServerCallContext)
-  fullName: Virtufin.Api.Services.JobsService.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest, Grpc.Core.ServerCallContext)
+  name: DeleteTrigger(DeleteTriggerRequest, ServerCallContext)
+  nameWithType: TriggerService.DeleteTrigger(DeleteTriggerRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.TriggerService.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest, Grpc.Core.ServerCallContext)
   type: Method
   source:
     remote:
-      path: src/Virtufin.Api/Services/JobsService.cs
+      path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: DeleteJob
-    path: ../../../src/Virtufin.Api/Services/JobsService.cs
+    id: DeleteTrigger
+    path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 131
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   example: []
   syntax:
-    content: public override Task<DeleteJobResponse> DeleteJob(DeleteJobRequest request, ServerCallContext context)
+    content: public override Task<DeleteTriggerResponse> DeleteTrigger(DeleteTriggerRequest request, ServerCallContext context)
     parameters:
     - id: request
-      type: Virtufin.Api.Protos.DeleteJobRequest
+      type: Virtufin.Api.Protos.DeleteTriggerRequest
     - id: context
       type: Grpc.Core.ServerCallContext
     return:
-      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteJobResponse}
-    content.vb: Public Overrides Function DeleteJob(request As DeleteJobRequest, context As ServerCallContext) As Task(Of DeleteJobResponse)
-  overridden: Virtufin.Api.Protos.Jobs.JobsBase.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.JobsService.DeleteJob*
-- uid: Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  id: ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Services.JobsService
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteTriggerResponse}
+    content.vb: Public Overrides Function DeleteTrigger(request As DeleteTriggerRequest, context As ServerCallContext) As Task(Of DeleteTriggerResponse)
+  overridden: Virtufin.Api.Protos.Trigger.TriggerBase.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.TriggerService.DeleteTrigger*
+- uid: Virtufin.Api.Services.TriggerService.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.TriggerService.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  id: ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Services.TriggerService
   langs:
   - csharp
   - vb
-  name: ListJobs(ListJobsRequest, ServerCallContext)
-  nameWithType: JobsService.ListJobs(ListJobsRequest, ServerCallContext)
-  fullName: Virtufin.Api.Services.JobsService.ListJobs(Virtufin.Api.Protos.ListJobsRequest, Grpc.Core.ServerCallContext)
+  name: ListTriggers(ListTriggersRequest, ServerCallContext)
+  nameWithType: TriggerService.ListTriggers(ListTriggersRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.TriggerService.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest, Grpc.Core.ServerCallContext)
   type: Method
   source:
     remote:
-      path: src/Virtufin.Api/Services/JobsService.cs
+      path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: ListJobs
-    path: ../../../src/Virtufin.Api/Services/JobsService.cs
+    id: ListTriggers
+    path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 185
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   example: []
   syntax:
-    content: public override Task<ListJobsResponse> ListJobs(ListJobsRequest request, ServerCallContext context)
+    content: public override Task<ListTriggersResponse> ListTriggers(ListTriggersRequest request, ServerCallContext context)
     parameters:
     - id: request
-      type: Virtufin.Api.Protos.ListJobsRequest
+      type: Virtufin.Api.Protos.ListTriggersRequest
     - id: context
       type: Grpc.Core.ServerCallContext
     return:
-      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListJobsResponse}
-    content.vb: Public Overrides Function ListJobs(request As ListJobsRequest, context As ServerCallContext) As Task(Of ListJobsResponse)
-  overridden: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.JobsService.ListJobs*
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListTriggersResponse}
+    content.vb: Public Overrides Function ListTriggers(request As ListTriggersRequest, context As ServerCallContext) As Task(Of ListTriggersResponse)
+  overridden: Virtufin.Api.Protos.Trigger.TriggerBase.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.TriggerService.ListTriggers*
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -260,24 +260,24 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Virtufin.Api.Protos.Jobs.JobsBase
-  commentId: T:Virtufin.Api.Protos.Jobs.JobsBase
+- uid: Virtufin.Api.Protos.Trigger.TriggerBase
+  commentId: T:Virtufin.Api.Protos.Trigger.TriggerBase
   parent: Virtufin.Api.Protos
-  name: Jobs.JobsBase
-  nameWithType: Jobs.JobsBase
-  fullName: Virtufin.Api.Protos.Jobs.JobsBase
+  name: Trigger.TriggerBase
+  nameWithType: Trigger.TriggerBase
+  fullName: Virtufin.Api.Protos.Trigger.TriggerBase
   spec.csharp:
-  - uid: Virtufin.Api.Protos.Jobs
-    name: Jobs
+  - uid: Virtufin.Api.Protos.Trigger
+    name: Trigger
   - name: .
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase
-    name: JobsBase
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase
+    name: TriggerBase
   spec.vb:
-  - uid: Virtufin.Api.Protos.Jobs
-    name: Jobs
+  - uid: Virtufin.Api.Protos.Trigger
+    name: Trigger
   - name: .
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase
-    name: JobsBase
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase
+    name: TriggerBase
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -527,14 +527,14 @@ references:
   - name: .
   - uid: Virtufin.Api.Protos
     name: Protos
-- uid: Virtufin.Api.Services.JobsService.#ctor*
-  commentId: Overload:Virtufin.Api.Services.JobsService.#ctor
-  href: Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService__ctor_Microsoft_Extensions_Configuration_IConfiguration_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_JobsService__
-  name: JobsService
-  nameWithType: JobsService.JobsService
-  fullName: Virtufin.Api.Services.JobsService.JobsService
-  nameWithType.vb: JobsService.New
-  fullName.vb: Virtufin.Api.Services.JobsService.New
+- uid: Virtufin.Api.Services.TriggerService.#ctor*
+  commentId: Overload:Virtufin.Api.Services.TriggerService.#ctor
+  href: Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService__ctor_Microsoft_Extensions_Configuration_IConfiguration_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_TriggerService__
+  name: TriggerService
+  nameWithType: TriggerService.TriggerService
+  fullName: Virtufin.Api.Services.TriggerService.TriggerService
+  nameWithType.vb: TriggerService.New
+  fullName.vb: Virtufin.Api.Services.TriggerService.New
   name.vb: New
 - uid: Microsoft.Extensions.Configuration.IConfiguration
   commentId: T:Microsoft.Extensions.Configuration.IConfiguration
@@ -551,26 +551,26 @@ references:
   name: PubsubService
   nameWithType: PubsubService
   fullName: Virtufin.Api.Services.PubsubService
-- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService}
-  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.JobsService}
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.TriggerService}
   parent: Microsoft.Extensions.Logging
   definition: Microsoft.Extensions.Logging.ILogger`1
   href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
-  name: ILogger<JobsService>
-  nameWithType: ILogger<JobsService>
-  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.JobsService>
-  nameWithType.vb: ILogger(Of JobsService)
-  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.JobsService)
-  name.vb: ILogger(Of JobsService)
+  name: ILogger<TriggerService>
+  nameWithType: ILogger<TriggerService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.TriggerService>
+  nameWithType.vb: ILogger(Of TriggerService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.TriggerService)
+  name.vb: ILogger(Of TriggerService)
   spec.csharp:
   - uid: Microsoft.Extensions.Logging.ILogger`1
     name: ILogger
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
   - name: <
-  - uid: Virtufin.Api.Services.JobsService
-    name: JobsService
-    href: Virtufin.Api.Services.JobsService.html
+  - uid: Virtufin.Api.Services.TriggerService
+    name: TriggerService
+    href: Virtufin.Api.Services.TriggerService.html
   - name: '>'
   spec.vb:
   - uid: Microsoft.Extensions.Logging.ILogger`1
@@ -580,9 +580,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Services.JobsService
-    name: JobsService
-    href: Virtufin.Api.Services.JobsService.html
+  - uid: Virtufin.Api.Services.TriggerService
+    name: TriggerService
+    href: Virtufin.Api.Services.TriggerService.html
   - name: )
 - uid: Microsoft.Extensions.Configuration
   commentId: N:Microsoft.Extensions.Configuration
@@ -686,20 +686,20 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
-- uid: Virtufin.Api.Protos.Jobs.JobsBase.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Jobs.JobsBase.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Jobs.JobsBase
+- uid: Virtufin.Api.Protos.Trigger.TriggerBase.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Trigger.TriggerBase.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Trigger.TriggerBase
   isExternal: true
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  name: ScheduleJob(ScheduleJobRequest, ServerCallContext)
-  nameWithType: Jobs.JobsBase.ScheduleJob(ScheduleJobRequest, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Jobs.JobsBase.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest, Grpc.Core.ServerCallContext)
+  name: ScheduleTrigger(ScheduleTriggerRequest, ServerCallContext)
+  nameWithType: Trigger.TriggerBase.ScheduleTrigger(ScheduleTriggerRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Trigger.TriggerBase.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-    name: ScheduleJob
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+    name: ScheduleTrigger
   - name: (
-  - uid: Virtufin.Api.Protos.ScheduleJobRequest
-    name: ScheduleJobRequest
+  - uid: Virtufin.Api.Protos.ScheduleTriggerRequest
+    name: ScheduleTriggerRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -708,11 +708,11 @@ references:
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase.ScheduleJob(Virtufin.Api.Protos.ScheduleJobRequest,Grpc.Core.ServerCallContext)
-    name: ScheduleJob
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase.ScheduleTrigger(Virtufin.Api.Protos.ScheduleTriggerRequest,Grpc.Core.ServerCallContext)
+    name: ScheduleTrigger
   - name: (
-  - uid: Virtufin.Api.Protos.ScheduleJobRequest
-    name: ScheduleJobRequest
+  - uid: Virtufin.Api.Protos.ScheduleTriggerRequest
+    name: ScheduleTriggerRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -720,18 +720,18 @@ references:
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
-- uid: Virtufin.Api.Services.JobsService.ScheduleJob*
-  commentId: Overload:Virtufin.Api.Services.JobsService.ScheduleJob
-  href: Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ScheduleJob_Virtufin_Api_Protos_ScheduleJobRequest_Grpc_Core_ServerCallContext_
-  name: ScheduleJob
-  nameWithType: JobsService.ScheduleJob
-  fullName: Virtufin.Api.Services.JobsService.ScheduleJob
-- uid: Virtufin.Api.Protos.ScheduleJobRequest
-  commentId: T:Virtufin.Api.Protos.ScheduleJobRequest
+- uid: Virtufin.Api.Services.TriggerService.ScheduleTrigger*
+  commentId: Overload:Virtufin.Api.Services.TriggerService.ScheduleTrigger
+  href: Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_ScheduleTrigger_Virtufin_Api_Protos_ScheduleTriggerRequest_Grpc_Core_ServerCallContext_
+  name: ScheduleTrigger
+  nameWithType: TriggerService.ScheduleTrigger
+  fullName: Virtufin.Api.Services.TriggerService.ScheduleTrigger
+- uid: Virtufin.Api.Protos.ScheduleTriggerRequest
+  commentId: T:Virtufin.Api.Protos.ScheduleTriggerRequest
   parent: Virtufin.Api.Protos
-  name: ScheduleJobRequest
-  nameWithType: ScheduleJobRequest
-  fullName: Virtufin.Api.Protos.ScheduleJobRequest
+  name: ScheduleTriggerRequest
+  nameWithType: ScheduleTriggerRequest
+  fullName: Virtufin.Api.Protos.ScheduleTriggerRequest
 - uid: Grpc.Core.ServerCallContext
   commentId: T:Grpc.Core.ServerCallContext
   parent: Grpc.Core
@@ -740,25 +740,25 @@ references:
   name: ServerCallContext
   nameWithType: ServerCallContext
   fullName: Grpc.Core.ServerCallContext
-- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.ScheduleJobResponse}
-  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.ScheduleJobResponse}
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.ScheduleTriggerResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.ScheduleTriggerResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<ScheduleJobResponse>
-  nameWithType: Task<ScheduleJobResponse>
-  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.ScheduleJobResponse>
-  nameWithType.vb: Task(Of ScheduleJobResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.ScheduleJobResponse)
-  name.vb: Task(Of ScheduleJobResponse)
+  name: Task<ScheduleTriggerResponse>
+  nameWithType: Task<ScheduleTriggerResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.ScheduleTriggerResponse>
+  nameWithType.vb: Task(Of ScheduleTriggerResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.ScheduleTriggerResponse)
+  name.vb: Task(Of ScheduleTriggerResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Virtufin.Api.Protos.ScheduleJobResponse
-    name: ScheduleJobResponse
+  - uid: Virtufin.Api.Protos.ScheduleTriggerResponse
+    name: ScheduleTriggerResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -768,8 +768,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.ScheduleJobResponse
-    name: ScheduleJobResponse
+  - uid: Virtufin.Api.Protos.ScheduleTriggerResponse
+    name: ScheduleTriggerResponse
   - name: )
 - uid: Grpc.Core
   commentId: N:Grpc.Core
@@ -858,20 +858,20 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: Virtufin.Api.Protos.Jobs.JobsBase.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Jobs.JobsBase.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Jobs.JobsBase
+- uid: Virtufin.Api.Protos.Trigger.TriggerBase.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Trigger.TriggerBase.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Trigger.TriggerBase
   isExternal: true
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  name: GetJob(GetJobRequest, ServerCallContext)
-  nameWithType: Jobs.JobsBase.GetJob(GetJobRequest, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Jobs.JobsBase.GetJob(Virtufin.Api.Protos.GetJobRequest, Grpc.Core.ServerCallContext)
+  name: GetTrigger(GetTriggerRequest, ServerCallContext)
+  nameWithType: Trigger.TriggerBase.GetTrigger(GetTriggerRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Trigger.TriggerBase.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-    name: GetJob
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+    name: GetTrigger
   - name: (
-  - uid: Virtufin.Api.Protos.GetJobRequest
-    name: GetJobRequest
+  - uid: Virtufin.Api.Protos.GetTriggerRequest
+    name: GetTriggerRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -880,11 +880,11 @@ references:
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase.GetJob(Virtufin.Api.Protos.GetJobRequest,Grpc.Core.ServerCallContext)
-    name: GetJob
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase.GetTrigger(Virtufin.Api.Protos.GetTriggerRequest,Grpc.Core.ServerCallContext)
+    name: GetTrigger
   - name: (
-  - uid: Virtufin.Api.Protos.GetJobRequest
-    name: GetJobRequest
+  - uid: Virtufin.Api.Protos.GetTriggerRequest
+    name: GetTriggerRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -892,37 +892,37 @@ references:
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
-- uid: Virtufin.Api.Services.JobsService.GetJob*
-  commentId: Overload:Virtufin.Api.Services.JobsService.GetJob
-  href: Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_GetJob_Virtufin_Api_Protos_GetJobRequest_Grpc_Core_ServerCallContext_
-  name: GetJob
-  nameWithType: JobsService.GetJob
-  fullName: Virtufin.Api.Services.JobsService.GetJob
-- uid: Virtufin.Api.Protos.GetJobRequest
-  commentId: T:Virtufin.Api.Protos.GetJobRequest
+- uid: Virtufin.Api.Services.TriggerService.GetTrigger*
+  commentId: Overload:Virtufin.Api.Services.TriggerService.GetTrigger
+  href: Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_GetTrigger_Virtufin_Api_Protos_GetTriggerRequest_Grpc_Core_ServerCallContext_
+  name: GetTrigger
+  nameWithType: TriggerService.GetTrigger
+  fullName: Virtufin.Api.Services.TriggerService.GetTrigger
+- uid: Virtufin.Api.Protos.GetTriggerRequest
+  commentId: T:Virtufin.Api.Protos.GetTriggerRequest
   parent: Virtufin.Api.Protos
-  name: GetJobRequest
-  nameWithType: GetJobRequest
-  fullName: Virtufin.Api.Protos.GetJobRequest
-- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetJobResponse}
-  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.GetJobResponse}
+  name: GetTriggerRequest
+  nameWithType: GetTriggerRequest
+  fullName: Virtufin.Api.Protos.GetTriggerRequest
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetTriggerResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.GetTriggerResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<GetJobResponse>
-  nameWithType: Task<GetJobResponse>
-  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.GetJobResponse>
-  nameWithType.vb: Task(Of GetJobResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.GetJobResponse)
-  name.vb: Task(Of GetJobResponse)
+  name: Task<GetTriggerResponse>
+  nameWithType: Task<GetTriggerResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.GetTriggerResponse>
+  nameWithType.vb: Task(Of GetTriggerResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.GetTriggerResponse)
+  name.vb: Task(Of GetTriggerResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Virtufin.Api.Protos.GetJobResponse
-    name: GetJobResponse
+  - uid: Virtufin.Api.Protos.GetTriggerResponse
+    name: GetTriggerResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -932,23 +932,23 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.GetJobResponse
-    name: GetJobResponse
+  - uid: Virtufin.Api.Protos.GetTriggerResponse
+    name: GetTriggerResponse
   - name: )
-- uid: Virtufin.Api.Protos.Jobs.JobsBase.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Jobs.JobsBase.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Jobs.JobsBase
+- uid: Virtufin.Api.Protos.Trigger.TriggerBase.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Trigger.TriggerBase.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Trigger.TriggerBase
   isExternal: true
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  name: DeleteJob(DeleteJobRequest, ServerCallContext)
-  nameWithType: Jobs.JobsBase.DeleteJob(DeleteJobRequest, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Jobs.JobsBase.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest, Grpc.Core.ServerCallContext)
+  name: DeleteTrigger(DeleteTriggerRequest, ServerCallContext)
+  nameWithType: Trigger.TriggerBase.DeleteTrigger(DeleteTriggerRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Trigger.TriggerBase.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-    name: DeleteJob
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+    name: DeleteTrigger
   - name: (
-  - uid: Virtufin.Api.Protos.DeleteJobRequest
-    name: DeleteJobRequest
+  - uid: Virtufin.Api.Protos.DeleteTriggerRequest
+    name: DeleteTriggerRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -957,11 +957,11 @@ references:
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase.DeleteJob(Virtufin.Api.Protos.DeleteJobRequest,Grpc.Core.ServerCallContext)
-    name: DeleteJob
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase.DeleteTrigger(Virtufin.Api.Protos.DeleteTriggerRequest,Grpc.Core.ServerCallContext)
+    name: DeleteTrigger
   - name: (
-  - uid: Virtufin.Api.Protos.DeleteJobRequest
-    name: DeleteJobRequest
+  - uid: Virtufin.Api.Protos.DeleteTriggerRequest
+    name: DeleteTriggerRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -969,37 +969,37 @@ references:
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
-- uid: Virtufin.Api.Services.JobsService.DeleteJob*
-  commentId: Overload:Virtufin.Api.Services.JobsService.DeleteJob
-  href: Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_DeleteJob_Virtufin_Api_Protos_DeleteJobRequest_Grpc_Core_ServerCallContext_
-  name: DeleteJob
-  nameWithType: JobsService.DeleteJob
-  fullName: Virtufin.Api.Services.JobsService.DeleteJob
-- uid: Virtufin.Api.Protos.DeleteJobRequest
-  commentId: T:Virtufin.Api.Protos.DeleteJobRequest
+- uid: Virtufin.Api.Services.TriggerService.DeleteTrigger*
+  commentId: Overload:Virtufin.Api.Services.TriggerService.DeleteTrigger
+  href: Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_DeleteTrigger_Virtufin_Api_Protos_DeleteTriggerRequest_Grpc_Core_ServerCallContext_
+  name: DeleteTrigger
+  nameWithType: TriggerService.DeleteTrigger
+  fullName: Virtufin.Api.Services.TriggerService.DeleteTrigger
+- uid: Virtufin.Api.Protos.DeleteTriggerRequest
+  commentId: T:Virtufin.Api.Protos.DeleteTriggerRequest
   parent: Virtufin.Api.Protos
-  name: DeleteJobRequest
-  nameWithType: DeleteJobRequest
-  fullName: Virtufin.Api.Protos.DeleteJobRequest
-- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteJobResponse}
-  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteJobResponse}
+  name: DeleteTriggerRequest
+  nameWithType: DeleteTriggerRequest
+  fullName: Virtufin.Api.Protos.DeleteTriggerRequest
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteTriggerResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteTriggerResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<DeleteJobResponse>
-  nameWithType: Task<DeleteJobResponse>
-  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.DeleteJobResponse>
-  nameWithType.vb: Task(Of DeleteJobResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.DeleteJobResponse)
-  name.vb: Task(Of DeleteJobResponse)
+  name: Task<DeleteTriggerResponse>
+  nameWithType: Task<DeleteTriggerResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.DeleteTriggerResponse>
+  nameWithType.vb: Task(Of DeleteTriggerResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.DeleteTriggerResponse)
+  name.vb: Task(Of DeleteTriggerResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Virtufin.Api.Protos.DeleteJobResponse
-    name: DeleteJobResponse
+  - uid: Virtufin.Api.Protos.DeleteTriggerResponse
+    name: DeleteTriggerResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1009,23 +1009,23 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.DeleteJobResponse
-    name: DeleteJobResponse
+  - uid: Virtufin.Api.Protos.DeleteTriggerResponse
+    name: DeleteTriggerResponse
   - name: )
-- uid: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Jobs.JobsBase
+- uid: Virtufin.Api.Protos.Trigger.TriggerBase.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Trigger.TriggerBase.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.Trigger.TriggerBase
   isExternal: true
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  name: ListJobs(ListJobsRequest, ServerCallContext)
-  nameWithType: Jobs.JobsBase.ListJobs(ListJobsRequest, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest, Grpc.Core.ServerCallContext)
+  name: ListTriggers(ListTriggersRequest, ServerCallContext)
+  nameWithType: Trigger.TriggerBase.ListTriggers(ListTriggersRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Trigger.TriggerBase.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-    name: ListJobs
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+    name: ListTriggers
   - name: (
-  - uid: Virtufin.Api.Protos.ListJobsRequest
-    name: ListJobsRequest
+  - uid: Virtufin.Api.Protos.ListTriggersRequest
+    name: ListTriggersRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1034,11 +1034,11 @@ references:
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Protos.Jobs.JobsBase.ListJobs(Virtufin.Api.Protos.ListJobsRequest,Grpc.Core.ServerCallContext)
-    name: ListJobs
+  - uid: Virtufin.Api.Protos.Trigger.TriggerBase.ListTriggers(Virtufin.Api.Protos.ListTriggersRequest,Grpc.Core.ServerCallContext)
+    name: ListTriggers
   - name: (
-  - uid: Virtufin.Api.Protos.ListJobsRequest
-    name: ListJobsRequest
+  - uid: Virtufin.Api.Protos.ListTriggersRequest
+    name: ListTriggersRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1046,37 +1046,37 @@ references:
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
-- uid: Virtufin.Api.Services.JobsService.ListJobs*
-  commentId: Overload:Virtufin.Api.Services.JobsService.ListJobs
-  href: Virtufin.Api.Services.JobsService.html#Virtufin_Api_Services_JobsService_ListJobs_Virtufin_Api_Protos_ListJobsRequest_Grpc_Core_ServerCallContext_
-  name: ListJobs
-  nameWithType: JobsService.ListJobs
-  fullName: Virtufin.Api.Services.JobsService.ListJobs
-- uid: Virtufin.Api.Protos.ListJobsRequest
-  commentId: T:Virtufin.Api.Protos.ListJobsRequest
+- uid: Virtufin.Api.Services.TriggerService.ListTriggers*
+  commentId: Overload:Virtufin.Api.Services.TriggerService.ListTriggers
+  href: Virtufin.Api.Services.TriggerService.html#Virtufin_Api_Services_TriggerService_ListTriggers_Virtufin_Api_Protos_ListTriggersRequest_Grpc_Core_ServerCallContext_
+  name: ListTriggers
+  nameWithType: TriggerService.ListTriggers
+  fullName: Virtufin.Api.Services.TriggerService.ListTriggers
+- uid: Virtufin.Api.Protos.ListTriggersRequest
+  commentId: T:Virtufin.Api.Protos.ListTriggersRequest
   parent: Virtufin.Api.Protos
-  name: ListJobsRequest
-  nameWithType: ListJobsRequest
-  fullName: Virtufin.Api.Protos.ListJobsRequest
-- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListJobsResponse}
-  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.ListJobsResponse}
+  name: ListTriggersRequest
+  nameWithType: ListTriggersRequest
+  fullName: Virtufin.Api.Protos.ListTriggersRequest
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.ListTriggersResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.ListTriggersResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<ListJobsResponse>
-  nameWithType: Task<ListJobsResponse>
-  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.ListJobsResponse>
-  nameWithType.vb: Task(Of ListJobsResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.ListJobsResponse)
-  name.vb: Task(Of ListJobsResponse)
+  name: Task<ListTriggersResponse>
+  nameWithType: Task<ListTriggersResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.ListTriggersResponse>
+  nameWithType.vb: Task(Of ListTriggersResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.ListTriggersResponse)
+  name.vb: Task(Of ListTriggersResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Virtufin.Api.Protos.ListJobsResponse
-    name: ListJobsResponse
+  - uid: Virtufin.Api.Protos.ListTriggersResponse
+    name: ListTriggersResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1086,6 +1086,6 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.ListJobsResponse
-    name: ListJobsResponse
+  - uid: Virtufin.Api.Protos.ListTriggersResponse
+    name: ListTriggersResponse
   - name: )

@@ -144,9 +144,6 @@ items:
     - uid: Virtufin.Api.Services.GrpcReflectionService
       name: GrpcReflectionService
       type: Class
-    - uid: Virtufin.Api.Services.JobsService
-      name: JobsService
-      type: Class
     - uid: Virtufin.Api.Services.MethodSchema
       name: MethodSchema
       type: Class
@@ -194,6 +191,9 @@ items:
       type: Class
     - uid: Virtufin.Api.Services.TopicDaprSubscriptionRegistry.SubscriptionHandle
       name: TopicDaprSubscriptionRegistry.SubscriptionHandle
+      type: Class
+    - uid: Virtufin.Api.Services.TriggerService
+      name: TriggerService
       type: Class
   - uid: Virtufin.Api.ApiConstants
     name: ApiConstants
