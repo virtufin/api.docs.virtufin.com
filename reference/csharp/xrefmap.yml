@@ -2359,6 +2359,44 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.ConfigService.ListServices
   nameWithType: ConfigService.ListServices
+- uid: Virtufin.Api.Services.DaprAppCallbackService
+  name: DaprAppCallbackService
+  href: api/Virtufin.Api.Services.DaprAppCallbackService.html
+  commentId: T:Virtufin.Api.Services.DaprAppCallbackService
+  fullName: Virtufin.Api.Services.DaprAppCallbackService
+  nameWithType: DaprAppCallbackService
+- uid: Virtufin.Api.Services.DaprAppCallbackService.#ctor(Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService})
+  name: DaprAppCallbackService(PubsubService, ILogger<DaprAppCallbackService>)
+  href: api/Virtufin.Api.Services.DaprAppCallbackService.html#Virtufin_Api_Services_DaprAppCallbackService__ctor_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_DaprAppCallbackService__
+  commentId: M:Virtufin.Api.Services.DaprAppCallbackService.#ctor(Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService})
+  name.vb: New(PubsubService, ILogger(Of DaprAppCallbackService))
+  fullName: Virtufin.Api.Services.DaprAppCallbackService.DaprAppCallbackService(Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.DaprAppCallbackService>)
+  fullName.vb: Virtufin.Api.Services.DaprAppCallbackService.New(Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.DaprAppCallbackService))
+  nameWithType: DaprAppCallbackService.DaprAppCallbackService(PubsubService, ILogger<DaprAppCallbackService>)
+  nameWithType.vb: DaprAppCallbackService.New(PubsubService, ILogger(Of DaprAppCallbackService))
+- uid: Virtufin.Api.Services.DaprAppCallbackService.#ctor*
+  name: DaprAppCallbackService
+  href: api/Virtufin.Api.Services.DaprAppCallbackService.html#Virtufin_Api_Services_DaprAppCallbackService__ctor_
+  commentId: Overload:Virtufin.Api.Services.DaprAppCallbackService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Services.DaprAppCallbackService.DaprAppCallbackService
+  fullName.vb: Virtufin.Api.Services.DaprAppCallbackService.New
+  nameWithType: DaprAppCallbackService.DaprAppCallbackService
+  nameWithType.vb: DaprAppCallbackService.New
+- uid: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  name: OnJobEventAlpha1(JobEventRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.DaprAppCallbackService.html#Virtufin_Api_Services_DaprAppCallbackService_OnJobEventAlpha1_Dapr_AppCallback_Autogen_Grpc_v1_JobEventRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest, Grpc.Core.ServerCallContext)
+  nameWithType: DaprAppCallbackService.OnJobEventAlpha1(JobEventRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1*
+  name: OnJobEventAlpha1
+  href: api/Virtufin.Api.Services.DaprAppCallbackService.html#Virtufin_Api_Services_DaprAppCallbackService_OnJobEventAlpha1_
+  commentId: Overload:Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1
+  nameWithType: DaprAppCallbackService.OnJobEventAlpha1
 - uid: Virtufin.Api.Services.DaprConstants
   name: DaprConstants
   href: api/Virtufin.Api.Services.DaprConstants.html

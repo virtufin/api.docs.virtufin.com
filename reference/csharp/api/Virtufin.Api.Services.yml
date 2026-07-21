@@ -9,6 +9,7 @@ items:
   - Virtufin.Api.Services.AggregatedReflectionService
   - Virtufin.Api.Services.AggregatedReflectionV1Service
   - Virtufin.Api.Services.ConfigService
+  - Virtufin.Api.Services.DaprAppCallbackService
   - Virtufin.Api.Services.DaprConstants
   - Virtufin.Api.Services.DateTimeFormatConstants
   - Virtufin.Api.Services.FieldSchema
@@ -71,6 +72,12 @@ references:
   name: ConfigService
   nameWithType: ConfigService
   fullName: Virtufin.Api.Services.ConfigService
+- uid: Virtufin.Api.Services.DaprAppCallbackService
+  commentId: T:Virtufin.Api.Services.DaprAppCallbackService
+  href: Virtufin.Api.Services.DaprAppCallbackService.html
+  name: DaprAppCallbackService
+  nameWithType: DaprAppCallbackService
+  fullName: Virtufin.Api.Services.DaprAppCallbackService
 - uid: Virtufin.Api.Services.DaprConstants
   commentId: T:Virtufin.Api.Services.DaprConstants
   href: Virtufin.Api.Services.DaprConstants.html

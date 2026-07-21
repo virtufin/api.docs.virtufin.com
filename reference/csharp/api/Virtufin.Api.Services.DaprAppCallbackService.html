@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class FieldSchema | Virtufin API - C# Reference </title>
+      <title>Class DaprAppCallbackService | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class FieldSchema | Virtufin API - C# Reference ">
+      <meta name="title" content="Class DaprAppCallbackService | Virtufin API - C# Reference ">
       
-      <meta name="description" content="Describes a single field within a message schema.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.FieldSchema">
+        <article data-uid="Virtufin.Api.Services.DaprAppCallbackService">
 
 
 
-  <h1 id="Virtufin_Api_Services_FieldSchema" data-uid="Virtufin.Api.Services.FieldSchema" class="text-break">
-Class FieldSchema  
+  <h1 id="Virtufin_Api_Services_DaprAppCallbackService" data-uid="Virtufin.Api.Services.DaprAppCallbackService" class="text-break">
+Class DaprAppCallbackService  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,12 +101,11 @@ Class FieldSchema
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Describes a single field within a message schema.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FieldSchema</code></pre>
+    <pre><code class="lang-csharp hljs">public class DaprAppCallbackService : AppCallbackAlpha.AppCallbackAlphaBase</code></pre>
   </div>
 
 
@@ -116,7 +115,8 @@ Class FieldSchema
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">FieldSchema</span></div>
+      <div><span class="xref">AppCallbackAlpha</span>.<span class="xref">AppCallbackAlphaBase</span></div>
+      <div><span class="xref">DaprAppCallbackService</span></div>
     </dd>
   </dl>
 
@@ -125,6 +125,9 @@ Class FieldSchema
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">AppCallbackAlpha.AppCallbackAlphaBase.OnBulkTopicEventAlpha1(TopicEventBulkRequest, ServerCallContext)</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -153,14 +156,14 @@ Class FieldSchema
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Virtufin_Api_Services_FieldSchema_IsOptional_" data-uid="Virtufin.Api.Services.FieldSchema.IsOptional*"></a>
+  <a id="Virtufin_Api_Services_DaprAppCallbackService__ctor_" data-uid="Virtufin.Api.Services.DaprAppCallbackService.#ctor*"></a>
 
-  <h3 id="Virtufin_Api_Services_FieldSchema_IsOptional" data-uid="Virtufin.Api.Services.FieldSchema.IsOptional">
-  IsOptional
+  <h3 id="Virtufin_Api_Services_DaprAppCallbackService__ctor_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_DaprAppCallbackService__" data-uid="Virtufin.Api.Services.DaprAppCallbackService.#ctor(Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService})">
+  DaprAppCallbackService(PubsubService, ILogger&lt;DaprAppCallbackService&gt;)
   
   </h3>
 
@@ -168,16 +171,14 @@ Class FieldSchema
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsOptional { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DaprAppCallbackService(PubsubService pubsubService, ILogger&lt;DaprAppCallbackService&gt; logger)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>pubsubService</code> <a class="xref" href="Virtufin.Api.Services.PubsubService.html">PubsubService</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.DaprAppCallbackService.html">DaprAppCallbackService</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -188,184 +189,48 @@ Class FieldSchema
 
 
 
-  <a id="Virtufin_Api_Services_FieldSchema_IsRepeated_" data-uid="Virtufin.Api.Services.FieldSchema.IsRepeated*"></a>
 
-  <h3 id="Virtufin_Api_Services_FieldSchema_IsRepeated" data-uid="Virtufin.Api.Services.FieldSchema.IsRepeated">
-  IsRepeated
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Virtufin_Api_Services_DaprAppCallbackService_OnJobEventAlpha1_" data-uid="Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1*"></a>
+
+  <h3 id="Virtufin_Api_Services_DaprAppCallbackService_OnJobEventAlpha1_Dapr_AppCallback_Autogen_Grpc_v1_JobEventRequest_Grpc_Core_ServerCallContext_" data-uid="Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)">
+  OnJobEventAlpha1(JobEventRequest, ServerCallContext)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sends job back to the app's endpoint at trigger time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsRepeated { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;JobEventResponse&gt; OnJobEventAlpha1(JobEventRequest request, ServerCallContext context)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dt><code>request</code> <span class="xref">JobEventRequest</span></dt>
+    <dd><p>The request received from the client.</p>
+</dd>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs">ServerCallContext</a></dt>
+    <dd><p>The context of the server-side call handler being invoked.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">JobEventResponse</span>&gt;</dt>
+    <dd><p>The response to send back to the client (wrapped by a task).</p>
+</dd>
   </dl>
 
 
 
-
-
-
-
-
-  <a id="Virtufin_Api_Services_FieldSchema_Name_" data-uid="Virtufin.Api.Services.FieldSchema.Name*"></a>
-
-  <h3 id="Virtufin_Api_Services_FieldSchema_Name" data-uid="Virtufin.Api.Services.FieldSchema.Name">
-  Name
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_FieldSchema_OneofCases_" data-uid="Virtufin.Api.Services.FieldSchema.OneofCases*"></a>
-
-  <h3 id="Virtufin_Api_Services_FieldSchema_OneofCases" data-uid="Virtufin.Api.Services.FieldSchema.OneofCases">
-  OneofCases
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;OneofCaseSchema&gt;? OneofCases { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Virtufin.Api.Services.OneofCaseSchema.html">OneofCaseSchema</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_FieldSchema_OneofGroup_" data-uid="Virtufin.Api.Services.FieldSchema.OneofGroup*"></a>
-
-  <h3 id="Virtufin_Api_Services_FieldSchema_OneofGroup" data-uid="Virtufin.Api.Services.FieldSchema.OneofGroup">
-  OneofGroup
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? OneofGroup { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_FieldSchema_Type_" data-uid="Virtufin.Api.Services.FieldSchema.Type*"></a>
-
-  <h3 id="Virtufin_Api_Services_FieldSchema_Type" data-uid="Virtufin.Api.Services.FieldSchema.Type">
-  Type
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Type { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_FieldSchema_TypeName_" data-uid="Virtufin.Api.Services.FieldSchema.TypeName*"></a>
-
-  <h3 id="Virtufin_Api_Services_FieldSchema_TypeName" data-uid="Virtufin.Api.Services.FieldSchema.TypeName">
-  TypeName
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string TypeName { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

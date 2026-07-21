@@ -564,6 +564,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.DaprAppCallbackService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.DaprAppCallbackService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.DaprAppCallbackService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Services.DaprConstants.yml",
       "output": {
         ".html": {

@@ -1,0 +1,783 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.DaprAppCallbackService
+  commentId: T:Virtufin.Api.Services.DaprAppCallbackService
+  id: DaprAppCallbackService
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.DaprAppCallbackService.#ctor(Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService})
+  - Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  langs:
+  - csharp
+  - vb
+  name: DaprAppCallbackService
+  nameWithType: DaprAppCallbackService
+  fullName: Virtufin.Api.Services.DaprAppCallbackService
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/DaprAppCallbackService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DaprAppCallbackService
+    path: ../../../src/Virtufin.Api/Services/DaprAppCallbackService.cs
+    startLine: 5
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: 'public class DaprAppCallbackService : AppCallbackAlpha.AppCallbackAlphaBase'
+    content.vb: Public Class DaprAppCallbackService Inherits AppCallbackAlpha.AppCallbackAlphaBase
+  inheritance:
+  - System.Object
+  - Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase
+  inheritedMembers:
+  - Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnBulkTopicEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.TopicEventBulkRequest,Grpc.Core.ServerCallContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Services.DaprAppCallbackService.#ctor(Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService})
+  commentId: M:Virtufin.Api.Services.DaprAppCallbackService.#ctor(Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService})
+  id: '#ctor(Virtufin.Api.Services.PubsubService,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService})'
+  parent: Virtufin.Api.Services.DaprAppCallbackService
+  langs:
+  - csharp
+  - vb
+  name: DaprAppCallbackService(PubsubService, ILogger<DaprAppCallbackService>)
+  nameWithType: DaprAppCallbackService.DaprAppCallbackService(PubsubService, ILogger<DaprAppCallbackService>)
+  fullName: Virtufin.Api.Services.DaprAppCallbackService.DaprAppCallbackService(Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.DaprAppCallbackService>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/DaprAppCallbackService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: .ctor
+    path: ../../../src/Virtufin.Api/Services/DaprAppCallbackService.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public DaprAppCallbackService(PubsubService pubsubService, ILogger<DaprAppCallbackService> logger)
+    parameters:
+    - id: pubsubService
+      type: Virtufin.Api.Services.PubsubService
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService}
+    content.vb: Public Sub New(pubsubService As PubsubService, logger As ILogger(Of DaprAppCallbackService))
+  overload: Virtufin.Api.Services.DaprAppCallbackService.#ctor*
+  nameWithType.vb: DaprAppCallbackService.New(PubsubService, ILogger(Of DaprAppCallbackService))
+  fullName.vb: Virtufin.Api.Services.DaprAppCallbackService.New(Virtufin.Api.Services.PubsubService, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.DaprAppCallbackService))
+  name.vb: New(PubsubService, ILogger(Of DaprAppCallbackService))
+- uid: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  id: OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Services.DaprAppCallbackService
+  langs:
+  - csharp
+  - vb
+  name: OnJobEventAlpha1(JobEventRequest, ServerCallContext)
+  nameWithType: DaprAppCallbackService.OnJobEventAlpha1(JobEventRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/DaprAppCallbackService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: OnJobEventAlpha1
+    path: ../../../src/Virtufin.Api/Services/DaprAppCallbackService.cs
+    startLine: 20
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Sends job back to the app's endpoint at trigger time.
+  example: []
+  syntax:
+    content: public override Task<JobEventResponse> OnJobEventAlpha1(JobEventRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest
+      description: The request received from the client.
+    - id: context
+      type: Grpc.Core.ServerCallContext
+      description: The context of the server-side call handler being invoked.
+    return:
+      type: System.Threading.Tasks.Task{Dapr.AppCallback.Autogen.Grpc.v1.JobEventResponse}
+      description: The response to send back to the client (wrapped by a task).
+    content.vb: Public Overrides Function OnJobEventAlpha1(request As JobEventRequest, context As ServerCallContext) As Task(Of JobEventResponse)
+  overridden: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1*
+references:
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase
+  commentId: T:Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase
+  parent: Dapr.AppCallback.Autogen.Grpc.v1
+  isExternal: true
+  name: AppCallbackAlpha.AppCallbackAlphaBase
+  nameWithType: AppCallbackAlpha.AppCallbackAlphaBase
+  fullName: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase
+  spec.csharp:
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha
+    name: AppCallbackAlpha
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase
+    name: AppCallbackAlphaBase
+    isExternal: true
+  spec.vb:
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha
+    name: AppCallbackAlpha
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase
+    name: AppCallbackAlphaBase
+    isExternal: true
+- uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnBulkTopicEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.TopicEventBulkRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnBulkTopicEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.TopicEventBulkRequest,Grpc.Core.ServerCallContext)
+  parent: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: OnBulkTopicEventAlpha1(TopicEventBulkRequest, ServerCallContext)
+  nameWithType: AppCallbackAlpha.AppCallbackAlphaBase.OnBulkTopicEventAlpha1(TopicEventBulkRequest, ServerCallContext)
+  fullName: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnBulkTopicEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.TopicEventBulkRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnBulkTopicEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.TopicEventBulkRequest,Grpc.Core.ServerCallContext)
+    name: OnBulkTopicEventAlpha1
+    isExternal: true
+  - name: (
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.TopicEventBulkRequest
+    name: TopicEventBulkRequest
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnBulkTopicEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.TopicEventBulkRequest,Grpc.Core.ServerCallContext)
+    name: OnBulkTopicEventAlpha1
+    isExternal: true
+  - name: (
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.TopicEventBulkRequest
+    name: TopicEventBulkRequest
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Dapr.AppCallback.Autogen.Grpc.v1
+  commentId: N:Dapr.AppCallback.Autogen.Grpc.v1
+  isExternal: true
+  name: Dapr.AppCallback.Autogen.Grpc.v1
+  nameWithType: Dapr.AppCallback.Autogen.Grpc.v1
+  fullName: Dapr.AppCallback.Autogen.Grpc.v1
+  spec.csharp:
+  - uid: Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback
+    name: AppCallback
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback.Autogen
+    name: Autogen
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback.Autogen.Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1
+    name: v1
+    isExternal: true
+  spec.vb:
+  - uid: Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback
+    name: AppCallback
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback.Autogen
+    name: Autogen
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback.Autogen.Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1
+    name: v1
+    isExternal: true
+- uid: Virtufin.Api.Services.DaprAppCallbackService.#ctor*
+  commentId: Overload:Virtufin.Api.Services.DaprAppCallbackService.#ctor
+  href: Virtufin.Api.Services.DaprAppCallbackService.html#Virtufin_Api_Services_DaprAppCallbackService__ctor_Virtufin_Api_Services_PubsubService_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_DaprAppCallbackService__
+  name: DaprAppCallbackService
+  nameWithType: DaprAppCallbackService.DaprAppCallbackService
+  fullName: Virtufin.Api.Services.DaprAppCallbackService.DaprAppCallbackService
+  nameWithType.vb: DaprAppCallbackService.New
+  fullName.vb: Virtufin.Api.Services.DaprAppCallbackService.New
+  name.vb: New
+- uid: Virtufin.Api.Services.PubsubService
+  commentId: T:Virtufin.Api.Services.PubsubService
+  parent: Virtufin.Api.Services
+  href: Virtufin.Api.Services.PubsubService.html
+  name: PubsubService
+  nameWithType: PubsubService
+  fullName: Virtufin.Api.Services.PubsubService
+- uid: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.DaprAppCallbackService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<DaprAppCallbackService>
+  nameWithType: ILogger<DaprAppCallbackService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.DaprAppCallbackService>
+  nameWithType.vb: ILogger(Of DaprAppCallbackService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.DaprAppCallbackService)
+  name.vb: ILogger(Of DaprAppCallbackService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Virtufin.Api.Services.DaprAppCallbackService
+    name: DaprAppCallbackService
+    href: Virtufin.Api.Services.DaprAppCallbackService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.DaprAppCallbackService
+    name: DaprAppCallbackService
+    href: Virtufin.Api.Services.DaprAppCallbackService.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+  parent: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: OnJobEventAlpha1(JobEventRequest, ServerCallContext)
+  nameWithType: AppCallbackAlpha.AppCallbackAlphaBase.OnJobEventAlpha1(JobEventRequest, ServerCallContext)
+  fullName: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+    name: OnJobEventAlpha1
+    isExternal: true
+  - name: (
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest
+    name: JobEventRequest
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.AppCallbackAlpha.AppCallbackAlphaBase.OnJobEventAlpha1(Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest,Grpc.Core.ServerCallContext)
+    name: OnJobEventAlpha1
+    isExternal: true
+  - name: (
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest
+    name: JobEventRequest
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1*
+  commentId: Overload:Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1
+  href: Virtufin.Api.Services.DaprAppCallbackService.html#Virtufin_Api_Services_DaprAppCallbackService_OnJobEventAlpha1_Dapr_AppCallback_Autogen_Grpc_v1_JobEventRequest_Grpc_Core_ServerCallContext_
+  name: OnJobEventAlpha1
+  nameWithType: DaprAppCallbackService.OnJobEventAlpha1
+  fullName: Virtufin.Api.Services.DaprAppCallbackService.OnJobEventAlpha1
+- uid: Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest
+  commentId: T:Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest
+  parent: Dapr.AppCallback.Autogen.Grpc.v1
+  isExternal: true
+  name: JobEventRequest
+  nameWithType: JobEventRequest
+  fullName: Dapr.AppCallback.Autogen.Grpc.v1.JobEventRequest
+- uid: Grpc.Core.ServerCallContext
+  commentId: T:Grpc.Core.ServerCallContext
+  parent: Grpc.Core
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: ServerCallContext
+  nameWithType: ServerCallContext
+  fullName: Grpc.Core.ServerCallContext
+- uid: System.Threading.Tasks.Task{Dapr.AppCallback.Autogen.Grpc.v1.JobEventResponse}
+  commentId: T:System.Threading.Tasks.Task{Dapr.AppCallback.Autogen.Grpc.v1.JobEventResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JobEventResponse>
+  nameWithType: Task<JobEventResponse>
+  fullName: System.Threading.Tasks.Task<Dapr.AppCallback.Autogen.Grpc.v1.JobEventResponse>
+  nameWithType.vb: Task(Of JobEventResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Dapr.AppCallback.Autogen.Grpc.v1.JobEventResponse)
+  name.vb: Task(Of JobEventResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.JobEventResponse
+    name: JobEventResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dapr.AppCallback.Autogen.Grpc.v1.JobEventResponse
+    name: JobEventResponse
+    isExternal: true
+  - name: )
+- uid: Grpc.Core
+  commentId: N:Grpc.Core
+  isExternal: true
+  name: Grpc.Core
+  nameWithType: Grpc.Core
+  fullName: Grpc.Core
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.Core
+    name: Core
+    isExternal: true
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

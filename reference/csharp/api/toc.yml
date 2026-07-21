@@ -114,6 +114,9 @@ items:
     - uid: Virtufin.Api.Services.ConfigService
       name: ConfigService
       type: Class
+    - uid: Virtufin.Api.Services.DaprAppCallbackService
+      name: DaprAppCallbackService
+      type: Class
     - uid: Virtufin.Api.Services.DaprConstants
       name: DaprConstants
       type: Class
