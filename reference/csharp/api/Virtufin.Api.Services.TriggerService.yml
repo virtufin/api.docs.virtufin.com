@@ -24,7 +24,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TriggerService
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -60,7 +60,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
-    startLine: 19
+    startLine: 26
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -96,7 +96,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ScheduleTrigger
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
-    startLine: 29
+    startLine: 36
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -131,7 +131,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetTrigger
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
-    startLine: 80
+    startLine: 87
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -166,7 +166,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteTrigger
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
-    startLine: 131
+    startLine: 138
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -201,7 +201,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListTriggers
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
-    startLine: 185
+    startLine: 192
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
