@@ -21,7 +21,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DaprAppCallbackService
     path: ../../../src/Virtufin.Api/Services/DaprAppCallbackService.cs
-    startLine: 5
+    startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -58,7 +58,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/DaprAppCallbackService.cs
-    startLine: 12
+    startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -92,7 +92,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OnJobEventAlpha1
     path: ../../../src/Virtufin.Api/Services/DaprAppCallbackService.cs
-    startLine: 20
+    startLine: 27
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
