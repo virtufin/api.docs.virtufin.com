@@ -24,7 +24,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StreamEventHandler
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 116
+    startLine: 118
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -63,7 +63,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: EventReceived
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 121
+    startLine: 123
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -92,7 +92,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ErrorOccurred
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 126
+    startLine: 128
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -121,7 +121,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 131
+    startLine: 133
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -152,7 +152,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OnEvent
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 134
+    startLine: 136
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -186,7 +186,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OnError
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 137
+    startLine: 139
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client

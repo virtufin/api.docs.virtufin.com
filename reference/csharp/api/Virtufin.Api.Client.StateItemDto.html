@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class GrpcCallResult | Virtufin API - C# Reference </title>
+      <title>Class StateItemDto | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class GrpcCallResult | Virtufin API - C# Reference ">
+      <meta name="title" content="Class StateItemDto | Virtufin API - C# Reference ">
       
-      <meta name="description" content="Represents the result of a gRPC call invocation.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,25 +88,24 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.GrpcCallResult">
+        <article data-uid="Virtufin.Api.Client.StateItemDto">
 
 
 
-  <h1 id="Virtufin_Api_Services_GrpcCallResult" data-uid="Virtufin.Api.Services.GrpcCallResult" class="text-break">
-Class GrpcCallResult  
+  <h1 id="Virtufin_Api_Client_StateItemDto" data-uid="Virtufin.Api.Client.StateItemDto" class="text-break">
+Class StateItemDto  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Services.html">Services</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Virtufin.html">Virtufin</a>.<a class="xref" href="Virtufin.Api.html">Api</a>.<a class="xref" href="Virtufin.Api.Client.html">Client</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Virtufin.Api.Client.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents the result of a gRPC call invocation.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GrpcCallResult</code></pre>
+    <pre><code class="lang-csharp hljs">public record StateItemDto : IEquatable&lt;StateItemDto&gt;</code></pre>
   </div>
 
 
@@ -116,10 +115,16 @@ Class GrpcCallResult
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">GrpcCallResult</span></div>
+      <div><span class="xref">StateItemDto</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Virtufin.Api.Client.StateItemDto.html">StateItemDto</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -153,14 +158,53 @@ Class GrpcCallResult
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Virtufin_Api_Client_StateItemDto__ctor_" data-uid="Virtufin.Api.Client.StateItemDto.#ctor*"></a>
+
+  <h3 id="Virtufin_Api_Client_StateItemDto__ctor_System_String_System_String_System_String_" data-uid="Virtufin.Api.Client.StateItemDto.#ctor(System.String,System.String,System.String)">
+  StateItemDto(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StateItemDto(string Key, string Value, string Etag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Etag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="Virtufin_Api_Services_GrpcCallResult_Data_" data-uid="Virtufin.Api.Services.GrpcCallResult.Data*"></a>
+  <a id="Virtufin_Api_Client_StateItemDto_Etag_" data-uid="Virtufin.Api.Client.StateItemDto.Etag*"></a>
 
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_Data" data-uid="Virtufin.Api.Services.GrpcCallResult.Data">
-  Data
+  <h3 id="Virtufin_Api_Client_StateItemDto_Etag" data-uid="Virtufin.Api.Client.StateItemDto.Etag">
+  Etag
   
   </h3>
 
@@ -168,7 +212,7 @@ Class GrpcCallResult
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Data { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Etag { get; init; }</code></pre>
   </div>
 
 
@@ -188,10 +232,10 @@ Class GrpcCallResult
 
 
 
-  <a id="Virtufin_Api_Services_GrpcCallResult_Message_" data-uid="Virtufin.Api.Services.GrpcCallResult.Message*"></a>
+  <a id="Virtufin_Api_Client_StateItemDto_Key_" data-uid="Virtufin.Api.Client.StateItemDto.Key*"></a>
 
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_Message" data-uid="Virtufin.Api.Services.GrpcCallResult.Message">
-  Message
+  <h3 id="Virtufin_Api_Client_StateItemDto_Key" data-uid="Virtufin.Api.Client.StateItemDto.Key">
+  Key
   
   </h3>
 
@@ -199,7 +243,7 @@ Class GrpcCallResult
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Message { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Key { get; init; }</code></pre>
   </div>
 
 
@@ -219,10 +263,10 @@ Class GrpcCallResult
 
 
 
-  <a id="Virtufin_Api_Services_GrpcCallResult_ResponseDataBytes_" data-uid="Virtufin.Api.Services.GrpcCallResult.ResponseDataBytes*"></a>
+  <a id="Virtufin_Api_Client_StateItemDto_Value_" data-uid="Virtufin.Api.Client.StateItemDto.Value*"></a>
 
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_ResponseDataBytes" data-uid="Virtufin.Api.Services.GrpcCallResult.ResponseDataBytes">
-  ResponseDataBytes
+  <h3 id="Virtufin_Api_Client_StateItemDto_Value" data-uid="Virtufin.Api.Client.StateItemDto.Value">
+  Value
   
   </h3>
 
@@ -230,38 +274,7 @@ Class GrpcCallResult
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[]? ResponseDataBytes { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_GrpcCallResult_StatusCode_" data-uid="Virtufin.Api.Services.GrpcCallResult.StatusCode*"></a>
-
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_StatusCode" data-uid="Virtufin.Api.Services.GrpcCallResult.StatusCode">
-  StatusCode
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? StatusCode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Value { get; init; }</code></pre>
   </div>
 
 
@@ -271,37 +284,6 @@ Class GrpcCallResult
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Virtufin_Api_Services_GrpcCallResult_Success_" data-uid="Virtufin.Api.Services.GrpcCallResult.Success*"></a>
-
-  <h3 id="Virtufin_Api_Services_GrpcCallResult_Success" data-uid="Virtufin.Api.Services.GrpcCallResult.Success">
-  Success
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Success { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 

@@ -6,10 +6,11 @@ items:
   parent: Virtufin.Api.Services
   children:
   - Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
+  - Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.StateService.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.StateService.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Services.StateService.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.StateService.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   langs:
   - csharp
@@ -25,15 +26,10 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StateService
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 12
+    startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: >-
-    Implementation of the gRPC State service.
-
-    Provides state management operations with Dapr backend and pub/sub notifications.
-  example: []
   syntax:
     content: 'public class StateService : State.StateBase'
     content.vb: Public Class StateService Inherits State.StateBase
@@ -66,24 +62,19 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 29
+    startLine: 13
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Creates a new StateService instance.
-  example: []
   syntax:
     content: public StateService(ServicesConfiguration config, DaprClient daprClient, ILogger<StateService> logger)
     parameters:
     - id: config
       type: Virtufin.Api.Configuration.ServicesConfiguration
-      description: The services configuration containing state store settings.
     - id: daprClient
       type: Dapr.Client.DaprClient
-      description: The Dapr client for state operations.
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService}
-      description: The logger for recording service operations.
     content.vb: Public Sub New(config As ServicesConfiguration, daprClient As DaprClient, logger As ILogger(Of StateService))
   overload: Virtufin.Api.Services.StateService.#ctor*
   nameWithType.vb: StateService.New(ServicesConfiguration, DaprClient, ILogger(Of StateService))
@@ -107,34 +98,23 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 47
+    startLine: 23
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: >-
-    Saves state for a service and broadcasts a state change event.
-
-    Uses optimistic concurrency when an ETag is provided.
   example: []
   syntax:
     content: public override Task<SaveStateResponse> SaveState(SaveStateRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.SaveStateRequest
-      description: The save state request containing service, key, value, and optional etag.
     - id: context
       type: Grpc.Core.ServerCallContext
-      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.SaveStateResponse}
-      description: The save state response with success status.
     content.vb: Public Overrides Function SaveState(request As SaveStateRequest, context As ServerCallContext) As Task(Of SaveStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.SaveState*
-  exceptions:
-  - type: Grpc.Core.RpcException
-    commentId: T:Grpc.Core.RpcException
-    description: StatusCode.Aborted when ETag mismatch occurs.
 - uid: Virtufin.Api.Services.StateService.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.StateService.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   id: GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
@@ -153,115 +133,138 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 116
+    startLine: 74
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Gets a single state value for a service and key.
   example: []
   syntax:
     content: public override Task<GetStateResponse> GetState(GetStateRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.GetStateRequest
-      description: The get state request containing service and key.
     - id: context
       type: Grpc.Core.ServerCallContext
-      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetStateResponse}
-      description: The state value and etag.
     content.vb: Public Overrides Function GetState(request As GetStateRequest, context As ServerCallContext) As Task(Of GetStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.GetState*
-  exceptions:
-  - type: Grpc.Core.RpcException
-    commentId: T:Grpc.Core.RpcException
-    description: Thrown when service/key not found or invalid arguments.
-- uid: Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
-  id: GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
+- uid: Virtufin.Api.Services.StateService.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.StateService.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
+  id: QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Services.StateService
   langs:
   - csharp
   - vb
-  name: GetAllState(GetAllStateRequest, ServerCallContext)
-  nameWithType: StateService.GetAllState(GetAllStateRequest, ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.ServerCallContext)
+  name: QueryState(QueryStateRequest, ServerCallContext)
+  nameWithType: StateService.QueryState(QueryStateRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.StateService.QueryState(Virtufin.Api.Protos.QueryStateRequest, Grpc.Core.ServerCallContext)
   type: Method
   source:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GetAllState
+    id: QueryState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 164
+    startLine: 112
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   summary: >-
-    Gets all registered state key-value pairs for a service.
+    QueryState searches for state entries using Dapr's JSON query format.
 
-    Only returns keys that have been registered via RegisterKeys.
+    The query is backend-dependent; for Redis/Valkey, it supports:
+      {"filter": {"PREFIX": "workmanager.worker."}}
+      {"filter": {"EQ": {"key": "websocketmanager.connection.abc"}}}
+      {"filter": {"OR": [{"PREFIX": "workmanager.worker."}, {"EQ": {"key": "workmanager.worker.index"}}]}}
   example: []
   syntax:
-    content: public override Task<GetAllStateResponse> GetAllState(GetAllStateRequest request, ServerCallContext context)
+    content: public override Task<QueryStateResponse> QueryState(QueryStateRequest request, ServerCallContext context)
     parameters:
     - id: request
-      type: Virtufin.Api.Protos.GetAllStateRequest
-      description: The get all state request containing the service name.
+      type: Virtufin.Api.Protos.QueryStateRequest
+      description: The request received from the client.
     - id: context
       type: Grpc.Core.ServerCallContext
-      description: The server call context.
+      description: The context of the server-side call handler being invoked.
     return:
-      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetAllStateResponse}
-      description: A dictionary of all state key-value pairs for the service.
-    content.vb: Public Overrides Function GetAllState(request As GetAllStateRequest, context As ServerCallContext) As Task(Of GetAllStateResponse)
-  overridden: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.StateService.GetAllState*
-- uid: Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
-  id: RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.QueryStateResponse}
+      description: The response to send back to the client (wrapped by a task).
+    content.vb: Public Overrides Function QueryState(request As QueryStateRequest, context As ServerCallContext) As Task(Of QueryStateResponse)
+  overridden: Virtufin.Api.Protos.State.StateBase.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.StateService.QueryState*
+- uid: Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
+  id: GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Services.StateService
   langs:
   - csharp
   - vb
-  name: RegisterKeys(RegisterKeysRequest, ServerCallContext)
-  nameWithType: StateService.RegisterKeys(RegisterKeysRequest, ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.ServerCallContext)
+  name: GetBulkState(GetBulkStateRequest, ServerCallContext)
+  nameWithType: StateService.GetBulkState(GetBulkStateRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest, Grpc.Core.ServerCallContext)
   type: Method
   source:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: RegisterKeys
+    id: GetBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 211
+    startLine: 156
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: >-
-    Registers state keys for a service to enable GetAllState and tracking.
-
-    Services should call this on startup to re-register their known keys.
   example: []
   syntax:
-    content: public override Task<RegisterKeysResponse> RegisterKeys(RegisterKeysRequest request, ServerCallContext context)
+    content: public override Task<GetBulkStateResponse> GetBulkState(GetBulkStateRequest request, ServerCallContext context)
     parameters:
     - id: request
-      type: Virtufin.Api.Protos.RegisterKeysRequest
-      description: The register keys request containing service name and keys to register.
+      type: Virtufin.Api.Protos.GetBulkStateRequest
     - id: context
       type: Grpc.Core.ServerCallContext
-      description: The server call context.
     return:
-      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.RegisterKeysResponse}
-      description: The register keys response with success status.
-    content.vb: Public Overrides Function RegisterKeys(request As RegisterKeysRequest, context As ServerCallContext) As Task(Of RegisterKeysResponse)
-  overridden: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.StateService.RegisterKeys*
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetBulkStateResponse}
+    content.vb: Public Overrides Function GetBulkState(request As GetBulkStateRequest, context As ServerCallContext) As Task(Of GetBulkStateResponse)
+  overridden: Virtufin.Api.Protos.State.StateBase.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.StateService.GetBulkState*
+- uid: Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+  id: DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Services.StateService
+  langs:
+  - csharp
+  - vb
+  name: DeleteBulkState(DeleteBulkStateRequest, ServerCallContext)
+  nameWithType: StateService.DeleteBulkState(DeleteBulkStateRequest, ServerCallContext)
+  fullName: Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/StateService.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DeleteBulkState
+    path: ../../../src/Virtufin.Api/Services/StateService.cs
+    startLine: 192
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  example: []
+  syntax:
+    content: public override Task<DeleteBulkStateResponse> DeleteBulkState(DeleteBulkStateRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Virtufin.Api.Protos.DeleteBulkStateRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteBulkStateResponse}
+    content.vb: Public Overrides Function DeleteBulkState(request As DeleteBulkStateRequest, context As ServerCallContext) As Task(Of DeleteBulkStateResponse)
+  overridden: Virtufin.Api.Protos.State.StateBase.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+  overload: Virtufin.Api.Services.StateService.DeleteBulkState*
 - uid: Virtufin.Api.Services.StateService.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.StateService.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   id: DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
@@ -280,34 +283,23 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 277
+    startLine: 249
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: >-
-    Deletes state for a service and key, then broadcasts a state change event.
-
-    Supports optimistic concurrency via ETag — throws Aborted on mismatch.
   example: []
   syntax:
     content: public override Task<DeleteStateResponse> DeleteState(DeleteStateRequest request, ServerCallContext context)
     parameters:
     - id: request
       type: Virtufin.Api.Protos.DeleteStateRequest
-      description: The delete state request containing service, key, optional etag, and optional includeValue.
     - id: context
       type: Grpc.Core.ServerCallContext
-      description: The server call context.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteStateResponse}
-      description: The delete state response with success status.
     content.vb: Public Overrides Function DeleteState(request As DeleteStateRequest, context As ServerCallContext) As Task(Of DeleteStateResponse)
   overridden: Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.StateService.DeleteState*
-  exceptions:
-  - type: Grpc.Core.RpcException
-    commentId: T:Grpc.Core.RpcException
-    description: StatusCode.Aborted when ETag mismatch occurs.
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -790,13 +782,6 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
-- uid: Grpc.Core.RpcException
-  commentId: T:Grpc.Core.RpcException
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/RpcException.cs
-  name: RpcException
-  nameWithType: RpcException
-  fullName: Grpc.Core.RpcException
 - uid: Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.State.StateBase.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
@@ -1046,20 +1031,20 @@ references:
   - uid: Virtufin.Api.Protos.GetStateResponse
     name: GetStateResponse
   - name: )
-- uid: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
+- uid: Virtufin.Api.Protos.State.StateBase.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.State.StateBase.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
   isExternal: true
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  name: GetAllState(GetAllStateRequest, ServerCallContext)
-  nameWithType: State.StateBase.GetAllState(GetAllStateRequest, ServerCallContext)
-  fullName: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.ServerCallContext)
+  name: QueryState(QueryStateRequest, ServerCallContext)
+  nameWithType: State.StateBase.QueryState(QueryStateRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.State.StateBase.QueryState(Virtufin.Api.Protos.QueryStateRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
-  - uid: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
-    name: GetAllState
+  - uid: Virtufin.Api.Protos.State.StateBase.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
+    name: QueryState
   - name: (
-  - uid: Virtufin.Api.Protos.GetAllStateRequest
-    name: GetAllStateRequest
+  - uid: Virtufin.Api.Protos.QueryStateRequest
+    name: QueryStateRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1068,11 +1053,11 @@ references:
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Protos.State.StateBase.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
-    name: GetAllState
+  - uid: Virtufin.Api.Protos.State.StateBase.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
+    name: QueryState
   - name: (
-  - uid: Virtufin.Api.Protos.GetAllStateRequest
-    name: GetAllStateRequest
+  - uid: Virtufin.Api.Protos.QueryStateRequest
+    name: QueryStateRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1080,37 +1065,37 @@ references:
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
-- uid: Virtufin.Api.Services.StateService.GetAllState*
-  commentId: Overload:Virtufin.Api.Services.StateService.GetAllState
-  href: Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_ServerCallContext_
-  name: GetAllState
-  nameWithType: StateService.GetAllState
-  fullName: Virtufin.Api.Services.StateService.GetAllState
-- uid: Virtufin.Api.Protos.GetAllStateRequest
-  commentId: T:Virtufin.Api.Protos.GetAllStateRequest
+- uid: Virtufin.Api.Services.StateService.QueryState*
+  commentId: Overload:Virtufin.Api.Services.StateService.QueryState
+  href: Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_QueryState_Virtufin_Api_Protos_QueryStateRequest_Grpc_Core_ServerCallContext_
+  name: QueryState
+  nameWithType: StateService.QueryState
+  fullName: Virtufin.Api.Services.StateService.QueryState
+- uid: Virtufin.Api.Protos.QueryStateRequest
+  commentId: T:Virtufin.Api.Protos.QueryStateRequest
   parent: Virtufin.Api.Protos
-  name: GetAllStateRequest
-  nameWithType: GetAllStateRequest
-  fullName: Virtufin.Api.Protos.GetAllStateRequest
-- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetAllStateResponse}
-  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.GetAllStateResponse}
+  name: QueryStateRequest
+  nameWithType: QueryStateRequest
+  fullName: Virtufin.Api.Protos.QueryStateRequest
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.QueryStateResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.QueryStateResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<GetAllStateResponse>
-  nameWithType: Task<GetAllStateResponse>
-  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.GetAllStateResponse>
-  nameWithType.vb: Task(Of GetAllStateResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.GetAllStateResponse)
-  name.vb: Task(Of GetAllStateResponse)
+  name: Task<QueryStateResponse>
+  nameWithType: Task<QueryStateResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.QueryStateResponse>
+  nameWithType.vb: Task(Of QueryStateResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.QueryStateResponse)
+  name.vb: Task(Of QueryStateResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Virtufin.Api.Protos.GetAllStateResponse
-    name: GetAllStateResponse
+  - uid: Virtufin.Api.Protos.QueryStateResponse
+    name: QueryStateResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1120,23 +1105,23 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.GetAllStateResponse
-    name: GetAllStateResponse
+  - uid: Virtufin.Api.Protos.QueryStateResponse
+    name: QueryStateResponse
   - name: )
-- uid: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
+- uid: Virtufin.Api.Protos.State.StateBase.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.State.StateBase.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.State.StateBase
   isExternal: true
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  name: RegisterKeys(RegisterKeysRequest, ServerCallContext)
-  nameWithType: State.StateBase.RegisterKeys(RegisterKeysRequest, ServerCallContext)
-  fullName: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.ServerCallContext)
+  name: GetBulkState(GetBulkStateRequest, ServerCallContext)
+  nameWithType: State.StateBase.GetBulkState(GetBulkStateRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.State.StateBase.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest, Grpc.Core.ServerCallContext)
   spec.csharp:
-  - uid: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
-    name: RegisterKeys
+  - uid: Virtufin.Api.Protos.State.StateBase.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
+    name: GetBulkState
   - name: (
-  - uid: Virtufin.Api.Protos.RegisterKeysRequest
-    name: RegisterKeysRequest
+  - uid: Virtufin.Api.Protos.GetBulkStateRequest
+    name: GetBulkStateRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1145,11 +1130,11 @@ references:
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Protos.State.StateBase.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
-    name: RegisterKeys
+  - uid: Virtufin.Api.Protos.State.StateBase.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
+    name: GetBulkState
   - name: (
-  - uid: Virtufin.Api.Protos.RegisterKeysRequest
-    name: RegisterKeysRequest
+  - uid: Virtufin.Api.Protos.GetBulkStateRequest
+    name: GetBulkStateRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.ServerCallContext
@@ -1157,37 +1142,37 @@ references:
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
-- uid: Virtufin.Api.Services.StateService.RegisterKeys*
-  commentId: Overload:Virtufin.Api.Services.StateService.RegisterKeys
-  href: Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_ServerCallContext_
-  name: RegisterKeys
-  nameWithType: StateService.RegisterKeys
-  fullName: Virtufin.Api.Services.StateService.RegisterKeys
-- uid: Virtufin.Api.Protos.RegisterKeysRequest
-  commentId: T:Virtufin.Api.Protos.RegisterKeysRequest
+- uid: Virtufin.Api.Services.StateService.GetBulkState*
+  commentId: Overload:Virtufin.Api.Services.StateService.GetBulkState
+  href: Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetBulkState_Virtufin_Api_Protos_GetBulkStateRequest_Grpc_Core_ServerCallContext_
+  name: GetBulkState
+  nameWithType: StateService.GetBulkState
+  fullName: Virtufin.Api.Services.StateService.GetBulkState
+- uid: Virtufin.Api.Protos.GetBulkStateRequest
+  commentId: T:Virtufin.Api.Protos.GetBulkStateRequest
   parent: Virtufin.Api.Protos
-  name: RegisterKeysRequest
-  nameWithType: RegisterKeysRequest
-  fullName: Virtufin.Api.Protos.RegisterKeysRequest
-- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.RegisterKeysResponse}
-  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.RegisterKeysResponse}
+  name: GetBulkStateRequest
+  nameWithType: GetBulkStateRequest
+  fullName: Virtufin.Api.Protos.GetBulkStateRequest
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.GetBulkStateResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.GetBulkStateResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<RegisterKeysResponse>
-  nameWithType: Task<RegisterKeysResponse>
-  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.RegisterKeysResponse>
-  nameWithType.vb: Task(Of RegisterKeysResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.RegisterKeysResponse)
-  name.vb: Task(Of RegisterKeysResponse)
+  name: Task<GetBulkStateResponse>
+  nameWithType: Task<GetBulkStateResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.GetBulkStateResponse>
+  nameWithType.vb: Task(Of GetBulkStateResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.GetBulkStateResponse)
+  name.vb: Task(Of GetBulkStateResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Virtufin.Api.Protos.RegisterKeysResponse
-    name: RegisterKeysResponse
+  - uid: Virtufin.Api.Protos.GetBulkStateResponse
+    name: GetBulkStateResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1197,8 +1182,85 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.RegisterKeysResponse
-    name: RegisterKeysResponse
+  - uid: Virtufin.Api.Protos.GetBulkStateResponse
+    name: GetBulkStateResponse
+  - name: )
+- uid: Virtufin.Api.Protos.State.StateBase.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.State.StateBase.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+  parent: Virtufin.Api.Protos.State.StateBase
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  name: DeleteBulkState(DeleteBulkStateRequest, ServerCallContext)
+  nameWithType: State.StateBase.DeleteBulkState(DeleteBulkStateRequest, ServerCallContext)
+  fullName: Virtufin.Api.Protos.State.StateBase.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Virtufin.Api.Protos.State.StateBase.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+    name: DeleteBulkState
+  - name: (
+  - uid: Virtufin.Api.Protos.DeleteBulkStateRequest
+    name: DeleteBulkStateRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+  spec.vb:
+  - uid: Virtufin.Api.Protos.State.StateBase.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+    name: DeleteBulkState
+  - name: (
+  - uid: Virtufin.Api.Protos.DeleteBulkStateRequest
+    name: DeleteBulkStateRequest
+  - name: ','
+  - name: " "
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
+  - name: )
+- uid: Virtufin.Api.Services.StateService.DeleteBulkState*
+  commentId: Overload:Virtufin.Api.Services.StateService.DeleteBulkState
+  href: Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_DeleteBulkState_Virtufin_Api_Protos_DeleteBulkStateRequest_Grpc_Core_ServerCallContext_
+  name: DeleteBulkState
+  nameWithType: StateService.DeleteBulkState
+  fullName: Virtufin.Api.Services.StateService.DeleteBulkState
+- uid: Virtufin.Api.Protos.DeleteBulkStateRequest
+  commentId: T:Virtufin.Api.Protos.DeleteBulkStateRequest
+  parent: Virtufin.Api.Protos
+  name: DeleteBulkStateRequest
+  nameWithType: DeleteBulkStateRequest
+  fullName: Virtufin.Api.Protos.DeleteBulkStateRequest
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteBulkStateResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteBulkStateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DeleteBulkStateResponse>
+  nameWithType: Task<DeleteBulkStateResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.DeleteBulkStateResponse>
+  nameWithType.vb: Task(Of DeleteBulkStateResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.DeleteBulkStateResponse)
+  name.vb: Task(Of DeleteBulkStateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Protos.DeleteBulkStateResponse
+    name: DeleteBulkStateResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.DeleteBulkStateResponse
+    name: DeleteBulkStateResponse
   - name: )
 - uid: Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.State.StateBase.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)

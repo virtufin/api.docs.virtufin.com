@@ -186,6 +186,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Client.StateItemDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Client.StateItemDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Client.StateItemDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Client.StreamEventHandler.yml",
       "output": {
         ".html": {
@@ -854,7 +868,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.StateService",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.StateService.yml\" sourcestartlinenumber=\"1\">Implementation of the gRPC State service.\nProvides state management operations with Dapr backend and pub/sub notifications.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",

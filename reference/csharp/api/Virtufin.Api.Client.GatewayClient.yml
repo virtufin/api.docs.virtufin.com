@@ -6,8 +6,9 @@ items:
   parent: Virtufin.Api.Client
   children:
   - Virtufin.Api.Client.GatewayClient.#ctor(Grpc.Net.Client.GrpcChannel)
+  - Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  - Virtufin.Api.Client.GatewayClient.GetAllStateAsync(System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.GetService(System.String)
   - Virtufin.Api.Client.GatewayClient.GetStateAsync(System.String,System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.InvokeAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
@@ -15,6 +16,7 @@ items:
   - Virtufin.Api.Client.GatewayClient.ListServicesAsync
   - Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.GatewayClient.QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
@@ -35,7 +37,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GatewayClient
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 159
+    startLine: 161
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -111,7 +113,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 192
+    startLine: 194
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -146,7 +148,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TryGetMember
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 203
+    startLine: 205
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -185,7 +187,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 213
+    startLine: 215
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -216,7 +218,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 225
+    startLine: 227
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -254,7 +256,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 299
+    startLine: 301
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -314,7 +316,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 338
+    startLine: 340
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -367,7 +369,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 360
+    startLine: 362
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -414,7 +416,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 379
+    startLine: 381
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -440,47 +442,133 @@ items:
   nameWithType.vb: GatewayClient.GetStateAsync(String, String, CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.GetStateAsync(String, String, System.Threading.CancellationToken)
   name.vb: GetStateAsync(String, String, CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.GetAllStateAsync(System.String,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.GatewayClient.GetAllStateAsync(System.String,System.Threading.CancellationToken)
-  id: GetAllStateAsync(System.String,System.Threading.CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  id: QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
   parent: Virtufin.Api.Client.GatewayClient
   langs:
   - csharp
   - vb
-  name: GetAllStateAsync(string, CancellationToken)
-  nameWithType: GatewayClient.GetAllStateAsync(string, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.GetAllStateAsync(string, System.Threading.CancellationToken)
+  name: QueryStateAsync(string, string, int, CancellationToken)
+  nameWithType: GatewayClient.QueryStateAsync(string, string, int, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.QueryStateAsync(string, string, int, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GetAllStateAsync
+    id: QueryStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 392
+    startLine: 396
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: Gets all state key-value pairs asynchronously for a service.
   example: []
   syntax:
-    content: public Task<Dictionary<string, string>> GetAllStateAsync(string service, CancellationToken cancellationToken = default)
+    content: public Task<List<StateItemDto>> QueryStateAsync(string service, string query, int limit = 0, CancellationToken cancellationToken = default)
     parameters:
     - id: service
       type: System.String
       description: The service name.
+    - id: query
+      type: System.String
+      description: The Dapr JSON query string.
+    - id: limit
+      type: System.Int32
+      description: Max results (0 = no limit).
     - id: cancellationToken
       type: System.Threading.CancellationToken
       description: Cancellation token.
     return:
-      type: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.String}}
-      description: Dictionary of key-value pairs.
-    content.vb: Public Function GetAllStateAsync(service As String, cancellationToken As CancellationToken = Nothing) As Task(Of Dictionary(Of String, String))
-  overload: Virtufin.Api.Client.GatewayClient.GetAllStateAsync*
-  nameWithType.vb: GatewayClient.GetAllStateAsync(String, CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.GetAllStateAsync(String, System.Threading.CancellationToken)
-  name.vb: GetAllStateAsync(String, CancellationToken)
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Virtufin.Api.Client.StateItemDto}}
+      description: List of state items with key, value, etag.
+    content.vb: Public Function QueryStateAsync(service As String, query As String, limit As Integer = 0, cancellationToken As CancellationToken = Nothing) As Task(Of List(Of StateItemDto))
+  overload: Virtufin.Api.Client.GatewayClient.QueryStateAsync*
+  nameWithType.vb: GatewayClient.QueryStateAsync(String, String, Integer, CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.QueryStateAsync(String, String, Integer, System.Threading.CancellationToken)
+  name.vb: QueryStateAsync(String, String, Integer, CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  id: GetBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Client.GatewayClient
+  langs:
+  - csharp
+  - vb
+  name: GetBulkStateAsync(string, IEnumerable<string>, CancellationToken)
+  nameWithType: GatewayClient.GetBulkStateAsync(string, IEnumerable<string>, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(string, System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/ApiClient.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: GetBulkStateAsync
+    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
+    startLine: 406
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Gets multiple state values for a service and list of keys.
+  example: []
+  syntax:
+    content: public Task<List<StateItemDto>> GetBulkStateAsync(string service, IEnumerable<string> keys, CancellationToken cancellationToken = default)
+    parameters:
+    - id: service
+      type: System.String
+    - id: keys
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Virtufin.Api.Client.StateItemDto}}
+    content.vb: Public Function GetBulkStateAsync(service As String, keys As IEnumerable(Of String), cancellationToken As CancellationToken = Nothing) As Task(Of List(Of StateItemDto))
+  overload: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync*
+  nameWithType.vb: GatewayClient.GetBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  name.vb: GetBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  id: DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  parent: Virtufin.Api.Client.GatewayClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteBulkStateAsync(string, IEnumerable<string>, CancellationToken)
+  nameWithType: GatewayClient.DeleteBulkStateAsync(string, IEnumerable<string>, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(string, System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/ApiClient.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: DeleteBulkStateAsync
+    path: ../../../src/Virtufin.Api.Client/ApiClient.cs
+    startLine: 417
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: Deletes multiple state entries for a service.
+  example: []
+  syntax:
+    content: public Task<DeleteBulkStateResponse> DeleteBulkStateAsync(string service, IEnumerable<string> keys, CancellationToken cancellationToken = default)
+    parameters:
+    - id: service
+      type: System.String
+    - id: keys
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteBulkStateResponse}
+    content.vb: Public Function DeleteBulkStateAsync(service As String, keys As IEnumerable(Of String), cancellationToken As CancellationToken = Nothing) As Task(Of DeleteBulkStateResponse)
+  overload: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync*
+  nameWithType.vb: GatewayClient.DeleteBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  name.vb: DeleteBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   id: PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
@@ -499,7 +587,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 407
+    startLine: 432
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -546,7 +634,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 430
+    startLine: 455
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -587,7 +675,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 442
+    startLine: 467
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -628,7 +716,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishWithResultAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 561
+    startLine: 586
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -695,7 +783,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 622
+    startLine: 647
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -742,7 +830,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 645
+    startLine: 670
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -792,7 +880,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 703
+    startLine: 728
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -2585,44 +2673,48 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   - name: )
-- uid: Virtufin.Api.Client.GatewayClient.GetAllStateAsync*
-  commentId: Overload:Virtufin.Api.Client.GatewayClient.GetAllStateAsync
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_GetAllStateAsync_System_String_System_Threading_CancellationToken_
-  name: GetAllStateAsync
-  nameWithType: GatewayClient.GetAllStateAsync
-  fullName: Virtufin.Api.Client.GatewayClient.GetAllStateAsync
-- uid: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.String}}
-  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.String}}
+- uid: Virtufin.Api.Client.GatewayClient.QueryStateAsync*
+  commentId: Overload:Virtufin.Api.Client.GatewayClient.QueryStateAsync
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_QueryStateAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_
+  name: QueryStateAsync
+  nameWithType: GatewayClient.QueryStateAsync
+  fullName: Virtufin.Api.Client.GatewayClient.QueryStateAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Virtufin.Api.Client.StateItemDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Virtufin.Api.Client.StateItemDto}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<Dictionary<string, string>>
-  nameWithType: Task<Dictionary<string, string>>
-  fullName: System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, string>>
-  nameWithType.vb: Task(Of Dictionary(Of String, String))
-  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.Dictionary(Of String, String))
-  name.vb: Task(Of Dictionary(Of String, String))
+  name: Task<List<StateItemDto>>
+  nameWithType: Task<List<StateItemDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Virtufin.Api.Client.StateItemDto>>
+  nameWithType.vb: Task(Of List(Of StateItemDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Virtufin.Api.Client.StateItemDto))
+  name.vb: Task(Of List(Of StateItemDto))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
+  - uid: System.Collections.Generic.List`1
+    name: List
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
+  - uid: Virtufin.Api.Client.StateItemDto
+    name: StateItemDto
+    href: Virtufin.Api.Client.StateItemDto.html
   - name: '>'
   - name: '>'
   spec.vb:
@@ -2633,10 +2725,51 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
+  - uid: System.Collections.Generic.List`1
+    name: List
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Client.StateItemDto
+    name: StateItemDto
+    href: Virtufin.Api.Client.StateItemDto.html
+  - name: )
+  - name: )
+- uid: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync*
+  commentId: Overload:Virtufin.Api.Client.GatewayClient.GetBulkStateAsync
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_GetBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  name: GetBulkStateAsync
+  nameWithType: GatewayClient.GetBulkStateAsync
+  fullName: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: (
   - name: Of
   - name: " "
@@ -2644,13 +2777,71 @@ references:
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync*
+  commentId: Overload:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  name: DeleteBulkStateAsync
+  nameWithType: GatewayClient.DeleteBulkStateAsync
+  fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteBulkStateResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteBulkStateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DeleteBulkStateResponse>
+  nameWithType: Task<DeleteBulkStateResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.DeleteBulkStateResponse>
+  nameWithType.vb: Task(Of DeleteBulkStateResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.DeleteBulkStateResponse)
+  name.vb: Task(Of DeleteBulkStateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Virtufin.Api.Protos.DeleteBulkStateResponse
+    name: DeleteBulkStateResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Protos.DeleteBulkStateResponse
+    name: DeleteBulkStateResponse
   - name: )
 - uid: Virtufin.Api.Client.GatewayClient.PublishEventAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.PublishEventAsync
@@ -3009,41 +3200,6 @@ references:
   name: Subscribe
   nameWithType: GatewayClient.Subscribe
   fullName: Virtufin.Api.Client.GatewayClient.Subscribe
-- uid: System.Collections.Generic.IEnumerable{System.String}
-  commentId: T:System.Collections.Generic.IEnumerable{System.String}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<string>
-  nameWithType: IEnumerable<string>
-  fullName: System.Collections.Generic.IEnumerable<string>
-  nameWithType.vb: IEnumerable(Of String)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
-  name.vb: IEnumerable(Of String)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.TopicEventRequest}
   commentId: T:Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.TopicEventRequest}
   parent: Grpc.Core
@@ -3074,34 +3230,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.TopicEventRequest
     name: TopicEventRequest
-  - name: )
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
   - name: )
 - uid: Virtufin.Api.Client.GatewayClient.SubscribeAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.SubscribeAsync

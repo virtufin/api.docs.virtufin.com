@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/e2dce92c927bfa54b2728cb606d15298e5a961f3" target="_blank" rel="noopener" class="commit-badge" title="View commit e2dce92c927bfa54b2728cb606d15298e5a961f3">
+            <a href="{git_repo_url}/commit/b259b1e9d8374cdeb46993e2f63c0859ceb2acf4" target="_blank" rel="noopener" class="commit-badge" title="View commit b259b1e9d8374cdeb46993e2f63c0859ceb2acf4">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">e2dce92c927bfa54b2728cb606d15298e5a961f3</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b259b1e9d8374cdeb46993e2f63c0859ceb2acf4</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -252,6 +252,47 @@ var workers = await client.InvokeAsync("workmanager", "ListWorkers");</code></pr
 </h2>
 
 
+  <a id="Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync*"></a>
+
+  <h3 id="Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+  DeleteBulkStateAsync(string, IEnumerable&lt;string&gt;, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes multiple state entries for a service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DeleteBulkStateResponse&gt; DeleteBulkStateAsync(string service, IEnumerable&lt;string&gt; keys, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">DeleteBulkStateResponse</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Virtufin_Api_Client_GatewayClient_DeleteStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.DeleteStateAsync*"></a>
 
   <h3 id="Virtufin_Api_Client_GatewayClient_DeleteStateAsync_System_String_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)">
@@ -300,36 +341,35 @@ var workers = await client.InvokeAsync("workmanager", "ListWorkers");</code></pr
 
 
 
-  <a id="Virtufin_Api_Client_GatewayClient_GetAllStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.GetAllStateAsync*"></a>
+  <a id="Virtufin_Api_Client_GatewayClient_GetBulkStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.GetBulkStateAsync*"></a>
 
-  <h3 id="Virtufin_Api_Client_GatewayClient_GetAllStateAsync_System_String_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.GetAllStateAsync(System.String,System.Threading.CancellationToken)">
-  GetAllStateAsync(string, CancellationToken)
+  <h3 id="Virtufin_Api_Client_GatewayClient_GetBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+  GetBulkStateAsync(string, IEnumerable&lt;string&gt;, CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets all state key-value pairs asynchronously for a service.</p>
+  <div class="markdown level1 summary"><p>Gets multiple state values for a service and list of keys.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Dictionary&lt;string, string&gt;&gt; GetAllStateAsync(string service, CancellationToken cancellationToken = default)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;StateItemDto&gt;&gt; GetBulkStateAsync(string service, IEnumerable&lt;string&gt; keys, CancellationToken cancellationToken = default)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The service name.</p>
-</dd>
+    <dd></dd>
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
-    <dd><p>Dictionary of key-value pairs.</p>
-</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Virtufin.Api.Client.StateItemDto.html">StateItemDto</a>&gt;&gt;</dt>
+    <dd></dd>
   </dl>
 
 
@@ -672,6 +712,54 @@ via the shared per-reply-topic reader started by <a class="xref" href="https://l
     <dd><p>Thrown if no response arrives within the timeout.</p>
 </dd>
   </dl>
+
+
+
+  <a id="Virtufin_Api_Client_GatewayClient_QueryStateAsync_" data-uid="Virtufin.Api.Client.GatewayClient.QueryStateAsync*"></a>
+
+  <h3 id="Virtufin_Api_Client_GatewayClient_QueryStateAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Client.GatewayClient.QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)">
+  QueryStateAsync(string, string, int, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all state key-value pairs asynchronously for a service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;StateItemDto&gt;&gt; QueryStateAsync(string service, string query, int limit = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>service</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The service name.</p>
+</dd>
+    <dt><code>query</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Dapr JSON query string.</p>
+</dd>
+    <dt><code>limit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Max results (0 = no limit).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Virtufin.Api.Client.StateItemDto.html">StateItemDto</a>&gt;&gt;</dt>
+    <dd><p>List of state items with key, value, etag.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
 
 
 

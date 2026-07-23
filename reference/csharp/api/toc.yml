@@ -45,6 +45,9 @@ items:
     - uid: Virtufin.Api.Client.ServiceClient
       name: ServiceClient
       type: Class
+    - uid: Virtufin.Api.Client.StateItemDto
+      name: StateItemDto
+      type: Class
     - uid: Virtufin.Api.Client.StreamEventHandler
       name: StreamEventHandler
       type: Class

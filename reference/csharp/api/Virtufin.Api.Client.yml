@@ -13,6 +13,7 @@ items:
   - Virtufin.Api.Client.IStreamEventHandler
   - Virtufin.Api.Client.PortConstants
   - Virtufin.Api.Client.ServiceClient
+  - Virtufin.Api.Client.StateItemDto
   - Virtufin.Api.Client.StreamEventHandler
   langs:
   - csharp
@@ -75,6 +76,12 @@ references:
   name: ServiceClient
   nameWithType: ServiceClient
   fullName: Virtufin.Api.Client.ServiceClient
+- uid: Virtufin.Api.Client.StateItemDto
+  commentId: T:Virtufin.Api.Client.StateItemDto
+  href: Virtufin.Api.Client.StateItemDto.html
+  name: StateItemDto
+  nameWithType: StateItemDto
+  fullName: Virtufin.Api.Client.StateItemDto
 - uid: Virtufin.Api.Client.StreamEventHandler
   commentId: T:Virtufin.Api.Client.StreamEventHandler
   href: Virtufin.Api.Client.StreamEventHandler.html

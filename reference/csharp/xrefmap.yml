@@ -545,6 +545,22 @@ references:
   fullName.vb: Virtufin.Api.Client.GatewayClient.New
   nameWithType: GatewayClient.GatewayClient
   nameWithType.vb: GatewayClient.New
+- uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  name: DeleteBulkStateAsync(string, IEnumerable<string>, CancellationToken)
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  name.vb: DeleteBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(string, System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  nameWithType: GatewayClient.DeleteBulkStateAsync(string, IEnumerable<string>, CancellationToken)
+  nameWithType.vb: GatewayClient.DeleteBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync*
+  name: DeleteBulkStateAsync
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_
+  commentId: Overload:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync
+  nameWithType: GatewayClient.DeleteBulkStateAsync
 - uid: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)
   name: DeleteStateAsync(string, string, bool, CancellationToken)
   href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteStateAsync_System_String_System_String_System_Boolean_System_Threading_CancellationToken_
@@ -561,22 +577,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.GatewayClient.DeleteStateAsync
   nameWithType: GatewayClient.DeleteStateAsync
-- uid: Virtufin.Api.Client.GatewayClient.GetAllStateAsync(System.String,System.Threading.CancellationToken)
-  name: GetAllStateAsync(string, CancellationToken)
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_GetAllStateAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Client.GatewayClient.GetAllStateAsync(System.String,System.Threading.CancellationToken)
-  name.vb: GetAllStateAsync(String, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.GetAllStateAsync(string, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.GetAllStateAsync(String, System.Threading.CancellationToken)
-  nameWithType: GatewayClient.GetAllStateAsync(string, CancellationToken)
-  nameWithType.vb: GatewayClient.GetAllStateAsync(String, CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.GetAllStateAsync*
-  name: GetAllStateAsync
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_GetAllStateAsync_
-  commentId: Overload:Virtufin.Api.Client.GatewayClient.GetAllStateAsync
+- uid: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  name: GetBulkStateAsync(string, IEnumerable<string>, CancellationToken)
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_GetBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  name.vb: GetBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(string, System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  nameWithType: GatewayClient.GetBulkStateAsync(string, IEnumerable<string>, CancellationToken)
+  nameWithType.vb: GatewayClient.GetBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync*
+  name: GetBulkStateAsync
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_GetBulkStateAsync_
+  commentId: Overload:Virtufin.Api.Client.GatewayClient.GetBulkStateAsync
   isSpec: "True"
-  fullName: Virtufin.Api.Client.GatewayClient.GetAllStateAsync
-  nameWithType: GatewayClient.GetAllStateAsync
+  fullName: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync
+  nameWithType: GatewayClient.GetBulkStateAsync
 - uid: Virtufin.Api.Client.GatewayClient.GetService(System.String)
   name: GetService(string)
   href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_GetService_System_String_
@@ -686,6 +702,22 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync
   nameWithType: GatewayClient.PublishWithResultAsync
+- uid: Virtufin.Api.Client.GatewayClient.QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  name: QueryStateAsync(string, string, int, CancellationToken)
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_QueryStateAsync_System_String_System_String_System_Int32_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.GatewayClient.QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
+  name.vb: QueryStateAsync(String, String, Integer, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.QueryStateAsync(string, string, int, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.QueryStateAsync(String, String, Integer, System.Threading.CancellationToken)
+  nameWithType: GatewayClient.QueryStateAsync(string, string, int, CancellationToken)
+  nameWithType.vb: GatewayClient.QueryStateAsync(String, String, Integer, CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.QueryStateAsync*
+  name: QueryStateAsync
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_QueryStateAsync_
+  commentId: Overload:Virtufin.Api.Client.GatewayClient.QueryStateAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.GatewayClient.QueryStateAsync
+  nameWithType: GatewayClient.QueryStateAsync
 - uid: Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
   name: SaveStateAsync(string, string, string, string?, bool, CancellationToken)
   href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SaveStateAsync_System_String_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_
@@ -921,6 +953,70 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.ServiceClient.TryGetMember
   nameWithType: ServiceClient.TryGetMember
+- uid: Virtufin.Api.Client.StateItemDto
+  name: StateItemDto
+  href: api/Virtufin.Api.Client.StateItemDto.html
+  commentId: T:Virtufin.Api.Client.StateItemDto
+  fullName: Virtufin.Api.Client.StateItemDto
+  nameWithType: StateItemDto
+- uid: Virtufin.Api.Client.StateItemDto.#ctor(System.String,System.String,System.String)
+  name: StateItemDto(string, string, string)
+  href: api/Virtufin.Api.Client.StateItemDto.html#Virtufin_Api_Client_StateItemDto__ctor_System_String_System_String_System_String_
+  commentId: M:Virtufin.Api.Client.StateItemDto.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: Virtufin.Api.Client.StateItemDto.StateItemDto(string, string, string)
+  fullName.vb: Virtufin.Api.Client.StateItemDto.New(String, String, String)
+  nameWithType: StateItemDto.StateItemDto(string, string, string)
+  nameWithType.vb: StateItemDto.New(String, String, String)
+- uid: Virtufin.Api.Client.StateItemDto.#ctor*
+  name: StateItemDto
+  href: api/Virtufin.Api.Client.StateItemDto.html#Virtufin_Api_Client_StateItemDto__ctor_
+  commentId: Overload:Virtufin.Api.Client.StateItemDto.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.Client.StateItemDto.StateItemDto
+  fullName.vb: Virtufin.Api.Client.StateItemDto.New
+  nameWithType: StateItemDto.StateItemDto
+  nameWithType.vb: StateItemDto.New
+- uid: Virtufin.Api.Client.StateItemDto.Etag
+  name: Etag
+  href: api/Virtufin.Api.Client.StateItemDto.html#Virtufin_Api_Client_StateItemDto_Etag
+  commentId: P:Virtufin.Api.Client.StateItemDto.Etag
+  fullName: Virtufin.Api.Client.StateItemDto.Etag
+  nameWithType: StateItemDto.Etag
+- uid: Virtufin.Api.Client.StateItemDto.Etag*
+  name: Etag
+  href: api/Virtufin.Api.Client.StateItemDto.html#Virtufin_Api_Client_StateItemDto_Etag_
+  commentId: Overload:Virtufin.Api.Client.StateItemDto.Etag
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.StateItemDto.Etag
+  nameWithType: StateItemDto.Etag
+- uid: Virtufin.Api.Client.StateItemDto.Key
+  name: Key
+  href: api/Virtufin.Api.Client.StateItemDto.html#Virtufin_Api_Client_StateItemDto_Key
+  commentId: P:Virtufin.Api.Client.StateItemDto.Key
+  fullName: Virtufin.Api.Client.StateItemDto.Key
+  nameWithType: StateItemDto.Key
+- uid: Virtufin.Api.Client.StateItemDto.Key*
+  name: Key
+  href: api/Virtufin.Api.Client.StateItemDto.html#Virtufin_Api_Client_StateItemDto_Key_
+  commentId: Overload:Virtufin.Api.Client.StateItemDto.Key
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.StateItemDto.Key
+  nameWithType: StateItemDto.Key
+- uid: Virtufin.Api.Client.StateItemDto.Value
+  name: Value
+  href: api/Virtufin.Api.Client.StateItemDto.html#Virtufin_Api_Client_StateItemDto_Value
+  commentId: P:Virtufin.Api.Client.StateItemDto.Value
+  fullName: Virtufin.Api.Client.StateItemDto.Value
+  nameWithType: StateItemDto.Value
+- uid: Virtufin.Api.Client.StateItemDto.Value*
+  name: Value
+  href: api/Virtufin.Api.Client.StateItemDto.html#Virtufin_Api_Client_StateItemDto_Value_
+  commentId: Overload:Virtufin.Api.Client.StateItemDto.Value
+  isSpec: "True"
+  fullName: Virtufin.Api.Client.StateItemDto.Value
+  nameWithType: StateItemDto.Value
 - uid: Virtufin.Api.Client.StreamEventHandler
   name: StreamEventHandler
   href: api/Virtufin.Api.Client.StreamEventHandler.html
@@ -3778,6 +3874,19 @@ references:
   fullName.vb: Virtufin.Api.Services.StateService.New
   nameWithType: StateService.StateService
   nameWithType.vb: StateService.New
+- uid: Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+  name: DeleteBulkState(DeleteBulkStateRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_DeleteBulkState_Virtufin_Api_Protos_DeleteBulkStateRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest, Grpc.Core.ServerCallContext)
+  nameWithType: StateService.DeleteBulkState(DeleteBulkStateRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.StateService.DeleteBulkState*
+  name: DeleteBulkState
+  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_DeleteBulkState_
+  commentId: Overload:Virtufin.Api.Services.StateService.DeleteBulkState
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.StateService.DeleteBulkState
+  nameWithType: StateService.DeleteBulkState
 - uid: Virtufin.Api.Services.StateService.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   name: DeleteState(DeleteStateRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_DeleteState_Virtufin_Api_Protos_DeleteStateRequest_Grpc_Core_ServerCallContext_
@@ -3791,19 +3900,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.DeleteState
   nameWithType: StateService.DeleteState
-- uid: Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
-  name: GetAllState(GetAllStateRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetAllState_Virtufin_Api_Protos_GetAllStateRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.GetAllState(Virtufin.Api.Protos.GetAllStateRequest, Grpc.Core.ServerCallContext)
-  nameWithType: StateService.GetAllState(GetAllStateRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.StateService.GetAllState*
-  name: GetAllState
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetAllState_
-  commentId: Overload:Virtufin.Api.Services.StateService.GetAllState
+- uid: Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
+  name: GetBulkState(GetBulkStateRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetBulkState_Virtufin_Api_Protos_GetBulkStateRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest, Grpc.Core.ServerCallContext)
+  nameWithType: StateService.GetBulkState(GetBulkStateRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.StateService.GetBulkState*
+  name: GetBulkState
+  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetBulkState_
+  commentId: Overload:Virtufin.Api.Services.StateService.GetBulkState
   isSpec: "True"
-  fullName: Virtufin.Api.Services.StateService.GetAllState
-  nameWithType: StateService.GetAllState
+  fullName: Virtufin.Api.Services.StateService.GetBulkState
+  nameWithType: StateService.GetBulkState
 - uid: Virtufin.Api.Services.StateService.GetState(Virtufin.Api.Protos.GetStateRequest,Grpc.Core.ServerCallContext)
   name: GetState(GetStateRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_GetState_Virtufin_Api_Protos_GetStateRequest_Grpc_Core_ServerCallContext_
@@ -3817,19 +3926,19 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.StateService.GetState
   nameWithType: StateService.GetState
-- uid: Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
-  name: RegisterKeys(RegisterKeysRequest, ServerCallContext)
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_RegisterKeys_Virtufin_Api_Protos_RegisterKeysRequest_Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest,Grpc.Core.ServerCallContext)
-  fullName: Virtufin.Api.Services.StateService.RegisterKeys(Virtufin.Api.Protos.RegisterKeysRequest, Grpc.Core.ServerCallContext)
-  nameWithType: StateService.RegisterKeys(RegisterKeysRequest, ServerCallContext)
-- uid: Virtufin.Api.Services.StateService.RegisterKeys*
-  name: RegisterKeys
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_RegisterKeys_
-  commentId: Overload:Virtufin.Api.Services.StateService.RegisterKeys
+- uid: Virtufin.Api.Services.StateService.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
+  name: QueryState(QueryStateRequest, ServerCallContext)
+  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_QueryState_Virtufin_Api_Protos_QueryStateRequest_Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.StateService.QueryState(Virtufin.Api.Protos.QueryStateRequest,Grpc.Core.ServerCallContext)
+  fullName: Virtufin.Api.Services.StateService.QueryState(Virtufin.Api.Protos.QueryStateRequest, Grpc.Core.ServerCallContext)
+  nameWithType: StateService.QueryState(QueryStateRequest, ServerCallContext)
+- uid: Virtufin.Api.Services.StateService.QueryState*
+  name: QueryState
+  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_QueryState_
+  commentId: Overload:Virtufin.Api.Services.StateService.QueryState
   isSpec: "True"
-  fullName: Virtufin.Api.Services.StateService.RegisterKeys
-  nameWithType: StateService.RegisterKeys
+  fullName: Virtufin.Api.Services.StateService.QueryState
+  nameWithType: StateService.QueryState
 - uid: Virtufin.Api.Services.StateService.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   name: SaveState(SaveStateRequest, ServerCallContext)
   href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService_SaveState_Virtufin_Api_Protos_SaveStateRequest_Grpc_Core_ServerCallContext_
