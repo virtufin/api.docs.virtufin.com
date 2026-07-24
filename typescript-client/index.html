@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/efb09cbf9028fe1fb5b19ea5616fa67eff25f461"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/8e5331c3097507ca585000cd7bb3d48880b09548"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit efb09cb">
+       title="View commit 8e5331c">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">efb09cb</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8e5331c</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/efb09cbf9028fe1fb5b19ea5616fa67eff25f461"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/8e5331c3097507ca585000cd7bb3d48880b09548"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit efb09cb">
+       title="View commit 8e5331c">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">efb09cb</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8e5331c</text>
       </svg>
     </a>
 </div>
@@ -1837,6 +1837,8 @@
 </code></pre></div></p>
 <h4 id="pubsub-operations">Pub/Sub Operations</h4>
 <div class="highlight"><pre><span></span><code><span class="nx">publish</span><span class="p">(</span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Uint8Array</span><span class="p">,</span><span class="w"> </span><span class="nx">metadata?</span><span class="o">:</span><span class="w"> </span><span class="kt">Record</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">PublishResponse</span><span class="o">&gt;</span>
+<span class="c1">// metadata.time (RFC 3339) sets the CloudEvent time attribute;</span>
+<span class="c1">// omitted defaults to current UTC. Used for simulation / backtesting.</span>
 <span class="nx">publishWithResult</span><span class="p">(</span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Uint8Array</span><span class="p">,</span><span class="w"> </span><span class="nx">replyTopic</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">opts</span><span class="o">?:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">timeout?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">metadata?</span><span class="o">:</span><span class="w"> </span><span class="kt">Record</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span><span class="p">;</span>
@@ -1848,6 +1850,15 @@
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">encoder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">TextEncoder</span><span class="p">();</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">publish</span><span class="p">(</span><span class="s2">&quot;my-topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">encoder</span><span class="p">.</span><span class="nx">encode</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="w"> </span><span class="p">})));</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Published: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="o">?</span><span class="p">.</span><span class="nx">success</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</code></pre></div></p>
+<p><strong>Example — Publish with simulation time:</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">encoder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">TextEncoder</span><span class="p">();</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">publish</span><span class="p">(</span>
+<span class="w">  </span><span class="s2">&quot;market-data&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">encoder</span><span class="p">.</span><span class="nx">encode</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span><span class="w"> </span><span class="nx">symbol</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;BTCUSD&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="kt">42000</span><span class="w"> </span><span class="p">})),</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">time</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2025-01-01T12:00:00Z&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Published with simulated timestamp: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="o">?</span><span class="p">.</span><span class="nx">success</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 </code></pre></div></p>
 <p><strong>Example — Request-Reply:</strong>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">encoder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">TextEncoder</span><span class="p">();</span>
@@ -2119,7 +2130,7 @@ equivalent of <code>DynamicObject</code> / <code>__getattr__</code> for runtime 
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-23T09:08:15Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-24T18:46:48Z</span>
 </div>
 
     </div>

@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/efb09cbf9028fe1fb5b19ea5616fa67eff25f461"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/8e5331c3097507ca585000cd7bb3d48880b09548"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit efb09cb">
+       title="View commit 8e5331c">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">efb09cb</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8e5331c</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/efb09cbf9028fe1fb5b19ea5616fa67eff25f461"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/8e5331c3097507ca585000cd7bb3d48880b09548"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit efb09cb">
+       title="View commit 8e5331c">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">efb09cb</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">8e5331c</text>
       </svg>
     </a>
 </div>
@@ -1145,6 +1145,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#example-publish-with-simulation-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Publish with simulation time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#example-request-reply" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1754,6 +1765,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#example-publish-with-simulation-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Publish with simulation time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#example-request-reply" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2052,6 +2074,8 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 <p>High-level pub/sub operations via <code>client.pubsub</code>. All methods are async.</p>
 <h3 id="methods">Methods</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Publish async — returns {&quot;success&quot;: bool, &quot;status&quot;: str, &quot;message&quot;: str}</span>
+<span class="c1"># metadata[&quot;time&quot;] (RFC 3339) sets the CloudEvent time attribute;</span>
+<span class="c1"># omitted defaults to current UTC. Used for simulation / backtesting.</span>
 <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_async</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
 <span class="c1"># Subscribe - returns async generator yielding PubsubEvent</span>
@@ -2117,6 +2141,16 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
         <span class="k">await</span> <span class="n">sub_task</span>
     <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
         <span class="k">pass</span>
+</code></pre></div>
+<h3 id="example-publish-with-simulation-time">Example: Publish with simulation time</h3>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="c1"># Publish with a custom CloudEvent time (backtesting / replay)</span>
+    <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_async</span><span class="p">(</span>
+        <span class="n">topic</span><span class="o">=</span><span class="s2">&quot;market-data&quot;</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;symbol&quot;</span><span class="p">:</span> <span class="s2">&quot;BTCUSD&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mi">42000</span><span class="p">},</span>
+        <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="s2">&quot;2025-01-01T12:00:00Z&quot;</span><span class="p">}</span>
+    <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Published with simulated timestamp&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="example-request-reply">Example: Request-Reply</h3>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
@@ -2289,7 +2323,7 @@ must <code>await</code> the call.</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-23T09:08:15Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-24T18:46:48Z</span>
 </div>
 
     </div>
