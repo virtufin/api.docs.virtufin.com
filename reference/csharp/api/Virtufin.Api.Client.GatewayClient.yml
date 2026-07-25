@@ -14,8 +14,8 @@ items:
   - Virtufin.Api.Client.GatewayClient.InvokeAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
   - Virtufin.Api.Client.GatewayClient.ListMethodsAsync(System.String)
   - Virtufin.Api.Client.GatewayClient.ListServicesAsync
-  - Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
-  - Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,CloudNative.CloudEvents.V1.CloudEvent,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,CloudNative.CloudEvents.V1.CloudEvent,System.String,System.Nullable{System.TimeSpan},System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
@@ -578,16 +578,16 @@ items:
   nameWithType.vb: GatewayClient.DeleteBulkStateAsync(String, IEnumerable(Of String), Boolean, CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), Boolean, System.Threading.CancellationToken)
   name.vb: DeleteBulkStateAsync(String, IEnumerable(Of String), Boolean, CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
-  id: PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,CloudNative.CloudEvents.V1.CloudEvent,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,CloudNative.CloudEvents.V1.CloudEvent,System.Threading.CancellationToken)
+  id: PublishEventAsync(System.String,CloudNative.CloudEvents.V1.CloudEvent,System.Threading.CancellationToken)
   parent: Virtufin.Api.Client.GatewayClient
   langs:
   - csharp
   - vb
-  name: PublishEventAsync(string, byte[], Dictionary<string, string>?, CancellationToken)
-  nameWithType: GatewayClient.PublishEventAsync(string, byte[], Dictionary<string, string>?, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.PublishEventAsync(string, byte[], System.Collections.Generic.Dictionary<string, string>?, System.Threading.CancellationToken)
+  name: PublishEventAsync(string, CloudEvent, CancellationToken)
+  nameWithType: GatewayClient.PublishEventAsync(string, CloudEvent, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.PublishEventAsync(string, CloudNative.CloudEvents.V1.CloudEvent, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -596,35 +596,32 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 437
+    startLine: 436
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
-  summary: Publishes an event to a topic asynchronously.
+  summary: Publishes a CloudEvent to a topic asynchronously.
   example: []
   syntax:
-    content: public Task<PublishResponse> PublishEventAsync(string topic, byte[] data, Dictionary<string, string>? metadata = null, CancellationToken cancellationToken = default)
+    content: public Task<PublishResponse> PublishEventAsync(string topic, CloudEvent cloudevent, CancellationToken cancellationToken = default)
     parameters:
     - id: topic
       type: System.String
       description: The topic name.
-    - id: data
-      type: System.Byte[]
-      description: The event data as bytes.
-    - id: metadata
-      type: System.Collections.Generic.Dictionary{System.String,System.String}
-      description: Optional metadata dictionary.
+    - id: cloudevent
+      type: CloudNative.CloudEvents.V1.CloudEvent
+      description: The CloudEvent proto to publish.
     - id: cancellationToken
       type: System.Threading.CancellationToken
       description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.PublishResponse}
       description: PublishResponse with success status.
-    content.vb: Public Function PublishEventAsync(topic As String, data As Byte(), metadata As Dictionary(Of String, String) = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of PublishResponse)
+    content.vb: Public Function PublishEventAsync(topic As String, cloudevent As CloudEvent, cancellationToken As CancellationToken = Nothing) As Task(Of PublishResponse)
   overload: Virtufin.Api.Client.GatewayClient.PublishEventAsync*
-  nameWithType.vb: GatewayClient.PublishEventAsync(String, Byte(), Dictionary(Of String, String), CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.PublishEventAsync(String, Byte(), System.Collections.Generic.Dictionary(Of String, String), System.Threading.CancellationToken)
-  name.vb: PublishEventAsync(String, Byte(), Dictionary(Of String, String), CancellationToken)
+  nameWithType.vb: GatewayClient.PublishEventAsync(String, CloudEvent, CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.PublishEventAsync(String, CloudNative.CloudEvents.V1.CloudEvent, System.Threading.CancellationToken)
+  name.vb: PublishEventAsync(String, CloudEvent, CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.SubscribeToTopic(System.String,System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Client.GatewayClient.SubscribeToTopic(System.String,System.Threading.CancellationToken)
   id: SubscribeToTopic(System.String,System.Threading.CancellationToken)
@@ -643,7 +640,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 470
+    startLine: 451
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -684,7 +681,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 483
+    startLine: 464
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -707,16 +704,16 @@ items:
   nameWithType.vb: GatewayClient.UnsubscribeFromTopicAsync(String, CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.UnsubscribeFromTopicAsync(String, System.Threading.CancellationToken)
   name.vb: UnsubscribeFromTopicAsync(String, CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
-  id: PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,CloudNative.CloudEvents.V1.CloudEvent,System.String,System.Nullable{System.TimeSpan},System.String,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,CloudNative.CloudEvents.V1.CloudEvent,System.String,System.Nullable{System.TimeSpan},System.String,System.Threading.CancellationToken)
+  id: PublishWithResultAsync(System.String,CloudNative.CloudEvents.V1.CloudEvent,System.String,System.Nullable{System.TimeSpan},System.String,System.Threading.CancellationToken)
   parent: Virtufin.Api.Client.GatewayClient
   langs:
   - csharp
   - vb
-  name: PublishWithResultAsync(string, byte[], string, TimeSpan?, Dictionary<string, string>?, string?, CancellationToken)
-  nameWithType: GatewayClient.PublishWithResultAsync(string, byte[], string, TimeSpan?, Dictionary<string, string>?, string?, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(string, byte[], string, System.TimeSpan?, System.Collections.Generic.Dictionary<string, string>?, string?, System.Threading.CancellationToken)
+  name: PublishWithResultAsync(string, CloudEvent, string, TimeSpan?, string?, CancellationToken)
+  nameWithType: GatewayClient.PublishWithResultAsync(string, CloudEvent, string, TimeSpan?, string?, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(string, CloudNative.CloudEvents.V1.CloudEvent, string, System.TimeSpan?, string?, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -725,37 +722,34 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishWithResultAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 604
+    startLine: 584
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: >-
     Publishes to a topic and waits for a correlated response on a reply topic.
 
-    Implements the request-reply pattern over pub/sub using correlation IDs,
+    Implements the request-reply pattern over pub/sub using correlation IDs.
 
-    via the shared per-reply-topic reader started by <xref href="Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)" data-throw-if-not-resolved="false"></xref>
+    Sets <code>correlationid</code> and <code>replytopic</code> as CloudEvent attributes
 
-    (see its remarks for why the stream is shared rather than per call).
+    before publishing.
   example: []
   syntax:
-    content: public Task<SubscribeResponse> PublishWithResultAsync(string topic, byte[] data, string replyTopic, TimeSpan? timeout = null, Dictionary<string, string>? metadata = null, string? correlationId = null, CancellationToken cancellationToken = default)
+    content: public Task<SubscribeResponse> PublishWithResultAsync(string topic, CloudEvent cloudevent, string replyTopic, TimeSpan? timeout = null, string? correlationId = null, CancellationToken cancellationToken = default)
     parameters:
     - id: topic
       type: System.String
       description: The topic to publish the request to.
-    - id: data
-      type: System.Byte[]
-      description: The request data as bytes.
+    - id: cloudevent
+      type: CloudNative.CloudEvents.V1.CloudEvent
+      description: The CloudEvent proto to publish.
     - id: replyTopic
       type: System.String
       description: The topic to listen for responses on.
     - id: timeout
       type: System.Nullable{System.TimeSpan}
       description: 'Maximum time to wait for a response (default: 30s).'
-    - id: metadata
-      type: System.Collections.Generic.Dictionary{System.String,System.String}
-      description: Optional additional metadata to include.
     - id: correlationId
       type: System.String
       description: Optional correlation ID (auto-generated if null).
@@ -765,15 +759,15 @@ items:
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.SubscribeResponse}
       description: The correlated SubscribeResponse.
-    content.vb: Public Function PublishWithResultAsync(topic As String, data As Byte(), replyTopic As String, timeout As TimeSpan? = Nothing, metadata As Dictionary(Of String, String) = Nothing, correlationId As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of SubscribeResponse)
+    content.vb: Public Function PublishWithResultAsync(topic As String, cloudevent As CloudEvent, replyTopic As String, timeout As TimeSpan? = Nothing, correlationId As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of SubscribeResponse)
   overload: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync*
   exceptions:
   - type: System.TimeoutException
     commentId: T:System.TimeoutException
     description: Thrown if no response arrives within the timeout.
-  nameWithType.vb: GatewayClient.PublishWithResultAsync(String, Byte(), String, TimeSpan?, Dictionary(Of String, String), String, CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(String, Byte(), String, System.TimeSpan?, System.Collections.Generic.Dictionary(Of String, String), String, System.Threading.CancellationToken)
-  name.vb: PublishWithResultAsync(String, Byte(), String, TimeSpan?, Dictionary(Of String, String), String, CancellationToken)
+  nameWithType.vb: GatewayClient.PublishWithResultAsync(String, CloudEvent, String, TimeSpan?, String, CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(String, CloudNative.CloudEvents.V1.CloudEvent, String, System.TimeSpan?, String, System.Threading.CancellationToken)
+  name.vb: PublishWithResultAsync(String, CloudEvent, String, TimeSpan?, String, CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   id: Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
@@ -792,7 +786,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 665
+    startLine: 643
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -839,7 +833,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 686
+    startLine: 664
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -889,7 +883,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 742
+    startLine: 720
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -2854,80 +2848,16 @@ references:
   - name: )
 - uid: Virtufin.Api.Client.GatewayClient.PublishEventAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.PublishEventAsync
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_PublishEventAsync_System_String_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_PublishEventAsync_System_String_CloudNative_CloudEvents_V1_CloudEvent_System_Threading_CancellationToken_
   name: PublishEventAsync
   nameWithType: GatewayClient.PublishEventAsync
   fullName: Virtufin.Api.Client.GatewayClient.PublishEventAsync
-- uid: System.Byte[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.byte
-  name: byte[]
-  nameWithType: byte[]
-  fullName: byte[]
-  nameWithType.vb: Byte()
-  fullName.vb: Byte()
-  name.vb: Byte()
-  spec.csharp:
-  - uid: System.Byte
-    name: byte
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Byte
-    name: Byte
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: (
-  - name: )
-- uid: System.Collections.Generic.Dictionary{System.String,System.String}
-  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.Dictionary`2
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
-  name: Dictionary<string, string>
-  nameWithType: Dictionary<string, string>
-  fullName: System.Collections.Generic.Dictionary<string, string>
-  nameWithType.vb: Dictionary(Of String, String)
-  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
-  name.vb: Dictionary(Of String, String)
-  spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
+- uid: CloudNative.CloudEvents.V1.CloudEvent
+  commentId: T:CloudNative.CloudEvents.V1.CloudEvent
+  parent: CloudNative.CloudEvents.V1
+  name: CloudEvent
+  nameWithType: CloudEvent
+  fullName: CloudNative.CloudEvents.V1.CloudEvent
 - uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.PublishResponse}
   commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.PublishResponse}
   parent: System.Threading.Tasks
@@ -2959,6 +2889,29 @@ references:
   - uid: Virtufin.Api.Protos.PublishResponse
     name: PublishResponse
   - name: )
+- uid: CloudNative.CloudEvents.V1
+  commentId: N:CloudNative.CloudEvents.V1
+  name: CloudNative.CloudEvents.V1
+  nameWithType: CloudNative.CloudEvents.V1
+  fullName: CloudNative.CloudEvents.V1
+  spec.csharp:
+  - uid: CloudNative
+    name: CloudNative
+  - name: .
+  - uid: CloudNative.CloudEvents
+    name: CloudEvents
+  - name: .
+  - uid: CloudNative.CloudEvents.V1
+    name: V1
+  spec.vb:
+  - uid: CloudNative
+    name: CloudNative
+  - name: .
+  - uid: CloudNative.CloudEvents
+    name: CloudEvents
+  - name: .
+  - uid: CloudNative.CloudEvents.V1
+    name: V1
 - uid: Virtufin.Api.Client.GatewayClient.SubscribeToTopic*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.SubscribeToTopic
   href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SubscribeToTopic_System_String_System_Threading_CancellationToken_
@@ -3083,34 +3036,6 @@ references:
   - uid: Virtufin.Api.Protos.UnsubscribeResponse
     name: UnsubscribeResponse
   - name: )
-- uid: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)
-  commentId: M:Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: EnsureReplyReader(string)
-  nameWithType: GatewayClient.EnsureReplyReader(string)
-  fullName: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(string)
-  nameWithType.vb: GatewayClient.EnsureReplyReader(String)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(String)
-  name.vb: EnsureReplyReader(String)
-  spec.csharp:
-  - uid: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)
-    name: EnsureReplyReader
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: Virtufin.Api.Client.GatewayClient.EnsureReplyReader(System.String)
-    name: EnsureReplyReader
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: System.TimeoutException
   commentId: T:System.TimeoutException
   isExternal: true
@@ -3120,7 +3045,7 @@ references:
   fullName: System.TimeoutException
 - uid: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.PublishWithResultAsync
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_PublishWithResultAsync_System_String_System_Byte___System_String_System_Nullable_System_TimeSpan__System_Collections_Generic_Dictionary_System_String_System_String__System_String_System_Threading_CancellationToken_
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_PublishWithResultAsync_System_String_CloudNative_CloudEvents_V1_CloudEvent_System_String_System_Nullable_System_TimeSpan__System_String_System_Threading_CancellationToken_
   name: PublishWithResultAsync
   nameWithType: GatewayClient.PublishWithResultAsync
   fullName: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync
