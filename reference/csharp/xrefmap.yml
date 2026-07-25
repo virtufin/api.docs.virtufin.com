@@ -833,12 +833,12 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync
   nameWithType: IAsyncStreamEventHandler.OnErrorAsync
-- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  name: OnEventAsync(TopicEventRequest, CancellationToken)
-  href: api/Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnEventAsync_Virtufin_Api_Protos_TopicEventRequest_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
-  nameWithType: IAsyncStreamEventHandler.OnEventAsync(TopicEventRequest, CancellationToken)
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  name: OnEventAsync(SubscribeResponse, CancellationToken)
+  href: api/Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnEventAsync_Virtufin_Api_Protos_SubscribeResponse_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
+  nameWithType: IAsyncStreamEventHandler.OnEventAsync(SubscribeResponse, CancellationToken)
 - uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync*
   name: OnEventAsync
   href: api/Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnEventAsync_
@@ -865,12 +865,12 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.IStreamEventHandler.OnError
   nameWithType: IStreamEventHandler.OnError
-- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  name: OnEvent(TopicEventRequest)
-  href: api/Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
-  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  nameWithType: IStreamEventHandler.OnEvent(TopicEventRequest)
+- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  name: OnEvent(SubscribeResponse)
+  href: api/Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
+  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  nameWithType: IStreamEventHandler.OnEvent(SubscribeResponse)
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent*
   name: OnEvent
   href: api/Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_
@@ -1067,12 +1067,12 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.StreamEventHandler.OnError
   nameWithType: StreamEventHandler.OnError
-- uid: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  name: OnEvent(TopicEventRequest)
-  href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
-  commentId: M:Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  fullName: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  nameWithType: StreamEventHandler.OnEvent(TopicEventRequest)
+- uid: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  name: OnEvent(SubscribeResponse)
+  href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
+  commentId: M:Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  fullName: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  nameWithType: StreamEventHandler.OnEvent(SubscribeResponse)
 - uid: Virtufin.Api.Client.StreamEventHandler.OnEvent*
   name: OnEvent
   href: api/Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_OnEvent_
@@ -2404,6 +2404,57 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.AggregatedReflectionV1Service.ServerReflectionInfo
   nameWithType: AggregatedReflectionV1Service.ServerReflectionInfo
+- uid: Virtufin.Api.Services.CloudEventExtensions
+  name: CloudEventExtensions
+  href: api/Virtufin.Api.Services.CloudEventExtensions.html
+  commentId: T:Virtufin.Api.Services.CloudEventExtensions
+  fullName: Virtufin.Api.Services.CloudEventExtensions
+  nameWithType: CloudEventExtensions
+- uid: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(System.String,System.String,System.Byte[],System.String,System.Nullable{System.DateTimeOffset},System.String)
+  name: BuildCloudEvent(string, string, byte[], string?, DateTimeOffset?, string?)
+  href: api/Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_BuildCloudEvent_System_String_System_String_System_Byte___System_String_System_Nullable_System_DateTimeOffset__System_String_
+  commentId: M:Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(System.String,System.String,System.Byte[],System.String,System.Nullable{System.DateTimeOffset},System.String)
+  name.vb: BuildCloudEvent(String, String, Byte(), String, DateTimeOffset?, String)
+  fullName: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(string, string, byte[], string?, System.DateTimeOffset?, string?)
+  fullName.vb: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(String, String, Byte(), String, System.DateTimeOffset?, String)
+  nameWithType: CloudEventExtensions.BuildCloudEvent(string, string, byte[], string?, DateTimeOffset?, string?)
+  nameWithType.vb: CloudEventExtensions.BuildCloudEvent(String, String, Byte(), String, DateTimeOffset?, String)
+- uid: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent*
+  name: BuildCloudEvent
+  href: api/Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_BuildCloudEvent_
+  commentId: Overload:Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent
+  nameWithType: CloudEventExtensions.BuildCloudEvent
+- uid: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent,System.String)
+  name: GetStringAttr(CloudEvent, string)
+  href: api/Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_GetStringAttr_CloudNative_CloudEvents_V1_CloudEvent_System_String_
+  commentId: M:Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent,System.String)
+  name.vb: GetStringAttr(CloudEvent, String)
+  fullName: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent, string)
+  fullName.vb: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent, String)
+  nameWithType: CloudEventExtensions.GetStringAttr(CloudEvent, string)
+  nameWithType.vb: CloudEventExtensions.GetStringAttr(CloudEvent, String)
+- uid: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr*
+  name: GetStringAttr
+  href: api/Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_GetStringAttr_
+  commentId: Overload:Virtufin.Api.Services.CloudEventExtensions.GetStringAttr
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr
+  nameWithType: CloudEventExtensions.GetStringAttr
+- uid: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes(CloudNative.CloudEvents.V1.CloudEvent)
+  name: ToJsonBytes(CloudEvent)
+  href: api/Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_ToJsonBytes_CloudNative_CloudEvents_V1_CloudEvent_
+  commentId: M:Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes(CloudNative.CloudEvents.V1.CloudEvent)
+  fullName: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes(CloudNative.CloudEvents.V1.CloudEvent)
+  nameWithType: CloudEventExtensions.ToJsonBytes(CloudEvent)
+- uid: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes*
+  name: ToJsonBytes
+  href: api/Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_ToJsonBytes_
+  commentId: Overload:Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes
+  nameWithType: CloudEventExtensions.ToJsonBytes
 - uid: Virtufin.Api.Services.ConfigService
   name: ConfigService
   href: api/Virtufin.Api.Services.ConfigService.html
@@ -2710,37 +2761,21 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GatewayService.ListServices
   nameWithType: GatewayService.ListServices
-- uid: Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  name: Subscribe(SubscribeRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService_Subscribe_Virtufin_Api_Protos_SubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  name.vb: Subscribe(SubscribeRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  fullName: Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
-  fullName.vb: Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
-  nameWithType: GatewayService.Subscribe(SubscribeRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  nameWithType.vb: GatewayService.Subscribe(SubscribeRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-- uid: Virtufin.Api.Services.GatewayService.Subscribe*
-  name: Subscribe
-  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService_Subscribe_
-  commentId: Overload:Virtufin.Api.Services.GatewayService.Subscribe
-  isSpec: "True"
-  fullName: Virtufin.Api.Services.GatewayService.Subscribe
-  nameWithType: GatewayService.Subscribe
 - uid: Virtufin.Api.Services.GatewaySubscription
   name: GatewaySubscription
   href: api/Virtufin.Api.Services.GatewaySubscription.html
   commentId: T:Virtufin.Api.Services.GatewaySubscription
   fullName: Virtufin.Api.Services.GatewaySubscription
   nameWithType: GatewaySubscription
-- uid: Virtufin.Api.Services.GatewaySubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
-  name: GatewaySubscription(string, ChannelWriter<TopicEventRequest>)
-  href: api/Virtufin.Api.Services.GatewaySubscription.html#Virtufin_Api_Services_GatewaySubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_TopicEventRequest__
-  commentId: M:Virtufin.Api.Services.GatewaySubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
-  name.vb: New(String, ChannelWriter(Of TopicEventRequest))
-  fullName: Virtufin.Api.Services.GatewaySubscription.GatewaySubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.TopicEventRequest>)
-  fullName.vb: Virtufin.Api.Services.GatewaySubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.TopicEventRequest))
-  nameWithType: GatewaySubscription.GatewaySubscription(string, ChannelWriter<TopicEventRequest>)
-  nameWithType.vb: GatewaySubscription.New(String, ChannelWriter(Of TopicEventRequest))
+- uid: Virtufin.Api.Services.GatewaySubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  name: GatewaySubscription(string, ChannelWriter<SubscribeResponse>)
+  href: api/Virtufin.Api.Services.GatewaySubscription.html#Virtufin_Api_Services_GatewaySubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_SubscribeResponse__
+  commentId: M:Virtufin.Api.Services.GatewaySubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  name.vb: New(String, ChannelWriter(Of SubscribeResponse))
+  fullName: Virtufin.Api.Services.GatewaySubscription.GatewaySubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.SubscribeResponse>)
+  fullName.vb: Virtufin.Api.Services.GatewaySubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.SubscribeResponse))
+  nameWithType: GatewaySubscription.GatewaySubscription(string, ChannelWriter<SubscribeResponse>)
+  nameWithType.vb: GatewaySubscription.New(String, ChannelWriter(Of SubscribeResponse))
 - uid: Virtufin.Api.Services.GatewaySubscription.#ctor*
   name: GatewaySubscription
   href: api/Virtufin.Api.Services.GatewaySubscription.html#Virtufin_Api_Services_GatewaySubscription__ctor_
@@ -2857,12 +2892,12 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GatewaySubscriptionManager.GetSubscriptionKey
   nameWithType: GatewaySubscriptionManager.GetSubscriptionKey
-- uid: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  name: SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)
-  href: api/Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_SendEventAsync_Virtufin_Api_Services_GatewaySubscription_Virtufin_Api_Protos_TopicEventRequest_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  fullName: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription, Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
-  nameWithType: GatewaySubscriptionManager.SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)
+- uid: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  name: SendEventAsync(GatewaySubscription, SubscribeResponse, CancellationToken)
+  href: api/Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_SendEventAsync_Virtufin_Api_Services_GatewaySubscription_Virtufin_Api_Protos_SubscribeResponse_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  fullName: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription, Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
+  nameWithType: GatewaySubscriptionManager.SendEventAsync(GatewaySubscription, SubscribeResponse, CancellationToken)
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync*
   name: SendEventAsync
   href: api/Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_SendEventAsync_
@@ -2870,15 +2905,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync
   nameWithType: GatewaySubscriptionManager.SendEventAsync
-- uid: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
-  name: Subscribe(string, ChannelWriter<TopicEventRequest>)
-  href: api/Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_Subscribe_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_TopicEventRequest__
-  commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
-  name.vb: Subscribe(String, ChannelWriter(Of TopicEventRequest))
-  fullName: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.TopicEventRequest>)
-  fullName.vb: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.TopicEventRequest))
-  nameWithType: GatewaySubscriptionManager.Subscribe(string, ChannelWriter<TopicEventRequest>)
-  nameWithType.vb: GatewaySubscriptionManager.Subscribe(String, ChannelWriter(Of TopicEventRequest))
+- uid: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  name: Subscribe(string, ChannelWriter<SubscribeResponse>)
+  href: api/Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_Subscribe_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_SubscribeResponse__
+  commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  name.vb: Subscribe(String, ChannelWriter(Of SubscribeResponse))
+  fullName: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.SubscribeResponse>)
+  fullName.vb: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.SubscribeResponse))
+  nameWithType: GatewaySubscriptionManager.Subscribe(string, ChannelWriter<SubscribeResponse>)
+  nameWithType.vb: GatewaySubscriptionManager.Subscribe(String, ChannelWriter(Of SubscribeResponse))
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe*
   name: Subscribe
   href: api/Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_Subscribe_
@@ -3458,15 +3493,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubService.PublishEvent
   nameWithType: PubsubService.PublishEvent
-- uid: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  name: Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_Subscribe_Virtufin_Api_Protos_PubsubSubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
-  commentId: M:Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  name.vb: Subscribe(PubsubSubscribeRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
-  fullName: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, Grpc.Core.ServerCallContext)
-  fullName.vb: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse), Grpc.Core.ServerCallContext)
-  nameWithType: PubsubService.Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  nameWithType.vb: PubsubService.Subscribe(PubsubSubscribeRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
+- uid: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
+  name: Subscribe(SubscribeRequest, IServerStreamWriter<SubscribeResponse>, ServerCallContext)
+  href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_Subscribe_Virtufin_Api_Protos_SubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_SubscribeResponse__Grpc_Core_ServerCallContext_
+  commentId: M:Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
+  name.vb: Subscribe(SubscribeRequest, IServerStreamWriter(Of SubscribeResponse), ServerCallContext)
+  fullName: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.SubscribeResponse>, Grpc.Core.ServerCallContext)
+  fullName.vb: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.SubscribeResponse), Grpc.Core.ServerCallContext)
+  nameWithType: PubsubService.Subscribe(SubscribeRequest, IServerStreamWriter<SubscribeResponse>, ServerCallContext)
+  nameWithType.vb: PubsubService.Subscribe(SubscribeRequest, IServerStreamWriter(Of SubscribeResponse), ServerCallContext)
 - uid: Virtufin.Api.Services.PubsubService.Subscribe*
   name: Subscribe
   href: api/Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_Subscribe_
@@ -3493,15 +3528,15 @@ references:
   commentId: T:Virtufin.Api.Services.PubsubSubscription
   fullName: Virtufin.Api.Services.PubsubSubscription
   nameWithType: PubsubSubscription
-- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  name: PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
-  href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
-  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  name.vb: New(String, ChannelWriter(Of PubsubSubscribeResponse))
-  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
-  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
-  nameWithType: PubsubSubscription.PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
-  nameWithType.vb: PubsubSubscription.New(String, ChannelWriter(Of PubsubSubscribeResponse))
+- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  name: PubsubSubscription(string, ChannelWriter<SubscribeResponse>)
+  href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_SubscribeResponse__
+  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  name.vb: New(String, ChannelWriter(Of SubscribeResponse))
+  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.SubscribeResponse>)
+  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.SubscribeResponse))
+  nameWithType: PubsubSubscription.PubsubSubscription(string, ChannelWriter<SubscribeResponse>)
+  nameWithType.vb: PubsubSubscription.New(String, ChannelWriter(Of SubscribeResponse))
 - uid: Virtufin.Api.Services.PubsubSubscription.#ctor*
   name: PubsubSubscription
   href: api/Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_
@@ -3576,15 +3611,15 @@ references:
   fullName.vb: Virtufin.Api.Services.PubsubSubscriptionManager.New
   nameWithType: PubsubSubscriptionManager.PubsubSubscriptionManager
   nameWithType.vb: PubsubSubscriptionManager.New
-- uid: Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync(System.String,System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})
-  name: BroadcastToTopicAsync(string, byte[], string?, Dictionary<string, string>?)
-  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_BroadcastToTopicAsync_System_String_System_Byte___System_String_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync(System.String,System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})
-  name.vb: BroadcastToTopicAsync(String, Byte(), String, Dictionary(Of String, String))
-  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync(string, byte[], string?, System.Collections.Generic.Dictionary<string, string>?)
-  fullName.vb: Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync(String, Byte(), String, System.Collections.Generic.Dictionary(Of String, String))
-  nameWithType: PubsubSubscriptionManager.BroadcastToTopicAsync(string, byte[], string?, Dictionary<string, string>?)
-  nameWithType.vb: PubsubSubscriptionManager.BroadcastToTopicAsync(String, Byte(), String, Dictionary(Of String, String))
+- uid: Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync(System.String,Virtufin.Api.Protos.SubscribeResponse)
+  name: BroadcastToTopicAsync(string, SubscribeResponse)
+  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_BroadcastToTopicAsync_System_String_Virtufin_Api_Protos_SubscribeResponse_
+  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync(System.String,Virtufin.Api.Protos.SubscribeResponse)
+  name.vb: BroadcastToTopicAsync(String, SubscribeResponse)
+  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync(string, Virtufin.Api.Protos.SubscribeResponse)
+  fullName.vb: Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync(String, Virtufin.Api.Protos.SubscribeResponse)
+  nameWithType: PubsubSubscriptionManager.BroadcastToTopicAsync(string, SubscribeResponse)
+  nameWithType.vb: PubsubSubscriptionManager.BroadcastToTopicAsync(String, SubscribeResponse)
 - uid: Virtufin.Api.Services.PubsubSubscriptionManager.BroadcastToTopicAsync*
   name: BroadcastToTopicAsync
   href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_BroadcastToTopicAsync_
@@ -3631,12 +3666,12 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubSubscriptionManager.GetSubscriptionKey
   nameWithType: PubsubSubscriptionManager.GetSubscriptionKey
-- uid: Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync(Virtufin.Api.Services.PubsubSubscription,Virtufin.Api.Protos.PubsubSubscribeResponse,System.Threading.CancellationToken)
-  name: SendEventAsync(PubsubSubscription, PubsubSubscribeResponse, CancellationToken)
-  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_SendEventAsync_Virtufin_Api_Services_PubsubSubscription_Virtufin_Api_Protos_PubsubSubscribeResponse_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync(Virtufin.Api.Services.PubsubSubscription,Virtufin.Api.Protos.PubsubSubscribeResponse,System.Threading.CancellationToken)
-  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync(Virtufin.Api.Services.PubsubSubscription, Virtufin.Api.Protos.PubsubSubscribeResponse, System.Threading.CancellationToken)
-  nameWithType: PubsubSubscriptionManager.SendEventAsync(PubsubSubscription, PubsubSubscribeResponse, CancellationToken)
+- uid: Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync(Virtufin.Api.Services.PubsubSubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  name: SendEventAsync(PubsubSubscription, SubscribeResponse, CancellationToken)
+  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_SendEventAsync_Virtufin_Api_Services_PubsubSubscription_Virtufin_Api_Protos_SubscribeResponse_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync(Virtufin.Api.Services.PubsubSubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync(Virtufin.Api.Services.PubsubSubscription, Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
+  nameWithType: PubsubSubscriptionManager.SendEventAsync(PubsubSubscription, SubscribeResponse, CancellationToken)
 - uid: Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync*
   name: SendEventAsync
   href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_SendEventAsync_
@@ -3644,15 +3679,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Services.PubsubSubscriptionManager.SendEventAsync
   nameWithType: PubsubSubscriptionManager.SendEventAsync
-- uid: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  name: Subscribe(string, ChannelWriter<PubsubSubscribeResponse>)
-  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_Subscribe_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
-  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  name.vb: Subscribe(String, ChannelWriter(Of PubsubSubscribeResponse))
-  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
-  fullName.vb: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
-  nameWithType: PubsubSubscriptionManager.Subscribe(string, ChannelWriter<PubsubSubscribeResponse>)
-  nameWithType.vb: PubsubSubscriptionManager.Subscribe(String, ChannelWriter(Of PubsubSubscribeResponse))
+- uid: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  name: Subscribe(string, ChannelWriter<SubscribeResponse>)
+  href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_Subscribe_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_SubscribeResponse__
+  commentId: M:Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  name.vb: Subscribe(String, ChannelWriter(Of SubscribeResponse))
+  fullName: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.SubscribeResponse>)
+  fullName.vb: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.SubscribeResponse))
+  nameWithType: PubsubSubscriptionManager.Subscribe(string, ChannelWriter<SubscribeResponse>)
+  nameWithType.vb: PubsubSubscriptionManager.Subscribe(String, ChannelWriter(Of SubscribeResponse))
 - uid: Virtufin.Api.Services.PubsubSubscriptionManager.Subscribe*
   name: Subscribe
   href: api/Virtufin.Api.Services.PubsubSubscriptionManager.html#Virtufin_Api_Services_PubsubSubscriptionManager_Subscribe_

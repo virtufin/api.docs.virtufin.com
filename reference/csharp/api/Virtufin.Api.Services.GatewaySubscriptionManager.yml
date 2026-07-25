@@ -9,8 +9,8 @@ items:
   - Virtufin.Api.Services.GatewaySubscriptionManager.BroadcastToTopicAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Byte[],System.String,System.String,System.String)
   - Virtufin.Api.Services.GatewaySubscriptionManager.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
   - Virtufin.Api.Services.GatewaySubscriptionManager.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
-  - Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  - Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
+  - Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
   - Virtufin.Api.Services.GatewaySubscriptionManager.UnsubscribeById(System.String)
   langs:
   - csharp
@@ -45,29 +45,29 @@ items:
 
     to multiple in-process gRPC callers. The caller-side envelope is
 
-    <code>TopicEventRequest</code> (parsed CloudEvent v1.0 fields), in
+    <code>SubscribeResponse</code> (CloudEvent proto envelope), in
 
-    contrast to <xref href="Virtufin.Api.Services.PubsubSubscriptionManager" data-throw-if-not-resolved="false"></xref> which uses the
+    contrast to <xref href="Virtufin.Api.Services.PubsubSubscriptionManager" data-throw-if-not-resolved="false"></xref> which also uses the
 
-    flat pub/sub <code>PubsubSubscribeResponse</code> envelope.
+    <code>SubscribeResponse</code> envelope.
   example: []
   syntax:
-    content: 'public class GatewaySubscriptionManager : SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>'
-    content.vb: Public Class GatewaySubscriptionManager Inherits SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription)
+    content: 'public class GatewaySubscriptionManager : SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>'
+    content.vb: Public Class GatewaySubscriptionManager Inherits SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription)
   inheritance:
   - System.Object
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   inheritedMembers:
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}._subscriptions
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}._logger
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
-  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}._subscriptions
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}._logger
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
+  - Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -107,16 +107,16 @@ items:
   nameWithType.vb: GatewaySubscriptionManager.New(ILogger(Of GatewaySubscriptionManager))
   fullName.vb: Virtufin.Api.Services.GatewaySubscriptionManager.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewaySubscriptionManager))
   name.vb: New(ILogger(Of GatewaySubscriptionManager))
-- uid: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
-  commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
-  id: Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest})
+- uid: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  id: Subscribe(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
   parent: Virtufin.Api.Services.GatewaySubscriptionManager
   langs:
   - csharp
   - vb
-  name: Subscribe(string, ChannelWriter<TopicEventRequest>)
-  nameWithType: GatewaySubscriptionManager.Subscribe(string, ChannelWriter<TopicEventRequest>)
-  fullName: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.TopicEventRequest>)
+  name: Subscribe(string, ChannelWriter<SubscribeResponse>)
+  nameWithType: GatewaySubscriptionManager.Subscribe(string, ChannelWriter<SubscribeResponse>)
+  fullName: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.SubscribeResponse>)
   type: Method
   source:
     remote:
@@ -137,19 +137,19 @@ items:
     when the gRPC call ends.
   example: []
   syntax:
-    content: public string Subscribe(string topic, ChannelWriter<TopicEventRequest> writer)
+    content: public string Subscribe(string topic, ChannelWriter<SubscribeResponse> writer)
     parameters:
     - id: topic
       type: System.String
     - id: writer
-      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest}
+      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse}
     return:
       type: System.String
-    content.vb: Public Function Subscribe(topic As String, writer As ChannelWriter(Of TopicEventRequest)) As String
+    content.vb: Public Function Subscribe(topic As String, writer As ChannelWriter(Of SubscribeResponse)) As String
   overload: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe*
-  nameWithType.vb: GatewaySubscriptionManager.Subscribe(String, ChannelWriter(Of TopicEventRequest))
-  fullName.vb: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.TopicEventRequest))
-  name.vb: Subscribe(String, ChannelWriter(Of TopicEventRequest))
+  nameWithType.vb: GatewaySubscriptionManager.Subscribe(String, ChannelWriter(Of SubscribeResponse))
+  fullName.vb: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.SubscribeResponse))
+  name.vb: Subscribe(String, ChannelWriter(Of SubscribeResponse))
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager.UnsubscribeById(System.String)
   commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.UnsubscribeById(System.String)
   id: UnsubscribeById(System.String)
@@ -245,16 +245,16 @@ items:
   nameWithType.vb: GatewaySubscriptionManager.BroadcastToTopicAsync(String, String, String, String, String, String, Byte(), String, String, String)
   fullName.vb: Virtufin.Api.Services.GatewaySubscriptionManager.BroadcastToTopicAsync(String, String, String, String, String, String, Byte(), String, String, String)
   name.vb: BroadcastToTopicAsync(String, String, String, String, String, String, Byte(), String, String, String)
-- uid: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  id: SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+- uid: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  id: SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
   parent: Virtufin.Api.Services.GatewaySubscriptionManager
   langs:
   - csharp
   - vb
-  name: SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)
-  nameWithType: GatewaySubscriptionManager.SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)
-  fullName: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription, Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
+  name: SendEventAsync(GatewaySubscription, SubscribeResponse, CancellationToken)
+  nameWithType: GatewaySubscriptionManager.SendEventAsync(GatewaySubscription, SubscribeResponse, CancellationToken)
+  fullName: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync(Virtufin.Api.Services.GatewaySubscription, Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -263,28 +263,28 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SendEventAsync
     path: ../../../src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
-    startLine: 91
+    startLine: 102
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   summary: Sends an event to a subscription.
   example: []
   syntax:
-    content: protected override Task SendEventAsync(GatewaySubscription subscription, TopicEventRequest evt, CancellationToken cancellationToken)
+    content: protected override Task SendEventAsync(GatewaySubscription subscription, SubscribeResponse evt, CancellationToken cancellationToken)
     parameters:
     - id: subscription
       type: Virtufin.Api.Services.GatewaySubscription
       description: The subscription to send to.
     - id: evt
-      type: Virtufin.Api.Protos.TopicEventRequest
+      type: Virtufin.Api.Protos.SubscribeResponse
       description: The event to send.
     - id: cancellationToken
       type: System.Threading.CancellationToken
       description: The cancellation token.
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Protected Overrides Function SendEventAsync(subscription As GatewaySubscription, evt As TopicEventRequest, cancellationToken As CancellationToken) As Task
-  overridden: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+    content.vb: Protected Overrides Function SendEventAsync(subscription As GatewaySubscription, evt As SubscribeResponse, cancellationToken As CancellationToken) As Task
+  overridden: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
   overload: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync*
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
   commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
@@ -304,7 +304,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetSubscriptionKey
     path: ../../../src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
-    startLine: 109
+    startLine: 120
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -320,7 +320,7 @@ items:
       type: System.String
       description: The subscription key string.
     content.vb: Protected Overrides Function GetSubscriptionKey(subscription As GatewaySubscription) As String
-  overridden: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
+  overridden: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
   overload: Virtufin.Api.Services.GatewaySubscriptionManager.GetSubscriptionKey*
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
   commentId: M:Virtufin.Api.Services.GatewaySubscriptionManager.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
@@ -340,7 +340,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetIdleTimeout
     path: ../../../src/Virtufin.Api/Services/GatewaySubscriptionManager.cs
-    startLine: 112
+    startLine: 123
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -356,7 +356,7 @@ items:
       type: System.TimeSpan
       description: The idle timeout duration.
     content.vb: Protected Overrides Function GetIdleTimeout(subscription As GatewaySubscription) As TimeSpan
-  overridden: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
+  overridden: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
   overload: Virtufin.Api.Services.GatewaySubscriptionManager.GetIdleTimeout*
 references:
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager.BroadcastToTopicAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Byte[],System.String,System.String,System.String)
@@ -556,24 +556,24 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
-  commentId: T:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
+  commentId: T:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   parent: Virtufin.Api.Services
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html
-  name: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription)
-  name.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription)
+  name: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription)
+  name.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription)
   spec.csharp:
   - uid: Virtufin.Api.Services.SubscriptionManagerBase`2
     name: SubscriptionManagerBase
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html
   - name: <
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: ','
   - name: " "
   - uid: Virtufin.Api.Services.GatewaySubscription
@@ -587,46 +587,46 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: ','
   - name: " "
   - uid: Virtufin.Api.Services.GatewaySubscription
     name: GatewaySubscription
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: )
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}._subscriptions
-  commentId: F:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}._subscriptions
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}._subscriptions
+  commentId: F:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}._subscriptions
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2._subscriptions
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2__subscriptions
   name: _subscriptions
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>._subscriptions
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>._subscriptions
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription)._subscriptions
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription)._subscriptions
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}._logger
-  commentId: F:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}._logger
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>._subscriptions
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>._subscriptions
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription)._subscriptions
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription)._subscriptions
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}._logger
+  commentId: F:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}._logger
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2._logger
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2__logger
   name: _logger
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>._logger
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>._logger
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription)._logger
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription)._logger
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>._logger
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>._logger
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription)._logger
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription)._logger
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionKey(`1)
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionKey__1_
   name: GetSubscriptionKey(GatewaySubscription)
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>.GetSubscriptionKey(GatewaySubscription)
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription).GetSubscriptionKey(GatewaySubscription)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription).GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>.GetSubscriptionKey(GatewaySubscription)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription).GetSubscriptionKey(GatewaySubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription).GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
   spec.csharp:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
     name: GetSubscriptionKey
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionKey__1_
   - name: (
@@ -635,7 +635,7 @@ references:
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionKey(Virtufin.Api.Services.GatewaySubscription)
     name: GetSubscriptionKey
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionKey__1_
   - name: (
@@ -643,18 +643,18 @@ references:
     name: GatewaySubscription
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: )
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2.GetIdleTimeout(`1)
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetIdleTimeout__1_
   name: GetIdleTimeout(GatewaySubscription)
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>.GetIdleTimeout(GatewaySubscription)
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription).GetIdleTimeout(GatewaySubscription)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription).GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>.GetIdleTimeout(GatewaySubscription)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription).GetIdleTimeout(GatewaySubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription).GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
   spec.csharp:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
     name: GetIdleTimeout
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetIdleTimeout__1_
   - name: (
@@ -663,7 +663,7 @@ references:
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetIdleTimeout(Virtufin.Api.Services.GatewaySubscription)
     name: GetIdleTimeout
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetIdleTimeout__1_
   - name: (
@@ -671,18 +671,18 @@ references:
     name: GatewaySubscription
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: )
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2.SendEventAsync(`1,`0,System.Threading.CancellationToken)
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_SendEventAsync__1__0_System_Threading_CancellationToken_
-  name: SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>.SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>.SendEventAsync(Virtufin.Api.Services.GatewaySubscription, Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription).SendEventAsync(GatewaySubscription, TopicEventRequest, CancellationToken)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription).SendEventAsync(Virtufin.Api.Services.GatewaySubscription, Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
+  name: SendEventAsync(GatewaySubscription, SubscribeResponse, CancellationToken)
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>.SendEventAsync(GatewaySubscription, SubscribeResponse, CancellationToken)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>.SendEventAsync(Virtufin.Api.Services.GatewaySubscription, Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription).SendEventAsync(GatewaySubscription, SubscribeResponse, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription).SendEventAsync(Virtufin.Api.Services.GatewaySubscription, Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
   spec.csharp:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
     name: SendEventAsync
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_SendEventAsync__1__0_System_Threading_CancellationToken_
   - name: (
@@ -691,8 +691,8 @@ references:
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: ','
   - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -701,7 +701,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.SendEventAsync(Virtufin.Api.Services.GatewaySubscription,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
     name: SendEventAsync
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_SendEventAsync__1__0_System_Threading_CancellationToken_
   - name: (
@@ -710,8 +710,8 @@ references:
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: ','
   - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -719,18 +719,18 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2.Subscribe(`1)
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Subscribe__1_
   name: Subscribe(GatewaySubscription)
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>.Subscribe(GatewaySubscription)
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>.Subscribe(Virtufin.Api.Services.GatewaySubscription)
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription).Subscribe(GatewaySubscription)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription).Subscribe(Virtufin.Api.Services.GatewaySubscription)
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>.Subscribe(GatewaySubscription)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>.Subscribe(Virtufin.Api.Services.GatewaySubscription)
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription).Subscribe(GatewaySubscription)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription).Subscribe(Virtufin.Api.Services.GatewaySubscription)
   spec.csharp:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
     name: Subscribe
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Subscribe__1_
   - name: (
@@ -739,7 +739,7 @@ references:
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Subscribe(Virtufin.Api.Services.GatewaySubscription)
     name: Subscribe
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Subscribe__1_
   - name: (
@@ -747,19 +747,19 @@ references:
     name: GatewaySubscription
     href: Virtufin.Api.Services.GatewaySubscription.html
   - name: )
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2.Unsubscribe(System.String,System.String)
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Unsubscribe_System_String_System_String_
   name: Unsubscribe(string, string)
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>.Unsubscribe(string, string)
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>.Unsubscribe(string, string)
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription).Unsubscribe(String, String)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription).Unsubscribe(String, String)
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>.Unsubscribe(string, string)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>.Unsubscribe(string, string)
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription).Unsubscribe(String, String)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription).Unsubscribe(String, String)
   name.vb: Unsubscribe(String, String)
   spec.csharp:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
     name: Unsubscribe
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Unsubscribe_System_String_System_String_
   - name: (
@@ -775,7 +775,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.Unsubscribe(System.String,System.String)
     name: Unsubscribe
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_Unsubscribe_System_String_System_String_
   - name: (
@@ -790,19 +790,19 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2.BroadcastAsync(System.String,`0,System.Threading.CancellationToken)
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_BroadcastAsync_System_String__0_System_Threading_CancellationToken_
-  name: BroadcastAsync(string, TopicEventRequest, CancellationToken)
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>.BroadcastAsync(string, TopicEventRequest, CancellationToken)
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>.BroadcastAsync(string, Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription).BroadcastAsync(String, TopicEventRequest, CancellationToken)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription).BroadcastAsync(String, Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
-  name.vb: BroadcastAsync(String, TopicEventRequest, CancellationToken)
+  name: BroadcastAsync(string, SubscribeResponse, CancellationToken)
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>.BroadcastAsync(string, SubscribeResponse, CancellationToken)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>.BroadcastAsync(string, Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription).BroadcastAsync(String, SubscribeResponse, CancellationToken)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription).BroadcastAsync(String, Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
+  name.vb: BroadcastAsync(String, SubscribeResponse, CancellationToken)
   spec.csharp:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
     name: BroadcastAsync
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_BroadcastAsync_System_String__0_System_Threading_CancellationToken_
   - name: (
@@ -812,8 +812,8 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -822,7 +822,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.BroadcastAsync(System.String,Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
     name: BroadcastAsync
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_BroadcastAsync_System_String__0_System_Threading_CancellationToken_
   - name: (
@@ -832,8 +832,8 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: ','
   - name: " "
   - uid: System.Threading.CancellationToken
@@ -841,19 +841,19 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2.GetSubscriptionCount(System.String)
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionCount_System_String_
   name: GetSubscriptionCount(string)
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>.GetSubscriptionCount(string)
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>.GetSubscriptionCount(string)
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription).GetSubscriptionCount(String)
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription).GetSubscriptionCount(String)
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>.GetSubscriptionCount(string)
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>.GetSubscriptionCount(string)
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription).GetSubscriptionCount(String)
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription).GetSubscriptionCount(String)
   name.vb: GetSubscriptionCount(String)
   spec.csharp:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
     name: GetSubscriptionCount
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionCount_System_String_
   - name: (
@@ -863,7 +863,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetSubscriptionCount(System.String)
     name: GetSubscriptionCount
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetSubscriptionCount_System_String_
   - name: (
@@ -872,24 +872,24 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
-  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
-  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}
+- uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
+  commentId: M:Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
+  parent: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}
   definition: Virtufin.Api.Services.SubscriptionManagerBase`2.GetTotalSubscriptionCount
   href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetTotalSubscriptionCount
   name: GetTotalSubscriptionCount()
-  nameWithType: SubscriptionManagerBase<TopicEventRequest, GatewaySubscription>.GetTotalSubscriptionCount()
-  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription>.GetTotalSubscriptionCount()
-  nameWithType.vb: SubscriptionManagerBase(Of TopicEventRequest, GatewaySubscription).GetTotalSubscriptionCount()
-  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.TopicEventRequest, Virtufin.Api.Services.GatewaySubscription).GetTotalSubscriptionCount()
+  nameWithType: SubscriptionManagerBase<SubscribeResponse, GatewaySubscription>.GetTotalSubscriptionCount()
+  fullName: Virtufin.Api.Services.SubscriptionManagerBase<Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription>.GetTotalSubscriptionCount()
+  nameWithType.vb: SubscriptionManagerBase(Of SubscribeResponse, GatewaySubscription).GetTotalSubscriptionCount()
+  fullName.vb: Virtufin.Api.Services.SubscriptionManagerBase(Of Virtufin.Api.Protos.SubscribeResponse, Virtufin.Api.Services.GatewaySubscription).GetTotalSubscriptionCount()
   spec.csharp:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
     name: GetTotalSubscriptionCount
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetTotalSubscriptionCount
   - name: (
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.TopicEventRequest,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
+  - uid: Virtufin.Api.Services.SubscriptionManagerBase{Virtufin.Api.Protos.SubscribeResponse,Virtufin.Api.Services.GatewaySubscription}.GetTotalSubscriptionCount
     name: GetTotalSubscriptionCount
     href: Virtufin.Api.Services.SubscriptionManagerBase-2.html#Virtufin_Api_Services_SubscriptionManagerBase_2_GetTotalSubscriptionCount
   - name: (
@@ -1553,7 +1553,7 @@ references:
   - name: )
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe*
   commentId: Overload:Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe
-  href: Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_Subscribe_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_TopicEventRequest__
+  href: Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_Subscribe_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_SubscribeResponse__
   name: Subscribe
   nameWithType: GatewaySubscriptionManager.Subscribe
   fullName: Virtufin.Api.Services.GatewaySubscriptionManager.Subscribe
@@ -1568,25 +1568,25 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest}
-  commentId: T:System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.TopicEventRequest}
+- uid: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse}
+  commentId: T:System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse}
   parent: System.Threading.Channels
   definition: System.Threading.Channels.ChannelWriter`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
-  name: ChannelWriter<TopicEventRequest>
-  nameWithType: ChannelWriter<TopicEventRequest>
-  fullName: System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.TopicEventRequest>
-  nameWithType.vb: ChannelWriter(Of TopicEventRequest)
-  fullName.vb: System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.TopicEventRequest)
-  name.vb: ChannelWriter(Of TopicEventRequest)
+  name: ChannelWriter<SubscribeResponse>
+  nameWithType: ChannelWriter<SubscribeResponse>
+  fullName: System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.SubscribeResponse>
+  nameWithType.vb: ChannelWriter(Of SubscribeResponse)
+  fullName.vb: System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.SubscribeResponse)
+  name.vb: ChannelWriter(Of SubscribeResponse)
   spec.csharp:
   - uid: System.Threading.Channels.ChannelWriter`1
     name: ChannelWriter
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
   - name: <
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Channels.ChannelWriter`1
@@ -1596,8 +1596,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
 - uid: System.Threading.Channels.ChannelWriter`1
   commentId: T:System.Threading.Channels.ChannelWriter`1
@@ -1746,7 +1746,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync*
   commentId: Overload:Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync
-  href: Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_SendEventAsync_Virtufin_Api_Services_GatewaySubscription_Virtufin_Api_Protos_TopicEventRequest_System_Threading_CancellationToken_
+  href: Virtufin.Api.Services.GatewaySubscriptionManager.html#Virtufin_Api_Services_GatewaySubscriptionManager_SendEventAsync_Virtufin_Api_Services_GatewaySubscription_Virtufin_Api_Protos_SubscribeResponse_System_Threading_CancellationToken_
   name: SendEventAsync
   nameWithType: GatewaySubscriptionManager.SendEventAsync
   fullName: Virtufin.Api.Services.GatewaySubscriptionManager.SendEventAsync
@@ -1757,12 +1757,12 @@ references:
   name: GatewaySubscription
   nameWithType: GatewaySubscription
   fullName: Virtufin.Api.Services.GatewaySubscription
-- uid: Virtufin.Api.Protos.TopicEventRequest
-  commentId: T:Virtufin.Api.Protos.TopicEventRequest
+- uid: Virtufin.Api.Protos.SubscribeResponse
+  commentId: T:Virtufin.Api.Protos.SubscribeResponse
   parent: Virtufin.Api.Protos
-  name: TopicEventRequest
-  nameWithType: TopicEventRequest
-  fullName: Virtufin.Api.Protos.TopicEventRequest
+  name: SubscribeResponse
+  nameWithType: SubscribeResponse
+  fullName: Virtufin.Api.Protos.SubscribeResponse
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading

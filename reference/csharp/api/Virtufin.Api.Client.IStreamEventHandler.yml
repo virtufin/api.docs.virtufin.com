@@ -6,7 +6,7 @@ items:
   parent: Virtufin.Api.Client
   children:
   - Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
-  - Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   langs:
   - csharp
   - vb
@@ -32,16 +32,16 @@ items:
     content.vb: Public Interface IStreamEventHandler
   derivedClasses:
   - Virtufin.Api.Client.StreamEventHandler
-- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  id: OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  id: OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   parent: Virtufin.Api.Client.IStreamEventHandler
   langs:
   - csharp
   - vb
-  name: OnEvent(TopicEventRequest)
-  nameWithType: IStreamEventHandler.OnEvent(TopicEventRequest)
-  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  name: OnEvent(SubscribeResponse)
+  nameWithType: IStreamEventHandler.OnEvent(SubscribeResponse)
+  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   type: Method
   source:
     remote:
@@ -57,12 +57,12 @@ items:
   summary: Called when a regular event is received.
   example: []
   syntax:
-    content: void OnEvent(TopicEventRequest e)
+    content: void OnEvent(SubscribeResponse e)
     parameters:
     - id: e
-      type: Virtufin.Api.Protos.TopicEventRequest
+      type: Virtufin.Api.Protos.SubscribeResponse
       description: The topic event request containing event data.
-    content.vb: Sub OnEvent(e As TopicEventRequest)
+    content.vb: Sub OnEvent(e As SubscribeResponse)
   overload: Virtufin.Api.Client.IStreamEventHandler.OnEvent*
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
   commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
@@ -129,16 +129,16 @@ references:
     href: Virtufin.Api.Client.html
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent*
   commentId: Overload:Virtufin.Api.Client.IStreamEventHandler.OnEvent
-  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
   name: OnEvent
   nameWithType: IStreamEventHandler.OnEvent
   fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent
-- uid: Virtufin.Api.Protos.TopicEventRequest
-  commentId: T:Virtufin.Api.Protos.TopicEventRequest
+- uid: Virtufin.Api.Protos.SubscribeResponse
+  commentId: T:Virtufin.Api.Protos.SubscribeResponse
   parent: Virtufin.Api.Protos
-  name: TopicEventRequest
-  nameWithType: TopicEventRequest
-  fullName: Virtufin.Api.Protos.TopicEventRequest
+  name: SubscribeResponse
+  nameWithType: SubscribeResponse
+  fullName: Virtufin.Api.Protos.SubscribeResponse
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
   name: Virtufin.Api.Protos

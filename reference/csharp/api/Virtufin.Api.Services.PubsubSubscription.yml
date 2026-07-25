@@ -5,7 +5,7 @@ items:
   id: PubsubSubscription
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
+  - Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
   - Virtufin.Api.Services.PubsubSubscription.AddedAt
   - Virtufin.Api.Services.PubsubSubscription.Topic
   - Virtufin.Api.Services.PubsubSubscription.Writer
@@ -18,17 +18,15 @@ items:
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubSubscription
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 262
+    path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
+    startLine: 65
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Represents an active subscription to a pub/sub topic.
-  example: []
   syntax:
     content: public class PubsubSubscription
     content.vb: Public Class PubsubSubscription
@@ -55,21 +53,21 @@ items:
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Writer
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 264
+    path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
+    startLine: 67
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public ChannelWriter<PubsubSubscribeResponse> Writer { get; }
+    content: public ChannelWriter<SubscribeResponse> Writer { get; }
     parameters: []
     return:
-      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-    content.vb: Public ReadOnly Property Writer As ChannelWriter(Of PubsubSubscribeResponse)
+      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse}
+    content.vb: Public ReadOnly Property Writer As ChannelWriter(Of SubscribeResponse)
   overload: Virtufin.Api.Services.PubsubSubscription.Writer*
 - uid: Virtufin.Api.Services.PubsubSubscription.Topic
   commentId: P:Virtufin.Api.Services.PubsubSubscription.Topic
@@ -84,12 +82,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Topic
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 265
+    path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
+    startLine: 68
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -113,12 +111,12 @@ items:
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: AddedAt
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 266
+    path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
+    startLine: 69
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -129,40 +127,40 @@ items:
       type: System.DateTime
     content.vb: Public ReadOnly Property AddedAt As Date
   overload: Virtufin.Api.Services.PubsubSubscription.AddedAt*
-- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})
-  id: '#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse})'
+- uid: Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  commentId: M:Virtufin.Api.Services.PubsubSubscription.#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})
+  id: '#ctor(System.String,System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse})'
   parent: Virtufin.Api.Services.PubsubSubscription
   langs:
   - csharp
   - vb
-  name: PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
-  nameWithType: PubsubSubscription.PubsubSubscription(string, ChannelWriter<PubsubSubscribeResponse>)
-  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>)
+  name: PubsubSubscription(string, ChannelWriter<SubscribeResponse>)
+  nameWithType: PubsubSubscription.PubsubSubscription(string, ChannelWriter<SubscribeResponse>)
+  fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription(string, System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.SubscribeResponse>)
   type: Constructor
   source:
     remote:
-      path: src/Virtufin.Api/Services/PubSubService.cs
+      path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
-    path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 268
+    path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
+    startLine: 71
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public PubsubSubscription(string topic, ChannelWriter<PubsubSubscribeResponse> writer)
+    content: public PubsubSubscription(string topic, ChannelWriter<SubscribeResponse> writer)
     parameters:
     - id: topic
       type: System.String
     - id: writer
-      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-    content.vb: Public Sub New(topic As String, writer As ChannelWriter(Of PubsubSubscribeResponse))
+      type: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse}
+    content.vb: Public Sub New(topic As String, writer As ChannelWriter(Of SubscribeResponse))
   overload: Virtufin.Api.Services.PubsubSubscription.#ctor*
-  nameWithType.vb: PubsubSubscription.New(String, ChannelWriter(Of PubsubSubscribeResponse))
-  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse))
-  name.vb: New(String, ChannelWriter(Of PubsubSubscribeResponse))
+  nameWithType.vb: PubsubSubscription.New(String, ChannelWriter(Of SubscribeResponse))
+  fullName.vb: Virtufin.Api.Services.PubsubSubscription.New(String, System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.SubscribeResponse))
+  name.vb: New(String, ChannelWriter(Of SubscribeResponse))
 references:
 - uid: Virtufin.Api.Services
   commentId: N:Virtufin.Api.Services
@@ -437,25 +435,25 @@ references:
   name: Writer
   nameWithType: PubsubSubscription.Writer
   fullName: Virtufin.Api.Services.PubsubSubscription.Writer
-- uid: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-  commentId: T:System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+- uid: System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse}
+  commentId: T:System.Threading.Channels.ChannelWriter{Virtufin.Api.Protos.SubscribeResponse}
   parent: System.Threading.Channels
   definition: System.Threading.Channels.ChannelWriter`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
-  name: ChannelWriter<PubsubSubscribeResponse>
-  nameWithType: ChannelWriter<PubsubSubscribeResponse>
-  fullName: System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>
-  nameWithType.vb: ChannelWriter(Of PubsubSubscribeResponse)
-  fullName.vb: System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
-  name.vb: ChannelWriter(Of PubsubSubscribeResponse)
+  name: ChannelWriter<SubscribeResponse>
+  nameWithType: ChannelWriter<SubscribeResponse>
+  fullName: System.Threading.Channels.ChannelWriter<Virtufin.Api.Protos.SubscribeResponse>
+  nameWithType.vb: ChannelWriter(Of SubscribeResponse)
+  fullName.vb: System.Threading.Channels.ChannelWriter(Of Virtufin.Api.Protos.SubscribeResponse)
+  name.vb: ChannelWriter(Of SubscribeResponse)
   spec.csharp:
   - uid: System.Threading.Channels.ChannelWriter`1
     name: ChannelWriter
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.channels.channelwriter-1
   - name: <
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Channels.ChannelWriter`1
@@ -465,8 +463,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
 - uid: System.Threading.Channels.ChannelWriter`1
   commentId: T:System.Threading.Channels.ChannelWriter`1
@@ -569,7 +567,7 @@ references:
   name.vb: Date
 - uid: Virtufin.Api.Services.PubsubSubscription.#ctor*
   commentId: Overload:Virtufin.Api.Services.PubsubSubscription.#ctor
-  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__
+  href: Virtufin.Api.Services.PubsubSubscription.html#Virtufin_Api_Services_PubsubSubscription__ctor_System_String_System_Threading_Channels_ChannelWriter_Virtufin_Api_Protos_SubscribeResponse__
   name: PubsubSubscription
   nameWithType: PubsubSubscription.PubsubSubscription
   fullName: Virtufin.Api.Services.PubsubSubscription.PubsubSubscription

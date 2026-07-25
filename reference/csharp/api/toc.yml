@@ -114,6 +114,9 @@ items:
     - uid: Virtufin.Api.Services.AggregatedReflectionV1Service
       name: AggregatedReflectionV1Service
       type: Class
+    - uid: Virtufin.Api.Services.CloudEventExtensions
+      name: CloudEventExtensions
+      type: Class
     - uid: Virtufin.Api.Services.ConfigService
       name: ConfigService
       type: Class

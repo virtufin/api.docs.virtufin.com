@@ -11,7 +11,6 @@ items:
   - Virtufin.Api.Services.GatewayService.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.ListMethods(Virtufin.Api.Protos.ListMethodsRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.ListServices(Virtufin.Api.Protos.ListServicesRequest,Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
   langs:
   - csharp
   - vb
@@ -120,7 +119,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Invoke
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 118
+    startLine: 109
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -159,7 +158,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeJson
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 166
+    startLine: 157
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -201,7 +200,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListServices
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 213
+    startLine: 204
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -240,7 +239,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethods
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 237
+    startLine: 228
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -261,65 +260,6 @@ items:
     content.vb: Public Overrides Function ListMethods(request As ListMethodsRequest, context As ServerCallContext) As Task(Of ListMethodsResponse)
   overridden: Virtufin.Api.Protos.Gateway.GatewayBase.ListMethods(Virtufin.Api.Protos.ListMethodsRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.GatewayService.ListMethods*
-- uid: Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  id: Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Services.GatewayService
-  langs:
-  - csharp
-  - vb
-  name: Subscribe(SubscribeRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  nameWithType: GatewayService.Subscribe(SubscribeRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  fullName: Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
-  type: Method
-  source:
-    remote:
-      path: src/Virtufin.Api/Services/GatewayService.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Subscribe
-    path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 281
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Services
-  summary: >-
-    Subscribes to events from specified services and topics.
-
-    Returns a stream of TopicEventRequest messages.
-
-
-    Per the Pub/Sub Topics spec §Subscription Implementation Pattern:
-
-    one Dapr subscription per topic per API process, with in-process
-
-    fan-out to every gRPC caller on the topic. Two callers on the
-
-    same topic share one Dapr subscription; the message is broadcast
-
-    to both. (Previously each gRPC call opened its own Dapr
-
-    subscription, which silently load-balanced messages across
-
-    callers instead of broadcasting.)
-  example: []
-  syntax:
-    content: public override Task Subscribe(SubscribeRequest request, IServerStreamWriter<TopicEventRequest> responseStream, ServerCallContext context)
-    parameters:
-    - id: request
-      type: Virtufin.Api.Protos.SubscribeRequest
-    - id: responseStream
-      type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest}
-    - id: context
-      type: Grpc.Core.ServerCallContext
-    return:
-      type: System.Threading.Tasks.Task
-    content.vb: Public Overrides Function Subscribe(request As SubscribeRequest, responseStream As IServerStreamWriter(Of TopicEventRequest), context As ServerCallContext) As Task
-  overridden: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  overload: Virtufin.Api.Services.GatewayService.Subscribe*
-  nameWithType.vb: GatewayService.Subscribe(SubscribeRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  fullName.vb: Virtufin.Api.Services.GatewayService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
-  name.vb: Subscribe(SubscribeRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
 - uid: Virtufin.Api.Services.GatewayService.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.GatewayService.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   id: GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
@@ -338,7 +278,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetMethodSchema
     path: ../../../src/Virtufin.Api/Services/GatewayService.cs
-    startLine: 378
+    startLine: 268
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -1309,144 +1249,6 @@ references:
   - name: " "
   - uid: Virtufin.Api.Protos.ListMethodsResponse
     name: ListMethodsResponse
-  - name: )
-- uid: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-  parent: Virtufin.Api.Protos.Gateway.GatewayBase
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: Subscribe(SubscribeRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  nameWithType: Gateway.GatewayBase.Subscribe(SubscribeRequest, IServerStreamWriter<TopicEventRequest>, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>, Grpc.Core.ServerCallContext)
-  nameWithType.vb: Gateway.GatewayBase.Subscribe(SubscribeRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  fullName.vb: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest), Grpc.Core.ServerCallContext)
-  name.vb: Subscribe(SubscribeRequest, IServerStreamWriter(Of TopicEventRequest), ServerCallContext)
-  spec.csharp:
-  - uid: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-    name: Subscribe
-  - name: (
-  - uid: Virtufin.Api.Protos.SubscribeRequest
-    name: SubscribeRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: <
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: '>'
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-  spec.vb:
-  - uid: Virtufin.Api.Protos.Gateway.GatewayBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest},Grpc.Core.ServerCallContext)
-    name: Subscribe
-  - name: (
-  - uid: Virtufin.Api.Protos.SubscribeRequest
-    name: SubscribeRequest
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: )
-  - name: ','
-  - name: " "
-  - uid: Grpc.Core.ServerCallContext
-    name: ServerCallContext
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
-  - name: )
-- uid: Virtufin.Api.Services.GatewayService.Subscribe*
-  commentId: Overload:Virtufin.Api.Services.GatewayService.Subscribe
-  href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService_Subscribe_Virtufin_Api_Protos_SubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_TopicEventRequest__Grpc_Core_ServerCallContext_
-  name: Subscribe
-  nameWithType: GatewayService.Subscribe
-  fullName: Virtufin.Api.Services.GatewayService.Subscribe
-- uid: Virtufin.Api.Protos.SubscribeRequest
-  commentId: T:Virtufin.Api.Protos.SubscribeRequest
-  parent: Virtufin.Api.Protos
-  name: SubscribeRequest
-  nameWithType: SubscribeRequest
-  fullName: Virtufin.Api.Protos.SubscribeRequest
-- uid: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest}
-  commentId: T:Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.TopicEventRequest}
-  parent: Grpc.Core
-  definition: Grpc.Core.IServerStreamWriter`1
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: IServerStreamWriter<TopicEventRequest>
-  nameWithType: IServerStreamWriter<TopicEventRequest>
-  fullName: Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.TopicEventRequest>
-  nameWithType.vb: IServerStreamWriter(Of TopicEventRequest)
-  fullName.vb: Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.TopicEventRequest)
-  name.vb: IServerStreamWriter(Of TopicEventRequest)
-  spec.csharp:
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: <
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: '>'
-  spec.vb:
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: )
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
-- uid: Grpc.Core.IServerStreamWriter`1
-  commentId: T:Grpc.Core.IServerStreamWriter`1
-  isExternal: true
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: IServerStreamWriter<T>
-  nameWithType: IServerStreamWriter<T>
-  fullName: Grpc.Core.IServerStreamWriter<T>
-  nameWithType.vb: IServerStreamWriter(Of T)
-  fullName.vb: Grpc.Core.IServerStreamWriter(Of T)
-  name.vb: IServerStreamWriter(Of T)
-  spec.csharp:
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: Grpc.Core.IServerStreamWriter`1
-    name: IServerStreamWriter
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
   - name: )
 - uid: Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Protos.Gateway.GatewayBase.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)

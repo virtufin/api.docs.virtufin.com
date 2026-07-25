@@ -26,7 +26,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: StateService
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -62,7 +62,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -98,7 +98,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 23
+    startLine: 38
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -133,7 +133,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 79
+    startLine: 93
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -168,7 +168,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: QueryState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 117
+    startLine: 131
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -213,7 +213,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 161
+    startLine: 175
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -248,7 +248,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 197
+    startLine: 211
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -283,7 +283,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 254
+    startLine: 268
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services

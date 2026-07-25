@@ -7,7 +7,7 @@ items:
   children:
   - Virtufin.Api.Services.PubsubService.#ctor(Dapr.Client.DaprClient,System.IServiceProvider,Virtufin.Api.Services.PubsubSubscriptionManager,Virtufin.Api.Services.TopicDaprSubscriptionRegistry,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.PubsubService})
   - Virtufin.Api.Services.PubsubService.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
-  - Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+  - Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.PubsubService.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
   langs:
   - csharp
@@ -23,11 +23,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubService
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 17
+    startLine: 13
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
-  summary: Implements the Pubsub gRPC service for publish/subscribe messaging via Dapr.
+  summary: >-
+    Implements the Pubsub gRPC service for publish/subscribe messaging via Dapr.
+
+    Publish receives a CloudEvent proto; Subscribe streams reconstructed CloudEvents.
   example: []
   syntax:
     content: 'public class PubsubService : Pubsub.PubsubBase'
@@ -61,7 +64,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 27
+    startLine: 21
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -101,7 +104,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEvent
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 41
+    startLine: 35
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -118,16 +121,16 @@ items:
     content.vb: Public Overrides Function PublishEvent(request As PublishRequest, context As ServerCallContext) As Task(Of PublishResponse)
   overridden: Virtufin.Api.Protos.Pubsub.PubsubBase.PublishEvent(Virtufin.Api.Protos.PublishRequest,Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.PubsubService.PublishEvent*
-- uid: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  id: Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+- uid: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
+  id: Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Services.PubsubService
   langs:
   - csharp
   - vb
-  name: Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  nameWithType: PubsubService.Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  fullName: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, Grpc.Core.ServerCallContext)
+  name: Subscribe(SubscribeRequest, IServerStreamWriter<SubscribeResponse>, ServerCallContext)
+  nameWithType: PubsubService.Subscribe(SubscribeRequest, IServerStreamWriter<SubscribeResponse>, ServerCallContext)
+  fullName: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.SubscribeResponse>, Grpc.Core.ServerCallContext)
   type: Method
   source:
     remote:
@@ -136,40 +139,32 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 116
+    startLine: 75
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   summary: >-
-    Handles a client subscribe request. Acquires a reference to the
+    Subscribe to one or more Dapr topics. Each topic gets its own Dapr
 
-    shared Dapr subscription for the topic (one per topic per API process,
-
-    per the Pub/Sub Topics spec §Subscription Implementation Pattern),
-
-    registers an in-process channel for the new caller, and streams
-
-    received messages back via the channel. The shared Dapr subscription
-
-    fans out to all in-process callers via PubsubSubscriptionManager.
+    subscription; all messages are multiplexed into a single response stream.
   example: []
   syntax:
-    content: public override Task Subscribe(PubsubSubscribeRequest request, IServerStreamWriter<PubsubSubscribeResponse> responseStream, ServerCallContext context)
+    content: public override Task Subscribe(SubscribeRequest request, IServerStreamWriter<SubscribeResponse> responseStream, ServerCallContext context)
     parameters:
     - id: request
-      type: Virtufin.Api.Protos.PubsubSubscribeRequest
+      type: Virtufin.Api.Protos.SubscribeRequest
     - id: responseStream
-      type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+      type: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse}
     - id: context
       type: Grpc.Core.ServerCallContext
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Overrides Function Subscribe(request As PubsubSubscribeRequest, responseStream As IServerStreamWriter(Of PubsubSubscribeResponse), context As ServerCallContext) As Task
-  overridden: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+    content.vb: Public Overrides Function Subscribe(request As SubscribeRequest, responseStream As IServerStreamWriter(Of SubscribeResponse), context As ServerCallContext) As Task
+  overridden: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
   overload: Virtufin.Api.Services.PubsubService.Subscribe*
-  nameWithType.vb: PubsubService.Subscribe(PubsubSubscribeRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
-  fullName.vb: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse), Grpc.Core.ServerCallContext)
-  name.vb: Subscribe(PubsubSubscribeRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
+  nameWithType.vb: PubsubService.Subscribe(SubscribeRequest, IServerStreamWriter(Of SubscribeResponse), ServerCallContext)
+  fullName.vb: Virtufin.Api.Services.PubsubService.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.SubscribeResponse), Grpc.Core.ServerCallContext)
+  name.vb: Subscribe(SubscribeRequest, IServerStreamWriter(Of SubscribeResponse), ServerCallContext)
 - uid: Virtufin.Api.Services.PubsubService.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.PubsubService.Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
   id: Unsubscribe(Virtufin.Api.Protos.UnsubscribeRequest,Grpc.Core.ServerCallContext)
@@ -188,7 +183,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Unsubscribe
     path: ../../../src/Virtufin.Api/Services/PubSubService.cs
-    startLine: 226
+    startLine: 163
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -844,23 +839,23 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
-  commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+- uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
+  commentId: M:Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
   parent: Virtufin.Api.Protos.Pubsub.PubsubBase
   isExternal: true
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  nameWithType: Pubsub.PubsubBase.Subscribe(PubsubSubscribeRequest, IServerStreamWriter<PubsubSubscribeResponse>, ServerCallContext)
-  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>, Grpc.Core.ServerCallContext)
-  nameWithType.vb: Pubsub.PubsubBase.Subscribe(PubsubSubscribeRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
-  fullName.vb: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse), Grpc.Core.ServerCallContext)
-  name.vb: Subscribe(PubsubSubscribeRequest, IServerStreamWriter(Of PubsubSubscribeResponse), ServerCallContext)
+  name: Subscribe(SubscribeRequest, IServerStreamWriter<SubscribeResponse>, ServerCallContext)
+  nameWithType: Pubsub.PubsubBase.Subscribe(SubscribeRequest, IServerStreamWriter<SubscribeResponse>, ServerCallContext)
+  fullName: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.SubscribeResponse>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: Pubsub.PubsubBase.Subscribe(SubscribeRequest, IServerStreamWriter(Of SubscribeResponse), ServerCallContext)
+  fullName.vb: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest, Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.SubscribeResponse), Grpc.Core.ServerCallContext)
+  name.vb: Subscribe(SubscribeRequest, IServerStreamWriter(Of SubscribeResponse), ServerCallContext)
   spec.csharp:
-  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
     name: Subscribe
   - name: (
-  - uid: Virtufin.Api.Protos.PubsubSubscribeRequest
-    name: PubsubSubscribeRequest
+  - uid: Virtufin.Api.Protos.SubscribeRequest
+    name: SubscribeRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -868,8 +863,8 @@ references:
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
   - name: <
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: '>'
   - name: ','
   - name: " "
@@ -879,11 +874,11 @@ references:
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/ServerCallContext.cs
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.PubsubSubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse},Grpc.Core.ServerCallContext)
+  - uid: Virtufin.Api.Protos.Pubsub.PubsubBase.Subscribe(Virtufin.Api.Protos.SubscribeRequest,Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse},Grpc.Core.ServerCallContext)
     name: Subscribe
   - name: (
-  - uid: Virtufin.Api.Protos.PubsubSubscribeRequest
-    name: PubsubSubscribeRequest
+  - uid: Virtufin.Api.Protos.SubscribeRequest
+    name: SubscribeRequest
   - name: ','
   - name: " "
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -893,8 +888,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
   - name: ','
   - name: " "
@@ -905,35 +900,35 @@ references:
   - name: )
 - uid: Virtufin.Api.Services.PubsubService.Subscribe*
   commentId: Overload:Virtufin.Api.Services.PubsubService.Subscribe
-  href: Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_Subscribe_Virtufin_Api_Protos_PubsubSubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_PubsubSubscribeResponse__Grpc_Core_ServerCallContext_
+  href: Virtufin.Api.Services.PubsubService.html#Virtufin_Api_Services_PubsubService_Subscribe_Virtufin_Api_Protos_SubscribeRequest_Grpc_Core_IServerStreamWriter_Virtufin_Api_Protos_SubscribeResponse__Grpc_Core_ServerCallContext_
   name: Subscribe
   nameWithType: PubsubService.Subscribe
   fullName: Virtufin.Api.Services.PubsubService.Subscribe
-- uid: Virtufin.Api.Protos.PubsubSubscribeRequest
-  commentId: T:Virtufin.Api.Protos.PubsubSubscribeRequest
+- uid: Virtufin.Api.Protos.SubscribeRequest
+  commentId: T:Virtufin.Api.Protos.SubscribeRequest
   parent: Virtufin.Api.Protos
-  name: PubsubSubscribeRequest
-  nameWithType: PubsubSubscribeRequest
-  fullName: Virtufin.Api.Protos.PubsubSubscribeRequest
-- uid: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
-  commentId: T:Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.PubsubSubscribeResponse}
+  name: SubscribeRequest
+  nameWithType: SubscribeRequest
+  fullName: Virtufin.Api.Protos.SubscribeRequest
+- uid: Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse}
+  commentId: T:Grpc.Core.IServerStreamWriter{Virtufin.Api.Protos.SubscribeResponse}
   parent: Grpc.Core
   definition: Grpc.Core.IServerStreamWriter`1
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
-  name: IServerStreamWriter<PubsubSubscribeResponse>
-  nameWithType: IServerStreamWriter<PubsubSubscribeResponse>
-  fullName: Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.PubsubSubscribeResponse>
-  nameWithType.vb: IServerStreamWriter(Of PubsubSubscribeResponse)
-  fullName.vb: Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
-  name.vb: IServerStreamWriter(Of PubsubSubscribeResponse)
+  name: IServerStreamWriter<SubscribeResponse>
+  nameWithType: IServerStreamWriter<SubscribeResponse>
+  fullName: Grpc.Core.IServerStreamWriter<Virtufin.Api.Protos.SubscribeResponse>
+  nameWithType.vb: IServerStreamWriter(Of SubscribeResponse)
+  fullName.vb: Grpc.Core.IServerStreamWriter(Of Virtufin.Api.Protos.SubscribeResponse)
+  name.vb: IServerStreamWriter(Of SubscribeResponse)
   spec.csharp:
   - uid: Grpc.Core.IServerStreamWriter`1
     name: IServerStreamWriter
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/IServerStreamWriter.cs
   - name: <
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.IServerStreamWriter`1
@@ -943,8 +938,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task

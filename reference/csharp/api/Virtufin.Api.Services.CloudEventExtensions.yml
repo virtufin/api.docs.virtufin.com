@@ -1,0 +1,557 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.CloudEventExtensions
+  commentId: T:Virtufin.Api.Services.CloudEventExtensions
+  id: CloudEventExtensions
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(System.String,System.String,System.Byte[],System.String,System.Nullable{System.DateTimeOffset},System.String)
+  - Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent,System.String)
+  - Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes(CloudNative.CloudEvents.V1.CloudEvent)
+  langs:
+  - csharp
+  - vb
+  name: CloudEventExtensions
+  nameWithType: CloudEventExtensions
+  fullName: Virtufin.Api.Services.CloudEventExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/CloudEventExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: CloudEventExtensions
+    path: ../../../src/Virtufin.Api/Services/CloudEventExtensions.cs
+    startLine: 7
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  syntax:
+    content: public static class CloudEventExtensions
+    content.vb: Public Module CloudEventExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(System.String,System.String,System.Byte[],System.String,System.Nullable{System.DateTimeOffset},System.String)
+  commentId: M:Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(System.String,System.String,System.Byte[],System.String,System.Nullable{System.DateTimeOffset},System.String)
+  id: BuildCloudEvent(System.String,System.String,System.Byte[],System.String,System.Nullable{System.DateTimeOffset},System.String)
+  parent: Virtufin.Api.Services.CloudEventExtensions
+  langs:
+  - csharp
+  - vb
+  name: BuildCloudEvent(string, string, byte[], string?, DateTimeOffset?, string?)
+  nameWithType: CloudEventExtensions.BuildCloudEvent(string, string, byte[], string?, DateTimeOffset?, string?)
+  fullName: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(string, string, byte[], string?, System.DateTimeOffset?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/CloudEventExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: BuildCloudEvent
+    path: ../../../src/Virtufin.Api/Services/CloudEventExtensions.cs
+    startLine: 12
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Build a CloudEvent proto from attributes and data.
+  example: []
+  syntax:
+    content: public static CloudEvent BuildCloudEvent(string type, string source, byte[] data, string? id = null, DateTimeOffset? time = null, string? topic = null)
+    parameters:
+    - id: type
+      type: System.String
+    - id: source
+      type: System.String
+    - id: data
+      type: System.Byte[]
+    - id: id
+      type: System.String
+    - id: time
+      type: System.Nullable{System.DateTimeOffset}
+    - id: topic
+      type: System.String
+    return:
+      type: CloudNative.CloudEvents.V1.CloudEvent
+    content.vb: Public Shared Function BuildCloudEvent(type As String, source As String, data As Byte(), id As String = Nothing, time As DateTimeOffset? = Nothing, topic As String = Nothing) As CloudEvent
+  overload: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent*
+  nameWithType.vb: CloudEventExtensions.BuildCloudEvent(String, String, Byte(), String, DateTimeOffset?, String)
+  fullName.vb: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent(String, String, Byte(), String, System.DateTimeOffset?, String)
+  name.vb: BuildCloudEvent(String, String, Byte(), String, DateTimeOffset?, String)
+- uid: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes(CloudNative.CloudEvents.V1.CloudEvent)
+  commentId: M:Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes(CloudNative.CloudEvents.V1.CloudEvent)
+  id: ToJsonBytes(CloudNative.CloudEvents.V1.CloudEvent)
+  isExtensionMethod: true
+  parent: Virtufin.Api.Services.CloudEventExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToJsonBytes(CloudEvent)
+  nameWithType: CloudEventExtensions.ToJsonBytes(CloudEvent)
+  fullName: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes(CloudNative.CloudEvents.V1.CloudEvent)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/CloudEventExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ToJsonBytes
+    path: ../../../src/Virtufin.Api/Services/CloudEventExtensions.cs
+    startLine: 43
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Serialize a CloudEvent proto to JSON bytes via the CloudNative.CloudEvents library.
+  example: []
+  syntax:
+    content: public static byte[] ToJsonBytes(this CloudEvent ce)
+    parameters:
+    - id: ce
+      type: CloudNative.CloudEvents.V1.CloudEvent
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ToJsonBytes(ce As CloudEvent) As Byte()
+  overload: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes*
+- uid: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent,System.String)
+  commentId: M:Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent,System.String)
+  id: GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent,System.String)
+  isExtensionMethod: true
+  parent: Virtufin.Api.Services.CloudEventExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetStringAttr(CloudEvent, string)
+  nameWithType: CloudEventExtensions.GetStringAttr(CloudEvent, string)
+  fullName: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent, string)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/CloudEventExtensions.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: GetStringAttr
+    path: ../../../src/Virtufin.Api/Services/CloudEventExtensions.cs
+    startLine: 84
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Try to get a string attribute from a CloudEvent proto.
+  example: []
+  syntax:
+    content: public static string? GetStringAttr(this CloudEvent ce, string key)
+    parameters:
+    - id: ce
+      type: CloudNative.CloudEvents.V1.CloudEvent
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetStringAttr(ce As CloudEvent, key As String) As String
+  overload: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr*
+  nameWithType.vb: CloudEventExtensions.GetStringAttr(CloudEvent, String)
+  fullName.vb: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr(CloudNative.CloudEvents.V1.CloudEvent, String)
+  name.vb: GetStringAttr(CloudEvent, String)
+references:
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent*
+  commentId: Overload:Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent
+  href: Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_BuildCloudEvent_System_String_System_String_System_Byte___System_String_System_Nullable_System_DateTimeOffset__System_String_
+  name: BuildCloudEvent
+  nameWithType: CloudEventExtensions.BuildCloudEvent
+  fullName: Virtufin.Api.Services.CloudEventExtensions.BuildCloudEvent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: CloudNative.CloudEvents.V1.CloudEvent
+  commentId: T:CloudNative.CloudEvents.V1.CloudEvent
+  parent: CloudNative.CloudEvents.V1
+  name: CloudEvent
+  nameWithType: CloudEvent
+  fullName: CloudNative.CloudEvents.V1.CloudEvent
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CloudNative.CloudEvents.V1
+  commentId: N:CloudNative.CloudEvents.V1
+  name: CloudNative.CloudEvents.V1
+  nameWithType: CloudNative.CloudEvents.V1
+  fullName: CloudNative.CloudEvents.V1
+  spec.csharp:
+  - uid: CloudNative
+    name: CloudNative
+  - name: .
+  - uid: CloudNative.CloudEvents
+    name: CloudEvents
+  - name: .
+  - uid: CloudNative.CloudEvents.V1
+    name: V1
+  spec.vb:
+  - uid: CloudNative
+    name: CloudNative
+  - name: .
+  - uid: CloudNative.CloudEvents
+    name: CloudEvents
+  - name: .
+  - uid: CloudNative.CloudEvents.V1
+    name: V1
+- uid: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes*
+  commentId: Overload:Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes
+  href: Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_ToJsonBytes_CloudNative_CloudEvents_V1_CloudEvent_
+  name: ToJsonBytes
+  nameWithType: CloudEventExtensions.ToJsonBytes
+  fullName: Virtufin.Api.Services.CloudEventExtensions.ToJsonBytes
+- uid: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr*
+  commentId: Overload:Virtufin.Api.Services.CloudEventExtensions.GetStringAttr
+  href: Virtufin.Api.Services.CloudEventExtensions.html#Virtufin_Api_Services_CloudEventExtensions_GetStringAttr_CloudNative_CloudEvents_V1_CloudEvent_System_String_
+  name: GetStringAttr
+  nameWithType: CloudEventExtensions.GetStringAttr
+  fullName: Virtufin.Api.Services.CloudEventExtensions.GetStringAttr

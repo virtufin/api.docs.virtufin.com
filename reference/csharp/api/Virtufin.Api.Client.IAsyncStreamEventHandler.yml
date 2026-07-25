@@ -6,7 +6,7 @@ items:
   parent: Virtufin.Api.Client
   children:
   - Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception,System.Threading.CancellationToken)
-  - Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -36,18 +36,18 @@ items:
     content: 'public interface IAsyncStreamEventHandler : IStreamEventHandler'
     content.vb: Public Interface IAsyncStreamEventHandler Inherits IStreamEventHandler
   inheritedMembers:
-  - Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   - Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
-- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
-  id: OnEventAsync(Virtufin.Api.Protos.TopicEventRequest,System.Threading.CancellationToken)
+- uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
+  id: OnEventAsync(Virtufin.Api.Protos.SubscribeResponse,System.Threading.CancellationToken)
   parent: Virtufin.Api.Client.IAsyncStreamEventHandler
   langs:
   - csharp
   - vb
-  name: OnEventAsync(TopicEventRequest, CancellationToken)
-  nameWithType: IAsyncStreamEventHandler.OnEventAsync(TopicEventRequest, CancellationToken)
-  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.TopicEventRequest, System.Threading.CancellationToken)
+  name: OnEventAsync(SubscribeResponse, CancellationToken)
+  nameWithType: IAsyncStreamEventHandler.OnEventAsync(SubscribeResponse, CancellationToken)
+  fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync(Virtufin.Api.Protos.SubscribeResponse, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -63,17 +63,17 @@ items:
   summary: Called when a regular event is received. Awaited by the stream loop.
   example: []
   syntax:
-    content: Task OnEventAsync(TopicEventRequest e, CancellationToken cancellationToken = default)
+    content: Task OnEventAsync(SubscribeResponse e, CancellationToken cancellationToken = default)
     parameters:
     - id: e
-      type: Virtufin.Api.Protos.TopicEventRequest
-      description: The topic event request containing event data.
+      type: Virtufin.Api.Protos.SubscribeResponse
+      description: The subscribe response containing event data.
     - id: cancellationToken
       type: System.Threading.CancellationToken
       description: Cancellation token for the stream.
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Function OnEventAsync(e As TopicEventRequest, cancellationToken As CancellationToken = Nothing) As Task
+    content.vb: Function OnEventAsync(e As SubscribeResponse, cancellationToken As CancellationToken = Nothing) As Task
   overload: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync*
 - uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception,System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Client.IAsyncStreamEventHandler.OnErrorAsync(System.Exception,System.Threading.CancellationToken)
@@ -261,28 +261,28 @@ references:
   - uid: Virtufin.Api.Client
     name: Client
     href: Virtufin.Api.Client.html
-- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   parent: Virtufin.Api.Client.IStreamEventHandler
-  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
-  name: OnEvent(TopicEventRequest)
-  nameWithType: IStreamEventHandler.OnEvent(TopicEventRequest)
-  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
+  name: OnEvent(SubscribeResponse)
+  nameWithType: IStreamEventHandler.OnEvent(SubscribeResponse)
+  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   spec.csharp:
-  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
     name: OnEvent
-    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
   - name: (
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
     name: OnEvent
-    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
   - name: (
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
 - uid: Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
   commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnError(System.Exception)
@@ -321,16 +321,16 @@ references:
   fullName: Virtufin.Api.Client.IStreamEventHandler
 - uid: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync*
   commentId: Overload:Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync
-  href: Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnEventAsync_Virtufin_Api_Protos_TopicEventRequest_System_Threading_CancellationToken_
+  href: Virtufin.Api.Client.IAsyncStreamEventHandler.html#Virtufin_Api_Client_IAsyncStreamEventHandler_OnEventAsync_Virtufin_Api_Protos_SubscribeResponse_System_Threading_CancellationToken_
   name: OnEventAsync
   nameWithType: IAsyncStreamEventHandler.OnEventAsync
   fullName: Virtufin.Api.Client.IAsyncStreamEventHandler.OnEventAsync
-- uid: Virtufin.Api.Protos.TopicEventRequest
-  commentId: T:Virtufin.Api.Protos.TopicEventRequest
+- uid: Virtufin.Api.Protos.SubscribeResponse
+  commentId: T:Virtufin.Api.Protos.SubscribeResponse
   parent: Virtufin.Api.Protos
-  name: TopicEventRequest
-  nameWithType: TopicEventRequest
-  fullName: Virtufin.Api.Protos.TopicEventRequest
+  name: SubscribeResponse
+  nameWithType: SubscribeResponse
+  fullName: Virtufin.Api.Protos.SubscribeResponse
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading

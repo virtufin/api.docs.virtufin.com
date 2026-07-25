@@ -564,6 +564,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.Services.CloudEventExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.Services.CloudEventExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.Services.CloudEventExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.Services.ConfigService.yml",
       "output": {
         ".html": {
@@ -784,7 +798,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.PubsubService",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.PubsubService.yml\" sourcestartlinenumber=\"1\">Implements the Pubsub gRPC service for publish/subscribe messaging via Dapr.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.PubsubService.yml\" sourcestartlinenumber=\"1\">Implements the Pubsub gRPC service for publish/subscribe messaging via Dapr.\nPublish receives a CloudEvent proto; Subscribe streams reconstructed CloudEvents.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -798,7 +812,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.PubsubSubscription",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.PubsubSubscription.yml\" sourcestartlinenumber=\"1\">Represents an active subscription to a pub/sub topic.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -812,7 +826,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.PubsubSubscriptionManager",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.PubsubSubscriptionManager.yml\" sourcestartlinenumber=\"1\">Manages pub/sub subscriptions and broadcasts messages to subscribers.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",

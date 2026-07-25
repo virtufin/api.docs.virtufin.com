@@ -9,7 +9,7 @@ items:
   - Virtufin.Api.Client.StreamEventHandler.ErrorOccurred
   - Virtufin.Api.Client.StreamEventHandler.EventReceived
   - Virtufin.Api.Client.StreamEventHandler.OnError(System.Exception)
-  - Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   langs:
   - csharp
   - vb
@@ -70,10 +70,10 @@ items:
   summary: Event fired when a regular event is received.
   example: []
   syntax:
-    content: public event Action<TopicEventRequest>? EventReceived
+    content: public event Action<SubscribeResponse>? EventReceived
     return:
-      type: System.Action{Virtufin.Api.Protos.TopicEventRequest}
-    content.vb: Public Event EventReceived As Action(Of TopicEventRequest)
+      type: System.Action{Virtufin.Api.Protos.SubscribeResponse}
+    content.vb: Public Event EventReceived As Action(Of SubscribeResponse)
 - uid: Virtufin.Api.Client.StreamEventHandler.ErrorOccurred
   commentId: E:Virtufin.Api.Client.StreamEventHandler.ErrorOccurred
   id: ErrorOccurred
@@ -134,16 +134,16 @@ items:
   nameWithType.vb: StreamEventHandler.New()
   fullName.vb: Virtufin.Api.Client.StreamEventHandler.New()
   name.vb: New()
-- uid: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  commentId: M:Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  id: OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+- uid: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  commentId: M:Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  id: OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   parent: Virtufin.Api.Client.StreamEventHandler
   langs:
   - csharp
   - vb
-  name: OnEvent(TopicEventRequest)
-  nameWithType: StreamEventHandler.OnEvent(TopicEventRequest)
-  fullName: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  name: OnEvent(SubscribeResponse)
+  nameWithType: StreamEventHandler.OnEvent(SubscribeResponse)
+  fullName: Virtufin.Api.Client.StreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   type: Method
   source:
     remote:
@@ -159,15 +159,15 @@ items:
   summary: Called when a regular event is received.
   example: []
   syntax:
-    content: public void OnEvent(TopicEventRequest e)
+    content: public void OnEvent(SubscribeResponse e)
     parameters:
     - id: e
-      type: Virtufin.Api.Protos.TopicEventRequest
+      type: Virtufin.Api.Protos.SubscribeResponse
       description: The topic event request containing event data.
-    content.vb: Public Sub OnEvent(e As TopicEventRequest)
+    content.vb: Public Sub OnEvent(e As SubscribeResponse)
   overload: Virtufin.Api.Client.StreamEventHandler.OnEvent*
   implements:
-  - Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
 - uid: Virtufin.Api.Client.StreamEventHandler.OnError(System.Exception)
   commentId: M:Virtufin.Api.Client.StreamEventHandler.OnError(System.Exception)
   id: OnError(System.Exception)
@@ -477,25 +477,25 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Action{Virtufin.Api.Protos.TopicEventRequest}
-  commentId: T:System.Action{Virtufin.Api.Protos.TopicEventRequest}
+- uid: System.Action{Virtufin.Api.Protos.SubscribeResponse}
+  commentId: T:System.Action{Virtufin.Api.Protos.SubscribeResponse}
   parent: System
   definition: System.Action`1
   href: https://learn.microsoft.com/dotnet/api/system.action-1
-  name: Action<TopicEventRequest>
-  nameWithType: Action<TopicEventRequest>
-  fullName: System.Action<Virtufin.Api.Protos.TopicEventRequest>
-  nameWithType.vb: Action(Of TopicEventRequest)
-  fullName.vb: System.Action(Of Virtufin.Api.Protos.TopicEventRequest)
-  name.vb: Action(Of TopicEventRequest)
+  name: Action<SubscribeResponse>
+  nameWithType: Action<SubscribeResponse>
+  fullName: System.Action<Virtufin.Api.Protos.SubscribeResponse>
+  nameWithType.vb: Action(Of SubscribeResponse)
+  fullName.vb: System.Action(Of Virtufin.Api.Protos.SubscribeResponse)
+  name.vb: Action(Of SubscribeResponse)
   spec.csharp:
   - uid: System.Action`1
     name: Action
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: '>'
   spec.vb:
   - uid: System.Action`1
@@ -505,8 +505,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
 - uid: System.Action`1
   commentId: T:System.Action`1
@@ -582,39 +582,39 @@ references:
   name.vb: New
 - uid: Virtufin.Api.Client.StreamEventHandler.OnEvent*
   commentId: Overload:Virtufin.Api.Client.StreamEventHandler.OnEvent
-  href: Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+  href: Virtufin.Api.Client.StreamEventHandler.html#Virtufin_Api_Client_StreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
   name: OnEvent
   nameWithType: StreamEventHandler.OnEvent
   fullName: Virtufin.Api.Client.StreamEventHandler.OnEvent
-- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
-  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+- uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
+  commentId: M:Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   parent: Virtufin.Api.Client.IStreamEventHandler
-  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
-  name: OnEvent(TopicEventRequest)
-  nameWithType: IStreamEventHandler.OnEvent(TopicEventRequest)
-  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
+  name: OnEvent(SubscribeResponse)
+  nameWithType: IStreamEventHandler.OnEvent(SubscribeResponse)
+  fullName: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
   spec.csharp:
-  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
     name: OnEvent
-    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
   - name: (
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
   spec.vb:
-  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.TopicEventRequest)
+  - uid: Virtufin.Api.Client.IStreamEventHandler.OnEvent(Virtufin.Api.Protos.SubscribeResponse)
     name: OnEvent
-    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_TopicEventRequest_
+    href: Virtufin.Api.Client.IStreamEventHandler.html#Virtufin_Api_Client_IStreamEventHandler_OnEvent_Virtufin_Api_Protos_SubscribeResponse_
   - name: (
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
-- uid: Virtufin.Api.Protos.TopicEventRequest
-  commentId: T:Virtufin.Api.Protos.TopicEventRequest
+- uid: Virtufin.Api.Protos.SubscribeResponse
+  commentId: T:Virtufin.Api.Protos.SubscribeResponse
   parent: Virtufin.Api.Protos
-  name: TopicEventRequest
-  nameWithType: TopicEventRequest
-  fullName: Virtufin.Api.Protos.TopicEventRequest
+  name: SubscribeResponse
+  nameWithType: SubscribeResponse
+  fullName: Virtufin.Api.Protos.SubscribeResponse
 - uid: Virtufin.Api.Protos
   commentId: N:Virtufin.Api.Protos
   name: Virtufin.Api.Protos

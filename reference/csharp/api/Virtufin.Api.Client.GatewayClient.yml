@@ -634,14 +634,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 455
+    startLine: 465
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: Subscribes to a pub/sub topic and streams events.
   example: []
   syntax:
-    content: public AsyncServerStreamingCall<PubsubSubscribeResponse> SubscribeToTopic(string topic, CancellationToken cancellationToken = default)
+    content: public AsyncServerStreamingCall<SubscribeResponse> SubscribeToTopic(string topic, CancellationToken cancellationToken = default)
     parameters:
     - id: topic
       type: System.String
@@ -650,9 +650,9 @@ items:
       type: System.Threading.CancellationToken
       description: Cancellation token.
     return:
-      type: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.PubsubSubscribeResponse}
-      description: Async streaming call for PubsubSubscribeResponse. Dispose to cancel.
-    content.vb: Public Function SubscribeToTopic(topic As String, cancellationToken As CancellationToken = Nothing) As AsyncServerStreamingCall(Of PubsubSubscribeResponse)
+      type: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.SubscribeResponse}
+      description: Async streaming call for SubscribeResponse. Dispose to cancel.
+    content.vb: Public Function SubscribeToTopic(topic As String, cancellationToken As CancellationToken = Nothing) As AsyncServerStreamingCall(Of SubscribeResponse)
   overload: Virtufin.Api.Client.GatewayClient.SubscribeToTopic*
   nameWithType.vb: GatewayClient.SubscribeToTopic(String, CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.SubscribeToTopic(String, System.Threading.CancellationToken)
@@ -675,7 +675,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 467
+    startLine: 478
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -716,7 +716,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishWithResultAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 586
+    startLine: 599
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -730,7 +730,7 @@ items:
     (see its remarks for why the stream is shared rather than per call).
   example: []
   syntax:
-    content: public Task<PubsubSubscribeResponse> PublishWithResultAsync(string topic, byte[] data, string replyTopic, TimeSpan? timeout = null, Dictionary<string, string>? metadata = null, string? correlationId = null, CancellationToken cancellationToken = default)
+    content: public Task<SubscribeResponse> PublishWithResultAsync(string topic, byte[] data, string replyTopic, TimeSpan? timeout = null, Dictionary<string, string>? metadata = null, string? correlationId = null, CancellationToken cancellationToken = default)
     parameters:
     - id: topic
       type: System.String
@@ -754,9 +754,9 @@ items:
       type: System.Threading.CancellationToken
       description: Cancellation token.
     return:
-      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.PubsubSubscribeResponse}
-      description: The correlated PubsubSubscribeResponse.
-    content.vb: Public Function PublishWithResultAsync(topic As String, data As Byte(), replyTopic As String, timeout As TimeSpan? = Nothing, metadata As Dictionary(Of String, String) = Nothing, correlationId As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of PubsubSubscribeResponse)
+      type: System.Threading.Tasks.Task{Virtufin.Api.Protos.SubscribeResponse}
+      description: The correlated SubscribeResponse.
+    content.vb: Public Function PublishWithResultAsync(topic As String, data As Byte(), replyTopic As String, timeout As TimeSpan? = Nothing, metadata As Dictionary(Of String, String) = Nothing, correlationId As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of SubscribeResponse)
   overload: Virtufin.Api.Client.GatewayClient.PublishWithResultAsync*
   exceptions:
   - type: System.TimeoutException
@@ -783,14 +783,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 647
+    startLine: 660
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: Subscribes to events from specified services and topics.
   example: []
   syntax:
-    content: public AsyncServerStreamingCall<TopicEventRequest> Subscribe(IEnumerable<string>? services = null, IEnumerable<string>? topics = null, IEnumerable<string>? eventTypes = null, CancellationToken cancellationToken = default)
+    content: public AsyncServerStreamingCall<SubscribeResponse> Subscribe(IEnumerable<string>? services = null, IEnumerable<string>? topics = null, IEnumerable<string>? eventTypes = null, CancellationToken cancellationToken = default)
     parameters:
     - id: services
       type: System.Collections.Generic.IEnumerable{System.String}
@@ -805,9 +805,9 @@ items:
       type: System.Threading.CancellationToken
       description: Cancellation token.
     return:
-      type: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.TopicEventRequest}
+      type: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.SubscribeResponse}
       description: The async call handle. Dispose to cancel subscription.
-    content.vb: Public Function Subscribe(services As IEnumerable(Of String) = Nothing, topics As IEnumerable(Of String) = Nothing, eventTypes As IEnumerable(Of String) = Nothing, cancellationToken As CancellationToken = Nothing) As AsyncServerStreamingCall(Of TopicEventRequest)
+    content.vb: Public Function Subscribe(services As IEnumerable(Of String) = Nothing, topics As IEnumerable(Of String) = Nothing, eventTypes As IEnumerable(Of String) = Nothing, cancellationToken As CancellationToken = Nothing) As AsyncServerStreamingCall(Of SubscribeResponse)
   overload: Virtufin.Api.Client.GatewayClient.Subscribe*
   nameWithType.vb: GatewayClient.Subscribe(IEnumerable(Of String), IEnumerable(Of String), IEnumerable(Of String), CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String), System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
@@ -830,7 +830,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 670
+    startLine: 681
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -880,7 +880,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 728
+    startLine: 737
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -2956,25 +2956,25 @@ references:
   name: SubscribeToTopic
   nameWithType: GatewayClient.SubscribeToTopic
   fullName: Virtufin.Api.Client.GatewayClient.SubscribeToTopic
-- uid: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.PubsubSubscribeResponse}
-  commentId: T:Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.PubsubSubscribeResponse}
+- uid: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.SubscribeResponse}
+  commentId: T:Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.SubscribeResponse}
   parent: Grpc.Core
   definition: Grpc.Core.AsyncServerStreamingCall`1
   href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs
-  name: AsyncServerStreamingCall<PubsubSubscribeResponse>
-  nameWithType: AsyncServerStreamingCall<PubsubSubscribeResponse>
-  fullName: Grpc.Core.AsyncServerStreamingCall<Virtufin.Api.Protos.PubsubSubscribeResponse>
-  nameWithType.vb: AsyncServerStreamingCall(Of PubsubSubscribeResponse)
-  fullName.vb: Grpc.Core.AsyncServerStreamingCall(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
-  name.vb: AsyncServerStreamingCall(Of PubsubSubscribeResponse)
+  name: AsyncServerStreamingCall<SubscribeResponse>
+  nameWithType: AsyncServerStreamingCall<SubscribeResponse>
+  fullName: Grpc.Core.AsyncServerStreamingCall<Virtufin.Api.Protos.SubscribeResponse>
+  nameWithType.vb: AsyncServerStreamingCall(Of SubscribeResponse)
+  fullName.vb: Grpc.Core.AsyncServerStreamingCall(Of Virtufin.Api.Protos.SubscribeResponse)
+  name.vb: AsyncServerStreamingCall(Of SubscribeResponse)
   spec.csharp:
   - uid: Grpc.Core.AsyncServerStreamingCall`1
     name: AsyncServerStreamingCall
     isExternal: true
     href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs
   - name: <
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: '>'
   spec.vb:
   - uid: Grpc.Core.AsyncServerStreamingCall`1
@@ -2984,8 +2984,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
 - uid: Grpc.Core.AsyncServerStreamingCall`1
   commentId: T:Grpc.Core.AsyncServerStreamingCall`1
@@ -3135,25 +3135,25 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.timespan
   - name: '?'
-- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.PubsubSubscribeResponse}
-  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.PubsubSubscribeResponse}
+- uid: System.Threading.Tasks.Task{Virtufin.Api.Protos.SubscribeResponse}
+  commentId: T:System.Threading.Tasks.Task{Virtufin.Api.Protos.SubscribeResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<PubsubSubscribeResponse>
-  nameWithType: Task<PubsubSubscribeResponse>
-  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.PubsubSubscribeResponse>
-  nameWithType.vb: Task(Of PubsubSubscribeResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.PubsubSubscribeResponse)
-  name.vb: Task(Of PubsubSubscribeResponse)
+  name: Task<SubscribeResponse>
+  nameWithType: Task<SubscribeResponse>
+  fullName: System.Threading.Tasks.Task<Virtufin.Api.Protos.SubscribeResponse>
+  nameWithType.vb: Task(Of SubscribeResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Virtufin.Api.Protos.SubscribeResponse)
+  name.vb: Task(Of SubscribeResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -3163,8 +3163,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Protos.PubsubSubscribeResponse
-    name: PubsubSubscribeResponse
+  - uid: Virtufin.Api.Protos.SubscribeResponse
+    name: SubscribeResponse
   - name: )
 - uid: System.Nullable`1
   commentId: T:System.Nullable`1
@@ -3200,37 +3200,6 @@ references:
   name: Subscribe
   nameWithType: GatewayClient.Subscribe
   fullName: Virtufin.Api.Client.GatewayClient.Subscribe
-- uid: Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.TopicEventRequest}
-  commentId: T:Grpc.Core.AsyncServerStreamingCall{Virtufin.Api.Protos.TopicEventRequest}
-  parent: Grpc.Core
-  definition: Grpc.Core.AsyncServerStreamingCall`1
-  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs
-  name: AsyncServerStreamingCall<TopicEventRequest>
-  nameWithType: AsyncServerStreamingCall<TopicEventRequest>
-  fullName: Grpc.Core.AsyncServerStreamingCall<Virtufin.Api.Protos.TopicEventRequest>
-  nameWithType.vb: AsyncServerStreamingCall(Of TopicEventRequest)
-  fullName.vb: Grpc.Core.AsyncServerStreamingCall(Of Virtufin.Api.Protos.TopicEventRequest)
-  name.vb: AsyncServerStreamingCall(Of TopicEventRequest)
-  spec.csharp:
-  - uid: Grpc.Core.AsyncServerStreamingCall`1
-    name: AsyncServerStreamingCall
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs
-  - name: <
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: '>'
-  spec.vb:
-  - uid: Grpc.Core.AsyncServerStreamingCall`1
-    name: AsyncServerStreamingCall
-    isExternal: true
-    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.Core.Api/AsyncServerStreamingCall.cs
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Virtufin.Api.Protos.TopicEventRequest
-    name: TopicEventRequest
-  - name: )
 - uid: Virtufin.Api.Client.GatewayClient.SubscribeAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.SubscribeAsync
   href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SubscribeAsync_Virtufin_Api_Client_IStreamEventHandler_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
