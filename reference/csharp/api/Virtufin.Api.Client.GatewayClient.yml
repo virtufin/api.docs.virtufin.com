@@ -6,8 +6,8 @@ items:
   parent: Virtufin.Api.Client
   children:
   - Virtufin.Api.Client.GatewayClient.#ctor(Grpc.Net.Client.GrpcChannel)
-  - Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
-  - Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.GetService(System.String)
   - Virtufin.Api.Client.GatewayClient.GetStateAsync(System.String,System.String,System.Threading.CancellationToken)
@@ -17,7 +17,7 @@ items:
   - Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.PublishWithResultAsync(System.String,System.Byte[],System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.QueryStateAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)
-  - Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
+  - Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.Subscribe(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.SubscribeAsync(Virtufin.Api.Client.IStreamEventHandler,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
   - Virtufin.Api.Client.GatewayClient.SubscribeToTopic(System.String,System.Threading.CancellationToken)
@@ -298,16 +298,16 @@ items:
   nameWithType.vb: GatewayClient.InvokeAsync(String, String, Dictionary(Of String, Object))
   fullName.vb: Virtufin.Api.Client.GatewayClient.InvokeAsync(String, String, System.Collections.Generic.Dictionary(Of String, Object))
   name.vb: InvokeAsync(String, String, Dictionary(Of String, Object))
-- uid: Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  id: SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
+  id: SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
   parent: Virtufin.Api.Client.GatewayClient
   langs:
   - csharp
   - vb
-  name: SaveStateAsync(string, string, string, string?, bool, CancellationToken)
-  nameWithType: GatewayClient.SaveStateAsync(string, string, string, string?, bool, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.SaveStateAsync(string, string, string, string?, bool, System.Threading.CancellationToken)
+  name: SaveStateAsync(string, string, string, string?, bool, bool, CancellationToken)
+  nameWithType: GatewayClient.SaveStateAsync(string, string, string, string?, bool, bool, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.SaveStateAsync(string, string, string, string?, bool, bool, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -316,14 +316,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 340
+    startLine: 341
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: Saves state and broadcasts a change event to subscribers asynchronously.
   example: []
   syntax:
-    content: public Task<SaveStateResponse> SaveStateAsync(string service, string key, string value, string? etag = null, bool includeValue = false, CancellationToken cancellationToken = default)
+    content: public Task<SaveStateResponse> SaveStateAsync(string service, string key, string value, string? etag = null, bool publishChange = false, bool includeValue = false, CancellationToken cancellationToken = default)
     parameters:
     - id: service
       type: System.String
@@ -337,30 +337,33 @@ items:
     - id: etag
       type: System.String
       description: Optional etag for concurrency.
+    - id: publishChange
+      type: System.Boolean
+      description: If true, a state.change event is published. Default false.
     - id: includeValue
       type: System.Boolean
-      description: If true, the value is included in the state change event payload.
+      description: If true, the value is included in the state change event payload. Only relevant when publishChange=true.
     - id: cancellationToken
       type: System.Threading.CancellationToken
       description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.SaveStateResponse}
       description: SaveStateResponse with success status.
-    content.vb: Public Function SaveStateAsync(service As String, key As String, value As String, etag As String = Nothing, includeValue As Boolean = False, cancellationToken As CancellationToken = Nothing) As Task(Of SaveStateResponse)
+    content.vb: Public Function SaveStateAsync(service As String, key As String, value As String, etag As String = Nothing, publishChange As Boolean = False, includeValue As Boolean = False, cancellationToken As CancellationToken = Nothing) As Task(Of SaveStateResponse)
   overload: Virtufin.Api.Client.GatewayClient.SaveStateAsync*
-  nameWithType.vb: GatewayClient.SaveStateAsync(String, String, String, String, Boolean, CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.SaveStateAsync(String, String, String, String, Boolean, System.Threading.CancellationToken)
-  name.vb: SaveStateAsync(String, String, String, String, Boolean, CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  id: DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)
+  nameWithType.vb: GatewayClient.SaveStateAsync(String, String, String, String, Boolean, Boolean, CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.SaveStateAsync(String, String, String, String, Boolean, Boolean, System.Threading.CancellationToken)
+  name.vb: SaveStateAsync(String, String, String, String, Boolean, Boolean, CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
+  id: DeleteStateAsync(System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
   parent: Virtufin.Api.Client.GatewayClient
   langs:
   - csharp
   - vb
-  name: DeleteStateAsync(string, string, bool, CancellationToken)
-  nameWithType: GatewayClient.DeleteStateAsync(string, string, bool, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(string, string, bool, System.Threading.CancellationToken)
+  name: DeleteStateAsync(string, string, bool, bool, CancellationToken)
+  nameWithType: GatewayClient.DeleteStateAsync(string, string, bool, bool, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(string, string, bool, bool, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -369,14 +372,14 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 362
+    startLine: 365
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: Deletes a state entry and broadcasts a delete event to subscribers asynchronously.
   example: []
   syntax:
-    content: public Task<DeleteStateResponse> DeleteStateAsync(string service, string key, bool includeValue = false, CancellationToken cancellationToken = default)
+    content: public Task<DeleteStateResponse> DeleteStateAsync(string service, string key, bool publishChange = false, bool includeValue = false, CancellationToken cancellationToken = default)
     parameters:
     - id: service
       type: System.String
@@ -384,20 +387,23 @@ items:
     - id: key
       type: System.String
       description: The state key.
+    - id: publishChange
+      type: System.Boolean
+      description: If true, a state.change event is published. Default false.
     - id: includeValue
       type: System.Boolean
-      description: If true, the last value is included in the state change event payload.
+      description: If true, the last value is included in the state change event payload. Only relevant when publishChange=true.
     - id: cancellationToken
       type: System.Threading.CancellationToken
       description: Cancellation token.
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteStateResponse}
       description: DeleteStateResponse with success status.
-    content.vb: Public Function DeleteStateAsync(service As String, key As String, includeValue As Boolean = False, cancellationToken As CancellationToken = Nothing) As Task(Of DeleteStateResponse)
+    content.vb: Public Function DeleteStateAsync(service As String, key As String, publishChange As Boolean = False, includeValue As Boolean = False, cancellationToken As CancellationToken = Nothing) As Task(Of DeleteStateResponse)
   overload: Virtufin.Api.Client.GatewayClient.DeleteStateAsync*
-  nameWithType.vb: GatewayClient.DeleteStateAsync(String, String, Boolean, CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(String, String, Boolean, System.Threading.CancellationToken)
-  name.vb: DeleteStateAsync(String, String, Boolean, CancellationToken)
+  nameWithType.vb: GatewayClient.DeleteStateAsync(String, String, Boolean, Boolean, CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(String, String, Boolean, Boolean, System.Threading.CancellationToken)
+  name.vb: DeleteStateAsync(String, String, Boolean, Boolean, CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.GetStateAsync(System.String,System.String,System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Client.GatewayClient.GetStateAsync(System.String,System.String,System.Threading.CancellationToken)
   id: GetStateAsync(System.String,System.String,System.Threading.CancellationToken)
@@ -416,7 +422,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 381
+    startLine: 385
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -460,7 +466,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: QueryStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 396
+    startLine: 400
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -507,7 +513,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetBulkStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 406
+    startLine: 410
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -529,16 +535,16 @@ items:
   nameWithType.vb: GatewayClient.GetBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
   fullName.vb: Virtufin.Api.Client.GatewayClient.GetBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
   name.vb: GetBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
-- uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
-  id: DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+  id: DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
   parent: Virtufin.Api.Client.GatewayClient
   langs:
   - csharp
   - vb
-  name: DeleteBulkStateAsync(string, IEnumerable<string>, CancellationToken)
-  nameWithType: GatewayClient.DeleteBulkStateAsync(string, IEnumerable<string>, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(string, System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  name: DeleteBulkStateAsync(string, IEnumerable<string>, bool, CancellationToken)
+  nameWithType: GatewayClient.DeleteBulkStateAsync(string, IEnumerable<string>, bool, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(string, System.Collections.Generic.IEnumerable<string>, bool, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -547,28 +553,31 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteBulkStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 417
+    startLine: 422
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
   summary: Deletes multiple state entries for a service.
   example: []
   syntax:
-    content: public Task<DeleteBulkStateResponse> DeleteBulkStateAsync(string service, IEnumerable<string> keys, CancellationToken cancellationToken = default)
+    content: public Task<DeleteBulkStateResponse> DeleteBulkStateAsync(string service, IEnumerable<string> keys, bool publishChange = false, CancellationToken cancellationToken = default)
     parameters:
     - id: service
       type: System.String
     - id: keys
       type: System.Collections.Generic.IEnumerable{System.String}
+    - id: publishChange
+      type: System.Boolean
+      description: If true, a single state.change event is published for the whole bulk. Default false.
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
       type: System.Threading.Tasks.Task{Virtufin.Api.Protos.DeleteBulkStateResponse}
-    content.vb: Public Function DeleteBulkStateAsync(service As String, keys As IEnumerable(Of String), cancellationToken As CancellationToken = Nothing) As Task(Of DeleteBulkStateResponse)
+    content.vb: Public Function DeleteBulkStateAsync(service As String, keys As IEnumerable(Of String), publishChange As Boolean = False, cancellationToken As CancellationToken = Nothing) As Task(Of DeleteBulkStateResponse)
   overload: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync*
-  nameWithType.vb: GatewayClient.DeleteBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
-  name.vb: DeleteBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+  nameWithType.vb: GatewayClient.DeleteBulkStateAsync(String, IEnumerable(Of String), Boolean, CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), Boolean, System.Threading.CancellationToken)
+  name.vb: DeleteBulkStateAsync(String, IEnumerable(Of String), Boolean, CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   commentId: M:Virtufin.Api.Client.GatewayClient.PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
   id: PublishEventAsync(System.String,System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)
@@ -587,7 +596,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 432
+    startLine: 437
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -634,7 +643,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 465
+    startLine: 470
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -675,7 +684,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 478
+    startLine: 483
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -716,7 +725,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: PublishWithResultAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 599
+    startLine: 604
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -783,7 +792,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 660
+    startLine: 665
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -830,7 +839,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 681
+    startLine: 686
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -880,7 +889,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
-    startLine: 737
+    startLine: 742
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
@@ -2489,7 +2498,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Virtufin.Api.Client.GatewayClient.SaveStateAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.SaveStateAsync
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SaveStateAsync_System_String_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SaveStateAsync_System_String_System_String_System_String_System_String_System_Boolean_System_Boolean_System_Threading_CancellationToken_
   name: SaveStateAsync
   nameWithType: GatewayClient.SaveStateAsync
   fullName: Virtufin.Api.Client.GatewayClient.SaveStateAsync
@@ -2561,7 +2570,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading
 - uid: Virtufin.Api.Client.GatewayClient.DeleteStateAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.DeleteStateAsync
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteStateAsync_System_String_System_String_System_Boolean_System_Threading_CancellationToken_
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteStateAsync_System_String_System_String_System_Boolean_System_Boolean_System_Threading_CancellationToken_
   name: DeleteStateAsync
   nameWithType: GatewayClient.DeleteStateAsync
   fullName: Virtufin.Api.Client.GatewayClient.DeleteStateAsync
@@ -2808,7 +2817,7 @@ references:
   - name: )
 - uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync*
   commentId: Overload:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync
-  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  href: Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Threading_CancellationToken_
   name: DeleteBulkStateAsync
   nameWithType: GatewayClient.DeleteBulkStateAsync
   fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync

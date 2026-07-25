@@ -5,7 +5,7 @@ items:
   id: PubSubTopics
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.PubSubTopics.StateChanges
+  - Virtufin.Api.Services.PubSubTopics.StateChange
   - Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   langs:
   - csharp
@@ -38,33 +38,33 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.PubSubTopics.StateChanges
-  commentId: F:Virtufin.Api.Services.PubSubTopics.StateChanges
-  id: StateChanges
+- uid: Virtufin.Api.Services.PubSubTopics.StateChange
+  commentId: F:Virtufin.Api.Services.PubSubTopics.StateChange
+  id: StateChange
   parent: Virtufin.Api.Services.PubSubTopics
   langs:
   - csharp
   - vb
-  name: StateChanges
-  nameWithType: PubSubTopics.StateChanges
-  fullName: Virtufin.Api.Services.PubSubTopics.StateChanges
+  name: StateChange
+  nameWithType: PubSubTopics.StateChange
+  fullName: Virtufin.Api.Services.PubSubTopics.StateChange
   type: Field
   source:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: StateChanges
+    id: StateChange
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 10
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public const string StateChanges = "state.changes"
+    content: public const string StateChange = "state.change"
     return:
       type: System.String
-    content.vb: Public Const StateChanges As String = "state.changes"
+    content.vb: Public Const StateChange As String = "state.change"
 - uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   commentId: F:Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   id: SubscriptionKeyPrefix

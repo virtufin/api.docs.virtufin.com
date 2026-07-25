@@ -8,6 +8,7 @@ items:
   - Virtufin.Api.Auth
   - Virtufin.Api.Client
   - Virtufin.Api.Configuration
+  - Virtufin.Api.DeleteBulkStateEventPayload
   - Virtufin.Api.DeleteStateEventPayload
   - Virtufin.Api.GrpcCallRequest
   - Virtufin.Api.GrpcCallResponse
@@ -181,6 +182,12 @@ references:
   name: ApiConstants
   nameWithType: ApiConstants
   fullName: Virtufin.Api.ApiConstants
+- uid: Virtufin.Api.DeleteBulkStateEventPayload
+  commentId: T:Virtufin.Api.DeleteBulkStateEventPayload
+  href: Virtufin.Api.DeleteBulkStateEventPayload.html
+  name: DeleteBulkStateEventPayload
+  nameWithType: DeleteBulkStateEventPayload
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload
 - uid: Virtufin.Api.DeleteStateEventPayload
   commentId: T:Virtufin.Api.DeleteStateEventPayload
   href: Virtufin.Api.DeleteStateEventPayload.html

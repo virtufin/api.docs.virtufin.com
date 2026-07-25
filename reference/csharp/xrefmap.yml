@@ -545,15 +545,15 @@ references:
   fullName.vb: Virtufin.Api.Client.GatewayClient.New
   nameWithType: GatewayClient.GatewayClient
   nameWithType.vb: GatewayClient.New
-- uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
-  name: DeleteBulkStateAsync(string, IEnumerable<string>, CancellationToken)
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
-  name.vb: DeleteBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(string, System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
-  nameWithType: GatewayClient.DeleteBulkStateAsync(string, IEnumerable<string>, CancellationToken)
-  nameWithType.vb: GatewayClient.DeleteBulkStateAsync(String, IEnumerable(Of String), CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+  name: DeleteBulkStateAsync(string, IEnumerable<string>, bool, CancellationToken)
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+  name.vb: DeleteBulkStateAsync(String, IEnumerable(Of String), Boolean, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(string, System.Collections.Generic.IEnumerable<string>, bool, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync(String, System.Collections.Generic.IEnumerable(Of String), Boolean, System.Threading.CancellationToken)
+  nameWithType: GatewayClient.DeleteBulkStateAsync(string, IEnumerable<string>, bool, CancellationToken)
+  nameWithType.vb: GatewayClient.DeleteBulkStateAsync(String, IEnumerable(Of String), Boolean, CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync*
   name: DeleteBulkStateAsync
   href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteBulkStateAsync_
@@ -561,15 +561,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.GatewayClient.DeleteBulkStateAsync
   nameWithType: GatewayClient.DeleteBulkStateAsync
-- uid: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  name: DeleteStateAsync(string, string, bool, CancellationToken)
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteStateAsync_System_String_System_String_System_Boolean_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  name.vb: DeleteStateAsync(String, String, Boolean, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(string, string, bool, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(String, String, Boolean, System.Threading.CancellationToken)
-  nameWithType: GatewayClient.DeleteStateAsync(string, string, bool, CancellationToken)
-  nameWithType.vb: GatewayClient.DeleteStateAsync(String, String, Boolean, CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
+  name: DeleteStateAsync(string, string, bool, bool, CancellationToken)
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteStateAsync_System_String_System_String_System_Boolean_System_Boolean_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.GatewayClient.DeleteStateAsync(System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
+  name.vb: DeleteStateAsync(String, String, Boolean, Boolean, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(string, string, bool, bool, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.DeleteStateAsync(String, String, Boolean, Boolean, System.Threading.CancellationToken)
+  nameWithType: GatewayClient.DeleteStateAsync(string, string, bool, bool, CancellationToken)
+  nameWithType.vb: GatewayClient.DeleteStateAsync(String, String, Boolean, Boolean, CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.DeleteStateAsync*
   name: DeleteStateAsync
   href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_DeleteStateAsync_
@@ -718,15 +718,15 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Client.GatewayClient.QueryStateAsync
   nameWithType: GatewayClient.QueryStateAsync
-- uid: Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  name: SaveStateAsync(string, string, string, string?, bool, CancellationToken)
-  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SaveStateAsync_System_String_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken)
-  name.vb: SaveStateAsync(String, String, String, String, Boolean, CancellationToken)
-  fullName: Virtufin.Api.Client.GatewayClient.SaveStateAsync(string, string, string, string?, bool, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.Api.Client.GatewayClient.SaveStateAsync(String, String, String, String, Boolean, System.Threading.CancellationToken)
-  nameWithType: GatewayClient.SaveStateAsync(string, string, string, string?, bool, CancellationToken)
-  nameWithType.vb: GatewayClient.SaveStateAsync(String, String, String, String, Boolean, CancellationToken)
+- uid: Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
+  name: SaveStateAsync(string, string, string, string?, bool, bool, CancellationToken)
+  href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SaveStateAsync_System_String_System_String_System_String_System_String_System_Boolean_System_Boolean_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.Client.GatewayClient.SaveStateAsync(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken)
+  name.vb: SaveStateAsync(String, String, String, String, Boolean, Boolean, CancellationToken)
+  fullName: Virtufin.Api.Client.GatewayClient.SaveStateAsync(string, string, string, string?, bool, bool, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.Client.GatewayClient.SaveStateAsync(String, String, String, String, Boolean, Boolean, System.Threading.CancellationToken)
+  nameWithType: GatewayClient.SaveStateAsync(string, string, string, string?, bool, bool, CancellationToken)
+  nameWithType.vb: GatewayClient.SaveStateAsync(String, String, String, String, Boolean, Boolean, CancellationToken)
 - uid: Virtufin.Api.Client.GatewayClient.SaveStateAsync*
   name: SaveStateAsync
   href: api/Virtufin.Api.Client.GatewayClient.html#Virtufin_Api_Client_GatewayClient_SaveStateAsync_
@@ -1659,6 +1659,70 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.Configuration.StateConfig.StoreName
   nameWithType: StateConfig.StoreName
+- uid: Virtufin.Api.DeleteBulkStateEventPayload
+  name: DeleteBulkStateEventPayload
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html
+  commentId: T:Virtufin.Api.DeleteBulkStateEventPayload
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload
+  nameWithType: DeleteBulkStateEventPayload
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.#ctor(System.String,System.Collections.Generic.List{System.String},System.String)
+  name: DeleteBulkStateEventPayload(string, List<string>, string)
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload__ctor_System_String_System_Collections_Generic_List_System_String__System_String_
+  commentId: M:Virtufin.Api.DeleteBulkStateEventPayload.#ctor(System.String,System.Collections.Generic.List{System.String},System.String)
+  name.vb: New(String, List(Of String), String)
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.DeleteBulkStateEventPayload(string, System.Collections.Generic.List<string>, string)
+  fullName.vb: Virtufin.Api.DeleteBulkStateEventPayload.New(String, System.Collections.Generic.List(Of String), String)
+  nameWithType: DeleteBulkStateEventPayload.DeleteBulkStateEventPayload(string, List<string>, string)
+  nameWithType.vb: DeleteBulkStateEventPayload.New(String, List(Of String), String)
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.#ctor*
+  name: DeleteBulkStateEventPayload
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload__ctor_
+  commentId: Overload:Virtufin.Api.DeleteBulkStateEventPayload.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.DeleteBulkStateEventPayload
+  fullName.vb: Virtufin.Api.DeleteBulkStateEventPayload.New
+  nameWithType: DeleteBulkStateEventPayload.DeleteBulkStateEventPayload
+  nameWithType.vb: DeleteBulkStateEventPayload.New
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Action
+  name: Action
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Action
+  commentId: P:Virtufin.Api.DeleteBulkStateEventPayload.Action
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Action
+  nameWithType: DeleteBulkStateEventPayload.Action
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Action*
+  name: Action
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Action_
+  commentId: Overload:Virtufin.Api.DeleteBulkStateEventPayload.Action
+  isSpec: "True"
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Action
+  nameWithType: DeleteBulkStateEventPayload.Action
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  name: Keys
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Keys
+  commentId: P:Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  nameWithType: DeleteBulkStateEventPayload.Keys
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Keys*
+  name: Keys
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Keys_
+  commentId: Overload:Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  isSpec: "True"
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  nameWithType: DeleteBulkStateEventPayload.Keys
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Service
+  name: Service
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Service
+  commentId: P:Virtufin.Api.DeleteBulkStateEventPayload.Service
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Service
+  nameWithType: DeleteBulkStateEventPayload.Service
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Service*
+  name: Service
+  href: api/Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Service_
+  commentId: Overload:Virtufin.Api.DeleteBulkStateEventPayload.Service
+  isSpec: "True"
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Service
+  nameWithType: DeleteBulkStateEventPayload.Service
 - uid: Virtufin.Api.DeleteStateEventPayload
   name: DeleteStateEventPayload
   href: api/Virtufin.Api.DeleteStateEventPayload.html
@@ -3443,12 +3507,12 @@ references:
   commentId: T:Virtufin.Api.Services.PubSubTopics
   fullName: Virtufin.Api.Services.PubSubTopics
   nameWithType: PubSubTopics
-- uid: Virtufin.Api.Services.PubSubTopics.StateChanges
-  name: StateChanges
-  href: api/Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_StateChanges
-  commentId: F:Virtufin.Api.Services.PubSubTopics.StateChanges
-  fullName: Virtufin.Api.Services.PubSubTopics.StateChanges
-  nameWithType: PubSubTopics.StateChanges
+- uid: Virtufin.Api.Services.PubSubTopics.StateChange
+  name: StateChange
+  href: api/Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_StateChange
+  commentId: F:Virtufin.Api.Services.PubSubTopics.StateChange
+  fullName: Virtufin.Api.Services.PubSubTopics.StateChange
+  nameWithType: PubSubTopics.StateChange
 - uid: Virtufin.Api.Services.PubSubTopics.SubscriptionKeyPrefix
   name: SubscriptionKeyPrefix
   href: api/Virtufin.Api.Services.PubSubTopics.html#Virtufin_Api_Services_PubSubTopics_SubscriptionKeyPrefix

@@ -207,6 +207,9 @@ items:
   - uid: Virtufin.Api.ApiConstants
     name: ApiConstants
     type: Class
+  - uid: Virtufin.Api.DeleteBulkStateEventPayload
+    name: DeleteBulkStateEventPayload
+    type: Class
   - uid: Virtufin.Api.DeleteStateEventPayload
     name: DeleteStateEventPayload
     type: Class

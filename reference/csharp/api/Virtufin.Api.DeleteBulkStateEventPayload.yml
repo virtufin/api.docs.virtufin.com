@@ -1,40 +1,39 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.DeleteStateEventPayload
-  commentId: T:Virtufin.Api.DeleteStateEventPayload
-  id: DeleteStateEventPayload
+- uid: Virtufin.Api.DeleteBulkStateEventPayload
+  commentId: T:Virtufin.Api.DeleteBulkStateEventPayload
+  id: DeleteBulkStateEventPayload
   parent: Virtufin.Api
   children:
-  - Virtufin.Api.DeleteStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
-  - Virtufin.Api.DeleteStateEventPayload.Action
-  - Virtufin.Api.DeleteStateEventPayload.Key
-  - Virtufin.Api.DeleteStateEventPayload.Service
-  - Virtufin.Api.DeleteStateEventPayload.Value
+  - Virtufin.Api.DeleteBulkStateEventPayload.#ctor(System.String,System.Collections.Generic.List{System.String},System.String)
+  - Virtufin.Api.DeleteBulkStateEventPayload.Action
+  - Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  - Virtufin.Api.DeleteBulkStateEventPayload.Service
   langs:
   - csharp
   - vb
-  name: DeleteStateEventPayload
-  nameWithType: DeleteStateEventPayload
-  fullName: Virtufin.Api.DeleteStateEventPayload
+  name: DeleteBulkStateEventPayload
+  nameWithType: DeleteBulkStateEventPayload
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/GrpcModels.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: DeleteStateEventPayload
+    id: DeleteBulkStateEventPayload
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
   syntax:
-    content: 'public record DeleteStateEventPayload : IEquatable<DeleteStateEventPayload>'
-    content.vb: Public Class DeleteStateEventPayload Implements IEquatable(Of DeleteStateEventPayload)
+    content: 'public record DeleteBulkStateEventPayload : IEquatable<DeleteBulkStateEventPayload>'
+    content.vb: Public Class DeleteBulkStateEventPayload Implements IEquatable(Of DeleteBulkStateEventPayload)
   inheritance:
   - System.Object
   implements:
-  - System.IEquatable{Virtufin.Api.DeleteStateEventPayload}
+  - System.IEquatable{Virtufin.Api.DeleteBulkStateEventPayload}
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -43,16 +42,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.DeleteStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
-  commentId: M:Virtufin.Api.DeleteStateEventPayload.#ctor(System.String,System.String,System.String,System.Object)
-  id: '#ctor(System.String,System.String,System.String,System.Object)'
-  parent: Virtufin.Api.DeleteStateEventPayload
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.#ctor(System.String,System.Collections.Generic.List{System.String},System.String)
+  commentId: M:Virtufin.Api.DeleteBulkStateEventPayload.#ctor(System.String,System.Collections.Generic.List{System.String},System.String)
+  id: '#ctor(System.String,System.Collections.Generic.List{System.String},System.String)'
+  parent: Virtufin.Api.DeleteBulkStateEventPayload
   langs:
   - csharp
   - vb
-  name: DeleteStateEventPayload(string, string, string, object?)
-  nameWithType: DeleteStateEventPayload.DeleteStateEventPayload(string, string, string, object?)
-  fullName: Virtufin.Api.DeleteStateEventPayload.DeleteStateEventPayload(string, string, string, object?)
+  name: DeleteBulkStateEventPayload(string, List<string>, string)
+  nameWithType: DeleteBulkStateEventPayload.DeleteBulkStateEventPayload(string, List<string>, string)
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.DeleteBulkStateEventPayload(string, System.Collections.Generic.List<string>, string)
   type: Constructor
   source:
     remote:
@@ -61,36 +60,34 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
   syntax:
-    content: public DeleteStateEventPayload(string Service, string Key, string Action, object? Value)
+    content: public DeleteBulkStateEventPayload(string Service, List<string> Keys, string Action)
     parameters:
     - id: Service
       type: System.String
-    - id: Key
-      type: System.String
+    - id: Keys
+      type: System.Collections.Generic.List{System.String}
     - id: Action
       type: System.String
-    - id: Value
-      type: System.Object
-    content.vb: Public Sub New(Service As String, Key As String, Action As String, Value As Object)
-  overload: Virtufin.Api.DeleteStateEventPayload.#ctor*
-  nameWithType.vb: DeleteStateEventPayload.New(String, String, String, Object)
-  fullName.vb: Virtufin.Api.DeleteStateEventPayload.New(String, String, String, Object)
-  name.vb: New(String, String, String, Object)
-- uid: Virtufin.Api.DeleteStateEventPayload.Service
-  commentId: P:Virtufin.Api.DeleteStateEventPayload.Service
+    content.vb: Public Sub New(Service As String, Keys As List(Of String), Action As String)
+  overload: Virtufin.Api.DeleteBulkStateEventPayload.#ctor*
+  nameWithType.vb: DeleteBulkStateEventPayload.New(String, List(Of String), String)
+  fullName.vb: Virtufin.Api.DeleteBulkStateEventPayload.New(String, System.Collections.Generic.List(Of String), String)
+  name.vb: New(String, List(Of String), String)
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Service
+  commentId: P:Virtufin.Api.DeleteBulkStateEventPayload.Service
   id: Service
-  parent: Virtufin.Api.DeleteStateEventPayload
+  parent: Virtufin.Api.DeleteBulkStateEventPayload
   langs:
   - csharp
   - vb
   name: Service
-  nameWithType: DeleteStateEventPayload.Service
-  fullName: Virtufin.Api.DeleteStateEventPayload.Service
+  nameWithType: DeleteBulkStateEventPayload.Service
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Service
   type: Property
   source:
     remote:
@@ -99,7 +96,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Service
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -109,46 +106,46 @@ items:
     return:
       type: System.String
     content.vb: Public Property Service As String
-  overload: Virtufin.Api.DeleteStateEventPayload.Service*
-- uid: Virtufin.Api.DeleteStateEventPayload.Key
-  commentId: P:Virtufin.Api.DeleteStateEventPayload.Key
-  id: Key
-  parent: Virtufin.Api.DeleteStateEventPayload
+  overload: Virtufin.Api.DeleteBulkStateEventPayload.Service*
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  commentId: P:Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  id: Keys
+  parent: Virtufin.Api.DeleteBulkStateEventPayload
   langs:
   - csharp
   - vb
-  name: Key
-  nameWithType: DeleteStateEventPayload.Key
-  fullName: Virtufin.Api.DeleteStateEventPayload.Key
+  name: Keys
+  nameWithType: DeleteBulkStateEventPayload.Keys
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Keys
   type: Property
   source:
     remote:
       path: src/Virtufin.Api/GrpcModels.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Key
+    id: Keys
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
   syntax:
-    content: public string Key { get; init; }
+    content: public List<string> Keys { get; init; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public Property Key As String
-  overload: Virtufin.Api.DeleteStateEventPayload.Key*
-- uid: Virtufin.Api.DeleteStateEventPayload.Action
-  commentId: P:Virtufin.Api.DeleteStateEventPayload.Action
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property Keys As List(Of String)
+  overload: Virtufin.Api.DeleteBulkStateEventPayload.Keys*
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Action
+  commentId: P:Virtufin.Api.DeleteBulkStateEventPayload.Action
   id: Action
-  parent: Virtufin.Api.DeleteStateEventPayload
+  parent: Virtufin.Api.DeleteBulkStateEventPayload
   langs:
   - csharp
   - vb
   name: Action
-  nameWithType: DeleteStateEventPayload.Action
-  fullName: Virtufin.Api.DeleteStateEventPayload.Action
+  nameWithType: DeleteBulkStateEventPayload.Action
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Action
   type: Property
   source:
     remote:
@@ -157,7 +154,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Action
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -167,36 +164,7 @@ items:
     return:
       type: System.String
     content.vb: Public Property Action As String
-  overload: Virtufin.Api.DeleteStateEventPayload.Action*
-- uid: Virtufin.Api.DeleteStateEventPayload.Value
-  commentId: P:Virtufin.Api.DeleteStateEventPayload.Value
-  id: Value
-  parent: Virtufin.Api.DeleteStateEventPayload
-  langs:
-  - csharp
-  - vb
-  name: Value
-  nameWithType: DeleteStateEventPayload.Value
-  fullName: Virtufin.Api.DeleteStateEventPayload.Value
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/GrpcModels.cs
-      branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: Value
-    path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 29
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api
-  syntax:
-    content: public object? Value { get; init; }
-    parameters: []
-    return:
-      type: System.Object
-    content.vb: Public Property Value As Object
-  overload: Virtufin.Api.DeleteStateEventPayload.Value*
+  overload: Virtufin.Api.DeleteBulkStateEventPayload.Action*
 references:
 - uid: Virtufin.Api
   commentId: N:Virtufin.Api
@@ -231,26 +199,26 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.IEquatable{Virtufin.Api.DeleteStateEventPayload}
-  commentId: T:System.IEquatable{Virtufin.Api.DeleteStateEventPayload}
+- uid: System.IEquatable{Virtufin.Api.DeleteBulkStateEventPayload}
+  commentId: T:System.IEquatable{Virtufin.Api.DeleteBulkStateEventPayload}
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<DeleteStateEventPayload>
-  nameWithType: IEquatable<DeleteStateEventPayload>
-  fullName: System.IEquatable<Virtufin.Api.DeleteStateEventPayload>
-  nameWithType.vb: IEquatable(Of DeleteStateEventPayload)
-  fullName.vb: System.IEquatable(Of Virtufin.Api.DeleteStateEventPayload)
-  name.vb: IEquatable(Of DeleteStateEventPayload)
+  name: IEquatable<DeleteBulkStateEventPayload>
+  nameWithType: IEquatable<DeleteBulkStateEventPayload>
+  fullName: System.IEquatable<Virtufin.Api.DeleteBulkStateEventPayload>
+  nameWithType.vb: IEquatable(Of DeleteBulkStateEventPayload)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.DeleteBulkStateEventPayload)
+  name.vb: IEquatable(Of DeleteBulkStateEventPayload)
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
-  - uid: Virtufin.Api.DeleteStateEventPayload
-    name: DeleteStateEventPayload
-    href: Virtufin.Api.DeleteStateEventPayload.html
+  - uid: Virtufin.Api.DeleteBulkStateEventPayload
+    name: DeleteBulkStateEventPayload
+    href: Virtufin.Api.DeleteBulkStateEventPayload.html
   - name: '>'
   spec.vb:
   - uid: System.IEquatable`1
@@ -260,9 +228,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.DeleteStateEventPayload
-    name: DeleteStateEventPayload
-    href: Virtufin.Api.DeleteStateEventPayload.html
+  - uid: Virtufin.Api.DeleteBulkStateEventPayload
+    name: DeleteBulkStateEventPayload
+    href: Virtufin.Api.DeleteBulkStateEventPayload.html
   - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
@@ -518,14 +486,14 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Virtufin.Api.DeleteStateEventPayload.#ctor*
-  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.#ctor
-  href: Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload__ctor_System_String_System_String_System_String_System_Object_
-  name: DeleteStateEventPayload
-  nameWithType: DeleteStateEventPayload.DeleteStateEventPayload
-  fullName: Virtufin.Api.DeleteStateEventPayload.DeleteStateEventPayload
-  nameWithType.vb: DeleteStateEventPayload.New
-  fullName.vb: Virtufin.Api.DeleteStateEventPayload.New
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.#ctor*
+  commentId: Overload:Virtufin.Api.DeleteBulkStateEventPayload.#ctor
+  href: Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload__ctor_System_String_System_Collections_Generic_List_System_String__System_String_
+  name: DeleteBulkStateEventPayload
+  nameWithType: DeleteBulkStateEventPayload.DeleteBulkStateEventPayload
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.DeleteBulkStateEventPayload
+  nameWithType.vb: DeleteBulkStateEventPayload.New
+  fullName.vb: Virtufin.Api.DeleteBulkStateEventPayload.New
   name.vb: New
 - uid: System.String
   commentId: T:System.String
@@ -538,27 +506,121 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Virtufin.Api.DeleteStateEventPayload.Service*
-  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.Service
-  href: Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Service
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Service*
+  commentId: Overload:Virtufin.Api.DeleteBulkStateEventPayload.Service
+  href: Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Service
   name: Service
-  nameWithType: DeleteStateEventPayload.Service
-  fullName: Virtufin.Api.DeleteStateEventPayload.Service
-- uid: Virtufin.Api.DeleteStateEventPayload.Key*
-  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.Key
-  href: Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Key
-  name: Key
-  nameWithType: DeleteStateEventPayload.Key
-  fullName: Virtufin.Api.DeleteStateEventPayload.Key
-- uid: Virtufin.Api.DeleteStateEventPayload.Action*
-  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.Action
-  href: Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Action
+  nameWithType: DeleteBulkStateEventPayload.Service
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Service
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Keys*
+  commentId: Overload:Virtufin.Api.DeleteBulkStateEventPayload.Keys
+  href: Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Keys
+  name: Keys
+  nameWithType: DeleteBulkStateEventPayload.Keys
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Keys
+- uid: Virtufin.Api.DeleteBulkStateEventPayload.Action*
+  commentId: Overload:Virtufin.Api.DeleteBulkStateEventPayload.Action
+  href: Virtufin.Api.DeleteBulkStateEventPayload.html#Virtufin_Api_DeleteBulkStateEventPayload_Action
   name: Action
-  nameWithType: DeleteStateEventPayload.Action
-  fullName: Virtufin.Api.DeleteStateEventPayload.Action
-- uid: Virtufin.Api.DeleteStateEventPayload.Value*
-  commentId: Overload:Virtufin.Api.DeleteStateEventPayload.Value
-  href: Virtufin.Api.DeleteStateEventPayload.html#Virtufin_Api_DeleteStateEventPayload_Value
-  name: Value
-  nameWithType: DeleteStateEventPayload.Value
-  fullName: Virtufin.Api.DeleteStateEventPayload.Value
+  nameWithType: DeleteBulkStateEventPayload.Action
+  fullName: Virtufin.Api.DeleteBulkStateEventPayload.Action

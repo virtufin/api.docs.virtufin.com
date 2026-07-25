@@ -382,6 +382,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.DeleteBulkStateEventPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.DeleteBulkStateEventPayload.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.DeleteBulkStateEventPayload",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.DeleteStateEventPayload.yml",
       "output": {
         ".html": {
