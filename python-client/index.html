@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/9b32dffc1e7eb59e450d2e12a33000b420c39c3c"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c1866e85a5e8fd5e1045de872520198dfd87e6b3"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 9b32dff">
+       title="View commit c1866e8">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">9b32dff</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c1866e8</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/9b32dffc1e7eb59e450d2e12a33000b420c39c3c"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c1866e85a5e8fd5e1045de872520198dfd87e6b3"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 9b32dff">
+       title="View commit c1866e8">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">9b32dff</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c1866e8</text>
       </svg>
     </a>
 </div>
@@ -1145,17 +1145,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-publish-with-simulation-time" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example: Publish with simulation time
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#example-request-reply" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1765,17 +1754,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-publish-with-simulation-time" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example: Publish with simulation time
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#example-request-reply" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2074,9 +2052,7 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 <p>High-level pub/sub operations via <code>client.pubsub</code>. All methods are async.</p>
 <h3 id="methods">Methods</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Publish async — returns {&quot;success&quot;: bool, &quot;status&quot;: str, &quot;message&quot;: str}</span>
-<span class="c1"># metadata[&quot;time&quot;] (RFC 3339) sets the CloudEvent time attribute;</span>
-<span class="c1"># omitted defaults to current UTC. Used for simulation / backtesting.</span>
-<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_async</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_async</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">cloudevent</span><span class="p">)</span>
 
 <span class="c1"># Subscribe - returns async generator yielding PubsubEvent</span>
 <span class="k">async</span> <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">subscribe_async_iter</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span>
@@ -2090,7 +2066,7 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 <span class="c1"># Request-reply: publish and await correlated response</span>
 <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_with_result_async</span><span class="p">(</span>
     <span class="n">topic</span><span class="o">=</span><span class="s2">&quot;requests&quot;</span><span class="p">,</span>
-    <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;hello&quot;</span><span class="p">},</span>
+    <span class="n">cloudevent</span><span class="o">=</span><span class="n">cloudevent</span><span class="p">,</span>
     <span class="n">reply_topic</span><span class="o">=</span><span class="s2">&quot;responses&quot;</span><span class="p">,</span>
     <span class="n">timeout</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span>
 <span class="p">)</span>
@@ -2102,10 +2078,9 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 </code></pre></div>
 <p><strong>Parameters for <code>publish_with_result_async</code>:</strong>
 - <code>topic</code> — Topic to publish the request to
-- <code>data</code> — Request data (str, bytes, or JSON-serializable object)
+- <code>cloudevent</code> — The CloudEvent message (<code>cloudevents_pb2.CloudEvent</code>)
 - <code>reply_topic</code> — Topic to listen for the correlated response on
 - <code>timeout</code> — Maximum wait time in seconds (default: 30.0)
-- <code>metadata</code> — Optional dict of additional metadata
 - <code>correlation_id</code> — Optional correlation ID (auto-generated UUID if omitted)</p>
 <p><strong>Returns:</strong> The matching <code>PubsubEvent</code> with a <code>correlationid</code> matching the request.
 <strong>Raises:</strong> <code>TimeoutError</code> if no response arrives within the timeout.</p>
@@ -2114,14 +2089,18 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 <h3 id="pubsubevent">PubsubEvent</h3>
 <div class="highlight"><pre><span></span><code><span class="n">event</span><span class="o">.</span><span class="n">topic</span>       <span class="c1"># Topic name</span>
 <span class="n">event</span><span class="o">.</span><span class="n">data</span>        <span class="c1"># Raw bytes</span>
-<span class="n">event</span><span class="o">.</span><span class="n">data_as_text</span><span class="p">()</span>    <span class="c1"># Decode as UTF-8 string</span>
-<span class="n">event</span><span class="o">.</span><span class="n">data_as_json</span><span class="p">()</span>    <span class="c1"># Decode as JSON object</span>
-<span class="n">event</span><span class="o">.</span><span class="n">metadata</span>    <span class="c1"># Dict of metadata</span>
+<span class="n">event</span><span class="o">.</span><span class="n">data_as_text</span><span class="p">()</span>     <span class="c1"># Decode as UTF-8 string</span>
+<span class="n">event</span><span class="o">.</span><span class="n">data_as_json</span><span class="p">()</span>     <span class="c1"># Decode as JSON object</span>
+<span class="n">event</span><span class="o">.</span><span class="n">cloudevent</span>  <span class="c1"># The CloudEvent proto (cloudevents_pb2.CloudEvent)</span>
 <span class="n">event</span><span class="o">.</span><span class="n">message_id</span>  <span class="c1"># Unique message ID</span>
 <span class="n">event</span><span class="o">.</span><span class="n">timestamp</span>   <span class="c1"># ISO timestamp</span>
 </code></pre></div>
 <h3 id="example-pubsub">Example: Pub/Sub</h3>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">virtufin.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">cloudevents_pb2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timezone</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="n">topic</span> <span class="o">=</span> <span class="s2">&quot;my-topic&quot;</span>
 
     <span class="c1"># Subscribe</span>
@@ -2133,7 +2112,15 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
 
     <span class="c1"># Publish events</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_async</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Message </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">cloudevent</span> <span class="o">=</span> <span class="n">cloudevents_pb2</span><span class="o">.</span><span class="n">CloudEvent</span><span class="p">(</span>
+            <span class="nb">id</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+            <span class="n">source</span><span class="o">=</span><span class="s2">&quot;urn:my-app&quot;</span><span class="p">,</span>
+            <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;my-event&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">cloudevents_pb2</span><span class="o">.</span><span class="n">CloudEvent</span><span class="o">.</span><span class="n">CloudEventData</span><span class="p">(</span>
+                <span class="n">text_data</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Message </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">),</span>
+        <span class="p">)</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_async</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">cloudevent</span><span class="p">)</span>
         <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="n">sub_task</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>
@@ -2142,25 +2129,27 @@ pip<span class="w"> </span>install<span class="w"> </span>virtufin-api<span clas
     <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
         <span class="k">pass</span>
 </code></pre></div>
-<h3 id="example-publish-with-simulation-time">Example: Publish with simulation time</h3>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
-    <span class="c1"># Publish with a custom CloudEvent time (backtesting / replay)</span>
-    <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_async</span><span class="p">(</span>
-        <span class="n">topic</span><span class="o">=</span><span class="s2">&quot;market-data&quot;</span><span class="p">,</span>
-        <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;symbol&quot;</span><span class="p">:</span> <span class="s2">&quot;BTCUSD&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mi">42000</span><span class="p">},</span>
-        <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="s2">&quot;2025-01-01T12:00:00Z&quot;</span><span class="p">}</span>
-    <span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Published with simulated timestamp&quot;</span><span class="p">)</span>
-</code></pre></div>
 <h3 id="example-request-reply">Example: Request-Reply</h3>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">virtufin.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">cloudevents_pb2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">ApiClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="n">request_topic</span> <span class="o">=</span> <span class="s2">&quot;worker-commands&quot;</span>
     <span class="n">reply_topic</span> <span class="o">=</span> <span class="s2">&quot;worker-responses&quot;</span>
+
+    <span class="n">cloudevent</span> <span class="o">=</span> <span class="n">cloudevents_pb2</span><span class="o">.</span><span class="n">CloudEvent</span><span class="p">(</span>
+        <span class="nb">id</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+        <span class="n">source</span><span class="o">=</span><span class="s2">&quot;urn:my-app&quot;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;my-command&quot;</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">cloudevents_pb2</span><span class="o">.</span><span class="n">CloudEvent</span><span class="o">.</span><span class="n">CloudEventData</span><span class="p">(</span>
+            <span class="n">text_data</span><span class="o">=</span><span class="s1">&#39;{&quot;command&quot;: &quot;status&quot;}&#39;</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
 
     <span class="c1"># Publish a command and wait for the correlated response</span>
     <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">pubsub</span><span class="o">.</span><span class="n">publish_with_result_async</span><span class="p">(</span>
         <span class="n">topic</span><span class="o">=</span><span class="n">request_topic</span><span class="p">,</span>
-        <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;status&quot;</span><span class="p">},</span>
+        <span class="n">cloudevent</span><span class="o">=</span><span class="n">cloudevent</span><span class="p">,</span>
         <span class="n">reply_topic</span><span class="o">=</span><span class="n">reply_topic</span><span class="p">,</span>
         <span class="n">timeout</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span>
     <span class="p">)</span>
@@ -2323,7 +2312,7 @@ must <code>await</code> the call.</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-25T18:26:39Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-25T18:42:00Z</span>
 </div>
 
     </div>

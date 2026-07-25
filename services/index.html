@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/9b32dffc1e7eb59e450d2e12a33000b420c39c3c"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c1866e85a5e8fd5e1045de872520198dfd87e6b3"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 9b32dff">
+       title="View commit c1866e8">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">9b32dff</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c1866e8</text>
       </svg>
     </a>
 </div>
@@ -389,14 +389,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/9b32dffc1e7eb59e450d2e12a33000b420c39c3c"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c1866e85a5e8fd5e1045de872520198dfd87e6b3"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 9b32dff">
+       title="View commit c1866e8">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">9b32dff</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c1866e8</text>
       </svg>
     </a>
 </div>
@@ -2751,8 +2751,7 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
 </code></pre></div>
 <p><strong>Request:</strong>
 - <code>topic</code> - The topic name to publish to
-- <code>data</code> - The event data as bytes
-- <code>metadata</code> - Optional key-value metadata. The <code>"time"</code> key (RFC 3339, e.g. <code>"2025-01-01T12:00:00Z"</code>) sets the CloudEvent <code>time</code> attribute; if omitted, defaults to the current UTC time. This enables simulation time passthrough for backtesting and replay scenarios.</p>
+- <code>cloudevent</code> - The CloudEvent message (CloudNative.CloudEvents.V1.CloudEvent proto)</p>
 <p><strong>Response:</strong>
 - <code>success</code> - Boolean indicating success
 - <code>status</code> - Status string ("OK" or "ERROR")
@@ -2768,8 +2767,7 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
 - <code>topic</code> - The topic name to subscribe to</p>
 <p><strong>Response:</strong> Server-streaming of <code>PubsubSubscribeResponse</code> messages containing:
 - <code>topic</code> - The topic name
-- <code>data</code> - The event data as bytes
-- <code>metadata</code> - Message metadata
+- <code>cloudevent</code> - The CloudEvent message (CloudNative.CloudEvents.V1.CloudEvent proto)
 - <code>message_id</code> - Unique message identifier
 - <code>timestamp</code> - ISO 8601 timestamp</p>
 <h4 id="unsubscribe">Unsubscribe</h4>
@@ -2796,7 +2794,7 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
 <span class="k">void</span><span class="w"> </span><span class="nf">UnsubscribeById</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">subscriptionId</span><span class="p">)</span>
 
 <span class="c1">// Broadcast to topic</span>
-<span class="n">Task</span><span class="w"> </span><span class="nf">BroadcastToTopicAsync</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">topic</span><span class="p">,</span><span class="w"> </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">string?</span><span class="w"> </span><span class="n">messageId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;?</span><span class="w"> </span><span class="n">metadata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+<span class="n">Task</span><span class="w"> </span><span class="nf">BroadcastToTopicAsync</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">topic</span><span class="p">,</span><span class="w"> </span><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">string?</span><span class="w"> </span><span class="n">messageId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="key-features">Key Features</h3>
 <ul>
@@ -3019,7 +3017,7 @@ For <code>virtufin.Gateway</code> or <code>Gateway</code>, returns the built-in 
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-07-25T18:26:39Z</span>
+  <span style="display:table-cell;text-align:right">2026-07-25T18:42:00Z</span>
 </div>
 
     </div>
