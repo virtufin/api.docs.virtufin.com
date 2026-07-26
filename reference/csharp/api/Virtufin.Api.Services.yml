@@ -118,7 +118,6 @@ references:
   fullName: Virtufin.Api.Services.GatewaySubscription
 - uid: Virtufin.Api.Services.GatewaySubscriptionManager
   commentId: T:Virtufin.Api.Services.GatewaySubscriptionManager
-  parent: Virtufin.Api.Services
   href: Virtufin.Api.Services.GatewaySubscriptionManager.html
   name: GatewaySubscriptionManager
   nameWithType: GatewaySubscriptionManager

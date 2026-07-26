@@ -239,7 +239,7 @@
   "Virtufin.Api.Services.FieldSchema.Type": "Virtufin.Api.Services.FieldSchema.yml",
   "Virtufin.Api.Services.FieldSchema.TypeName": "Virtufin.Api.Services.FieldSchema.yml",
   "Virtufin.Api.Services.GatewayService": "Virtufin.Api.Services.GatewayService.yml",
-  "Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Dapr.Messaging.PublishSubscribe.DaprPublishSubscribeClient,Virtufin.Api.HealthChecks.DaprResiliencePipeline,Virtufin.Api.Services.TopicDaprSubscriptionRegistry,Virtufin.Api.Services.GatewaySubscriptionManager)": "Virtufin.Api.Services.GatewayService.yml",
+  "Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.DaprResiliencePipeline)": "Virtufin.Api.Services.GatewayService.yml",
   "Virtufin.Api.Services.GatewayService.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.GatewayService.yml",
   "Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.GatewayService.yml",
   "Virtufin.Api.Services.GatewayService.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.GatewayService.yml",

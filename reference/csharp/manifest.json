@@ -672,7 +672,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virtufin.Api.Services.GatewayService",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.GatewayService.yml\" sourcestartlinenumber=\"1\">Implementation of the gRPC Gateway service.\nProvides service discovery, method invocation, and event subscription capabilities.</p>\n"
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Services.GatewayService.yml\" sourcestartlinenumber=\"1\">Implementation of the gRPC Gateway service.\nProvides service discovery and method invocation. Event subscription\n(Gateway.Subscribe) was never added to gateway.proto -- Pubsub.Subscribe\n(see PubsubService) is the only subscribe path; this class previously\nheld unused constructor dependencies (DaprPublishSubscribeClient,\nTopicDaprSubscriptionRegistry, GatewaySubscriptionManager) left over\nfrom that never-implemented design.</p>\n"
     },
     {
       "type": "ManagedReference",
