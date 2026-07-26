@@ -133,7 +133,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 96
+    startLine: 105
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -168,7 +168,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: QueryState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 134
+    startLine: 143
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -213,7 +213,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 178
+    startLine: 187
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -248,7 +248,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 214
+    startLine: 223
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -283,7 +283,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 279
+    startLine: 288
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
