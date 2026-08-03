@@ -23,7 +23,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteBulkStateEventPayload
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 31
+    startLine: 46
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -60,7 +60,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 31
+    startLine: 46
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -96,7 +96,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Service
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 31
+    startLine: 46
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -125,7 +125,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Keys
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 31
+    startLine: 46
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
@@ -154,7 +154,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Action
     path: ../../../src/Virtufin.Api/GrpcModels.cs
-    startLine: 31
+    startLine: 46
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api
