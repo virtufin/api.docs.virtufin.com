@@ -26,7 +26,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: FieldSchema
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1298
+    startLine: 1293
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -63,7 +63,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Name
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1300
+    startLine: 1295
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -92,7 +92,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: Type
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1301
+    startLine: 1296
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -121,7 +121,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: TypeName
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1302
+    startLine: 1297
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -150,7 +150,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: IsRepeated
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1303
+    startLine: 1298
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -179,7 +179,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: IsOptional
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1304
+    startLine: 1299
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -208,7 +208,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OneofGroup
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1305
+    startLine: 1300
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -237,7 +237,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: OneofCases
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
-    startLine: 1306
+    startLine: 1301
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
