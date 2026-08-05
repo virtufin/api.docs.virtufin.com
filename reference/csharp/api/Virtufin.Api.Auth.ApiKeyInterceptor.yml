@@ -215,7 +215,7 @@ items:
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
-  summary: Server-side handler for intercepting and incoming unary call.
+  summary: Server-side handler for intercepting an incoming unary call.
   example: []
   syntax:
     content: 'public override Task<TResponse> UnaryServerHandler<TRequest, TResponse>(TRequest request, ServerCallContext context, UnaryServerMethod<TRequest, TResponse> continuation) where TRequest : class where TResponse : class'
