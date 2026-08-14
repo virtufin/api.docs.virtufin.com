@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/b5b1edc7a282540545cc879fb14df87718b36e02"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/506bd230194ec5b92b85330a7425f69417c969d1"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit b5b1edc">
+       title="View commit 506bd23">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b5b1edc</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">506bd23</text>
       </svg>
     </a>
 </div>
@@ -370,14 +370,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/b5b1edc7a282540545cc879fb14df87718b36e02"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/506bd230194ec5b92b85330a7425f69417c969d1"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit b5b1edc">
+       title="View commit 506bd23">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b5b1edc</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">506bd23</text>
       </svg>
     </a>
 </div>
@@ -1355,12 +1355,10 @@
 <h2 id="authentication">Authentication</h2>
 <p>The API Gateway is the entry point for all external client access. It supports Dapr's service-to-service mTLS for backend communication with WorkManager and WebSocketManager.</p>
 <h3 id="grpc-and-rest-endpoints">gRPC and REST Endpoints</h3>
-<p>All endpoints are currently accessible without authentication. For production deployments, configure JWT bearer token validation at this layer:</p>
-<ol>
-<li>Add JWT authentication middleware (e.g., Microsoft.AspNetCore.Authentication.JwtBearer)</li>
-<li>Configure a trusted identity provider (Keycloak, Azure AD, Auth0)</li>
-<li>Apply role-based authorization policies on endpoints</li>
-</ol>
+<p>Both the gRPC and HTTP surfaces are protected by API-key authentication: <code>ApiKeyInterceptor</code> enforces it for gRPC calls, <code>ApiKeyHttpMiddleware</code> for the HTTP surface (<code>/v1/grpc/call</code>, OpenAPI/Scalar docs, JSON-transcoded gRPC). Callers must send the key as the <code>x-api-key</code> gRPC metadata entry or HTTP header; the value is checked with a constant-time comparison against the configured keys. Health checks (<code>grpc.health.v1.Health/*</code>, <code>/health</code>, <code>/healthz</code>) are exempt so orchestrators can probe the pod without a key.</p>
+<p>Keys are configured under <code>ApiAuth:Keys:&lt;name&gt;</code> (a name → secret map), typically set via the environment variable form <code>ApiAuth__Keys__&lt;name&gt;=&lt;secret&gt;</code> — see <a href="../configuration/#api-key-authentication">Configuration: API Key Authentication</a>. <strong>If no keys are configured, authentication is disabled</strong> (the default for local dev). To generate and wire in a key for a new user, run:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>scripts/provision_api_key.py<span class="w"> </span>&lt;username&gt;
+</code></pre></div>
 <h3 id="state-store-security">State Store Security</h3>
 <p>The state store supports <strong>optimistic concurrency</strong> via ETags:</p>
 <ul>
@@ -1393,6 +1391,11 @@
 <td><code>Cors:AllowedOrigins</code></td>
 <td><code>[]</code></td>
 <td>Restricts which browser origins can call the REST endpoints. Always set explicitly in production.</td>
+</tr>
+<tr>
+<td><code>ApiAuth:Keys:&lt;name&gt;</code></td>
+<td>unset</td>
+<td>Name → secret map checked against the <code>x-api-key</code> header/metadata on every call. No keys set = authentication disabled. See <a href="../configuration/#api-key-authentication">Configuration: API Key Authentication</a>.</td>
 </tr>
 <tr>
 <td><code>ServicesConfigPath</code></td>
@@ -1459,7 +1462,7 @@ behaves symmetrically across the stack — see
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-08-07T14:52:01Z</span>
+  <span style="display:table-cell;text-align:right">2026-08-14T11:08:03Z</span>
 </div>
 
     </div>
