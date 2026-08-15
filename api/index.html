@@ -203,14 +203,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/506bd230194ec5b92b85330a7425f69417c969d1"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/42a0ecda134030c4ef691cc8dfe3705e3b4dcf9a"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 506bd23">
+       title="View commit 42a0ecd">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">506bd23</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">42a0ecd</text>
       </svg>
     </a>
 </div>
@@ -370,14 +370,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/506bd230194ec5b92b85330a7425f69417c969d1"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/42a0ecda134030c4ef691cc8dfe3705e3b4dcf9a"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit 506bd23">
+       title="View commit 42a0ecd">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">506bd23</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">42a0ecd</text>
       </svg>
     </a>
 </div>
@@ -1044,10 +1044,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-all-state-for-service" class="md-nav__link">
+  <a href="#query-state" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Get All State for Service
+        Query State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-bulk-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Bulk State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-bulk-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete Bulk State
       
     </span>
   </a>
@@ -1804,10 +1826,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-all-state-for-service" class="md-nav__link">
+  <a href="#query-state" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Get All State for Service
+        Query State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-bulk-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Bulk State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-bulk-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete Bulk State
       
     </span>
   </a>
@@ -2267,15 +2311,62 @@ Content-Type: application/json
 <span class="w">  </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
 <span class="p">}</span>
 </code></pre></div></p>
-<h4 id="get-all-state-for-service">Get All State for Service</h4>
-<div class="highlight"><pre><span></span><code>GET /v1/state/{service}
+<h4 id="query-state">Query State</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/state/{service}/query?query={&quot;filter&quot;:{&quot;PREFIX&quot;:&quot;workmanager.worker.&quot;}}&amp;limit=200
 </code></pre></div>
-<p>Returns all registered state keys for a service. Keys are registered dynamically via <code>State.RegisterKeys</code> RPC or automatically tracked on first use.</p>
+<p>Searches for state entries using Dapr's JSON query-state DSL. <code>query</code>
+is the query itself as JSON text (<code>"{}"</code> is Dapr's "match everything"
+query), not a filter object embedded in the URL.</p>
+<p><strong>Requires the configured state store's Dapr component to support the
+Query API.</strong> For Redis/Valkey backends (<code>state.redis</code>/<code>state.valkey</code>)
+this means the RediSearch module must be loaded and the component must
+declare <code>queryIndexes</code> metadata — a plain Redis/Valkey component
+without those does not support Query State at all (fails even <code>"{}"</code>),
+returning a generic <code>INTERNAL</code> error with no query-specific detail. If
+the configured store doesn't support querying, use Get Bulk State
+against known keys instead (see the key-naming convention at the top
+of this section).</p>
+<p><strong>Parameters:</strong>
+- <code>service</code> - Service name
+- <code>query</code> - Dapr query-state JSON DSL
+- <code>limit</code> (optional) - Max items to return; 0/unset means no limit</p>
 <p><strong>Response:</strong>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;key1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;key2&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workmanager.worker.abc123&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{...}&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="get-bulk-state">Get Bulk State</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/state/{service}/bulk?keys=key1&amp;keys=key2
+</code></pre></div>
+<p>Retrieves multiple state values by key in one call.</p>
+<p><strong>Parameters:</strong>
+- <code>service</code> - Service name
+- <code>keys</code> (repeated, required) - State keys to fetch</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;key1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="delete-bulk-state">Delete Bulk State</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/state/{service}/bulk?keys=key1&amp;keys=key2
+</code></pre></div>
+<p>Deletes multiple state entries by key, optionally publishing a delete
+event for the batch.</p>
+<p><strong>Parameters:</strong>
+- <code>service</code> - Service name
+- <code>keys</code> (repeated, required) - State keys to delete
+- <code>publish_change</code> (optional, query param) - If true, publishes a delete event</p>
+<p><strong>Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Deleted 2/2 keys&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></p>
@@ -2382,22 +2473,28 @@ Content-Type: application/json
 <td>Get a single state value</td>
 </tr>
 <tr>
-<td><code>GetAllState</code></td>
-<td><code>GetAllStateRequest</code></td>
-<td><code>GetAllStateResponse</code></td>
-<td>Get all state for a service</td>
-</tr>
-<tr>
-<td><code>RegisterKeys</code></td>
-<td><code>RegisterKeysRequest</code></td>
-<td><code>RegisterKeysResponse</code></td>
-<td>Register state keys</td>
-</tr>
-<tr>
 <td><code>DeleteState</code></td>
 <td><code>DeleteStateRequest</code></td>
 <td><code>DeleteStateResponse</code></td>
 <td>Delete state and publish event</td>
+</tr>
+<tr>
+<td><code>QueryState</code></td>
+<td><code>QueryStateRequest</code></td>
+<td><code>QueryStateResponse</code></td>
+<td>Search state entries via Dapr's query-state DSL (requires a Query-API-capable store; see <a href="#query-state">Query State</a>)</td>
+</tr>
+<tr>
+<td><code>GetBulkState</code></td>
+<td><code>GetBulkStateRequest</code></td>
+<td><code>GetBulkStateResponse</code></td>
+<td>Get multiple state values by key</td>
+</tr>
+<tr>
+<td><code>DeleteBulkState</code></td>
+<td><code>DeleteBulkStateRequest</code></td>
+<td><code>DeleteBulkStateResponse</code></td>
+<td>Delete multiple state entries by key</td>
 </tr>
 </tbody>
 </table>
@@ -2656,7 +2753,7 @@ and JSON ↔ Protobuf marshaling.</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-08-14T11:08:03Z</span>
+  <span style="display:table-cell;text-align:right">2026-08-15T08:24:42Z</span>
 </div>
 
     </div>

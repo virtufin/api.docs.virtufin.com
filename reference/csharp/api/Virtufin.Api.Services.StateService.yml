@@ -179,6 +179,24 @@ items:
       {"filter": {"PREFIX": "workmanager.worker."}}
       {"filter": {"EQ": {"key": "websocketmanager.connection.abc"}}}
       {"filter": {"OR": [{"PREFIX": "workmanager.worker."}, {"EQ": {"key": "workmanager.worker.index"}}]}}
+    "{}" is Dapr's "match everything" query.
+
+
+    Requires the configured state store's Dapr component to support the
+
+    Query API. For Redis/Valkey backends (state.redis/state.valkey) this
+
+    means the RediSearch module must be loaded and the component must
+
+    declare `queryIndexes` metadata -- a plain Redis/Valkey component
+
+    without those does not support Query State at all (fails even "{}"),
+
+    and returns a generic error with no query-specific detail. If the
+
+    configured store doesn't support querying, use GetBulkState against
+
+    known keys instead (see the key-naming convention above).
   example: []
   syntax:
     content: public override Task<QueryStateResponse> QueryState(QueryStateRequest request, ServerCallContext context)
@@ -213,7 +231,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 204
+    startLine: 240
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -248,7 +266,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 240
+    startLine: 276
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -283,7 +301,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 305
+    startLine: 341
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
