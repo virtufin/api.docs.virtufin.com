@@ -5,7 +5,7 @@ items:
   id: StateService
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
+  - Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
   - Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.StateService.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)
@@ -44,16 +44,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
-  commentId: M:Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
-  id: '#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})'
+- uid: Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
+  commentId: M:Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
+  id: '#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})'
   parent: Virtufin.Api.Services.StateService
   langs:
   - csharp
   - vb
-  name: StateService(ServicesConfiguration, DaprClient, ILogger<StateService>)
-  nameWithType: StateService.StateService(ServicesConfiguration, DaprClient, ILogger<StateService>)
-  fullName: Virtufin.Api.Services.StateService.StateService(Virtufin.Api.Configuration.ServicesConfiguration, Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.StateService>)
+  name: StateService(ServicesConfiguration, DaprClient, DaprClient, ILogger<StateService>)
+  nameWithType: StateService.StateService(ServicesConfiguration, DaprClient, Dapr.DaprClient, ILogger<StateService>)
+  fullName: Virtufin.Api.Services.StateService.StateService(Virtufin.Api.Configuration.ServicesConfiguration, Dapr.Client.DaprClient, Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.StateService>)
   type: Constructor
   source:
     remote:
@@ -62,24 +62,26 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   syntax:
-    content: public StateService(ServicesConfiguration config, DaprClient daprClient, ILogger<StateService> logger)
+    content: public StateService(ServicesConfiguration config, DaprClient daprClient, Dapr.DaprClient daprGrpcClient, ILogger<StateService> logger)
     parameters:
     - id: config
       type: Virtufin.Api.Configuration.ServicesConfiguration
     - id: daprClient
       type: Dapr.Client.DaprClient
+    - id: daprGrpcClient
+      type: Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService}
-    content.vb: Public Sub New(config As ServicesConfiguration, daprClient As DaprClient, logger As ILogger(Of StateService))
+    content.vb: Public Sub New(config As ServicesConfiguration, daprClient As DaprClient, daprGrpcClient As Dapr.DaprClient, logger As ILogger(Of StateService))
   overload: Virtufin.Api.Services.StateService.#ctor*
-  nameWithType.vb: StateService.New(ServicesConfiguration, DaprClient, ILogger(Of StateService))
-  fullName.vb: Virtufin.Api.Services.StateService.New(Virtufin.Api.Configuration.ServicesConfiguration, Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.StateService))
-  name.vb: New(ServicesConfiguration, DaprClient, ILogger(Of StateService))
+  nameWithType.vb: StateService.New(ServicesConfiguration, DaprClient, Dapr.DaprClient, ILogger(Of StateService))
+  fullName.vb: Virtufin.Api.Services.StateService.New(Virtufin.Api.Configuration.ServicesConfiguration, Dapr.Client.DaprClient, Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.StateService))
+  name.vb: New(ServicesConfiguration, DaprClient, DaprClient, ILogger(Of StateService))
 - uid: Virtufin.Api.Services.StateService.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.StateService.SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
   id: SaveState(Virtufin.Api.Protos.SaveStateRequest,Grpc.Core.ServerCallContext)
@@ -98,7 +100,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: SaveState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 60
+    startLine: 63
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -133,7 +135,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 144
+    startLine: 147
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -168,7 +170,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: QueryState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 183
+    startLine: 186
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -231,7 +233,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: GetBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 263
+    startLine: 280
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -266,7 +268,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 299
+    startLine: 316
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -301,7 +303,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 365
+    startLine: 382
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -629,7 +631,7 @@ references:
     name: Protos
 - uid: Virtufin.Api.Services.StateService.#ctor*
   commentId: Overload:Virtufin.Api.Services.StateService.#ctor
-  href: Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService__ctor_Virtufin_Api_Configuration_ServicesConfiguration_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_StateService__
+  href: Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService__ctor_Virtufin_Api_Configuration_ServicesConfiguration_Dapr_Client_DaprClient_Dapr_Client_Autogen_Grpc_v1_Dapr_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_StateService__
   name: StateService
   nameWithType: StateService.StateService
   fullName: Virtufin.Api.Services.StateService.StateService
@@ -650,6 +652,29 @@ references:
   name: DaprClient
   nameWithType: DaprClient
   fullName: Dapr.Client.DaprClient
+- uid: Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient
+  commentId: T:Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient
+  parent: Dapr.Client.Autogen.Grpc.v1
+  isExternal: true
+  name: Dapr.DaprClient
+  nameWithType: Dapr.DaprClient
+  fullName: Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient
+  spec.csharp:
+  - uid: Dapr.Client.Autogen.Grpc.v1.Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient
+    name: DaprClient
+    isExternal: true
+  spec.vb:
+  - uid: Dapr.Client.Autogen.Grpc.v1.Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient
+    name: DaprClient
+    isExternal: true
 - uid: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService}
   commentId: T:Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService}
   parent: Microsoft.Extensions.Logging
@@ -734,6 +759,52 @@ references:
   - name: .
   - uid: Dapr.Client
     name: Client
+    isExternal: true
+- uid: Dapr.Client.Autogen.Grpc.v1
+  commentId: N:Dapr.Client.Autogen.Grpc.v1
+  isExternal: true
+  name: Dapr.Client.Autogen.Grpc.v1
+  nameWithType: Dapr.Client.Autogen.Grpc.v1
+  fullName: Dapr.Client.Autogen.Grpc.v1
+  spec.csharp:
+  - uid: Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client
+    name: Client
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client.Autogen
+    name: Autogen
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client.Autogen.Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client.Autogen.Grpc.v1
+    name: v1
+    isExternal: true
+  spec.vb:
+  - uid: Dapr
+    name: Dapr
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client
+    name: Client
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client.Autogen
+    name: Autogen
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client.Autogen.Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Dapr.Client.Autogen.Grpc.v1
+    name: v1
     isExternal: true
 - uid: Microsoft.Extensions.Logging.ILogger`1
   commentId: T:Microsoft.Extensions.Logging.ILogger`1

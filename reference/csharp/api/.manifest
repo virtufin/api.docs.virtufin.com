@@ -339,7 +339,7 @@
   "Virtufin.Api.Services.StateActionConstants.Delete": "Virtufin.Api.Services.StateActionConstants.yml",
   "Virtufin.Api.Services.StateActionConstants.Save": "Virtufin.Api.Services.StateActionConstants.yml",
   "Virtufin.Api.Services.StateService": "Virtufin.Api.Services.StateService.yml",
-  "Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})": "Virtufin.Api.Services.StateService.yml",
+  "Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})": "Virtufin.Api.Services.StateService.yml",
   "Virtufin.Api.Services.StateService.DeleteBulkState(Virtufin.Api.Protos.DeleteBulkStateRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.StateService.yml",
   "Virtufin.Api.Services.StateService.DeleteState(Virtufin.Api.Protos.DeleteStateRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.StateService.yml",
   "Virtufin.Api.Services.StateService.GetBulkState(Virtufin.Api.Protos.GetBulkStateRequest,Grpc.Core.ServerCallContext)": "Virtufin.Api.Services.StateService.yml",

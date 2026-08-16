@@ -3954,15 +3954,15 @@ references:
   commentId: T:Virtufin.Api.Services.StateService
   fullName: Virtufin.Api.Services.StateService
   nameWithType: StateService
-- uid: Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
-  name: StateService(ServicesConfiguration, DaprClient, ILogger<StateService>)
-  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService__ctor_Virtufin_Api_Configuration_ServicesConfiguration_Dapr_Client_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_StateService__
-  commentId: M:Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
-  name.vb: New(ServicesConfiguration, DaprClient, ILogger(Of StateService))
-  fullName: Virtufin.Api.Services.StateService.StateService(Virtufin.Api.Configuration.ServicesConfiguration, Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.StateService>)
-  fullName.vb: Virtufin.Api.Services.StateService.New(Virtufin.Api.Configuration.ServicesConfiguration, Dapr.Client.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.StateService))
-  nameWithType: StateService.StateService(ServicesConfiguration, DaprClient, ILogger<StateService>)
-  nameWithType.vb: StateService.New(ServicesConfiguration, DaprClient, ILogger(Of StateService))
+- uid: Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
+  name: StateService(ServicesConfiguration, DaprClient, DaprClient, ILogger<StateService>)
+  href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService__ctor_Virtufin_Api_Configuration_ServicesConfiguration_Dapr_Client_DaprClient_Dapr_Client_Autogen_Grpc_v1_Dapr_DaprClient_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_StateService__
+  commentId: M:Virtufin.Api.Services.StateService.#ctor(Virtufin.Api.Configuration.ServicesConfiguration,Dapr.Client.DaprClient,Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.StateService})
+  name.vb: New(ServicesConfiguration, DaprClient, DaprClient, ILogger(Of StateService))
+  fullName: Virtufin.Api.Services.StateService.StateService(Virtufin.Api.Configuration.ServicesConfiguration, Dapr.Client.DaprClient, Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.StateService>)
+  fullName.vb: Virtufin.Api.Services.StateService.New(Virtufin.Api.Configuration.ServicesConfiguration, Dapr.Client.DaprClient, Dapr.Client.Autogen.Grpc.v1.Dapr.DaprClient, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.StateService))
+  nameWithType: StateService.StateService(ServicesConfiguration, DaprClient, Dapr.DaprClient, ILogger<StateService>)
+  nameWithType.vb: StateService.New(ServicesConfiguration, DaprClient, Dapr.DaprClient, ILogger(Of StateService))
 - uid: Virtufin.Api.Services.StateService.#ctor*
   name: StateService
   href: api/Virtufin.Api.Services.StateService.html#Virtufin_Api_Services_StateService__ctor_
