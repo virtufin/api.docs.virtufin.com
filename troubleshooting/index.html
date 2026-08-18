@@ -201,14 +201,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/a66bdc6a666aea563207210379d35c2abbf819d8"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c548bd930e7667a58da6f2424a14902f56a6b504"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit a66bdc6">
+       title="View commit c548bd9">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">a66bdc6</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c548bd9</text>
       </svg>
     </a>
 </div>
@@ -368,14 +368,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/a66bdc6a666aea563207210379d35c2abbf819d8"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c548bd930e7667a58da6f2424a14902f56a6b504"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit a66bdc6">
+       title="View commit c548bd9">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">a66bdc6</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c548bd9</text>
       </svg>
     </a>
 </div>
@@ -1502,10 +1502,10 @@ grpcurl<span class="w"> </span>-plaintext<span class="w"> </span>&lt;backend-hos
 docker<span class="w"> </span>logs<span class="w"> </span>&lt;backend-pod&gt;<span class="w"> </span>-c<span class="w"> </span>daprd<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-50
 
 <span class="c1"># 3. Check the API Gateway logs for the call stack</span>
-kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-api<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;&lt;service-name&gt;&quot;</span>
+kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-api<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"&lt;service-name&gt;"</span>
 
 <span class="c1"># 4. Verify the services.json config matches</span>
-cat<span class="w"> </span>config/services.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.services[] | select(.name==&quot;&lt;service-name&gt;&quot;)&#39;</span>
+cat<span class="w"> </span>config/services.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">'.services[] | select(.name=="&lt;service-name&gt;")'</span>
 </code></pre></div>
 <h3 id="invalid_argument-on-subscribe"><code>INVALID_ARGUMENT</code> on <code>Subscribe</code></h3>
 <p><strong>Symptom:</strong> The <code>Subscribe</code> RPC returns immediately with
@@ -1545,8 +1545,8 @@ curl<span class="w"> </span>http://localhost:5001/v1/state/&lt;service-name&gt;
 
 <span class="c1"># Manually register a key</span>
 curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:5001/v1/state/register-keys<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;service&quot;:&quot;&lt;service-name&gt;&quot;,&quot;keys&quot;:[&quot;&lt;key-name&gt;&quot;]}&#39;</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">'{"service":"&lt;service-name&gt;","keys":["&lt;key-name&gt;"]}'</span>
 </code></pre></div>
 <h2 id="pubsub-failures">Pub/Sub failures</h2>
 <h3 id="subscriptions-stop-receiving-events">Subscriptions stop receiving events</h3>
@@ -1560,7 +1560,7 @@ glitch that causes the sweeper to mark a healthy subscription as dead is the
 most common cause.</p>
 <p><strong>Diagnose:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Check the sweeper logs</span>
-kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-api<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;sweeper\|heartbeat&quot;</span>
+kubectl<span class="w"> </span>logs<span class="w"> </span>-n<span class="w"> </span>virtufin<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>virtufin-api<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">"sweeper\|heartbeat"</span>
 
 <span class="c1"># Check the subscription count</span>
 curl<span class="w"> </span>http://localhost:5001/health
@@ -1625,7 +1625,7 @@ Gitea issue:</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-08-16T04:35:11Z</span>
+  <span style="display:table-cell;text-align:right">2026-08-18T08:30:46Z</span>
 </div>
 
     </div>
