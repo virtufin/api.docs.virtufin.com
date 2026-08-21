@@ -1960,6 +1960,44 @@ references:
   commentId: N:Virtufin.Api.HealthChecks
   fullName: Virtufin.Api.HealthChecks
   nameWithType: Virtufin.Api.HealthChecks
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
+  name: ApiAuthHealthCheck
+  href: api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html
+  commentId: T:Virtufin.Api.HealthChecks.ApiAuthHealthCheck
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
+  nameWithType: ApiAuthHealthCheck
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Hosting.IHostEnvironment)
+  name: ApiAuthHealthCheck(ApiKeyAuthOptions, IHostEnvironment)
+  href: api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html#Virtufin_Api_HealthChecks_ApiAuthHealthCheck__ctor_Virtufin_Api_Auth_ApiKeyAuthOptions_Microsoft_Extensions_Hosting_IHostEnvironment_
+  commentId: M:Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Hosting.IHostEnvironment)
+  name.vb: New(ApiKeyAuthOptions, IHostEnvironment)
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.ApiAuthHealthCheck(Virtufin.Api.Auth.ApiKeyAuthOptions, Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName.vb: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.New(Virtufin.Api.Auth.ApiKeyAuthOptions, Microsoft.Extensions.Hosting.IHostEnvironment)
+  nameWithType: ApiAuthHealthCheck.ApiAuthHealthCheck(ApiKeyAuthOptions, IHostEnvironment)
+  nameWithType.vb: ApiAuthHealthCheck.New(ApiKeyAuthOptions, IHostEnvironment)
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor*
+  name: ApiAuthHealthCheck
+  href: api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html#Virtufin_Api_HealthChecks_ApiAuthHealthCheck__ctor_
+  commentId: Overload:Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.ApiAuthHealthCheck
+  fullName.vb: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.New
+  nameWithType: ApiAuthHealthCheck.ApiAuthHealthCheck
+  nameWithType.vb: ApiAuthHealthCheck.New
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  name: CheckHealthAsync(HealthCheckContext, CancellationToken)
+  href: api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html#Virtufin_Api_HealthChecks_ApiAuthHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
+  nameWithType: ApiAuthHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync*
+  name: CheckHealthAsync
+  href: api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html#Virtufin_Api_HealthChecks_ApiAuthHealthCheck_CheckHealthAsync_
+  commentId: Overload:Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync
+  isSpec: "True"
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync
+  nameWithType: ApiAuthHealthCheck.CheckHealthAsync
 - uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   name: DaprCircuitBreakerHealthCheck
   href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html

@@ -89,6 +89,9 @@ items:
     name: HealthChecks
     type: Namespace
     items:
+    - uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
+      name: ApiAuthHealthCheck
+      type: Class
     - uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
       name: DaprCircuitBreakerHealthCheck
       type: Class

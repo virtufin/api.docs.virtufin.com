@@ -438,6 +438,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.HealthChecks.ApiAuthHealthCheck",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.yml\" sourcestartlinenumber=\"1\">Fails readiness when API-key auth is disabled (no keys configured)\noutside Development. <code sourcefile=\"api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.yml\" sourcestartlinenumber=\"2\">ApiKeyAuthOptions.Enabled =&gt; Keys.Count &gt; 0</code> is a\ndeliberate zero-config local-dev default -- but the same empty-config\nstate reached by accident in a real deployment (a typo in\n<code sourcefile=\"api/Virtufin.Api.HealthChecks.ApiAuthHealthCheck.yml\" sourcestartlinenumber=\"5\">ApiAuth__Keys__&lt;name&gt;</code>, a missing secret) would otherwise\nsilently run the sole externally-exposed gateway with no authentication\nat all, with nothing surfacing it beyond a per-request log line. This\nturns that into a blocked rollout/failed readiness probe instead.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.yml",
       "output": {
         ".html": {

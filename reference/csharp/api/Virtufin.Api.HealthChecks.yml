@@ -5,6 +5,7 @@ items:
   id: HealthChecks
   parent: Virtufin.Api
   children:
+  - Virtufin.Api.HealthChecks.ApiAuthHealthCheck
   - Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   - Virtufin.Api.HealthChecks.DaprHealthCheck
   - Virtufin.Api.HealthChecks.DaprResiliencePipeline
@@ -19,6 +20,12 @@ items:
   assemblies:
   - Virtufin.Api
 references:
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
+  commentId: T:Virtufin.Api.HealthChecks.ApiAuthHealthCheck
+  href: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html
+  name: ApiAuthHealthCheck
+  nameWithType: ApiAuthHealthCheck
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
 - uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   commentId: T:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   href: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html

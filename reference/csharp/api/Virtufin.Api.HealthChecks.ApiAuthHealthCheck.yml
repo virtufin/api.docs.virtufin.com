@@ -1,33 +1,50 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
-  commentId: T:Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
-  id: GrpcChannelPoolHealthCheck
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
+  commentId: T:Virtufin.Api.HealthChecks.ApiAuthHealthCheck
+  id: ApiAuthHealthCheck
   parent: Virtufin.Api.HealthChecks
   children:
-  - Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.#ctor(Virtufin.Api.Services.GrpcChannelPool)
-  - Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  - Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Hosting.IHostEnvironment)
+  - Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
-  name: GrpcChannelPoolHealthCheck
-  nameWithType: GrpcChannelPoolHealthCheck
-  fullName: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+  name: ApiAuthHealthCheck
+  nameWithType: ApiAuthHealthCheck
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
   type: Class
   source:
     remote:
       path: src/Virtufin.Api/HealthChecks/HealthChecks.cs
       branch: master
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
-    id: GrpcChannelPoolHealthCheck
+    id: ApiAuthHealthCheck
     path: ../../../src/Virtufin.Api/HealthChecks/HealthChecks.cs
-    startLine: 30
+    startLine: 71
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks
+  summary: >-
+    Fails readiness when API-key auth is disabled (no keys configured)
+
+    outside Development. `ApiKeyAuthOptions.Enabled => Keys.Count > 0` is a
+
+    deliberate zero-config local-dev default -- but the same empty-config
+
+    state reached by accident in a real deployment (a typo in
+
+    `ApiAuth__Keys__<name>`, a missing secret) would otherwise
+
+    silently run the sole externally-exposed gateway with no authentication
+
+    at all, with nothing surfacing it beyond a per-request log line. This
+
+    turns that into a blocked rollout/failed readiness probe instead.
+  example: []
   syntax:
-    content: 'public class GrpcChannelPoolHealthCheck : IHealthCheck'
-    content.vb: Public Class GrpcChannelPoolHealthCheck Implements IHealthCheck
+    content: 'public class ApiAuthHealthCheck : IHealthCheck'
+    content.vb: Public Class ApiAuthHealthCheck Implements IHealthCheck
   inheritance:
   - System.Object
   implements:
@@ -40,16 +57,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.#ctor(Virtufin.Api.Services.GrpcChannelPool)
-  commentId: M:Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.#ctor(Virtufin.Api.Services.GrpcChannelPool)
-  id: '#ctor(Virtufin.Api.Services.GrpcChannelPool)'
-  parent: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Hosting.IHostEnvironment)
+  commentId: M:Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Hosting.IHostEnvironment)
+  id: '#ctor(Virtufin.Api.Auth.ApiKeyAuthOptions,Microsoft.Extensions.Hosting.IHostEnvironment)'
+  parent: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
   langs:
   - csharp
   - vb
-  name: GrpcChannelPoolHealthCheck(GrpcChannelPool)
-  nameWithType: GrpcChannelPoolHealthCheck.GrpcChannelPoolHealthCheck(GrpcChannelPool)
-  fullName: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.GrpcChannelPoolHealthCheck(Virtufin.Api.Services.GrpcChannelPool)
+  name: ApiAuthHealthCheck(ApiKeyAuthOptions, IHostEnvironment)
+  nameWithType: ApiAuthHealthCheck.ApiAuthHealthCheck(ApiKeyAuthOptions, IHostEnvironment)
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.ApiAuthHealthCheck(Virtufin.Api.Auth.ApiKeyAuthOptions, Microsoft.Extensions.Hosting.IHostEnvironment)
   type: Constructor
   source:
     remote:
@@ -58,30 +75,32 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/HealthChecks/HealthChecks.cs
-    startLine: 34
+    startLine: 76
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks
   syntax:
-    content: public GrpcChannelPoolHealthCheck(GrpcChannelPool channelPool)
+    content: public ApiAuthHealthCheck(ApiKeyAuthOptions authOptions, IHostEnvironment environment)
     parameters:
-    - id: channelPool
-      type: Virtufin.Api.Services.GrpcChannelPool
-    content.vb: Public Sub New(channelPool As GrpcChannelPool)
-  overload: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.#ctor*
-  nameWithType.vb: GrpcChannelPoolHealthCheck.New(GrpcChannelPool)
-  fullName.vb: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.New(Virtufin.Api.Services.GrpcChannelPool)
-  name.vb: New(GrpcChannelPool)
-- uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+    - id: authOptions
+      type: Virtufin.Api.Auth.ApiKeyAuthOptions
+    - id: environment
+      type: Microsoft.Extensions.Hosting.IHostEnvironment
+    content.vb: Public Sub New(authOptions As ApiKeyAuthOptions, environment As IHostEnvironment)
+  overload: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor*
+  nameWithType.vb: ApiAuthHealthCheck.New(ApiKeyAuthOptions, IHostEnvironment)
+  fullName.vb: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.New(Virtufin.Api.Auth.ApiKeyAuthOptions, Microsoft.Extensions.Hosting.IHostEnvironment)
+  name.vb: New(ApiKeyAuthOptions, IHostEnvironment)
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
   id: CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
-  parent: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
+  parent: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
   langs:
   - csharp
   - vb
   name: CheckHealthAsync(HealthCheckContext, CancellationToken)
-  nameWithType: GrpcChannelPoolHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
-  fullName: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
+  nameWithType: ApiAuthHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -90,7 +109,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: CheckHealthAsync
     path: ../../../src/Virtufin.Api/HealthChecks/HealthChecks.cs
-    startLine: 39
+    startLine: 82
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks
@@ -109,7 +128,7 @@ items:
       type: System.Threading.Tasks.Task{Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult}
       description: A <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> that completes when the health check has finished, yielding the status of the component being checked.
     content.vb: Public Function CheckHealthAsync(context As HealthCheckContext, cancellationToken As CancellationToken = Nothing) As Task(Of HealthCheckResult)
-  overload: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.CheckHealthAsync*
+  overload: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync*
   implements:
   - Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
 references:
@@ -435,28 +454,36 @@ references:
     name: HealthChecks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks
-- uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.#ctor*
-  commentId: Overload:Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.#ctor
-  href: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.html#Virtufin_Api_HealthChecks_GrpcChannelPoolHealthCheck__ctor_Virtufin_Api_Services_GrpcChannelPool_
-  name: GrpcChannelPoolHealthCheck
-  nameWithType: GrpcChannelPoolHealthCheck.GrpcChannelPoolHealthCheck
-  fullName: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.GrpcChannelPoolHealthCheck
-  nameWithType.vb: GrpcChannelPoolHealthCheck.New
-  fullName.vb: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.New
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor*
+  commentId: Overload:Virtufin.Api.HealthChecks.ApiAuthHealthCheck.#ctor
+  href: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html#Virtufin_Api_HealthChecks_ApiAuthHealthCheck__ctor_Virtufin_Api_Auth_ApiKeyAuthOptions_Microsoft_Extensions_Hosting_IHostEnvironment_
+  name: ApiAuthHealthCheck
+  nameWithType: ApiAuthHealthCheck.ApiAuthHealthCheck
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.ApiAuthHealthCheck
+  nameWithType.vb: ApiAuthHealthCheck.New
+  fullName.vb: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.New
   name.vb: New
-- uid: Virtufin.Api.Services.GrpcChannelPool
-  commentId: T:Virtufin.Api.Services.GrpcChannelPool
-  parent: Virtufin.Api.Services
-  href: Virtufin.Api.Services.GrpcChannelPool.html
-  name: GrpcChannelPool
-  nameWithType: GrpcChannelPool
-  fullName: Virtufin.Api.Services.GrpcChannelPool
-- uid: Virtufin.Api.Services
-  commentId: N:Virtufin.Api.Services
+- uid: Virtufin.Api.Auth.ApiKeyAuthOptions
+  commentId: T:Virtufin.Api.Auth.ApiKeyAuthOptions
+  parent: Virtufin.Api.Auth
+  href: Virtufin.Api.Auth.ApiKeyAuthOptions.html
+  name: ApiKeyAuthOptions
+  nameWithType: ApiKeyAuthOptions
+  fullName: Virtufin.Api.Auth.ApiKeyAuthOptions
+- uid: Microsoft.Extensions.Hosting.IHostEnvironment
+  commentId: T:Microsoft.Extensions.Hosting.IHostEnvironment
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment
+  name: IHostEnvironment
+  nameWithType: IHostEnvironment
+  fullName: Microsoft.Extensions.Hosting.IHostEnvironment
+- uid: Virtufin.Api.Auth
+  commentId: N:Virtufin.Api.Auth
   href: Virtufin.html
-  name: Virtufin.Api.Services
-  nameWithType: Virtufin.Api.Services
-  fullName: Virtufin.Api.Services
+  name: Virtufin.Api.Auth
+  nameWithType: Virtufin.Api.Auth
+  fullName: Virtufin.Api.Auth
   spec.csharp:
   - uid: Virtufin
     name: Virtufin
@@ -466,9 +493,9 @@ references:
     name: Api
     href: Virtufin.Api.html
   - name: .
-  - uid: Virtufin.Api.Services
-    name: Services
-    href: Virtufin.Api.Services.html
+  - uid: Virtufin.Api.Auth
+    name: Auth
+    href: Virtufin.Api.Auth.html
   spec.vb:
   - uid: Virtufin
     name: Virtufin
@@ -478,9 +505,46 @@ references:
     name: Api
     href: Virtufin.Api.html
   - name: .
-  - uid: Virtufin.Api.Services
-    name: Services
-    href: Virtufin.Api.Services.html
+  - uid: Virtufin.Api.Auth
+    name: Auth
+    href: Virtufin.Api.Auth.html
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading
@@ -517,12 +581,12 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.CheckHealthAsync*
-  commentId: Overload:Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.CheckHealthAsync
-  href: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.html#Virtufin_Api_HealthChecks_GrpcChannelPoolHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
+- uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync*
+  commentId: Overload:Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync
+  href: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.html#Virtufin_Api_HealthChecks_ApiAuthHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
   name: CheckHealthAsync
-  nameWithType: GrpcChannelPoolHealthCheck.CheckHealthAsync
-  fullName: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.CheckHealthAsync
+  nameWithType: ApiAuthHealthCheck.CheckHealthAsync
+  fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync
 - uid: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
   commentId: M:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
   parent: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck
