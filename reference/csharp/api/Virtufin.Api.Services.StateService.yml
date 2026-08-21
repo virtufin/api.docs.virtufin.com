@@ -303,7 +303,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
-    startLine: 398
+    startLine: 399
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
