@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/4edf0c3e049f0303f4b4728bd3e02e2d90b3d9ec" target="_blank" rel="noopener" class="commit-badge" title="View commit 4edf0c3e049f0303f4b4728bd3e02e2d90b3d9ec">
+            <a href="{git_repo_url}/commit/d98cf1eff5bda8cee2674cf10147bb7a4aafe384" target="_blank" rel="noopener" class="commit-badge" title="View commit d98cf1eff5bda8cee2674cf10147bb7a4aafe384">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">4edf0c3e049f0303f4b4728bd3e02e2d90b3d9ec</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">d98cf1eff5bda8cee2674cf10147bb7a4aafe384</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,6 +158,40 @@ defaults suitable for local development.</p>
 
   <h2 class="section" id="fields">Fields
 </h2>
+
+
+
+  <h3 id="Virtufin_Api_Client_ApiEndpoint_ApiKeyEnvVar" data-uid="Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar">
+  ApiKeyEnvVar
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Environment variable carrying this service's own <code>x-api-key</code> for
+calling the gateway. Unset/empty means &quot;send no key&quot; -- correct when
+the gateway's auth is disabled (no keys configured on it), and the
+only case where it should ever be unset outside local dev.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ApiKeyEnvVar = &quot;VIRTUFIN_API_KEY&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 

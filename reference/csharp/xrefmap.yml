@@ -420,6 +420,12 @@ references:
   commentId: T:Virtufin.Api.Client.ApiEndpoint
   fullName: Virtufin.Api.Client.ApiEndpoint
   nameWithType: ApiEndpoint
+- uid: Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar
+  name: ApiKeyEnvVar
+  href: api/Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_ApiKeyEnvVar
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar
+  fullName: Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar
+  nameWithType: ApiEndpoint.ApiKeyEnvVar
 - uid: Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
   name: BuildAddress(string, int)
   href: api/Virtufin.Api.Client.ApiEndpoint.html#Virtufin_Api_Client_ApiEndpoint_BuildAddress_System_String_System_Int32_

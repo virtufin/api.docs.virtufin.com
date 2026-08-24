@@ -35,6 +35,7 @@
   "Virtufin.Api.Client.ApiClient.ListMethodsAsync(System.String)": "Virtufin.Api.Client.ApiClient.yml",
   "Virtufin.Api.Client.ApiClient.ListServicesAsync": "Virtufin.Api.Client.ApiClient.yml",
   "Virtufin.Api.Client.ApiEndpoint": "Virtufin.Api.Client.ApiEndpoint.yml",
+  "Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar": "Virtufin.Api.Client.ApiEndpoint.yml",
   "Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)": "Virtufin.Api.Client.ApiEndpoint.yml",
   "Virtufin.Api.Client.ApiEndpoint.DefaultHost": "Virtufin.Api.Client.ApiEndpoint.yml",
   "Virtufin.Api.Client.ApiEndpoint.DefaultPort": "Virtufin.Api.Client.ApiEndpoint.yml",

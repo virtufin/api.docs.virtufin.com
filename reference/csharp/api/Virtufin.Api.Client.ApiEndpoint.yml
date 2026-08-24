@@ -5,6 +5,7 @@ items:
   id: ApiEndpoint
   parent: Virtufin.Api.Client
   children:
+  - Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar
   - Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
   - Virtufin.Api.Client.ApiEndpoint.DefaultHost
   - Virtufin.Api.Client.ApiEndpoint.DefaultPort
@@ -166,6 +167,42 @@ items:
     return:
       type: System.String
     content.vb: Public Const PortEnvVar As String = "VIRTUFIN_API_GRPC_PORT"
+- uid: Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar
+  commentId: F:Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar
+  id: ApiKeyEnvVar
+  parent: Virtufin.Api.Client.ApiEndpoint
+  langs:
+  - csharp
+  - vb
+  name: ApiKeyEnvVar
+  nameWithType: ApiEndpoint.ApiKeyEnvVar
+  fullName: Virtufin.Api.Client.ApiEndpoint.ApiKeyEnvVar
+  type: Field
+  source:
+    remote:
+      path: src/Virtufin.Api.Client/SystemEvents.cs
+      branch: master
+      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+    id: ApiKeyEnvVar
+    path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
+    startLine: 55
+  assemblies:
+  - Virtufin.Api.Client
+  namespace: Virtufin.Api.Client
+  summary: >-
+    Environment variable carrying this service's own <code>x-api-key</code> for
+
+    calling the gateway. Unset/empty means "send no key" -- correct when
+
+    the gateway's auth is disabled (no keys configured on it), and the
+
+    only case where it should ever be unset outside local dev.
+  example: []
+  syntax:
+    content: public const string ApiKeyEnvVar = "VIRTUFIN_API_KEY"
+    return:
+      type: System.String
+    content.vb: Public Const ApiKeyEnvVar As String = "VIRTUFIN_API_KEY"
 - uid: Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
   commentId: M:Virtufin.Api.Client.ApiEndpoint.BuildAddress(System.String,System.Int32)
   id: BuildAddress(System.String,System.Int32)
@@ -184,7 +221,7 @@ items:
       repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
     id: BuildAddress
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
-    startLine: 54
+    startLine: 62
   assemblies:
   - Virtufin.Api.Client
   namespace: Virtufin.Api.Client
