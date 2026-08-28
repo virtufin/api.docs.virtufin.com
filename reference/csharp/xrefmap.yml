@@ -2670,6 +2670,28 @@ references:
   commentId: F:Virtufin.Api.Services.DaprConstants.StateStoreName
   fullName: Virtufin.Api.Services.DaprConstants.StateStoreName
   nameWithType: DaprConstants.StateStoreName
+- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  name: DaprStableJobCallbackMethodProvider
+  href: api/Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.html
+  commentId: T:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  nameWithType: DaprStableJobCallbackMethodProvider
+- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  name: OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
+  href: api/Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.html#Virtufin_Api_Services_DaprStableJobCallbackMethodProvider_OnServiceMethodDiscovery_Grpc_AspNetCore_Server_Model_ServiceMethodProviderContext_Virtufin_Api_Services_DaprAppCallbackService__
+  commentId: M:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  name.vb: OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
+  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext<Virtufin.Api.Services.DaprAppCallbackService>)
+  fullName.vb: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext(Of Virtufin.Api.Services.DaprAppCallbackService))
+  nameWithType: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
+  nameWithType.vb: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
+- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery*
+  name: OnServiceMethodDiscovery
+  href: api/Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.html#Virtufin_Api_Services_DaprStableJobCallbackMethodProvider_OnServiceMethodDiscovery_
+  commentId: Overload:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
+  isSpec: "True"
+  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
+  nameWithType: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
 - uid: Virtufin.Api.Services.DateTimeFormatConstants
   name: DateTimeFormatConstants
   href: api/Virtufin.Api.Services.DateTimeFormatConstants.html

@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/47dbbeb17c6679904e139dddf327315a297951c2" target="_blank" rel="noopener" class="commit-badge" title="View commit 47dbbeb17c6679904e139dddf327315a297951c2">
+            <a href="{git_repo_url}/commit/ca1aaab6f4d40ad881041f1d8ca1dadc9e1aa8b9" target="_blank" rel="noopener" class="commit-badge" title="View commit ca1aaab6f4d40ad881041f1d8ca1dadc9e1aa8b9">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">47dbbeb17c6679904e139dddf327315a297951c2</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ca1aaab6f4d40ad881041f1d8ca1dadc9e1aa8b9</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,6 +141,49 @@ Provides service configuration discovery and management capabilities.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.Api.Services.DaprConstants.html">DaprConstants</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.html">DaprStableJobCallbackMethodProvider</a></dt>
+      <dd><p>Serves the Dapr scheduler's job callback on its <strong>stable</strong> route,
+<code>/dapr.proto.runtime.v1.AppCallback/OnJobEvent</code>.</p>
+<p>
+Why this exists: the Dapr runtime (confirmed on 1.18.1) delivers
+scheduled jobs to <code>AppCallback/OnJobEvent</code> — the stable service, per
+dapr/dapr's own <code>appcallback.proto</code>. The .NET SDK lags it: the
+generated code in <code>Dapr.Protos</code> 1.18.2 contains
+<code>OnJobEventAlpha1</code> on <code>AppCallbackAlpha</code> and no
+<code>OnJobEvent</code> anywhere, so
+<a class="xref" href="Virtufin.Api.Services.DaprAppCallbackService.html">DaprAppCallbackService</a> could only ever bind the alpha
+route. Nothing served the route Dapr actually calls, the request
+matched no endpoint, and it was rejected 401 by
+<code>ApiKeyHttpMiddleware</code> (which exempts only requests whose matched
+endpoint carries <code>GrpcMethodMetadata</code>). Net effect: **no scheduled
+trigger ever fired**, while Dapr retried roughly once a second forever.
+</p>
+<p>
+Registering the method here rather than regenerating
+<code>appcallback.proto</code> into this repo is deliberate: the request and
+response types already exist in <code>Dapr.Protos</code> and are reused
+as-is, so there is no second copy of the Dapr message types to collide
+with the SDK's (the CS0433 duplicate-type trap this codebase has hit
+before). Only the service/method *name* differs.
+</p>
+<p>
+Because the endpoint is produced through the normal gRPC service-model
+pipeline it carries <code>GrpcMethodMetadata</code>, so
+<code>ApiKeyHttpMiddleware</code> lets it through to
+<code>ApiKeyInterceptor</code>, which exempts the
+<code>/dapr.proto.runtime.v1.AppCallback/</code> prefix — the sidecar cannot
+present an API key.
+</p>
+<p>
+Both routes stay live: the alpha one for older runtimes, this one for
+current ones. They share a single handler, so behaviour cannot drift.
+Once the SDK generates the stable method, this provider can be replaced
+by a plain <code>override OnJobEvent</code> on
+<a class="xref" href="Virtufin.Api.Services.DaprAppCallbackService.html">DaprAppCallbackService</a>.
+</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virtufin.Api.Services.DateTimeFormatConstants.html">DateTimeFormatConstants</a></dt>

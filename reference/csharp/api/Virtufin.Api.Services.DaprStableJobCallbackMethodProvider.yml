@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  commentId: T:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  id: DaprStableJobCallbackMethodProvider
+  parent: Virtufin.Api.Services
+  children:
+  - Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  langs:
+  - csharp
+  - vb
+  name: DaprStableJobCallbackMethodProvider
+  nameWithType: DaprStableJobCallbackMethodProvider
+  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  type: Class
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/DaprStableJobCallbackMethodProvider.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
+    id: DaprStableJobCallbackMethodProvider
+    path: ../../../src/Virtufin.Api/Services/DaprStableJobCallbackMethodProvider.cs
+    startLine: 52
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: >-
+    Serves the Dapr scheduler's job callback on its **stable** route,
+
+    <code>/dapr.proto.runtime.v1.AppCallback/OnJobEvent</code>.
+
+
+    <p>
+
+    Why this exists: the Dapr runtime (confirmed on 1.18.1) delivers
+
+    scheduled jobs to <code>AppCallback/OnJobEvent</code> — the stable service, per
+
+    dapr/dapr's own <code>appcallback.proto</code>. The .NET SDK lags it: the
+
+    generated code in <code>Dapr.Protos</code> 1.18.2 contains
+
+    <code>OnJobEventAlpha1</code> on <code>AppCallbackAlpha</code> and no
+
+    <code>OnJobEvent</code> anywhere, so
+
+    <xref href="Virtufin.Api.Services.DaprAppCallbackService" data-throw-if-not-resolved="false"></xref> could only ever bind the alpha
+
+    route. Nothing served the route Dapr actually calls, the request
+
+    matched no endpoint, and it was rejected 401 by
+
+    <code>ApiKeyHttpMiddleware</code> (which exempts only requests whose matched
+
+    endpoint carries <code>GrpcMethodMetadata</code>). Net effect: **no scheduled
+
+    trigger ever fired**, while Dapr retried roughly once a second forever.
+
+    </p>
+
+
+    <p>
+
+    Registering the method here rather than regenerating
+
+    <code>appcallback.proto</code> into this repo is deliberate: the request and
+
+    response types already exist in <code>Dapr.Protos</code> and are reused
+
+    as-is, so there is no second copy of the Dapr message types to collide
+
+    with the SDK's (the CS0433 duplicate-type trap this codebase has hit
+
+    before). Only the service/method *name* differs.
+
+    </p>
+
+
+    <p>
+
+    Because the endpoint is produced through the normal gRPC service-model
+
+    pipeline it carries <code>GrpcMethodMetadata</code>, so
+
+    <code>ApiKeyHttpMiddleware</code> lets it through to
+
+    <code>ApiKeyInterceptor</code>, which exempts the
+
+    <code>/dapr.proto.runtime.v1.AppCallback/</code> prefix — the sidecar cannot
+
+    present an API key.
+
+    </p>
+
+
+    <p>
+
+    Both routes stay live: the alpha one for older runtimes, this one for
+
+    current ones. They share a single handler, so behaviour cannot drift.
+
+    Once the SDK generates the stable method, this provider can be replaced
+
+    by a plain <code>override OnJobEvent</code> on
+
+    <xref href="Virtufin.Api.Services.DaprAppCallbackService" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public sealed class DaprStableJobCallbackMethodProvider : IServiceMethodProvider<DaprAppCallbackService>'
+    content.vb: Public NotInheritable Class DaprStableJobCallbackMethodProvider Implements IServiceMethodProvider(Of DaprAppCallbackService)
+  inheritance:
+  - System.Object
+  implements:
+  - Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  commentId: M:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  id: OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  parent: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  langs:
+  - csharp
+  - vb
+  name: OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
+  nameWithType: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
+  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext<Virtufin.Api.Services.DaprAppCallbackService>)
+  type: Method
+  source:
+    remote:
+      path: src/Virtufin.Api/Services/DaprStableJobCallbackMethodProvider.cs
+      branch: master
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
+    id: OnServiceMethodDiscovery
+    path: ../../../src/Virtufin.Api/Services/DaprStableJobCallbackMethodProvider.cs
+    startLine: 71
+  assemblies:
+  - Virtufin.Api
+  namespace: Virtufin.Api.Services
+  summary: Called to execute the provider.
+  example: []
+  syntax:
+    content: public void OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService> context)
+    parameters:
+    - id: context
+      type: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService}
+      description: The <xref href="Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub OnServiceMethodDiscovery(context As ServiceMethodProviderContext(Of DaprAppCallbackService))
+  overload: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery*
+  implements:
+  - Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  nameWithType.vb: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
+  fullName.vb: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext(Of Virtufin.Api.Services.DaprAppCallbackService))
+  name.vb: OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
+references:
+- uid: Virtufin.Api.Services.DaprAppCallbackService
+  commentId: T:Virtufin.Api.Services.DaprAppCallbackService
+  href: Virtufin.Api.Services.DaprAppCallbackService.html
+  name: DaprAppCallbackService
+  nameWithType: DaprAppCallbackService
+  fullName: Virtufin.Api.Services.DaprAppCallbackService
+- uid: Virtufin.Api.Services
+  commentId: N:Virtufin.Api.Services
+  href: Virtufin.html
+  name: Virtufin.Api.Services
+  nameWithType: Virtufin.Api.Services
+  fullName: Virtufin.Api.Services
+  spec.csharp:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+  spec.vb:
+  - uid: Virtufin
+    name: Virtufin
+    href: Virtufin.html
+  - name: .
+  - uid: Virtufin.Api
+    name: Api
+    href: Virtufin.Api.html
+  - name: .
+  - uid: Virtufin.Api.Services
+    name: Services
+    href: Virtufin.Api.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}
+  commentId: T:Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}
+  parent: Grpc.AspNetCore.Server.Model
+  definition: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  name: IServiceMethodProvider<DaprAppCallbackService>
+  nameWithType: IServiceMethodProvider<DaprAppCallbackService>
+  fullName: Grpc.AspNetCore.Server.Model.IServiceMethodProvider<Virtufin.Api.Services.DaprAppCallbackService>
+  nameWithType.vb: IServiceMethodProvider(Of DaprAppCallbackService)
+  fullName.vb: Grpc.AspNetCore.Server.Model.IServiceMethodProvider(Of Virtufin.Api.Services.DaprAppCallbackService)
+  name.vb: IServiceMethodProvider(Of DaprAppCallbackService)
+  spec.csharp:
+  - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1
+    name: IServiceMethodProvider
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  - name: <
+  - uid: Virtufin.Api.Services.DaprAppCallbackService
+    name: DaprAppCallbackService
+    href: Virtufin.Api.Services.DaprAppCallbackService.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1
+    name: IServiceMethodProvider
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.DaprAppCallbackService
+    name: DaprAppCallbackService
+    href: Virtufin.Api.Services.DaprAppCallbackService.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1
+  commentId: T:Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  name: IServiceMethodProvider<TService>
+  nameWithType: IServiceMethodProvider<TService>
+  fullName: Grpc.AspNetCore.Server.Model.IServiceMethodProvider<TService>
+  nameWithType.vb: IServiceMethodProvider(Of TService)
+  fullName.vb: Grpc.AspNetCore.Server.Model.IServiceMethodProvider(Of TService)
+  name.vb: IServiceMethodProvider(Of TService)
+  spec.csharp:
+  - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1
+    name: IServiceMethodProvider
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  - name: <
+  - name: TService
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1
+    name: IServiceMethodProvider
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TService
+  - name: )
+- uid: Grpc.AspNetCore.Server.Model
+  commentId: N:Grpc.AspNetCore.Server.Model
+  isExternal: true
+  name: Grpc.AspNetCore.Server.Model
+  nameWithType: Grpc.AspNetCore.Server.Model
+  fullName: Grpc.AspNetCore.Server.Model
+  spec.csharp:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.AspNetCore
+    name: AspNetCore
+    isExternal: true
+  - name: .
+  - uid: Grpc.AspNetCore.Server
+    name: Server
+    isExternal: true
+  - name: .
+  - uid: Grpc.AspNetCore.Server.Model
+    name: Model
+    isExternal: true
+  spec.vb:
+  - uid: Grpc
+    name: Grpc
+    isExternal: true
+  - name: .
+  - uid: Grpc.AspNetCore
+    name: AspNetCore
+    isExternal: true
+  - name: .
+  - uid: Grpc.AspNetCore.Server
+    name: Server
+    isExternal: true
+  - name: .
+  - uid: Grpc.AspNetCore.Server.Model
+    name: Model
+    isExternal: true
+- uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+  commentId: T:Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  name: ServiceMethodProviderContext<TService>
+  nameWithType: ServiceMethodProviderContext<TService>
+  fullName: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext<TService>
+  nameWithType.vb: ServiceMethodProviderContext(Of TService)
+  fullName.vb: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext(Of TService)
+  name.vb: ServiceMethodProviderContext(Of TService)
+  spec.csharp:
+  - uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+    name: ServiceMethodProviderContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  - name: <
+  - name: TService
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+    name: ServiceMethodProviderContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TService
+  - name: )
+- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery*
+  commentId: Overload:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
+  href: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.html#Virtufin_Api_Services_DaprStableJobCallbackMethodProvider_OnServiceMethodDiscovery_Grpc_AspNetCore_Server_Model_ServiceMethodProviderContext_Virtufin_Api_Services_DaprAppCallbackService__
+  name: OnServiceMethodDiscovery
+  nameWithType: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
+  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
+- uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  commentId: M:Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  parent: Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}
+  definition: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{`0})
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  name: OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
+  nameWithType: IServiceMethodProvider<DaprAppCallbackService>.OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
+  fullName: Grpc.AspNetCore.Server.Model.IServiceMethodProvider<Virtufin.Api.Services.DaprAppCallbackService>.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext<Virtufin.Api.Services.DaprAppCallbackService>)
+  nameWithType.vb: IServiceMethodProvider(Of DaprAppCallbackService).OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
+  fullName.vb: Grpc.AspNetCore.Server.Model.IServiceMethodProvider(Of Virtufin.Api.Services.DaprAppCallbackService).OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext(Of Virtufin.Api.Services.DaprAppCallbackService))
+  name.vb: OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
+  spec.csharp:
+  - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+    name: OnServiceMethodDiscovery
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  - name: (
+  - uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+    name: ServiceMethodProviderContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  - name: <
+  - uid: Virtufin.Api.Services.DaprAppCallbackService
+    name: DaprAppCallbackService
+    href: Virtufin.Api.Services.DaprAppCallbackService.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+    name: OnServiceMethodDiscovery
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  - name: (
+  - uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+    name: ServiceMethodProviderContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.DaprAppCallbackService
+    name: DaprAppCallbackService
+    href: Virtufin.Api.Services.DaprAppCallbackService.html
+  - name: )
+  - name: )
+- uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService}
+  commentId: T:Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService}
+  parent: Grpc.AspNetCore.Server.Model
+  definition: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  name: ServiceMethodProviderContext<DaprAppCallbackService>
+  nameWithType: ServiceMethodProviderContext<DaprAppCallbackService>
+  fullName: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext<Virtufin.Api.Services.DaprAppCallbackService>
+  nameWithType.vb: ServiceMethodProviderContext(Of DaprAppCallbackService)
+  fullName.vb: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext(Of Virtufin.Api.Services.DaprAppCallbackService)
+  name.vb: ServiceMethodProviderContext(Of DaprAppCallbackService)
+  spec.csharp:
+  - uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+    name: ServiceMethodProviderContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  - name: <
+  - uid: Virtufin.Api.Services.DaprAppCallbackService
+    name: DaprAppCallbackService
+    href: Virtufin.Api.Services.DaprAppCallbackService.html
+  - name: '>'
+  spec.vb:
+  - uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+    name: ServiceMethodProviderContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Virtufin.Api.Services.DaprAppCallbackService
+    name: DaprAppCallbackService
+    href: Virtufin.Api.Services.DaprAppCallbackService.html
+  - name: )
+- uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{`0})
+  commentId: M:Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{`0})
+  isExternal: true
+  href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  name: OnServiceMethodDiscovery(ServiceMethodProviderContext<TService>)
+  nameWithType: IServiceMethodProvider<TService>.OnServiceMethodDiscovery(ServiceMethodProviderContext<TService>)
+  fullName: Grpc.AspNetCore.Server.Model.IServiceMethodProvider<TService>.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext<TService>)
+  nameWithType.vb: IServiceMethodProvider(Of TService).OnServiceMethodDiscovery(ServiceMethodProviderContext(Of TService))
+  fullName.vb: Grpc.AspNetCore.Server.Model.IServiceMethodProvider(Of TService).OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext(Of TService))
+  name.vb: OnServiceMethodDiscovery(ServiceMethodProviderContext(Of TService))
+  spec.csharp:
+  - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{`0})
+    name: OnServiceMethodDiscovery
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  - name: (
+  - uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+    name: ServiceMethodProviderContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  - name: <
+  - name: TService
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider`1.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{`0})
+    name: OnServiceMethodDiscovery
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs
+  - name: (
+  - uid: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext`1
+    name: ServiceMethodProviderContext
+    isExternal: true
+    href: https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TService
+  - name: )
+  - name: )

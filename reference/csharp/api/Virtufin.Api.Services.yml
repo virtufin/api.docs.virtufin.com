@@ -12,6 +12,7 @@ items:
   - Virtufin.Api.Services.ConfigService
   - Virtufin.Api.Services.DaprAppCallbackService
   - Virtufin.Api.Services.DaprConstants
+  - Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
   - Virtufin.Api.Services.DateTimeFormatConstants
   - Virtufin.Api.Services.FieldSchema
   - Virtufin.Api.Services.GatewayService
@@ -91,6 +92,12 @@ references:
   name: DaprConstants
   nameWithType: DaprConstants
   fullName: Virtufin.Api.Services.DaprConstants
+- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  commentId: T:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  href: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.html
+  name: DaprStableJobCallbackMethodProvider
+  nameWithType: DaprStableJobCallbackMethodProvider
+  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
 - uid: Virtufin.Api.Services.DateTimeFormatConstants
   commentId: T:Virtufin.Api.Services.DateTimeFormatConstants
   href: Virtufin.Api.Services.DateTimeFormatConstants.html

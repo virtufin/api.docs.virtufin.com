@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class SubscriptionHealthSweeperHostedService | Virtufin API - C# Reference </title>
+      <title>Class DaprStableJobCallbackMethodProvider | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class SubscriptionHealthSweeperHostedService | Virtufin API - C# Reference ">
+      <meta name="title" content="Class DaprStableJobCallbackMethodProvider | Virtufin API - C# Reference ">
       
-      <meta name="description" content="Background service that periodically sweeps subscriptions and removes dead ones. Uses heartbeat writes to detect subscriptions whose clients have disconnected.">
+      <meta name="description" content="Serves the Dapr scheduler&#39;s job callback on its stable route, /dapr.proto.runtime.v1.AppCallback/OnJobEvent.  Why this exists: the Dapr runtime (confirmed on 1.18.1) delivers scheduled jobs to AppCallback/OnJobEvent — the stable service, per dapr/dapr&#39;s own appcallback.proto. The .NET SDK lags it: the generated code in Dapr.Protos 1.18.2 contains OnJobEventAlpha1 on AppCallbackAlpha and no OnJobEvent anywhere, so  could only ever bind the alpha route. Nothing served the route Dapr actually calls, the request matched no endpoint, and it was rejected 401 by ApiKeyHttpMiddleware (which exempts only requests whose matched endpoint carries GrpcMethodMetadata). Net effect: **no scheduled trigger ever fired**, while Dapr retried roughly once a second forever.   Registering the method here rather than regenerating appcallback.proto into this repo is deliberate: the request and response types already exist in Dapr.Protos and are reused as-is, so there is no second copy of the Dapr message types to collide with the SDK&#39;s (the CS0433 duplicate-type trap this codebase has hit before). Only the service/method *name* differs.   Because the endpoint is produced through the normal gRPC service-model pipeline it carries GrpcMethodMetadata, so ApiKeyHttpMiddleware lets it through to ApiKeyInterceptor, which exempts the /dapr.proto.runtime.v1.AppCallback/ prefix — the sidecar cannot present an API key.   Both routes stay live: the alpha one for older runtimes, this one for current ones. They share a single handler, so behaviour cannot drift. Once the SDK generates the stable method, this provider can be replaced by a plain override OnJobEvent on .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.SubscriptionHealthSweeperHostedService">
+        <article data-uid="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider">
 
 
 
-  <h1 id="Virtufin_Api_Services_SubscriptionHealthSweeperHostedService" data-uid="Virtufin.Api.Services.SubscriptionHealthSweeperHostedService" class="text-break">
-Class SubscriptionHealthSweeperHostedService  
+  <h1 id="Virtufin_Api_Services_DaprStableJobCallbackMethodProvider" data-uid="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider" class="text-break">
+Class DaprStableJobCallbackMethodProvider  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,13 +101,50 @@ Class SubscriptionHealthSweeperHostedService
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Background service that periodically sweeps subscriptions and removes dead ones.
-Uses heartbeat writes to detect subscriptions whose clients have disconnected.</p>
+  <div class="markdown summary"><p>Serves the Dapr scheduler's job callback on its <strong>stable</strong> route,
+<code>/dapr.proto.runtime.v1.AppCallback/OnJobEvent</code>.</p>
+<p>
+Why this exists: the Dapr runtime (confirmed on 1.18.1) delivers
+scheduled jobs to <code>AppCallback/OnJobEvent</code> — the stable service, per
+dapr/dapr's own <code>appcallback.proto</code>. The .NET SDK lags it: the
+generated code in <code>Dapr.Protos</code> 1.18.2 contains
+<code>OnJobEventAlpha1</code> on <code>AppCallbackAlpha</code> and no
+<code>OnJobEvent</code> anywhere, so
+<a class="xref" href="Virtufin.Api.Services.DaprAppCallbackService.html">DaprAppCallbackService</a> could only ever bind the alpha
+route. Nothing served the route Dapr actually calls, the request
+matched no endpoint, and it was rejected 401 by
+<code>ApiKeyHttpMiddleware</code> (which exempts only requests whose matched
+endpoint carries <code>GrpcMethodMetadata</code>). Net effect: **no scheduled
+trigger ever fired**, while Dapr retried roughly once a second forever.
+</p>
+<p>
+Registering the method here rather than regenerating
+<code>appcallback.proto</code> into this repo is deliberate: the request and
+response types already exist in <code>Dapr.Protos</code> and are reused
+as-is, so there is no second copy of the Dapr message types to collide
+with the SDK's (the CS0433 duplicate-type trap this codebase has hit
+before). Only the service/method *name* differs.
+</p>
+<p>
+Because the endpoint is produced through the normal gRPC service-model
+pipeline it carries <code>GrpcMethodMetadata</code>, so
+<code>ApiKeyHttpMiddleware</code> lets it through to
+<code>ApiKeyInterceptor</code>, which exempts the
+<code>/dapr.proto.runtime.v1.AppCallback/</code> prefix — the sidecar cannot
+present an API key.
+</p>
+<p>
+Both routes stay live: the alpha one for older runtimes, this one for
+current ones. They share a single handler, so behaviour cannot drift.
+Once the SDK generates the stable method, this provider can be replaced
+by a plain <code>override OnJobEvent</code> on
+<a class="xref" href="Virtufin.Api.Services.DaprAppCallbackService.html">DaprAppCallbackService</a>.
+</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class SubscriptionHealthSweeperHostedService : BackgroundService, IHostedService, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DaprStableJobCallbackMethodProvider : IServiceMethodProvider&lt;DaprAppCallbackService&gt;</code></pre>
   </div>
 
 
@@ -117,16 +154,14 @@ Uses heartbeat writes to detect subscriptions whose clients have disconnected.</
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice">BackgroundService</a></div>
-      <div><span class="xref">SubscriptionHealthSweeperHostedService</span></div>
+      <div><span class="xref">DaprStableJobCallbackMethodProvider</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice">IHostedService</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/IServiceMethodProvider.cs">IServiceMethodProvider</a>&lt;<a class="xref" href="Virtufin.Api.Services.DaprAppCallbackService.html">DaprAppCallbackService</a>&gt;</div>
     </dd>
   </dl>
 
@@ -134,18 +169,6 @@ Uses heartbeat writes to detect subscriptions whose clients have disconnected.</
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose">BackgroundService.Dispose()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync">BackgroundService.StartAsync(CancellationToken)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync">BackgroundService.StopAsync(CancellationToken)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executetask">BackgroundService.ExecuteTask</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -171,74 +194,29 @@ Uses heartbeat writes to detect subscriptions whose clients have disconnected.</
 
 
 
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="Virtufin_Api_Services_SubscriptionHealthSweeperHostedService__ctor_" data-uid="Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.#ctor*"></a>
-
-  <h3 id="Virtufin_Api_Services_SubscriptionHealthSweeperHostedService__ctor_Virtufin_Api_Services_PubsubSubscriptionManager_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_SubscriptionHealthSweeperHostedService__" data-uid="Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.#ctor(Virtufin.Api.Services.PubsubSubscriptionManager,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.SubscriptionHealthSweeperHostedService})">
-  SubscriptionHealthSweeperHostedService(PubsubSubscriptionManager, ILogger&lt;SubscriptionHealthSweeperHostedService&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SubscriptionHealthSweeperHostedService(PubsubSubscriptionManager pubsubManager, ILogger&lt;SubscriptionHealthSweeperHostedService&gt; logger)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>pubsubManager</code> <a class="xref" href="Virtufin.Api.Services.PubsubSubscriptionManager.html">PubsubSubscriptionManager</a></dt>
-    <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.html">SubscriptionHealthSweeperHostedService</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="Virtufin_Api_Services_SubscriptionHealthSweeperHostedService_ExecuteAsync_" data-uid="Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.ExecuteAsync*"></a>
+  <a id="Virtufin_Api_Services_DaprStableJobCallbackMethodProvider_OnServiceMethodDiscovery_" data-uid="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery*"></a>
 
-  <h3 id="Virtufin_Api_Services_SubscriptionHealthSweeperHostedService_ExecuteAsync_System_Threading_CancellationToken_" data-uid="Virtufin.Api.Services.SubscriptionHealthSweeperHostedService.ExecuteAsync(System.Threading.CancellationToken)">
-  ExecuteAsync(CancellationToken)
+  <h3 id="Virtufin_Api_Services_DaprStableJobCallbackMethodProvider_OnServiceMethodDiscovery_Grpc_AspNetCore_Server_Model_ServiceMethodProviderContext_Virtufin_Api_Services_DaprAppCallbackService__" data-uid="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})">
+  OnServiceMethodDiscovery(ServiceMethodProviderContext&lt;DaprAppCallbackService&gt;)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>This method is called when the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice">IHostedService</a> starts. The implementation should return a task that represents
-the lifetime of the long running operation(s) being performed.</p>
+  <div class="markdown level1 summary"><p>Called to execute the provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task ExecuteAsync(CancellationToken stoppingToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnServiceMethodDiscovery(ServiceMethodProviderContext&lt;DaprAppCallbackService&gt; context)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>stoppingToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Triggered when <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync">StopAsync(CancellationToken)</a> is called.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the long running operations.</p>
+    <dt><code>context</code> <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs">ServiceMethodProviderContext</a>&lt;<a class="xref" href="Virtufin.Api.Services.DaprAppCallbackService.html">DaprAppCallbackService</a>&gt;</dt>
+    <dd><p>The <a class="xref" href="https://github.com/grpc/grpc-dotnet/blob/master/src/Grpc.AspNetCore.Server/Model/ServiceMethodProviderContext.cs">ServiceMethodProviderContext&lt;TService&gt;</a>.</p>
 </dd>
   </dl>
 
@@ -248,9 +226,7 @@ the lifetime of the long running operation(s) being performed.</p>
 
 
 
-  <h4 class="section" id="Virtufin_Api_Services_SubscriptionHealthSweeperHostedService_ExecuteAsync_System_Threading_CancellationToken__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>See <a href="https://learn.microsoft.com/dotnet/core/extensions/workers">Worker Services in .NET</a> for implementation guidelines.</p>
-</div>
+
 
 
 
