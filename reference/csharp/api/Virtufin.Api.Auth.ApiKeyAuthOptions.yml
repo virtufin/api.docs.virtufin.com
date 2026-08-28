@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ApiKeyAuthOptions
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
     startLine: 11
@@ -62,7 +62,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: KeysSectionName
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
     startLine: 14
@@ -91,7 +91,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Keys
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
     startLine: 17
@@ -122,7 +122,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Enabled
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
     startLine: 20
@@ -153,7 +153,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: FromConfiguration
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
     startLine: 23
@@ -186,7 +186,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: TryAuthenticate
     path: ../../../src/Virtufin.Api/Auth/ApiKeyAuthOptions.cs
     startLine: 33

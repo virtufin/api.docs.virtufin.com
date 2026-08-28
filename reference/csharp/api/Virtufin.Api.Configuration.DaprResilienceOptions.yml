@@ -29,7 +29,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DaprResilienceOptions
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 7
@@ -72,7 +72,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: RetryAttemptsEnvVar
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 10
@@ -101,7 +101,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: RetryBaseDelayMsEnvVar
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 13
@@ -130,7 +130,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CircuitBreakerMinimumThroughputEnvVar
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 16
@@ -159,7 +159,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CircuitBreakerBreakDurationSecondsEnvVar
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 19
@@ -188,7 +188,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultRetryAttempts
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 22
@@ -217,7 +217,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultRetryBaseDelayMs
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 25
@@ -246,7 +246,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultCircuitBreakerMinimumThroughput
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 28
@@ -275,7 +275,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultCircuitBreakerBreakDurationSeconds
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 31
@@ -304,7 +304,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: RetryAttempts
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 33
@@ -333,7 +333,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: RetryBaseDelayMs
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 34
@@ -362,7 +362,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CircuitBreakerMinimumThroughput
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 35
@@ -391,7 +391,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CircuitBreakerBreakDurationSeconds
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 36
@@ -420,7 +420,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: FromEnvironment
     path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
     startLine: 38

@@ -28,7 +28,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: PortConstants
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 2
@@ -63,7 +63,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultHttpPort
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 4
@@ -90,7 +90,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultGrpcPort
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 5
@@ -117,7 +117,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultDaprHttpPort
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 6
@@ -144,7 +144,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultDaprGrpcPort
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 7
@@ -171,7 +171,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: HttpPortKey
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 8
@@ -198,7 +198,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcPortKey
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 9
@@ -225,7 +225,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DaprHttpPortKey
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 10
@@ -252,7 +252,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DaprGrpcPortKey
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 11
@@ -279,7 +279,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultApiHost
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 16
@@ -306,7 +306,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultApiGrpcPort
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 17
@@ -333,7 +333,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ApiHostKey
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 18
@@ -360,7 +360,7 @@ items:
     remote:
       path: src/Virtufin.Api/Configuration/PortConstants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ApiGrpcPortKey
     path: ../../../src/Virtufin.Api/Configuration/PortConstants.cs
     startLine: 19

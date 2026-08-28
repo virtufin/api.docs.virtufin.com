@@ -25,7 +25,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CloudEvents
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 10
@@ -73,7 +73,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Prefix
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 13
@@ -102,7 +102,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Id
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 15
@@ -129,7 +129,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Source
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 16
@@ -156,7 +156,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Type
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 17
@@ -183,7 +183,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Time
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 18
@@ -210,7 +210,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: SpecVersion
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 19
@@ -237,7 +237,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DataContentType
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 20
@@ -264,7 +264,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: SpecVersionValue
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 23
@@ -293,7 +293,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DataContentTypeJson
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 26

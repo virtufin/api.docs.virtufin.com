@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/CloudEventExtensions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CloudEventExtensions
     path: ../../../src/Virtufin.Api/Services/CloudEventExtensions.cs
     startLine: 7
@@ -54,7 +54,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/CloudEventExtensions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: BuildCloudEvent
     path: ../../../src/Virtufin.Api/Services/CloudEventExtensions.cs
     startLine: 12
@@ -101,7 +101,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/CloudEventExtensions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ToJsonBytes
     path: ../../../src/Virtufin.Api/Services/CloudEventExtensions.cs
     startLine: 43
@@ -135,7 +135,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/CloudEventExtensions.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetStringAttr
     path: ../../../src/Virtufin.Api/Services/CloudEventExtensions.cs
     startLine: 84

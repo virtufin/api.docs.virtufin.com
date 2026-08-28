@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Api/GrpcModels.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcCallResponse
     path: ../../../src/Virtufin.Api/GrpcModels.cs
     startLine: 7
@@ -58,7 +58,7 @@ items:
     remote:
       path: src/Virtufin.Api/GrpcModels.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/GrpcModels.cs
     startLine: 7
@@ -96,7 +96,7 @@ items:
     remote:
       path: src/Virtufin.Api/GrpcModels.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Error
     path: ../../../src/Virtufin.Api/GrpcModels.cs
     startLine: 7
@@ -125,7 +125,7 @@ items:
     remote:
       path: src/Virtufin.Api/GrpcModels.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: StatusCode
     path: ../../../src/Virtufin.Api/GrpcModels.cs
     startLine: 7
@@ -154,7 +154,7 @@ items:
     remote:
       path: src/Virtufin.Api/GrpcModels.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Message
     path: ../../../src/Virtufin.Api/GrpcModels.cs
     startLine: 7
@@ -183,7 +183,7 @@ items:
     remote:
       path: src/Virtufin.Api/GrpcModels.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Data
     path: ../../../src/Virtufin.Api/GrpcModels.cs
     startLine: 7

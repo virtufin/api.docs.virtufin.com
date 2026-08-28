@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Api/HealthChecks/HealthChecks.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ApiAuthHealthCheck
     path: ../../../src/Virtufin.Api/HealthChecks/HealthChecks.cs
     startLine: 71
@@ -72,7 +72,7 @@ items:
     remote:
       path: src/Virtufin.Api/HealthChecks/HealthChecks.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/HealthChecks/HealthChecks.cs
     startLine: 76
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.Api/HealthChecks/HealthChecks.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CheckHealthAsync
     path: ../../../src/Virtufin.Api/HealthChecks/HealthChecks.cs
     startLine: 82

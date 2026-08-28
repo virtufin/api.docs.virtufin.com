@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: SubscriptionHealthSweeperHostedService
     path: ../../../src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
     startLine: 10
@@ -65,7 +65,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
     startLine: 16
@@ -99,7 +99,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ExecuteAsync
     path: ../../../src/Virtufin.Api/Services/SubscriptionHealthSweeperHostedService.cs
     startLine: 24

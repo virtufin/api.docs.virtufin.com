@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/90b6bb42f52d6f6ef2a69a7ab4c755c7ab8bd217" target="_blank" rel="noopener" class="commit-badge" title="View commit 90b6bb42f52d6f6ef2a69a7ab4c755c7ab8bd217">
+            <a href="{git_repo_url}/commit/abfc839b9465244fbe7ab64bf38898b7eb15f757" target="_blank" rel="noopener" class="commit-badge" title="View commit abfc839b9465244fbe7ab64bf38898b7eb15f757">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">90b6bb42f52d6f6ef2a69a7ab4c755c7ab8bd217</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">abfc839b9465244fbe7ab64bf38898b7eb15f757</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,7 +121,9 @@ authentication. Active only when <a class="xref" href="Virtufin.Api.Auth.ApiKeyA
       <dt><a class="xref" href="Virtufin.Api.Auth.ApiKeyInterceptor.html">ApiKeyInterceptor</a></dt>
       <dd><p>Server interceptor enforcing <code>x-api-key</code> authentication on every gRPC
 call (including JSON-transcoded ones) when <a class="xref" href="Virtufin.Api.Auth.ApiKeyAuthOptions.html#Virtufin_Api_Auth_ApiKeyAuthOptions_Enabled">Enabled</a>.
-Health-check methods stay open so probes and load balancers keep working.</p>
+Health-check methods stay open so probes and load balancers keep working, and
+so do the Dapr sidecar's own app callbacks (see
+<span class="xref">Virtufin.Api.Auth.ApiKeyInterceptor.DaprAppCallbackPrefix</span>).</p>
 </dd>
     </dl>
 

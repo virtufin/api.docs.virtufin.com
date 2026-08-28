@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: IStreamEventHandler
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 78
@@ -47,7 +47,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: OnEvent
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 84
@@ -79,7 +79,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: OnError
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 90

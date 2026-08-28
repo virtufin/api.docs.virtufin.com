@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: TopicDaprSubscriptionRegistry
     path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
     startLine: 14
@@ -69,7 +69,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
     startLine: 22
@@ -103,7 +103,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: AcquireAsync
     path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
     startLine: 36
@@ -152,7 +152,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DisposeAsync
     path: ../../../src/Virtufin.Api/Services/TopicDaprSubscriptionRegistry.cs
     startLine: 195

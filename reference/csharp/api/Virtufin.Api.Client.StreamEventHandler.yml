@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: StreamEventHandler
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 118
@@ -60,7 +60,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: EventReceived
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 123
@@ -89,7 +89,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ErrorOccurred
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 128
@@ -118,7 +118,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 133
@@ -149,7 +149,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: OnEvent
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 136
@@ -183,7 +183,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: OnError
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 139

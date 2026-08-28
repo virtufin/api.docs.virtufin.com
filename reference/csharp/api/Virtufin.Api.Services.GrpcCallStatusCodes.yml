@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcCallStatusCodes
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 21
@@ -57,7 +57,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Unknown
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 23
@@ -84,7 +84,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: NotFound
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 24
@@ -111,7 +111,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Unsupported
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 25
@@ -138,7 +138,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Internal
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 26
@@ -165,7 +165,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: InvalidRequest
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 27
@@ -192,7 +192,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Unavailable
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 28

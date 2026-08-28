@@ -24,10 +24,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ApiKeyInterceptor
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -36,7 +36,11 @@ items:
 
     call (including JSON-transcoded ones) when <xref href="Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled" data-throw-if-not-resolved="false"></xref>.
 
-    Health-check methods stay open so probes and load balancers keep working.
+    Health-check methods stay open so probes and load balancers keep working, and
+
+    so do the Dapr sidecar's own app callbacks (see
+
+    <xref href="Virtufin.Api.Auth.ApiKeyInterceptor.DaprAppCallbackPrefix" data-throw-if-not-resolved="false"></xref>).
   example: []
   syntax:
     content: 'public sealed class ApiKeyInterceptor : Interceptor'
@@ -71,10 +75,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: HeaderName
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 14
+    startLine: 16
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -100,10 +104,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: UserStateKey
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -129,10 +133,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 24
+    startLine: 49
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -163,10 +167,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Authenticate
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 36
+    startLine: 61
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -208,10 +212,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: UnaryServerHandler
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 72
+    startLine: 99
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -275,10 +279,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ServerStreamingServerHandler
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 81
+    startLine: 108
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -341,10 +345,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ClientStreamingServerHandler
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 91
+    startLine: 118
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -412,10 +416,10 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DuplexStreamingServerHandler
     path: ../../../src/Virtufin.Api/Auth/ApiKeyInterceptor.cs
-    startLine: 100
+    startLine: 127
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Auth
@@ -470,6 +474,11 @@ references:
   name: Enabled
   nameWithType: ApiKeyAuthOptions.Enabled
   fullName: Virtufin.Api.Auth.ApiKeyAuthOptions.Enabled
+- uid: Virtufin.Api.Auth.ApiKeyInterceptor.DaprAppCallbackPrefix
+  commentId: F:Virtufin.Api.Auth.ApiKeyInterceptor.DaprAppCallbackPrefix
+  name: DaprAppCallbackPrefix
+  nameWithType: ApiKeyInterceptor.DaprAppCallbackPrefix
+  fullName: Virtufin.Api.Auth.ApiKeyInterceptor.DaprAppCallbackPrefix
 - uid: Virtufin.Api.Auth
   commentId: N:Virtufin.Api.Auth
   href: Virtufin.html

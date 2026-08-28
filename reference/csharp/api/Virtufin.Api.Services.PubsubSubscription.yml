@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubSubscription
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 65
@@ -55,7 +55,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Writer
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 67
@@ -84,7 +84,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Topic
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 68
@@ -113,7 +113,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: AddedAt
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 69
@@ -142,7 +142,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 71

@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcChannelPool
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 8
@@ -58,7 +58,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 15
@@ -92,7 +92,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ChannelCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 21
@@ -121,7 +121,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ConfiguredServiceCount
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 23
@@ -150,7 +150,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetChannelAsync
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 25
@@ -184,7 +184,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcChannelPool.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Dispose
     path: ../../../src/Virtufin.Api/Services/GrpcChannelPool.cs
     startLine: 47

@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GrpcCallResult
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1497
@@ -58,7 +58,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Success
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1499
@@ -87,7 +87,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: StatusCode
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1500
@@ -116,7 +116,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Message
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1501
@@ -145,7 +145,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Data
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1502
@@ -174,7 +174,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/GrpcReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ResponseDataBytes
     path: ../../../src/Virtufin.Api/Services/GrpcReflectionService.cs
     startLine: 1503

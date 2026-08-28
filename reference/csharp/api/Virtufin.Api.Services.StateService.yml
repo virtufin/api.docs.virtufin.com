@@ -23,7 +23,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: StateService
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 8
@@ -59,7 +59,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 37
@@ -97,7 +97,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: SaveState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 63
@@ -132,7 +132,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 163
@@ -167,7 +167,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: QueryState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 202
@@ -230,7 +230,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 296
@@ -265,7 +265,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteBulkState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 332
@@ -300,7 +300,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/StateService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteState
     path: ../../../src/Virtufin.Api/Services/StateService.cs
     startLine: 399

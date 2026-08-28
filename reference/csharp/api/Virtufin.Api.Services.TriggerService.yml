@@ -21,7 +21,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: TriggerService
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 13
@@ -57,7 +57,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 26
@@ -93,7 +93,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ScheduleTrigger
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 36
@@ -128,7 +128,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetTrigger
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 87
@@ -163,7 +163,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteTrigger
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 138
@@ -198,7 +198,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/TriggerService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ListTriggers
     path: ../../../src/Virtufin.Api/Services/TriggerService.cs
     startLine: 192

@@ -19,7 +19,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: StatusStrings
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 14
@@ -54,7 +54,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Ok
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 16
@@ -81,7 +81,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Error
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 17
@@ -108,7 +108,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Conflict
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 18

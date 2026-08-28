@@ -18,7 +18,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyHttpMiddleware.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ApiKeyHttpMiddleware
     path: ../../../src/Virtufin.Api/Auth/ApiKeyHttpMiddleware.cs
     startLine: 17
@@ -70,7 +70,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyHttpMiddleware.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Auth/ApiKeyHttpMiddleware.cs
     startLine: 25
@@ -106,7 +106,7 @@ items:
     remote:
       path: src/Virtufin.Api/Auth/ApiKeyHttpMiddleware.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api/Auth/ApiKeyHttpMiddleware.cs
     startLine: 33

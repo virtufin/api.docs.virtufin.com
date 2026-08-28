@@ -22,7 +22,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ApiEndpoint
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 35
@@ -66,7 +66,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultHost
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 38
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultPort
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 41
@@ -124,7 +124,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: HostEnvVar
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 44
@@ -153,7 +153,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: PortEnvVar
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 47
@@ -182,7 +182,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ApiKeyEnvVar
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 55
@@ -218,7 +218,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/SystemEvents.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: BuildAddress
     path: ../../../src/Virtufin.Api.Client/SystemEvents.cs
     startLine: 62

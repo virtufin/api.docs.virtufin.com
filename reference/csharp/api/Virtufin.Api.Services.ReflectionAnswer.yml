@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ReflectionAnswer
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
     startLine: 233
@@ -63,7 +63,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ServiceNames
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
     startLine: 235
@@ -92,7 +92,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: FileDescriptorProtos
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
     startLine: 236
@@ -121,7 +121,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ErrorCode
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
     startLine: 237
@@ -150,7 +150,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/AggregatedReflectionService.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ErrorMessage
     path: ../../../src/Virtufin.Api/Services/AggregatedReflectionService.cs
     startLine: 238

@@ -24,7 +24,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: PubsubSubscriptionManager
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 6
@@ -70,7 +70,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 11
@@ -102,7 +102,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 17
@@ -138,7 +138,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeById
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 23
@@ -170,7 +170,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: BroadcastToTopicAsync
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 35
@@ -206,7 +206,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetAllSubscriptions
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 40
@@ -234,7 +234,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: SendEventAsync
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 45
@@ -275,7 +275,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetSubscriptionKey
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 58
@@ -311,7 +311,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetIdleTimeout
     path: ../../../src/Virtufin.Api/Services/PubsubSubscriptionManager.cs
     startLine: 61

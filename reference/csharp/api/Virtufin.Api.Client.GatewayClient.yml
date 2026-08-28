@@ -34,7 +34,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GatewayClient
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 161
@@ -110,7 +110,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 194
@@ -145,7 +145,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: TryGetMember
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 205
@@ -184,7 +184,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ListServicesAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 215
@@ -215,7 +215,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: ListMethodsAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 227
@@ -253,7 +253,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: InvokeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 301
@@ -313,7 +313,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: SaveStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 341
@@ -369,7 +369,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 365
@@ -419,7 +419,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 385
@@ -463,7 +463,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: QueryStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 400
@@ -510,7 +510,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetBulkStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 410
@@ -550,7 +550,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DeleteBulkStateAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 422
@@ -593,7 +593,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: PublishEventAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 436
@@ -637,7 +637,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeToTopic
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 451
@@ -678,7 +678,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: UnsubscribeFromTopicAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 464
@@ -719,7 +719,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: PublishWithResultAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 584
@@ -783,7 +783,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Subscribe
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 643
@@ -830,7 +830,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: SubscribeAsync
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 664
@@ -880,7 +880,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: GetService
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 720

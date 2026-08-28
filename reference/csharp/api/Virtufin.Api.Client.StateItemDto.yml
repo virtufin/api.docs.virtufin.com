@@ -20,7 +20,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: StateItemDto
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 11
@@ -57,7 +57,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 11
@@ -93,7 +93,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Key
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 11
@@ -122,7 +122,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Value
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 11
@@ -151,7 +151,7 @@ items:
     remote:
       path: src/Virtufin.Api.Client/ApiClient.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Etag
     path: ../../../src/Virtufin.Api.Client/ApiClient.cs
     startLine: 11

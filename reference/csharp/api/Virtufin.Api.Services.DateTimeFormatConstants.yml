@@ -17,7 +17,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DateTimeFormatConstants
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 44
@@ -52,7 +52,7 @@ items:
     remote:
       path: src/Virtufin.Api/Services/Constants.cs
       branch: master
-      repo: https://gitea.haenerconsulting.com/virtufin/virtufin-api
+      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Iso8601
     path: ../../../src/Virtufin.Api/Services/Constants.cs
     startLine: 46
