@@ -6,7 +6,6 @@ items:
   parent: Virtufin.Api.Configuration
   children:
   - Virtufin.Api.Configuration.ServiceConfig.#ctor
-  - Virtufin.Api.Configuration.ServiceConfig.DaprAppId
   - Virtufin.Api.Configuration.ServiceConfig.Grpc
   - Virtufin.Api.Configuration.ServiceConfig.Name
   - Virtufin.Api.Configuration.ServiceConfig.Protocol
@@ -130,35 +129,6 @@ items:
       type: System.String
     content.vb: Public Property Protocol As String
   overload: Virtufin.Api.Configuration.ServiceConfig.Protocol*
-- uid: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  commentId: P:Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  id: DaprAppId
-  parent: Virtufin.Api.Configuration.ServiceConfig
-  langs:
-  - csharp
-  - vb
-  name: DaprAppId
-  nameWithType: ServiceConfig.DaprAppId
-  fullName: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  type: Property
-  source:
-    remote:
-      path: src/Virtufin.Api/Configuration/Models.cs
-      branch: master
-      repo: https://git.haenerconsulting.com/virtufin/virtufin-api
-    id: DaprAppId
-    path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 24
-  assemblies:
-  - Virtufin.Api
-  namespace: Virtufin.Api.Configuration
-  syntax:
-    content: public string DaprAppId { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property DaprAppId As String
-  overload: Virtufin.Api.Configuration.ServiceConfig.DaprAppId*
 - uid: Virtufin.Api.Configuration.ServiceConfig.Grpc
   commentId: P:Virtufin.Api.Configuration.ServiceConfig.Grpc
   id: Grpc
@@ -177,7 +147,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Grpc
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -206,7 +176,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: Pubsub
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -235,7 +205,7 @@ items:
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: State
     path: ../../../src/Virtufin.Api/Configuration/Models.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
@@ -546,12 +516,6 @@ references:
   name: Protocol
   nameWithType: ServiceConfig.Protocol
   fullName: Virtufin.Api.Configuration.ServiceConfig.Protocol
-- uid: Virtufin.Api.Configuration.ServiceConfig.DaprAppId*
-  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_DaprAppId
-  name: DaprAppId
-  nameWithType: ServiceConfig.DaprAppId
-  fullName: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
 - uid: Virtufin.Api.Configuration.ServiceConfig.Grpc*
   commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.Grpc
   href: Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Grpc

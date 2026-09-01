@@ -5,7 +5,7 @@ items:
   id: GatewayService
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  - Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
   - Virtufin.Api.Services.GatewayService.GetMethodSchema(Virtufin.Api.Protos.GetMethodSchemaRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   - Virtufin.Api.Services.GatewayService.InvokeJson(Virtufin.Api.Protos.InvokeJsonRequest,Grpc.Core.ServerCallContext)
@@ -58,16 +58,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  id: '#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.DaprResiliencePipeline)'
+- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  id: '#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.GatewayResiliencePipeline)'
   parent: Virtufin.Api.Services.GatewayService
   langs:
   - csharp
   - vb
-  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprResiliencePipeline)
-  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprResiliencePipeline)
-  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, GatewayResiliencePipeline)
+  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, GatewayResiliencePipeline)
+  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
   type: Constructor
   source:
     remote:
@@ -83,7 +83,7 @@ items:
   summary: Creates a new GatewayService instance.
   example: []
   syntax:
-    content: public GatewayService(GrpcReflectionService reflectionService, ServicesConfiguration config, ILogger<GatewayService> logger, DaprResiliencePipeline resilience)
+    content: public GatewayService(GrpcReflectionService reflectionService, ServicesConfiguration config, ILogger<GatewayService> logger, GatewayResiliencePipeline resilience)
     parameters:
     - id: reflectionService
       type: Virtufin.Api.Services.GrpcReflectionService
@@ -95,13 +95,13 @@ items:
       type: Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService}
       description: The logger for recording service events.
     - id: resilience
-      type: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+      type: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
       description: The Dapr resilience pipeline for wrapping gateway invocations.
-    content.vb: Public Sub New(reflectionService As GrpcReflectionService, config As ServicesConfiguration, logger As ILogger(Of GatewayService), resilience As DaprResiliencePipeline)
+    content.vb: Public Sub New(reflectionService As GrpcReflectionService, config As ServicesConfiguration, logger As ILogger(Of GatewayService), resilience As GatewayResiliencePipeline)
   overload: Virtufin.Api.Services.GatewayService.#ctor*
-  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprResiliencePipeline)
-  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprResiliencePipeline)
+  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), GatewayResiliencePipeline)
+  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), GatewayResiliencePipeline)
 - uid: Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   commentId: M:Virtufin.Api.Services.GatewayService.Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
   id: Invoke(Virtufin.Api.Protos.InvokeRequest,Grpc.Core.ServerCallContext)
@@ -611,7 +611,7 @@ references:
     name: Protos
 - uid: Virtufin.Api.Services.GatewayService.#ctor*
   commentId: Overload:Virtufin.Api.Services.GatewayService.#ctor
-  href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Virtufin_Api_HealthChecks_DaprResiliencePipeline_
+  href: Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Virtufin_Api_HealthChecks_GatewayResiliencePipeline_
   name: GatewayService
   nameWithType: GatewayService.GatewayService
   fullName: Virtufin.Api.Services.GatewayService.GatewayService
@@ -665,13 +665,13 @@ references:
     name: GatewayService
     href: Virtufin.Api.Services.GatewayService.html
   - name: )
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+  commentId: T:Virtufin.Api.HealthChecks.GatewayResiliencePipeline
   parent: Virtufin.Api.HealthChecks
-  href: Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
-  name: DaprResiliencePipeline
-  nameWithType: DaprResiliencePipeline
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  href: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html
+  name: GatewayResiliencePipeline
+  nameWithType: GatewayResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration
   href: Virtufin.html

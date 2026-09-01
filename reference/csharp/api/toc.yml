@@ -55,8 +55,8 @@ items:
     name: Configuration
     type: Namespace
     items:
-    - uid: Virtufin.Api.Configuration.DaprResilienceOptions
-      name: DaprResilienceOptions
+    - uid: Virtufin.Api.Configuration.GatewayResilienceOptions
+      name: GatewayResilienceOptions
       type: Class
     - uid: Virtufin.Api.Configuration.GrpcConfig
       name: GrpcConfig
@@ -92,14 +92,14 @@ items:
     - uid: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
       name: ApiAuthHealthCheck
       type: Class
-    - uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-      name: DaprCircuitBreakerHealthCheck
-      type: Class
     - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
       name: DaprHealthCheck
       type: Class
-    - uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-      name: DaprResiliencePipeline
+    - uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+      name: GatewayCircuitBreakerHealthCheck
+      type: Class
+    - uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+      name: GatewayResiliencePipeline
       type: Class
     - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
       name: GrpcChannelPoolHealthCheck

@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprResiliencePipeline | Virtufin API - C# Reference </title>
+      <title>Class GatewayResiliencePipeline | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprResiliencePipeline | Virtufin API - C# Reference ">
+      <meta name="title" content="Class GatewayResiliencePipeline | Virtufin API - C# Reference ">
       
-      <meta name="description" content="Provides resilience policies for Dapr operations with retry and circuit breaker. Constants are configurable via  (env-var-driven).">
+      <meta name="description" content="Retry + circuit breaker for the gateway&#39;s direct gRPC calls to backend services — i.e. Gateway.Invoke and Gateway.InvokeJson, which route through GrpcChannelPool and never touch a Dapr sidecar.  This was previously called DaprResiliencePipeline, with DAPR_* environment variables, which was actively misleading: it has never wrapped a Dapr SDK call. Both call sites wrap ExecuteCallAsync on the reflection service. An architecture review initially read the pair as duplicating Dapr&#39;s own resiliency building block; they are in fact disjoint.   Resilience for the sidecar&#39;s calls out to Dapr components (statestore, pubsub) is declared separately, as a Dapr Resiliency resource in helm/templates/resiliency.yaml. Keep the two sets of numbers in step so both paths degrade the same way.  Constants are configurable via  (env-var-driven).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/ca1aaab6f4d40ad881041f1d8ca1dadc9e1aa8b9" target="_blank" rel="noopener" class="commit-badge" title="View commit ca1aaab6f4d40ad881041f1d8ca1dadc9e1aa8b9">
+            <a href="{git_repo_url}/commit/c4e22009e540eac7a7e23d52db9d437e06d7dcec" target="_blank" rel="noopener" class="commit-badge" title="View commit c4e22009e540eac7a7e23d52db9d437e06d7dcec">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ca1aaab6f4d40ad881041f1d8ca1dadc9e1aa8b9</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c4e22009e540eac7a7e23d52db9d437e06d7dcec</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline">
+        <article data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline">
 
 
 
-  <h1 id="Virtufin_Api_HealthChecks_DaprResiliencePipeline" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline" class="text-break">
-Class DaprResiliencePipeline  
+  <h1 id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline" class="text-break">
+Class GatewayResiliencePipeline  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,13 +101,30 @@ Class DaprResiliencePipeline
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Provides resilience policies for Dapr operations with retry and circuit breaker.
-Constants are configurable via <a class="xref" href="Virtufin.Api.Configuration.DaprResilienceOptions.html">DaprResilienceOptions</a> (env-var-driven).</p>
+  <div class="markdown summary"><p>Retry + circuit breaker for the gateway's <b>direct gRPC</b> calls to
+backend services — i.e. <code>Gateway.Invoke</code> and <code>Gateway.InvokeJson</code>,
+which route through <code>GrpcChannelPool</code> and never touch a Dapr sidecar.</p>
+<p>
+This was previously called <code>DaprResiliencePipeline</code>, with
+<code>DAPR_*</code> environment variables, which was actively misleading: it has
+never wrapped a Dapr SDK call. Both call sites wrap
+<code>ExecuteCallAsync</code> on the reflection service. An architecture review
+initially read the pair as duplicating Dapr's own resiliency building
+block; they are in fact disjoint.
+</p>
+<p>
+Resilience for the sidecar's calls out to Dapr components (statestore,
+pubsub) is declared separately, as a Dapr <code>Resiliency</code> resource in
+<code>helm/templates/resiliency.yaml</code>. Keep the two sets of numbers in
+step so both paths degrade the same way.
+</p>
+<p>Constants are configurable via <a class="xref" href="Virtufin.Api.Configuration.GatewayResilienceOptions.html">GatewayResilienceOptions</a>
+(env-var-driven).</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DaprResiliencePipeline</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class GatewayResiliencePipeline</code></pre>
   </div>
 
 
@@ -117,7 +134,7 @@ Constants are configurable via <a class="xref" href="Virtufin.Api.Configuration.
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprResiliencePipeline</span></div>
+      <div><span class="xref">GatewayResiliencePipeline</span></div>
     </dd>
   </dl>
 
@@ -155,10 +172,10 @@ Constants are configurable via <a class="xref" href="Virtufin.Api.Configuration.
 </h2>
 
 
-  <a id="Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor*"></a>
+  <a id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline__ctor_" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.#ctor*"></a>
 
-  <h3 id="Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_HealthChecks_DaprResiliencePipeline__Virtufin_Api_Configuration_DaprResilienceOptions_" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline},Virtufin.Api.Configuration.DaprResilienceOptions)">
-  DaprResiliencePipeline(ILogger&lt;DaprResiliencePipeline&gt;, DaprResilienceOptions)
+  <h3 id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_HealthChecks_GatewayResiliencePipeline__Virtufin_Api_Configuration_GatewayResilienceOptions_" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.GatewayResiliencePipeline},Virtufin.Api.Configuration.GatewayResilienceOptions)">
+  GatewayResiliencePipeline(ILogger&lt;GatewayResiliencePipeline&gt;, GatewayResilienceOptions)
   
   </h3>
 
@@ -166,14 +183,14 @@ Constants are configurable via <a class="xref" href="Virtufin.Api.Configuration.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DaprResiliencePipeline(ILogger&lt;DaprResiliencePipeline&gt; logger, DaprResilienceOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public GatewayResiliencePipeline(ILogger&lt;GatewayResiliencePipeline&gt; logger, GatewayResilienceOptions options)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.HealthChecks.DaprResiliencePipeline.html">DaprResiliencePipeline</a>&gt;</dt>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html">GatewayResiliencePipeline</a>&gt;</dt>
     <dd></dd>
-    <dt><code>options</code> <a class="xref" href="Virtufin.Api.Configuration.DaprResilienceOptions.html">DaprResilienceOptions</a></dt>
+    <dt><code>options</code> <a class="xref" href="Virtufin.Api.Configuration.GatewayResilienceOptions.html">GatewayResilienceOptions</a></dt>
     <dd></dd>
   </dl>
 
@@ -192,9 +209,9 @@ Constants are configurable via <a class="xref" href="Virtufin.Api.Configuration.
 </h2>
 
 
-  <a id="Virtufin_Api_HealthChecks_DaprResiliencePipeline_CircuitBroken_" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken*"></a>
+  <a id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline_CircuitBroken_" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.CircuitBroken*"></a>
 
-  <h3 id="Virtufin_Api_HealthChecks_DaprResiliencePipeline_CircuitBroken" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken">
+  <h3 id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline_CircuitBroken" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.CircuitBroken">
   CircuitBroken
   
   </h3>
@@ -227,9 +244,9 @@ Constants are configurable via <a class="xref" href="Virtufin.Api.Configuration.
 </h2>
 
 
-  <a id="Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync_" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync*"></a>
+  <a id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline_ExecuteAsync_" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync*"></a>
 
-  <h3 id="Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)">
+  <h3 id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline_ExecuteAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)">
   ExecuteAsync(Func&lt;CancellationToken, Task&gt;, CancellationToken)
   
   </h3>
@@ -265,9 +282,9 @@ Constants are configurable via <a class="xref" href="Virtufin.Api.Configuration.
 
 
 
-  <a id="Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync_" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync*"></a>
+  <a id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline_ExecuteAsync_" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync*"></a>
 
-  <h3 id="Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync__1_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_" data-uid="Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)">
+  <h3 id="Virtufin_Api_HealthChecks_GatewayResiliencePipeline_ExecuteAsync__1_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_" data-uid="Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)">
   ExecuteAsync&lt;T&gt;(Func&lt;CancellationToken, Task&lt;T&gt;&gt;, CancellationToken)
   
   </h3>

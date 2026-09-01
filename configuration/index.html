@@ -205,14 +205,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/ca1aaab6f4d40ad881041f1d8ca1dadc9e1aa8b9"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c4e22009e540eac7a7e23d52db9d437e06d7dcec"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit ca1aaab">
+       title="View commit c4e2200">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ca1aaab</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c4e2200</text>
       </svg>
     </a>
 </div>
@@ -372,14 +372,14 @@
     </div>
     <span class="md-source__repository">virtufin/virtufin-api</span>
   </a>
-    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/ca1aaab6f4d40ad881041f1d8ca1dadc9e1aa8b9"
+    <a href="https://git.haenerconsulting.com/virtufin/virtufin-api/commit/c4e22009e540eac7a7e23d52db9d437e06d7dcec"
        class="md-source-commit-badge"
        target="_blank"
        rel="noopener"
-       title="View commit ca1aaab">
+       title="View commit c4e2200">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
         <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">ca1aaab</text>
+        <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c4e2200</text>
       </svg>
     </a>
 </div>
@@ -1526,13 +1526,13 @@
 <span class="nb">export</span><span class="w"> </span><span class="nv">GrpcPort</span><span class="o">=</span><span class="m">5002</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">DaprHttpPort</span><span class="o">=</span><span class="m">3500</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">DaprGrpcPort</span><span class="o">=</span><span class="m">50001</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">DAPR_RETRY_ATTEMPTS</span><span class="o">=</span><span class="m">3</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">DAPR_RETRY_BASE_DELAY_MS</span><span class="o">=</span><span class="m">200</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">DAPR_CIRCUIT_BREAKER_THRESHOLD</span><span class="o">=</span><span class="m">5</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">DAPR_CIRCUIT_BREAKER_DURATION_SECONDS</span><span class="o">=</span><span class="m">30</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">GATEWAY_RETRY_ATTEMPTS</span><span class="o">=</span><span class="m">3</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">GATEWAY_RETRY_BASE_DELAY_MS</span><span class="o">=</span><span class="m">200</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">GATEWAY_CIRCUIT_BREAKER_THRESHOLD</span><span class="o">=</span><span class="m">5</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">GATEWAY_CIRCUIT_BREAKER_DURATION_SECONDS</span><span class="o">=</span><span class="m">30</span>
 </code></pre></div>
 <h3 id="dapr-resiliency">Dapr Resiliency</h3>
-<p>The <code>DaprResiliencePipeline</code> wraps every Dapr SDK call the API
+<p>The <code>GatewayResiliencePipeline</code> wraps every Dapr SDK call the API
 makes, including the <code>Gateway.Invoke</code> and <code>Gateway.InvokeJson</code> gRPC
 calls to downstream services (WebSocketManager, WorkManager). The
 pipeline uses Polly: retry with exponential backoff, then circuit
@@ -1548,25 +1548,25 @@ breaker. The circuit state is exposed at <code>/health</code> (tag <code>dapr</c
 </thead>
 <tbody>
 <tr>
-<td><code>DAPR_RETRY_ATTEMPTS</code></td>
+<td><code>GATEWAY_RETRY_ATTEMPTS</code></td>
 <td>Max retry attempts per Dapr call before the pipeline throws.</td>
 <td><code>3</code></td>
 <td><code>0</code>–<code>20</code></td>
 </tr>
 <tr>
-<td><code>DAPR_RETRY_BASE_DELAY_MS</code></td>
+<td><code>GATEWAY_RETRY_BASE_DELAY_MS</code></td>
 <td>Base delay between attempts; actual delay is <code>RetryBaseDelayMs * 2^attempt</code>.</td>
 <td><code>200</code></td>
 <td><code>10</code>–<code>60000</code></td>
 </tr>
 <tr>
-<td><code>DAPR_CIRCUIT_BREAKER_THRESHOLD</code></td>
+<td><code>GATEWAY_CIRCUIT_BREAKER_THRESHOLD</code></td>
 <td>Minimum throughput before the circuit can trip (Polly <code>MinimumThroughput</code>).</td>
 <td><code>5</code></td>
 <td><code>1</code>–<code>1000</code></td>
 </tr>
 <tr>
-<td><code>DAPR_CIRCUIT_BREAKER_DURATION_SECONDS</code></td>
+<td><code>GATEWAY_CIRCUIT_BREAKER_DURATION_SECONDS</code></td>
 <td>How long the circuit stays open before transitioning to half-open.</td>
 <td><code>30</code></td>
 <td><code>1</code>–<code>3600</code></td>
@@ -1689,7 +1689,7 @@ rate trips the circuit). The above env vars control the other knobs.</p>
     <div class="md-copyright__highlight">
       <div style="display:table;width:100%">
   <span style="display:table-cell">&copy; 2026 Häner Consulting. All Rights Reserved.</span>
-  <span style="display:table-cell;text-align:right">2026-08-28T17:30:10Z</span>
+  <span style="display:table-cell;text-align:right">2026-09-01T01:21:08Z</span>
 </div>
 
     </div>

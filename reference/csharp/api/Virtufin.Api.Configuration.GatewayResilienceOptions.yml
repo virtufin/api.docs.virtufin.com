@@ -1,55 +1,55 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions
-  commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
-  id: DaprResilienceOptions
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions
+  commentId: T:Virtufin.Api.Configuration.GatewayResilienceOptions
+  id: GatewayResilienceOptions
   parent: Virtufin.Api.Configuration
   children:
-  - Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  - Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
-  - Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  - Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
-  - Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
-  - Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
-  - Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
-  - Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
-  - Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
-  - Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-  - Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
-  - Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-  - Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryAttempts
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryBaseDelayMs
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttemptsEnvVar
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+  - Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMsEnvVar
   langs:
   - csharp
   - vb
-  name: DaprResilienceOptions
-  nameWithType: DaprResilienceOptions
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions
+  name: GatewayResilienceOptions
+  nameWithType: GatewayResilienceOptions
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
-    id: DaprResilienceOptions
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    id: GatewayResilienceOptions
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 7
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
   summary: >-
-    Tunable knobs for <xref href="Virtufin.Api.HealthChecks.DaprResiliencePipeline" data-throw-if-not-resolved="false"></xref>:
+    Tunable knobs for <xref href="Virtufin.Api.HealthChecks.GatewayResiliencePipeline" data-throw-if-not-resolved="false"></xref>:
 
     the Polly-based retry + circuit breaker wrapping Dapr SDK calls and
 
     gateway gRPC invocations from the API Gateway.
   example: []
   syntax:
-    content: 'public sealed record DaprResilienceOptions : IEquatable<DaprResilienceOptions>'
-    content.vb: Public NotInheritable Class DaprResilienceOptions Implements IEquatable(Of DaprResilienceOptions)
+    content: 'public sealed record GatewayResilienceOptions : IEquatable<GatewayResilienceOptions>'
+    content.vb: Public NotInheritable Class GatewayResilienceOptions Implements IEquatable(Of GatewayResilienceOptions)
   inheritance:
   - System.Object
   implements:
-  - System.IEquatable{Virtufin.Api.Configuration.DaprResilienceOptions}
+  - System.IEquatable{Virtufin.Api.Configuration.GatewayResilienceOptions}
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -57,140 +57,140 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttemptsEnvVar
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttemptsEnvVar
   id: RetryAttemptsEnvVar
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: RetryAttemptsEnvVar
-  nameWithType: DaprResilienceOptions.RetryAttemptsEnvVar
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  nameWithType: GatewayResilienceOptions.RetryAttemptsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttemptsEnvVar
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: RetryAttemptsEnvVar
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 10
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
-  summary: Env var for <xref href="Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts" data-throw-if-not-resolved="false"></xref>.
+  summary: Env var for <xref href="Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public const string RetryAttemptsEnvVar = "DAPR_RETRY_ATTEMPTS"
+    content: public const string RetryAttemptsEnvVar = "GATEWAY_RETRY_ATTEMPTS"
     return:
       type: System.String
-    content.vb: Public Const RetryAttemptsEnvVar As String = "DAPR_RETRY_ATTEMPTS"
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+    content.vb: Public Const RetryAttemptsEnvVar As String = "GATEWAY_RETRY_ATTEMPTS"
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMsEnvVar
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMsEnvVar
   id: RetryBaseDelayMsEnvVar
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: RetryBaseDelayMsEnvVar
-  nameWithType: DaprResilienceOptions.RetryBaseDelayMsEnvVar
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  nameWithType: GatewayResilienceOptions.RetryBaseDelayMsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMsEnvVar
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: RetryBaseDelayMsEnvVar
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 13
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
-  summary: Env var for <xref href="Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs" data-throw-if-not-resolved="false"></xref>.
+  summary: Env var for <xref href="Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public const string RetryBaseDelayMsEnvVar = "DAPR_RETRY_BASE_DELAY_MS"
+    content: public const string RetryBaseDelayMsEnvVar = "GATEWAY_RETRY_BASE_DELAY_MS"
     return:
       type: System.String
-    content.vb: Public Const RetryBaseDelayMsEnvVar As String = "DAPR_RETRY_BASE_DELAY_MS"
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+    content.vb: Public Const RetryBaseDelayMsEnvVar As String = "GATEWAY_RETRY_BASE_DELAY_MS"
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
   id: CircuitBreakerMinimumThroughputEnvVar
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: CircuitBreakerMinimumThroughputEnvVar
-  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  nameWithType: GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CircuitBreakerMinimumThroughputEnvVar
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 16
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
-  summary: Env var for <xref href="Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput" data-throw-if-not-resolved="false"></xref>.
+  summary: Env var for <xref href="Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public const string CircuitBreakerMinimumThroughputEnvVar = "DAPR_CIRCUIT_BREAKER_THRESHOLD"
+    content: public const string CircuitBreakerMinimumThroughputEnvVar = "GATEWAY_CIRCUIT_BREAKER_THRESHOLD"
     return:
       type: System.String
-    content.vb: Public Const CircuitBreakerMinimumThroughputEnvVar As String = "DAPR_CIRCUIT_BREAKER_THRESHOLD"
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+    content.vb: Public Const CircuitBreakerMinimumThroughputEnvVar As String = "GATEWAY_CIRCUIT_BREAKER_THRESHOLD"
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
   id: CircuitBreakerBreakDurationSecondsEnvVar
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: CircuitBreakerBreakDurationSecondsEnvVar
-  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  nameWithType: GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CircuitBreakerBreakDurationSecondsEnvVar
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 19
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
-  summary: Env var for <xref href="Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds" data-throw-if-not-resolved="false"></xref>.
+  summary: Env var for <xref href="Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public const string CircuitBreakerBreakDurationSecondsEnvVar = "DAPR_CIRCUIT_BREAKER_DURATION_SECONDS"
+    content: public const string CircuitBreakerBreakDurationSecondsEnvVar = "GATEWAY_CIRCUIT_BREAKER_DURATION_SECONDS"
     return:
       type: System.String
-    content.vb: Public Const CircuitBreakerBreakDurationSecondsEnvVar As String = "DAPR_CIRCUIT_BREAKER_DURATION_SECONDS"
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+    content.vb: Public Const CircuitBreakerBreakDurationSecondsEnvVar As String = "GATEWAY_CIRCUIT_BREAKER_DURATION_SECONDS"
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryAttempts
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryAttempts
   id: DefaultRetryAttempts
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: DefaultRetryAttempts
-  nameWithType: DaprResilienceOptions.DefaultRetryAttempts
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  nameWithType: GatewayResilienceOptions.DefaultRetryAttempts
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryAttempts
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultRetryAttempts
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 22
   assemblies:
   - Virtufin.Api
@@ -202,24 +202,24 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const DefaultRetryAttempts As Integer = 3
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryBaseDelayMs
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryBaseDelayMs
   id: DefaultRetryBaseDelayMs
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: DefaultRetryBaseDelayMs
-  nameWithType: DaprResilienceOptions.DefaultRetryBaseDelayMs
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  nameWithType: GatewayResilienceOptions.DefaultRetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryBaseDelayMs
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultRetryBaseDelayMs
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 25
   assemblies:
   - Virtufin.Api
@@ -231,24 +231,24 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const DefaultRetryBaseDelayMs As Integer = 200
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
   id: DefaultCircuitBreakerMinimumThroughput
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: DefaultCircuitBreakerMinimumThroughput
-  nameWithType: DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  nameWithType: GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultCircuitBreakerMinimumThroughput
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 28
   assemblies:
   - Virtufin.Api
@@ -260,24 +260,24 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const DefaultCircuitBreakerMinimumThroughput As Integer = 5
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
   id: DefaultCircuitBreakerBreakDurationSeconds
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: DefaultCircuitBreakerBreakDurationSeconds
-  nameWithType: DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  nameWithType: GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
   type: Field
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: DefaultCircuitBreakerBreakDurationSeconds
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 31
   assemblies:
   - Virtufin.Api
@@ -289,24 +289,24 @@ items:
     return:
       type: System.Int32
     content.vb: Public Const DefaultCircuitBreakerBreakDurationSeconds As Integer = 30
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
   id: RetryAttempts
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: RetryAttempts
-  nameWithType: DaprResilienceOptions.RetryAttempts
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  nameWithType: GatewayResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: RetryAttempts
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 33
   assemblies:
   - Virtufin.Api
@@ -317,25 +317,25 @@ items:
     return:
       type: System.Int32
     content.vb: Public Property RetryAttempts As Integer
-  overload: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts*
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  overload: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts*
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
   id: RetryBaseDelayMs
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: RetryBaseDelayMs
-  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  nameWithType: GatewayResilienceOptions.RetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: RetryBaseDelayMs
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 34
   assemblies:
   - Virtufin.Api
@@ -346,25 +346,25 @@ items:
     return:
       type: System.Int32
     content.vb: Public Property RetryBaseDelayMs As Integer
-  overload: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs*
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  overload: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs*
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
   id: CircuitBreakerMinimumThroughput
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: CircuitBreakerMinimumThroughput
-  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  nameWithType: GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CircuitBreakerMinimumThroughput
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 35
   assemblies:
   - Virtufin.Api
@@ -375,25 +375,25 @@ items:
     return:
       type: System.Int32
     content.vb: Public Property CircuitBreakerMinimumThroughput As Integer
-  overload: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput*
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  overload: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput*
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
   id: CircuitBreakerBreakDurationSeconds
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: CircuitBreakerBreakDurationSeconds
-  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  nameWithType: GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
   type: Property
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CircuitBreakerBreakDurationSeconds
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 36
   assemblies:
   - Virtufin.Api
@@ -404,49 +404,49 @@ items:
     return:
       type: System.Int32
     content.vb: Public Property CircuitBreakerBreakDurationSeconds As Integer
-  overload: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds*
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
-  commentId: M:Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  overload: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds*
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  commentId: M:Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
   id: FromEnvironment(System.Func{System.String,System.String})
-  parent: Virtufin.Api.Configuration.DaprResilienceOptions
+  parent: Virtufin.Api.Configuration.GatewayResilienceOptions
   langs:
   - csharp
   - vb
   name: FromEnvironment(Func<string, string?>)
-  nameWithType: DaprResilienceOptions.FromEnvironment(Func<string, string?>)
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func<string, string?>)
+  nameWithType: GatewayResilienceOptions.FromEnvironment(Func<string, string?>)
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func<string, string?>)
   type: Method
   source:
     remote:
-      path: src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+      path: src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: FromEnvironment
-    path: ../../../src/Virtufin.Api/Configuration/DaprResilienceOptions.cs
+    path: ../../../src/Virtufin.Api/Configuration/GatewayResilienceOptions.cs
     startLine: 38
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Configuration
   syntax:
-    content: public static DaprResilienceOptions FromEnvironment(Func<string, string?> getEnvironment)
+    content: public static GatewayResilienceOptions FromEnvironment(Func<string, string?> getEnvironment)
     parameters:
     - id: getEnvironment
       type: System.Func{System.String,System.String}
     return:
-      type: Virtufin.Api.Configuration.DaprResilienceOptions
-    content.vb: Public Shared Function FromEnvironment(getEnvironment As Func(Of String, String)) As DaprResilienceOptions
-  overload: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment*
-  nameWithType.vb: DaprResilienceOptions.FromEnvironment(Func(Of String, String))
-  fullName.vb: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func(Of String, String))
+      type: Virtufin.Api.Configuration.GatewayResilienceOptions
+    content.vb: Public Shared Function FromEnvironment(getEnvironment As Func(Of String, String)) As GatewayResilienceOptions
+  overload: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment*
+  nameWithType.vb: GatewayResilienceOptions.FromEnvironment(Func(Of String, String))
+  fullName.vb: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func(Of String, String))
   name.vb: FromEnvironment(Func(Of String, String))
 references:
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+  commentId: T:Virtufin.Api.HealthChecks.GatewayResiliencePipeline
   parent: Virtufin.Api.HealthChecks
-  href: Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
-  name: DaprResiliencePipeline
-  nameWithType: DaprResiliencePipeline
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  href: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html
+  name: GatewayResiliencePipeline
+  nameWithType: GatewayResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
 - uid: Virtufin.Api.Configuration
   commentId: N:Virtufin.Api.Configuration
   href: Virtufin.html
@@ -488,26 +488,26 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.IEquatable{Virtufin.Api.Configuration.DaprResilienceOptions}
-  commentId: T:System.IEquatable{Virtufin.Api.Configuration.DaprResilienceOptions}
+- uid: System.IEquatable{Virtufin.Api.Configuration.GatewayResilienceOptions}
+  commentId: T:System.IEquatable{Virtufin.Api.Configuration.GatewayResilienceOptions}
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<DaprResilienceOptions>
-  nameWithType: IEquatable<DaprResilienceOptions>
-  fullName: System.IEquatable<Virtufin.Api.Configuration.DaprResilienceOptions>
-  nameWithType.vb: IEquatable(Of DaprResilienceOptions)
-  fullName.vb: System.IEquatable(Of Virtufin.Api.Configuration.DaprResilienceOptions)
-  name.vb: IEquatable(Of DaprResilienceOptions)
+  name: IEquatable<GatewayResilienceOptions>
+  nameWithType: IEquatable<GatewayResilienceOptions>
+  fullName: System.IEquatable<Virtufin.Api.Configuration.GatewayResilienceOptions>
+  nameWithType.vb: IEquatable(Of GatewayResilienceOptions)
+  fullName.vb: System.IEquatable(Of Virtufin.Api.Configuration.GatewayResilienceOptions)
+  name.vb: IEquatable(Of GatewayResilienceOptions)
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
-  - uid: Virtufin.Api.Configuration.DaprResilienceOptions
-    name: DaprResilienceOptions
-    href: Virtufin.Api.Configuration.DaprResilienceOptions.html
+  - uid: Virtufin.Api.Configuration.GatewayResilienceOptions
+    name: GatewayResilienceOptions
+    href: Virtufin.Api.Configuration.GatewayResilienceOptions.html
   - name: '>'
   spec.vb:
   - uid: System.IEquatable`1
@@ -517,9 +517,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Virtufin.Api.Configuration.DaprResilienceOptions
-    name: DaprResilienceOptions
-    href: Virtufin.Api.Configuration.DaprResilienceOptions.html
+  - uid: Virtufin.Api.Configuration.GatewayResilienceOptions
+    name: GatewayResilienceOptions
+    href: Virtufin.Api.Configuration.GatewayResilienceOptions.html
   - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
@@ -781,12 +781,12 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttempts
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryAttempts
   name: RetryAttempts
-  nameWithType: DaprResilienceOptions.RetryAttempts
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  nameWithType: GatewayResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -798,24 +798,24 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryBaseDelayMs
   name: RetryBaseDelayMs
-  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughput
+  nameWithType: GatewayResilienceOptions.RetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerMinimumThroughput
   name: CircuitBreakerMinimumThroughput
-  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSeconds
+  nameWithType: GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerBreakDurationSeconds
   name: CircuitBreakerBreakDurationSeconds
-  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  nameWithType: GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -827,36 +827,36 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts*
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttempts
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts*
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryAttempts
   name: RetryAttempts
-  nameWithType: DaprResilienceOptions.RetryAttempts
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs*
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMs
+  nameWithType: GatewayResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs*
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryBaseDelayMs
   name: RetryBaseDelayMs
-  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput*
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughput
+  nameWithType: GatewayResilienceOptions.RetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput*
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerMinimumThroughput
   name: CircuitBreakerMinimumThroughput
-  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds*
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSeconds
+  nameWithType: GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds*
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerBreakDurationSeconds
   name: CircuitBreakerBreakDurationSeconds
-  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment*
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_FromEnvironment_System_Func_System_String_System_String__
+  nameWithType: GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment*
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_FromEnvironment_System_Func_System_String_System_String__
   name: FromEnvironment
-  nameWithType: DaprResilienceOptions.FromEnvironment
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment
+  nameWithType: GatewayResilienceOptions.FromEnvironment
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment
 - uid: System.Func{System.String,System.String}
   commentId: T:System.Func{System.String,System.String}
   parent: System
@@ -904,13 +904,13 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions
-  commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions
+  commentId: T:Virtufin.Api.Configuration.GatewayResilienceOptions
   parent: Virtufin.Api.Configuration
-  href: Virtufin.Api.Configuration.DaprResilienceOptions.html
-  name: DaprResilienceOptions
-  nameWithType: DaprResilienceOptions
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions
+  href: Virtufin.Api.Configuration.GatewayResilienceOptions.html
+  name: GatewayResilienceOptions
+  nameWithType: GatewayResilienceOptions
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions
 - uid: System.Func`2
   commentId: T:System.Func`2
   isExternal: true

@@ -1,35 +1,35 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-  commentId: T:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-  id: DaprCircuitBreakerHealthCheck
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+  commentId: T:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+  id: GatewayCircuitBreakerHealthCheck
   parent: Virtufin.Api.HealthChecks
   children:
-  - Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  - Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  - Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  - Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
-  name: DaprCircuitBreakerHealthCheck
-  nameWithType: DaprCircuitBreakerHealthCheck
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+  name: GatewayCircuitBreakerHealthCheck
+  nameWithType: GatewayCircuitBreakerHealthCheck
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
+      path: src/Virtufin.Api/HealthChecks/GatewayResiliencePipeline.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
-    id: DaprCircuitBreakerHealthCheck
-    path: ../../../src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
-    startLine: 86
+    id: GatewayCircuitBreakerHealthCheck
+    path: ../../../src/Virtufin.Api/HealthChecks/GatewayResiliencePipeline.cs
+    startLine: 106
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks
   summary: Health check that reports Dapr circuit breaker state.
   example: []
   syntax:
-    content: 'public sealed class DaprCircuitBreakerHealthCheck : IHealthCheck'
-    content.vb: Public NotInheritable Class DaprCircuitBreakerHealthCheck Implements IHealthCheck
+    content: 'public sealed class GatewayCircuitBreakerHealthCheck : IHealthCheck'
+    content.vb: Public NotInheritable Class GatewayCircuitBreakerHealthCheck Implements IHealthCheck
   inheritance:
   - System.Object
   implements:
@@ -41,57 +41,57 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  commentId: M:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  id: '#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)'
-  parent: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  commentId: M:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  id: '#ctor(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)'
+  parent: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
   langs:
   - csharp
   - vb
-  name: DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
-  nameWithType: DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
+  name: GatewayCircuitBreakerHealthCheck(GatewayResiliencePipeline)
+  nameWithType: GatewayCircuitBreakerHealthCheck.GatewayCircuitBreakerHealthCheck(GatewayResiliencePipeline)
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.GatewayCircuitBreakerHealthCheck(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
   type: Constructor
   source:
     remote:
-      path: src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
+      path: src/Virtufin.Api/HealthChecks/GatewayResiliencePipeline.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: .ctor
-    path: ../../../src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
-    startLine: 90
+    path: ../../../src/Virtufin.Api/HealthChecks/GatewayResiliencePipeline.cs
+    startLine: 110
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks
   syntax:
-    content: public DaprCircuitBreakerHealthCheck(DaprResiliencePipeline resilience)
+    content: public GatewayCircuitBreakerHealthCheck(GatewayResiliencePipeline resilience)
     parameters:
     - id: resilience
-      type: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-    content.vb: Public Sub New(resilience As DaprResiliencePipeline)
-  overload: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor*
-  nameWithType.vb: DaprCircuitBreakerHealthCheck.New(DaprResiliencePipeline)
-  fullName.vb: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.New(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  name.vb: New(DaprResiliencePipeline)
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
-  commentId: M:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+      type: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+    content.vb: Public Sub New(resilience As GatewayResiliencePipeline)
+  overload: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor*
+  nameWithType.vb: GatewayCircuitBreakerHealthCheck.New(GatewayResiliencePipeline)
+  fullName.vb: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.New(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  name.vb: New(GatewayResiliencePipeline)
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  commentId: M:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
   id: CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
-  parent: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
+  parent: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
   langs:
   - csharp
   - vb
   name: CheckHealthAsync(HealthCheckContext, CancellationToken)
-  nameWithType: DaprCircuitBreakerHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
+  nameWithType: GatewayCircuitBreakerHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
-      path: src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
+      path: src/Virtufin.Api/HealthChecks/GatewayResiliencePipeline.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: CheckHealthAsync
-    path: ../../../src/Virtufin.Api/HealthChecks/DaprResiliencePipeline.cs
-    startLine: 95
+    path: ../../../src/Virtufin.Api/HealthChecks/GatewayResiliencePipeline.cs
+    startLine: 115
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.HealthChecks
@@ -110,7 +110,7 @@ items:
       type: System.Threading.Tasks.Task{Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult}
       description: A <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> that completes when the health check has finished, yielding the status of the component being checked.
     content.vb: Public Function CheckHealthAsync(context As HealthCheckContext, cancellationToken As CancellationToken = Nothing) As Task(Of HealthCheckResult)
-  overload: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync*
+  overload: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync*
   implements:
   - Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
 references:
@@ -412,22 +412,22 @@ references:
     name: HealthChecks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor*
-  commentId: Overload:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor
-  href: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck__ctor_Virtufin_Api_HealthChecks_DaprResiliencePipeline_
-  name: DaprCircuitBreakerHealthCheck
-  nameWithType: DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck
-  nameWithType.vb: DaprCircuitBreakerHealthCheck.New
-  fullName.vb: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.New
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor*
+  commentId: Overload:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor
+  href: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_GatewayCircuitBreakerHealthCheck__ctor_Virtufin_Api_HealthChecks_GatewayResiliencePipeline_
+  name: GatewayCircuitBreakerHealthCheck
+  nameWithType: GatewayCircuitBreakerHealthCheck.GatewayCircuitBreakerHealthCheck
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.GatewayCircuitBreakerHealthCheck
+  nameWithType.vb: GatewayCircuitBreakerHealthCheck.New
+  fullName.vb: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.New
   name.vb: New
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+  commentId: T:Virtufin.Api.HealthChecks.GatewayResiliencePipeline
   parent: Virtufin.Api.HealthChecks
-  href: Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
-  name: DaprResiliencePipeline
-  nameWithType: DaprResiliencePipeline
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  href: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html
+  name: GatewayResiliencePipeline
+  nameWithType: GatewayResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading
@@ -464,12 +464,12 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync*
-  commentId: Overload:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync
-  href: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync*
+  commentId: Overload:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync
+  href: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_GatewayCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
   name: CheckHealthAsync
-  nameWithType: DaprCircuitBreakerHealthCheck.CheckHealthAsync
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync
+  nameWithType: GatewayCircuitBreakerHealthCheck.CheckHealthAsync
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync
 - uid: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
   commentId: M:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
   parent: Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck

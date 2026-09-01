@@ -228,17 +228,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Api.Configuration.DaprResilienceOptions.yml",
+      "source_relative_path": "api/Virtufin.Api.Configuration.GatewayResilienceOptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Api.Configuration.DaprResilienceOptions.html"
+          "relative_path": "api/Virtufin.Api.Configuration.GatewayResilienceOptions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Api.Configuration.DaprResilienceOptions",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.Configuration.DaprResilienceOptions.yml\" sourcestartlinenumber=\"1\">Tunable knobs for <xref href=\"Virtufin.Api.HealthChecks.DaprResiliencePipeline\" data-throw-if-not-resolved=\"false\"></xref>:\nthe Polly-based retry + circuit breaker wrapping Dapr SDK calls and\ngateway gRPC invocations from the API Gateway.</p>\n"
+      "Title": "Virtufin.Api.Configuration.GatewayResilienceOptions",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.Configuration.GatewayResilienceOptions.yml\" sourcestartlinenumber=\"1\">Tunable knobs for <xref href=\"Virtufin.Api.HealthChecks.GatewayResiliencePipeline\" data-throw-if-not-resolved=\"false\"></xref>:\nthe Polly-based retry + circuit breaker wrapping Dapr SDK calls and\ngateway gRPC invocations from the API Gateway.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -452,20 +452,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.yml\" sourcestartlinenumber=\"1\">Health check that reports Dapr circuit breaker state.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Virtufin.Api.HealthChecks.DaprHealthCheck.yml",
       "output": {
         ".html": {
@@ -480,17 +466,31 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.yml",
+      "source_relative_path": "api/Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html"
+          "relative_path": "api/Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Virtufin.Api.HealthChecks.DaprResiliencePipeline",
-      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.yml\" sourcestartlinenumber=\"1\">Provides resilience policies for Dapr operations with retry and circuit breaker.\nConstants are configurable via <xref href=\"Virtufin.Api.Configuration.DaprResilienceOptions\" data-throw-if-not-resolved=\"false\"></xref> (env-var-driven).</p>\n"
+      "Title": "Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.yml\" sourcestartlinenumber=\"1\">Health check that reports Dapr circuit breaker state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Virtufin.Api.HealthChecks.GatewayResiliencePipeline",
+      "Summary": "<p sourcefile=\"api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.yml\" sourcestartlinenumber=\"1\">Retry + circuit breaker for the gateway's <b>direct gRPC</b> calls to\nbackend services — i.e. <code>Gateway.Invoke</code> and <code>Gateway.InvokeJson</code>,\nwhich route through <code>GrpcChannelPool</code> and never touch a Dapr sidecar.</p>\n<p>\nThis was previously called <code>DaprResiliencePipeline</code>, with\n<code>DAPR_*</code> environment variables, which was actively misleading: it has\nnever wrapped a Dapr SDK call. Both call sites wrap\n<code>ExecuteCallAsync</code> on the reflection service. An architecture review\ninitially read the pair as duplicating Dapr's own resiliency building\nblock; they are in fact disjoint.\n</p>\n<p>\nResilience for the sidecar's calls out to Dapr components (statestore,\npubsub) is declared separately, as a Dapr <code>Resiliency</code> resource in\n<code>helm/templates/resiliency.yaml</code>. Keep the two sets of numbers in\nstep so both paths degrade the same way.\n</p>\n<p sourcefile=\"api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.yml\" sourcestartlinenumber=\"21\">Constants are configurable via <xref href=\"Virtufin.Api.Configuration.GatewayResilienceOptions\" data-throw-if-not-resolved=\"false\"></xref>\n(env-var-driven).</p>\n"
     },
     {
       "type": "ManagedReference",

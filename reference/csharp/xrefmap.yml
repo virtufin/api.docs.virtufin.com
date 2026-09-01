@@ -1092,128 +1092,128 @@ references:
   commentId: N:Virtufin.Api.Configuration
   fullName: Virtufin.Api.Configuration
   nameWithType: Virtufin.Api.Configuration
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions
-  name: DaprResilienceOptions
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html
-  commentId: T:Virtufin.Api.Configuration.DaprResilienceOptions
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions
-  nameWithType: DaprResilienceOptions
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions
+  name: GatewayResilienceOptions
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html
+  commentId: T:Virtufin.Api.Configuration.GatewayResilienceOptions
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions
+  nameWithType: GatewayResilienceOptions
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
   name: CircuitBreakerBreakDurationSeconds
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSeconds
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds*
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerBreakDurationSeconds
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  nameWithType: GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds*
   name: CircuitBreakerBreakDurationSeconds
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSeconds_
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerBreakDurationSeconds_
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
   isSpec: "True"
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSeconds
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+  nameWithType: GatewayResilienceOptions.CircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
   name: CircuitBreakerBreakDurationSecondsEnvVar
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerBreakDurationSecondsEnvVar
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
-  nameWithType: DaprResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerBreakDurationSecondsEnvVar
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+  nameWithType: GatewayResilienceOptions.CircuitBreakerBreakDurationSecondsEnvVar
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
   name: CircuitBreakerMinimumThroughput
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughput
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput*
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerMinimumThroughput
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  nameWithType: GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput*
   name: CircuitBreakerMinimumThroughput
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughput_
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerMinimumThroughput_
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
   isSpec: "True"
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughput
-  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughput
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+  nameWithType: GatewayResilienceOptions.CircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
   name: CircuitBreakerMinimumThroughputEnvVar
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_CircuitBreakerMinimumThroughputEnvVar
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
-  nameWithType: DaprResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_CircuitBreakerMinimumThroughputEnvVar
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+  nameWithType: GatewayResilienceOptions.CircuitBreakerMinimumThroughputEnvVar
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
   name: DefaultCircuitBreakerBreakDurationSeconds
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_DefaultCircuitBreakerBreakDurationSeconds
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
-  nameWithType: DaprResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_DefaultCircuitBreakerBreakDurationSeconds
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+  nameWithType: GatewayResilienceOptions.DefaultCircuitBreakerBreakDurationSeconds
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
   name: DefaultCircuitBreakerMinimumThroughput
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_DefaultCircuitBreakerMinimumThroughput
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
-  nameWithType: DaprResilienceOptions.DefaultCircuitBreakerMinimumThroughput
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_DefaultCircuitBreakerMinimumThroughput
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+  nameWithType: GatewayResilienceOptions.DefaultCircuitBreakerMinimumThroughput
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryAttempts
   name: DefaultRetryAttempts
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_DefaultRetryAttempts
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryAttempts
-  nameWithType: DaprResilienceOptions.DefaultRetryAttempts
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_DefaultRetryAttempts
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryAttempts
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryAttempts
+  nameWithType: GatewayResilienceOptions.DefaultRetryAttempts
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryBaseDelayMs
   name: DefaultRetryBaseDelayMs
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_DefaultRetryBaseDelayMs
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.DefaultRetryBaseDelayMs
-  nameWithType: DaprResilienceOptions.DefaultRetryBaseDelayMs
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_DefaultRetryBaseDelayMs
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.DefaultRetryBaseDelayMs
+  nameWithType: GatewayResilienceOptions.DefaultRetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
   name: FromEnvironment(Func<string, string?>)
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_FromEnvironment_System_Func_System_String_System_String__
-  commentId: M:Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_FromEnvironment_System_Func_System_String_System_String__
+  commentId: M:Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func{System.String,System.String})
   name.vb: FromEnvironment(Func(Of String, String))
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func<string, string?>)
-  fullName.vb: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment(System.Func(Of String, String))
-  nameWithType: DaprResilienceOptions.FromEnvironment(Func<string, string?>)
-  nameWithType.vb: DaprResilienceOptions.FromEnvironment(Func(Of String, String))
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment*
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func<string, string?>)
+  fullName.vb: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment(System.Func(Of String, String))
+  nameWithType: GatewayResilienceOptions.FromEnvironment(Func<string, string?>)
+  nameWithType.vb: GatewayResilienceOptions.FromEnvironment(Func(Of String, String))
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment*
   name: FromEnvironment
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_FromEnvironment_
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_FromEnvironment_
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment
   isSpec: "True"
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.FromEnvironment
-  nameWithType: DaprResilienceOptions.FromEnvironment
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.FromEnvironment
+  nameWithType: GatewayResilienceOptions.FromEnvironment
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
   name: RetryAttempts
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttempts
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-  nameWithType: DaprResilienceOptions.RetryAttempts
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts*
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryAttempts
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+  nameWithType: GatewayResilienceOptions.RetryAttempts
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts*
   name: RetryAttempts
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttempts_
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryAttempts_
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
   isSpec: "True"
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttempts
-  nameWithType: DaprResilienceOptions.RetryAttempts
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttempts
+  nameWithType: GatewayResilienceOptions.RetryAttempts
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttemptsEnvVar
   name: RetryAttemptsEnvVar
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryAttemptsEnvVar
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryAttemptsEnvVar
-  nameWithType: DaprResilienceOptions.RetryAttemptsEnvVar
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryAttemptsEnvVar
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttemptsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryAttemptsEnvVar
+  nameWithType: GatewayResilienceOptions.RetryAttemptsEnvVar
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
   name: RetryBaseDelayMs
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMs
-  commentId: P:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs*
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryBaseDelayMs
+  commentId: P:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+  nameWithType: GatewayResilienceOptions.RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs*
   name: RetryBaseDelayMs
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMs_
-  commentId: Overload:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryBaseDelayMs_
+  commentId: Overload:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
   isSpec: "True"
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMs
-  nameWithType: DaprResilienceOptions.RetryBaseDelayMs
-- uid: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMs
+  nameWithType: GatewayResilienceOptions.RetryBaseDelayMs
+- uid: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMsEnvVar
   name: RetryBaseDelayMsEnvVar
-  href: api/Virtufin.Api.Configuration.DaprResilienceOptions.html#Virtufin_Api_Configuration_DaprResilienceOptions_RetryBaseDelayMsEnvVar
-  commentId: F:Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
-  fullName: Virtufin.Api.Configuration.DaprResilienceOptions.RetryBaseDelayMsEnvVar
-  nameWithType: DaprResilienceOptions.RetryBaseDelayMsEnvVar
+  href: api/Virtufin.Api.Configuration.GatewayResilienceOptions.html#Virtufin_Api_Configuration_GatewayResilienceOptions_RetryBaseDelayMsEnvVar
+  commentId: F:Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMsEnvVar
+  fullName: Virtufin.Api.Configuration.GatewayResilienceOptions.RetryBaseDelayMsEnvVar
+  nameWithType: GatewayResilienceOptions.RetryBaseDelayMsEnvVar
 - uid: Virtufin.Api.Configuration.GrpcConfig
   name: GrpcConfig
   href: api/Virtufin.Api.Configuration.GrpcConfig.html
@@ -1451,19 +1451,6 @@ references:
   fullName.vb: Virtufin.Api.Configuration.ServiceConfig.New
   nameWithType: ServiceConfig.ServiceConfig
   nameWithType.vb: ServiceConfig.New
-- uid: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  name: DaprAppId
-  href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_DaprAppId
-  commentId: P:Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  fullName: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  nameWithType: ServiceConfig.DaprAppId
-- uid: Virtufin.Api.Configuration.ServiceConfig.DaprAppId*
-  name: DaprAppId
-  href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_DaprAppId_
-  commentId: Overload:Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  isSpec: "True"
-  fullName: Virtufin.Api.Configuration.ServiceConfig.DaprAppId
-  nameWithType: ServiceConfig.DaprAppId
 - uid: Virtufin.Api.Configuration.ServiceConfig.Grpc
   name: Grpc
   href: api/Virtufin.Api.Configuration.ServiceConfig.html#Virtufin_Api_Configuration_ServiceConfig_Grpc
@@ -2004,44 +1991,6 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck.CheckHealthAsync
   nameWithType: ApiAuthHealthCheck.CheckHealthAsync
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-  name: DaprCircuitBreakerHealthCheck
-  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html
-  commentId: T:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-  nameWithType: DaprCircuitBreakerHealthCheck
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  name: DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
-  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck__ctor_Virtufin_Api_HealthChecks_DaprResiliencePipeline_
-  commentId: M:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  name.vb: New(DaprResiliencePipeline)
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  fullName.vb: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.New(Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  nameWithType: DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck(DaprResiliencePipeline)
-  nameWithType.vb: DaprCircuitBreakerHealthCheck.New(DaprResiliencePipeline)
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor*
-  name: DaprCircuitBreakerHealthCheck
-  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck__ctor_
-  commentId: Overload:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck
-  fullName.vb: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.New
-  nameWithType: DaprCircuitBreakerHealthCheck.DaprCircuitBreakerHealthCheck
-  nameWithType.vb: DaprCircuitBreakerHealthCheck.New
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
-  name: CheckHealthAsync(HealthCheckContext, CancellationToken)
-  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
-  nameWithType: DaprCircuitBreakerHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync*
-  name: CheckHealthAsync
-  href: api/Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_DaprCircuitBreakerHealthCheck_CheckHealthAsync_
-  commentId: Overload:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync
-  isSpec: "True"
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.CheckHealthAsync
-  nameWithType: DaprCircuitBreakerHealthCheck.CheckHealthAsync
 - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
   name: DaprHealthCheck
   href: api/Virtufin.Api.HealthChecks.DaprHealthCheck.html
@@ -2080,69 +2029,107 @@ references:
   isSpec: "True"
   fullName: Virtufin.Api.HealthChecks.DaprHealthCheck.CheckHealthAsync
   nameWithType: DaprHealthCheck.CheckHealthAsync
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  name: DaprResiliencePipeline
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
-  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  nameWithType: DaprResiliencePipeline
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline},Virtufin.Api.Configuration.DaprResilienceOptions)
-  name: DaprResiliencePipeline(ILogger<DaprResiliencePipeline>, DaprResilienceOptions)
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_HealthChecks_DaprResiliencePipeline__Virtufin_Api_Configuration_DaprResilienceOptions_
-  commentId: M:Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.DaprResiliencePipeline},Virtufin.Api.Configuration.DaprResilienceOptions)
-  name.vb: New(ILogger(Of DaprResiliencePipeline), DaprResilienceOptions)
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.DaprResiliencePipeline(Microsoft.Extensions.Logging.ILogger<Virtufin.Api.HealthChecks.DaprResiliencePipeline>, Virtufin.Api.Configuration.DaprResilienceOptions)
-  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.HealthChecks.DaprResiliencePipeline), Virtufin.Api.Configuration.DaprResilienceOptions)
-  nameWithType: DaprResiliencePipeline.DaprResiliencePipeline(ILogger<DaprResiliencePipeline>, DaprResilienceOptions)
-  nameWithType.vb: DaprResiliencePipeline.New(ILogger(Of DaprResiliencePipeline), DaprResilienceOptions)
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor*
-  name: DaprResiliencePipeline
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline__ctor_
-  commentId: Overload:Virtufin.Api.HealthChecks.DaprResiliencePipeline.#ctor
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+  name: GatewayCircuitBreakerHealthCheck
+  href: api/Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html
+  commentId: T:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+  nameWithType: GatewayCircuitBreakerHealthCheck
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  name: GatewayCircuitBreakerHealthCheck(GatewayResiliencePipeline)
+  href: api/Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_GatewayCircuitBreakerHealthCheck__ctor_Virtufin_Api_HealthChecks_GatewayResiliencePipeline_
+  commentId: M:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  name.vb: New(GatewayResiliencePipeline)
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.GatewayCircuitBreakerHealthCheck(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  fullName.vb: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.New(Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  nameWithType: GatewayCircuitBreakerHealthCheck.GatewayCircuitBreakerHealthCheck(GatewayResiliencePipeline)
+  nameWithType.vb: GatewayCircuitBreakerHealthCheck.New(GatewayResiliencePipeline)
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor*
+  name: GatewayCircuitBreakerHealthCheck
+  href: api/Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_GatewayCircuitBreakerHealthCheck__ctor_
+  commentId: Overload:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.DaprResiliencePipeline
-  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.New
-  nameWithType: DaprResiliencePipeline.DaprResiliencePipeline
-  nameWithType.vb: DaprResiliencePipeline.New
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
-  name: CircuitBroken
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_CircuitBroken
-  commentId: P:Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
-  nameWithType: DaprResiliencePipeline.CircuitBroken
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken*
-  name: CircuitBroken
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_CircuitBroken_
-  commentId: Overload:Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.GatewayCircuitBreakerHealthCheck
+  fullName.vb: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.New
+  nameWithType: GatewayCircuitBreakerHealthCheck.GatewayCircuitBreakerHealthCheck
+  nameWithType.vb: GatewayCircuitBreakerHealthCheck.New
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  name: CheckHealthAsync(HealthCheckContext, CancellationToken)
+  href: api/Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_GatewayCircuitBreakerHealthCheck_CheckHealthAsync_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, System.Threading.CancellationToken)
+  nameWithType: GatewayCircuitBreakerHealthCheck.CheckHealthAsync(HealthCheckContext, CancellationToken)
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync*
+  name: CheckHealthAsync
+  href: api/Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html#Virtufin_Api_HealthChecks_GatewayCircuitBreakerHealthCheck_CheckHealthAsync_
+  commentId: Overload:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync
   isSpec: "True"
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.CircuitBroken
-  nameWithType: DaprResiliencePipeline.CircuitBroken
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.CheckHealthAsync
+  nameWithType: GatewayCircuitBreakerHealthCheck.CheckHealthAsync
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+  name: GatewayResiliencePipeline
+  href: api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html
+  commentId: T:Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+  nameWithType: GatewayResiliencePipeline
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.GatewayResiliencePipeline},Virtufin.Api.Configuration.GatewayResilienceOptions)
+  name: GatewayResiliencePipeline(ILogger<GatewayResiliencePipeline>, GatewayResilienceOptions)
+  href: api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html#Virtufin_Api_HealthChecks_GatewayResiliencePipeline__ctor_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_HealthChecks_GatewayResiliencePipeline__Virtufin_Api_Configuration_GatewayResilienceOptions_
+  commentId: M:Virtufin.Api.HealthChecks.GatewayResiliencePipeline.#ctor(Microsoft.Extensions.Logging.ILogger{Virtufin.Api.HealthChecks.GatewayResiliencePipeline},Virtufin.Api.Configuration.GatewayResilienceOptions)
+  name.vb: New(ILogger(Of GatewayResiliencePipeline), GatewayResilienceOptions)
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.GatewayResiliencePipeline(Microsoft.Extensions.Logging.ILogger<Virtufin.Api.HealthChecks.GatewayResiliencePipeline>, Virtufin.Api.Configuration.GatewayResilienceOptions)
+  fullName.vb: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.New(Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.HealthChecks.GatewayResiliencePipeline), Virtufin.Api.Configuration.GatewayResilienceOptions)
+  nameWithType: GatewayResiliencePipeline.GatewayResiliencePipeline(ILogger<GatewayResiliencePipeline>, GatewayResilienceOptions)
+  nameWithType.vb: GatewayResiliencePipeline.New(ILogger(Of GatewayResiliencePipeline), GatewayResilienceOptions)
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.#ctor*
+  name: GatewayResiliencePipeline
+  href: api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html#Virtufin_Api_HealthChecks_GatewayResiliencePipeline__ctor_
+  commentId: Overload:Virtufin.Api.HealthChecks.GatewayResiliencePipeline.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.GatewayResiliencePipeline
+  fullName.vb: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.New
+  nameWithType: GatewayResiliencePipeline.GatewayResiliencePipeline
+  nameWithType.vb: GatewayResiliencePipeline.New
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.CircuitBroken
+  name: CircuitBroken
+  href: api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html#Virtufin_Api_HealthChecks_GatewayResiliencePipeline_CircuitBroken
+  commentId: P:Virtufin.Api.HealthChecks.GatewayResiliencePipeline.CircuitBroken
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.CircuitBroken
+  nameWithType: GatewayResiliencePipeline.CircuitBroken
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.CircuitBroken*
+  name: CircuitBroken
+  href: api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html#Virtufin_Api_HealthChecks_GatewayResiliencePipeline_CircuitBroken_
+  commentId: Overload:Virtufin.Api.HealthChecks.GatewayResiliencePipeline.CircuitBroken
+  isSpec: "True"
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.CircuitBroken
+  nameWithType: GatewayResiliencePipeline.CircuitBroken
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
   name: ExecuteAsync(Func<CancellationToken, Task>, CancellationToken)
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  href: api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html#Virtufin_Api_HealthChecks_GatewayResiliencePipeline_ExecuteAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)
   name.vb: ExecuteAsync(Func(Of CancellationToken, Task), CancellationToken)
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Threading.CancellationToken)
-  nameWithType: DaprResiliencePipeline.ExecuteAsync(Func<CancellationToken, Task>, CancellationToken)
-  nameWithType.vb: DaprResiliencePipeline.ExecuteAsync(Func(Of CancellationToken, Task), CancellationToken)
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync*
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  nameWithType: GatewayResiliencePipeline.ExecuteAsync(Func<CancellationToken, Task>, CancellationToken)
+  nameWithType.vb: GatewayResiliencePipeline.ExecuteAsync(Func(Of CancellationToken, Task), CancellationToken)
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync*
   name: ExecuteAsync
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync_
-  commentId: Overload:Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync
+  href: api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html#Virtufin_Api_HealthChecks_GatewayResiliencePipeline_ExecuteAsync_
+  commentId: Overload:Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync
   isSpec: "True"
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync
-  nameWithType: DaprResiliencePipeline.ExecuteAsync
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync
+  nameWithType: GatewayResiliencePipeline.ExecuteAsync
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
   name: ExecuteAsync<T>(Func<CancellationToken, Task<T>>, CancellationToken)
-  href: api/Virtufin.Api.HealthChecks.DaprResiliencePipeline.html#Virtufin_Api_HealthChecks_DaprResiliencePipeline_ExecuteAsync__1_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
-  commentId: M:Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  href: api/Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html#Virtufin_Api_HealthChecks_GatewayResiliencePipeline_ExecuteAsync__1_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
   name.vb: ExecuteAsync(Of T)(Func(Of CancellationToken, Task(Of T)), CancellationToken)
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync<T>(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
-  fullName.vb: Virtufin.Api.HealthChecks.DaprResiliencePipeline.ExecuteAsync(Of T)(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
-  nameWithType: DaprResiliencePipeline.ExecuteAsync<T>(Func<CancellationToken, Task<T>>, CancellationToken)
-  nameWithType.vb: DaprResiliencePipeline.ExecuteAsync(Of T)(Func(Of CancellationToken, Task(Of T)), CancellationToken)
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync<T>(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.ExecuteAsync(Of T)(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: GatewayResiliencePipeline.ExecuteAsync<T>(Func<CancellationToken, Task<T>>, CancellationToken)
+  nameWithType.vb: GatewayResiliencePipeline.ExecuteAsync(Of T)(Func(Of CancellationToken, Task(Of T)), CancellationToken)
 - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
   name: GrpcChannelPoolHealthCheck
   href: api/Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.html
@@ -2807,15 +2794,15 @@ references:
   commentId: T:Virtufin.Api.Services.GatewayService
   fullName: Virtufin.Api.Services.GatewayService
   nameWithType: GatewayService
-- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprResiliencePipeline)
-  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Virtufin_Api_HealthChecks_DaprResiliencePipeline_
-  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprResiliencePipeline)
-  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Virtufin.Api.HealthChecks.DaprResiliencePipeline)
-  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, DaprResiliencePipeline)
-  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), DaprResiliencePipeline)
+- uid: Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  name: GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, GatewayResiliencePipeline)
+  href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_Virtufin_Api_Services_GrpcReflectionService_Virtufin_Api_Configuration_ServicesConfiguration_Microsoft_Extensions_Logging_ILogger_Virtufin_Api_Services_GatewayService__Virtufin_Api_HealthChecks_GatewayResiliencePipeline_
+  commentId: M:Virtufin.Api.Services.GatewayService.#ctor(Virtufin.Api.Services.GrpcReflectionService,Virtufin.Api.Configuration.ServicesConfiguration,Microsoft.Extensions.Logging.ILogger{Virtufin.Api.Services.GatewayService},Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  name.vb: New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), GatewayResiliencePipeline)
+  fullName: Virtufin.Api.Services.GatewayService.GatewayService(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger<Virtufin.Api.Services.GatewayService>, Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  fullName.vb: Virtufin.Api.Services.GatewayService.New(Virtufin.Api.Services.GrpcReflectionService, Virtufin.Api.Configuration.ServicesConfiguration, Microsoft.Extensions.Logging.ILogger(Of Virtufin.Api.Services.GatewayService), Virtufin.Api.HealthChecks.GatewayResiliencePipeline)
+  nameWithType: GatewayService.GatewayService(GrpcReflectionService, ServicesConfiguration, ILogger<GatewayService>, GatewayResiliencePipeline)
+  nameWithType.vb: GatewayService.New(GrpcReflectionService, ServicesConfiguration, ILogger(Of GatewayService), GatewayResiliencePipeline)
 - uid: Virtufin.Api.Services.GatewayService.#ctor*
   name: GatewayService
   href: api/Virtufin.Api.Services.GatewayService.html#Virtufin_Api_Services_GatewayService__ctor_

@@ -6,9 +6,9 @@ items:
   parent: Virtufin.Api
   children:
   - Virtufin.Api.HealthChecks.ApiAuthHealthCheck
-  - Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
   - Virtufin.Api.HealthChecks.DaprHealthCheck
-  - Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  - Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+  - Virtufin.Api.HealthChecks.GatewayResiliencePipeline
   - Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
   langs:
   - csharp
@@ -26,25 +26,25 @@ references:
   name: ApiAuthHealthCheck
   nameWithType: ApiAuthHealthCheck
   fullName: Virtufin.Api.HealthChecks.ApiAuthHealthCheck
-- uid: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-  commentId: T:Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
-  href: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck.html
-  name: DaprCircuitBreakerHealthCheck
-  nameWithType: DaprCircuitBreakerHealthCheck
-  fullName: Virtufin.Api.HealthChecks.DaprCircuitBreakerHealthCheck
 - uid: Virtufin.Api.HealthChecks.DaprHealthCheck
   commentId: T:Virtufin.Api.HealthChecks.DaprHealthCheck
   href: Virtufin.Api.HealthChecks.DaprHealthCheck.html
   name: DaprHealthCheck
   nameWithType: DaprHealthCheck
   fullName: Virtufin.Api.HealthChecks.DaprHealthCheck
-- uid: Virtufin.Api.HealthChecks.DaprResiliencePipeline
-  commentId: T:Virtufin.Api.HealthChecks.DaprResiliencePipeline
+- uid: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+  commentId: T:Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+  href: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck.html
+  name: GatewayCircuitBreakerHealthCheck
+  nameWithType: GatewayCircuitBreakerHealthCheck
+  fullName: Virtufin.Api.HealthChecks.GatewayCircuitBreakerHealthCheck
+- uid: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
+  commentId: T:Virtufin.Api.HealthChecks.GatewayResiliencePipeline
   parent: Virtufin.Api.HealthChecks
-  href: Virtufin.Api.HealthChecks.DaprResiliencePipeline.html
-  name: DaprResiliencePipeline
-  nameWithType: DaprResiliencePipeline
-  fullName: Virtufin.Api.HealthChecks.DaprResiliencePipeline
+  href: Virtufin.Api.HealthChecks.GatewayResiliencePipeline.html
+  name: GatewayResiliencePipeline
+  nameWithType: GatewayResiliencePipeline
+  fullName: Virtufin.Api.HealthChecks.GatewayResiliencePipeline
 - uid: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
   commentId: T:Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck
   href: Virtufin.Api.HealthChecks.GrpcChannelPoolHealthCheck.html
