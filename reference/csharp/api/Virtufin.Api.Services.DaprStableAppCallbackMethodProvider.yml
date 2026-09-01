@@ -1,33 +1,35 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
-  commentId: T:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
-  id: DaprStableJobCallbackMethodProvider
+- uid: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider
+  commentId: T:Virtufin.Api.Services.DaprStableAppCallbackMethodProvider
+  id: DaprStableAppCallbackMethodProvider
   parent: Virtufin.Api.Services
   children:
-  - Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  - Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
   langs:
   - csharp
   - vb
-  name: DaprStableJobCallbackMethodProvider
-  nameWithType: DaprStableJobCallbackMethodProvider
-  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  name: DaprStableAppCallbackMethodProvider
+  nameWithType: DaprStableAppCallbackMethodProvider
+  fullName: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider
   type: Class
   source:
     remote:
-      path: src/Virtufin.Api/Services/DaprStableJobCallbackMethodProvider.cs
+      path: src/Virtufin.Api/Services/DaprStableAppCallbackMethodProvider.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
-    id: DaprStableJobCallbackMethodProvider
-    path: ../../../src/Virtufin.Api/Services/DaprStableJobCallbackMethodProvider.cs
-    startLine: 52
+    id: DaprStableAppCallbackMethodProvider
+    path: ../../../src/Virtufin.Api/Services/DaprStableAppCallbackMethodProvider.cs
+    startLine: 54
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
   summary: >-
-    Serves the Dapr scheduler's job callback on its **stable** route,
+    Serves the parts of Dapr's **stable** <code>AppCallback</code> service that the
 
-    <code>/dapr.proto.runtime.v1.AppCallback/OnJobEvent</code>.
+    runtime actually calls: <code>OnJobEvent</code> (scheduled job delivery) and
+
+    <code>ListTopicSubscriptions</code> (declarative-subscription discovery).
 
 
     <p>
@@ -108,8 +110,8 @@ items:
     </p>
   example: []
   syntax:
-    content: 'public sealed class DaprStableJobCallbackMethodProvider : IServiceMethodProvider<DaprAppCallbackService>'
-    content.vb: Public NotInheritable Class DaprStableJobCallbackMethodProvider Implements IServiceMethodProvider(Of DaprAppCallbackService)
+    content: 'public sealed class DaprStableAppCallbackMethodProvider : IServiceMethodProvider<DaprAppCallbackService>'
+    content.vb: Public NotInheritable Class DaprStableAppCallbackMethodProvider Implements IServiceMethodProvider(Of DaprAppCallbackService)
   inheritance:
   - System.Object
   implements:
@@ -121,25 +123,25 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
-  commentId: M:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+- uid: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
+  commentId: M:Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
   id: OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
-  parent: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
+  parent: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider
   langs:
   - csharp
   - vb
   name: OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
-  nameWithType: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
-  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext<Virtufin.Api.Services.DaprAppCallbackService>)
+  nameWithType: DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery(ServiceMethodProviderContext<DaprAppCallbackService>)
+  fullName: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext<Virtufin.Api.Services.DaprAppCallbackService>)
   type: Method
   source:
     remote:
-      path: src/Virtufin.Api/Services/DaprStableJobCallbackMethodProvider.cs
+      path: src/Virtufin.Api/Services/DaprStableAppCallbackMethodProvider.cs
       branch: master
       repo: https://git.haenerconsulting.com/virtufin/virtufin-api
     id: OnServiceMethodDiscovery
-    path: ../../../src/Virtufin.Api/Services/DaprStableJobCallbackMethodProvider.cs
-    startLine: 71
+    path: ../../../src/Virtufin.Api/Services/DaprStableAppCallbackMethodProvider.cs
+    startLine: 89
   assemblies:
   - Virtufin.Api
   namespace: Virtufin.Api.Services
@@ -152,11 +154,11 @@ items:
       type: Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService}
       description: The <xref href="Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Sub OnServiceMethodDiscovery(context As ServiceMethodProviderContext(Of DaprAppCallbackService))
-  overload: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery*
+  overload: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery*
   implements:
   - Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
-  nameWithType.vb: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
-  fullName.vb: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext(Of Virtufin.Api.Services.DaprAppCallbackService))
+  nameWithType.vb: DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
+  fullName.vb: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext(Of Virtufin.Api.Services.DaprAppCallbackService))
   name.vb: OnServiceMethodDiscovery(ServiceMethodProviderContext(Of DaprAppCallbackService))
 references:
 - uid: Virtufin.Api.Services.DaprAppCallbackService
@@ -535,12 +537,12 @@ references:
   - name: " "
   - name: TService
   - name: )
-- uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery*
-  commentId: Overload:Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
-  href: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.html#Virtufin_Api_Services_DaprStableJobCallbackMethodProvider_OnServiceMethodDiscovery_Grpc_AspNetCore_Server_Model_ServiceMethodProviderContext_Virtufin_Api_Services_DaprAppCallbackService__
+- uid: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery*
+  commentId: Overload:Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery
+  href: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.html#Virtufin_Api_Services_DaprStableAppCallbackMethodProvider_OnServiceMethodDiscovery_Grpc_AspNetCore_Server_Model_ServiceMethodProviderContext_Virtufin_Api_Services_DaprAppCallbackService__
   name: OnServiceMethodDiscovery
-  nameWithType: DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
-  fullName: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery
+  nameWithType: DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery
+  fullName: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery
 - uid: Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
   commentId: M:Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})
   parent: Grpc.AspNetCore.Server.Model.IServiceMethodProvider{Virtufin.Api.Services.DaprAppCallbackService}

@@ -129,8 +129,8 @@ items:
     - uid: Virtufin.Api.Services.DaprConstants
       name: DaprConstants
       type: Class
-    - uid: Virtufin.Api.Services.DaprStableJobCallbackMethodProvider
-      name: DaprStableJobCallbackMethodProvider
+    - uid: Virtufin.Api.Services.DaprStableAppCallbackMethodProvider
+      name: DaprStableAppCallbackMethodProvider
       type: Class
     - uid: Virtufin.Api.Services.DateTimeFormatConstants
       name: DateTimeFormatConstants

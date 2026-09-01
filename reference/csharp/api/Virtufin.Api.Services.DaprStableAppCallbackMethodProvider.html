@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class DaprStableJobCallbackMethodProvider | Virtufin API - C# Reference </title>
+      <title>Class DaprStableAppCallbackMethodProvider | Virtufin API - C# Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DaprStableJobCallbackMethodProvider | Virtufin API - C# Reference ">
+      <meta name="title" content="Class DaprStableAppCallbackMethodProvider | Virtufin API - C# Reference ">
       
-      <meta name="description" content="Serves the Dapr scheduler&#39;s job callback on its stable route, /dapr.proto.runtime.v1.AppCallback/OnJobEvent.  Why this exists: the Dapr runtime (confirmed on 1.18.1) delivers scheduled jobs to AppCallback/OnJobEvent — the stable service, per dapr/dapr&#39;s own appcallback.proto. The .NET SDK lags it: the generated code in Dapr.Protos 1.18.2 contains OnJobEventAlpha1 on AppCallbackAlpha and no OnJobEvent anywhere, so  could only ever bind the alpha route. Nothing served the route Dapr actually calls, the request matched no endpoint, and it was rejected 401 by ApiKeyHttpMiddleware (which exempts only requests whose matched endpoint carries GrpcMethodMetadata). Net effect: **no scheduled trigger ever fired**, while Dapr retried roughly once a second forever.   Registering the method here rather than regenerating appcallback.proto into this repo is deliberate: the request and response types already exist in Dapr.Protos and are reused as-is, so there is no second copy of the Dapr message types to collide with the SDK&#39;s (the CS0433 duplicate-type trap this codebase has hit before). Only the service/method *name* differs.   Because the endpoint is produced through the normal gRPC service-model pipeline it carries GrpcMethodMetadata, so ApiKeyHttpMiddleware lets it through to ApiKeyInterceptor, which exempts the /dapr.proto.runtime.v1.AppCallback/ prefix — the sidecar cannot present an API key.   Both routes stay live: the alpha one for older runtimes, this one for current ones. They share a single handler, so behaviour cannot drift. Once the SDK generates the stable method, this provider can be replaced by a plain override OnJobEvent on .">
+      <meta name="description" content="Serves the parts of Dapr&#39;s stable AppCallback service that the runtime actually calls: OnJobEvent (scheduled job delivery) and ListTopicSubscriptions (declarative-subscription discovery).  Why this exists: the Dapr runtime (confirmed on 1.18.1) delivers scheduled jobs to AppCallback/OnJobEvent — the stable service, per dapr/dapr&#39;s own appcallback.proto. The .NET SDK lags it: the generated code in Dapr.Protos 1.18.2 contains OnJobEventAlpha1 on AppCallbackAlpha and no OnJobEvent anywhere, so  could only ever bind the alpha route. Nothing served the route Dapr actually calls, the request matched no endpoint, and it was rejected 401 by ApiKeyHttpMiddleware (which exempts only requests whose matched endpoint carries GrpcMethodMetadata). Net effect: **no scheduled trigger ever fired**, while Dapr retried roughly once a second forever.   Registering the method here rather than regenerating appcallback.proto into this repo is deliberate: the request and response types already exist in Dapr.Protos and are reused as-is, so there is no second copy of the Dapr message types to collide with the SDK&#39;s (the CS0433 duplicate-type trap this codebase has hit before). Only the service/method *name* differs.   Because the endpoint is produced through the normal gRPC service-model pipeline it carries GrpcMethodMetadata, so ApiKeyHttpMiddleware lets it through to ApiKeyInterceptor, which exempts the /dapr.proto.runtime.v1.AppCallback/ prefix — the sidecar cannot present an API key.   Both routes stay live: the alpha one for older runtimes, this one for current ones. They share a single handler, so behaviour cannot drift. Once the SDK generates the stable method, this provider can be replaced by a plain override OnJobEvent on .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -49,10 +49,10 @@
             Virtufin.Api
           </a>
           <div class="git-info">
-            <a href="{git_repo_url}/commit/c4e22009e540eac7a7e23d52db9d437e06d7dcec" target="_blank" rel="noopener" class="commit-badge" title="View commit c4e22009e540eac7a7e23d52db9d437e06d7dcec">
+            <a href="{git_repo_url}/commit/b4860e15697c8aefefc17194e843576483eb6fad" target="_blank" rel="noopener" class="commit-badge" title="View commit b4860e15697c8aefefc17194e843576483eb6fad">
               <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 22" width="82" height="22" style="vertical-align:middle;">
                 <rect width="82" height="22" rx="4" fill="#e9ecef" stroke="currentColor" stroke-width="0.75" opacity="0.6"></rect>
-                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">c4e22009e540eac7a7e23d52db9d437e06d7dcec</text>
+                <text x="41" y="15.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="600" fill="currentColor">b4860e15697c8aefefc17194e843576483eb6fad</text>
               </svg>
             </a>
           </div>          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,12 +88,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider">
+        <article data-uid="Virtufin.Api.Services.DaprStableAppCallbackMethodProvider">
 
 
 
-  <h1 id="Virtufin_Api_Services_DaprStableJobCallbackMethodProvider" data-uid="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider" class="text-break">
-Class DaprStableJobCallbackMethodProvider  
+  <h1 id="Virtufin_Api_Services_DaprStableAppCallbackMethodProvider" data-uid="Virtufin.Api.Services.DaprStableAppCallbackMethodProvider" class="text-break">
+Class DaprStableAppCallbackMethodProvider  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,8 +101,9 @@ Class DaprStableJobCallbackMethodProvider
   <dl><dt>Assembly</dt><dd>Virtufin.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Serves the Dapr scheduler's job callback on its <strong>stable</strong> route,
-<code>/dapr.proto.runtime.v1.AppCallback/OnJobEvent</code>.</p>
+  <div class="markdown summary"><p>Serves the parts of Dapr's <strong>stable</strong> <code>AppCallback</code> service that the
+runtime actually calls: <code>OnJobEvent</code> (scheduled job delivery) and
+<code>ListTopicSubscriptions</code> (declarative-subscription discovery).</p>
 <p>
 Why this exists: the Dapr runtime (confirmed on 1.18.1) delivers
 scheduled jobs to <code>AppCallback/OnJobEvent</code> — the stable service, per
@@ -144,7 +145,7 @@ by a plain <code>override OnJobEvent</code> on
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DaprStableJobCallbackMethodProvider : IServiceMethodProvider&lt;DaprAppCallbackService&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DaprStableAppCallbackMethodProvider : IServiceMethodProvider&lt;DaprAppCallbackService&gt;</code></pre>
   </div>
 
 
@@ -154,7 +155,7 @@ by a plain <code>override OnJobEvent</code> on
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DaprStableJobCallbackMethodProvider</span></div>
+      <div><span class="xref">DaprStableAppCallbackMethodProvider</span></div>
     </dd>
   </dl>
 
@@ -198,9 +199,9 @@ by a plain <code>override OnJobEvent</code> on
 </h2>
 
 
-  <a id="Virtufin_Api_Services_DaprStableJobCallbackMethodProvider_OnServiceMethodDiscovery_" data-uid="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery*"></a>
+  <a id="Virtufin_Api_Services_DaprStableAppCallbackMethodProvider_OnServiceMethodDiscovery_" data-uid="Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery*"></a>
 
-  <h3 id="Virtufin_Api_Services_DaprStableJobCallbackMethodProvider_OnServiceMethodDiscovery_Grpc_AspNetCore_Server_Model_ServiceMethodProviderContext_Virtufin_Api_Services_DaprAppCallbackService__" data-uid="Virtufin.Api.Services.DaprStableJobCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})">
+  <h3 id="Virtufin_Api_Services_DaprStableAppCallbackMethodProvider_OnServiceMethodDiscovery_Grpc_AspNetCore_Server_Model_ServiceMethodProviderContext_Virtufin_Api_Services_DaprAppCallbackService__" data-uid="Virtufin.Api.Services.DaprStableAppCallbackMethodProvider.OnServiceMethodDiscovery(Grpc.AspNetCore.Server.Model.ServiceMethodProviderContext{Virtufin.Api.Services.DaprAppCallbackService})">
   OnServiceMethodDiscovery(ServiceMethodProviderContext&lt;DaprAppCallbackService&gt;)
   
   </h3>
